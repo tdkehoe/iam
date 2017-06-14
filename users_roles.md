@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2017-06-06"
+  
+lastupdated: "2017-06-13"
 
 ---
 
@@ -91,8 +92,9 @@ In addition to the descriptions of the roles provided in the console, the follow
 | Viewer | Performs actions that do not change state; read only actions | <ul><li>List clusters</li><li>View details for a cluster</li></ul>|
 | Editor | Performs actions that modify the state and create or delete sub-resources |<ul><li>Add or remove worker nodes</li><li>Reboot or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
 | Operator | Performs actions required to configure and operate resources. | <ul><li>Add or remove worker nodes</li><li>Reboot or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
-| Administrator | Performs all actions, including the ability to manage access control |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer and editor can perform</li></ul>|
-{: caption="Table 5. Administrative tasks for managing Identity and access enabled services policies" caption-side="top"}
+| Administrator | Performs all actions, including the ability to manage access control |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer, editor, and operator can perform</li></ul>|
+{: caption="Table 5. Example user roles and actions" caption-side="top"}
+
 
 ## Infrastructure permissions
 {: #infrapermissions}
