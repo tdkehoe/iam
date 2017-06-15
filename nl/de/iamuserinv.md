@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-05-17"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -20,9 +20,11 @@ Sie können Benutzer von {{site.data.keyword.Bluemix_notm}}-Services, von Anwend
 
 Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen in Ihrem Konto zu verwalten:
 
-1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identity & Access** &gt; **Benutzer**. Das Fenster 'Benutzer' zeigt eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen und Angaben zum aktuellen Status in den Konten an, die Sie verwalten. 
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identity & Access** &gt; **Benutzer**. Das Fenster 'Benutzer' zeigt eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen und dem aktuellen Status des aktuell ausgewählten Kontos an. 
 2. Klicken Sie auf **Benutzer einladen**. 
-3. Geben Sie die E-Mail-Adresse oder IBMid des Benutzers an. Wenn Sie mehreren Benutzern denselben Zugriff erteilen, können Sie die Option **Mehrere Benutzer einladen** auswählen, um eine Liste der einzuladenden Benutzer einzugeben. Trennen Sie die Benutzer-IDs durch Kommas. 
+3. Geben Sie die E-Mail-Adresse oder IBMid des Benutzers an. Wenn Sie mehreren Benutzern denselben Zugriff erteilen, können Sie die Option **Mehrere Benutzer einladen** auswählen, um eine Liste der einzuladenden Benutzer einzugeben. Trennen Sie die Benutzer-ID-Einträge durch Kommas, Leerzeichen oder Zeilenumbrüche.
 4. Fügen Sie eine oder mehrere der von Ihnen verwalteten Zugriffsoptionen hinzu. Sie müssen mindestens eine Zugriffsoption zuweisen und die Einstellungen für den Benutzer in jeder zugewiesenen Zugriffsoption konfigurieren. Für alle weiteren Zugriffsoptionen, die Sie nicht hinzufügen und konfigurieren, wird der Standardwert *Kein Zugriff* zugewiesen. Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, können Ihnen die folgenden Optionen angezeigt werden: **Durch Identity and Access aktivierte Services**, **Cloud Foundry-Zugriff**, **Infrastructure-Zugriff**. Weitere Informationen finden Sie unter [Benutzerzugriff zuweisen](/docs/iam/assignaccess.html).
 
-Wenn Sie entscheiden, dass ein Benutzer keinen Zugriff benötigt, können Sie eine Einladung für beliebige Benutzer abbrechen, die mit dem Status **Verarbeitung läuft** (Processing) oder **Anstehend** (Pending) in der Spalte **Status** angezeigt werden. Wenn ein eingeladener Benutzer keine Einladung empfangen hat, können Sie die Einladung an jeden Benutzer mit dem Status **Anstehend** erneut senden.  
+Wenn Sie entscheiden, dass ein Benutzer keinen Zugriff benötigt, können Sie eine Einladung für beliebige Benutzer abbrechen, die mit dem Status **Verarbeitung läuft** (Processing) oder **Anstehend** (Pending) in der Spalte **Status** angezeigt werden. Wenn ein eingeladener Benutzer keine Einladung empfangen hat, können Sie die Einladung an jeden Benutzer mit dem Status **Anstehend** erneut senden.
+
+Wenn Sie über die CLI Benutzer einladen möchten, verwenden Sie den Befehl [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite).

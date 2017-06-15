@@ -2,8 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
-lastupdated: "2017-05-11"
+  Anos: 2015, 2017 lastupdated: "2017-05-30"
 
 ---
 
@@ -15,11 +14,7 @@ lastupdated: "2017-05-11"
 # Designando Acesso do Usuário
 {: #assignaccess}
 
-Você
-designa o acesso aos usuários conforme eles são convidados, atribuindo funções, políticas e as contas ou
-as organizações, ou ambos, que eles possam acessar. Dependendo das opções de acesso que você estiver autorizado a gerenciar, será possível convidar e fornecer acesso para usuários na conta, na organização, no espaço e nas instâncias de serviço. Como
-um proprietário da conta, é possível designar opções de acesso à sua conta para um usuário quando você e o
-usuário são membros, independentemente da função. As seções a seguir descrevem os três tipos de acesso que podem ser designados a um usuário convidado.
+Você designa acesso para os usuários à medida que os convida, designando funções, políticas e permissões de infraestrutura do Cloud Foundry. Dependendo das opções de acesso que você estiver autorizado a gerenciar, será possível convidar e fornecer acesso para usuários na conta, na organização, no espaço e nas instâncias de serviço. As seções a seguir descrevem os três tipos de acesso que podem ser designados a um usuário convidado.
 {:shortdesc}
 
 ## Serviços ativados para identidade e acesso
@@ -27,35 +22,34 @@ usuário são membros, independentemente da função. As seções a seguir descr
 É possível designar uma única política de serviço ao convidar um novo usuário. Quando o usuário aceitar o convite, será possível incluir políticas de serviço adicionais.
 
 1. Na tela **Convidar usuários**, expanda a seção **Serviços ativados para identidade e acesso**.
-2. Selecione **Todos os serviços ativados para identidade e acesso** ou selecione um serviço individual. **Nota**: se selecionar a opção **Conceder acesso automaticamente quando novos
-serviços forem incluídos**, você não será notificado para cancelar a seleção de cada novo
-serviço do {{site.data.keyword.Bluemix_notm}} para esse usuário quando os serviços forem
-incluídos posteriormente.
+2. Selecione um serviço.
 3. Selecione **Todas as regiões atuais** ou uma região específica.
 4. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
 5. Selecione uma função para definir o escopo de acesso da política.
 6. Opcional: selecione **Incluir função** para especificar uma função adicional para a política.
 
-Veja [Políticas e funções de gerenciamento de identidade e acesso](/docs/iam/users_roles.html#iamusermanpol) para obter informações mais específicas sobre a configuração de políticas de serviço.
+Veja [Políticas e funções de gerenciamento de acesso e identidade](/docs/iam/users_roles.html#iamusermanpol) para obter informações mais específicas sobre as funções ao configurar as políticas de serviço.
 
 ## Acesso ao Cloud Foundry
 
-Todos os usuários são concedidos à função de organização de auditor por padrão. É possível atualizar essa função para gerente de faturamento, gerenciador de organização ou nenhuma função de organização depois que o usuário aceita o convite. Durante o processo de convite, é possível incluir múltiplas funções de espaço, uma de cada vez.
+Ao convidar novos usuários, é possível escolher incluir o usuário em uma organização na conta. Se você incluir o usuário em uma organização, ele receberá a função de organização de auditor por padrão. Será possível atualizar essa função posteriormente para gerenciador de faturamento, gerenciador de organização ou nenhuma função de organização após o usuário aceitar o convite. Além disso, é possível escolher fornecer ao usuário convidado o acesso a qualquer um ou todos os espaços na organização selecionada.
 
 1. Na tela **Convidar usuários**, expanda a seção **Acesso do Cloud Foundry**.
 2. Selecione uma organização na qual incluir o usuário.
 3. Selecione **Todas as regiões atuais** ou uma região específica.
 4. Selecione **Todos os espaços atuais** ou um espaço específico.
-5. Selecione uma função para definir o escopo de acesso.
-6. Opcional: selecione **Incluir função** para especificar uma função adicional para a política.
+5. Selecione uma função de espaço para definir o nível de acesso aos espaços selecionados.
+6. Opcional: selecione **Incluir função** para especificar uma função adicional.
 
 Veja [Funções do Cloud Foundry](/docs/iam/users_roles.html#cfroles) para obter informações mais específicas sobre essas funções.
 
+**Nota**: é possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
+
 ## Acesso ao Infrastructure
 
-Se você tiver permissão, verá a opção para designar permissões de infraestrutura. As permissões reais designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Para obter mais informações sobre as permissões e quais ações o usuário pode executar com cada uma, veja [Permissões de infraestrutura](/docs/iam/users_roles.html#infrapermissions).
+As permissões reais designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Para obter mais informações sobre as permissões e quais ações o usuário pode executar com cada uma, veja [Permissões de infraestrutura](/docs/iam/users_roles.html#infrapermissions).
 
 1. Na tela **Convidar usuários**, expanda a seção **Acesso à infraestrutura**. 
 2. Selecione uma permissão para definir o escopo de acesso.
 
-Para obter informações sobre como configurar o acesso para usuários depois de eles terem sido incluídos em sua conta, veja [Gerenciando contas do usuário e o acesso](/docs/iam/iamusermanage.html).
+Para obter informações sobre como configurar o acesso para os usuários depois que eles tiverem sido incluídos em sua conta, veja [Gerenciando usuários e acesso](/docs/iam/iamusermanage.html).

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-05-17"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -12,17 +12,19 @@ lastupdated: "2017-05-17"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Invito di utenti
+# Inviting users
 {: #iamuserinv}
 
-Puoi invitare gli utenti con le applicazioni, i servizi {{site.data.keyword.Bluemix_notm}} e l'infrastruttura {{site.data.keyword.Bluemix_notm}} da una sola ubicazione. Per invitare gli utenti e gestire gli inviti in sospeso, devi essere un proprietario dell'account, un gestore dell'organizzazione o devi avere la autorizzazioni dell'infrastruttura per aggiungere gli utenti. Puoi invitare gli utenti, annullare gli inviti e reinviare un invito in sospeso a un utente invitato. Puoi invitare un solo utente o, se stai fornendo lo stesso accesso a tutti i membri in un gruppo di utenti, puoi invitare più utenti contemporaneamente.
+You can invite users across {{site.data.keyword.Bluemix_notm}} services, applications, and {{site.data.keyword.Bluemix_notm}} infrastructure from a single location. To invite users and manage outstanding invitations, you must be either an account owner, an organization manager, or you must have infrastructure permissions to add users. You can invite users, cancel invitations, and resend a pending invitation to an invited user. You can invite a single user or, if you are providing the same access for all members in a group of users, you can invite multiple users at once.
 {:shortdesc}
 
-Per invitare gli utenti o per gestire gli inviti utente nel tuo account, completa la seguente procedura:
+To invite users or manage user invitations in your account, complete the following steps:
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** &gt; **Utenti**.La finestra Utenti visualizza un elenco di utenti con i rispettivi indirizzi email e stato corrente negli account che gestisci. 
-2. Fai clic su **Invita utenti**. 
-3. Specifica l'indirizzo e-mail o l'ID IBM dell'utente. Se stai fornendo a più utenti lo stesso accesso, puoi selezionare **Invita più utenti** per immettere un elenco di utenti da invitare. Separa la voci ID utente con le virgole. 
-4. Aggiungi una o più delle opzioni di accesso che gestisci. Devi assegnare almeno un'opzione di accesso e configurare le impostazioni per l'utente in ogni opzione di accesso che assegni. Per tutte le ulteriori opzioni di accesso che non aggiungi e configuri, viene assegnato il valore predefinito *nessun accesso*. Potresti visualizzare una o tutte le seguenti opzioni di accesso, a seconda delle opzioni che sei autorizzato a gestire: **Servizi abilitati per l'accesso e l'identità**, **Accesso Cloud Foundry**, **Accesso infrastruttura**. Per ulteriori informazioni, vedi [Assegnazione dell'accesso utente](/docs/iam/assignaccess.html).
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**. The Users window displays a list of users with their email addresses and current status in the currently selected account. 
+2. Click **Invite users**. 
+3. Specify the email address or IBMid of the user. If you are providing multiple users the same access, you can select **Invite multiple users** to enter a list of users to invite. Separate the user ID entries with commas, spaces, or line breaks.
+4. Add one or more of the access options that you manage. You must assign at least one access option and configure the settings for the user in each access option that you assign. For any additional access options that you don't add and configure, the default value of *no access* is assigned. You might see one or all of the following access options, depending on the options that you are authorized to manage: **Identity and access enabled services**, **Cloud Foundry access**, **Infrastructure access**. See [Assigning user access](/docs/iam/assignaccess.html) for more information.
 
-Se determini che un utente non ha bisogno dell'accesso, puoi annullare un invito per tutti gli utenti visualizzati in uno stato **Elaborazione** o **In sospeso** nella colonna **Stato**. Se un utente invitato non riceve un invito, puoi reinviare l'invito a tutti gli utenti nello stato **In sospeso**.
+If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
+
+If you want to invite users using the CLI, see the [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) command.

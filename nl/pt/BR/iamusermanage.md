@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-05-17"
+lastupdated: "2017-05-30"
 
 ---
 
@@ -22,12 +22,11 @@ gerenciar usuários na conta ou na organização. Como um proprietário da conta
 
 Para gerenciar usuários em sua conta, conclua as etapas a seguir:
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Conta** &gt; **Usuários**. A janela Usuários exibe uma lista de
-usuários com seus endereços de e-mail e o status atual das contas que você gerencia. 
+1. Na barra de menus, clique em **Gerenciar** &gt; **Conta** &gt; **Usuários**. A janela Usuários exibe uma lista de usuários com seus endereços de e-mail para a conta selecionada atualmente. 
 2. Selecione o nome do usuário ou clique em **Gerenciar usuários** no menu **Ações**. 
 3. Em seguida, dependendo do acesso que você pode gerenciar, atualize o acesso para o usuário nas seções Políticas de serviço ou Funções do Cloud Foundry ou clique no link para acessar a página Designar acesso à infraestrutura.
 
-Revise as seções a seguir para obter informações adicionais sobre como gerenciar cada tipo de acesso e informações sobre o uso do Diretório da equipe.
+Revise as seções a seguir para obter informações adicionais sobre como gerenciar cada tipo de acesso.
 
 Se for necessário revisar seu acesso designado em uma conta à qual tenha sido incluído, conclua as etapas a seguir:
 
@@ -35,7 +34,9 @@ Se for necessário revisar seu acesso designado em uma conta à qual tenha sido 
 2. Selecione seu nome. 
 3. Revise suas funções designadas.
 
-Se for necessário mudar sua função ou política de serviço, deverá entrar em contato com o gerenciador de organização ou com o proprietário da conta para atualizar a função do Cloud Foundry ou com o administrador do serviço ou instância de serviço para atualizar a política de serviço.
+Caso precise de privilégios adicionais, deve-se entrar em contato com o gerenciador de organização ou proprietário da conta para atualizar a função Cloud Foundry ou entrar em contato com o administrador para o serviço ou instância de serviço para atualizar a política de serviço.
+
+Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Acesso ao Cloud Foundry
 {: #iammancfser}
@@ -69,26 +70,4 @@ Para obter mais informações sobre políticas de serviço e funções, veja [Po
 
 ## Serviços de Infraestrutura
 
-Se você tiver acesso para designar permissões de infraestrutura, será possível configurar as funções a seguir para o usuário: Visualizar apenas, Usuário básico ou Superusuário. Clique no link **Designar acesso à infraestrutura** para atualizar ou designar novas permissões.
-
-Para obter mais informações sobre as permissões, veja [Permissões de infraestrutura](/docs/iam/users_roles.html#infrapermissions).
-
-## Gerenciando funções do Cloud Foundry no diretório da equipe
-{: #editinguserroles}
-
-Na página Diretório da equipe, os proprietários de contas podem gerenciar usuários somente da plataforma. No entanto, se você puder acessar a página **Gerenciar** &gt; **Conta** &gt; **Usuários**, será possível gerenciar todos os usuários de serviços de plataforma e de infraestrutura em um lugar.
-
-Os gerenciadores de organização podem editar funções de organização e de espaço para usuários existentes na página Diretório da equipe.
-
-1. Localize e selecione o membro da equipe cujas funções deseja editar.
-2. Clique em **Visualizar funções**.
-3. Selecione ou limpe as seleções de função de espaço, para modificar o acesso ao espaço para o membro da equipe.
-4. Clique **Salvar.**
-
-Os gerenciadores de espaço podem editar funções para os membros da equipe em seu espaço.
-
-1. Localize e selecione o membro da equipe cujas funções deseja editar.
-2. Clique em **Visualizar funções**.
-3. Clique em **Visualizar espaços**.
-4. Selecione ou limpe a opção de função de espaço para a função que você deseja incluir ou remover para o membro da equipe.
-5. Então clique em **Salvar**.
+Para designar ou atualizar permissões de infraestrutura, clique no link **Designar acesso à infraestrutura**.

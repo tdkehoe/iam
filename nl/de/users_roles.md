@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2017-05-17"
+lastupdated: "2017-05-31"
 
 ---
 
@@ -15,10 +15,8 @@ lastupdated: "2017-05-17"
 # Benutzerrollen und Berechtigungen
 {: #userroles}
 
-Sie können Benutzer über die {{site.data.keyword.Bluemix_notm}}-Plattform- und {{site.data.keyword.Bluemix_notm}}-Infrastrukturservices auf der Seite **Benutzer** für Ihr Konto verwalten. Über die Seite 'Benutzer' ist auch ein Link zur Seite 'Teamverzeichnis' verfügbar, wenn Sie ausschließlich den Cloud Foundry-Zugriff von Plattformbenutzern auf Organisationen und Bereiche verwalten möchten. Sie müssen jedoch die Seite 'Benutzer' nicht verlassen, um diesen Zugriff zu verwalten.
+Sie können Benutzer über die {{site.data.keyword.Bluemix_notm}}-Plattform- und {{site.data.keyword.Bluemix_notm}}-Infrastrukturservices auf der Seite **Benutzer** für Ihr Konto verwalten. Um auf die Seite 'Benutzer' zuzugreifen, klicken Sie im {{site.data.keyword.Bluemix_notm}}-Menü auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Kontoeigner führen alle Operationen für Organisationen und Bereiche aus, einschließlich der Verwaltung von Benutzern und deren zugeordneten Rollen. Organisationsmanager und Bereichsmanager verfügen auch über Zugriff zur Verwaltung von Rollen. 
 {:shortdesc}
-
-Um auf die Seite 'Benutzer' zuzugreifen, klicken Sie im {{site.data.keyword.Bluemix_notm}}-Menü auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Kontoeigner führen alle Operationen für Organisationen und Bereiche aus, einschließlich der Verwaltung von Benutzern und deren zugeordneten Rollen. Organisationsmanager und Bereichsmanager verfügen auch über Zugriff zur Verwaltung von Rollen. 
 
 Wenn Sie ein Benutzer sind, der zum Konto einer anderen Person hinzugefügt wurde, und Sie Ihre zugeordneten Rollen und Berechtigungen anzeigen möchten, wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Identity & Access** &gt; **Benutzer** und klicken Sie auf Ihren Namen.
 
@@ -29,20 +27,20 @@ Auf Kontoebene gibt es zwei Rollen, die den Zugriff auf andere Kontoverwaltungsf
 
 | Kontorolle | Berechtigungen |
 |----------------|---------|
-|Eigner | Ein Eigner für das Konto verfügt über Zugriff auf sein Profil, das Teamverzeichnis, die Rechnungsinformationen, die Informationen zu Ausgaben und das Nutzungsdashboard. Auf der Seite 'Teamverzeichnis' oder 'Benutzer' kann der Eigner neue Teammitglieder einladen und deren Rollen anpassen. Der Eigner kann auch Werbeguthaben hinzufügen, das Abrechnungslimit festlegen oder ändern, den Servicezugriff festlegen und Organisationen und Bereiche verwalten. |
-|Mitglied | Ein Mitglied hat Zugriff auf sein Profil, das Teamverzeichnis und auf Limits für Kontoguthaben und Abrechnung im {{site.data.keyword.Bluemix_notm}}-Header. Ein Mitglied kann auf der Seite 'Teamverzeichnis' jedoch nur die Teammitglieder innerhalb des Kontos anzeigen. |
+|Eigner | Ein Eigner für das Konto verfügt über Zugriff auf sein Profil, auf Benutzer, die Rechnungsinformationen, die Informationen zu Ausgaben und das Nutzungsdashboard. Auf der Seite 'Benutzer' kann der Eigner neue Benutzer einladen und Rollen anpassen. Der Eigner kann auch Werbeguthaben hinzufügen, das Abrechnungslimit festlegen oder ändern, den Servicezugriff festlegen und Organisationen und Bereiche verwalten. |
+|Mitglied | Ein Mitglied hat Zugriff auf sein Profil, die Seite 'Benutzer', auf der die aktiven Benutzer im Konto angezeigt werden, und auf Limits für Kontoguthaben und Abrechnung im {{site.data.keyword.Bluemix_notm}}-Header.   |
 {:caption="Tabelle 1. Kontorollen und Berechtigungen" caption-side="top"}
 
-Alle neuen Benutzer werden als Mitglied des Kontos hinzugefügt. Sie können Organisations- und Bereichsrollen für eingeladene Personen zuordnen, um bestimmte Ansichten und Berechtigungen in {{site.data.keyword.Bluemix_notm}} zu aktivieren. Neue Teammitglieder, die einer Organisation hinzugefügt wurden (lokale oder dedizierte Umgebungen ausgenommen), erhalten standardmäßig die Rolle des Organisationsauditors. Für einen bestimmten Bereich können Sie eingeladenen Personen die Rollen 'Entwickler' oder 'Auditor' zuordnen. Sobald die eingeladenen Personen die Einladung annehmen und an {{site.data.keyword.Bluemix_notm}} teilnehmen, können Sie deren Rollen auf der Seite 'Benutzer' oder 'Teamverzeichnis' bearbeiten.
+Alle neuen Benutzer werden als Mitglied des Kontos hinzugefügt. Sie können Organisations- und Bereichsrollen für eingeladene Personen zuordnen, um bestimmte Ansichten und Berechtigungen in {{site.data.keyword.Bluemix_notm}} zu aktivieren. Neue Benutzer, die einer Organisation hinzugefügt wurden (lokale oder dedizierte Umgebungen ausgenommen), erhalten standardmäßig die Rolle des Organisationsauditors. Für einen bestimmten Bereich können Sie eingeladenen Personen die Rollen 'Manager', 'Entwickler' oder 'Auditor' zuordnen. Sobald die eingeladenen Personen die Einladung annehmen und an {{site.data.keyword.Bluemix_notm}} teilnehmen, können Sie ihre Rollen auf der Seite 'Benutzer' bearbeiten.
 
 ## Cloud Foundry-Rollen
 {: #cfroles}
 
-Cloud Foundry-Rollen enthalten die Zugriffsberechtigungen für Organisationen und Bereiche, die im Konto definiert sind. Die folgenden Rollen können auf Organisationsebene hinzugefügt werden:
+Cloud Foundry-Rollen enthalten die Zugriffsberechtigungen für Organisationen und Bereiche, die im Konto definiert sind. Cloud Foundry-Rollen aktivieren keine Benutzerberechtigungen zum Ausführen von Aktionen im Kontext eines Service. Die folgenden Rollen können auf Organisationsebene hinzugefügt werden:
 
 | Organisationsrolle | Berechtigungen |
 |-------------------|-------------|
-|Manager | Organisationsmanager können Bereiche innerhalb der Organisation erstellen, anzeigen, bearbeiten oder löschen, die Nutzung und das Kontingent der Organisation anzeigen, Teammitglieder zur Organisation einladen, steuern, wer Zugriff auf die Organisation und die Rollen in der Organisation hat, und die angepassten Domänen für die Organisation verwalten. |
+|Manager | Organisationsmanager können Bereiche innerhalb der Organisation erstellen, anzeigen, bearbeiten oder löschen, die Nutzung und das Kontingent der Organisation anzeigen, Benutzer zur Organisation einladen, steuern, wer Zugriff auf die Organisation und die Rollen in der Organisation hat, und die angepassten Domänen für die Organisation verwalten. |
 |Abrechnungsmanager | Abrechnungsmanager können Informationen zur Laufzeit- und Servicenutzung für die Organisation auf der Seite 'Nutzungsdashboard' anzeigen.  |
 |Auditor | Organisationsauditoren können Anwendungs- und Serviceinhalte in der Organisation anzeigen. Auditoren können die Benutzer in der Organisation und deren zugeordnete Rollen sowie das Kontingent für die Organisation auch anzeigen. Außer in lokalen oder dedizierten Umgebungen ist diese Rolle standardmäßig allen eingeladenen Personen zugeordnet. |
 {:caption="Tabelle 2. Organisationsrollen und Berechtigungen" caption-side="top"}
@@ -56,7 +54,7 @@ Die folgenden Rollen können auf Bereichsebene zugeordnet werden:
 |Auditor | Bereichsauditoren haben Lesezugriff auf alle Informationen zu Bereichen, beispielsweise auf Informationen zur Anzahl der Instanzen, zu Servicebindungen und zur Ressourcennutzung für jede Anwendung im Bereich. |
 {:caption="Tabelle 3. Bereichsrollen und Berechtigungen" caption-side="top"}
 
-**Hinweis**: Benutzer, denen eine Bereichsmanager- oder Bereichsentwicklerrolle zugeordnet wurde, können auf die Umgebungsvariable VCAP_SERVICES zugreifen. Ein Benutzer, dem die Auditorrolle zugeordnet wurde, kann jedoch nicht auf VCAP_SERVICES zugreifen. 
+**Hinweis**: Benutzer, denen eine Bereichsmanager- oder Bereichsentwicklerrolle zugeordnet wurde, können auf die Umgebungsvariable VCAP_SERVICES zugreifen. Ein Benutzer, dem die Auditorrolle zugeordnet wurde, kann jedoch nicht auf VCAP_SERVICES zugreifen.
 
 ## Richtlinien und Rollen für Identity and Access Management
 {: #iamusermanpol}
@@ -65,19 +63,15 @@ Kontoeignern wird automatisch die Administratorrolle für den Kontozugriff für 
 
 ### Servicerichtlinien
 
-Eine Richtlinie weist einem Benutzer eine oder mehrere Rollen für eine Gruppe von Ressourcen durch eine Kombination von Attributen zur Definition der betreffenden Gruppe von Ressourcen zu. Wenn Sie eine Richtlinie einem Benutzer zuweisen, geben Sie zuerst den zuzuweisenden Service an, einschließlich einer Option zum Zuweisen aller verfügbarer Services. Anschließend können Sie auch eine oder mehrere Rollen auswählen, die zugewiesen werden sollen. Abhängig von dem Service, den Sie auswählen, können zusätzliche Konfigurationsoptionen verfügbar sein. 
+Eine Richtlinie weist einem Benutzer eine oder mehrere Rollen für eine Gruppe von Ressourcen durch eine Kombination von Attributen zur Definition der betreffenden Gruppe von Ressourcen zu. Wenn Sie eine Richtlinie einem Benutzer zuweisen, geben Sie zuerst den Service an. Anschließend können Sie eine oder mehrere Rollen auswählen, die zugewiesen werden sollen. Abhängig von dem Service, den Sie auswählen, können zusätzliche Konfigurationsoptionen verfügbar sein.
 
 Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle haben. In der folgenden Tabelle werden die Richtlinienmanagementtasks und die jeweils erforderliche Rolle aufgeführt.
 
-{: #iamui_table1}
-
 | Aktion | Erforderliche Rolle |
 |----------|---------|
-| Richtlinie für ein Konto erstellen | Administrator für den Kontozugriff |
-| Richtlinie für alle Services in einem Konto erstellen | Administrator für den Kontozugriff |
-| Richtlinie für alle Serviceinstanzen in einem Konto erstellen | Administrator für den Kontozugriff |
+| Richtlinien für ein Konto für alle Services und Instanzen erstellen | Administrator für den Kontozugriff |
 | Richtlinie für einen Service in einem Konto erstellen | Administrator für den Kontozugriff oder Administrator für den Service im Konto |
-| Serviceinstanz erstellen | Administrator oder Editor für den Kontozugriff oder Administrator oder Editor für den Service im Konto |
+| Serviceinstanz erstellen | Administrator für den Kontozugriff oder Editor oder der Administrator oder Editor für den Service im Konto |
 | Richtlinie für eine Serviceinstanz erstellen | Administrator für den Kontozugriff oder Administrator für das Konto oder Administrator für den Service im Konto oder Administrator für die Serviceinstanz |
 {: caption="Tabelle 4. Verwaltungstasks zum Verwalten von Richtlinien für durch Identity and Access aktivierte Services" caption-side="top"}
 
@@ -88,7 +82,6 @@ Rollen sind Sammlungen von Aktionen. Die Aktionen, die diesen Rollen zugeordnet 
 
 Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden in der folgenden Tabelle Beispiele für einige der Tasks aufgeführt, die Benutzer, denen eine Rolle zugewiesen ist, je nach ausgewähltem Service ausführen können. 
 
-{: #iamui_table2}
 
 | Rolle | Beschreibung von Aktionen | Beispielaktionen|
 |:-----------------|:-----------------|:-----------------|
@@ -100,7 +93,7 @@ Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden 
 ## Infrastructure-Berechtigungen
 {: #infrapermissions}
 
-Wenn Sie über die entsprechenden Zugriffsberechtigung zum Zuweisen von Infrastrukturrollen verfügen, können Sie die folgenden Berechtigungen für den Benutzer festlegen: 
+Wenn Sie über die Zugriffsberechtigung zum Zuweisen von Infrastrukturberechtigungen verfügen, können Sie bei der Einladung eines Benutzers die folgenden Berechtigungen zuweisen: 
 
 | Infrastructure-Berechtigung | Beschreibung von Aktionen |
 |---------------------------|------------------------|
@@ -109,3 +102,4 @@ Wenn Sie über die entsprechenden Zugriffsberechtigung zum Zuweisen von Infrastr
 |Superuser | Benutzer mit dieser Berechtigung können alle verfügbaren Aktionen im System ausführen. |
 {:caption="Tabelle 6. Infrastructure-Berechtigung" caption-side="top"}
 
+Weitere Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung akzeptiert hat.

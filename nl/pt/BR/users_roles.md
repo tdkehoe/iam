@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2017-05-17"
+lastupdated: "2017-05-31"
 
 ---
 
@@ -15,11 +15,9 @@ lastupdated: "2017-05-17"
 # Funções e Permissões do Usuário
 {: #userroles}
 
-É possível gerenciar usuários nos serviços Platform and Infrastructure do {{site.data.keyword.Bluemix_notm}} na página **Usuários** de sua conta. Um link para a página Diretório da equipe também estará disponível na página Usuários, se você quiser gerenciar apenas o acesso do Cloud Foundry dos usuários da plataforma a organizações e espaços. No entanto, não será necessário sair da página Usuários para gerenciar o acesso ao Cloud Foundry.
-{:shortdesc}
-
-Para acessar a página Usuários, no menu do {{site.data.keyword.Bluemix_notm}}, clique
+É possível gerenciar usuários nos serviços Platform and Infrastructure do {{site.data.keyword.Bluemix_notm}} na página **Usuários** de sua conta. Para acessar a página Usuários, no menu do {{site.data.keyword.Bluemix_notm}}, clique
 em **Gerenciar** &gt; **Conta** &gt; **Usuários**. Os proprietários da conta executam todas as operações nas organizações e nos espaços, incluindo o gerenciamento de usuários e suas funções designadas. Os gerenciadores de organização e de espaço também têm acesso para gerenciar funções. 
+{:shortdesc}
 
 Se você for um usuário incluído na conta de outra pessoa e desejar visualizar suas funções e permissões designadas, acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **Usuários** e clique em seu nome.
 
@@ -30,25 +28,22 @@ No nível de conta, há duas funções que permitem o acesso a diferentes recurs
 
 | Função da conta | Permissões |
 |----------------|---------|
-|Proprietário | Um proprietário para a conta tem acesso ao seu perfil, diretório da equipe, às suas informações de faturamento, notificações de gastos e ao seu painel de uso. Na página de diretório da equipe ou de usuários, o proprietário pode convidar novos membros da equipe e ajustar as funções. O proprietário também pode incluir créditos promocionais, configurar ou mudar o limite de faturamento, configurar o acesso de
+|Proprietário | Um proprietário para a conta tem acesso a seus perfis, usuários, informações de faturamento, notificações de gastos e painel de uso. Na página Usuários, o proprietário pode convidar novos usuários e ajustar as funções. O proprietário também pode incluir créditos promocionais, configurar ou mudar o limite de faturamento, configurar o acesso de
 serviço e gerenciar organizações e espaços. |
-|Membro | Um membro tem acesso ao seu perfil, diretório da equipe, ao seus créditos da conta e limites de faturamento no cabeçalho do {{site.data.keyword.Bluemix_notm}}. No entanto, na página de
-diretório da equipe, um membro pode apenas visualizar os membros da equipe dentro da conta. |
+|Membro | Um membro tem acesso a seu perfil, à página Usuários que exibe os usuários ativos na conta e aos créditos da conta e limites de faturamento no cabeçalho do {{site.data.keyword.Bluemix_notm}}.  |
 {:caption="Tabela 1. Funções e permissões de conta" caption-side="top"}
 
 Todos os novos usuários são incluídos como um membro da conta. É possível designar funções de organização e espaço para convidados, a fim de ativar visualizações e permissões específicas no
-{{site.data.keyword.Bluemix_notm}}. Novos membros da equipe incluídos em uma organização, exceto em um ambiente local ou dedicado, são designados à função de organização de auditor por padrão. Para um espaço específico, é possível optar por
-designar a função de desenvolvedor ou auditor para convidados. Quando seus convidados aceitarem o convite e se associarem ao {{site.data.keyword.Bluemix_notm}}, será possível editar suas funções na página Usuários ou Diretório da equipe.
+{{site.data.keyword.Bluemix_notm}}. Os novos usuários incluídos em uma organização, exceto em um ambiente local ou dedicado, são designados à função de organização de auditor por padrão. Para um espaço específico, é possível escolher designar o gerenciador, desenvolvedor ou função de auditor para convidados. Uma vez que seus convidados aceitam o convite e se associam ao {{site.data.keyword.Bluemix_notm}}, é possível editar suas funções na página Usuários.
 
 ## Funções do Cloud Foundry
 {: #cfroles}
 
-As funções do Cloud Foundry incluem as permissões de acesso para organizações e espaços definidos na conta. As funções a seguir podem ser designadas no nível de organização:
+As funções do Cloud Foundry incluem as permissões de acesso para organizações e espaços definidos na conta. As funções do Cloud Foundry não ativam as permissões de usuário para concluir ações dentro do contexto de um serviço. As funções a seguir podem ser designadas no nível de organização:
 
 | Função organizacional | Permissões |
 |-------------------|-------------|
-|Gerente | Gerenciadores de organização podem criar, visualizar, editar ou excluir espaços dentro da organização, visualizar o uso e a cota da organização, convidar membros da equipe para a organização,
-gerenciar quem tem acesso à organização e às suas funções na organização e gerenciar domínios customizados para a organização. |
+|Gerente | Os gerenciadores de organização podem criar, visualizar, editar ou excluir espaços dentro da organização, visualizar o uso e cota da organização, convidar os usuários para a organização, gerenciar quem tem acesso à organização e suas funções na organização, além de gerenciar domínios customizados para a organização. |
 |Gerenciador de faturamento | Gerenciadores de faturamento podem visualizar informações de uso de tempo de execução e serviço para a organização na página de Painel de uso.  |
 |Auditor | Auditores da organização podem visualizar o conteúdo do aplicativo e do serviço na organização. Os auditores também podem visualizar os usuários na organização e suas funções designadas, além da cota da organização. Essa função é designada a todos os convidados, exceto em ambientes locais ou dedicados, por padrão. |
 {:caption="Tabela 2. Funções e permissões de organização" caption-side="top"}
@@ -77,20 +72,16 @@ Os proprietários da conta são designados automaticamente à função de admini
 
 Uma política designa a um usuário uma ou
 mais funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto
-de recursos aplicável. Ao designar uma política a um usuário, você primeiramente especifica o serviço a ser designado, incluindo uma opção para designar todos os serviços disponíveis. Em seguida, também será possível selecionar uma função ou funções, para designar. Opções de configuração adicionais poderão estar disponíveis, dependendo do serviço selecionado.
+de recursos aplicável. Ao designar uma política a um usuário, primeiro você especifica o serviço. Em seguida, é possível selecionar uma função ou funções para designar. Opções de configuração adicionais poderão estar disponíveis, dependendo do serviço selecionado.
 
 Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra
 as tarefas de gerenciamento de política e a função necessária para cada uma.
 
-{: #iamui_table1}
-
 | Ações | Atribuição necessária |
 |----------|---------|
-| Criar uma política em uma conta | Administrador de acesso à conta |
-| Criar uma política em todos os serviços em uma conta | Administrador de acesso à conta |
-| Criar uma política em todas as instâncias de serviço em uma conta | Administrador de acesso à conta |
+| Criar políticas em uma conta para todos os serviços e instâncias | Administrador de acesso à conta |
 | Criar uma política em um serviço em uma conta | Administrador de acesso à conta ou administrador no serviço na conta |
-| Criar uma instância de serviço | Administrador de acesso à conta, editor, administrador ou editor no serviço na conta |
+| Criar uma instância de serviço | O administrador ou editor de acesso à conta ou o administrador ou editor no serviço na conta |
 | Criar uma política em uma instância de serviço | Administrador de acesso à conta, administrador no serviço na conta ou administrador na instância de serviço |
 {: caption="Tabela 4. Tarefas administrativas para gerenciar políticas de serviços ativadas para Identidade e acesso" caption-side="top"}
 
@@ -102,7 +93,6 @@ serviço. Consulte a documentação do serviço selecionado para obter detalhes 
 
 Além das descrições das funções fornecidas no console, a tabela a seguir fornece exemplos de algumas das tarefas que os usuários designados a cada função podem executar, dependendo do serviço selecionado. 
 
-{: #iamui_table2}
 
 | Função | Descrição das ações | Exemplo de ações|
 |:-----------------|:-----------------|:-----------------|
@@ -116,7 +106,7 @@ máquinas virtuais</li><li>Atualizar políticas de acesso de usuário</li><li>Li
 ## Permissões de infraestrutura
 {: #infrapermissions}
 
-Se você tiver acesso para designar funções de infraestrutura, será possível configurar as permissões a seguir para o usuário: 
+Se você tem acesso para designar funções de infraestrutura, é possível configurar as permissões a seguir ao convidar um usuário: 
 
 | Permissão de infraestrutura | Descrição das ações |
 |---------------------------|------------------------|
@@ -126,3 +116,4 @@ gerenciar dispositivos. |
 |Super usuário | Os usuários com essa permissão podem executar todas as ações disponíveis no sistema. |
 {:caption="Tabela 6. Permissões de infraestrutura" caption-side="top"}
 
+Permissões adicionais podem ser configuradas depois que o usuário aceitou o convite.
