@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
   
-lastupdated: "2017-06-13"
+lastupdated: "2017-06-20"
 
 ---
 
@@ -62,7 +62,7 @@ The following roles can be assigned at the space level:
 ## Identity and access management policies and roles
 {: #iamusermanpol}
 
-Account owners are automatically assigned the account access administrator role for Identity and access managemement which enables you to assign and manage service policies. This type of access control enables the assignment of policies per service or service instance to allow levels of access for managing resources and users within the assigned context.
+Account owners are automatically assigned the account access administrator role for Identity and access management which enables you to assign and manage service policies. This type of access control enables the assignment of policies per service or service instance to allow levels of access for managing resources and users within the assigned context.
 
 ### Service policies
 
