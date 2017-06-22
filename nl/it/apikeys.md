@@ -12,36 +12,36 @@ lastupdated: "2017-05-30"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Managing API keys
+# Gestione delle chiavi API
 {: #manapikey}
 
-An application programming interface key (API key) is a code that is passed in by computer programs that call an application programming interface (API) to identify the calling program, its developer, or its user to the website. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API (as defined perhaps by terms of service). The API key often acts as both a unique identifier and a secret token for authentication, and generally has a set of access rights specific to the user associated with it. API keys can be based on the universally unique identifier (UUID) system to ensure they are unique to each user.
+Una chiave API è un codice che viene trasmesso dai programmi informatici che richiamano un'interfaccia di programmazione delle applicazioni (API) per identificare il programma chiamante, il suo sviluppatore o il suo utente nel sito Web. Le chiavi API vengono utilizzate per tracciare e controllare l'utilizzo dell'API, ad esempio per prevenire l'uso dannoso o l'abuso dell'API (come definito probabilmente dai termini di servizio). La chiave API spesso funge sia da identificativo univoco che da token segreto per l'autenticazione e generalmente dispone di una serie di diritti di accesso specifici per l'utente ad essa associata. Le chiavi API possono essere basate sul sistema UUID (universally unique identifier) per garantire che siano univoche per ogni utente.
 
-As a {{site.data.keyword.Bluemix_notm}} user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key can be that a user or organization can create several API Keys for different programs and the API keys can be deleted independently if compromised without interfering with other API keys or even the user. In addition, as a [federated user](/docs/admin/adminpublic.html#federatedid), you can use an API key to login by using the `BLUEMIX_API_KEY` environment variable. For more information about using an API key for logging in, see the documentation for the [{{site.data.keyword.Bluemix_notm}} CLI `bluemix login` command](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login) and the [cf CLI `cf login` command](/docs/cli/reference/cfcommands/index.html#cf_login).
+In qualità di utente {{site.data.keyword.Bluemix_notm}}, potresti voler utilizzare una chiave API quando abiliti un programma o uno script senza distribuire la tua password allo script. Un vantaggio di utilizzare una chiave API può essere che un utente o un'organizzazione può creare più chiavi API per programmi diversi e le chiavi API possono essere eliminate in modo indipendente se compromesse senza interferire con altre chiavi API o con l'utente. Inoltre, come [utente federato](/docs/admin/adminpublic.html#federatedid), puoi usare una chiave API per eseguire l'accesso utilizzando la variabile di ambiente `BLUEMIX_API_KEY`. Per ulteriori informazioni sull'utilizzo di una chiave API per l'accesso, vedi la documentazione per il comando [ `bluemix login` della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login) e il [comando `cf login` della CLI cf](/docs/cli/reference/cfcommands/index.html#cf_login).
 
-You can manage your {{site.data.keyword.Bluemix_notm}} API keys, from the Bluemix API Keys window. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys** to see a list of your API Keys with descriptions and dates. You can create, edit or delete API keys from this page.
+Puoi gestire le tue chiavi API {{site.data.keyword.Bluemix_notm}} dalla finestra Chiavi API Bluemix. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API Bluemix** per visualizzare un elenco delle chiavi API con descrizioni e date. Da questa pagina puoi creare, modificare o eliminare le chiavi API.
 
-To create an API key:
+Per creare una chiave API:
 
-1. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys**.
-2. Click **Create API key**.
-3. Enter a name and description for your API key.
-4. Click **Create API key**.
-5. Then, click **Show** to display the API key to copy and save it for later, or click **Download API key**.
+1. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API Bluemix**.
+2. Fai clic su **Crea chiave API**.
+3. Immetti un nome e una descrizione per la tua chiave API.
+4. Fai clic su **Crea chiave API**.
+5. Infine, fai clic su **Mostra** per visualizzare la chiave API e per copiarla e salvarla per un uso successivo oppure fai clic su **Scarica chiave API**.
 
-**Note**: The API key is only available to show or download at the time of creation. If the API key is lost, you must create a new API key.
+**Nota**: la chiave API è disponibile per la visualizzazione o il download solo durante la fase di creazione. Se la chiave API viene persa, dovrai crearne una nuova.
 
-To edit an API key:
+Per modificare una chiave API:
 
-1. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys**.
-2. From the **Actions** menu of an API key that is listed in the table, click **Edit the name & description** 
-3. Update the information for your API key.
-4. Click **Update API key**.
+1. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API Bluemix**.
+2. Dal menu **Azioni** di una chiave API elencata nella tabella, fai clic su **Modifica nome e descrizione** 
+3. Aggiorna le informazioni per la tua chiave API.
+4. Fai clic su **Aggiorna chiave API**.
 
-To delete an API key: 
+Per eliminare una chiave API: 
 
-1. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys**.
-2. From the **Actions** menu of an API key that is listed in the table, click to **Delete**.
-3. Then, confirm the deletion by clicking **Delete key**.
+1. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API Bluemix**.
+2. Dal menu **Azioni** di una chiave API elencata nella tabella, fai clic su **Elimina**.
+3. Conferma infine l'eliminazione facendo clic su **Elimina chiave**.
 
-You can also use the {{site.data.keyword.Bluemix_notm}} CLI to manage your API keys by listing your keys, creating keys, updating keys, or deleting keys. See the [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam) command section for more information.
+Puoi anche utilizzare la CLI {{site.data.keyword.Bluemix_notm}} per gestire le tue chiavi API attraverso l'elenco, la creazione, l'aggiornamento o l'eliminazione delle chiavi. Per ulteriori informazioni, vedi la sezione relativa al comando [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).

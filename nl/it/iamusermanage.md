@@ -13,60 +13,60 @@ lastupdated: "2017-05-30"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Managing users and access
+# Gestione di utenti e accesso
 {: #iamusermanage}
 
-Depending on the access options that you are authorized to manage, you can view and manage users across the account or organization. As an account owner, you can manage users in any of the access options that you administer and to which the user is assigned access in the current account.
+A seconda delle opzioni di accesso che sei autorizzato a gestire, puoi visualizzare e gestire gli utenti nell'account o nell'organizzazione. Come proprietario di un account, puoi gestire gli utenti in tutte le opzioni di accesso che gestisci e alle quali è assegnato l'accesso dell'utente nell'account corrente.
 {:shortdesc}
 
-To manage users in your account, complete the following steps:
+Per gestire gli utenti nel tuo account, completa la seguente procedura:
 
-1. From the menu bar, click **Manage** &gt; **Account** &gt; **Users**. The Users window displays a list of users with their email addresses for the currently selected account. 
-2. Select the user name, or click **Manage user** from the **Actions** menu. 
-3. Then, depending on what access you can manage, update the access for the user in the Service policies or Cloud Foundry roles sections, or click the link to access the Assign Infrastructure Access page.
+1. Dalla barra dei menu, fai clic su **Gestisci ** &gt; **Account** &gt; **Utenti**. La finestra Utenti visualizza un elenco di utenti con i rispettivi indirizzi email per l'account attualmente selezionato. 
+2. Seleziona il nome utente o fai clic su **Gestisci utente** dal menu **Azioni**. 
+3. Quindi, a seconda dell'accesso che puoi gestire, aggiorna l'accesso per l'utente nelle sezioni Politiche di servizio o Ruoli Cloud Foundry oppure fai clic sul link per accedere alla pagina Assegna accesso infrastruttura.
 
-Review the following sections for additional information about managing each type of access.
+Consulta le seguenti sezioni per ulteriori informazioni sulla gestione di ciascun tipo di accesso.
 
-If you need to review your assigned access in an account that you have been added to, complete the following steps:
+Se devi controllare il tuo accesso assegnato in un account a cui sei stato aggiunto, completa la seguente procedura:
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**. 
-2. Select your name. 
-3. Review your assigned roles.
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** &gt; **Utenti**. 
+2. Seleziona il tuo nome. 
+3. Controlla i tuoi ruoli assegnati.
 
-If you need additional privileges, you must contact the organization manager or account owner to update the Cloud Foundry role, or contact the administrator for the service or service instance to update the service policy.
+Se hai bisogno di privilegi aggiuntivi, devi contattare il gestore dell'organizzazione o il proprietario dell'account per aggiornare il ruolo Cloud Foundry oppure devi contattare l'amministratore per il servizio o l'istanza del servizio per aggiornare la politica di servizio.
 
-For details on the CLI commands that are used to manage accounts, orgs, and spaces, see [Commands for managing accounts, orgs, and roles](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Per informazioni dettagliate sui comandi CLI utilizzati per gestire account, organizzazioni e spazi, vedi [Comandi per gestire account, organizzazioni e ruoli](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
-## Cloud Foundry access
+## Accesso Cloud Foundry
 {: #iammancfser}
 
-To manage access to account organizations and spaces, you must be the account owner, organization manager, or space manager:
+Per gestire l'accesso alle organizzazioni e agli spazi dell'account, devi essere il proprietario dell'account, il gestore organizzazione o il gestore spazio:
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**. 
-2. Select the user name that you want to edit roles for.
-3. From the **Actions** menu in the Cloud Foundry section, you can:
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** &gt; **Utenti**. 
+2. Seleziona il nome utente per il quale vuoi modificare i ruoli.
+3. Dal menu **Azioni** nella sezione Cloud Foundry, puoi:
 
-  * Remove the user from the organization
-  * Edit the organization role
-  * Edit the space role
+  * Rimuovere l'utente dall'organizzazione
+  * Modificare il ruolo organizzazione
+  * Modificare il ruolo spazio
 
-You can also add a user to another organization by clicking **Assign Organization**, if you are the manager of an organization that the user is not yet a member of. 
+Se sei il gestore di un'organizzazione di cui l'utente non è ancora membro, puoi anche aggiungere un utente a un'altra organizzazione facendo clic su **Assegna organizzazione**. 
 
 
-## Identity and access enabled services
+## Servizi abilitati per l'accesso e l'identità
 {: #iammanidaccser}
 
-To manage service policies or assign new service policies for users, you must be the account access administrator or the assigned administrator for the particular service or service instance.
+Per gestire le politiche di servizio o assegnare nuove politiche di servizio per gli utenti, devi essere l'amministratore di accesso account o l'amministratore assegnato per il servizio o l'istanza del servizio particolare.
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**. 
-2. Select the user name that you want to assign service policies for.
-3. Select **Assign service policies** to create a new service policy, or from the **Actions** menu in the Service policies section, you can:
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** &gt; **Utenti**. 
+2. Seleziona il nome utente per il quale vuoi assegnare le politiche di servizio.
+3. Seleziona **Assegna politiche del servizio** per creare una nuova politica di servizio oppure, dal menu **Azioni** nella sezione Politiche di servizio, puoi:
   
-  * Edit the policy
-  * Remove the policy
+  * Modificare la politica
+  * Rimuovere la politica
 
-For more information about service policies and roles, see [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol).
+Per ulteriori informazioni sulle politiche di servizio e sui ruoli, vedi [Politiche e ruoli per la gestione di identità e accesso](/docs/iam/users_roles.html#iamusermanpol).
 
-## Infrastructure services
+## Servizi di infrastruttura
 
-To assign or update infrastructure permissions, click the **Assign Infrastructure Access** link.
+Per assegnare o aggiornare autorizzazioni dell'infrastruttura, fai clic sul link **Assegna accesso infrastruttura**.

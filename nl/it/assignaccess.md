@@ -12,45 +12,45 @@ lastupdated: "2017-05-30"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Assigning user access
+# Assegnazione dell'accesso utente
 {: #assignaccess}
 
-You assign access for users as you invite them, assigning Cloud Foundry roles, policies, and infrastructure permissions. Depending on the access options that you are authorized to manage, you can invite and provide access for users across the account, organization, space, and service instances. The following sections describe the three types of access that can be assigned to an invited user.
+Assegni l'accesso per gli utenti nel momento in cui li inviti, assegnando autorizzazioni all'infrastruttura, politiche e ruoli Cloud Foundry. A seconda delle opzioni di accesso che sei autorizzato a gestire, puoi invitare e fornire l'accesso agli utenti tra le istanze di servizio, spazio, organizzazione e account. Le seguenti sezioni descrivono i tre tipi di accesso che possono essere assegnati a un utente invitato.
 {:shortdesc}
 
-## Identity and access enabled services
+## Servizi abilitati per l'accesso e l'identità
 
-You can assign a single service policy when you invite a new user. Once the user has accepted the invitation, you can add additional service policies.
+Quando inviti un nuovo utente, puoi assegnare una singola politica di servizio. Una volta che l'utente ha accettato l'invito, puoi aggiungere ulteriori politiche.
 
-1. From the **Invite users** screen, expand the **Identity and Access enabled services** section.
-2. Select a service.
-3. Select **All current regions** or a specific region.
-4. Select **All current service instances** or select a specific service instance.
-5. Select a role to define the scope of access for the policy.
-6. Optional: Select **Add role** to specify an additional role for the policy.
+1. Dalla schermata **Invita utenti**, espandi la sezione **Servizi abilitati per l'accesso e l'identità**.
+2. Seleziona un servizio.
+3. Seleziona **Tutte le regioni correnti** o una regione specifica.
+4. Seleziona **Tutte le istanze del servizio correnti** o una specifica istanza del servizio.
+5. Seleziona un ruolo per definire l'ambito di accesso per la politica.
+6. Facoltativo: seleziona **Aggiungi ruolo** per specificare un ruolo aggiuntivo per la politica.
 
-See [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol) for more specific information about the roles when setting service policies.
+Consulta [Politiche e ruoli per la gestione di identità e accesso](/docs/iam/users_roles.html#iamusermanpol) per informazioni più specifiche sui ruoli quando si impostano le politiche di servizio.
 
-## Cloud Foundry access
+## Accesso Cloud Foundry
 
-When you invite new users, you can choose to add the user to an organization in the account. If you add the user to an organization, they are granted the auditor organization role by default. You can update this role later to billing manager, organization manager, or no organization role after the user accepts the invitation. In addition, you can choose to give the invited user access to any or all of the spaces in the selected organization.
+Quando inviti un nuovo utente, puoi scegliere di aggiungerlo a un'organizzazione nell'account. Se aggiungi l'utente a un'organizzazione, per impostazione predefinita gli viene concesso il ruolo dell'organizzazione di revisore. Dopo che l'utente ha accettato l'invito, puoi in un secondo momento aggiornare questo ruolo a gestore fatturazione, gestore organizzazione o nessun ruolo dell'organizzazione. Puoi inoltre scegliere di dare all'utente invitato l'accesso a qualsiasi spazio (o anche a tutti) nell'organizzazione selezionata.
 
-1. From the **Invite users** screen, expand the **Cloud Foundry access** section.
-2. Select an organization to add the user to.
-3. Select **All current regions** or a specific region.
-4. Select **All current spaces** or a specific space.
-5. Select a space role to define the level of access to the selected spaces.
-6. Optional: Select **Add role** to specify an additional role.
+1. Dalla schermata **Invita utenti**, espandi la sezione **Accesso Cloud Foundry**.
+2. Seleziona un'organizzazione a cui aggiungere l'utente.
+3. Seleziona **Tutte le regioni correnti** o una regione specifica.
+4. Seleziona **Tutti gli spazi correnti** o uno specifico spazio.
+5. Seleziona un ruolo spazio per definire il livello di accesso agli spazi selezionati.
+6. Facoltativo: seleziona **Aggiungi ruolo** per specificare un ruolo aggiuntivo.
 
-See [Cloud Foundry roles](/docs/iam/users_roles.html#cfroles) for more specific information about these roles.
+Consulta [Ruoli Cloud Foundry](/docs/iam/users_roles.html#cfroles) per informazioni più specifiche su questi ruoli.
 
-**Note**: You can add a Cloud Foundry role using the [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+**Nota**: puoi aggiungere un ruolo Cloud Foundry utilizzando il comando CLI[bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) ma per assegnare altro accesso o altre autorizzazioni è necessario utilizzare l'interfaccia utente.
 
-## Infrastructure access
+## Accesso infrastruttura
 
-The actual permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions and what actions the user can perform with each, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
+Le autorizzazioni effettive assegnate vengono automaticamente limitate al sottoinsieme delle autorizzazioni di cui disponi. Per ulteriori informazioni sulle autorizzazioni e sulle azioni che l'utente può eseguire con ognuna di esse, vedi [Autorizzazioni dell'infrastruttura](/docs/iam/users_roles.html#infrapermissions).
 
-1. From the **Invite users** screen, expand the **Infrastructure access** section. 
-2. Select a permission to define the scope of access.
+1. Dalla schermata **Invita utenti**, espandi la sezione **Accesso infrastruttura**. 
+2. Seleziona un'autorizzazione per definire l'ambito di accesso.
 
-For information about configuring access for users after they have been added to your account, see [Managing users and access](/docs/iam/iamusermanage.html).
+Per informazioni sulla configurazione dell'accesso per gli utenti dopo che sono stati aggiunti al tuo account, vedi [Gestione di utenti e accesso](/docs/iam/iamusermanage.html).
