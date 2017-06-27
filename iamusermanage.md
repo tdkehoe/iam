@@ -35,7 +35,7 @@ If you need to review your assigned access in an account that you have been adde
 
 If you need additional privileges, you must contact the organization manager or account owner to update the Cloud Foundry role, or contact the administrator for the service or service instance to update the service policy.
 
-For details on the CLI commands that are used to manage accounts, orgs, and spaces, see [Commands for managing accounts, orgs, and roles](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+For details on the CLI commands that are used to manage accounts, orgs, and spaces, see [Commands for managing accounts, orgs, and roles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Cloud Foundry access
 {: #iammancfser}
