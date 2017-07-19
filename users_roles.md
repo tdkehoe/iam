@@ -3,8 +3,8 @@
 copyright:
 
   years: 2015, 2016
-  
-lastupdated: "2017-06-20"
+
+lastupdated: "2017-07-19"
 
 ---
 
@@ -16,9 +16,7 @@ lastupdated: "2017-06-20"
 # User roles and permissions
 {: #userroles}
 
-<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
-
-You can manage users across the {{site.data.keyword.Bluemix_notm}} Platform and Infrastructure services from the **Users** page for your account. To access the Users page, from the {{site.data.keyword.Bluemix_notm}} menu, click **Manage** &gt; **Account** &gt; **Users**. Account owners perform all operations on organizations and spaces, including managing users and their assigned roles. Organization managers and space managers also have access to manage roles. 
+You can manage users across the {{site.data.keyword.Bluemix_notm}} Platform and Infrastructure services from the **Users** page for your account. To access the Users page, from the {{site.data.keyword.Bluemix_notm}} menu, click **Manage** &gt; **Account** &gt; **Users**. Account owners perform all operations on organizations and spaces, including managing users and their assigned roles. Organization managers and space managers also have access to manage roles.
 {:shortdesc}
 
 If you are a user added to another person's account, and you want to view your assigned roles and permissions, go to **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**, and click on your name.
@@ -45,7 +43,7 @@ Cloud Foundry roles include the access permissions for organizations and spaces 
 |-------------------|-------------|
 |Manager | Organization managers can create, view, edit, or delete spaces within the organization, view the organization's usage and quota, invite users to the organization, manage who has access to the organization and their roles in the organization, and manage custom domains for the organization. |
 |Billing manager | Billing managers can view runtime and service usage information for the organization on the Usage Dashboard page.  |
-|Auditor | Organization auditors can view application and service content in the organization. Auditors can also view the users in the organization and their assigned roles, and the quota for the organization. All users are given the auditor role by default upon invite. You can update this role to manager or billing manager after the user accepts the invitation. |
+|Auditor | Organization auditors can view application and service content in the organization. Auditors can also view the users in the organization and their assigned roles, and the quota for the organization. |
 {:caption="Table 2. Organization roles and permissions" caption-side="top"}
 
 The following roles can be assigned at the space level:
@@ -85,12 +83,10 @@ Roles are a collection of actions; the actions that are mapped to these roles ar
 
 In addition to the descriptions of the roles provided in the console, the following table provides examples of some of the tasks that users assigned each role might be able to do for the IBM Container service.  
 
-**Note**: The operator role is not available for the IBM Container service at this time. The following example is included for informational purposes only.
-
 | Role | Description of actions | Example actions|
 |:-----------------|:-----------------|:-----------------|
 | Viewer | Performs actions that do not change state; read only actions | <ul><li>List clusters</li><li>View details for a cluster</li></ul>|
-| Editor | Performs actions that modify the state and create or delete sub-resources |<ul><li>Add or remove worker nodes</li><li>Reboot or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
+| Editor | Performs actions that modify the state and create or delete sub-resources |<ul><li>Bind a service to a cluster</li><li>Create a webhook</li></ul> |
 | Operator | Performs actions required to configure and operate resources. | <ul><li>Add or remove worker nodes</li><li>Reboot or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
 | Administrator | Performs all actions, including the ability to manage access control |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer, editor, and operator can perform</li></ul>|
 {: caption="Table 5. Example user roles and actions" caption-side="top"}
@@ -99,7 +95,7 @@ In addition to the descriptions of the roles provided in the console, the follow
 ## Infrastructure permissions
 {: #infrapermissions}
 
-You can set the following permissions when you invite a user: 
+You can set the following permissions when you invite a user:
 
 | Infrastructure permission | Description of actions |
 |---------------------------|------------------------|
