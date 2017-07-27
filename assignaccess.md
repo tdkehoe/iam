@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-26"
 
 ---
 
@@ -33,24 +33,26 @@ See [Identity and access management policies and roles](/docs/iam/users_roles.ht
 
 ## Cloud Foundry access
 
-When you invite new users, you can choose to add the user to an organization in the account. If you add the user to an organization, they are granted the auditor organization role by default. You can update this role later to billing manager, organization manager, or no organization role after the user accepts the invitation. In addition, you can choose to give the invited user access to any or all of the spaces in the selected organization.
+When you invite new users, you can choose to add the user to an organization in the account. If you add the user to an organization, you can assign the user an organization role. Then, you choose to give the invited user access to any or all of the spaces in the selected organization with an assigned space role.
 
 1. From the **Invite users** screen, expand the **Cloud Foundry access** section.
 2. Select an organization to add the user to.
-3. Select **All current regions** or a specific region.
-4. Select **All current spaces** or a specific space.
-5. Select a space role to define the level of access to the selected spaces.
-6. Optional: Select **Add role** to specify an additional role.
+3. Select an organization role to define the level of access to the selected organization.
+4. Optional: Select **Add role** to specify an additional role.
+5. Select **All current regions** or a specific region.
+6. Select **All current spaces** or a specific space.
+7. Select a space role to define the level of access to the selected spaces.
+8. Optional: Select **Add role** to specify an additional role.
 
 See [Cloud Foundry roles](/docs/iam/users_roles.html#cfroles) for more specific information about these roles.
 
-**Note**: You can add a Cloud Foundry role using the [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+**Note**: You can add a Cloud Foundry role using the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
 
 ## Infrastructure access
 
 The actual permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions and what actions the user can perform with each, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
 
-1. From the **Invite users** screen, expand the **Infrastructure access** section. 
+1. From the **Invite users** screen, expand the **Infrastructure access** section.
 2. Select a permission to define the scope of access.
 
 For information about configuring access for users after they have been added to your account, see [Managing users and access](/docs/iam/iamusermanage.html).
