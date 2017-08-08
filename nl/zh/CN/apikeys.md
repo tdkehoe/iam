@@ -15,7 +15,7 @@ lastupdated: "2017-05-30"
 # 管理 API 密钥
 {: #manapikey}
 
-应用程序编程接口密钥（API 密钥）是由调用应用程序编程接口 (API) 的计算机程序传入的代码，用于确定调用程序、其开发者或其 Web 站点用户。API 密钥用于跟踪和控制 API 的使用情况，例如阻止恶意使用或滥用 API（可能如服务方面所定义）。API 密钥通常充当进行认证的唯一标识和密码提示令牌，并且一般有一组访问权特定于与其关联的用户。API 密钥可以基于通用唯一标识 (UUID) 系统来确保它们对每个用户唯一。
+应用程序编程接口密钥（API 密钥）是由调用应用程序编程接口 (API) 的计算机程序传入的代码，用于确定调用程序、其开发者或其 Web 站点用户。API 密钥用于跟踪和控制 API 的使用情况，例如阻止恶意使用或滥用 API（可能如服务方面所定义）。API 密钥经常充当进行认证的唯一标识和密码令牌，而且通常有一组特定于其关联用户的访问权。API 密钥可以基于通用唯一标识 (UUID) 系统来确保它们对每个用户唯一。
 
 作为 {{site.data.keyword.Bluemix_notm}} 用户，您可能希望在启用程序或脚本时使用 API 密钥，而不将密码分发到脚本。使用 API 密钥的优点是用户或组织可以针对不同的程序创建多个 API 密钥，并且如果 API 密钥泄露，可以将其单独删除，而不影响其他 API 密钥，甚至不会影响到用户。此外，作为[联合用户](/docs/admin/adminpublic.html#federatedid)，您可以使用 API 密钥，通过 `BLUEMIX_API_KEY` 环境变量来登录。有关使用 API 密钥登录的更多信息，请参阅文档中的 [{{site.data.keyword.Bluemix_notm}} CLI `bluemix login` 命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login)和 [cf CLI `cf login` 命令](/docs/cli/reference/cfcommands/index.html#cf_login)。
 

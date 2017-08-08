@@ -21,11 +21,11 @@ Según las opciones de acceso que esté autorizado a gestionar, puede ver y gest
 
 Complete los siguientes pasos para gestionar los usuarios de su cuenta:
 
-1. Desde la barra de menús, pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. La ventana Usuarios muestra una lista de los usuarios con sus direcciones de correo electrónico de las cuentas actualmente seleccionadas.  
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. La ventana Usuarios muestra una lista de los usuarios con sus direcciones de correo electrónico de las cuentas actualmente seleccionadas. 
 2. Seleccione el nombre de usuario o pulse **Gestionar usuario** desde el menú **Acciones**. 
 3. A continuación, dependiendo de los accesos que pueda gestionar, actualice el acceso para el usuario en las secciones de roles de Cloud Foundry o políticas de servicios, o pulse el enlace para acceder a la página Asignación de acceso de infraestructura.
 
-Revise las siguientes secciones para obtener información adicional sobre la gestión de cada tipo de acceso. 
+Revise las siguientes secciones para obtener información adicional sobre la gestión de cada tipo de acceso.
 
 Si necesita revisar su acceso asignado en una cuenta a la que ha sido añadido, complete los siguientes pasos:
 
@@ -33,9 +33,9 @@ Si necesita revisar su acceso asignado en una cuenta a la que ha sido añadido, 
 2. Seleccione su nombre. 
 3. Revise los roles que tiene asignados.
 
-Si necesita privilegios adicionales, debe ponerse en contacto con el gestor de la organización o el propietario de la cuenta para actualizar el rol de Cloud Foundry, o ponerse en contacto con el administrador del servicio o la instancia de servicio para actualizar la política de servicio. 
+Si necesita privilegios adicionales, debe ponerse en contacto con el gestor de la organización o el propietario de la cuenta para actualizar el rol de Cloud Foundry, o ponerse en contacto con el administrador del servicio o la instancia de servicio para actualizar la política de servicio.
 
-Para obtener más información sobre los mandatos de la interfaz de línea de mandatos que se utilizan para gestionar cuentas, organizaciones y espacios, consulte [Mandatos para la gestión de cuentas, organizaciones y roles](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).   
+Para obtener más información sobre los mandatos de la interfaz de línea de mandatos que se utilizan para gestionar cuentas, organizaciones y espacios, consulte [Mandatos para la gestión de cuentas, organizaciones y roles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Acceso de Cloud Foundry
 {: #iammancfser}
@@ -69,4 +69,4 @@ Para obtener información sobre los roles y las políticas de servicio, consulte
 
 ## Servicios de infraestructura
 
-Pulse el enlace **Asignar acceso a la infraestructura** para asignar o actualizar permisos de infraestructura. 
+Pulse el enlace **Asignar acceso a la infraestructura** para asignar o actualizar permisos de infraestructura.

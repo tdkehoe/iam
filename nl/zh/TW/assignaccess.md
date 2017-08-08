@@ -33,7 +33,7 @@ lastupdated: "2017-05-30"
 
 ## Cloud Foundry 存取
 
-當您邀請新的使用者時，可以選擇將使用者新增至帳戶中的組織。如果您將使用者新增至組織，他們預設都會獲授與審核員組織角色。在使用者接受邀請之後，您稍後可以將此角色更新為帳單管理員、組織管理員或無組織角色。此外，您可以選擇將所邀請的使用者存取權授與所選取組織中的任何或所有空間。
+當您邀請新的使用者時，可以選擇將使用者新增至帳戶中的組織。如果您將使用者新增至組織，依預設會授與審核員組織角色給他們。在使用者接受邀請之後，您稍後可以將此角色更新為帳單管理員、組織管理員或無組織角色。此外，您可以選擇授權受邀使用者存取所選取組織中的任何或所有空間。
 
 1. 從**邀請使用者**畫面中，展開 **Cloud Foundry 存取**區段。
 2. 選取要新增使用者的組織。
@@ -44,7 +44,7 @@ lastupdated: "2017-05-30"
 
 如需這些角色的特定相關資訊，請參閱 [Cloud Foundry 角色](/docs/iam/users_roles.html#cfroles)。
 
-**附註**：您可以使用 [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須使用使用者介面來指派其他存取權或許可權。
+**附註**：您可以使用 [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
 
 ## 基礎架構存取
 

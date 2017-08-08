@@ -21,7 +21,7 @@ Vous pouvez afficher et gérer les utilisateurs au niveau du compte ou de l'orga
 
 Pour gérer des utilisateurs sur votre compte, procédez comme suit :
 
-1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. La fenêtre Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut dans le compte actuellement sélectionné.  
+1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. La fenêtre Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut dans le compte actuellement sélectionné. 
 2. Sélectionnez le nom d'utilisateur ou cliquez sur **Gérer un utilisateur** dans le menu **Actions**. 
 3. Ensuite, selon l'accès que vous pouvez gérer, mettez à jour l'accès pour l'utilisateur dans les sections Règles de service ou Rôles Cloud Foundry, ou cliquez sur le lien d'accès à la page Affecter l'accès Infrastructure.
 
@@ -35,7 +35,7 @@ Si vous devez vérifier l'accès qui vous a été affecté sur un compte auquel 
 
 Si vous avez besoin d'autorisations supplémentaires, vous devez contacter le responsable de votre organisation ou le propriétaire du compte afin de mettre à jour le rôle Cloud Foundry, ou encore contacter l'administrateur du service ou de l'instance de service pour mettre à jour la règle du service.
 
-Pour plus d'informations sur les commandes CLI utilisées pour gérer les comptes, les organisations, et les espaces, voir [Commandes pour la gestion de comptes, d'organisations et de rôles](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Pour plus d'informations sur les commandes CLI utilisées pour gérer les comptes, les organisations, et les espaces, voir [Commandes pour la gestion de comptes, d'organisations et de rôles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Accès Cloud Foundry
 {: #iammancfser}

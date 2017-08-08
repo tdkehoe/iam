@@ -35,7 +35,7 @@ lastupdated: "2017-05-30"
 
 追加の特権が必要な場合は、組織の管理者またはアカウント所有者に連絡して Cloud Foundry の役割を更新してもらうか、サービスまたはサービス・インスタンスの管理者に連絡してサービス・ポリシーを更新してもらってください。
 
-アカウント、組織、およびスペースを管理するために使用される CLI コマンドの詳細については、[アカウント、組織、および役割を管理するためのコマンド](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)を参照してください。
+アカウント、組織、およびスペースを管理するために使用される CLI コマンドの詳細については、[アカウント、組織、および役割を管理するためのコマンド](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)を参照してください。
 
 ## Cloud Foundry アクセス権限
 {: #iammancfser}

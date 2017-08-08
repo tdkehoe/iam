@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2017-05-31"
+  
+lastupdated: "2017-06-20"
 
 ---
 
@@ -14,6 +15,8 @@ lastupdated: "2017-05-31"
 
 # Funções e Permissões do Usuário
 {: #userroles}
+
+<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
 
 É possível gerenciar usuários nos serviços Platform and Infrastructure do {{site.data.keyword.Bluemix_notm}} na página **Usuários** de sua conta. Para acessar a página Usuários, no menu do {{site.data.keyword.Bluemix_notm}}, clique
 em **Gerenciar** &gt; **Conta** &gt; **Usuários**. Os proprietários da conta executam todas as operações nas organizações e nos espaços, incluindo o gerenciamento de usuários e suas funções designadas. Os gerenciadores de organização e de espaço também têm acesso para gerenciar funções. 
@@ -34,7 +37,7 @@ serviço e gerenciar organizações e espaços. |
 {:caption="Tabela 1. Funções e permissões de conta" caption-side="top"}
 
 Todos os novos usuários são incluídos como um membro da conta. É possível designar funções de organização e espaço para convidados, a fim de ativar visualizações e permissões específicas no
-{{site.data.keyword.Bluemix_notm}}. Os novos usuários incluídos em uma organização, exceto em um ambiente local ou dedicado, são designados à função de organização de auditor por padrão. Para um espaço específico, é possível escolher designar o gerenciador, desenvolvedor ou função de auditor para convidados. Uma vez que seus convidados aceitam o convite e se associam ao {{site.data.keyword.Bluemix_notm}}, é possível editar suas funções na página Usuários.
+{{site.data.keyword.Bluemix_notm}}. Uma vez que seus convidados aceitam o convite e se associam ao {{site.data.keyword.Bluemix_notm}}, é possível editar suas funções na página Usuários.
 
 ## Funções do Cloud Foundry
 {: #cfroles}
@@ -45,7 +48,7 @@ As funções do Cloud Foundry incluem as permissões de acesso para organizaçõ
 |-------------------|-------------|
 |Gerente | Os gerenciadores de organização podem criar, visualizar, editar ou excluir espaços dentro da organização, visualizar o uso e cota da organização, convidar os usuários para a organização, gerenciar quem tem acesso à organização e suas funções na organização, além de gerenciar domínios customizados para a organização. |
 |Gerenciador de faturamento | Gerenciadores de faturamento podem visualizar informações de uso de tempo de execução e serviço para a organização na página de Painel de uso.  |
-|Auditor | Auditores da organização podem visualizar o conteúdo do aplicativo e do serviço na organização. Os auditores também podem visualizar os usuários na organização e suas funções designadas, além da cota da organização. Essa função é designada a todos os convidados, exceto em ambientes locais ou dedicados, por padrão. |
+|Auditor | Auditores da organização podem visualizar o conteúdo do aplicativo e do serviço na organização. Os auditores também podem visualizar os usuários na organização e suas funções designadas, além da cota da organização. Todos os usuários recebem a função de auditor por padrão no convite. É possível atualizar essa função para gerenciador ou gerenciador de faturamento depois que o usuário aceita o convite. |
 {:caption="Tabela 2. Funções e permissões de organização" caption-side="top"}
 
 As funções a seguir podem ser designadas no nível de espaço:
@@ -66,7 +69,7 @@ espaço. |
 ## Políticas e funções de Identidade e gerenciamento de acesso
 {: #iamusermanpol}
 
-Os proprietários da conta são designados automaticamente à função de administrador de acesso da conta para Identidade e gerenciamento de acesso que permite designar e gerenciar políticas de serviço. Esse tipo de controle de acesso permite a designação de políticas por serviço ou instância de serviço para permitir níveis de acesso para gerenciar recursos e usuários dentro do contexto designado.
+Os proprietários da conta são designados automaticamente à função de administrador de acesso da conta para Identidade e gerenciamento de acesso, que permite designar e gerenciar políticas de serviço. Esse tipo de controle de acesso permite a designação de políticas por serviço ou instância de serviço para permitir níveis de acesso para gerenciar recursos e usuários dentro do contexto designado.
 
 ### Políticas de serviço
 
@@ -74,14 +77,13 @@ Uma política designa a um usuário uma ou
 mais funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto
 de recursos aplicável. Ao designar uma política a um usuário, primeiro você especifica o serviço. Em seguida, é possível selecionar uma função ou funções para designar. Opções de configuração adicionais poderão estar disponíveis, dependendo do serviço selecionado.
 
-Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra
-as tarefas de gerenciamento de política e a função necessária para cada uma.
+Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra tarefas de gerenciamento de política e a função necessária para cada uma.
 
 | Ações | Atribuição necessária |
 |----------|---------|
 | Criar políticas em uma conta para todos os serviços e instâncias | Administrador de acesso à conta |
 | Criar uma política em um serviço em uma conta | Administrador de acesso à conta ou administrador no serviço na conta |
-| Criar uma instância de serviço | O administrador ou editor de acesso à conta ou o administrador ou editor no serviço na conta |
+| Criar uma instância de serviço | Administrador de acesso à conta ou o administrador ou editor no serviço na conta |
 | Criar uma política em uma instância de serviço | Administrador de acesso à conta, administrador no serviço na conta ou administrador na instância de serviço |
 {: caption="Tabela 4. Tarefas administrativas para gerenciar políticas de serviços ativadas para Identidade e acesso" caption-side="top"}
 
@@ -91,22 +93,23 @@ as tarefas de gerenciamento de política e a função necessária para cada uma.
 Funções são uma coleção de ações; as ações que são mapeadas para essas funções são específicas de
 serviço. Consulte a documentação do serviço selecionado para obter detalhes adicionais sobre os tipos de ações que cada função permite.
 
-Além das descrições das funções fornecidas no console, a tabela a seguir fornece exemplos de algumas das tarefas que os usuários designados a cada função podem executar, dependendo do serviço selecionado. 
+Além das descrições das funções fornecidas no console, a tabela a seguir fornece exemplos de algumas das tarefas que os usuários designados a cada função podem ser capazes de executar para o serviço IBM Container.  
 
+**Nota**: a função de operador não está disponível para o serviço IBM Container neste momento. O exemplo a seguir é incluído para propósitos informacionais somente.
 
 | Função | Descrição das ações | Exemplo de ações|
 |:-----------------|:-----------------|:-----------------|
-| Viewer | Executa ações que não mudam o estado; ações somente leitura | <ul><li>Listar dispositivos</li><li>Ler objeto de armazenamento</li><li>Executar consultas</li><li>Executar procuras</li></ul>|
-| Aplicativos | Executa ações que modificam o estado e criam ou excluem sub-recursos |<ul><li>Criar ou excluir
-máquinas virtuais</li><li>Anexar armazenamento</li><li>Reinicializar</li><li>Iniciar ou parar</li><li>Renomear</li></ul> |
-| Administrator | Executa todas as ações, incluindo a capacidade de gerenciar o controle de acesso |<ul><li>Convidar usuários</li><li>Criar ou excluir
-máquinas virtuais</li><li>Atualizar políticas de acesso de usuário</li><li>Listar dispositivos</li><li>Anexar armazenamento</li><li>Reinicializar</li><li>Iniciar ou parar</li><li>Renomear</li><li>Fazer backup e restaurar</li></ul>|
-{: caption="Tabela 5. Tarefas administrativas para gerenciar políticas de serviços ativados para Identidade e acesso" caption-side="top"}
+| Viewer | Executa ações que não mudam o estado; ações somente leitura | <ul><li>Listar clusters</li><li>Visualizar detalhes para um cluster</li></ul>|
+| Aplicativos | Executa ações que modificam o estado e criam ou excluem sub-recursos |<ul><li>Incluir ou remover nós do trabalhador</li><li>Reinicializar ou recarregar nós do trabalhador</li><li>Ligar um serviço a um cluster</li></ul> |
+| Operador | Executa ações necessárias para configurar e operar recursos. | <ul><li>Incluir ou remover nós do trabalhador</li><li>Reinicializar ou recarregar nós do trabalhador</li><li>Ligar um serviço a um cluster</li></ul> |
+| Administrator | Executa todas as ações, incluindo a capacidade de gerenciar o controle de acesso |<ul><li>Remover um Cluster</li><li>Crie um cluster</li><li>Atualizar políticas de acesso de usuário</li><li>Todas as ações que um visualizador, um editor e um operador podem executar</li></ul>|
+{: caption="Tabela 5. Exemplo de funções e ações do usuário" caption-side="top"}
+
 
 ## Permissões de infraestrutura
 {: #infrapermissions}
 
-Se você tem acesso para designar funções de infraestrutura, é possível configurar as permissões a seguir ao convidar um usuário: 
+É possível configurar as permissões a seguir ao convidar um usuário: 
 
 | Permissão de infraestrutura | Descrição das ações |
 |---------------------------|------------------------|

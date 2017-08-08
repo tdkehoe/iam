@@ -35,7 +35,7 @@ Se devi controllare il tuo accesso assegnato in un account a cui sei stato aggiu
 
 Se hai bisogno di privilegi aggiuntivi, devi contattare il gestore dell'organizzazione o il proprietario dell'account per aggiornare il ruolo Cloud Foundry oppure devi contattare l'amministratore per il servizio o l'istanza del servizio per aggiornare la politica di servizio.
 
-Per informazioni dettagliate sui comandi CLI utilizzati per gestire account, organizzazioni e spazi, vedi [Comandi per gestire account, organizzazioni e ruoli](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Per informazioni dettagliate sui comandi CLI utilizzati per gestire account, organizzazioni e spazi, vedi [Comandi per gestire account, organizzazioni e ruoli](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Accesso Cloud Foundry
 {: #iammancfser}

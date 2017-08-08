@@ -21,7 +21,7 @@ Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, kö
 
 Um Benutzer in Ihrem Konto zu verwalten, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Das Fenster 'Benutzer' zeigt eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen für das aktuell ausgewählte Konto an.  
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Das Fenster 'Benutzer' zeigt eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen für das aktuell ausgewählte Konto an. 
 2. Wählen Sie den Benutzernamen aus oder klicken Sie im Menü **Aktionen** auf **Benutzer verwalten**. 
 3. Je nachdem, welchen Zugriff Sie verwalten, aktualisieren Sie dann den Zugriff für den Benutzer in den Servicerichtlinien oder in den Abschnitten der Cloud Foundry-Rollen oder klicken Sie auf den Link für den Zugriff auf die Seite 'Infrastructure-Zugriff zuweisen'.
 
@@ -35,7 +35,7 @@ Wenn Sie Ihren zugewiesenen Zugriff in einem Konto überprüfen müssen, zu dem 
 
 Wenn Sie zusätzliche Berechtigungen benötigen, müssen Sie sich an den Organisationsmanager oder den Kontoeigner wenden, um die Cloud Foundry-Rolle zu aktualisieren, oder an den Administrator für den Service oder die Serviceinstanz, der die Servicerichtlinie aktualisiert.
 
-Weitere Details zu den CLI-Befehlen, die zum Verwalten von Accounts, Organisationen und Bereichen verwendet werden, finden Sie unter [Befehle für die Verwaltung von Konten, Organisationen und Rollen](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Weitere Details zu den CLI-Befehlen, die zum Verwalten von Accounts, Organisationen und Bereichen verwendet werden, finden Sie unter [Befehle für die Verwaltung von Konten, Organisationen und Rollen](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Cloud Foundry-Zugriff
 {: #iammancfser}

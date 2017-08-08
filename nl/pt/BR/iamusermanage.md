@@ -36,7 +36,7 @@ Se for necessário revisar seu acesso designado em uma conta à qual tenha sido 
 
 Caso precise de privilégios adicionais, deve-se entrar em contato com o gerenciador de organização ou proprietário da conta para atualizar a função Cloud Foundry ou entrar em contato com o administrador para o serviço ou instância de serviço para atualizar a política de serviço.
 
-Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 
 ## Acesso ao Cloud Foundry
 {: #iammancfser}

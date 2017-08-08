@@ -35,7 +35,7 @@ lastupdated: "2017-05-30"
 
 如果需要其他特权，您必须联系组织管理员或帐户所有者来更新 Cloud Foundry 角色，或者联系服务或服务实例的管理员来更新服务策略。
 
-有关用于管理帐户、组织和空间的 CLI 命令的详细信息，请参阅[用于管理帐户、组织和角色的命令](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)。
+有关用于管理帐户、组织和空间的 CLI 命令的详细信息，请参阅[用于管理帐户、组织和角色的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)。
 
 ## Cloud Foundry 访问权
 {: #iammancfser}

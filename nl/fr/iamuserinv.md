@@ -20,7 +20,7 @@ Vous pouvez depuis un emplacement unique inviter des utilisateurs dans des servi
 
 Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre compte, procédez comme suit :
 
-1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **Utilisateurs**. La fenêtre Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut actuel dans le compte actuellement sélectionné.  
+1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **Utilisateurs**. La fenêtre Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut actuel dans le compte actuellement sélectionné. 
 2. Cliquez sur **Inviter des utilisateurs**. 
 3. Spécifiez l'adresse électronique ou l'IBMid de l'utilisateur. Si vous octroyez le même accès à plusieurs utilisateurs, vous pouvez sélectionner **Inviter plusieurs utilisateurs** et entrer une liste d'utilisateurs à inviter. Séparez les entrées d'ID utilisateur par des virgules, des espaces ou des retours à la ligne.
 4. Ajoutez une ou plusieurs options d'accès que vous gérez. Vous devez affecter au moins une option d'accès et configurer les paramètres pour l'utilisateur dans chaque option d'accès que vous lui affectez. Pour les options d'accès supplémentaires que vous n'ajoutez ou ne configurez pas, la valeur par défaut *Aucun accès* lui est affectée. L'une des options suivantes ou toutes les options d'accès suivantes peuvent s'afficher, selon celles que vous êtes autorisé à gérer : **Services avec l'offre Identity and Access activée**, **Accès Cloud Foundry**, **Accès Infrastructure**. Voir [Octroi d'un accès utilisateur](/docs/iam/assignaccess.html) pour plus d'informations.

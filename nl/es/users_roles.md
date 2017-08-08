@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2017-05-31"
+  
+lastupdated: "2017-06-20"
 
 ---
 
@@ -14,6 +15,8 @@ lastupdated: "2017-05-31"
 
 # Permisos y roles de usuario
 {: #userroles}
+
+<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
 
 Gestione usuarios en los servicios de infraestructura y plataforma {{site.data.keyword.Bluemix_notm}} desde la página **Usuarios** de su cuenta. Para acceder a la página Usuarios, en el menú {{site.data.keyword.Bluemix_notm}} pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. Los propietarios de cuentas llevan a cabo todas las operaciones en las organizaciones y los espacios incluida la gestión de usuarios y sus roles asignados. Los gestores de espacios y organizaciones también tienen acceso para gestionar roles. 
 {:shortdesc}
@@ -28,10 +31,10 @@ En el nivel de cuenta, hay dos roles que permiten acceder a distintas caracterí
 | Rol de cuenta | Permisos |
 |----------------|---------|
 |Propietario | Un propietario para la cuenta tiene acceso a su perfil, usuarios, información de facturación, notificaciones de gasto y panel de control de uso. En la página de Usuarios, el propietario puede invitar a nuevos usuarios y ajustar roles. El propietario también puede añadir créditos promocionales, establecer o cambiar el límite de facturación, establecer acceso de servicios y gestionar organizaciones y espacios. |
-|Miembro | Un miembro tiene acceso a su perfil, la página Usuarios visualizando los usuarios activos en la cuenta y cargos en la cuenta así como los límites de facturación en la cabecera de {{site.data.keyword.Bluemix_notm}}.   |
+|Miembro | Un miembro tiene acceso a su perfil, la página Usuarios visualizando los usuarios activos en la cuenta y cargos en la cuenta así como los límites de facturación en la cabecera de {{site.data.keyword.Bluemix_notm}}.  |
 {:caption="Tabla 1. Permisos y roles de cuenta" caption-side="top"}
 
-Todos los nuevos usuarios se añaden como un miembro de la cuenta. Puede asignar roles de organización y espacio a invitados para habilitar vistas y permisos específicos en {{site.data.keyword.Bluemix_notm}}. De forma predeterminada, a los nuevos usuarios que se añaden a una organización, excepto en un entorno local o dedicado, se les asigna el rol de organización de auditor. Para un espacio específico, puede elegir asignar el rol de gestor, desarrollador o auditor a los invitados. Una vez que los invitados aceptan la invitación y se unen a {{site.data.keyword.Bluemix_notm}}, puede editar sus roles en la página de Usuarios. 
+Todos los nuevos usuarios se añaden como un miembro de la cuenta. Puede asignar roles de organización y espacio a invitados para habilitar vistas y permisos específicos en {{site.data.keyword.Bluemix_notm}}. Una vez que los invitados aceptan la invitación y se unen a {{site.data.keyword.Bluemix_notm}}, puede editar sus roles en la página de Usuarios.
 
 ## Roles de Cloud Foundry
 {: #cfroles}
@@ -42,7 +45,7 @@ Los roles de Cloud Foundry incluyen permisos de acceso para las organizaciones y
 |-------------------|-------------|
 |Gestor | Los gestores de organización pueden crear, ver, editar o suprimir espacios dentro de la organización, ver la cuota y el uso de la organización, invitar a usuarios a la organización, gestionar quién tiene acceso a la organización y sus roles en la organización, y gestionar dominios personalizados para la organización. |
 |Gestor de facturación | Los gestores de facturación pueden ver la información de uso de tiempo de ejecución y servicio para la organización de la página Panel de control de uso.  |
-|Auditor | Los auditores de organización pueden ver el contenido de aplicación y servicio en la organización. Los auditores también pueden ver los usuarios de la organización y sus roles asignados, y la cuota para la organización. Este rol se asigna a todos los invitados de forma predeterminada, excepto en entornos locales o dedicados. |
+|Auditor | Los auditores de organización pueden ver el contenido de aplicación y servicio en la organización. Los auditores también pueden ver los usuarios de la organización y sus roles asignados, y la cuota para la organización. Se otorga a todos los usuarios el rol de auditor de forma predeterminada una vez invitados. Puede actualizar este rol a gestor o gestor de facturación después de que el usuario acepte la invitación. |
 {:caption="Tabla 2. Permisos y roles de organización" caption-side="top"}
 
 Los siguientes roles se pueden asignar a nivel de espacio:
@@ -65,13 +68,13 @@ A los propietarios de las cuentas se les asigna de forma automática el rol de a
 
 Una política asigna a un usuario uno o varios roles sobre un conjunto de recursos utilizando una combinación de atributos para definir el conjunto de recursos aplicable. Cuando se asigna una política a un usuario, primero hay que especificar el servicio. A continuación, se debe seleccionar el rol o los roles que desea asignar. En función del servicio que seleccione, podrían haber disponibles opciones de configuración adicionales.
 
-Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla siguiente se muestran las tareas de gestión de políticas y el rol necesario para cada una de ellos.
+Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla siguiente se muestran las tareas de gestión de políticas y el rol necesario para cada una.
 
 | Acción | Rol necesario |
 |----------|---------|
 | Crear políticas en una cuenta para todos los servicios e instancias | Administrador de acceso de cuenta |
 | Crear una política en un servicio de una cuenta | Administrador de acceso de cuenta o administrador en el servicio en la cuenta |
-| Crear una instancia de servicio | Editor o administrador de acceso de cuenta o editor o administrador en el servicio en la cuenta  |
+| Crear una instancia de servicio | Administrador de acceso de cuenta o el administrador o editor en el servicio en la cuenta |
 | Crear una política en una instancia de servicio | Administrador de acceso de cuenta o administrador en el servicio en la cuenta o administrador en la instancia de servicio |
 {: caption="Tabla 4. Tareas administrativas para gestionar políticas de servicios habilitados para identidad y acceso" caption-side="top"}
 
@@ -80,20 +83,23 @@ Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla sigui
 
 Los roles son una colección de acciones; las acciones que están correlacionadas con estos roles son específicas del servicio. Consulte la documentación del servicio seleccionado para obtener más información sobre los tipos de acciones que permite cada rol.
 
-Además de las descripciones de los roles que se proporcionan en la consola, la siguiente tabla proporciona ejemplo de algunas de las tareas que los usuarios asignados a cada rol podría hacer dependiendo del servicio seleccionado. 
+Además de las descripciones de los roles que se proporcionan en la consola, la siguiente tabla proporciona ejemplo de algunas de las tareas que los usuarios asignados a cada rol podría hacer para el servicio de IBM Container.  
 
+**Nota**: El rol de operador no está disponible para el servicio de IBM Container en este momento. El siguiente ejemplo se incluye sólo con finalidades informativas.
 
 | Rol | Descripción de acciones | Acciones de ejemplo|
 |:-----------------|:-----------------|:-----------------|
-| Visor | Realiza acciones que no cambian el estado; solo acciones de lectura | <ul><li>Enumerar dispositivos</li><li>Leer objeto de almacenamiento</li><li>Ejecutar consultas</li><li>Ejecutar búsquedas</li></ul>|
-| Editor | Realiza acciones que modifican el estado y crean o suprimen subrecursos |<ul><li>Crear o suprimir máquinas virtuales</li><li>Conectar almacenamiento</li><li>Rearrancar</li><li>Iniciar o detener</li><li>Renombrar</li></ul> |
-| Administrador | Realiza todas las acciones, incluida la capacidad para gestionar el control de accesos |<ul><li>Invitar a usuarios</li><li>Crear o suprimir máquinas virtuales</li><li>Actualizar políticas de acceso de usuarios</li><li>Enumerar dispositivos</li><li>Conectar almacenamiento</li><li>Rearrancar</li><li>Iniciar o detener</li><li>Renombrar</li><li>Hacer copia de seguridad y restaurar</li></ul>|
-{: caption="Tabla 5. Tareas administrativas para gestionar políticas de servicios habilitados para identidad y acceso" caption-side="top"}
+| Visor | Realiza acciones que no cambian el estado; solo acciones de lectura | <ul><li>Listar clústeres</li><li>Ver los detalles de un clúster</li></ul>|
+| Editor | Realiza acciones que modifican el estado y crean o suprimen subrecursos |<ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
+| Operador | Realiza acciones necesarias para configurar y utilizar recursos. | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
+| Administrador | Realiza todas las acciones, incluida la capacidad para gestionar el control de accesos |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
+{: caption="Tabla 5. Roles y acciones de usuario de ejemplo" caption-side="top"}
+
 
 ## Permisos de infraestructura
 {: #infrapermissions}
 
-Si tiene permiso para asignar roles de infraestructura, podría establecer los siguientes permisos al invitar a un usuario:  
+Puede establecer los siguientes permisos al invitar a un usuario: 
 
 | Permisos de infraestructura | Descripción de acciones |
 |---------------------------|------------------------|
@@ -102,4 +108,4 @@ Si tiene permiso para asignar roles de infraestructura, podría establecer los s
 |Superusuario | Los usuarios con este permiso pueden realizar todas las acciones disponibles en el sistema. |
 {:caption="Tabla 6. Permisos de infraestructura" caption-side="top"}
 
-Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación. 
+Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación.

@@ -2,8 +2,9 @@
 
 copyright:
 
-  years: 2015, 2016
-lastupdated: "2017-05-31"
+  year: 2015, 2016
+  
+lastupdated: "2017-06-20"
 
 ---
 
@@ -14,6 +15,8 @@ lastupdated: "2017-05-31"
 
 # Ruoli utente e autorizzazioni
 {: #userroles}
+
+<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
 
 Puoi gestire gli utenti attraverso i servizi della piattaforma e dell'infrastruttura {{site.data.keyword.Bluemix_notm}} dalla pagina **Utenti** relativa al tuo account. Per accedere alla pagina Utenti, dal menu {{site.data.keyword.Bluemix_notm}}, fai clic su **Gestione** &gt; **Account** &gt; **Utenti**. I proprietari dell'account eseguono tutte le operazioni sulle organizzazioni e sugli spazi, compresa la gestione degli utenti e dei loro ruoli assegnati. I gestori dell'organizzazione e i gestori dello spazio dispongono anche dell'accesso per gestire i ruoli. 
 {:shortdesc}
@@ -31,7 +34,7 @@ A livello di account, esistono due ruoli che abilitano l'accesso a funzioni di g
 |Membro | Un membro ha accesso al suo profilo e alla pagina Utenti che visualizza gli utenti attivi nell'account, i crediti dell'account e i limiti di fatturazione nell'intestazione {{site.data.keyword.Bluemix_notm}}.  |
 {:caption="Tabella 1. Ruoli e autorizzazioni dell'account" caption-side="top"}
 
-Tutti i nuovi utenti vengono aggiunti come membri dell'account. Puoi assegnare i ruoli organizzazione e spazio agli invitati per abilitare specifiche viste e autorizzazioni in {{site.data.keyword.Bluemix_notm}}. Ai nuovi utenti aggiunti a un'organizzazione, con l'eccezione di un ambiente locale o dedicato, viene assegnato per impostazione predefinita il ruolo organizzazione di revisore. Per uno specifico spazio, puoi scegliere di assegnare il ruolo di gestore, sviluppatore o revisore agli invitati. Dopo che gli invitati hanno accettato l'invito e si sono uniti a {{site.data.keyword.Bluemix_notm}}, puoi modificarne i ruoli nella pagina Utenti.
+Tutti i nuovi utenti vengono aggiunti come membri dell'account. Puoi assegnare i ruoli organizzazione e spazio agli invitati per abilitare specifiche viste e autorizzazioni in {{site.data.keyword.Bluemix_notm}}. Dopo che gli invitati hanno accettato l'invito e si sono uniti a {{site.data.keyword.Bluemix_notm}}, puoi modificarne i ruoli nella pagina Utenti.
 
 ## Ruoli Cloud Foundry
 {: #cfroles}
@@ -42,7 +45,7 @@ I ruoli Cloud Foundry includono le autorizzazioni di accesso per le organizzazio
 |-------------------|-------------|
 |Gestore | I gestori dell'organizzazione possono creare, visualizzare, modificare o eliminare gli spazi nell'organizzazione, visualizzare l'utilizzo e la quota dell'organizzazione, invitare utenti all'organizzazione, gestire chi ha accesso all'organizzazione e i loro ruoli al suo interno e gestire i domini personalizzati per l'organizzazione. |
 |Gestore fatturazione | I gestori fatturazione possono visualizzare le informazioni sull'utilizzo di runtime e servizi per l'organizzazione nella pagina Dashboard di utilizzo.  |
-|Revisore | I revisori organizzazione possono visualizzare il contenuto di applicazioni e servizi nell'organizzazione. I revisori possono anche visualizzare gli utenti nell'organizzazione e i ruoli ad essi assegnati, nonché la quota per l'organizzazione. Questo ruolo viene assegnato a tutti gli invitati per impostazione predefinita con l'eccezione degli ambienti locale o dedicato. |
+|Revisore | I revisori organizzazione possono visualizzare il contenuto di applicazioni e servizi nell'organizzazione. I revisori possono anche visualizzare gli utenti nell'organizzazione e i ruoli ad essi assegnati, nonché la quota per l'organizzazione. Al momento dell'invito, a tutti gli utenti viene assegnato il ruolo di revisore per impostazione predefinita. Una volta che l'utente accetta l'invito, puoi aggiornare questo ruolo a gestore o gestore fatturazione. |
 {:caption="Tabella 2. Ruoli e autorizzazioni dell'organizzazione" caption-side="top"}
 
 I seguenti ruoli possono essere assegnati a livello dello spazio:
@@ -71,7 +74,7 @@ Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente t
 |----------|---------|
 | Creare politiche su un account per tutti i servizi e tutte le istanze | Amministratore di accesso account |
 | Creare una politica su un servizio in un account | Amministratore di accesso account o amministratore del servizio nell'account |
-| Creare un'istanza del servizio | Amministratore o editor di accesso account o amministratore o editor del servizio nell'account |
+| Creare un'istanza del servizio | Amministratore di accesso account o amministratore o editor del servizio nell'account|
 | Creare una politica su un'istanza del servizio | Amministratore di accesso account o amministratore del servizio nell'account o amministratore dell'istanza del servizio |
 {: caption="Tabella 4. Attività amministrative per la gestione delle politiche dei Servizi abilitati per l'accesso e l'identità" caption-side="top"}
 
@@ -80,20 +83,23 @@ Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente t
 
 I ruoli sono una raccolta di azioni; le azioni che vengono associate a questi ruoli sono specifiche per servizio. Fai riferimento alla documentazione del servizio selezionato per ulteriori dettagli su quali tipi di azioni sono consentiti da ogni ruolo.
 
-Oltre alle descrizioni dei ruoli fornite nella console, la seguente tabella fornisce gli esempi di alcune attività che gli utenti assegnati ad ogni ruolo possono eseguire a seconda del servizio selezionato. 
+In aggiunta alle descrizioni dei ruoli fornite nella console, la seguente tabella fornisce gli esempi di alcune attività che gli utenti assegnati ad ogni ruolo possono eseguire per il servizio IBM Container.  
 
+**Nota**: il ruolo operatore non è al momento disponibile per il servizio IBM Container. L'esempio che segue è incluso solo a scopo informativo.
 
 | Ruolo | Descrizione delle azioni | Azioni di esempio|
 |:-----------------|:-----------------|:-----------------|
-| Visualizzatore | Esegue le azioni che non modificano lo stato; solo le azioni in lettura | <ul><li>Elenca dispositivi</li><li>Legge l'oggetto di archiviazione</li><li>Esegue query</li><li>Esegue ricerche</li></ul>|
-| Editor | Esegue le azioni che modificano la stato e creano o eliminano le risorse secondarie |<ul><li>Crea o elimina le macchine virtuali</li><li>Collega spazio di archiviazione</li><li>Riavvia</li><li>Avvia o arresta</li><li>Rinomina</li></ul> |
-| Amministratore | Esegue tutte le azioni, inclusa la capacità di gestire il controllo dell'accesso |<ul><li>Invita utenti</li><li>Crea o elimina le macchine virtuali</li><li>Aggiorna le politiche di accesso utente</li><li>Elenca dispositivi</li><li>Collega spazio di archiviazione</li><li>Riavvia</li><li>Avvia o arresta</li><li>Rinomina</li><li>Esegue il backup e ripristina</li></ul>|
-{: caption="Tabella 5. Attività amministrative per la gestione delle politiche dei Servizi abilitati per l'accesso e l'identità" caption-side="top"}
+| Visualizzatore | Esegue le azioni che non modificano lo stato; solo le azioni in lettura | <ul><li>Elencare i cluster</li><li>Visualizzare i dettagli per un cluster</li></ul>|
+| Editor | Esegue le azioni che modificano la stato e creano o eliminano le risorse secondarie |<ul><li>Aggiungere o rimuovere i nodi di lavoro</li><li>Riavviare o ricaricare i nodi di lavoro</li><li>Eseguire il bind di un servizio a un cluster</li></ul> |
+| Operatore | Esegue le azioni richieste per configurare e gestire le risorse. | <ul><li>Aggiungere o rimuovere i nodi di lavoro</li><li>Riavviare o ricaricare i nodi di lavoro</li><li>Eseguire il bind di un servizio a un cluster</li></ul> |
+| Amministratore | Esegue tutte le azioni, inclusa la capacità di gestire il controllo dell'accesso |<ul><li>Rimuovere un cluster</li><li>Creare un cluster</li><li>Aggiorna le politiche di accesso utente</li><li>Tutte le azioni che possono essere eseguite da un visualizzatore, un operatore e un editor</li></ul>|
+{: caption="Tabella 5. Ruoli utente e azioni di esempio" caption-side="top"}
+
 
 ## Autorizzazioni dell'infrastruttura
 {: #infrapermissions}
 
-Se disponi dell'accesso per assegnare i ruoli dell'infrastruttura, puoi impostare le seguenti autorizzazioni quando inviti un utente: 
+Quando inviti un utente, puoi impostare le seguenti autorizzazioni: 
 
 | Autorizzazione infrastruttura | Descrizione delle azioni |
 |---------------------------|------------------------|

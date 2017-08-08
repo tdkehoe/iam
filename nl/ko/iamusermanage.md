@@ -35,7 +35,7 @@ lastupdated: "2017-05-30"
 
 추가 권한이 필요한 경우에는 조직 관리자 또는 계정 소유자에게 문의하여 Cloud Foundry 역할을 업데이트하거나, 서비스 또는 서비스 인스턴스의 관리자에게 문의하여 서비스 정책을 업데이트해야 합니다. 
 
-계정, 조직 및 영역을 관리하는 데 사용되는 CLI 명령의 세부사항은 [계정, 조직 및 역할 관리를 위한 명령](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)을 참조하십시오. 
+계정, 조직 및 영역을 관리하는 데 사용되는 CLI 명령의 세부사항은 [계정, 조직 및 역할 관리를 위한 명령](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)을 참조하십시오. 
 
 ## Cloud Foundry 액세스
 {: #iammancfser}
