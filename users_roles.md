@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-07-19"
+lastupdated: "2017-08-08"
 
 ---
 
@@ -81,7 +81,7 @@ You can assign and manage policies if you have the proper role. The following ta
 
 Roles are a collection of actions; the actions that are mapped to these roles are service specific. Refer to the documentation for the selected service for additional details about what types of actions each role allows.
 
-In addition to the descriptions of the roles provided in the console, the following table provides examples of some of the tasks that users assigned each role might be able to do for the IBM Container service.  
+In addition to the descriptions of the roles provided in the console, the following table provides examples of some of the tasks that users assigned each role might be able to do for the {{site.data.keyword.containershort_notm}}.  
 
 | Role | Description of actions | Example actions|
 |:-----------------|:-----------------|:-----------------|
