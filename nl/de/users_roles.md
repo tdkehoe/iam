@@ -3,8 +3,8 @@
 copyright:
 
   years: 2015, 2016
-  
-lastupdated: "2017-06-20"
+
+lastupdated: "2017-08-08"
 
 ---
 
@@ -16,9 +16,7 @@ lastupdated: "2017-06-20"
 # Benutzerrollen und Berechtigungen
 {: #userroles}
 
-<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
-
-Sie können Benutzer über die {{site.data.keyword.Bluemix_notm}}-Plattform- und {{site.data.keyword.Bluemix_notm}}-Infrastrukturservices auf der Seite **Benutzer** für Ihr Konto verwalten. Um auf die Seite 'Benutzer' zuzugreifen, klicken Sie im {{site.data.keyword.Bluemix_notm}}-Menü auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Kontoeigner führen alle Operationen für Organisationen und Bereiche aus, einschließlich der Verwaltung von Benutzern und deren zugeordneten Rollen. Organisationsmanager und Bereichsmanager verfügen auch über Zugriff zur Verwaltung von Rollen. 
+Sie können Benutzer über die {{site.data.keyword.Bluemix_notm}}-Plattform- und {{site.data.keyword.Bluemix_notm}}-Infrastrukturservices auf der Seite **Benutzer** für Ihr Konto verwalten. Um auf die Seite 'Benutzer' zuzugreifen, klicken Sie im {{site.data.keyword.Bluemix_notm}}-Menü auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Kontoeigner führen alle Operationen für Organisationen und Bereiche aus, einschließlich der Verwaltung von Benutzern und deren zugeordneten Rollen. Organisationsmanager und Bereichsmanager verfügen auch über Zugriff zur Verwaltung von Rollen.
 {:shortdesc}
 
 Wenn Sie ein Benutzer sind, der zum Konto einer anderen Person hinzugefügt wurde, und Sie Ihre zugeordneten Rollen und Berechtigungen anzeigen möchten, wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Identity & Access** &gt; **Benutzer** und klicken Sie auf Ihren Namen.
@@ -45,7 +43,7 @@ Cloud Foundry-Rollen enthalten die Zugriffsberechtigungen für Organisationen un
 |-------------------|-------------|
 |Manager | Organisationsmanager können Bereiche innerhalb der Organisation erstellen, anzeigen, bearbeiten oder löschen, die Nutzung und das Kontingent der Organisation anzeigen, Benutzer zur Organisation einladen, steuern, wer Zugriff auf die Organisation und die Rollen in der Organisation hat, und die angepassten Domänen für die Organisation verwalten. |
 |Abrechnungsmanager | Abrechnungsmanager können Informationen zur Laufzeit- und Servicenutzung für die Organisation auf der Seite 'Nutzungsdashboard' anzeigen.  |
-|Auditor | Organisationsauditoren können Anwendungs- und Serviceinhalte in der Organisation anzeigen. Auditoren können die Benutzer in der Organisation und deren zugeordnete Rollen sowie das Kontingent für die Organisation auch anzeigen. Alle Benutzer erhalten bei der Einladung standardmäßig die Rolle 'Auditor'. Sie können diese Rolle in 'Manager' oder 'Abrechnungsmanager' ändern, wenn der Benutzer die Einladung angenommen hat. |
+|Auditor | Organisationsauditoren können Anwendungs- und Serviceinhalte in der Organisation anzeigen. Auditoren können die Benutzer in der Organisation und deren zugeordnete Rollen sowie das Kontingent für die Organisation auch anzeigen. |
 {:caption="Tabelle 2. Organisationsrollen und Berechtigungen" caption-side="top"}
 
 Die folgenden Rollen können auf Bereichsebene zugeordnet werden:
@@ -74,7 +72,7 @@ Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle
 |----------|---------|
 | Richtlinien für ein Konto für alle Services und Instanzen erstellen | Administrator für den Kontozugriff |
 | Richtlinie für einen Service in einem Konto erstellen | Administrator für den Kontozugriff oder Administrator für den Service im Konto |
-| Serviceinstanz erstellen | Administrator für den Kontozugriff oder der Administrator oder Editor für den Service im Konto|
+| Serviceinstanz erstellen | Administrator für den Kontozugriff oder der Administrator oder Editor für den Service im Konto |
 | Richtlinie für eine Serviceinstanz erstellen | Administrator für den Kontozugriff oder Administrator für das Konto oder Administrator für den Service im Konto oder Administrator für die Serviceinstanz |
 {: caption="Tabelle 4. Verwaltungstasks zum Verwalten von Richtlinien für durch Identity and Access aktivierte Services" caption-side="top"}
 
@@ -83,14 +81,12 @@ Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle
 
 Rollen sind Sammlungen von Aktionen. Die Aktionen, die diesen Rollen zugeordnet sind, sind je nach Service unterschiedlich. Weitere Informationen darüber, welche Arten von Aktionen jede Rolle ermöglicht, finden Sie in der Dokumentation für den ausgewählten Service.
 
-Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden in der folgenden Tabelle Beispiele für einige der Tasks aufgeführt, die Benutzer, denen eine Rolle zugewiesen ist, für den IBM Container-Service ausführen können.   
-
-**Hinweis**: Die Rolle 'Operator' ist zu diesem Zeitpunkt nicht für den IBM Container-Service verfügbar. Das folgende Beispiel dient nur zu Informationszwecken. 
+Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden in der folgenden Tabelle Beispiele für einige der Tasks aufgeführt, die Benutzer, denen eine Rolle zugewiesen ist, für den {{site.data.keyword.containershort_notm}} ausführen können.  
 
 | Rolle | Beschreibung von Aktionen | Beispielaktionen|
 |:-----------------|:-----------------|:-----------------|
 | Viewer (Anzeigeberechtigter) | Führt Aktionen aus, die den Status nicht ändern; Aktionen im Lesezugriff. | <ul><li>Cluster auflisten</li><li>Details für einen Cluster anzeigen</li></ul>|
-| Editor (Bearbeiter) | Führt Aktionen aus, die den Status ändern und die Unterressourcen erstellen oder löschen. |<ul><li>Workerknoten hinzufügen oder entfernen</li><li>Workerknoten neu starten oder erneut laden</li><li>Service an einen Cluster binden</li></ul> |
+| Editor (Bearbeiter) | Führt Aktionen aus, die den Status ändern und die Unterressourcen erstellen oder löschen. |<ul><li>Service an einen Cluster binden</li><li>Webhook erstellen</li></ul> |
 | Operator (Bediener) | Führt Aktionen aus, die zum Konfigurieren und Betreiben von Ressourcen erforderlich sind. | <ul><li>Workerknoten hinzufügen oder entfernen</li><li>Workerknoten neu starten oder erneut laden</li><li>Service an einen Cluster binden</li></ul> |
 | Administrator | Führt alle Aktionen aus, einschließlich der Möglichkeit, die Zugriffssteuerung zu verwalten. |<ul><li>Cluster entfernen</li><li>Cluster erstellen</li><li>Benutzerzugriffsrichtlinien aktualisieren</li><li>Alle Aktionen, die ein Anzeigeberechtigter, Bearbeiter und Bediener ausführen kann</li></ul>|
 {: caption="Tabelle 5. Beispiele für Benutzerrollen und Aktionen" caption-side="top"}
@@ -99,7 +95,7 @@ Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden 
 ## Infrastructure-Berechtigungen
 {: #infrapermissions}
 
-Sie können bei der Einladung eines Benutzers die folgenden Berechtigungen zuweisen: 
+Sie können bei der Einladung eines Benutzers die folgenden Berechtigungen zuweisen:
 
 | Infrastructure-Berechtigung | Beschreibung von Aktionen |
 |---------------------------|------------------------|

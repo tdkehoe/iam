@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-07-26"
 
 ---
 
@@ -33,24 +33,26 @@ Consulte [Roles y políticas de gestión de acceso e identidad](/docs/iam/users_
 
 ## Acceso de Cloud Foundry
 
-Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en la cuenta. Si añade los usuarios a una organización, de forma predeterminada, a todos ellos se les asigna un rol de organización de auditor. Puede actualizar este rol más tarde a gestor de facturación, gestor de organización o rol de no organización después de que el usuario acepte la invitación. Además, es posible proporcionarles el acceso de usuario invitado a uno o a todos los espacios en la organización seleccionada.
+Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en la cuenta. Si añade los usuarios a una organización, puede asignar al usuario un rol de organización. A continuación, seleccione proporcionar acceso al usuario invitado a uno o a todos los espacios de la organización seleccionada con un rol de espacio asignado.
 
 1. Desde la pantalla **Invitar usuarios**, expanda la sección **Acceso de Cloud Foundry**.
 2. Seleccione una organización para añadirla al usuario.
-3. Seleccione **Todas las regiones actuales** o una región específica.
-4. Seleccione **Todos los espacios actuales** o un espacio específico.
-5. Seleccione un rol de espacio para definir el nivel de acceso a los espacios seleccionados.
-6. Opcional: Seleccione **Añadir rol** para especificar un rol adicional.
+3. Seleccione un rol de organización para definir el nivel de acceso a la organización seleccionada.
+4. Opcional: Seleccione **Añadir rol** para especificar un rol adicional.
+5. Seleccione **Todas las regiones actuales** o una región específica.
+6. Seleccione **Todos los espacios actuales** o un espacio específico.
+7. Seleccione un rol de espacio para definir el nivel de acceso a los espacios seleccionados.
+8. Opcional: Seleccione **Añadir rol** para especificar un rol adicional.
 
 Consulte [Roles de Cloud Foundry](/docs/iam/users_roles.html#cfroles) para obtener información más específica sobre estos roles.
 
-**Nota**: Es posible añadir un rol de Cloud Foundry utilizando el mandato de interfaz de línea de mandatos [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), sin embargo, se debe utilizar la interfaz de usuario para asignar otros permisos o accesos.
+**Nota**: Es posible añadir un rol de Cloud Foundry utilizando el mandato de interfaz de línea de mandatos [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), sin embargo, se debe utilizar la interfaz de usuario para asignar otros permisos o accesos.
 
 ## Acceso de infraestructura
 
 Los permisos reales asignados se limitan automáticamente al subconjunto de permisos que posee. Para obtener más información sobre los permisos y las acciones que puede desempeñar el usuario, consulte [Permisos de infraestructura](/docs/iam/users_roles.html#infrapermissions).
 
-1. Desde la pantalla **Invitar usuarios**, expanda la sección **Acceso de infraestructura**. 
+1. Desde la pantalla **Invitar usuarios**, expanda la sección **Acceso de infraestructura**.
 2. Seleccione un permiso para definir el ámbito del acceso.
 
 Para obtener información sobre la configuración del acceso para los usuarios después de que hayan sido añadidos a su cuenta, consulte [Gestión de usuarios y accesos](/docs/iam/iamusermanage.html).

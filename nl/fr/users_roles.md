@@ -3,8 +3,8 @@
 copyright:
 
   years: 2015, 2016
-  
-lastupdated: "2017-06-20"
+
+lastupdated: "2017-08-08"
 
 ---
 
@@ -16,9 +16,7 @@ lastupdated: "2017-06-20"
 # Rôles utilisateur et droits
 {: #userroles}
 
-<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
-
-Vous pouvez gérer les utilisateurs dans les services de plateforme et d'infrastructure {{site.data.keyword.Bluemix_notm}} depuis la page **Utilisateurs** de votre compte. Pour accéder à la page Utilisateurs, depuis le menu {{site.data.keyword.Bluemix_notm}}, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. Les propriétaires de compte peuvent effectuer toutes les opérations sur les organisations et les espaces, notamment gérer les utilisateurs et les rôles qui leur sont affectés. Les responsables de l'organisation et les responsables de l'espace ont également le droit de gérer les rôles. 
+Vous pouvez gérer les utilisateurs dans les services de plateforme et d'infrastructure {{site.data.keyword.Bluemix_notm}} depuis la page **Utilisateurs** de votre compte. Pour accéder à la page Utilisateurs, depuis le menu {{site.data.keyword.Bluemix_notm}}, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. Les propriétaires de compte peuvent effectuer toutes les opérations sur les organisations et les espaces, notamment gérer les utilisateurs et les rôles qui leur sont affectés. Les responsables de l'organisation et les responsables de l'espace ont également le droit de gérer les rôles.
 {:shortdesc}
 
 Si, en tant qu'utilisateur, vous avez été ajouté au compte d'une autre personne et voulez consulter les rôles et les droits qui vous sont affectés, sélectionnez **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **Utilisateurs**, et cliquez sur votre nom.
@@ -46,7 +44,7 @@ Les rôles Cloud Foundry incluent les droits d'accès pour les organisations et 
 |-------------------|-------------|
 |Responsable | Les responsables de l'organisation peuvent créer, visualiser, éditer ou supprimer des espaces dans celle-ci, examiner l'utilisation et le quota de l'organisation, inviter des utilisateurs dans l'organisation, désigner les utilisateurs y ayant accès et leurs rôles, ainsi que les domaines personnalisés de l'organisation. |
 |Responsable de la facturation | Un responsable de la facturation peut afficher des informations sur l'utilisation des contextes d'exécution et des services pour l'organisation dans la page Tableau de bord de l'utilisation.  |
-|Auditeur | Un auditeur de l'organisation peut afficher le contenu des applications et des services dans l'organisation. Il peut également afficher les utilisateurs dans l'organisation et les rôles qui leur sont affectés, ainsi que le quota pour l'organisation. Tous les utilisateurs reçoivent par défaut le rôle auditeur lorsqu'ils sont invités. Vous pouvez le modifier en Responsable ou en Responsable de la facturation une fois que l'utilisateur a accepté l'invitation. |
+|Auditeur | Un auditeur de l'organisation peut afficher le contenu des applications et des services dans l'organisation. Il peut également afficher les utilisateurs dans l'organisation et les rôles qui leur sont affectés, ainsi que le quota pour l'organisation. |
 {:caption="Tableau 2. Rôles d'organisation et droits" caption-side="top"}
 
 Les rôles suivants peuvent être affectés au niveau de l'espace :
@@ -86,14 +84,12 @@ Vous pouvez affecter et gérer des règles si le rôle approprié vous a été a
 
 Les rôles sont un assortiment d'actions ; les actions mappées à ces rôles sont spécifiques au service concerné. Voir la documentation du service sélectionné pour des détails supplémentaires sur les types d'action que chaque rôle autorise.
 
-En complément des descriptions des rôles disponibles dans la console, le tableau ci-dessous présente des exemples de diverses tâches que les utilisateurs affectés à chaque rôle peuvent effectuer dans le service IBM Container.  
-
-**Remarque **: le rôle Opérateur n'est pas disponible pour le service IBM Container à l'heure actuelle. L'exemple ci-après n'est fourni qu'à titre d'information.
+En complément des descriptions des rôles disponibles dans la console, le tableau ci-dessous présente des exemples de diverses tâches que les utilisateurs affectés à chaque rôle peuvent effectuer dans le service {{site.data.keyword.containershort_notm}}.  
 
 | Rôle | Description des actions | Exemples d'actions|
 |:-----------------|:-----------------|:-----------------|
 | Visualiseur | Exécute des actions qui ne modifient pas l'état ; actions en lecture seule | <ul><li>Listage des clusters</li><li>Affichage' des détails d'un cluster</li></ul>|
-| Editeur | Exécute des actions qui modifient l'état et créent ou suppriment des sous-ressources |<ul><li>Ajout ou retrait de noeuds d'agent</li><li>Réamorçage ou rechargement de noeud d'agent</li><li>Liaison d'un service à un cluster</li></ul> |
+| Editeur | Exécute des actions qui modifient l'état et créent ou suppriment des sous-ressources |<ul><li>Liaison d'un service à un cluster</li><li>Créez un webhook</li></ul> |
 | Opérateur | Effectue des actions requises pour configurer et opérer sur des ressources. | <ul><li>Ajout ou retrait de noeuds d'agent</li><li>Réamorçage ou rechargement de noeud d'agent</li><li>Liaison d'un service à un cluster</li></ul> |
 | Administrateur | Peut effectuer toutes les actions, notamment de gestion du contrôle d'accès |<ul><li>Retrait d'un cluster</li><li>Création d'un cluster</li><li>Mise à jour des règles d'accès utilisateur</li><li>Toutes les actions qu'un afficheur, un éditeur et un opérateur peuvent effectuer</li></ul>|
 {: caption="Tableau 5. Exemples de rôles et d'actions utilisateur" caption-side="top"}
@@ -102,7 +98,7 @@ En complément des descriptions des rôles disponibles dans la console, le table
 ## Autorisations relatives à l'infrastructure
 {: #infrapermissions}
 
-Vous pouvez attribuer les autorisations suivantes lorsque vous invitez un utilisateur : 
+Vous pouvez attribuer les autorisations suivantes lorsque vous invitez un utilisateur :
 
 | Autorisation sur l'infrastructure | Description des actions |
 |---------------------------|------------------------|

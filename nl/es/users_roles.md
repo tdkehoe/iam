@@ -3,8 +3,8 @@
 copyright:
 
   years: 2015, 2016
-  
-lastupdated: "2017-06-20"
+
+lastupdated: "2017-08-08"
 
 ---
 
@@ -16,9 +16,7 @@ lastupdated: "2017-06-20"
 # Permisos y roles de usuario
 {: #userroles}
 
-<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
-
-Gestione usuarios en los servicios de infraestructura y plataforma {{site.data.keyword.Bluemix_notm}} desde la página **Usuarios** de su cuenta. Para acceder a la página Usuarios, en el menú {{site.data.keyword.Bluemix_notm}} pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. Los propietarios de cuentas llevan a cabo todas las operaciones en las organizaciones y los espacios incluida la gestión de usuarios y sus roles asignados. Los gestores de espacios y organizaciones también tienen acceso para gestionar roles. 
+Gestione usuarios en los servicios de infraestructura y plataforma {{site.data.keyword.Bluemix_notm}} desde la página **Usuarios** de su cuenta. Para acceder a la página Usuarios, en el menú {{site.data.keyword.Bluemix_notm}} pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. Los propietarios de cuentas llevan a cabo todas las operaciones en las organizaciones y los espacios incluida la gestión de usuarios y sus roles asignados. Los gestores de espacios y organizaciones también tienen acceso para gestionar roles.
 {:shortdesc}
 
 Si usted es un usuario que ha sido añadido a otra cuenta personal, y desea ver sus permisos y roles asignados, vaya a **Gestionar** &gt; **Seguridad** &gt; **Identity & Access** &gt; **Usuarios** y, a continuación, pulse en su nombre.
@@ -45,7 +43,7 @@ Los roles de Cloud Foundry incluyen permisos de acceso para las organizaciones y
 |-------------------|-------------|
 |Gestor | Los gestores de organización pueden crear, ver, editar o suprimir espacios dentro de la organización, ver la cuota y el uso de la organización, invitar a usuarios a la organización, gestionar quién tiene acceso a la organización y sus roles en la organización, y gestionar dominios personalizados para la organización. |
 |Gestor de facturación | Los gestores de facturación pueden ver la información de uso de tiempo de ejecución y servicio para la organización de la página Panel de control de uso.  |
-|Auditor | Los auditores de organización pueden ver el contenido de aplicación y servicio en la organización. Los auditores también pueden ver los usuarios de la organización y sus roles asignados, y la cuota para la organización. Se otorga a todos los usuarios el rol de auditor de forma predeterminada una vez invitados. Puede actualizar este rol a gestor o gestor de facturación después de que el usuario acepte la invitación. |
+|Auditor | Los auditores de organización pueden ver el contenido de aplicación y servicio en la organización. Los auditores también pueden ver los usuarios de la organización y sus roles asignados, y la cuota para la organización. |
 {:caption="Tabla 2. Permisos y roles de organización" caption-side="top"}
 
 Los siguientes roles se pueden asignar a nivel de espacio:
@@ -83,14 +81,12 @@ Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla sigui
 
 Los roles son una colección de acciones; las acciones que están correlacionadas con estos roles son específicas del servicio. Consulte la documentación del servicio seleccionado para obtener más información sobre los tipos de acciones que permite cada rol.
 
-Además de las descripciones de los roles que se proporcionan en la consola, la siguiente tabla proporciona ejemplo de algunas de las tareas que los usuarios asignados a cada rol podría hacer para el servicio de IBM Container.  
-
-**Nota**: El rol de operador no está disponible para el servicio de IBM Container en este momento. El siguiente ejemplo se incluye sólo con finalidades informativas.
+Además de las descripciones de los roles que se proporcionan en la consola, la siguiente tabla proporciona ejemplo de algunas de las tareas que los usuarios asignados a cada rol podría hacer para el servicio {{site.data.keyword.containershort_notm}}.  
 
 | Rol | Descripción de acciones | Acciones de ejemplo|
 |:-----------------|:-----------------|:-----------------|
 | Visor | Realiza acciones que no cambian el estado; solo acciones de lectura | <ul><li>Listar clústeres</li><li>Ver los detalles de un clúster</li></ul>|
-| Editor | Realiza acciones que modifican el estado y crean o suprimen subrecursos |<ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
+| Editor | Realiza acciones que modifican el estado y crean o suprimen subrecursos |<ul><li>Enlazar un servicio a un clúster</li><li>Crear un webhook</li></ul> |
 | Operador | Realiza acciones necesarias para configurar y utilizar recursos. | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
 | Administrador | Realiza todas las acciones, incluida la capacidad para gestionar el control de accesos |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
 {: caption="Tabla 5. Roles y acciones de usuario de ejemplo" caption-side="top"}
@@ -99,7 +95,7 @@ Además de las descripciones de los roles que se proporcionan en la consola, la 
 ## Permisos de infraestructura
 {: #infrapermissions}
 
-Puede establecer los siguientes permisos al invitar a un usuario: 
+Puede establecer los siguientes permisos al invitar a un usuario:
 
 | Permisos de infraestructura | Descripción de acciones |
 |---------------------------|------------------------|

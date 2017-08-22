@@ -2,7 +2,8 @@
 
 copyright:
 
-  Anos: 2015, 2017 lastupdated: "2017-05-30"
+  years: 2015, 2017
+lastupdated: "2017-07-27"
 
 ---
 
@@ -16,11 +17,15 @@ copyright:
 
 Uma chave de interface de programação de aplicativos (chave API) é um código passado por programas de computador que chama uma interface de programação de aplicativos (API) para identificar o programa de chamada, seu desenvolvedor ou seu usuário para o website. As chaves API são usadas para rastrear e controlar como a API está sendo usada, por exemplo, para evitar uso malicioso ou abuso da API (conforme definido talvez pelos termos de serviço). A chave API age frequentemente como um identificador exclusivo e um token secreto para autenticação e geralmente tem um conjunto de direitos de acesso específicos para o usuário associado a ela. As chaves API podem basear-se no sistema de identificador exclusivo universal (UUID) para assegurar que sejam exclusivas para cada usuário.
 
-Como um usuário do {{site.data.keyword.Bluemix_notm}}, talvez você queira usar uma chave API quando ativar um programa ou um script sem distribuir sua senha para o script. É possível que um benefício de uso de uma chave API seja que um usuário ou uma organização possa criar várias chaves API para diferentes programas e que as chaves API poderão ser excluídas independentemente se comprometidas sem interferir com outras chaves API ou até mesmo com o usuário. Além disso, como um [usuário federado](/docs/admin/adminpublic.html#federatedid), é possível usar uma chave API para efetuar login usando a variável de ambiente `BLUEMIX_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja a documentação do [comando `bluemix login` da CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login) e o [comando `cf login` da CLI cf](/docs/cli/reference/cfcommands/index.html#cf_login).
+Um usuário federado ou não federado pode criar uma chave API para usar na CLI ou como parte de automação para efetuar login como seu nome de usuário. É possível usar a UI do {{site.data.keyword.Bluemix_notm}} ou a CLI do {{site.data.keyword.Bluemix_notm}} para gerenciar suas chaves API listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar suas chaves API do {{site.data.keyword.Bluemix_notm}} na UI, acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API do Bluemix** para ver uma lista das chaves API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API desta página. E, para obter uma lista completa de comandos disponíveis da CLI, veja [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
 
-É possível gerenciar suas chaves API do {{site.data.keyword.Bluemix_notm}} na janela Chaves API do Bluemix. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API do Bluemix** para ver uma lista de suas chaves API com descrições e datas. É possível criar, editar ou excluir chaves API por meio dessa página.
+Como um [usuário federado](/docs/admin/adminpublic.html#federatedid), é possível usar uma chave API para efetuar login usando a variável de ambiente `BLUEMIX_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja a documentação do [comando `bluemix login` da CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login) e o [comando `cf login` da CLI cf](/docs/cli/reference/cfcommands/index.html#cf_login).
 
-Para criar uma chave API:
+## Criando uma chave API
+
+Como um usuário do {{site.data.keyword.Bluemix_notm}}, talvez você queira usar uma chave API quando ativar um programa ou um script sem distribuir sua senha para o script. É possível que um benefício de uso de uma chave API seja que um usuário ou uma organização possa criar várias chaves API para diferentes programas e que as chaves API poderão ser excluídas independentemente se comprometidas sem interferir com outras chaves API ou até mesmo com o usuário.
+
+Para criar uma chave API na UI:
 
 1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API do Bluemix**.
 2. Clique em **Criar chave API**.
@@ -30,6 +35,37 @@ Para criar uma chave API:
 
 **Nota**: a chave API só está disponível para exibição ou download no momento da criação. Se a chave API for perdida, uma nova chave API deverá ser criada.
 
+Para criar uma chave API usando a CLI:
+
+1. Insira `bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` no prompt de comandos e especifique um nome, uma descrição e um arquivo para salvar sua chave. Por
+exemplo:
+
+```
+bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
+``` 
+
+Depois que uma chave API é criada usando a CLI, há algumas maneiras de poder usar a chave com o bx CLI:
+
+* Insira-a com o comando `bx login`
+```
+ bx login —apikey <your api key>
+```
+* Crie um arquivo de chave API para usar com o comando `bx login`: 
+ ```
+ bx login —apkey @apikeyfile
+ ```
+ O `apikeyfile` é criado usando a opção `—file` no comando `bx iam api-key-create`.
+* No prompt de comandos, é possível configurar a variável de ambiente inserindo `BLUEMIX_API_KEY=<your api key>` e, em seguida, inserindo `bx login`.
+* Ou, se desejar evitar o bx CLI e apenas efetuar login no cf CLI usando a chave API, insira:
+ ```
+ cf login -u apikey -p <yourapikey>
+ ```
+  Nessa opção, você usa o nome de usuário de `apikey` e a senha é seu `apikey`. Agora, é possível usar `apikey` em outras ferramentas, como Eclipse, ou outros locais, procurando `cf login`, que aceita apenas o nome do usuário e a senha.
+
+## Editando uma chave API
+
+Se desejar mudar o nome ou a descrição de uma chave API, conclua as etapas a seguir na UI ou na CLI.
+
 Para editar uma chave API:
 
 1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API do Bluemix**.
@@ -37,10 +73,24 @@ Para editar uma chave API:
 3. Atualize as informações de sua chave API.
 4. Clique em **Atualizar chave API**.
 
+Para editar uma chave API usando a CLI:
+
+1. Insira `bluemix iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` no prompt de comandos, especificando o nome antigo, o novo nome e a nova descrição para a chave. Por
+exemplo:
+
+```
+bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
+```
+
+## Excluindo uma chave API
+
+Se você está usando uma estratégia de rotação de chave, talvez queira excluir uma chave mais antiga e substituí-la por uma nova.
+
 Para excluir uma chave API: 
 
 1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API do Bluemix**.
 2. No menu **Ações** de uma chave API listada na tabela, clique em **Excluir**.
 3. Em seguida, confirme a exclusão clicando em **Excluir chave**.
 
-Também será possível usar a CLI do {{site.data.keyword.Bluemix_notm}} para gerenciar suas chaves API listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Veja a seção do comando [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam) para obter mais informações.
+Para excluir uma chave API usando a CLI:
+1. Insira `bluemix iam api-key-delete NAME` no prompt de comandos, especificando o nome da chave que deve ser excluída.

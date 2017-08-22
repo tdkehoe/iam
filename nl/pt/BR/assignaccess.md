@@ -2,7 +2,8 @@
 
 copyright:
 
-  Anos: 2015, 2017 lastupdated: "2017-05-30"
+  years: 2015, 2017
+lastupdated: "2017-07-26"
 
 ---
 
@@ -32,24 +33,26 @@ Veja [Políticas e funções de gerenciamento de acesso e identidade](/docs/iam/
 
 ## Acesso ao Cloud Foundry
 
-Ao convidar novos usuários, é possível escolher incluir o usuário em uma organização na conta. Se você incluir o usuário em uma organização, ele receberá a função de organização de auditor por padrão. Será possível atualizar essa função posteriormente para gerenciador de faturamento, gerenciador de organização ou nenhuma função de organização após o usuário aceitar o convite. Além disso, é possível escolher fornecer ao usuário convidado o acesso a qualquer um ou todos os espaços na organização selecionada.
+Ao convidar novos usuários, é possível escolher incluir o usuário em uma organização na conta. Se você incluir o usuário em uma organização, será possível designar uma função de organização ao usuário. Em seguida, você optará por fornecer ao usuário convidado acesso a qualquer um ou a todos os espaços na organização selecionada com uma função de espaço designada.
 
 1. Na tela **Convidar usuários**, expanda a seção **Acesso do Cloud Foundry**.
 2. Selecione uma organização na qual incluir o usuário.
-3. Selecione **Todas as regiões atuais** ou uma região específica.
-4. Selecione **Todos os espaços atuais** ou um espaço específico.
-5. Selecione uma função de espaço para definir o nível de acesso aos espaços selecionados.
-6. Opcional: selecione **Incluir função** para especificar uma função adicional.
+3. Selecione uma função de organização para definir o nível de acesso à organização selecionada.
+4. Opcional: selecione **Incluir função** para especificar uma função adicional.
+5. Selecione **Todas as regiões atuais** ou uma região específica.
+6. Selecione **Todos os espaços atuais** ou um espaço específico.
+7. Selecione uma função de espaço para definir o nível de acesso aos espaços selecionados.
+8. Opcional: selecione **Incluir função** para especificar uma função adicional.
 
 Veja [Funções do Cloud Foundry](/docs/iam/users_roles.html#cfroles) para obter informações mais específicas sobre essas funções.
 
-**Nota**: é possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix iam account-user-invite](https://console.stage1.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
+**Nota**: é possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
 
 ## Acesso ao Infrastructure
 
 As permissões reais designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Para obter mais informações sobre as permissões e quais ações o usuário pode executar com cada uma, veja [Permissões de infraestrutura](/docs/iam/users_roles.html#infrapermissions).
 
-1. Na tela **Convidar usuários**, expanda a seção **Acesso à infraestrutura**. 
+1. Na tela **Convidar usuários**, expanda a seção **Acesso à infraestrutura**.
 2. Selecione uma permissão para definir o escopo de acesso.
 
 Para obter informações sobre como configurar o acesso para os usuários depois que eles tiverem sido incluídos em sua conta, veja [Gerenciando usuários e acesso](/docs/iam/iamusermanage.html).

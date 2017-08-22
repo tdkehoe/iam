@@ -3,8 +3,8 @@
 copyright:
 
   years: 2015, 2016
-  
-lastupdated: "2017-06-20"
+
+lastupdated: "2017-08-08"
 
 ---
 
@@ -16,10 +16,8 @@ lastupdated: "2017-06-20"
 # Funções e Permissões do Usuário
 {: #userroles}
 
-<!-- staging only content in the service policy roles table. Do not move entire topic to production -->
-
 É possível gerenciar usuários nos serviços Platform and Infrastructure do {{site.data.keyword.Bluemix_notm}} na página **Usuários** de sua conta. Para acessar a página Usuários, no menu do {{site.data.keyword.Bluemix_notm}}, clique
-em **Gerenciar** &gt; **Conta** &gt; **Usuários**. Os proprietários da conta executam todas as operações nas organizações e nos espaços, incluindo o gerenciamento de usuários e suas funções designadas. Os gerenciadores de organização e de espaço também têm acesso para gerenciar funções. 
+em **Gerenciar** &gt; **Conta** &gt; **Usuários**. Os proprietários da conta executam todas as operações nas organizações e nos espaços, incluindo o gerenciamento de usuários e suas funções designadas. Os gerenciadores de organização e de espaço também têm acesso para gerenciar funções.
 {:shortdesc}
 
 Se você for um usuário incluído na conta de outra pessoa e desejar visualizar suas funções e permissões designadas, acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **Usuários** e clique em seu nome.
@@ -48,7 +46,7 @@ As funções do Cloud Foundry incluem as permissões de acesso para organizaçõ
 |-------------------|-------------|
 |Gerente | Os gerenciadores de organização podem criar, visualizar, editar ou excluir espaços dentro da organização, visualizar o uso e cota da organização, convidar os usuários para a organização, gerenciar quem tem acesso à organização e suas funções na organização, além de gerenciar domínios customizados para a organização. |
 |Gerenciador de faturamento | Gerenciadores de faturamento podem visualizar informações de uso de tempo de execução e serviço para a organização na página de Painel de uso.  |
-|Auditor | Auditores da organização podem visualizar o conteúdo do aplicativo e do serviço na organização. Os auditores também podem visualizar os usuários na organização e suas funções designadas, além da cota da organização. Todos os usuários recebem a função de auditor por padrão no convite. É possível atualizar essa função para gerenciador ou gerenciador de faturamento depois que o usuário aceita o convite. |
+|Auditor | Auditores da organização podem visualizar o conteúdo do aplicativo e do serviço na organização. Os auditores também podem visualizar os usuários na organização e suas funções designadas, além da cota da organização. |
 {:caption="Tabela 2. Funções e permissões de organização" caption-side="top"}
 
 As funções a seguir podem ser designadas no nível de espaço:
@@ -93,14 +91,12 @@ Será possível designar e gerenciar políticas se você possuir a função adeq
 Funções são uma coleção de ações; as ações que são mapeadas para essas funções são específicas de
 serviço. Consulte a documentação do serviço selecionado para obter detalhes adicionais sobre os tipos de ações que cada função permite.
 
-Além das descrições das funções fornecidas no console, a tabela a seguir fornece exemplos de algumas das tarefas que os usuários designados a cada função podem ser capazes de executar para o serviço IBM Container.  
-
-**Nota**: a função de operador não está disponível para o serviço IBM Container neste momento. O exemplo a seguir é incluído para propósitos informacionais somente.
+Além das descrições das funções fornecidas no console, a tabela a seguir fornece exemplos de algumas das tarefas que os usuários designados a cada função podem conseguir fazer no serviço do {{site.data.keyword.containershort_notm}}.  
 
 | Função | Descrição das ações | Exemplo de ações|
 |:-----------------|:-----------------|:-----------------|
 | Viewer | Executa ações que não mudam o estado; ações somente leitura | <ul><li>Listar clusters</li><li>Visualizar detalhes para um cluster</li></ul>|
-| Aplicativos | Executa ações que modificam o estado e criam ou excluem sub-recursos |<ul><li>Incluir ou remover nós do trabalhador</li><li>Reinicializar ou recarregar nós do trabalhador</li><li>Ligar um serviço a um cluster</li></ul> |
+| Aplicativos | Executa ações que modificam o estado e criam ou excluem sub-recursos |<ul><li>Ligar um serviço a um cluster</li><li>Criar um webhook</li></ul> |
 | Operador | Executa ações necessárias para configurar e operar recursos. | <ul><li>Incluir ou remover nós do trabalhador</li><li>Reinicializar ou recarregar nós do trabalhador</li><li>Ligar um serviço a um cluster</li></ul> |
 | Administrator | Executa todas as ações, incluindo a capacidade de gerenciar o controle de acesso |<ul><li>Remover um Cluster</li><li>Crie um cluster</li><li>Atualizar políticas de acesso de usuário</li><li>Todas as ações que um visualizador, um editor e um operador podem executar</li></ul>|
 {: caption="Tabela 5. Exemplo de funções e ações do usuário" caption-side="top"}
@@ -109,7 +105,7 @@ Além das descrições das funções fornecidas no console, a tabela a seguir fo
 ## Permissões de infraestrutura
 {: #infrapermissions}
 
-É possível configurar as permissões a seguir ao convidar um usuário: 
+É possível configurar as permissões a seguir ao convidar um usuário:
 
 | Permissão de infraestrutura | Descrição das ações |
 |---------------------------|------------------------|
