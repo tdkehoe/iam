@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-07-27"
+lastupdated: "2017-08-30"
 
 ---
 
@@ -47,11 +47,11 @@ After an API key is created by using the CLI, there are a few ways that you can 
 
 * Enter it with the `bx login` command
 ```
- bx login —apikey <your api key>
+ bx login --apikey <your api key>
 ```
 * Create an API key file to use with the `bx login` command: 
  ```
- bx login —apkey @apikeyfile
+ bx login --apkey @apikeyfile
  ```
  The `apikeyfile` is created by using the `—file` option on the `bx iam api-key-create` command.
 * In your command prompt, you can set the environment variable by entering `BLUEMIX_API_KEY=<your api key>` and then entering `bx login`.
