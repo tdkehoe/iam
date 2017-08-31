@@ -45,7 +45,7 @@ bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
 
 Une fois qu'une clé d'API a été créée depuis l'interface CLI, vous pouvez l'utiliser de différentes manières depuis l'interface de ligne de commande bx :
 
-* Entrez cette clé avec la commande `bx login` 
+* Entrez cette clé avec la commande `bx login`
 ```
  bx login —apikey <votre clé d'API>
 ```
