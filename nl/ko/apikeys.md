@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-07-27"
+lastupdated: "2017-08-30"
 
 ---
 
@@ -47,11 +47,11 @@ CLI를 사용하여 API 키가 작성된 후에 다음과 같이 bx CLI와 함�
 
 * `bx login` 명령과 함께 입력
 ```
- bx login —apikey <your api key>
+ bx login --apikey <your api key>
 ```
 * `bx login` 명령과 함께 사용하기 위한 API 키 파일 작성: 
  ```
- bx login —apkey @apikeyfile
+ bx login --apkey @apikeyfile
  ```
  `apikeyfile`은 `bx iam api-key-create` 명령에서 `—file` 옵션을 사용하여 작성됩니다.
 * 명령 프롬프트에서 `BLUEMIX_API_KEY=<your api key>`를 입력한 다음에 `bx login`을 입력하여 환경 변수를 설정할 수 있습니다.

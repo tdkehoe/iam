@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-07-27"
+lastupdated: "2017-08-30"
 
 ---
 
@@ -48,11 +48,11 @@ Dopo aver creato una chiave API utilizzando la CLI, ci sono alcuni modi in cui p
 
 * Immettila con il comando `bx login`
 ```
- bx login —apikey <your api key>
+ bx login --apikey <your api key>
 ```
 * Crea un file chiave API da utilizzare con il comando `bx login`: 
  ```
- bx login —apkey @apikeyfile
+ bx login --apkey @apikeyfile
  ```
  `apikeyfile` viene creato utilizzando l'opzione `—file` nel comando `bx iam api-key-create`.
 * Nel tuo prompt dei comandi, puoi impostare la variabile di ambiente immettendo `BLUEMIX_API_KEY=<your api key>` e quindi immettendo `bx login`.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-07-27"
+lastupdated: "2017-08-30"
 
 ---
 
@@ -47,11 +47,11 @@ bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
 
 * 使用 `bx login` 指令輸入它
 ```
- bx login —apikey <your api key>
+ bx login --apikey <your api key>
 ```
 * 建立 API 金鑰檔，以便搭配 `bx login` 指令使用： 
  ```
- bx login —apkey @apikeyfile
+ bx login --apkey @apikeyfile
  ```
  `apikeyfile` 是使用 `bx iam api-key-create` 指令上的 `—file` 選項所建立。
 * 在命令提示字元中，您可以輸入 `BLUEMIX_API_KEY=<your api key>` 然後輸入 `bx login`，來設定環境變數。

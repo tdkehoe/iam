@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-07-27"
+lastupdated: "2017-08-30"
 
 ---
 
@@ -47,11 +47,11 @@ Nach der Erstellung eines API-Schlüssels über die Befehlszeilenschnittstelle g
 
 * Eingabe des Schlüssels mit dem Befehl `bx login`
 ```
- bx login —apikey <eigener API-Schlüssel>
+ bx login --apikey <eigener API-Schlüssel>
 ```
 * Erstellen einer API-Schlüsseldatei zur Verwendung mit dem Befehl `bx login` 
  ```
- bx login —apkey @apikeyfile
+ bx login --apkey @apikeyfile
  ```
  `apikeyfile` wird mit der Option `—file` im Befehl `bx iam api-key-create` erstellt.
 * In der Eingabeaufforderung können Sie die Umgebungsvariable festlegen, indem Sie `BLUEMIX_API_KEY=<eigener API-Schlüssel>` und dann `bx login` eingeben.
