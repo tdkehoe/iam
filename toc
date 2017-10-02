@@ -10,12 +10,17 @@ Managing identity and access
     
     {: .navgroup id="howto"}
     iamuserinv.md
-    assignaccess.md
     iamusermanage.md
+
+    {: .topicgroup}
+    Working with services
+        serviceid.md
+        serviceidaccess.md
     
     {: .topicgroup}
     API keys
         apikeys.md
+        userid_keys.md
+        serviceid_keys.md
     {: .navgroup-end}
-
     

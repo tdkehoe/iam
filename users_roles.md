@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-08-08"
+lastupdated: "2017-09-29"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2017-08-08"
 # User roles and permissions
 {: #userroles}
 
-You can manage users across the {{site.data.keyword.Bluemix_notm}} Platform and Infrastructure services from the **Users** page for your account. To access the Users page, from the {{site.data.keyword.Bluemix_notm}} menu, click **Manage** &gt; **Account** &gt; **Users**. Account owners perform all operations on organizations and spaces, including managing users and their assigned roles. Organization managers and space managers also have access to manage roles.
+You can manage users across the {{site.data.keyword.Bluemix_notm}} platform and Infrastructure services from the **Users** page for your account. To access the Users page, from the {{site.data.keyword.Bluemix_notm}} menu, click **Manage** &gt; **Account** &gt; **Users**. Account owners can perform all operations for managing users, permissions, organizations, and spaces. Cloud Foundry organization managers and space managers also have access to manage permissions for users added to each organization and space that they manage.
 {:shortdesc}
 
 If you are a user added to another person's account, and you want to view your assigned roles and permissions, go to **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**, and click on your name.
@@ -60,20 +60,20 @@ The following roles can be assigned at the space level:
 ## Identity and access management policies and roles
 {: #iamusermanpol}
 
-Account owners are automatically assigned the account access administrator role for Identity and access management which enables you to assign and manage service policies. This type of access control enables the assignment of policies per service or service instance to allow levels of access for managing resources and users within the assigned context.
+Account owners are automatically assigned the account administrator role for Identity and access management which enables you to assign and manage service policies. Service policies can be assigned to individual users or to service IDs, and the assigned policy can define access for an entire service or at the individual instance level. 
 
 ### Service policies
 
-A policy assigns a user a role or roles to a set of resources by using a combination of attributes to define the applicable set of resources. When you assign a policy to a user, you first specify the service. Then, you can select a role, or roles, to assign. Additional configuration options might be available, depending on the service you select.
+A policy assigns a user or service ID one or multiple roles to a set of resources by using a combination of attributes to define the applicable set of resources. When you assign a policy to a user, you first specify the service. Then, you can select a role, or roles, to assign. Additional configuration options might be available, depending on the service you select.
 
 You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role required for each.
 
 | Action | Role required |
 |----------|---------|
-| Create policies on an account for all services and instances | Account access administrator |
-| Create a policy on a service in an account | Account access administrator or administrator on the service in the account |
-| Create a service instance | Account access administrator or the administrator or editor on the service in the account |
-| Create a policy on a service instance | Account access administrator or administrator on the service in the account or administrator on the service instance |
+| Create policies on an account for all services and instances | Account administrator |
+| Create a policy on a service in an account | Account administrator or administrator on the service in the account |
+| Create a service instance | Account administrator or the administrator or editor on the service in the account |
+| Create a policy on a service instance | Account administrator or administrator on the service in the account or administrator on the service instance |
 {: caption="Table 4. Administrative tasks for managing Identity and access enabled services policies" caption-side="top"}
 
 ### Service policy roles
@@ -92,16 +92,17 @@ In addition to the descriptions of the roles provided in the console, the follow
 {: caption="Table 5. Example user roles and actions" caption-side="top"}
 
 
+
 ## Infrastructure permissions
 {: #infrapermissions}
 
-You can set the following permissions when you invite a user:
+You can set the following initial permissions when you invite a user:
 
-| Infrastructure permission | Description of actions |
+| Permission set | Description of actions |
 |---------------------------|------------------------|
 |View Only | Users with this permission can only view items within the system.|
 |Basic User | Users with this permission can perform basic actions within the system, such as adding a ticket and managing devices. |
 |Super User | Users with this permission can perform all actions available in the system. |
 {:caption="Table 6. Infrastructure permissions" caption-side="top"}
 
-Additional permissions can be set after the user has accepted the invite.
+Additional permissions can be set after the user has accepted the invite. The initial permission set at invite time does not grant access to devices, so you must grant device access in the Control Portal after the user has accepted the invite.
