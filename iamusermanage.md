@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-03"
 
 ---
 
@@ -58,7 +58,7 @@ You can also add a user to another organization by clicking **Assign Organizatio
 ## Identity and access-enabled service access policies
 {: #iammanidaccser}
 
-To manage service policies or assign new service policies for users, you must be the account access administrator or the assigned administrator for the particular service or service instance. For more information about service policies and roles, see [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol).
+To manage service policies or assign new service policies for users, you must be the account access administrator or the assigned administrator for the particular service or service instance. For more information about service policies and roles, see [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol). For details on the CLI commands that are used to manage policies, see [Commands for managing API keys and policies](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
 ### Editing an existing policy
 
