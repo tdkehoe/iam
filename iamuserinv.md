@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -47,8 +47,12 @@ You can assign a single service policy when you invite a new user. Once the user
 3. Select **All current regions** or a specific region, if your are prompted. 
 **Note**: Not all services require a region selection.
 4. Select **All current service instances** or select a specific service instance.
-5. Select a role to define the scope of access for the policy.
-6. Optional: Select **Add role** to specify an additional role for the policy.
+5. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
+    * **Resource type**: Enter **bucket**.
+    * **Resource**: Enter the name of your bucket.
+6. Select a role to define the scope of access for the policy.
+7. Optional: Select **Add role** to specify an additional role for the policy.
+
 
 See [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol) for more specific information about the roles when setting service policies.
 
