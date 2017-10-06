@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -77,8 +77,11 @@ To manage service policies or assign new service policies for users, you must be
 5. Select **All current regions** or a specific region, if your are prompted. 
 **Note**: Not all services require a region selection.
 6. Select **All current service instances** or select a specific service instance.
-7. Select a role to define the scope of access for the policy.
-8. Optional: Select **Add role** to specify an additional role for the policy.
+7. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
+    * **Resource type**: Enter **bucket**.
+    * **Resource**: Enter the name of your bucket.
+8. Select a role to define the scope of access for the policy.
+9. Optional: Select **Add role** to specify an additional role for the policy.
 
 ### Removing a policy
 
