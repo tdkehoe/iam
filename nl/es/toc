@@ -10,12 +10,17 @@ Gestión de acceso e identidades
     
     {: .navgroup id="howto"}
     iamuserinv.md
-    assignaccess.md
     iamusermanage.md
+
+    {: .topicgroup}
+    Trabajo con servicios
+        serviceid.md
+        serviceidaccess.md
     
     {: .topicgroup}
     Claves de API
         apikeys.md
+        userid_keys.md
+        serviceid_keys.md
     {: .navgroup-end}
-
     

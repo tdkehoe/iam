@@ -10,12 +10,17 @@
     
     {: .navgroup id="howto"}
     iamuserinv.md
-    assignaccess.md
     iamusermanage.md
+
+    {: .topicgroup}
+    使用服務
+        serviceid.md
+        serviceidaccess.md
     
     {: .topicgroup}
     API 金鑰
         apikeys.md
+        userid_keys.md
+        serviceid_keys.md
     {: .navgroup-end}
-
     

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-08-08"
+lastupdated: "2017-09-29"
 
 ---
 
@@ -16,8 +16,8 @@ lastupdated: "2017-08-08"
 # Funções e Permissões do Usuário
 {: #userroles}
 
-É possível gerenciar usuários nos serviços Platform and Infrastructure do {{site.data.keyword.Bluemix_notm}} na página **Usuários** de sua conta. Para acessar a página Usuários, no menu do {{site.data.keyword.Bluemix_notm}}, clique
-em **Gerenciar** &gt; **Conta** &gt; **Usuários**. Os proprietários da conta executam todas as operações nas organizações e nos espaços, incluindo o gerenciamento de usuários e suas funções designadas. Os gerenciadores de organização e de espaço também têm acesso para gerenciar funções.
+É possível gerenciar usuários na plataforma do {{site.data.keyword.Bluemix_notm}} e serviços de infraestrutura na página **Usuários** de sua conta. Para acessar a página Usuários, no menu do {{site.data.keyword.Bluemix_notm}}, clique
+em **Gerenciar** &gt; **Conta** &gt; **Usuários**. Os proprietários da conta podem executar todas as operações para gerenciar usuários, permissões, organizações e espaços. Os gerenciadores de organização e gerenciadores de espaço do Cloud Foundry também têm acesso para gerenciar permissões para usuários incluídos em cada organização e espaço gerenciado.
 {:shortdesc}
 
 Se você for um usuário incluído na conta de outra pessoa e desejar visualizar suas funções e permissões designadas, acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **Usuários** e clique em seu nome.
@@ -67,22 +67,20 @@ espaço. |
 ## Políticas e funções de Identidade e gerenciamento de acesso
 {: #iamusermanpol}
 
-Os proprietários da conta são designados automaticamente à função de administrador de acesso da conta para Identidade e gerenciamento de acesso, que permite designar e gerenciar políticas de serviço. Esse tipo de controle de acesso permite a designação de políticas por serviço ou instância de serviço para permitir níveis de acesso para gerenciar recursos e usuários dentro do contexto designado.
+Os proprietários da conta são automaticamente designados à função de administrador de conta para gerenciamento de Identidade e acesso, que permite designar e gerenciar políticas de serviço. As políticas de serviço podem ser designadas a usuários individuais ou aos IDs de serviço e a política designada pode definir o acesso para um serviço inteiro ou no nível da instância individual. 
 
 ### Políticas de serviço
 
-Uma política designa a um usuário uma ou
-mais funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto
-de recursos aplicável. Ao designar uma política a um usuário, primeiro você especifica o serviço. Em seguida, é possível selecionar uma função ou funções para designar. Opções de configuração adicionais poderão estar disponíveis, dependendo do serviço selecionado.
+Uma política designa a um usuário ou um ID de serviço uma ou múltiplas funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto de recursos aplicável. Ao designar uma política a um usuário, primeiro você especifica o serviço. Em seguida, é possível selecionar uma função ou funções para designar. Opções de configuração adicionais poderão estar disponíveis, dependendo do serviço selecionado.
 
 Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra tarefas de gerenciamento de política e a função necessária para cada uma.
 
 | Ações | Atribuição necessária |
 |----------|---------|
-| Criar políticas em uma conta para todos os serviços e instâncias | Administrador de acesso à conta |
-| Criar uma política em um serviço em uma conta | Administrador de acesso à conta ou administrador no serviço na conta |
-| Criar uma instância de serviço | Administrador de acesso à conta ou o administrador ou editor no serviço na conta |
-| Criar uma política em uma instância de serviço | Administrador de acesso à conta, administrador no serviço na conta ou administrador na instância de serviço |
+| Criar políticas em uma conta para todos os serviços e instâncias | Administrador da conta |
+| Criar uma política em um serviço em uma conta | Administrador da conta ou administrador no serviço na conta |
+| Criar uma instância de serviço | Administrador da conta ou o administrador ou editor no serviço na conta |
+| Criar uma política em uma instância de serviço | Administrador da conta ou administrador no serviço na conta ou administrador na instância de serviço |
 {: caption="Tabela 4. Tarefas administrativas para gerenciar políticas de serviços ativadas para Identidade e acesso" caption-side="top"}
 
 ### Funções de política de serviço
@@ -102,12 +100,13 @@ Além das descrições das funções fornecidas no console, a tabela a seguir fo
 {: caption="Tabela 5. Exemplo de funções e ações do usuário" caption-side="top"}
 
 
+
 ## Permissões de infraestrutura
 {: #infrapermissions}
 
-É possível configurar as permissões a seguir ao convidar um usuário:
+É possível configurar as permissões iniciais a seguir quando você convida um usuário:
 
-| Permissão de infraestrutura | Descrição das ações |
+| Permissão configurada | Descrição das ações |
 |---------------------------|------------------------|
 |Visualização Apenas | Os usuários com essa permissão podem visualizar somente os itens dentro do sistema.|
 |Usuário Básico | Os usuários com essa permissão podem executar ações básicas dentro do sistema, como incluir um chamado e
@@ -115,4 +114,4 @@ gerenciar dispositivos. |
 |Super usuário | Os usuários com essa permissão podem executar todas as ações disponíveis no sistema. |
 {:caption="Tabela 6. Permissões de infraestrutura" caption-side="top"}
 
-Permissões adicionais podem ser configuradas depois que o usuário aceitou o convite.
+Permissões adicionais podem ser configuradas depois que o usuário aceitou o convite. A permissão inicial configurada no momento do convite não concede acesso aos dispositivos, portanto, deve-se conceder acesso ao dispositivo no Portal de controle depois que o usuário aceita o convite.

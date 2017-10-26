@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-08-08"
+lastupdated: "2017-09-29"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2017-08-08"
 # Rôles utilisateur et droits
 {: #userroles}
 
-Vous pouvez gérer les utilisateurs dans les services de plateforme et d'infrastructure {{site.data.keyword.Bluemix_notm}} depuis la page **Utilisateurs** de votre compte. Pour accéder à la page Utilisateurs, depuis le menu {{site.data.keyword.Bluemix_notm}}, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. Les propriétaires de compte peuvent effectuer toutes les opérations sur les organisations et les espaces, notamment gérer les utilisateurs et les rôles qui leur sont affectés. Les responsables de l'organisation et les responsables de l'espace ont également le droit de gérer les rôles.
+Vous pouvez gérer les utilisateurs dans les services de plateforme et d'infrastructure {{site.data.keyword.Bluemix_notm}} depuis la page **Utilisateurs** de votre compte. Pour accéder à la page Utilisateurs, depuis le menu {{site.data.keyword.Bluemix_notm}}, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. Les propriétaires de compte peuvent effectuer toutes les opérations de gestion des utilisateurs, des droits, des organisations et des espaces. Les responsables d'organisation et gestionnaires d'espace Cloud Foundry disposent également des accès nécessaires pour gérer les droits relatifs aux utilisateurs ajoutés pour chaque organisation et chaque espace gérés par leurs soins.
 {:shortdesc}
 
 Si, en tant qu'utilisateur, vous avez été ajouté au compte d'une autre personne et voulez consulter les rôles et les droits qui vous sont affectés, sélectionnez **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **Utilisateurs**, et cliquez sur votre nom.
@@ -63,20 +63,20 @@ d'environnement VCAP_SERVICES. Toutefois, un utilisateur possédant le rôle d'a
 ## Règles de gestion de l'identité et de l'accès et rôles
 {: #iamusermanpol}
 
-Les propriétaires de compte sont affectés automatiquement au rôle d'administrateur des accès au compte pour le service Identity and Access Management, ce qui vous permet d'affecter et de gérer des règles de service. Ce type de contrôle d'accès permet l'affectation de règles par service ou instance de service afin d'accorder des niveaux d'accès pour la gestion des ressources et des utilisateurs dans le contexte affecté.
+Le rôle d'administrateur des accès au compte pour le service Identity and Access Management est automatiquement affecté aux propriétaires de compte, ce qui leur permet d'affecter et de gérer des règles de service. Les règles de service peuvent être affectées à des utilisateurs ou à des ID de service et la règle affectée peut définir les droits d'accès pour un service entier ou au niveau de chaque instance.  
 
 ### Règles de service
 
-Une règle affecte à un utilisateur un rôle ou plusieurs rôles sur un ensemble de ressources en utilisant une combinaison d'attributs pour définir l'ensemble de ressources applicable. Lorsque vous affectez une règle à un utilisateur, vous devez d'abord spécifier le service concerné. Vous pouvez ensuite sélectionner le ou les rôles à lui affecter. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
+Une règle affecte à un utilisateur ou à un ID de service un ou plusieurs rôles sur un ensemble de ressources en utilisant une combinaison d'attributs pour définir l'ensemble de ressources applicable. Lorsque vous affectez une règle à un utilisateur, vous devez d'abord spécifier le service concerné. Vous pouvez ensuite sélectionner le ou les rôles à lui affecter. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
 
 Vous pouvez affecter et gérer des règles si le rôle approprié vous a été attribué. Le tableau suivant décrit les tâches de gestion de règles et le rôle requis pour chacune.
 
 | Action | Rôle requis |
 |----------|---------|
-| Créer une règle sur un compte pour tous les services et instances | Administrateur des accès au compte |
-| Créer une règle sur un service dans un compte | Administrateur des accès au compte ou administrateur du service sur le compte |
-| Créer une instance de service | Administrateur des accès au compte ou administrateur/éditeur du service dans le compte |
-| Créer une règle sur une instance de service | Administrateur des accès au compte ou administrateur du service sur le compte ou administrateur dans l'instance de service |
+| Créer une règle sur un compte pour tous les services et instances | Administrateur de compte |
+| Créer une règle sur un service dans un compte | Administrateur de compte ou administrateur sur le service dans le compte |
+| Créer une instance de service | Administrateur de compte ou administrateur ou éditeur sur le service dans le compte |
+| Créer une règle sur une instance de service | Administrateur de compte ou administrateur sur le service dans le compte ou administrateur sur l'instance de service |
 {: caption="Tableau 4. Tâches d'administration pour la gestion des règles de service avec l'offre Identity and Access activée" caption-side="top"}
 
 ### Rôles de règle de service
@@ -95,16 +95,17 @@ En complément des descriptions des rôles disponibles dans la console, le table
 {: caption="Tableau 5. Exemples de rôles et d'actions utilisateur" caption-side="top"}
 
 
+
 ## Autorisations relatives à l'infrastructure
 {: #infrapermissions}
 
-Vous pouvez attribuer les autorisations suivantes lorsque vous invitez un utilisateur :
+Vous pouvez attribuer les droits initiaux suivants lorsque vous invitez un utilisateur :
 
-| Autorisation sur l'infrastructure | Description des actions |
+| Ensemble de droits | Description des actions |
 |---------------------------|------------------------|
 |Affichage uniquement | Les utilisateurs avec cette autorisation peuvent uniquement afficher les éléments dans le système.|
 |Utilisateur de base | Les utilisateurs avec cette autorisation peuvent effectuer des actions élémentaires dans le système, comme l'ajout d'un ticket et la gestion de périphériques. |
 |Superutilisateur | Les utilisateurs avec cette autorisation peuvent réaliser toutes les actions disponibles dans le système. |
-{:caption="Tableau 6. Autorisations relatives à l'infrastructure" caption-side="top"}
+{:caption="Tableau 6. Droits relatifs à l'infrastructure" caption-side="top"}
 
-Des autorisations supplémentaires peuvent être accordées à l'utilisateur après son acceptation de l'invitation.
+Des autorisations supplémentaires peuvent être accordées à l'utilisateur après son acceptation de l'invitation. L'ensemble de droits initiaux défini lors de l'invitation ne donne pas accès aux appareils, par conséquent, vous devez octroyer l'accès aux appareils dans le portail de contrôle après que l'utilisateur a accepté l'invitation. 

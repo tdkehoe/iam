@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-08-08"
+lastupdated: "2017-09-29"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2017-08-08"
 # Permisos y roles de usuario
 {: #userroles}
 
-Gestione usuarios en los servicios de infraestructura y plataforma {{site.data.keyword.Bluemix_notm}} desde la página **Usuarios** de su cuenta. Para acceder a la página Usuarios, en el menú {{site.data.keyword.Bluemix_notm}} pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. Los propietarios de cuentas llevan a cabo todas las operaciones en las organizaciones y los espacios incluida la gestión de usuarios y sus roles asignados. Los gestores de espacios y organizaciones también tienen acceso para gestionar roles.
+Puede gestionar los usuarios en los servicios de infraestructura y plataforma {{site.data.keyword.Bluemix_notm}} desde la página **Usuarios** de su cuenta. Para acceder a la página Usuarios, en el menú {{site.data.keyword.Bluemix_notm}} pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. Los propietarios de cuentas pueden realizar todas las operaciones para gestionar usuarios, permisos, organizaciones y espacios. Los gestores de espacios y organizaciones de Cloud Foundry también tienen acceso para gestionar permisos para usuarios añadidos a cada organización y espacio que gestionan.
 {:shortdesc}
 
 Si usted es un usuario que ha sido añadido a otra cuenta personal, y desea ver sus permisos y roles asignados, vaya a **Gestionar** &gt; **Seguridad** &gt; **Identity & Access** &gt; **Usuarios** y, a continuación, pulse en su nombre.
@@ -60,20 +60,20 @@ Los siguientes roles se pueden asignar a nivel de espacio:
 ## Políticas y roles para la gestión de acceso e identidades
 {: #iamusermanpol}
 
-A los propietarios de las cuentas se les asigna de forma automática el rol de administrador de acceso de cuenta para la gestión de acceso e identidades que permite asignar y gestionar políticas de servicio. Este tipo de control de acceso permite asignar políticas por servicio o instancia de servicio para permitir niveles de acceso para gestionar recursos y usuarios dentro del contexto asignado.
+A los propietarios de las cuentas se les asigna de forma automática el rol de administrador de cuenta para la gestión de acceso e identidades que permite asignar y gestionar políticas de servicio. Las políticas de servicio pueden asignarse a usuarios individuales o a ID de servicio, y la política asignada puede definir el acceso a un servicio completo o en el nivel de instancia individual. 
 
 ### Políticas de servicio
 
-Una política asigna a un usuario uno o varios roles sobre un conjunto de recursos utilizando una combinación de atributos para definir el conjunto de recursos aplicable. Cuando se asigna una política a un usuario, primero hay que especificar el servicio. A continuación, se debe seleccionar el rol o los roles que desea asignar. En función del servicio que seleccione, podrían haber disponibles opciones de configuración adicionales.
+Una política asigna a un usuario o ID de servicio uno o varios roles sobre un conjunto de recursos utilizando una combinación de atributos para definir el conjunto de recursos aplicable. Cuando se asigna una política a un usuario, primero hay que especificar el servicio. A continuación, se debe seleccionar el rol o los roles que desea asignar. En función del servicio que seleccione, podrían haber disponibles opciones de configuración adicionales.
 
 Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla siguiente se muestran las tareas de gestión de políticas y el rol necesario para cada una.
 
 | Acción | Rol necesario |
 |----------|---------|
-| Crear políticas en una cuenta para todos los servicios e instancias | Administrador de acceso de cuenta |
-| Crear una política en un servicio de una cuenta | Administrador de acceso de cuenta o administrador en el servicio en la cuenta |
-| Crear una instancia de servicio | Administrador de acceso de cuenta o el administrador o editor en el servicio en la cuenta |
-| Crear una política en una instancia de servicio | Administrador de acceso de cuenta o administrador en el servicio en la cuenta o administrador en la instancia de servicio |
+| Crear políticas en una cuenta para todos los servicios e instancias | Administrador de la cuenta |
+| Crear una política en un servicio de una cuenta | Administrador de la cuenta o administrador en el servicio en la cuenta |
+| Crear una instancia de servicio | Administrador de la cuenta o administrador o editor en el servicio en la cuenta |
+| Crear una política en una instancia de servicio | Administrador de la cuenta o administrador en el servicio en la cuenta o administrador en la instancia de servicio |
 {: caption="Tabla 4. Tareas administrativas para gestionar políticas de servicios habilitados para identidad y acceso" caption-side="top"}
 
 ### Roles de política de servicio
@@ -92,16 +92,17 @@ Además de las descripciones de los roles que se proporcionan en la consola, la 
 {: caption="Tabla 5. Roles y acciones de usuario de ejemplo" caption-side="top"}
 
 
+
 ## Permisos de infraestructura
 {: #infrapermissions}
 
-Puede establecer los siguientes permisos al invitar a un usuario:
+Puede establecer los siguientes permisos iniciales al invitar a un usuario:
 
-| Permisos de infraestructura | Descripción de acciones |
+| Conjunto de permisos | Descripción de acciones |
 |---------------------------|------------------------|
 |Solo visualización | Los usuarios con este permiso solo pueden ver los elementos del sistema.|
 |Usuario básico | Los usuarios con este permiso pueden realizar acciones básicas en el sistema, como, por ejemplo, añadir una incidencia y gestionar dispositivos. |
 |Superusuario | Los usuarios con este permiso pueden realizar todas las acciones disponibles en el sistema. |
 {:caption="Tabla 6. Permisos de infraestructura" caption-side="top"}
 
-Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación.
+Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación. El permiso inicial establecido en el momento de invitación no otorga acceso a los dispositivos, por lo que debe otorgar acceso de dispositivo en el Portal de control una vez que el usuario haya aceptado la invitación.

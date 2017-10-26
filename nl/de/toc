@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="bluemix-iam" audience="platform" href="/docs/iam/iamusermanage.html"}
-Identity and Access verwalten
+Identität und Zugriff verwalten
 
     {: .navgroup id="learn"}
     users_roles.md
@@ -10,12 +10,17 @@ Identity and Access verwalten
     
     {: .navgroup id="howto"}
     iamuserinv.md
-    assignaccess.md
     iamusermanage.md
+
+    {: .topicgroup}
+    Mit Services arbeiten
+        serviceid.md
+        serviceidaccess.md
     
     {: .topicgroup}
     API-Schlüssel
         apikeys.md
+        userid_keys.md
+        serviceid_keys.md
     {: .navgroup-end}
-
     

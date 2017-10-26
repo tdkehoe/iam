@@ -10,12 +10,17 @@ ID 및 액세스 관리
     
     {: .navgroup id="howto"}
     iamuserinv.md
-    assignaccess.md
     iamusermanage.md
+
+    {: .topicgroup}
+    서비스 작업
+        serviceid.md
+        serviceidaccess.md
     
     {: .topicgroup}
     API 키
         apikeys.md
+        userid_keys.md
+        serviceid_keys.md
     {: .navgroup-end}
-
     

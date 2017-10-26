@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-08-08"
+lastupdated: "2017-09-29"
 
 ---
 
@@ -16,10 +16,10 @@ lastupdated: "2017-08-08"
 # Benutzerrollen und Berechtigungen
 {: #userroles}
 
-Sie können Benutzer über die {{site.data.keyword.Bluemix_notm}}-Plattform- und {{site.data.keyword.Bluemix_notm}}-Infrastrukturservices auf der Seite **Benutzer** für Ihr Konto verwalten. Um auf die Seite 'Benutzer' zuzugreifen, klicken Sie im {{site.data.keyword.Bluemix_notm}}-Menü auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Kontoeigner führen alle Operationen für Organisationen und Bereiche aus, einschließlich der Verwaltung von Benutzern und deren zugeordneten Rollen. Organisationsmanager und Bereichsmanager verfügen auch über Zugriff zur Verwaltung von Rollen.
+Sie können Benutzer auf der Seite **Benutzer** Ihres Kontos innerhalb der {{site.data.keyword.Bluemix_notm}}-Plattform und in den Infrastrukturservices verwalten. Um auf die Seite 'Benutzer' zuzugreifen, klicken Sie im {{site.data.keyword.Bluemix_notm}}-Menü auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Kontoeigner können alle Operationen zum Verwalten von Benutzern, Berechtigungen, Organisationen und Bereichen ausführen. Cloud Foundry-Organisationsmanager und -Bereichsmanager verfügen außerdem über Zugriff auf die Verwaltungsfunktion für die Berechtigungen von Benutzern, die zu den einzelnen Organisationen und Bereichen hinzugefügt wurden, die von diesen Managern verwaltet werden.
 {:shortdesc}
 
-Wenn Sie ein Benutzer sind, der zum Konto einer anderen Person hinzugefügt wurde, und Sie Ihre zugeordneten Rollen und Berechtigungen anzeigen möchten, wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Identity & Access** &gt; **Benutzer** und klicken Sie auf Ihren Namen.
+Wenn Sie ein Benutzer sind, der zum Konto einer anderen Person hinzugefügt wurde, und Sie Ihre zugeordneten Rollen und Berechtigungen anzeigen möchten, wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Identität & Zugriff** &gt; **Benutzer** und klicken Sie auf Ihren Namen.
 
 ## Kontorollen
 {: #userrolesinfo}
@@ -55,26 +55,26 @@ Die folgenden Rollen können auf Bereichsebene zugeordnet werden:
 |Auditor | Bereichsauditoren haben Lesezugriff auf alle Informationen zu Bereichen, beispielsweise auf Informationen zur Anzahl der Instanzen, zu Servicebindungen und zur Ressourcennutzung für jede Anwendung im Bereich. |
 {:caption="Tabelle 3. Bereichsrollen und Berechtigungen" caption-side="top"}
 
-**Hinweis**: Benutzer, denen eine Bereichsmanager- oder Bereichsentwicklerrolle zugeordnet wurde, können auf die Umgebungsvariable VCAP_SERVICES zugreifen. Ein Benutzer, dem die Auditorrolle zugeordnet wurde, kann jedoch nicht auf VCAP_SERVICES zugreifen.
+**Hinweis:** Benutzer, denen eine Bereichsmanager- oder Bereichsentwicklerrolle zugeordnet wurde, können auf die Umgebungsvariable VCAP_SERVICES zugreifen. Ein Benutzer, dem die Auditorrolle zugeordnet wurde, kann jedoch nicht auf VCAP_SERVICES zugreifen.
 
 ## Richtlinien und Rollen für Identity and Access Management
 {: #iamusermanpol}
 
-Kontoeignern wird automatisch die Administratorrolle für den Kontozugriff für Identity and Access Management zugewiesen, mit der Sie Servicerichtlinien zuweisen und verwalten können. Mit dieser Art der Zugriffssteuerung können Richtlinien pro Service oder Serviceinstanz zugewiesen werden, was wiederum die Einrichtung verschiedener Zugriffsebenen für die Verwaltung von Ressourcen und Benutzern im zugewiesenen Kontext ermöglicht.
+Kontoeignern wird automatisch die Administratorrolle für das Konto für die Identitäts- und Zugriffsverwaltung zugewiesen, mit der Servicerichtlinien zugewiesen und verwaltet werden können. Servicerichtlinien können einzelnen Benutzern oder Service-IDs zugewiesen werden. Die zugewiesene Richtlinie kann den Zugriff für einen gesamten Service oder auf Ebene einzelner Instanzen definieren. 
 
 ### Servicerichtlinien
 
-Eine Richtlinie weist einem Benutzer eine oder mehrere Rollen für eine Gruppe von Ressourcen durch eine Kombination von Attributen zur Definition der betreffenden Gruppe von Ressourcen zu. Wenn Sie eine Richtlinie einem Benutzer zuweisen, geben Sie zuerst den Service an. Anschließend können Sie eine oder mehrere Rollen auswählen, die zugewiesen werden sollen. Abhängig von dem Service, den Sie auswählen, können zusätzliche Konfigurationsoptionen verfügbar sein.
+Eine Richtlinie weist einem Benutzer oder einer Service-ID einzelne oder mehrere Rollen für eine Ressourcengruppe zu. Dazu wird eine Kombination von Attributen zur Definition der betreffenden Ressourcengruppe verwendet. Wenn Sie eine Richtlinie einem Benutzer zuweisen, geben Sie zuerst den Service an. Anschließend können Sie eine oder mehrere Rollen auswählen, die zugewiesen werden sollen. Abhängig von dem Service, den Sie auswählen, können zusätzliche Konfigurationsoptionen verfügbar sein.
 
 Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle haben. In der folgenden Tabelle werden die Richtlinienmanagementtasks und die jeweils erforderliche Rolle aufgeführt.
 
 | Aktion | Erforderliche Rolle |
 |----------|---------|
-| Richtlinien für ein Konto für alle Services und Instanzen erstellen | Administrator für den Kontozugriff |
-| Richtlinie für einen Service in einem Konto erstellen | Administrator für den Kontozugriff oder Administrator für den Service im Konto |
-| Serviceinstanz erstellen | Administrator für den Kontozugriff oder der Administrator oder Editor für den Service im Konto |
-| Richtlinie für eine Serviceinstanz erstellen | Administrator für den Kontozugriff oder Administrator für das Konto oder Administrator für den Service im Konto oder Administrator für die Serviceinstanz |
-{: caption="Tabelle 4. Verwaltungstasks zum Verwalten von Richtlinien für durch Identity and Access aktivierte Services" caption-side="top"}
+| Richtlinien für ein Konto für alle Services und Instanzen erstellen | Kontoadministrator |
+| Richtlinie für einen Service in einem Konto erstellen | Kontoadministrator oder Administrator für den Service im Konto |
+| Serviceinstanz erstellen | Kontoadministrator oder Administrator oder Editor für den Service im Konto |
+| Richtlinie für eine Serviceinstanz erstellen | Kontoadministrator oder Administrator für den Service im Konto oder Administrator für die Serviceinstanz |
+{: caption="Tabelle 4. Verwaltungstasks zum Verwalten von Richtlinien für durch Identität und Zugriff aktivierte Services" caption-side="top"}
 
 ### Servicerichtlinienrollen
 {: #iamusermanrol}
@@ -92,16 +92,17 @@ Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden 
 {: caption="Tabelle 5. Beispiele für Benutzerrollen und Aktionen" caption-side="top"}
 
 
+
 ## Infrastructure-Berechtigungen
 {: #infrapermissions}
 
-Sie können bei der Einladung eines Benutzers die folgenden Berechtigungen zuweisen:
+Sie können bei der Einladung eines Benutzers die folgenden Ausgangsberechtigungen festlegen:
 
-| Infrastructure-Berechtigung | Beschreibung von Aktionen |
+| Festgelegte Berechtigung | Beschreibung von Aktionen |
 |---------------------------|------------------------|
 |Nur anzeigen | Benutzer mit dieser Berechtigung können Elemente im System nur anzeigen.|
 |Basisbenutzer | Benutzer mit dieser Berechtigung können Basisaktionen im System ausführen, wie zum Beispiel Tickets hinzufügen und Geräte verwalten. |
 |Superuser | Benutzer mit dieser Berechtigung können alle verfügbaren Aktionen im System ausführen. |
 {:caption="Tabelle 6. Infrastructure-Berechtigung" caption-side="top"}
 
-Weitere Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung akzeptiert hat.
+Weitere Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung akzeptiert hat. Die Ausgangsberechtigung, die zum Zeitpunkt der Einladung festgelegt wird, erteilt keinen Zugriff auf Geräte. Die Zugriffsberechtigungen für Geräte müssen im Steuerungsportal erteilt werden, nachdem der Benutzer die Einladung akzeptiert hat.
