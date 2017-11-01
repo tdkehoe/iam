@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-10-03"
 # Managing user API keys
 {: #userapikey}
 
-A federated or non-federated user can create an API key to use on the CLI or as part of automation to log in as your user identity. You can use the {{site.data.keyword.Bluemix_notm}} UI or the {{site.data.keyword.Bluemix_notm}} CLI to manage your API keys by listing your keys, creating keys, updating keys, or deleting keys. To manage the {{site.data.keyword.Bluemix_notm}} API keys associated with your user identity, go to **Manage** &gt; **Security** &gt; **Bluemix API keys** to see a list of your API Keys with descriptions and dates. Then, you can create, edit or delete API keys from this page. For a full list of available CLI commands, see [Commands for managing API keys and policies](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+A federated or non-federated user can create an API key to use on the CLI or as part of automation to log in as your user identity. You can use the {{site.data.keyword.Bluemix_notm}} UI or the {{site.data.keyword.Bluemix_notm}} CLI to manage your API keys by listing your keys, creating keys, updating keys, or deleting keys. To manage the {{site.data.keyword.Bluemix_notm}} API keys associated with your user identity, go to **Manage** &gt; **Security** &gt; **Platform API keys** to see a list of your API Keys with descriptions and dates. Then, you can create, edit or delete API keys from this page. For a full list of available CLI commands, see [Commands for managing API keys and policies](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
 As a [federated user](/docs/admin/adminpublic.html#federatedid), you can use an API key to login by using the `BLUEMIX_API_KEY` environment variable. For more information about using an API key for logging in, see the documentation for the [{{site.data.keyword.Bluemix_notm}} CLI `bluemix login` command](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login) and the [cf CLI `cf login` command](/docs/cli/reference/cfcommands/index.html#cf_login).
 
@@ -25,7 +25,7 @@ As a {{site.data.keyword.Bluemix_notm}} user you might want to use an API key wh
 
 To create an API key for your user identity in the UI:
 
-1. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys**.
+1. Go to **Manage** &gt; **Security** &gt; **Platform API keys**.
 2. Click **Create API key**.
 3. Enter a name and description for your API key.
 4. Click **Create API key**.
@@ -65,7 +65,7 @@ If you want to change the name or the description of an API key, complete the fo
 
 To edit an API key:
 
-1. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys**.
+1. Go to **Manage** &gt; **Security** &gt; **Platform API keys**.
 2. From the **Actions** menu of an API key that is listed in the table, click **Edit the name & description** 
 3. Update the information for your API key.
 4. Click **Update API key**.
@@ -84,7 +84,7 @@ If you are using a key rotation strategy, you might want to delete an older key 
 
 To delete an API key: 
 
-1. Go to **Manage** &gt; **Security** &gt; **Bluemix API keys**.
+1. Go to **Manage** &gt; **Security** &gt; **Platform API keys**.
 2. From the **Actions** menu of an API key that is listed in the table, click to **Delete**.
 3. Then, confirm the deletion by clicking **Delete key**.
 
