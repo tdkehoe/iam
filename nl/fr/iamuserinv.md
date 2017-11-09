@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -38,17 +38,21 @@ Vous accordez un accès aux utilisateurs lorsque vous les invitez, en leur affec
 
 ### Services avec l'offre Identity and Access activée
 
-Vous pouvez affecter une règle de service unique lorsque vous invitez un nouvel utilisateur. Une fois que l'utilisateur a accepté l'invitation, vous pouvez ajouter des règles de service supplémentaires. Pour savoir comment éditer des règles d'accès afin d'ajouter des rôles, comment ajouter des règles de service ou comment retirer une règle pour un utilisateur, voir [Services avec l'offre Identity and Access activée](/docs/iam/iamusermanage.html#iammanidaccser). 
+Vous pouvez affecter une règle de service unique lorsque vous invitez un nouvel utilisateur. Une fois que l'utilisateur a accepté l'invitation, vous pouvez ajouter des règles de service supplémentaires. Pour savoir comment éditer des règles d'accès afin d'ajouter des rôles, comment ajouter des règles de service ou comment retirer une règle pour un utilisateur, voir [Services avec l'offre Identity and Access activée](/docs/iam/iamusermanage.html#iammanidaccser).
 
-**Remarque** : selon le service que vous sélectionnez lorsque vous affectez la règle, il se peut que les zones décrites dans la procédure ci-après ne soient pas toutes affichées. 
+**Remarque** : selon le service que vous sélectionnez lorsque vous affectez la règle, il se peut que les zones décrites dans la procédure ci-après ne soient pas toutes affichées.
 
 1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services avec l'offre Identity and Access activée**.
 2. Sélectionnez un service.
-3. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
-**Remarque :** il n'est pas nécessaire de sélectionner une région pour tous les services. 
+3. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
+**Remarque :** il n'est pas nécessaire de sélectionner une région pour tous les services.
 4. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-5. Sélectionnez un rôle afin de définir la portée de l'accès pour la règle.
-6. Facultatif : sélectionnez **Ajouter un rôle** afin de spécifier un rôle supplémentaire pour la règle.
+5. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment.  
+    * **Type de ressource** : entrez **bucket**.
+    * **Ressource** : entrez le nom de votre compartiment. 
+6. Sélectionnez un rôle afin de définir la portée de l'accès pour la règle.
+7. Facultatif : sélectionnez **Ajouter un rôle** afin de spécifier un rôle supplémentaire pour la règle.
+
 
 Voir [Règles et rôles dans Identity and Access Management](/docs/iam/users_roles.html#iamusermanpol) pour plus d'informations sur les rôles lors de la définition de règles de services.
 

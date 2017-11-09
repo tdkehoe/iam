@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -24,7 +24,7 @@ lastupdated: "2017-10-03"
 
 ## 建立服務 ID
 
-若要建立服務 ID，請移至**管理** &gt; **安全** &gt; **身分及存取** &gt; **服務 ID**。請遵循可建立服務 ID 之名稱及說明的處理程序。然後，使用**動作**功能表來管理您的服務 ID。您可以從指派原則以及建立 API 金鑰開始。如需使用 API 金鑰的相關資訊，請參閱[管理服務 ID API 金鑰](/docs/iam/serviceid_keys.html#serviceidapikeys)。如需用來管理服務 ID 之 CLI 指令的詳細資料，請參閱[用來管理 API 金鑰及原則的指令](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。 
+若要建立服務 ID，請移至**管理** &gt; **安全** &gt; **身分及存取**，然後從側邊畫面選取**服務 ID**。請遵循可建立服務 ID 之名稱及說明的處理程序。然後，使用**動作**功能表來管理您的服務 ID。您可以從指派原則以及建立 API 金鑰開始。如需使用 API 金鑰的相關資訊，請參閱[管理服務 ID API 金鑰](/docs/iam/serviceid_keys.html#serviceidapikeys)。如需用來管理服務 ID 之 CLI 指令的詳細資料，請參閱[用來管理 API 金鑰及原則的指令](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。 
 
 ## 更新服務 ID
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -58,7 +58,7 @@ Sie können auch einen Benutzer einer anderen Organisation hinzufügen, indem Si
 ## Identitäts- und zugriffsaktivierte Servicezugriffsrichtlinien
 {: #iammanidaccser}
 
-Um Servicerichtlinie zu verwalten oder neue Servicerichtlinien für Benutzer zuzuweisen, müssen Sie der Administrator für den Kontozugriff oder der zugewiesene Administrator für den entsprechenden Service oder die Serviceinstanz sein. Weitere Informationen zu Servicerichtlinien und Rollen finden Sie im Abschnitt [Richtlinien und Rollen für Identity and Access Management](/docs/iam/users_roles.html#iamusermanpol). Detaillierte Informationen zu den CLI-Befehlen, die zum Verwalten von Richtlinien verwendet werden, finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
+Um Servicerichtlinie zu verwalten oder neue Servicerichtlinien für Benutzer zuzuweisen, müssen Sie der Administrator für den Kontozugriff oder der zugewiesene Administrator für den entsprechenden Service oder die Serviceinstanz sein. Weitere Informationen zu Servicerichtlinien und Rollen finden Sie im Abschnitt [Richtlinien und Rollen für Identity and Access Management](/docs/iam/users_roles.html#iamusermanpol). Detaillierte Informationen zu den CLI-Befehlen, die zum Verwalten von Richtlinien verwendet werden, finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
 ### Vorhandene Richtlinie bearbeiten
 
@@ -74,11 +74,14 @@ Um Servicerichtlinie zu verwalten oder neue Servicerichtlinien für Benutzer zuz
 2. Wählen Sie den Benutzernamen aus, für den Sie Servicerichtlinien zuweisen möchten.
 3. Wählen Sie **Richtlinien zuweisen** aus.
 4. Wählen Sie einen Service aus.
-5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
+5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
 **Hinweis:** Nicht alle Services erfordern die Auswahl einer Region.
 6. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-7. Wählen Sie eine Rolle aus, um den Zugriffsbereich für die Richtlinie zu definieren.
-8. Optional: Wählen Sie **Rolle hinzufügen** aus, um eine weitere Rolle für die Richtlinie anzugeben.
+7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
+    * **Ressourcentyp**: Geben Sie **Bucket** ein.
+    * **Ressource**: Geben Sie den Namen des Buckets ein.
+8. Wählen Sie eine Rolle aus, um den Zugriffsbereich für die Richtlinie zu definieren.
+9. Optional: Wählen Sie **Rolle hinzufügen** aus, um eine weitere Rolle für die Richtlinie anzugeben.
 
 ### Richtlinie entfernen
 

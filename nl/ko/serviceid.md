@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -24,7 +24,7 @@ lastupdated: "2017-10-03"
 
 ## 서비스 ID 작성
 
-서비스 ID를 작성하려면 **관리** &gt; **보안** &gt; **ID 및 액세스** &gt; **서비스 ID**로 이동하십시오. 프로세스에 따라 서비스 ID의 이름과 설명을 작성하십시오. 그런 다음 **조치** 메뉴를 사용하여 서비스 ID를 관리하십시오. 정책을 지정하고 API 키를 작성하여 시작할 수 있습니다. API 키를 사용한 작업에 대한 자세한 정보는 [서비스 ID API 키 관리](/docs/iam/serviceid_keys.html#serviceidapikeys)를 참조하십시오. 서비스 ID 관리에 사용되는 CLI 명령에 대한 세부사항은 [API 키 및 정책 관리를 위한 명령](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오. 
+서비스 ID를 작성하려면, **관리** &gt; **보안** &gt; **ID 및 액세스**로 이동한 다음 사이드 패널에서 **서비스 ID**를 선택하십시오. 프로세스에 따라 서비스 ID의 이름과 설명을 작성하십시오. 그런 다음 **조치** 메뉴를 사용하여 서비스 ID를 관리하십시오. 정책을 지정하고 API 키를 작성하여 시작할 수 있습니다. API 키를 사용한 작업에 대한 자세한 정보는 [서비스 ID API 키 관리](/docs/iam/serviceid_keys.html#serviceidapikeys)를 참조하십시오. 서비스 ID 관리에 사용되는 CLI 명령에 대한 세부사항은 [API 키 및 정책 관리를 위한 명령](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오. 
 
 ## 서비스 ID 업데이트
 

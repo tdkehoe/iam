@@ -15,7 +15,7 @@ lastupdated: "2017-08-23"
 # Mit API-Schlüsseln arbeiten
 {: #manapikey}
 
-Bei einem Schlüssel einer Anwendungsprogrammierschnittstelle (API-Schlüssel) handelt es sich um einen eindeutigen Code, der an eine Anwendungsprogrammierschnittstelle (API) übergeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. API-Schlüssel werden verwendet, um zu verfolgen und zu steuern, wie die API verwendet wird, um so z. B. Verwendung in böswilliger Absicht oder Missbrauch der API zu verhindern. Der API-Schlüssel dient oft als eine eindeutige Kennung und geheimes Token für die Authentifizierung. Normalerweise ist ihm eine Gruppe von Zugriffsberechtigungen zugeordnet, die speziell für die ihm zugeordnete Identität gelten. 
+Bei einem Schlüssel einer Anwendungsprogrammierschnittstelle (API-Schlüssel) handelt es sich um einen eindeutigen Code, der an eine Anwendungsprogrammierschnittstelle (API) übergeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren.  API-Schlüssel werden verwendet, um zu verfolgen und zu steuern, wie die API verwendet wird, um so z. B. Verwendung in böswilliger Absicht oder Missbrauch der API zu verhindern. Der API-Schlüssel dient oft als eine eindeutige Kennung und geheimes Token für die Authentifizierung. Normalerweise ist ihm eine Gruppe von Zugriffsberechtigungen zugeordnet, die speziell für die ihm zugeordnete Identität gelten.
 
 API-Schlüssel können den folgenden Entitäten zugeordnet werden:
 

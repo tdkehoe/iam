@@ -15,7 +15,7 @@ lastupdated: "2017-08-23"
 # Trabajo con las claves de API
 {: #manapikey}
 
-Una clave de interfaz de programación de aplicaciones (clave de API) es un código exclusivo que se pasa en una interfaz de programación de aplicaciones (API) para identificar la aplicación de llamada o el usuario. Las claves de API se utilizan para realizar un seguimiento y un control sobre la forma la que se utiliza la API, por ejemplo, para impedir un uso malintencionado o abusivo de la misma. La clave de API a menudo actúa a la vez como un identificador exclusivo y como una señal secreta para la autenticación, y habitualmente tiene un conjunto de derechos específicos de la identidad asociado a la misma.
+Una clave de interfaz de programación de aplicaciones (clave de API) es un código exclusivo que se pasa en una interfaz de programación de aplicaciones (API) para identificar la aplicación de llamada o el usuario.  Las claves de API se utilizan para realizar un seguimiento y un control sobre la forma la que se utiliza la API, por ejemplo, para impedir un uso malintencionado o abusivo de la misma. La clave de API a menudo actúa a la vez como un identificador exclusivo y como una señal secreta para la autenticación, y habitualmente tiene un conjunto de derechos específicos de la identidad asociado a la misma.
 
 Las claves de API pueden estar asociadas con lo siguiente:
 

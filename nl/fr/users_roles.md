@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -63,11 +63,11 @@ d'environnement VCAP_SERVICES. Toutefois, un utilisateur possédant le rôle d'a
 ## Règles de gestion de l'identité et de l'accès et rôles
 {: #iamusermanpol}
 
-Le rôle d'administrateur des accès au compte pour le service Identity and Access Management est automatiquement affecté aux propriétaires de compte, ce qui leur permet d'affecter et de gérer des règles de service. Les règles de service peuvent être affectées à des utilisateurs ou à des ID de service et la règle affectée peut définir les droits d'accès pour un service entier ou au niveau de chaque instance.  
+Le rôle d'administrateur des accès au compte pour le service Identity and Access Management (IAM) est automatiquement affecté aux propriétaires de compte, ce qui leur permet d'affecter et de gérer des règles de service. Les règles de service peuvent être affectées à des utilisateurs ou à des ID de service et la règle affectée peut définir les droits d'accès pour un service entier ou au niveau de chaque instance.
 
 ### Règles de service
 
-Une règle affecte à un utilisateur ou à un ID de service un ou plusieurs rôles sur un ensemble de ressources en utilisant une combinaison d'attributs pour définir l'ensemble de ressources applicable. Lorsque vous affectez une règle à un utilisateur, vous devez d'abord spécifier le service concerné. Vous pouvez ensuite sélectionner le ou les rôles à lui affecter. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
+Une règle affecte à un utilisateur ou à un ID de service un ou plusieurs rôles sur un ensemble de ressources en utilisant une combinaison d'attributs pour définir l'ensemble de ressources applicable. Lorsque vous affectez une règle, vous devez d'abord spécifier le service concerné. Vous pouvez ensuite sélectionner le ou les rôles à lui affecter. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
 
 Vous pouvez affecter et gérer des règles si le rôle approprié vous a été attribué. Le tableau suivant décrit les tâches de gestion de règles et le rôle requis pour chacune.
 
@@ -77,23 +77,60 @@ Vous pouvez affecter et gérer des règles si le rôle approprié vous a été a
 | Créer une règle sur un service dans un compte | Administrateur de compte ou administrateur sur le service dans le compte |
 | Créer une instance de service | Administrateur de compte ou administrateur ou éditeur sur le service dans le compte |
 | Créer une règle sur une instance de service | Administrateur de compte ou administrateur sur le service dans le compte ou administrateur sur l'instance de service |
-{: caption="Tableau 4. Tâches d'administration pour la gestion des règles de service avec l'offre Identity and Access activée" caption-side="top"}
+{: caption="Tableau 4. Tâches d'administration pour la gestion des règles de service avec l'offre IAM activée" caption-side="top"}
 
 ### Rôles de règle de service
 {: #iamusermanrol}
 
-Les rôles sont un assortiment d'actions ; les actions mappées à ces rôles sont spécifiques au service concerné. Voir la documentation du service sélectionné pour des détails supplémentaires sur les types d'action que chaque rôle autorise.
+IAM vous permet de gérer et de définir les droits d'accès des utilisateurs et des ressources dans votre compte. Si le service que vous utilisez peut être géré à l'aide d'IAM pour le contrôle des accès utilisateur, les deux types de rôles suivants permettent d'affecter des actions différentes au sein de votre compte : Gestion de la plateforme et Accès au service. 
 
-En complément des descriptions des rôles disponibles dans la console, le tableau ci-dessous présente des exemples de diverses tâches que les utilisateurs affectés à chaque rôle peuvent effectuer dans le service {{site.data.keyword.containershort_notm}}.  
+<dl>
+<dt>Rôles Gestion de la plateforme</dt>
+<dd>Rôles disponibles pour tous les services qui peuvent être gérés via IAM pour le contrôle des accès utilisateur, à savoir Administrateur, Editeur, Opérateur, Afficheur et Administrateur de facturation.
+Ces rôles sont mappés à des actions utilisateur qui peuvent être exécutées sur des ressources {{site.data.keyword.Bluemix_notm}} au niveau plateforme. Par exemple, parmi ces actions, citons la possibilité de créer des instances, de connecter des instances à une application, de gérer des ID de service, de gérer des utilisateurs et des droits et de gérer la facturation et les quotas du compte. </dd>
+<dt>Rôles Accès au service</dt>
+<dd>Ces rôles sont spécifiques du service. Les rôles de gestionnaire, d'auteur et de lecteur définissent la possibilité de l'utilisateur d'utiliser le service et de passer des appels d'API de service. Etant donné que chaque service définit les actions qu'un utilisateur doté d'un rôle peut effectuer, il se peut qu'un service ne puisse pas utiliser tous les rôles disponibles décrits dans cette documentation. </dd>
+</dl>
 
-| Rôle | Description des actions | Exemples d'actions|
+**Remarque** : vous ne verrez peut-être pas tous les rôles possibles lors de l'affectation de règles dans l'interface utilisateur car seuls les rôles qui s'appliquent au service que vous avez sélectionné dans la règle s'affichent. Pour en savoir plus sur les rôles activés spécifiquement et sur les actions autorisées par chaque rôle d'accès pour chaque service, voir la documentation sur chaque service. 
+
+
+#### Rôles Gestion de la plateforme
+
+Les rôles Gestion de la plateforme permettent aux utilisateurs de se voir affecter différents niveaux de droits pour effectuer des actions de plateforme. En complément des descriptions des rôles disponibles dans la console, les tableaux ci-dessous présentent des exemples de certaines actions de gestion de plateforme que les utilisateurs affectés à chaque rôle peuvent effectuer. 
+
+| Rôle Gestion de la plateforme | Actions qu'un utilisateur peut effectuer sur des services dans le compte | Actions pour les ID de service |
+|:-----------------|:--------------|:---------------|
+| Visualiseur | Afficher des instances | Afficher des ID et des clés d'API |
+| Opérateur |  Afficher et lier des instances de service | Non applicable |
+| Editeur |  Créer, supprimer, éditer, suspendre, reprendre, afficher, lier des instances de service | Supprimer des ID et créer et supprimer des clés d'API |
+| Administrateur |  Toutes les actions de gestion pour des services | Créer et supprimer des ID et des clés d'API, affecter des règles à des ID |
+{: caption="Tableau 5. Exemples de rôles et d'actions de gestion de plateforme " caption-side="top"}
+
+Certains services peuvent mapper des actions spécifiques aux rôles de gestion de plateforme qui sont liés à la gestion du service plutôt qu'à l'accès du service. A titre d'exemple, voir le tableau suivant dans lequel sont décrites les actions de service {{site.data.keyword.containershort_notm}} mappées à ces rôles. 
+
+
+| Rôle Gestion de la plateforme | Description des actions | Exemples d'action pour le service {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
-| Visualiseur | Exécute des actions qui ne modifient pas l'état ; actions en lecture seule | <ul><li>Listage des clusters</li><li>Affichage' des détails d'un cluster</li></ul>|
-| Editeur | Exécute des actions qui modifient l'état et créent ou suppriment des sous-ressources |<ul><li>Liaison d'un service à un cluster</li><li>Créez un webhook</li></ul> |
-| Opérateur | Effectue des actions requises pour configurer et opérer sur des ressources. | <ul><li>Ajout ou retrait de noeuds d'agent</li><li>Réamorçage ou rechargement de noeud d'agent</li><li>Liaison d'un service à un cluster</li></ul> |
-| Administrateur | Peut effectuer toutes les actions, notamment de gestion du contrôle d'accès |<ul><li>Retrait d'un cluster</li><li>Création d'un cluster</li><li>Mise à jour des règles d'accès utilisateur</li><li>Toutes les actions qu'un afficheur, un éditeur et un opérateur peuvent effectuer</li></ul>|
-{: caption="Tableau 5. Exemples de rôles et d'actions utilisateur" caption-side="top"}
+| Visualiseur | Afficher des instances de service, sans pouvoir les modifier | <ul><li>Répertorier les clusters</li><li>Afficher les détails d'un cluster</li></ul>|
+| Editeur | Effectuer toutes les actions de plateforme à l'exception de la gestion du compte et de l'affectation de règles d'accès |<ul><li>Lier un service à un cluster</li><li>Créer un webhook</li></ul> |
+| Opérateur | Effectuer les actions de plateforme requises pour configurer et exploiter des instances de service, par exemple, l'affichage de tableau de bord d'un service. | <ul><li>Ajouter ou retirer des noeuds d'agent</li><li>Réamorcer ou recharger des noeuds d'agent</li><li>Lier un service à un cluster</li></ul> |
+| Administrateur | Effectuer toutes les actions de plateforme en fonction de la ressource pour laquelle ce rôle est affecté, y compris l'affectation de règles d'accès à d'autres utilisateurs. |<ul><li>Retirer un cluster</li><li>Créer un cluster</li><li>Mettre à jour des règles d'accès utilisateur</li><li>Toutes les actions qu'un afficheur, un éditeur et un opérateur peuvent effectuer</li></ul>|
+{: caption="Tableau 6. Exemples de rôles et d'actions de gestion de plateforme " caption-side="top"}
 
+
+#### Rôles Accès au service
+
+Les rôles Accès au service permettent aux utilisateurs de se voir affecter différents niveaux de droits pour appeler l'API du service. Le tableau ci-après présente des exemples des actions qui peuvent être exécutées en fonction des rôles d'accès au service affectés lors de l'utilisation du service {{site.data.keyword.objectstorageshort}}. 
+
+**Remarque** : les actions qui peuvent être exécutées pour chaque rôle affecté varient selon le service que vous avez sélectionné pour la règle. 
+
+| Rôle Accès au service| Description des actions | Exemples d'action pour le service {{site.data.keyword.objectstorageshort}} |
+|:-----------------|:-----------------|:-----------------|
+|  Lecteur | Effectuer des actions en lecture seule dans un service, par exemple, afficher les ressources spécifiques d'un service. | Répertorier et télécharger des objets |
+| Auteur | Les auteurs disposent de droits en plus du rôle de lecteur, par exemple, créer et éditer des ressources pour un service. | Créer et détruire des compartiments et des objets |
+| Responsable | Les responsables disposent de droits en plus du rôle Auteur pour effectuer des actions privilégiées définies par le service. De plus, vous pouvez créer et éditer des ressources spécifiques au service. | Gérer tous les aspects de stockage de données. Créer et détruire des compartiments et des objets. |
+{: caption="Tableau 7. Exemples de rôles et d'actions utilisateur d'accès au service" caption-side="top"}
 
 
 ## Autorisations relatives à l'infrastructure
@@ -106,6 +143,6 @@ Vous pouvez attribuer les droits initiaux suivants lorsque vous invitez un utili
 |Affichage uniquement | Les utilisateurs avec cette autorisation peuvent uniquement afficher les éléments dans le système.|
 |Utilisateur de base | Les utilisateurs avec cette autorisation peuvent effectuer des actions élémentaires dans le système, comme l'ajout d'un ticket et la gestion de périphériques. |
 |Superutilisateur | Les utilisateurs avec cette autorisation peuvent réaliser toutes les actions disponibles dans le système. |
-{:caption="Tableau 6. Droits relatifs à l'infrastructure" caption-side="top"}
+{:caption="Tableau 8. Droits relatifs à l'infrastructure" caption-side="top"}
 
-Des autorisations supplémentaires peuvent être accordées à l'utilisateur après son acceptation de l'invitation. L'ensemble de droits initiaux défini lors de l'invitation ne donne pas accès aux appareils, par conséquent, vous devez octroyer l'accès aux appareils dans le portail de contrôle après que l'utilisateur a accepté l'invitation. 
+Des autorisations supplémentaires peuvent être accordées à l'utilisateur après son acceptation de l'invitation. L'ensemble de droits initiaux défini lors de l'invitation ne donne pas accès aux appareils, par conséquent, vous devez octroyer l'accès aux appareils dans le portail de contrôle après que l'utilisateur a accepté l'invitation.

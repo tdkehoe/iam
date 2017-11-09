@@ -15,7 +15,7 @@ lastupdated: "2017-08-23"
 # Trabalhando com chaves API
 {: #manapikey}
 
-Uma chave da interface de programação de aplicativos (chave API) é um código exclusivo passado para uma interface de programação de aplicativos (API) para identificar o aplicativo de chamada ou o usuário. As chaves API são usadas para rastrear e controlar como a API está sendo usada, por exemplo, para evitar uso malicioso ou abuso da API. A chave API muitas vezes age como um identificador exclusivo e um token secreto para autenticação e geralmente tem um conjunto de direitos de acesso específicos para a identidade associada a ele.
+Uma chave da interface de programação de aplicativos (chave API) é um código exclusivo passado para uma interface de programação de aplicativos (API) para identificar o aplicativo de chamada ou o usuário.  As chaves API são usadas para rastrear e controlar como a API está sendo usada, por exemplo, para evitar uso malicioso ou abuso da API. A chave API muitas vezes age como um identificador exclusivo e um token secreto para autenticação e geralmente tem um conjunto de direitos de acesso específicos para a identidade associada a ele.
 
 As chaves API podem ser associadas ao seguinte:
 

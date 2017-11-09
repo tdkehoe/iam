@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -74,11 +74,14 @@ Para gestionar políticas de servicio o asignar nuevas políticas de servicio a 
 2. Seleccione el usuario al que desea asignar políticas de servicios.
 3. Seleccione **Asignar políticas**.
 4. Seleccione un servicio.
-5. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita.
+5. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
 **Nota**: No todos los servicios requieren una selección de región.
 6. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
-7. Seleccione un rol para definir el ámbito del acceso para la política.
-8. Opcional: Seleccione **Añadir rol** para especificar un rol adicional para la política.
+7. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
+    * **Tipo de recurso**: indique **grupo**.
+    * **Recurso**: indique el nombre del grupo.
+8. Seleccione un rol para definir el ámbito del acceso para la política.
+9. Opcional: Seleccione **Añadir rol** para especificar un rol adicional para la política.
 
 ### Eliminación de una política
 

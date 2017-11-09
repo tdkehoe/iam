@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -25,7 +25,7 @@ Pour gérer des utilisateurs sur votre compte, procédez comme suit :
 
 1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Compte** &gt; **Utilisateurs**. La fenêtre Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut dans le compte actuellement sélectionné.
 2. Sélectionnez le nom d'utilisateur ou cliquez sur **Gérer un utilisateur** dans le menu **Actions**.
-3. Ensuite, selon l'action que vous devez exécuter, vous pouvez choisir de retirer l'utilisateur, d'affecter une nouvelle règle ou de gérer l'accès existant de l'utilisateur. 
+3. Ensuite, selon l'action que vous devez exécuter, vous pouvez choisir de retirer l'utilisateur, d'affecter une nouvelle règle ou de gérer l'accès existant de l'utilisateur.
 
 Reportez-vous aux sections suivantes pour plus d'informations sur la gestion de chaque type d'accès.
 
@@ -65,7 +65,7 @@ Pour pouvoir gérer les règles de service ou affecter de nouvelles règles de s
 1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **Utilisateurs**.
 2. Sélectionnez le nom d'utilisateur auquel affecter des règles de service.
 3. Sur la ligne contenant la règle à éditer, sélectionnez le menu **Actions**, puis cliquez sur **Editer la règle**.
-4. Editez la règle. 
+4. Editez la règle.
 5. Cliquez sur **Sauvegarder la règle**.
 
 ### Ajout d'une nouvelle règle
@@ -74,11 +74,14 @@ Pour pouvoir gérer les règles de service ou affecter de nouvelles règles de s
 2. Sélectionnez le nom d'utilisateur auquel affecter des règles de service.
 3. Sélectionnez **Affecter des règles**.
 4. Sélectionnez un service.
-5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
-**Remarque :** il n'est pas nécessaire de sélectionner une région pour tous les services. 
+5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
+**Remarque :** il n'est pas nécessaire de sélectionner une région pour tous les services.
 6. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-7. Sélectionnez un rôle afin de définir la portée de l'accès pour la règle.
-8. Facultatif : sélectionnez **Ajouter un rôle** afin de spécifier un rôle supplémentaire pour la règle.
+7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment.  
+    * **Type de ressource** : entrez **bucket**.
+    * **Ressource** : entrez le nom de votre compartiment. 
+8. Sélectionnez un rôle afin de définir la portée de l'accès pour la règle.
+9. Facultatif : sélectionnez **Ajouter un rôle** afin de spécifier un rôle supplémentaire pour la règle.
 
 ### Retrait d'une règle
 

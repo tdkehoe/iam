@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -55,8 +55,12 @@ Você designa acesso para os usuários à medida que os convida, designando fun�
 3. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
 **Nota**: nem todos os serviços requerem uma seleção de região.
 4. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-5. Selecione uma função para definir o escopo de acesso da política.
-6. Opcional: selecione **Incluir função** para especificar uma função adicional para a política.
+5. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito. 
+    * **Tipo de recurso**: insira **depósito**.
+    * **Recurso**: insira o nome de seu depósito.
+6. Selecione uma função para definir o escopo de acesso da política.
+7. Opcional: selecione **Incluir função** para especificar uma função adicional para a política.
+
 
 Veja [Políticas e funções de gerenciamento de acesso e identidade](/docs/iam/users_roles.html#iamusermanpol) para obter informações mais específicas sobre as funções ao configurar as políticas de serviço.
 

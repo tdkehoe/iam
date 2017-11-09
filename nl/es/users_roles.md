@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -60,11 +60,11 @@ Los siguientes roles se pueden asignar a nivel de espacio:
 ## Políticas y roles para la gestión de acceso e identidades
 {: #iamusermanpol}
 
-A los propietarios de las cuentas se les asigna de forma automática el rol de administrador de cuenta para la gestión de acceso e identidades que permite asignar y gestionar políticas de servicio. Las políticas de servicio pueden asignarse a usuarios individuales o a ID de servicio, y la política asignada puede definir el acceso a un servicio completo o en el nivel de instancia individual. 
+A los propietarios de las cuentas se les asigna de forma automática el rol de administrador de cuenta para Identity and access management (IAM) que permite asignar y gestionar políticas de servicio. Las políticas de servicio pueden asignarse a usuarios individuales o a ID de servicio, y la política asignada puede definir el acceso a un servicio completo o en el nivel de instancia individual.
 
 ### Políticas de servicio
 
-Una política asigna a un usuario o ID de servicio uno o varios roles sobre un conjunto de recursos utilizando una combinación de atributos para definir el conjunto de recursos aplicable. Cuando se asigna una política a un usuario, primero hay que especificar el servicio. A continuación, se debe seleccionar el rol o los roles que desea asignar. En función del servicio que seleccione, podrían haber disponibles opciones de configuración adicionales.
+Una política asigna a un usuario o ID de servicio uno o varios roles sobre un conjunto de recursos utilizando una combinación de atributos para definir el conjunto de recursos aplicable. Cuando se asigna una política, primero hay que especificar el servicio. A continuación, se debe seleccionar el rol o los roles que desea asignar. En función del servicio que seleccione, podrían haber disponibles opciones de configuración adicionales.
 
 Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla siguiente se muestran las tareas de gestión de políticas y el rol necesario para cada una.
 
@@ -74,23 +74,59 @@ Puede asignar y gestionar políticas si tiene el rol adecuado. En la tabla sigui
 | Crear una política en un servicio de una cuenta | Administrador de la cuenta o administrador en el servicio en la cuenta |
 | Crear una instancia de servicio | Administrador de la cuenta o administrador o editor en el servicio en la cuenta |
 | Crear una política en una instancia de servicio | Administrador de la cuenta o administrador en el servicio en la cuenta o administrador en la instancia de servicio |
-{: caption="Tabla 4. Tareas administrativas para gestionar políticas de servicios habilitados para identidad y acceso" caption-side="top"}
+{: caption="Tabla 4. Tareas administrativas para gestionar políticas de servicios habilitados para IAM" caption-side="top"}
 
 ### Roles de política de servicio
 {: #iamusermanrol}
 
-Los roles son una colección de acciones; las acciones que están correlacionadas con estos roles son específicas del servicio. Consulte la documentación del servicio seleccionado para obtener más información sobre los tipos de acciones que permite cada rol.
+IAM permite gestionar y definir el acceso para los usuarios y los recursos en su cuenta. Si el servicio que utiliza se puede gestionar mediante IAM para control de accesos de usuario, hay dos tipos de roles que permiten diferentes acciones en su cuenta: los roles de gestión de plataforma y los de acceso de servicio.
 
-Además de las descripciones de los roles que se proporcionan en la consola, la siguiente tabla proporciona ejemplo de algunas de las tareas que los usuarios asignados a cada rol podría hacer para el servicio {{site.data.keyword.containershort_notm}}.  
+<dl>
+<dt>Roles de gestión de plataforma</dt>
+<dd>Roles disponibles para todos los servicios que se pueden gestionar mediante IAM para control de accesos de usuario, que incluyen administrador, editor, operador, visor y administrador de facturación. Estos roles están correlacionados con acciones de usuario que se pueden realizar en los recursos de {{site.data.keyword.Bluemix_notm}} a nivel de plataforma. Por ejemplo, algunas de estas acciones son la capacidad de crear instancias, conectar instancias con una aplicación, gestionar ID de servicio, gestionar usuarios y permisos y gestionar la facturación y las cuotas de la cuenta. </dd>
+<dt>Roles de acceso de servicio</dt>
+<dd>Estos roles son específicos de servicio. Los roles gestor, escritor y lector definen la capacidad del usuario para utilizar el servicio y realizar llamadas a las API de servicio. Puesto que cada servicio define las acciones que un usuario con un rol predeterminado puede realizar, es posible que un servicio no utilice todos los roles disponibles descritos en esta documentación. </dd>
+</dl>
 
-| Rol | Descripción de acciones | Acciones de ejemplo|
+**Nota**: Puede que no vea todos los roles listados como opciones al asignar políticas en la IU porque solo se muestran los roles aplicables al servicio que ha seleccionado en la política. Para obtener información específica sobre qué roles están habilitados y qué acciones permite cada rol de acceso para cada servicio, consulte la documentación para dicho servicio.
+
+
+#### Roles de gestión de plataforma
+
+Los roles de gestión de plataforma permiten asignar a los usuarios distintos niveles de permiso para realizar acciones de plataforma. Además de las descripciones de los roles que se proporcionan en la consola, las siguientes tablas proporcionan ejemplos para algunas de acciones de gestión de plataforma que los usuarios asignados a cada rol podría hacer.
+
+| Rol de gestión de plataforma  | Acciones que un usuario puede realizar en servicios de la cuenta | Acciones para ID de servicio |
+|:-----------------|:--------------|:---------------|
+| Visor | Ver instancias | Ver ID y claves de API|
+| Operador |  Ver y enlazar instancias de servicio| No aplicable |
+| Editor |  Crear, suprimir, editar, suspender, reanudar, ver y enlazar instancias de servicio | Suprimir ID y crear y suprimir claves de API |
+| Administrador |  Todas las acciones de gestión para los servicios | Crear y suprimir ID y claves de API, asignar políticas a ID |
+{: caption="Tabla 5. Roles y acciones de gestión de plataforma de ejemplo" caption-side="top"}
+
+Algunos servicios pueden correlacionar acciones específicas con los roles de gestión de plataforma que están relacionados con la gestión del servicio en lugar de con el acceso al servicio. Como ejemplo, consulte en la tabla siguiente los detalles de las acciones de servicio de {{site.data.keyword.containershort_notm}} que están correlacionadas con dichos roles.
+
+
+| Rol de gestión de plataforma | Descripción de acciones | Acciones de ejemplo para el servicio de {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
-| Visor | Realiza acciones que no cambian el estado; solo acciones de lectura | <ul><li>Listar clústeres</li><li>Ver los detalles de un clúster</li></ul>|
-| Editor | Realiza acciones que modifican el estado y crean o suprimen subrecursos |<ul><li>Enlazar un servicio a un clúster</li><li>Crear un webhook</li></ul> |
-| Operador | Realiza acciones necesarias para configurar y utilizar recursos. | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
-| Administrador | Realiza todas las acciones, incluida la capacidad para gestionar el control de accesos |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
-{: caption="Tabla 5. Roles y acciones de usuario de ejemplo" caption-side="top"}
+| Visor | Puede ver las instancias de servicio, pero no las puede modificar | <ul><li>Listar clústeres</li><li>Ver los detalles de un clúster</li></ul>|
+| Editor | Realizar todas las acciones de plataforma excepto la gestión de la cuenta y la asignación de políticas de acceso |<ul><li>Enlazar un servicio a un clúster</li><li>Crear un webhook</li></ul> |
+| Operador | Realizar acciones de plataforma necesarias para configurar y operar instancias de servicio, como la visualización de un panel de control de servicio. | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
+| Administrador | Realiza todas las acciones de plataforma basadas en el recurso al que se está asignando este rol, incluida la asignación de políticas de acceso a otros usuarios. |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
+{: caption="Tabla 6. Roles y acciones de gestión de plataforma de ejemplo" caption-side="top"}
 
+
+#### Roles de acceso de servicio
+
+Los roles de acceso de servicio permiten asignar a los usuarios diferentes niveles de permiso para llamar a la API del servicio. La tabla siguiente proporciona acciones de ejemplo que se pueden realizar en los roles de acceso de servicio asignados en función del uso del servicio de {{site.data.keyword.objectstorageshort}}.
+
+**Nota**: Las acciones que se pueden llevar a cabo para cada rol asignado varían en función de servicio seleccionado para la política.
+
+| Rol de acceso de servicio | Descripción de acciones | Acciones de ejemplo para el servicio de {{site.data.keyword.objectstorageshort}} |
+|:-----------------|:-----------------|:-----------------|
+|  Lector | Realizar acciones de sólo lectura dentro de un servicio como la visualización de recursos específicos del servicio | Listar y descargar objetos |
+| Escritor | Los escritores tienen permisos más allá del rol de lector, incluida la creación y la edición de recursos específicos del servicio. | Crear y destruir grupos y objetos |
+| Gestor | Los gestores tienen permisos más allá del rol de escritor para completar las acciones privilegiadas tal como define el servicio. Además, pueden crear y editar recursos específicos del servicio. | Gestionar todos los aspectos del almacenamiento de datos, crear y destruir grupos y objetos |
+{: caption="Tabla 7. Roles y acciones de usuario de acceso de servicio de ejemplo" caption-side="top"}
 
 
 ## Permisos de infraestructura
@@ -103,6 +139,6 @@ Puede establecer los siguientes permisos iniciales al invitar a un usuario:
 |Solo visualización | Los usuarios con este permiso solo pueden ver los elementos del sistema.|
 |Usuario básico | Los usuarios con este permiso pueden realizar acciones básicas en el sistema, como, por ejemplo, añadir una incidencia y gestionar dispositivos. |
 |Superusuario | Los usuarios con este permiso pueden realizar todas las acciones disponibles en el sistema. |
-{:caption="Tabla 6. Permisos de infraestructura" caption-side="top"}
+{:caption="Tabla 8. Permisos de infraestructura" caption-side="top"}
 
 Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación. El permiso inicial establecido en el momento de invitación no otorga acceso a los dispositivos, por lo que debe otorgar acceso de dispositivo en el Portal de control una vez que el usuario haya aceptado la invitación.

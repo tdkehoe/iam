@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-09-29"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -44,11 +44,15 @@ Puede asignar una política de servicio individual cuando invite a un nuevo usua
 
 1. Desde la pantalla **Invitar a usuarios**, amplíe la sección **Servicios habilitados para Identity and Access**.
 2. Seleccione un servicio.
-3. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita.
+3. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
 **Nota**: No todos los servicios requieren una selección de región.
 4. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
-5. Seleccione un rol para definir el ámbito del acceso para la política.
-6. Opcional: Seleccione **Añadir rol** para especificar un rol adicional para la política.
+5. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
+    * **Tipo de recurso**: indique **grupo**.
+    * **Recurso**: indique el nombre del grupo.
+6. Seleccione un rol para definir el ámbito del acceso para la política.
+7. Opcional: Seleccione **Añadir rol** para especificar un rol adicional para la política.
+
 
 Consulte [Roles y políticas de gestión de acceso e identidad](/docs/iam/users_roles.html#iamusermanpol) para obtener información específica sobre los roles al establecer políticas de servicio.
 

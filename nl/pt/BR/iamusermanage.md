@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2017-10-03"
+lastupdated: "2017-10-06"
 
 ---
 
@@ -61,7 +61,7 @@ Também será possível incluir um usuário em outra organização clicando em *
 
 Para gerenciar políticas de serviço ou designar novas políticas de serviço aos usuários, deve-se ser o administrador de acesso da conta ou o administrador designado para o serviço ou para a instância de serviço específicos. Para obter mais informações sobre políticas de serviço e funções, veja [Políticas e funções de gerenciamento de identidade e acesso](/docs/iam/users_roles.html#iamusermanpol). Para obter detalhes sobre os comandos da CLI usados para gerenciar políticas, veja [Comandos para gerenciar chaves API e políticas](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
-### Editando uma política existente 
+### Editando uma política existente
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **Usuários**.
 2. Selecione o nome de usuário para o qual você deseja designar políticas de serviço.
@@ -78,8 +78,11 @@ Para gerenciar políticas de serviço ou designar novas políticas de serviço a
 5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
 **Nota**: nem todos os serviços requerem uma seleção de região.
 6. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-7. Selecione uma função para definir o escopo de acesso da política.
-8. Opcional: selecione **Incluir função** para especificar uma função adicional para a política.
+7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito. 
+    * **Tipo de recurso**: insira **depósito**.
+    * **Recurso**: insira o nome de seu depósito.
+8. Selecione uma função para definir o escopo de acesso da política.
+9. Opcional: selecione **Incluir função** para especificar uma função adicional para a política.
 
 ### Removendo uma política
 
