@@ -2,122 +2,94 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015, 2017
 
-lastupdated: "2017-10-06"
+lastupdated: "2017-11-10"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
-# User roles and permissions
+# IAM access
 {: #userroles}
 
-You can manage users across the {{site.data.keyword.Bluemix_notm}} platform and Infrastructure services from the **Users** page for your account. To access the Users page, from the {{site.data.keyword.Bluemix_notm}} menu, click **Manage** &gt; **Account** &gt; **Users**. Account owners can perform all operations for managing users, permissions, organizations, and spaces. Cloud Foundry organization managers and space managers also have access to manage permissions for users added to each organization and space that they manage.
-{:shortdesc}
+All services that are organized into a resource group in your account are managed by using {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Account owners are automatically assigned the account administrator role for Cloud IAM. As the account administrator you can assign and manage access for users, create resource groups, provision service instances, and all other tasks that can be delegated by assigning the Cloud IAM roles. You provide access for users and service IDs by creating policies that set a target for the user or service ID to access and a role which defines what type of access is allowed.
 
-If you are a user added to another person's account, and you want to view your assigned roles and permissions, go to **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**, and click on your name.
 
-## Account roles
-{: #userrolesinfo}
-
-At the account level, there are two roles that enable access to different account management features:
-
-| Account role | Permissions |
-|----------------|---------|
-|Owner | An owner for the account has access to their profile, users, billing information, spending notifications, and usage dashboard. From the Users page, the owner can invite new users and adjust roles. The owner can also add promotional credits, set or change the billing limit, set service access, and manage organizations and spaces. |
-|Member | A member has access to their profile, the Users page displaying the active users in the account, and account credits and billing limits in the {{site.data.keyword.Bluemix_notm}} header.  |
-{:caption="Table 1. Account roles and permissions" caption-side="top"}
-
-All new users are added as a member of the account. You can assign organization and space roles to invitees to enable specific views and permissions in {{site.data.keyword.Bluemix_notm}}. Once your invitees accept the invitation and join {{site.data.keyword.Bluemix_notm}}, you can edit their roles on the Users page.
-
-## Cloud Foundry roles
-{: #cfroles}
-
-Cloud Foundry roles include the access permissions for organizations and spaces defined within the account. Cloud Foundry roles do not enable user permissions for completing actions within the context of a service. The following roles can be assigned at the organization level:
-
-| Organization role | Permissions |
-|-------------------|-------------|
-|Manager | Organization managers can create, view, edit, or delete spaces within the organization, view the organization's usage and quota, invite users to the organization, manage who has access to the organization and their roles in the organization, and manage custom domains for the organization. |
-|Billing manager | Billing managers can view runtime and service usage information for the organization on the Usage Dashboard page.  |
-|Auditor | Organization auditors can view application and service content in the organization. Auditors can also view the users in the organization and their assigned roles, and the quota for the organization. |
-{:caption="Table 2. Organization roles and permissions" caption-side="top"}
-
-The following roles can be assigned at the space level:
-
-| Space role | Permissions |
-|------------|-------------|
-|Manager | Space managers can add existing users and manage roles within the space. The space manager can also view the number of instances, service bindings, and resource use for each application in the space. |
-|Developer | Space developers can create, delete, and manage applications and services within the space. Some of the managing tasks include deploying apps, starting or stopping apps, renaming an app, deleting an app, renaming a space, binding or unbinding a service to an application, view the number or instances, service bindings, and resource use for each application in the space. In addition, the space developer can associate an internal or external URL with an application in the space.   |
-|Auditor | Space auditors have read-only access to all information about the space, such as information about the number of instances, service bindings, and resource use for each application in the space. |
-{:caption="Table 3. Space roles and permissions" caption-side="top"}
-
-**Note**: Users that are assigned the manager or developer space role can access the VCAP_SERVICES environment variable. However, a user that is assigned the auditor role can't access VCAP_SERVICES.
-
-## Identity and access management policies and roles
+## What are Cloud IAM policies and who can assign them?
 {: #iamusermanpol}
 
-Account owners are automatically assigned the account administrator role for Identity and access management (IAM) which enables you to assign and manage service policies. Service policies can be assigned to individual users or to service IDs, and the assigned policy can define access for an entire service or at the individual instance level.
+You can provide access for users and service IDs by creating policies that set a target for the user or service ID to access and a role that defines what type of access is allowed. A policy grants a user or service ID one or multiple roles to a set of resources by using a combination of attributes to define the applicable set of resources. When you assign a policy, you first choose from setting the policy for a resource group or an individual resource. Then, depending on your initial selection, you can select a service within a resource group or a single instance for the selected resource. More configuration options might be available, depending on the service you select. Finally, you can select a role, or roles, to assign. 
 
-### Service policies
-
-A policy assigns a user or service ID one or multiple roles to a set of resources by using a combination of attributes to define the applicable set of resources. When you assign a policy, you first specify the service. Then, you can select a role, or roles, to assign. Additional configuration options might be available, depending on the service you select.
-
-You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role required for each.
+You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
 | Action | Required role |
 |----------|---------|
-| Create policies on an account for all services and instances | Account administrator |
-| Create a policy on a service in an account | Account administrator or administrator on the service in the account |
-| Create a service instance | Account administrator or the administrator or editor on the service in the account |
-| Create a policy on a service instance | Account administrator or administrator on the service in the account or administrator on the service instance |
-{: caption="Table 4. Administrative tasks for managing IAM-enabled services policies" caption-side="top"}
+| Create a policy in an account for all services and instances | Account owner or administrator on all services in the account | 
+| Create a policy on a service in an account | Account owner or administrator on the service in the account |
+| Create a policy on a service instance | Account owner, administrator on the service in the account, administrator on all services in the relevant resource group, or administrator on the service instance |
+| Create a policy to manage a resource group | Account owner or administrator to a resource group |
+{: caption="Table 1. Users allowed to create access policies" caption-side="top"} 
 
-### Service policy roles
+
+## Cloud IAM roles
 {: #iamusermanrol}
 
-IAM allows you to manage and define access for users and resources in your account. If the service you use can be managed using IAM for user access control, then there are two types of roles that allow different actions within your account: platform management and service access roles.
+With Cloud IAM, you can manage and define access for users and resources in your account. If the service you use can be managed by using IAM, there are two types of roles that can be assigned: platform management roles and service access roles.
 
 <dl>
-<dt>Platform management roles</dt>
-<dd>Roles available for all services that can be managed using IAM for user access control, which include administrator, editor, operator, viewer, and billing administrator. These roles are mapped to user actions that can be performed on {{site.data.keyword.Bluemix_notm}} resources at the platform level. For example, some of these actions are the ability to create instances, connect instances to an application, manage service IDs, manage users and permissions, and manage billing and quotas for the account. </dd>
+<dt>Platform management roles</dt> 
+<dd>Platform management roles cover a range of actions, including the ability to create instances, manage service IDs, manage users and permissions, and create resource groups. The most common platform roles are administrator, editor, operator, viewer. </dd>
 <dt>Service access roles</dt>
-<dd>These roles are service-specific. The manager, writer, and reader roles define the user’s ability to use the service and perform service APIs calls. Because each service defines the actions a user with a given role can perform, it is possible that a service might not use all of the available roles described in this documentation. </dd>
-</dl>
+<dd>Service access roles define a user or service’s ability to perform actions on a service instance such as accessing the UI or performing API calls. There are three possible roles: manager, writer, and reader. </dd>
+</dl> 
 
-**Note**: You might not see all of the roles listed as options when assigning policies in the UI because only the roles applicable to the service that you have selected in the policy are displayed. For specific information on what roles are enabled and what actions each access role allows for each service, refer to the documentation for that service.
+You might not see all of the roles listed as options when you assign policies in the UI because only the roles available for the service that you have selected in the policy are displayed. For specific information on what roles are enabled and what actions each access role allows for each service, refer to the documentation for that service.
+{: tip}
 
+By using a combination of these roles in a single access policy, you can provide fine-grained access for users and service IDs by assigning access on any of the following:
 
-#### Platform management roles
+* All resources within the account
+* All resources within all services that belong to an individual resource group as well as the ability to manage the resource group
+* All resources within a single service in a resource group as well as the ability to manage the resource group
+* All resources within a single service across the account, regardless of the resource group they are assigned to
+* Resources in an individual instance
+* A single resource type within an instance, for example, a bucket in a {{site.data.keyword.objectstorageshort}} instance
 
-Platform management roles enable users to be assigned varying levels of permission for performing platform actions. In addition to the descriptions of the roles provided in the console, the following tables provide examples for some of the platform management actions that users assigned each role might be able to do.
+To enable another user full access to the account for the purposes of managing user access and managing all account resources including the ability to create resource groups, set up a policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** role assigned. 
+{: tip}
 
-| Platform management role  | Actions a user can perform on services in the account | Actions for service IDs |
-|:-----------------|:--------------|:---------------|
-| Viewer | View instances | View IDs and API keys |
-| Operator |  View and bind service instances | Not applicable |
-| Editor |  Create, delete, edit, suspend, resume, view, bind service instances | Delete IDs and create and delete API keys |
-| Administrator |  All management actions for services | Create and delete IDs and API keys, assign policies to IDs |
-{: caption="Table 5. Example platform management roles and actions" caption-side="top"}
+### Platform management roles
+
+Platform management roles enable users to be assigned varying levels of permission for performing platform actions within the account. In addition to the descriptions of the roles provided in the console, the following tables provide examples for some of the platform management actions that users assigned each role can do. You can refer to the documentation for each service to understand how the roles apply to users within the context of the service that is being used.
+
+| Platform management role  | Actions a user can perform on services in the account | Actions for service IDs | Actions for access to resource groups | Action on resources within resource groups |
+|:-----------------|:--------------|:---------------|:----------------|:-----------------|
+| Viewer | View instances, aliases, bindings, and credentials | View IDs and API keys | View resource group | View only specified instances in the resource group |
+| Operator |  View instances and manage aliases, bindings, and credentials | Not applicable | Not applicable | Not applicable |
+| Editor |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create and delete IDs and API keys | View and edit name of resource group | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group |
+| Administrator |  All management actions for services | Create and delete IDs and API keys, assign policies to IDs | View, edit, and manage access for the resource group | All management actions for the specified instances in the resource group |
+{: caption="Table 2. Example platform management roles and actions" caption-side="top"}
 
 Some services might map specific actions to the platform management roles that are related to the management of the service rather than to the access of the service. As an example, see the following table detailing the {{site.data.keyword.containershort_notm}} service actions that are mapped to these roles.
 
 
-| Platform management role | Description of actions | Example actions for {{site.data.keyword.containershort_notm}} service |
+| Platform management role | Description of actions | Example actions for {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
 | Viewer | Can view service instances, but can't modify them  | <ul><li>List clusters</li><li>View details for a cluster</li></ul>|
 | Editor | Perform all platform actions except for managing the account and assigning access policies |<ul><li>Bind a service to a cluster</li><li>Create a webhook</li></ul> |
 | Operator | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. | <ul><li>Add or remove worker nodes</li><li>Reboot or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
 | Administrator | Performs all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer, editor, and operator can perform</li></ul>|
-{: caption="Table 6. Example platform management roles and actions" caption-side="top"}
+{: caption="Table 3. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
 
 
-#### Service access roles
+### Service access roles
 
-Service access roles enable users to be assigned different levels of permission for calling the service's API. The following table provides example actions that can be taken depending on the assigned service access roles based on using the {{site.data.keyword.objectstorageshort}} service.
+Service access roles enable users to be assigned different levels of permission for calling the service's API and accessing the UI for the service. The following table provides example actions that can be taken depending on the assigned roles based on using the {{site.data.keyword.objectstorageshort}} service.
 
 **Note**: The actions that can be taken for each assigned role vary based on the service that you selected for the policy.
 
@@ -126,19 +98,6 @@ Service access roles enable users to be assigned different levels of permission 
 |  Reader | Perform read-only actions within a service such as viewing service-specific resources | List and download objects |
 | Writer | Writers have permissions beyond the reader role, including creating and editing service-specific resources. | Create and destroy buckets and objects |
 | Manager | Managers have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | Manage all aspects of data storage, create and destroy buckets and objects |
-{: caption="Table 7. Example service access user roles and actions" caption-side="top"}
+{: caption="Table 4. Example service access user roles and actions" caption-side="top"}
 
 
-## Infrastructure permissions
-{: #infrapermissions}
-
-You can set the following initial permissions when you invite a user:
-
-| Permission set | Description of actions |
-|---------------------------|------------------------|
-|View Only | Users with this permission can only view items within the system.|
-|Basic User | Users with this permission can perform basic actions within the system, such as adding a ticket and managing devices. |
-|Super User | Users with this permission can perform all actions available in the system. |
-{:caption="Table 8. Infrastructure permissions" caption-side="top"}
-
-Additional permissions can be set after the user has accepted the invite. The initial permission set at invite time does not grant access to devices, so you must grant device access in the Control Portal after the user has accepted the invite.
