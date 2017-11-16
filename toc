@@ -31,12 +31,10 @@ Managing identity and access
         mngcf.md
         mnginfra.md
 
-
     {: .topicgroup}
     Working with services
         serviceid.md
         serviceidaccess.md
-        authorizations.md
 
     {: .topicgroup}
     API keys
