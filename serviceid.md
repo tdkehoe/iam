@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -24,7 +24,7 @@ The access policies associated with a service ID enable specific actions that ca
 
 ## Creating a service ID
 
-To create a service ID, go to **Manage** &gt; **Security** &gt; **Identity and Access** and then select **Service IDs** from the side panel. Follow the process to create a name and description for your service ID. Then, use the **Actions** menu to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/iam/serviceid_keys.html#serviceidapikeys). 
+To create a service ID, go to **Manage** &gt; **Security** &gt; **Identity and Access** and then select **Service IDs** from the side panel. Follow the process to create a name and description for your service ID. Then, use the **Actions** menu to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/iam/serviceid_keys.html#serviceidapikeys). For details on the CLI commands that are used to manage a service ID, see [Commands for managing API keys and policies](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
 
 ## Updating a service ID
 
