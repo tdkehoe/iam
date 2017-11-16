@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-06"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -11,50 +11,66 @@ lastupdated: "2017-10-06"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
 
 # Inviting users and assigning access
 {: #iamuserinv}
 
-You can invite users across {{site.data.keyword.Bluemix_notm}} services, applications, and {{site.data.keyword.Bluemix_notm}} infrastructure from a single location. To invite users and manage outstanding invitations, you must be either an account owner, an organization manager, or you must have infrastructure permissions to add users. You can invite users, cancel invitations, and resend a pending invitation to an invited user. You can invite a single user or, if you are providing the same access for all members in a group of users, you can invite multiple users at once.  
+To invite users and manage outstanding invitations, you must be either an account owner, an organization manager, or you must have infrastructure permissions to add users. You can invite users, cancel invitations, and resend a pending invitation to an invited user. In addition, you can invite a single user or multiple users at once.  
 {:shortdesc}
 
 ## Inviting users
 
 To invite users or manage user invitations in your account, complete the following steps: 
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity & Access** &gt; **Users**. The Users window displays a list of users with their email addresses and current status in the currently selected account.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then click **Users**. The Users page displays a list of users with their email addresses and current status for the currently selected account.
 2. Click **Invite users**.
-3. Specify the email address or IBMid of the user. If you are providing multiple users the same access, enter multiple email addresses or IBMids by separating the user ID entries with commas, spaces, or line breaks.
-4. Add one or more of the access options that you manage. You must assign at least one access option and configure the settings for the user in each access option that you assign. For any additional access options that you don't add and configure, the default value of *no access* is assigned. You might see one or all of the following access options, depending on the options that you are authorized to manage: **Identity and access enabled services**, **Cloud Foundry access**, **Infrastructure access**. See [Assigning user access](/docs/iam/iamuserinv.html#assignaccess) for more information.
+3. Specify the email address of the user. If you are inviting more than one user with a single invitation, they are all assigned the same access.
+4. Add one or more of the access options that you manage. You must assign at least one access option. For any additional access options that you don't add and configure, the default value of *no access* is assigned. You might see one or all of the following access options, depending on the options that you are authorized to manage: **Services**, **Cloud Foundry access**, **{{site.data.keyword.Bluemix_notm}} infrastructure access**. For more information, see [Assigning user access](/docs/iam/iamuserinv.html#assignaccess).
 
 If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
 
-If you want to invite users using the CLI, see the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) command.
+If you want to invite users by using the CLI, see the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) command.
+{: tip}
 
 ## Assigning user access
 {: #assignaccess}
 
-You assign access for users as you invite them, assigning Cloud Foundry roles, policies, and infrastructure permissions. Depending on the access options that you are authorized to manage, you can invite and provide access for users across the account, organization, space, and service instances. The following sections describe the three types of access that can be assigned to an invited user.
+You assign access for users as you invite them by assigning Cloud IAM policies, Cloud Foundry access, and infrastructure permissions. Depending on the access options that you are authorized to manage, you can invite and provide access for users across the account, resource groups, organizations, spaces, service instances, and infrastructure. The following sections describe the three types of access that can be assigned to an invited user.
 
-### Identity and access enabled services
+### Services
 
-You can assign a single service policy when you invite a new user. Once the user has accepted the invitation, you can add additional service policies. See [Identity and access-enabled service access policies](/docs/iam/iamusermanage.html#iammanidaccser) for details on editing policies to add additional roles, adding additional service policies, or removing a policy for a user.
+You can assign access by creating an initial Cloud IAM access policy when you invite a new user. In this section, you can provide a user access to services in a resource group with access to the resource group or to an individual resource in the account. After the user accepts the invitation, you can assign additional access. See [Managing IAM access](/docs/iam/mngiam.html#iammanidaccser) for details on editing policies to add extra roles, assigning more access, or removing a policy for a user.
 
-**Note**: Depending on which service you select when assigning the policy, you might not see all of fields described in the following procedure.
+**Note**: Depending on which service you select when assigning the policy, you might not see all of fields that are described in the following procedures.
 
-1. From the **Invite users** screen, expand the **Identity and Access enabled services** section.
-2. Select a service.
-3. Select **All current regions** or a specific region, if your are prompted. 
-**Note**: Not all services require a region selection.
-4. Select **All current service instances** or select a specific service instance.
-5. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
+#### Resource group access
+
+You can assign access to all services within a resource group or a single service type in a resource group.
+
+1. From the **Invite users** screen, expand the **Services** section.
+2. Select to assign access to resources in a **Resource group**.
+3. Choose a resource group.
+4. Choose a role for the **Assign access to a resource group** field to enable the user to view the resource group on the dashboard, edit the resource group name, or manage user access to the group. You can select **No access**, if you want the user to have access only to the resource that you specify and not the group that it is organized in.
+5. Select a service within the resource group, or select to provide access to all services within the selected group. 
+6. Select any combination of roles to assign the wanted access. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
+
+
+#### Resource access
+
+You can assign access to a single resource within your account down to the instance.
+
+1. From the **Invite users** screen, expand the **Services** section.
+2. Select to assign access to a **Resource**.
+3. Select a service.
+4. Select **All current regions** or a specific region, if your are prompted. 
+5. Select **All current service instances** or select a specific service instance.
+6. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
     * **Resource type**: Enter **bucket**.
-    * **Resource**: Enter the name of your bucket.
-6. Select a role to define the scope of access for the policy.
-7. Optional: Select **Add role** to specify an additional role for the policy.
+    * **Resource ID**: Enter the name of your bucket.
+7. Select any combination of roles to assign the wanted access.
 
-
-See [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol) for more specific information about the roles when setting service policies.
+For more specific information about the roles when assigning access, see [IAM access](/docs/iam/users_roles.html#iamusermanrol).
 
 ### Cloud Foundry access
 
@@ -62,22 +78,40 @@ When you invite new users, you can choose to add the user to an organization in 
 
 1. From the **Invite users** screen, expand the **Cloud Foundry access** section.
 2. Select an organization to add the user to.
-3. Select an organization role to define the level of access to the selected organization.
-4. Optional: Select **Add role** to specify an additional role.
+3. Select an organization role to define the level of access for the selected organization.
+4. Optional: Select **Add organization role** to specify an extra role.
 5. Select **All current regions** or a specific region.
 6. Select **All current spaces** or a specific space.
-7. Select a space role to define the level of access to the selected spaces.
-8. Optional: Select **Add role** to specify an additional role.
+7. Select a space role to define the level of access for the selected spaces.
+8. Optional: Select **Add space role** to specify an extra role.
 
-See [Cloud Foundry roles](/docs/iam/users_roles.html#cfroles) for more specific information about these roles.
+See [Cloud Foundry roles](/docs/iam/cfaccess.html#cfroles) for more information about the roles.
 
-**Note**: You can add a Cloud Foundry role using the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+You can add a Cloud Foundry role by using the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+{: tip}
 
-### Infrastructure access
+### {{site.data.keyword.BluSoftlayer_notm}} infrastructure access
 
-The actual permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions and what actions the user can perform with each, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
+The permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions sets, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
 
 1. From the **Invite users** screen, expand the **Infrastructure access** section.
-2. Select a permission to define the scope of access.
+2. Select a permission set to define the scope of access.
 
-For information about configuring access for users after they have been added to your account, see [Managing users and access](/docs/iam/iamusermanage.html).
+Access to devices is granted separately after the user is added by navigating to the **Infrastructure** option in the console.
+{: tip}
+
+For information about configuring access for users after they have been added to your account, see [Managing infrastructure access](/docs/iam/mnginfra.html#managing-infrastructure-access).
+
+## Adding VPN-only users
+
+As the account owner of a linked account, you can add a VPN-only user.
+
+1. Click the Menu icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**.
+2. Go to **Account** &gt; **Users**.
+3. Click **Add VPN Only User**.
+4. Enter the personal information details for the user. 
+5. Click **Add User**.
+6. Set portal permissions for the user.
+7. Click **Add Portal Permissions** to save the permissions.
+8. Set device access for the user.
+9. Click **Update Device Access** to save and assign the access.
