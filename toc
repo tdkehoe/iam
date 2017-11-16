@@ -44,7 +44,3 @@ Managing identity and access
         userid_keys.md
         serviceid_keys.md
     {: .navgroup-end}
-
-    {: .navgroup id="reference"}
-    iam_limits.md
-    {: .navgroup-end}
