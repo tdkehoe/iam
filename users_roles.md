@@ -74,6 +74,7 @@ Platform management roles enable users to be assigned varying levels of permissi
 | Editor |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create and delete IDs and API keys | View and edit name of resource group | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group |
 | Administrator |  All management actions for services | Create and delete IDs and API keys, assign policies to IDs | View, edit, and manage access for the resource group | All management actions for the specified instances in the resource group |
 {: caption="Table 2. Example platform management roles and actions" caption-side="top"}
+{: #platformrolestable}
 
 Some services might map specific actions to the platform management roles that are related to the management of the service rather than to the access of the service. As an example, see the following table detailing the {{site.data.keyword.containershort_notm}} service actions that are mapped to these roles.
 
