@@ -83,12 +83,12 @@ IAM ti consente di gestire e definire l'accesso per gli utenti e le risorse nel 
 
 <dl>
 <dt>Ruoli di gestione della piattaforma</dt>
-<dd>Ruoli disponibili per tutti i servizi che possono essere gestiti utilizzando IAM per il controllo dell'accesso degli utenti, tra cui i ruoli di amministratore, editor, operatore, visualizzatore e amministratore fatturazione. Questi ruoli sono associati ad azioni utente che possono essere eseguite sulle risorse {{site.data.keyword.Bluemix_notm}} a livello della piattaforma. Ad esempio, alcune di queste azioni includono la capacità di creare istanze, collegare istanze a un'applicazione, gestire gli ID di servizio, gestire gli utenti e le autorizzazioni e gestire la fatturazione e le quote per l'account.</dd>
+<dd>Ruoli disponibili per tutti i servizi che possono essere gestiti utilizzando IAM per il controllo dell'accesso degli utenti, tra cui i ruoli di amministratore, editor, operatore, visualizzatore e amministratore fatturazione. Questi ruoli sono associati ad azioni utente che possono essere eseguite sulle risorse {{site.data.keyword.Bluemix_notm}} a livello della piattaforma. Ad esempio, alcune di queste azioni includono la capacità di creare istanze, collegare istanze a un'applicazione, gestire gli ID di servizio, gestire gli utenti e le autorizzazioni e gestire la fatturazione e le quote per l'account. </dd>
 <dt>Ruoli di accesso al servizio</dt>
-<dd>Questi ruoli sono specifici per il servizio. I ruoli di gestore, scrittore e lettore definiscono la capacità dell'utente di utilizzare il servizio e di eseguire chiamate API ai servizi. Poiché ogni servizio definisce le azioni che un utente con un determinato ruolo può eseguire, è possibile che un servizio non utilizzi tutti i ruoli disponibili descritti in questa documentazione.</dd>
+<dd>Questi ruoli sono specifici per il servizio. I ruoli di gestore, scrittore e lettore definiscono la capacità dell'utente di utilizzare il servizio e di eseguire chiamate API ai servizi. Poiché ogni servizio definisce le azioni che un utente con un determinato ruolo può eseguire, è possibile che un servizio non utilizzi tutti i ruoli disponibili descritti in questa documentazione. </dd>
 </dl>
 
-**Nota**: potresti non visualizzare tutti i ruoli elencati come opzioni durante l'assegnazione delle politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli applicabili al servizio selezionato nella politica. Per informazioni specifiche su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ogni servizio, fai riferimento alla documentazione di quel servizio. 
+**Nota**: potresti non visualizzare tutti i ruoli elencati come opzioni durante l'assegnazione delle politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli applicabili al servizio selezionato nella politica. Per informazioni specifiche su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ogni servizio, fai riferimento alla documentazione di quel servizio.
 
 
 #### Ruoli di gestione della piattaforma
@@ -106,11 +106,11 @@ I ruoli di gestione della piattaforma consentono di assegnare agli utenti divers
 Alcuni servizi potrebbero associare specifiche azioni ai ruoli di gestione della piattaforma correlati alla gestione del servizio piuttosto che all'accesso del servizio. Come esempio, consulta la seguente tabella che descrive le azioni del servizio {{site.data.keyword.containershort_notm}} associate a questi ruoli.
 
 
-| Ruolo di gestione della piattaforma  | Descrizione delle azioni | Azioni di esempio per il servizio {{site.data.keyword.containershort_notm}} |
+| Ruolo di gestione della piattaforma | Descrizione delle azioni | Azioni di esempio per il servizio {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
 | Visualizzatore | Può visualizzare le istanze del servizio ma non può modificarle  | <ul><li>Elencare i cluster</li><li>Visualizzare i dettagli per un cluster</li></ul>|
 | Editor | Eseguire tutte le azioni di piattaforma eccetto la gestione dell'account e l'assegnazione delle politiche di accesso |<ul><li>Eseguire il bind di un servizio a un cluster</li><li>Crea un webhook</li></ul> |
-| Operatore | Eseguire le azioni di piattaforma necessarie per configurare e gestire le istanze del servizio, come ad esempio visualizzare il dashboard di un servizio.| <ul><li>Aggiungere o rimuovere i nodi di lavoro</li><li>Riavviare o ricaricare i nodi di lavoro</li><li>Eseguire il bind di un servizio a un cluster</li></ul> |
+| Operatore | Eseguire le azioni di piattaforma necessarie per configurare e gestire le istanze del servizio, come ad esempio visualizzare il dashboard di un servizio. | <ul><li>Aggiungere o rimuovere i nodi di lavoro</li><li>Riavviare o ricaricare i nodi di lavoro</li><li>Eseguire il bind di un servizio a un cluster</li></ul> |
 | Amministratore | Esegue tutte le azioni di piattaforma in base alla risorsa assegnata a questo ruolo, inclusa l'assegnazione di politiche di accesso ad altri utenti. |<ul><li>Rimuovere un cluster</li><li>Creare un cluster</li><li>Aggiorna le politiche di accesso utente</li><li>Tutte le azioni che possono essere eseguite da un visualizzatore, un operatore e un editor</li></ul>|
 {: caption="Tabella 6. Ruoli e azioni di esempio per la gestione della piattaforma" caption-side="top"}
 
