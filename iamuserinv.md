@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -92,7 +92,7 @@ You can add a Cloud Foundry role by using the [bluemix iam account-user-invite](
 
 ### {{site.data.keyword.BluSoftlayer_notm}} infrastructure access
 
-The permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions sets, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
+The permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions sets, see [Infrastructure permissions](/docs/iam/infrastructureaccess.html#infrapermission).
 
 1. From the **Invite users** screen, expand the **Infrastructure access** section.
 2. Select a permission set to define the scope of access.
