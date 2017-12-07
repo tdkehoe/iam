@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 A federated or non-federated user can create an API key to use on the CLI or as part of automation to log in as your user identity. You can use the UI or the CLI to manage your API keys by listing your keys, creating keys, updating keys, or deleting keys. To manage the {{site.data.keyword.Bluemix_notm}} API keys associated with your user identity, go to **Manage** &gt; **Security** &gt; **Platform API keys** to see a list of your API Keys with descriptions and dates. Then, you can create, edit or delete API keys from this page. For a full list of available CLI commands, see [Commands for managing API keys and policies](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
-As a [federated user](/docs/admin/adminpublic.html#federatedid), you can use an API key to login by using the `BLUEMIX_API_KEY` environment variable. For more information about using an API key for logging in, see [Logging in with a federated ID](/docs/iam/login_fedid.html).
+As a [federated user](/docs/admin/adminpublic.html#federatedid), you can use an API key to login by using the `BLUEMIX_API_KEY` environment variable. For more information about using an API key for logging in, see [Logging in with a federated ID](/docs/cli/login_federated_id.html#federated_id).
 
 ## Creating an API key
 
