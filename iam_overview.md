@@ -4,7 +4,7 @@ copyright:
 
   years: 2017
 
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -28,7 +28,7 @@ The identity concept in {{site.data.keyword.Bluemix_notm}} IAM consists of the f
 <dt>API keys</dt>
 <dd>Platform API keys are available through Cloud IAM for you to use to authenticate by using API or CLI as a user or service ID. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of IBM Cloud. </dd>
 <dt>Resources</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} resources are identified by their cloud resource names (CRN). For more information, see [Cloud Resource Names](/docs/iam/crn.html).</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} resources are identified by their cloud resource names (CRN). For more information, see [Cloud Resource Names](/docs/overview/crn.html#crn).</dd>
 </dl>
 
 ## Access management
