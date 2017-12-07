@@ -77,7 +77,7 @@ Per gestire le politiche di servizio o assegnare nuove politiche di servizio per
 5. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto. 
 **Nota**: non tutti i servizi richiedono la selezione di una regione.
 6. Seleziona **Tutte le istanze del servizio correnti** o una specifica istanza del servizio.
-7. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket. 
+7. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket.  
     * **Tipo di risorsa**: immetti **bucket**.
     * **Risorsa**: immetti il nome del tuo bucket.
 8. Seleziona un ruolo per definire l'ambito di accesso per la politica.

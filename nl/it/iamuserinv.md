@@ -47,7 +47,7 @@ Quando inviti un nuovo utente, puoi assegnare una singola politica di servizio. 
 3. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto. 
 **Nota**: non tutti i servizi richiedono la selezione di una regione.
 4. Seleziona **Tutte le istanze del servizio correnti** o una specifica istanza del servizio.
-5. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket. 
+5. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket.  
     * **Tipo di risorsa**: immetti **bucket**.
     * **Risorsa**: immetti il nome del tuo bucket.
 6. Seleziona un ruolo per definire l'ambito di accesso per la politica.

@@ -83,9 +83,9 @@ IAM ermöglicht das Verwalten und Definieren des Zugriffs für Benutzer und Ress
 
 <dl>
 <dt>Plattformmanagementrollen</dt>
-<dd>Für alle Services verfügbare Rollen, die mit der IAM-Benutzerzugriffssteuerung verwaltet werden können. Hierzu gehören Administrator, Editor (Bearbeiter), Operator (Bediener), Viewer (Anzeigeberechtigter) und Abrechnungsadministrator. Diese Rollen werden Benutzeraktionen zugeordnet, die für {{site.data.keyword.Bluemix_notm}}-Ressourcen auf Plattformebene durchgeführt werden können. Zu diesen Aktionen gehören beispielsweise das Erstellen von Instanzen, das Verbinden von Instanzen mit einer Anwendung, das Verwalten von Service-IDs, das Verwalten von Benutzern und Berechtigungen und das Verwalten der Rechnungsstellung und der Kontingente für das Konto. </dd>
+<dd>Für alle Services verfügbare Rollen, die mit der IAM-Benutzerzugriffssteuerung verwaltet werden können. Hierzu gehören Administrator, Editor (Bearbeiter), Operator (Bediener), Viewer (Anzeigeberechtigter) und Abrechnungsadministrator. Diese Rollen werden Benutzeraktionen zugeordnet, die für {{site.data.keyword.Bluemix_notm}}-Ressourcen auf Plattformebene durchgeführt werden können. Zu diesen Aktionen gehören beispielsweise das Erstellen von Instanzen, das Verbinden von Instanzen mit einer Anwendung, das Verwalten von Service-IDs, das Verwalten von Benutzern und Berechtigungen und das Verwalten der Rechnungsstellung und der Kontingente für das Konto.</dd>
 <dt>Servicezugriffsrollen</dt>
-<dd>Diese Rollen sind servicespezifisch. Die Rollen des Managers, des Schreibberechtigten und des Leseberechtigten definieren die Möglichkeiten des Benutzers, den Service zu verwenden und Service-API-Aufrufe auszuführen. Da jeder Service die Aktionen definiert, die ein Benutzer mit einer bestimmten Rolle durchführen kann, ist es möglich, dass ein Service nicht alle verfügbaren Rollen, die in der vorliegenden Dokumentation beschrieben sind, nutzt. </dd>
+<dd>Diese Rollen sind servicespezifisch. Die Rollen des Managers, des Schreibberechtigten und des Leseberechtigten definieren die Möglichkeiten des Benutzers, den Service zu verwenden und Service-API-Aufrufe auszuführen. Da jeder Service die Aktionen definiert, die ein Benutzer mit einer bestimmten Rolle durchführen kann, ist es möglich, dass ein Service nicht alle verfügbaren Rollen, die in der vorliegenden Dokumentation beschrieben sind, nutzt.</dd>
 </dl>
 
 **Hinweis**: Möglicherweise werden nicht alle als Optionen aufgeführte Rollen angezeigt, wenn Sie Richtlinien in der Benutzerschnittstelle zuweisen, da nur die Rollen, die für den in der Richtlinie ausgewählten Service zutreffen, angezeigt werden. Spezifische Informationen zu den aktivierten Rollen und zu den Aktionen, die die einzelnen Zugriffsrollen für den jeweiligen Service ermöglichen, sind in der Dokumentation zum betreffenden Service beschrieben.
@@ -95,7 +95,7 @@ IAM ermöglicht das Verwalten und Definieren des Zugriffs für Benutzer und Ress
 
 Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsstufen für die Durchführung von Plattformaktionen zugewiesen werden. Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden in den folgenden Tabellen Beispiele für einige der Plattformmanagementaktionen aufgeführt, die Benutzer durchführen können, denen die entsprechende Rolle zugewiesen wurde.
 
-| Plattformmanagementrolle  | Aktionen, die ein Benutzer für Services im Konto durchführen kann | Aktionen für Service-IDs |
+| Plattformmanagementrolle | Aktionen, die ein Benutzer für Services im Konto durchführen kann | Aktionen für Service-IDs |
 |:-----------------|:--------------|:---------------|
 | Viewer (Anzeigeberechtigter) | Instanzen anzeigen | IDs und API-Schlüssel anzeigen |
 | Operator (Bediener) |  Serviceinstanzen anzeigen und binden | Nicht zutreffend |
@@ -108,7 +108,7 @@ Einige Services ordnen möglicherweise bestimmte Aktionen den Plattformmanagemen
 
 | Plattformmanagementrolle | Beschreibung von Aktionen | Beispielaktionen für den {{site.data.keyword.containershort_notm}}-Service |
 |:-----------------|:-----------------|:-----------------|
-| Viewer (Anzeigeberechtigter) | Serviceinstanzen anzeigen, nicht jedoch ändern  | <ul><li>Cluster auflisten</li><li>Details für einen Cluster anzeigen</li></ul>|
+| Viewer (Anzeigeberechtigter) | Serviceinstanzen anzeigen, nicht jedoch ändern| <ul><li>Cluster auflisten</li><li>Details für einen Cluster anzeigen</li></ul>|
 | Editor (Bearbeiter) | Alle Plattformaktionen ausführen mit Ausnahme der Kontoverwaltung und der Zuweisung von Zugriffsrichtlinien |<ul><li>Service an einen Cluster binden</li><li>Webhook erstellen</li></ul> |
 | Operator (Bediener) | Plattformaktionen ausführen, die für die Konfiguration und den Betrieb von Serviceinstanzen erforderlich sind, z. B. Anzeigen eines Service-Dashboards | <ul><li>Workerknoten hinzufügen oder entfernen</li><li>Workerknoten neu starten oder erneut laden</li><li>Service an einen Cluster binden</li></ul> |
 | Administrator | Alle Plattformaktionen auf der Basis der Ressource ausführen, der diese Rolle zugewiesen wird, einschließlich der Zuweisung von Zugriffsrichtlinien zu anderen Benutzern |<ul><li>Cluster entfernen</li><li>Cluster erstellen</li><li>Benutzerzugriffsrichtlinien aktualisieren</li><li>Alle Aktionen, die ein Anzeigeberechtigter, Bearbeiter und Bediener ausführen kann</li></ul>|

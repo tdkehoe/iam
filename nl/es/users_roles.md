@@ -97,8 +97,8 @@ Los roles de gestión de plataforma permiten asignar a los usuarios distintos ni
 
 | Rol de gestión de plataforma  | Acciones que un usuario puede realizar en servicios de la cuenta | Acciones para ID de servicio |
 |:-----------------|:--------------|:---------------|
-| Visor | Ver instancias | Ver ID y claves de API |
-| Operador |  Ver y enlazar instancias de servicio | No aplicable |
+| Visor | Ver instancias | Ver ID y claves de API|
+| Operador |  Ver y enlazar instancias de servicio| No aplicable |
 | Editor |  Crear, suprimir, editar, suspender, reanudar, ver y enlazar instancias de servicio | Suprimir ID y crear y suprimir claves de API |
 | Administrador |  Todas las acciones de gestión para los servicios | Crear y suprimir ID y claves de API, asignar políticas a ID |
 {: caption="Tabla 5. Roles y acciones de gestión de plataforma de ejemplo" caption-side="top"}
@@ -108,7 +108,7 @@ Algunos servicios pueden correlacionar acciones específicas con los roles de ge
 
 | Rol de gestión de plataforma | Descripción de acciones | Acciones de ejemplo para el servicio de {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
-| Visor | Puede ver las instancias de servicio, pero no las puede modificar  | <ul><li>Listar clústeres</li><li>Ver los detalles de un clúster</li></ul>|
+| Visor | Puede ver las instancias de servicio, pero no las puede modificar | <ul><li>Listar clústeres</li><li>Ver los detalles de un clúster</li></ul>|
 | Editor | Realizar todas las acciones de plataforma excepto la gestión de la cuenta y la asignación de políticas de acceso |<ul><li>Enlazar un servicio a un clúster</li><li>Crear un webhook</li></ul> |
 | Operador | Realizar acciones de plataforma necesarias para configurar y operar instancias de servicio, como la visualización de un panel de control de servicio. | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
 | Administrador | Realiza todas las acciones de plataforma basadas en el recurso al que se está asignando este rol, incluida la asignación de políticas de acceso a otros usuarios. |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
