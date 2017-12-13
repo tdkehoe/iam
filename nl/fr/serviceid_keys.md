@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -25,7 +25,7 @@ Chaque clé d'API associée à un ID de service hérite de la règle qui a été
 
 Créez une clé d'API à associer à un ID de service.
 
-1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **ID de service**. 
+1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**. 
 2. Si vous ne possédez pas encore d'ID de service, créez-en un.
 3. Dans le menu **Actions**, accédez à l'option **Gérer un ID de service**.
 4. Cliquez sur **Créer** dans la section de clés d'API.
@@ -39,7 +39,7 @@ Créez une clé d'API à associer à un ID de service.
 
 Vous pouvez mettre à jour une clé d'API en éditant le nom ou la description utilisés pour l'identifier dans l'interface utilisateur.
 
-1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **ID de service**. 
+1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**. 
 2. Si vous ne possédez pas encore d'ID de service, créez-en un.
 3. Dans le menu **Actions**, accédez à l'option **Gérer un ID de service**.
 4. Dans le menu **Actions** de la section des clés d'API, accédez à l'option **Editer un nom & une description**.
@@ -49,7 +49,7 @@ Vous pouvez mettre à jour une clé d'API en éditant le nom ou la description u
 
 Vous pouvez supprimer une clé d'API associée à un ID de service. Cela dit, si vous supprimez une clé d'API utilisée par une application, celle-ci ne pourra plus s'authentifier auprès de vos services.
 
-1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **ID de service**. 
+1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**. 
 2. Si vous ne possédez pas encore d'ID de service, créez-en un.
 3. Dans le menu **Actions**, accédez à l'option **Gérer un ID de service**.
 4. Dans le menu **Actions** de la section des clés d'API, accédez à l'option **Supprimer une clé**.

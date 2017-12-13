@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-10-06"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -24,7 +24,7 @@ Les règles d'accès associées à un ID de service permettent d'activer des act
 
 ## Création d'un ID de service
 
-Pour créer un ID de service, accédez à **Gérer** &gt; **Sécurité** &gt; **Identity & Access**, puis sélectionnez **ID de service** dans le panneau latéral. Suivez le processus afin de créer un nom et une description pour votre ID de service. Ensuite, utilisez le menu **Actions** pour gérer votre ID de service. Vous pouvez commencer par affecter une règle et créer des clés d'API. Pour plus d'informations sur la gestion des clés d'API, voir  [Gestion des clés d'API d'ID de service](/docs/iam/serviceid_keys.html#serviceidapikeys). Pour plus d'informations sur les commandes d'interface de ligne de commande utilisées pour gérer un ID de service, voir [Commandes de gestion des clés d'API et des règles](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
+Pour créer un ID de service, accédez à **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, sélectionnez **ID de service** dans le panneau latéral. Suivez le processus afin de créer un nom et une description pour votre ID de service. Ensuite, utilisez le menu **Actions** pour gérer votre ID de service. Vous pouvez commencer par affecter une règle et créer des clés d'API. Pour plus d'informations sur la gestion des clés d'API, voir  [Gestion des clés d'API d'ID de service](/docs/iam/serviceid_keys.html#serviceidapikeys). Pour plus d'informations sur les commandes d'interface de ligne de commande utilisées pour gérer un ID de service, voir [Commandes de gestion des clés d'API et des règles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
 
 ## Mise à jour d'un ID de service
 

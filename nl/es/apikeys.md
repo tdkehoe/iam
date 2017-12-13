@@ -24,6 +24,6 @@ Las claves de API pueden estar asociadas con lo siguiente:
 
 Puede crear y utilizar claves de API que están vinculadas a su cuenta. Un usuario federado o no federado puede crear una clave de API para utilizarla en la CLI o como parte de la automatización para iniciar sesión con su identidad de usuario. Para obtener más información sobre la utilización de una clave de API asociada con su identidad de usuario, consulte [Gestión de las claves de API de usuario](userid_keys.html).
 
-También puede utilizar las claves de API asociadas con los ID de servicio que cree. Los ID de servicio se utilizan para conectar una aplicación dentro o fuera de {{site.data.keyword.Bluemix_notm}} a un servicio de {{site.data.keyword.Bluemix_notm}}. Para obtener más información sobre cómo crear claves de API asociadas con un ID de servicio, consulte [Gestión de claves de API de ID de servicio](serviceid_keys.html).
+También puede utilizar las claves de API asociadas con los ID de servicio que cree. Los ID de servicio se utilizan para conectar una aplicación dentro o fuera de {{site.data.keyword.Bluemix_notm}} con un servicio de {{site.data.keyword.Bluemix_notm}}. Para obtener más información sobre cómo crear claves de API asociadas con un ID de servicio, consulte [Gestión de claves de API de ID de servicio](serviceid_keys.html).
 
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-10-06"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -24,7 +24,7 @@ lastupdated: "2017-10-06"
 
 ## 创建服务标识
 
-要创建服务标识，请转至**管理** &gt; **安全性** &gt; **身份和访问权**，然后从侧面板选择**服务标识**。执行为服务标识创建名称和描述的过程。然后，使用**操作**菜单来管理服务标识。您可以首先分配策略和创建 API 密钥。有关使用 API 密钥的更多信息，请参阅[管理服务标识 API 密钥](/docs/iam/serviceid_keys.html#serviceidapikeys)。有关用于管理服务标识的 CLI 命令的详细信息，请参阅[用于管理 API 密钥和策略的命令](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。 
+要创建服务标识，请转至**管理** &gt; **安全性** &gt; **身份和访问权**，然后从侧面板选择**服务标识**。执行为服务标识创建名称和描述的过程。然后，使用**操作**菜单来管理服务标识。您可以首先分配策略和创建 API 密钥。有关使用 API 密钥的更多信息，请参阅[管理服务标识 API 密钥](/docs/iam/serviceid_keys.html#serviceidapikeys)。有关用于管理服务标识的 CLI 命令的详细信息，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。 
 
 ## 更新服务标识
 

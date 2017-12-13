@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -19,32 +19,51 @@ Lorsque vous créez un ID de service, vous pouvez affecter des règles de servic
 
 **Remarque** : si vous supprimez ou éditer une règle existante pour un ID de service en cours d'utilisation, cela peut entraîner une interruption de service.
 
-## Affectation de nouvelles règles
+## Affectation d'un nouvel accès
 
-Pour affecter une nouvelle règle :
+Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressources ou uniquement à un service d'un groupe de ressources, procédez comme suit :
 
-1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **ID de service**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**.
 2. Sélectionnez l'ID de service pour laquelle vous souhaitez affecter une règle de service.
-3. Cliquez sur **Affecter des règles**.
-4. Sélectionnez le service pour lequel vous souhaitez définir des droits.
-5. Facultatif : cliquez sur **Spécifier un contexte de service facultatif**, si vous souhaitez affiner la région et l'instance de service pour la règle.
-6. Sélectionnez le rôle que vous souhaitez attribuer.
-7. Facultatif : sélectionnez **Ajouter un rôle** si vous souhaitez spécifier des rôles supplémentaires pour la règle.
+3. Cliquez sur **Affecter un accès**.
+4. Sélectionnez **Assign by resource group**.
+5. Sélectionnez un groupe de ressources.
+6. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources sur son tableau de bord, éditer le nom du groupe de ressources ou gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle est affectée.
+7. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
+8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle. Il n'accorde pas l'accès au conteneur que constitue le groupe de ressources.
+9. Sélectionnez **Affecter**.
 
-## Edition de règles existantes
+Pour affecter des droits d'accès à une ressource individuelle du compte, procédez comme suit : 
+
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**.
+2. Sélectionnez l'ID de service pour laquelle vous souhaitez affecter une règle de service.
+3. Cliquez sur **Affecter un accès**.
+4. Sélectionnez **Assign by resource**.
+5. Sélectionnez un service.
+6. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
+7. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
+8. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
+    * **Type de ressource** : entrez **compartiment**.
+    * **ID de ressource** : entrez le nom de votre compartiment
+9. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. 
+10. Sélectionnez **Affecter**.
+
+
+
+## Edition d'un accès existant
 
 Pour éditer une règle existante :
 
-1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **ID de service**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**.
 2. Sélectionnez l'ID de service pour laquelle vous souhaitez éditer une règle de service.
 3. Identifiez la ligne contenant la règle à éditer, puis sélectionnez **Editer la règle** dans le menu **Actions**.
 4. Apportez vos modifications, puis sauvegardez la règle.
 
-## Suppression de règles existantes
+## Retrait de l'accès
 
-Pour supprimer une règle existante :
+Pour retirer une règle existante :
 
-1. Dans la barre de menu, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity & Access** &gt; **ID de service**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**.
 2. Sélectionnez l'ID de service pour laquelle vous souhaitez supprimer une règle de service.
-3. Identifiez la ligne contenant la règle à supprimer, puis sélectionnez **Supprimer la règle** dans le menu **Actions**.
-4. Apportez vos modifications, puis sauvegardez la règle.
+3. Identifiez la ligne contenant la règle à supprimer, puis sélectionnez **Retirer** dans le menu **Actions**.
+4. Revoyez les détails relatifs à la règle que vous êtes sur le point de retirer, puis cliquez sur **Retirer** pour confirmer.

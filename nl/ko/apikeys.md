@@ -24,6 +24,6 @@ API 키를 다음과 연관시킬 수 있습니다.
 
 계정에 링크되는 API 키를 작성하고 사용할 수 있습니다. 연합 또는 비연합 사용자는 CLI에서 또는 자동화의 일부로 사용하여 사용자 ID로 로그인하기 위해 API 키를 작성할 수 있습니다. 사용자 ID와 연관된 API 키 사용에 대한 자세한 정보는 [사용자 API 키 관리](userid_keys.html)를 참조하십시오.
 
-또한 작성하는 서비스 ID와 연관된 API 키를 사용할 수 있습니다. 서비스 ID는 {{site.data.keyword.Bluemix_notm}} 내외부의 애플리케이션을 {{site.data.keyword.Bluemix_notm}} 서비스에 연결하는 데 사용됩니다. 서비스 ID와 연관된 API 키 작성에 대한 자세한 정보는 [서비스 ID API 키 관리](serviceid_keys.html)를 참조하십시오.
+또한 작성하는 서비스 ID와 연관된 API 키를 사용할 수 있습니다. 서비스 ID를 사용하면 {{site.data.keyword.Bluemix_notm}}의 내부나 외부에 있는 애플리케이션을 {{site.data.keyword.Bluemix_notm}} 서비스에 연결할 수 있습니다. 서비스 ID와 연관된 API 키 작성에 대한 자세한 정보는 [서비스 ID API 키 관리](serviceid_keys.html)를 참조하십시오.
 
 

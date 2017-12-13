@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2017-10-03"
 # 管理使用者 API 金鑰
 {: #userapikey}
 
-聯合或非聯合使用者可以建立 API 金鑰以在 CLI 上使用，或是在自動化作業之中使用，以您的使用者身分登入。您可以使用 {{site.data.keyword.Bluemix_notm}} 使用者介面或 {{site.data.keyword.Bluemix_notm}} CLI，透過列出金鑰、建立金鑰、更新金鑰或刪除金鑰來管理 API 金鑰。若要管理與您使用者身分相關聯的 {{site.data.keyword.Bluemix_notm}} API 金鑰，請移至**管理** &gt; **安全** &gt; **Bluemix API 金鑰**，以查看具有說明及日期的 API 金鑰清單。然後，您可以從這個頁面建立、編輯或刪除 API 金鑰。如需可用 CLI 指令的完整清單，請參閱[用來管理 API 金鑰及原則的指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
+聯合或非聯合使用者可以建立 API 金鑰以在 CLI 上使用，或是在自動化作業之中使用，以您的使用者身分登入。您可以使用使用者介面或 CLI 來管理 API 金鑰，方法是列出金鑰、建立金鑰、更新金鑰，或刪除金鑰。若要管理與您使用者身分相關聯的 {{site.data.keyword.Bluemix_notm}} API 金鑰，請移至**管理** &gt; **安全** &gt; **平台 API 金鑰**，以查看具有說明及日期的 API 金鑰清單。然後，您可以從這個頁面建立、編輯或刪除 API 金鑰。如需可用 CLI 指令的完整清單，請參閱[用來管理 API 金鑰及原則的指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
 
-身為[聯合使用者](/docs/admin/adminpublic.html#federatedid)，您可以利用 `BLUEMIX_API_KEY` 環境變數來使用 API 金鑰進行登入。如需使用 API 金鑰登入的相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} CLI `bluemix login` 指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login)及 [cf CLI `cf login` 指令](/docs/cli/reference/cfcommands/index.html#cf_login)的文件。
+身為[聯合使用者](/docs/admin/adminpublic.html#federatedid)，您可以利用 `BLUEMIX_API_KEY` 環境變數來使用 API 金鑰進行登入。如需使用 API 金鑰進行登入的相關資訊，請參閱[使用聯合 ID 登入](/docs/iam/login_fedid.html)。
 
 ## 建立 API 金鑰
 
@@ -25,7 +25,7 @@ lastupdated: "2017-10-03"
 
 若要在使用者介面中建立使用者身分的 API 金鑰，請執行下列動作：
 
-1. 移至**管理** &gt; **安全** &gt; **Bluemix API 金鑰**。
+1. 移至**管理** &gt; **安全** &gt; **平台 API 金鑰**。
 2. 按一下**建立 API 金鑰**。
 3. 輸入 API 金鑰的名稱及說明。
 4. 按一下**建立 API 金鑰**。
@@ -41,23 +41,6 @@ lastupdated: "2017-10-03"
 bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
 ``` 
 
-使用 CLI 建立 API 金鑰之後，您可以使用一些方法搭配使用此金鑰與 bx CLI：
-
-* 使用 `bx login` 指令輸入它
-```
- bx login --apikey <your api key>
-```
-* 建立 API 金鑰檔，以便搭配 `bx login` 指令使用： 
- ```
- bx login --apkey @apikeyfile
- ```
- `apikeyfile` 是使用 `bx iam api-key-create` 指令上的 `—file` 選項所建立。
-* 在命令提示字元中，您可以輸入 `BLUEMIX_API_KEY=<your api key>` 然後輸入 `bx login`，來設定環境變數。
-* 或者，如果您想要避免 bx CLI，只使用您的 API 金鑰登入 cf CLI，請輸入下列指令：
- ```
- cf login -u apikey -p <yourapikey>
- ```
-  在這個選項中，請使用 `apikey` 的使用者名稱，密碼則是您的 `apikey`。現在，您可以在像是 Eclipse 的其他工具或其他地方使用 `apikey`，尋找只接受使用者名稱和密碼的 `cf login`。
 
 ## 更新 API 金鑰
 
@@ -65,7 +48,7 @@ bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
 
 若要編輯 API 金鑰，請執行下列動作：
 
-1. 移至**管理** &gt; **安全** &gt; **Bluemix API 金鑰**。
+1. 移至**管理** &gt; **安全** &gt; **平台 API 金鑰**。
 2. 從表格中所列 API 金鑰的**動作**功能表中，按一下**編輯名稱及說明** 
 3. 更新 API 金鑰的資訊。
 4. 按一下**更新 API 金鑰**。
@@ -84,7 +67,7 @@ bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of
 
 若要刪除 API 金鑰，請執行下列動作： 
 
-1. 移至**管理** &gt; **安全** &gt; **Bluemix API 金鑰**。
+1. 移至**管理** &gt; **安全** &gt; **平台 API 金鑰**。
 2. 從表格中所列 API 金鑰的**動作**功能表中，按一下以**刪除**。
 3. 然後，按一下**刪除金鑰**來確認刪除。
 

@@ -1,26 +1,44 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="bluemix-iam" audience="platform" href="/docs/iam/iamusermanage.html"}
+{: .toc subcollection="iam" audience="platform" href="/docs/iam/quickstart.html"}
 Gerenciando a identidade e o acesso
 
     {: .navgroup id="learn"}
-    users_roles.md
+    quickstart.md
+
+    {: .topicgroup}
+    O que é IAM?
+        index.md
+        iam_overview.md
+        cf_iam.md
+
+    {: .topicgroup}
+    Funções de usuário e permissões
+        users_roles.md
+        cfaccess.md
+        infrastructureaccess.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
+    login_fedid.md
     iamuserinv.md
-    iamusermanage.md
+
+    {: .topicgroup}
+    Gerenciando usuários e acesso
+        iamusermanage.md
+        mngiam.md
+        mngcf.md
+        mnginfra.md
 
     {: .topicgroup}
     Trabalhando com serviços
         serviceid.md
         serviceidaccess.md
-    
+
     {: .topicgroup}
     Chaves API
         apikeys.md
         userid_keys.md
         serviceid_keys.md
     {: .navgroup-end}
-    

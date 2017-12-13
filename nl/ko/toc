@@ -1,26 +1,44 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="bluemix-iam" audience="platform" href="/docs/iam/iamusermanage.html"}
+{: .toc subcollection="iam" audience="platform" href="/docs/iam/quickstart.html"}
 ID 및 액세스 관리
 
     {: .navgroup id="learn"}
-    users_roles.md
+    quickstart.md
+
+    {: .topicgroup}
+    IAM 개념
+        index.md
+        iam_overview.md
+        cf_iam.md
+
+    {: .topicgroup}
+    사용자 역할 및 권한
+        users_roles.md
+        cfaccess.md
+        infrastructureaccess.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
+    login_fedid.md
     iamuserinv.md
-    iamusermanage.md
+
+    {: .topicgroup}
+    사용자 및 액세스 관리
+        iamusermanage.md
+        mngiam.md
+        mngcf.md
+        mnginfra.md
 
     {: .topicgroup}
     서비스 작업
         serviceid.md
         serviceidaccess.md
-    
+
     {: .topicgroup}
     API 키
         apikeys.md
         userid_keys.md
         serviceid_keys.md
     {: .navgroup-end}
-    

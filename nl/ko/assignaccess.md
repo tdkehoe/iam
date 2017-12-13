@@ -37,7 +37,7 @@ lastupdated: "2017-07-26"
 
 1. **사용자 초대** 화면에서 **Cloud Foundry 액세스** 섹션을 펼치십시오. 
 2. 사용자가 추가될 조직을 선택하십시오. 
-3. 조직 역할을 선택하여 선택한 조직에 대한 액세스 레벨을 정의하십시오. 
+3. 조직 역할을 선택하여 선택된 조직에 대한 액세스 레벨을 정의하십시오. 
 4. 선택사항: 추가 역할을 지정하려면 **역할 추가**를 선택하십시오. 
 5. **모든 현재 지역** 또는 특정 지역을 선택하십시오. 
 6. **모든 현재 영역** 또는 특정 영역을 선택하십시오. 
@@ -46,7 +46,7 @@ lastupdated: "2017-07-26"
 
 이러한 역할에 대한 보다 자세한 정보는 [Cloud Foundry 역할](/docs/iam/users_roles.html#cfroles)을 참조하십시오. 
 
-**참고**: [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 권한 또는 권한을 지정하려면 UI를 사용해야 합니다. 
+**참고**: [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 기타 액세스 또는 권한을 지정하려면 UI를 사용해야 합니다. 
 
 ## 인프라 액세스
 

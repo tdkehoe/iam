@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-06-27"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -19,32 +19,51 @@ Al crear un ID de servicio, puede asignar políticas de servicio para dicho ID d
 
 **Nota**: Si suprime o edita una política existente para un ID de servicio actualmente en uso, puede causar una interrupción de servicio.
 
-## Asignación de nuevas políticas
+## Asignación de nuevos accesos
 
-Para asignar una nueva política:
+Para asignar acceso a todos los recursos de un grupo de recursos o solo a un servicio del grupo, complete los siguientes pasos:
 
-1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identity & Access** &gt; **ID de servicio**.
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Seleccione el ID de servicio desde la tabla para la que desea asignar una política de servicios.
-3. Pulse **Asignar políticas**.
-4. Seleccione el servicio de la lista para la que desea definir permisos.
-5. Opcional: Pulse **Especificar el contexto de servicio opcional**, si desea acotar la región y la instancia de servicio para la política.
-6. Seleccione el rol que desea asignar.
-7. Opcional: Seleccione **Añadir rol** si desea añadir roles adicionales para la política.
+3. Pulse **Asignar acceso**.
+4. Seleccione **Asignar por grupo de recursos**.
+5. Seleccione un grupo de recursos.
+6. Elija un rol para el campo **Asignar acceso a un grupo de recursos** para permitir al usuario ver el grupo de recursos en su panel de control, editar el nombre del grupo de recursos o gestionar el acceso de usuario al grupo. Puede seleccionar **Sin acceso** si desea que el usuario solo tenga acceso al recurso que especifique y no al grupo en el que está asignado.
+7. Seleccione un servicio dentro del grupo de recursos o seleccione proporcionar acceso a todos los servicios dentro del grupo seleccionado.
+8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario. Este acceso solo se aplica a los recursos que ha seleccionado para la política. No proporciona acceso al contenedor actual que es el grupo de recursos.
+9. Seleccione **Asignar**.
 
-## Edición de políticas existentes
+Para asignar acceso a un recurso individual en la cuenta, complete los siguientes pasos: 
+
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
+2. Seleccione el ID de servicio desde la tabla para la que desea asignar una política de servicios.
+3. Pulse **Asignar acceso**.
+4. Seleccione **Asignar por recurso**.
+5. Seleccione un servicio.
+6. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
+7. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
+8. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
+    * **Tipo de recurso**: indique **grupo**.
+    * **ID de recurso**: Especifique el nombre de su grupo.
+9. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.
+10. Seleccione **Asignar**.
+
+
+
+## Edición de accesos existentes
 
 Para editar una política existente:
 
-1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identity & Access** &gt; **ID de servicio**.
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Seleccione el ID de servicio de la tabla para la que desea editar una política de servicios.
 3. Identifique la fila de la política que desea editar y seleccione **Editar política** desde el menú **Acciones**.
 4. Realice los cambios y, a continuación, guarde la política.
 
-## Supresión de políticas existentes
+## Eliminación de acceso
 
-Para suprimir una política existente:
+Para eliminar una política existente:
 
-1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identity & Access** &gt; **ID de servicio**.
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Seleccione el ID de servicio de la tabla para la que desea suprimir una política de servicios.
-3. Identifique la fila de la política que desea suprimir y seleccione **Eliminar política** del menú **Acciones**.
-4. Realice los cambios y, a continuación, guarde la política.
+3. Identifique la fila de la política que desea suprimir y seleccione **Eliminar** del menú **Acciones**.
+4. Revise los detalles de la política que va a eliminar y luego pulse **Eliminar** para confirmar.

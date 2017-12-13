@@ -36,7 +36,7 @@ Consulte [Roles y políticas de gestión de acceso e identidad](/docs/iam/users_
 Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en la cuenta. Si añade los usuarios a una organización, puede asignar al usuario un rol de organización. A continuación, seleccione proporcionar acceso al usuario invitado a uno o a todos los espacios de la organización seleccionada con un rol de espacio asignado.
 
 1. Desde la pantalla **Invitar usuarios**, expanda la sección **Acceso de Cloud Foundry**.
-2. Seleccione una organización para añadirla al usuario.
+2. Seleccione una organización en la que añadir al usuario.
 3. Seleccione un rol de organización para definir el nivel de acceso a la organización seleccionada.
 4. Opcional: Seleccione **Añadir rol** para especificar un rol adicional.
 5. Seleccione **Todas las regiones actuales** o una región específica.

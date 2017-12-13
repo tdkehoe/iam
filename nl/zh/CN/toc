@@ -1,26 +1,44 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="bluemix-iam" audience="platform" href="/docs/iam/iamusermanage.html"}
+{: .toc subcollection="iam" audience="platform" href="/docs/iam/quickstart.html"}
 管理身份和访问权
 
     {: .navgroup id="learn"}
-    users_roles.md
+    quickstart.md
+
+    {: .topicgroup}
+    什么是 IAM？
+        index.md
+        iam_overview.md
+        cf_iam.md
+
+    {: .topicgroup}
+    用户角色和许可权
+        users_roles.md
+        cfaccess.md
+        infrastructureaccess.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
+    login_fedid.md
     iamuserinv.md
-    iamusermanage.md
+
+    {: .topicgroup}
+    管理用户和访问权
+        iamusermanage.md
+        mngiam.md
+        mngcf.md
+        mnginfra.md
 
     {: .topicgroup}
     使用服务
         serviceid.md
         serviceidaccess.md
-    
+
     {: .topicgroup}
     API 密钥
         apikeys.md
         userid_keys.md
         serviceid_keys.md
     {: .navgroup-end}
-    
