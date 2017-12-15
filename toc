@@ -35,6 +35,7 @@ Managing identity and access
     Working with services
         serviceid.md
         serviceidaccess.md
+        authorizations.md
 
     {: .topicgroup}
     API keys
