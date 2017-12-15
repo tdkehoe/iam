@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -25,7 +25,7 @@ Jeder API-Schlüssel, der einer Service-ID zugeordnet wurde, übernimmt die Rich
 
 Erstellen Sie einen API-Schlüssel, der einer Service-ID zugeordnet werden soll.
 
-1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität & Zugriff** &gt; **Service-IDs** auf. 
+1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** &gt; **Service-IDs** auf. 
 2. Wenn Sie noch keine Service-ID erstellt haben, dann erstellen Sie nun die Service-ID.
 3. Rufen Sie im Menü **Aktionen** die Option **Service-ID verwalten** auf.
 4. Klicken Sie im Abschnitt für die API-Schlüssel auf **Erstellen**.
@@ -39,7 +39,7 @@ Erstellen Sie einen API-Schlüssel, der einer Service-ID zugeordnet werden soll.
 
 Sie können einen API-Schlüssel aktualisieren, indem Sie den Namen oder die Beschreibung bearbeiten, der bzw. die zur Identifikation des Schlüssels in der Benutzerschnittstelle verwendet wird.
 
-1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität & Zugriff** &gt; **Service-IDs** auf. 
+1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** &gt; **Service-IDs** auf. 
 2. Wenn Sie noch keine Service-ID erstellt haben, dann erstellen Sie nun die Service-ID.
 3. Rufen Sie im Menü **Aktionen** die Option **Service-ID verwalten** auf.
 4. Rufen Sie im Menü **Aktionen** im Abschnitt für die API-Schlüssel die Option **Name & Beschreibung bearbeiten** auf.
@@ -49,7 +49,7 @@ Sie können einen API-Schlüssel aktualisieren, indem Sie den Namen oder die Bes
 
 Sie können einen API-Schlüssel löschen, der einer Service-ID zugeordnet ist. Allerdings wird durch das Löschen eines momentan durch eine Anwendung benutzten API-Schlüssels dieser Anwendung die Möglichkeit entzogen, sich bei Ihren Services zu authentifizieren.
 
-1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität & Zugriff** &gt; **Service-IDs** auf. 
+1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** &gt; **Service-IDs** auf. 
 2. Wenn Sie noch keine Service-ID erstellt haben, dann erstellen Sie nun die Service-ID.
 3. Rufen Sie im Menü **Aktionen** die Option **Service-ID verwalten** auf.
 4. Rufen Sie im Menü **Aktionen** im Abschnitt für die API-Schlüssel die Option **Schlüssel löschen** auf.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-10-03"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2017-10-03"
 # API-Schlüssel für Benutzer verwalten
 {: #userapikey}
 
-Ein eingebundener oder nicht eingebundener Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle oder die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Zum Verwalten der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Bluemix-API-Schlüssel** auf, um eine Liste Ihrer API-Schlüssel mit Beschreibungen und Datumsangaben anzuzeigen. Sie können dann über diese Seite API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+Ein eingebundener oder nicht eingebundener Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Zum Verwalten der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Plattform-API-Schlüssel** auf, um eine Liste Ihrer API-Schlüssel mit Beschreibungen und Datumsangaben anzuzeigen. Sie können dann über diese Seite API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
-Als [eingebundener Benutzer](/docs/admin/adminpublic.html#federatedid) können Sie einen API-Schlüssel für die Anmeldung nutzen, indem Sie die Umgebungsvariable `BLUEMIX_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssel für die Anmeldung finden Sie in der Dokumentation zum [{{site.data.keyword.Bluemix_notm}}-CLI-Befehl `bluemix login`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_login) und zum [Befehl `cf login` der Befehlszeilenschnittstelle 'cf'](/docs/cli/reference/cfcommands/index.html#cf_login).
+Als [eingebundener Benutzer](/docs/admin/adminpublic.html#federatedid) können Sie einen API-Schlüssel für die Anmeldung nutzen, indem Sie die Umgebungsvariable `BLUEMIX_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssels für die Anmeldung finden Sie in [Mit eingebundener ID anmelden](/docs/iam/login_fedid.html).
 
 ## API-Schlüssel erstellen
 
@@ -25,7 +25,7 @@ Als {{site.data.keyword.Bluemix_notm}}-Benutzer können Sie einen API-Schlüssel
 
 Gehen Sie wie folgt vor, um einen API-Schlüssel für Ihre Benutzeridentität in der Benutzerschnittstelle zu erstellen:
 
-1. Wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Bluemix-API-Schlüssel**.
+1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Plattform-API-Schlüssel** auf.
 2. Klicken Sie auf **API-Schlüssel erstellen**.
 3. Geben Sie einen Namen und eine Beschreibung für den API-Schlüssel ein.
 4. Klicken Sie auf **API-Schlüssel erstellen**.
@@ -41,23 +41,6 @@ Gehen Sie wie folgt vor, um einen API-Schlüssel über die Befehlszeilenschnitts
 bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
 ``` 
 
-Nach der Erstellung eines API-Schlüssels über die Befehlszeilenschnittstelle gibt es mehrere Möglichkeiten, den Schlüssel in der Befehlszeilenschnittstelle 'bx' einzusetzen:
-
-* Eingabe des Schlüssels mit dem Befehl `bx login`
-```
- bx login --apikey <eigener API-Schlüssel>
-```
-* Erstellen einer API-Schlüsseldatei zur Verwendung mit dem Befehl `bx login` 
- ```
- bx login --apkey @apikeyfile
- ```
- `apikeyfile` wird mit der Option `—file` im Befehl `bx iam api-key-create` erstellt.
-* In der Eingabeaufforderung können Sie die Umgebungsvariable festlegen, indem Sie `BLUEMIX_API_KEY=<eigener API-Schlüssel>` und dann `bx login` eingeben.
-* Alternativ dazu können Sie, wenn Sie die Befehlszeilenschnittstelle 'bx' nicht verwenden, sondern sich mit Ihrem API-Schlüssel direkt bei der Befehlszeilenschnittstelle 'cf' anmelden möchten, Folgendes eingeben:
- ```
- cf login -u apikey -p <eigener API-Schlüssel>
- ```
-  Bei dieser Option verwenden Sie den Benutzernamen `apikey`, das Kennwort ist Ihr `apikey`. Nun können Sie `apikey` in anderen Tools wie Eclipse oder an anderer Stelle mit `cf login` verwenden, wo nur Benutzername und Kennwort akzeptiert werden.
 
 ## API-Schlüssel aktualisieren
 
@@ -65,7 +48,7 @@ Wenn Sie den Namen oder die Beschreibung eines API-Schlüssels ändern möchten,
 
 Gehen Sie wie folgt vor, um einen API-Schlüssel zu bearbeiten:
 
-1. Wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Bluemix-API-Schlüssel**.
+1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Plattform-API-Schlüssel** auf.
 2. Klicken Sie im Menü **Aktionen** eines in der Tabelle aufgeführten API-Schlüssels auf **Name & Beschreibung bearbeiten**. 
 3. Aktualisieren Sie die Informationen für den API-Schlüssel.
 4. Klicken Sie auf **API-Schlüssel aktualisieren**.
@@ -84,7 +67,7 @@ Wenn Sie ein Schlüsselrotationsverfahren nutzen, können Sie einen älteren Sch
 
 Gehen Sie wie folgt vor, um einen API-Schlüssel zu löschen: 
 
-1. Wechseln Sie zu **Verwalten** &gt; **Sicherheit** &gt; **Bluemix-API-Schlüssel**.
+1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Plattform-API-Schlüssel** auf.
 2. Klicken Sie im Menü **Aktionen** eines in der Tabelle aufgeführten API-Schlüssels auf **Löschen**.
 3. Bestätigen Sie anschließend den Löschvorgang durch Klicken auf **Schlüssel löschen**.
 

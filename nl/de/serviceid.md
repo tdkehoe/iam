@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-10-06"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -24,7 +24,7 @@ Die Zugriffsrichtlinien, die einer Service-ID zugewiesen werden, aktivieren best
 
 ## Service-ID erstellen
 
-Zum Erstellen einer Service-ID müssen Sie die Optionen **Verwalten** &gt; **Sicherheit** &gt; **Identität & Zugriff** und anschließend **Service-IDs** in der Seitenleiste auswählen. Befolgen Sie die Vorgehensweise, um einen Namen und eine Beschreibung für Ihre Service-ID zu erstellen. Verwenden Sie dann das Menü **Aktionen**, um Ihre Service-ID zu verwalten. Als erstes können Sie eine Richtlinie zuweisen und API-Schlüssel erstellen. Weitere Informationen zum Arbeiten mit API-Schlüsseln finden Sie in [API-Schlüssel für Service-IDs verwalten](/docs/iam/serviceid_keys.html#serviceidapikeys). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung von Service-IDs verwendet werden, finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
+Zum Erstellen einer Service-ID müssen Sie die Optionen **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und anschließend **Service-IDs** in der Seitenleiste auswählen. Befolgen Sie die Vorgehensweise, um einen Namen und eine Beschreibung für Ihre Service-ID zu erstellen. Verwenden Sie dann das Menü **Aktionen**, um Ihre Service-ID zu verwalten. Als erstes können Sie eine Richtlinie zuweisen und API-Schlüssel erstellen. Weitere Informationen zum Arbeiten mit API-Schlüsseln finden Sie in [API-Schlüssel für Service-IDs verwalten](/docs/iam/serviceid_keys.html#serviceidapikeys). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung von Service-IDs verwendet werden, finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
 
 ## Service-ID aktualisieren
 

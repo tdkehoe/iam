@@ -12,10 +12,10 @@ lastupdated: "2017-07-26"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Benutzerzugriff zuordnen
+# Benutzerzugriff zuweisen
 {: #assignaccess}
 
-Bei der Einladung weisen Sie den Benutzern Zugriffsrechte, Cloud Foundry-Rollen und -Richtlinien sowie Infrastrukturberechtigungen zu. Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, können Sie Benutzer aus dem gesamten Konto, der gesamten Organisation, dem gesamten Bereich oder der gesamten Serviceinstanz einladen und mit Zugriffsrechten ausstatten. In den folgenden Abschnitten werden die drei Arten von Zugriff beschrieben, die einem eingeladenen Benutzer zugeordnet werden können.
+Bei der Einladung weisen Sie den Benutzern Zugriffsberechtigungen, Cloud Foundry-Rollen und -Richtlinien sowie Infrastructure-Berechtigungen zu. Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, können Sie Benutzer aus dem gesamten Konto, der gesamten Organisation, dem gesamten Bereich oder der gesamten Serviceinstanz einladen und mit Zugriffsberechtigungen ausstatten. In den folgenden Abschnitten werden die drei Arten von Zugriff beschrieben, die einem eingeladenen Benutzer zugeordnet werden können.
 {:shortdesc}
 
 ## Durch Identity and Access aktivierte Services
