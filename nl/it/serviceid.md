@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017
-lastupdated: "2017-10-06"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -24,7 +24,7 @@ Le politiche di accesso associate a un ID servizio abilitano delle specifiche az
 
 ## Creazione di un ID servizio
 
-Per creare un ID servizio, vai a **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e quindi seleziona **ID servizio** dal pannello laterale. Attieniti alla procedura per creare un nome e una descrizione per il tuo ID servizio. Usa quindi il menu **Azioni** per gestire il tuo ID servizio. Puoi iniziare assegnando una politica e creando le chiavi API. Per ulteriori informazioni sulla gestione delle chiavi API, consulta [Gestione delle chiavi API di un ID servizio](/docs/iam/serviceid_keys.html#serviceidapikeys). Per i dettagli sui comandi della CLI utilizzati per gestire un ID servizio, consulta il documento relativo ai [comandi per la gestione di politiche e chiavi API](https://console-regional.ng.bluemix.net/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
+Per creare un ID servizio, vai a **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **ID servizio** dal pannello laterale. Attieniti alla procedura per creare un nome e una descrizione per il tuo ID servizio. Usa quindi il menu **Azioni** per gestire il tuo ID servizio. Puoi iniziare assegnando una politica e creando le chiavi API. Per ulteriori informazioni sulla gestione delle chiavi API, consulta [Gestione delle chiavi API di un ID servizio](/docs/iam/serviceid_keys.html#serviceidapikeys). Per i dettagli sui comandi della CLI utilizzati per gestire un ID servizio, consulta il documento relativo ai [comandi per la gestione di politiche e chiavi API](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam). 
 
 ## Aggiornamento di un ID servizio
 
