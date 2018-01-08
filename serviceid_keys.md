@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-12-07"
 
 ---
@@ -25,7 +25,7 @@ Each API key that is associated with a service ID inherits the policy that has b
 
 Create an API key to associate with a service ID.
 
-1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**. 
+1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
 2. If you don't have a service ID created already, create the service ID.
 3. From the **Actions** menu, go to the **Manage service ID** option.
 4. Click **Create** in the API keys section.
@@ -39,7 +39,7 @@ Create an API key to associate with a service ID.
 
 You can update an API key by editing the name or description used to identify the key in the UI.
 
-1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**. 
+1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
 2. If you don't have a service ID created already, create the service ID.
 3. From the **Actions** menu, go to the **Manage service ID** option.
 4. From the **Actions** menu in the API keys section, go to the **Edit name & description** option.
@@ -49,9 +49,7 @@ You can update an API key by editing the name or description used to identify th
 
 You can delete an API key that is associated with a service ID. However, deleting an API key that is currently in use by an application will remove the ability for that application to authenticate with your services.
 
-1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**. 
+1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
 2. If you don't have a service ID created already, create the service ID.
 3. From the **Actions** menu, go to the **Manage service ID** option.
 4. From the **Actions** menu in the API keys section, go to the **Delete key** option.
-
-

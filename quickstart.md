@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -16,9 +16,9 @@ lastupdated: "2017-11-16"
 # Getting started tutorial
 {: #getstarted}
 
-This tutorial is intended to help you get up and running quickly with IBM Cloud Identity and Access Management (IAM) by  inviting users to your account and assigning Cloud IAM access to those users. 
+This tutorial is intended to help you get up and running quickly with IBM Cloud Identity and Access Management (IAM) by  inviting users to your account and assigning Cloud IAM access to those users.
 
-This tutorial is for IAM-managed resources. For services that do not support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess). 
+This tutorial is for IAM-managed resources. For services that do not support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Step 1: Invite users and assign initial access
@@ -49,9 +49,9 @@ You can assign access to a user for a resource group or a single resource.
 1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. Click the name of the user that you want to assign access.
 3. Click **Assign access**.
-4. Choose how you want to assign access: 
+4. Choose how you want to assign access:
     * Select **Assign access within a resource group** to assign access to all resources within a group or to just resources for a specific service within a group. You can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group. Select **No access** if you want the user to only have access to the specified resource and not the group that it is organized in.
-    * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance. 
+    * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance.
 5. Select any combination of roles to define the scope of access. See [Cloud IAM roles](/docs/iam/users_roles.html#iamusermanrol) for more information.
 6. Click **Assign**.
 
@@ -64,7 +64,7 @@ You can update existing access by editing the assigned roles for a user.
 2. Select the name of the user that you want to edit access for.
 3. From the row for the policy that you want to edit, click **Edit policy** from the **Actions** menu.
 4. Edit the policy by updating the assigned roles.
-5. Click **Save**. 
+5. Click **Save**.
 
 You can remove access from a user by clicking the **Remove** option from the **Actions** menu for the policy that you want to remove.
 

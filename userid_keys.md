@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-12-07"
 
 ---
@@ -39,7 +39,7 @@ To create an API key by using the CLI:
 
 ```
 bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
-``` 
+```
 
 
 ## Updating an API key
@@ -49,7 +49,7 @@ If you want to change the name or the description of an API key, complete the fo
 To edit an API key:
 
 1. Go to **Manage** &gt; **Security** &gt; **Platform API keys**.
-2. From the **Actions** menu of an API key that is listed in the table, click **Edit the name & description** 
+2. From the **Actions** menu of an API key that is listed in the table, click **Edit the name & description**
 3. Update the information for your API key.
 4. Click **Update API key**.
 
@@ -65,7 +65,7 @@ bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of
 
 If you are using a key rotation strategy, you might want to delete an older key and replace it with a new key.
 
-To delete an API key: 
+To delete an API key:
 
 1. Go to **Manage** &gt; **Security** &gt; **Platform API keys**.
 2. From the **Actions** menu of an API key that is listed in the table, click to **Delete**.

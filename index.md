@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -35,7 +35,7 @@ For services that do not support creating Cloud IAM policies for managing access
 <dd>Access for users and service IDs is defined by a policy. Within the policy, the scope of access can be assigned to a set of resources in a resource group or a single resource. After the scope is set, you can define what actions are allowed by the subject of the policy by selecting access roles. Roles provide a way to tailor the level of access that is granted for the subject of the policy to perform platform management tasks and access a service's UI or perform API calls.</dd>
 <dt>API keys for user authentication</dt>
 <dd>Multiple API keys can be created for a user to support key rotation scenarios, and the same key can be used for accessing  multiple services. Platform user API keys enable users who use two-factor authentication or a federated ID to automate authentication from the command line.</dd>
-<dt>Service IDs</dt> 
+<dt>Service IDs</dt>
 <dd>A service ID identifies a service or application similar to how a user ID identifies a user. These are IDs that can be used by applications to authenticate with an {{site.data.keyword.Bluemix_notm}} service. Policies can be assigned to each service ID to control the level of access that is allowed by an application using the service ID, and an API key can be created to enable the authentication.</dd>
 </dl>
 

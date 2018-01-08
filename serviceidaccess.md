@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-11-16"
 
 ---
@@ -15,7 +15,7 @@ lastupdated: "2017-11-16"
 # Managing service ID access policies
 {: #serviceidpolicy}
 
-When you create a service ID, you can assign service policies for that service ID to control the level of access that is allowed when it is used to authenticate with your services. You can update these assigned access policies at any time by changing an existing policy, deleting a policy, or assigning a new one. 
+When you create a service ID, you can assign service policies for that service ID to control the level of access that is allowed when it is used to authenticate with your services. You can update these assigned access policies at any time by changing an existing policy, deleting a policy, or assigning a new one.
 
 **Note**: If you delete or edit an existing policy for a service ID currently being used, it might cause service interupption.
 
@@ -33,16 +33,16 @@ To assign access to all resources in a resource group or to just one service wit
 8. Choose any combination of roles to assign the desired access for the user. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
 9. Select **Assign**.
 
-To assign access to an individual resource in the account, complete the following steps: 
+To assign access to an individual resource in the account, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
 2. Select the service ID from the table that you want to assign a service policy for.
 3. Click **Assign access**.
 4. Select to **Assign by resource**.
 5. Select a service.
-6. Select **All current regions** or a specific region, if your are prompted. 
+6. Select **All current regions** or a specific region, if your are prompted.
 7. Select **All current service instances** or select a specific service instance.
-8. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
+8. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level.
     * **Resource type**: Enter **bucket**.
     * **Resource ID**: Enter the name of your bucket.
 9. Choose any combination of roles to assign the desired access for the user.

@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -29,5 +29,4 @@ As services start to enable the use of Cloud IAM, you can expect the following:
 * For existing instances in your account that already use Cloud Foundry access management by assigning users to an org and space with a Cloud Foundry role, you can continue to use those instances without any changes.
 * For creating new instances, you assign each to a resource group in your account, and then you can use Cloud IAM to manage access to that instance and to the resource group to which it belongs, if you are administrator on the resource group.
 
-Services that support using Cloud IAM have several benefits including the ability to connect to apps and services in any Cloud Foundry space, which allows you to connect apps and services from different regions. In addition, each instance managed by Cloud IAM belongs to a resource group, and resource groups are not scoped by region, so you can provision apps and services from different regions into the same resource group. You also have the ability to use fine-grained access control down to an individual instance. 
-
+Services that support using Cloud IAM have several benefits including the ability to connect to apps and services in any Cloud Foundry space, which allows you to connect apps and services from different regions. In addition, each instance managed by Cloud IAM belongs to a resource group, and resource groups are not scoped by region, so you can provision apps and services from different regions into the same resource group. You also have the ability to use fine-grained access control down to an individual instance.
