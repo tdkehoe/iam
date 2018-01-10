@@ -21,7 +21,7 @@ Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapideme
 Ce tutoriel concerne les ressources gérées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess). 
 
 
-## Etape 1 : Invitez des utilisateurs et affectez-leur un accès initial
+## Etape 1 : invitez des utilisateurs et affectez-leur un accès initial
 
 Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour ces utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section Accès de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
 

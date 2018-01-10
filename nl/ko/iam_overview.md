@@ -4,7 +4,7 @@ copyright:
 
   years: 2017
 
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2017-11-16"
 <dt>API 키</dt>
 <dd>플랫폼 API 키는 사용자 또는 서비스 ID로서 API 또는 CLI를 사용하여 인증하는 데 이용할 수 있도록 Cloud IAM을 통해 사용이 가능합니다. 이러한 API 키는 Cloud IAM을 통해 제공됩니다. 따라서 이는 일반적으로 IBM Cloud 외부에서 IBM ID를 인증하는 데는 사용될 수 없습니다. </dd>
 <dt>리소스</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} 리소스는 CRN(Cloud Resource Name)으로 식별됩니다. 자세한 정보는 [CRN(Cloud Resource Name)](/docs/iam/crn.html)을 참조하십시오. </dd>
+<dd>{{site.data.keyword.Bluemix_notm}} 리소스는 CRN(Cloud Resource Name)으로 식별됩니다. 자세한 정보는 [CRN(Cloud Resource Name)](/docs/overview/crn.html#crn)을 참조하십시오. </dd>
 </dl>
 
 ## 액세스 관리

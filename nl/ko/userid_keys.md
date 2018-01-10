@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 연합 또는 비연합 사용자는 CLI에서 사용하거나 사용자 ID처럼 로그인하기 위한 자동화의 일부로 사용하도록 API 키를 작성할 수 있습니다. UI 또는 CLI를 사용하여 키 나열, 키 작성, 키 업데이트 또는 키 삭제를 수행하여 API 키를 관리할 수 있습니다. 사용자 ID와 연관된 {{site.data.keyword.Bluemix_notm}} API 키를 관리하려면 **관리** &gt; **보안** &gt; **플랫폼 API 키**로 이동하여 설명 및 날짜와 함께 API 키의 목록을 보십시오. 그러면 이 페이지에서 API 키를 작성, 편집 또는 삭제할 수 있습니다. 사용 가능한 CLI 명령의 전체 목록은 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오.
 
-[연합 사용자](/docs/admin/adminpublic.html#federatedid)로서, `BLUEMIX_API_KEY` 환경 변수를 사용하여 로그인하는 데 API 키를 사용할 수 있습니다. 로그인을 위한 API 키 사용에 대한 자세한 정보는 [연합 ID로 로그인](/docs/iam/login_fedid.html)을 참조하십시오. 
+[연합 사용자](/docs/admin/adminpublic.html#federatedid)로서, `BLUEMIX_API_KEY` 환경 변수를 사용하여 로그인하는 데 API 키를 사용할 수 있습니다. 로그인을 위한 API 키 사용에 대한 자세한 정보는 [연합 ID로 로그인](/docs/cli/login_federated_id.html#federated_id)을 참조하십시오. 
 
 ## API 키 작성
 

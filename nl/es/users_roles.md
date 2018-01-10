@@ -74,6 +74,7 @@ Los roles de gestión de plataforma permiten asignar a los usuarios distintos ni
 | Editor |  Crear, suprimir, editar y ver instancias. Gestionar alias, enlaces y credenciales | Crear y suprimir ID y claves de API | Ver y editar el nombre de grupo de recursos | Crear, suprimir, editar, suspender, reanudar, ver y enlazar solo instancias especificadas en el grupo de recursos |
 | Administrador |  Todas las acciones de gestión para los servicios | Crear y suprimir ID y claves de API, asignar políticas a ID | Ver, editar y gestionar el acceso para el grupo de recursos | Todas las acciones de gestión para las instancias especificadas en el grupo de recursos |
 {: caption="Tabla 2. Roles y acciones de gestión de plataforma de ejemplo" caption-side="top"}
+{: #platformrolestable}
 
 Algunos servicios pueden correlacionar acciones específicas con los roles de gestión de plataforma que están relacionados con la gestión del servicio en lugar de con el acceso al servicio. Como ejemplo, consulte en la tabla siguiente los detalles de las acciones de servicio de {{site.data.keyword.containershort_notm}} que están correlacionadas con dichos roles.
 

@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="iam" audience="platform" href="/docs/iam/quickstart.html"}
-ID 및 액세스 관리
+Identity and Access Management
 
     {: .navgroup id="learn"}
     quickstart.md
@@ -35,6 +35,7 @@ ID 및 액세스 관리
     서비스 작업
         serviceid.md
         serviceidaccess.md
+        authorizations.md
 
     {: .topicgroup}
     API 키

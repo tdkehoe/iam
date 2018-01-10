@@ -20,7 +20,7 @@ Pour pouvoir gérer l'accès à des organisations et des espaces de compte, vous
 
 ## Mise à jour de l'accès Cloud Foundry
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**. 
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous voulez affecter un accès, sélectionnez le menu **Actions**, puis cliquez sur **Affecter un accès**.
 3. Sélectionnez **Affecter à l'aide de Cloud Foundry**.
 4. Développez la ligne de l'organisation à laquelle l'utilisateur est affecté pour afficher l'accès de l'utilisateur aux espaces et ses rôles dans ces espaces.
@@ -34,7 +34,7 @@ Pour pouvoir gérer l'accès à des organisations et des espaces de compte, vous
 
 Si vous êtes le responsable d'une organisation dont l'utilisateur n'est pas encore membre, vous affectez l'utilisateur à cette organisation.
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**. 
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous voulez affecter un accès, sélectionnez le menu **Actions**, puis cliquez sur **Affecter un accès**.
 3. Sélectionnez **Affecter à l'aide de Cloud Foundry**.
 4. Sélectionnez **Affecter une organisation**.

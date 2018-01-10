@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 서비스 ID는 {{site.data.keyword.Bluemix_notm}} 내부 및 외부 모두에서 호스팅되는 애플리케이션에 의한 {{site.data.keyword.Bluemix_notm}} 서비스 액세스가 가능하도록 작성되었습니다. API 키는 애플리케이션에서 사용되어 특정 서비스 ID로 인증하며 해당 서비스 ID와 연관된 액세스를 부여받습니다.
 
-서비스 ID를 작성하면 API 키 작성 및 서비스 정책 지정을 시작할 수 있습니다. 각 정책은 API 키가 서비스 인증에 사용될 때 허용되는 액세스 레벨을 지정합니다. 서비스 ID 작성 및 정책 지정에 대한 자세한 정보는 [서비스 ID 작성 및 관리](serviceids.html)를 참조하십시오. 서비스 ID API 키 관리에 사용되는 CLI 명령에 대한 세부사항은 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오.
+서비스 ID를 작성하면 API 키 작성 및 서비스 정책 지정을 시작할 수 있습니다. 각 정책은 API 키가 서비스 인증에 사용될 때 허용되는 액세스 레벨을 지정합니다. 서비스 ID 작성 및 정책 지정에 대한 자세한 정보는 [서비스 ID 작성 및 관리](/docs/iam/serviceid.html#serviceids)를 참조하십시오. 서비스 ID API 키 관리에 사용되는 CLI 명령에 대한 세부사항은 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오.
 
 서비스 ID와 연관된 각 API 키는 서비스 ID에 지정된 정책을 상속합니다. 예를 들어, 하나의 애플리케이션이 서비스 내에서 리소스를 볼 수 있게 하려면 정책이 `뷰어` 역할에 지정된 서비스 ID와 연관된 API 키를 사용해야 합니다. 그리고 다른 애플리케이션이 서비스 내에서 전체 액세스 권한을 가질 수 있게 하려면 정책이 `관리자` 역할에 지정된 두 번째 서비스 ID와 연관된 API 키를 사용해야 합니다.
 

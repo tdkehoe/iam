@@ -32,9 +32,10 @@ Gestion de l'identité et de l'accès
         mnginfra.md
 
     {: .topicgroup}
-    Gestion des services
+    Utilisation des services
         serviceid.md
         serviceidaccess.md
+        authorizations.md
 
     {: .topicgroup}
     Clés d'API

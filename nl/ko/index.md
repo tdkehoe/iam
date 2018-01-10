@@ -13,7 +13,7 @@ lastupdated: "2017-11-16"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# {{site.data.keyword.Bluemix_notm}} ID 및 액세스 관리
+# {{site.data.keyword.Bluemix_notm}} Identity and Access Management
 {: #iamoverview}
 
 ## Cloud IAM 개념

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -92,7 +92,7 @@ Es posible añadir un rol de Cloud Foundry utilizando el mandato de interfaz de 
 
 ### Acceso de infraestructura de {{site.data.keyword.BluSoftlayer_notm}}
 
-Los permisos asignados se limitan automáticamente al subconjunto de permisos que posee. Para obtener más información sobre los conjuntos de permisos, consulte [Permisos de infraestructura](/docs/iam/users_roles.html#infrapermissions).
+Los permisos asignados se limitan automáticamente al subconjunto de permisos que posee. Para obtener más información sobre los conjuntos de permisos, consulte [Permisos de infraestructura](/docs/iam/infrastructureaccess.html#infrapermission).
 
 1. Desde la pantalla **Invitar usuarios**, expanda la sección **Acceso de infraestructura**.
 2. Seleccione un conjunto de permisos para definir el ámbito del acceso.

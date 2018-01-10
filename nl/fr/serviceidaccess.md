@@ -45,7 +45,7 @@ Pour affecter des droits d'accès à une ressource individuelle du compte, proc�
 8. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
-9. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. 
+9. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.
 10. Sélectionnez **Affecter**.
 
 

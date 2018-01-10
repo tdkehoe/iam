@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 Un usuario federado o no federado puede crear una clave de API para utilizarla en la CLI o como parte de la automatización para iniciar sesión con su identidad de usuario. Puede utilizar la IU o la CLI para gestionar sus claves de API listando sus claves, creando claves, actualizando claves o suprimiendo claves. Para gestionar las claves de API de {{site.data.keyword.Bluemix_notm}} asociadas con su identidad de usuario, vaya a **Gestionar** &gt; **Seguridad** &gt; **Claves de API de plataforma** para ver una lista de las claves de API con descripciones y fechas. A continuación, puede crear, editar o suprimir claves de API desde esta página. Para obtener una lista completa de mandatos de CLI disponibles, consulte [Mandatos para gestionar claves de API y políticas](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
-Como [usuario federado](/docs/admin/adminpublic.html#federatedid), se puede utilizar una clave de API para iniciar una sesión mediante la variable de entorno `BLUEMIX_API_KEY`. Para obtener más información sobre el uso de una clave de API para iniciar sesión, consulte [Inicio de sesión con un ID federado](/docs/iam/login_fedid.html).
+Como [usuario federado](/docs/admin/adminpublic.html#federatedid), se puede utilizar una clave de API para iniciar una sesión mediante la variable de entorno `BLUEMIX_API_KEY`. Para obtener más información sobre el uso de una clave de API para iniciar sesión, consulte [Inicio de sesión con un ID federado](/docs/cli/login_federated_id.html#federated_id).
 
 ## Creación de una clave de API
 

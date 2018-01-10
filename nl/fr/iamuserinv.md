@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -68,7 +68,7 @@ Vous pouvez accorder l'accès à une seule ressource de votre compte jusqu'au ni
 6. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
-7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu. 
+7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
 
 Pour des informations plus précises sur les rôles lors de l'affectation d'accès, voir [Accès IAM](/docs/iam/users_roles.html#iamusermanrol).
 
@@ -93,7 +93,7 @@ mais vous devez utiliser l'interface utilisateur pour lui accorder d'autres acc�
 
 ### Accès à l'infrastructure {{site.data.keyword.BluSoftlayer_notm}}
 
-Les droits accordés sont automatiquement limités au sous-ensemble de droits dont vous disposez. Pour plus d'informations sur les ensembles de droits, voir[Droits relatifs à l'infrastructure](/docs/iam/users_roles.html#infrapermissions).
+Les droits accordés sont automatiquement limités au sous-ensemble de droits dont vous disposez. Pour plus d'informations sur les ensembles de droits, voir[Droits relatifs à l'infrastructure](/docs/iam/infrastructureaccess.html#infrapermission).
 
 1. Dans l'écran **Inviter des utilisateurs**, développez la section **Accès Infrastructure**.
 2. Sélectionnez un ensemble de droits afin de définir la portée de l'accès.

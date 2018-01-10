@@ -29,7 +29,7 @@ lastupdated: "2017-07-26"
 5. 정책에 대한 액세스 권한의 범위를 정의하기 위한 역할을 선택하십시오. 
 6. 선택사항: **역할 추가**를 선택하여 정책에 대한 추가 역할을 지정하십시오. 
 
-서비스 정책을 설정할 때의 역할에 대한 보다 자세한 정보는 [ID 및 액세스 관리 정책 및 역할](/docs/iam/users_roles.html#iamusermanpol)을 참조하십시오. 
+서비스 정책을 설정할 때의 역할에 대한 보다 자세한 정보는 [Identity and Access Management 정책 및 역할](/docs/iam/users_roles.html#iamusermanpol)을 참조하십시오. 
 
 ## Cloud Foundry 액세스
 

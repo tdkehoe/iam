@@ -35,6 +35,7 @@ ID およびアクセス権限の管理
     サービスの処理
         serviceid.md
         serviceidaccess.md
+        authorizations.md
 
     {: .topicgroup}
     API キー

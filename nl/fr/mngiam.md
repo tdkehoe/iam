@@ -57,7 +57,7 @@ Pour affecter des droits d'accès à une ressource individuelle du compte ou l'a
 7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
-8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. 
+8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.
 9. Cliquez sur **Affecter**.
 
 Pour autoriser un utilisateur à accéder à toutes les ressources du compte avec la possibilité de gérer les accès utilisateur, de créer un groupe de ressources et d'effectuer toutes les autres tâches de gestion IAM, sélectionnez l'option **Tous les services avec l'offre Identity and Access activée** pour cette règle avec le rôle **Administrateur** affecté.
