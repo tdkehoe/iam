@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-01-11"
 
 ---
 
@@ -21,7 +21,7 @@ You can set the following initial permission sets when you invite a user:
 | Permission set | Description of actions |
 |---------------------------|------------------------|
 |View Only | Users with this permission can only view items within the system.|
-|Basic User | Users with this permission can perform basic actions within the system, such as adding a ticket and managing devices they have been granted access to. |
+|Basic User | Users with this permission can perform basic actions within the system, such as managing devices they have been granted access to. |
 |Super User | Users with this permission can perform all actions available in the system. |
 {:caption="Table 1. Infrastructure permissions" caption-side="top"}
 
