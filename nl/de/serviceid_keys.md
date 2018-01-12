@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 Service-IDs werden erstellt, um Anwendungen, die sowohl in als auch außerhalb von {{site.data.keyword.Bluemix_notm}} gehostet werden, den Zugriff auf Ihre {{site.data.keyword.Bluemix_notm}}-Services zu ermöglichen. API-Schlüssel werden von einer Anwendung benutzt, um sich mit einer bestimmten Service-ID zu authentifizieren und den Zugriff zu erhalten, der dieser Service-ID zugeordnet ist.
 
-Nach Erstellung einer Service-ID können Sie mit der Erstellung von API-Schlüsseln und der Zuweisung von Servicerichtlinien beginnen. Jede Richtlinie gibt eine bestimmte Zugriffsebene an, die zulässig ist, wenn der API-Schlüssel zur Authentifizierung bei Ihren Services verwendet wird. Weitere Informationen zur Erstellung einer Service-ID und zur Zuweisung von Richtlinien finden Sie in [Service-IDs erstellen und verwalten](serviceids.html). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung der API-Schlüssel von Service-IDs verwendet werden, sind in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) zu finden.
+Nach Erstellung einer Service-ID können Sie mit der Erstellung von API-Schlüsseln und der Zuweisung von Servicerichtlinien beginnen. Jede Richtlinie gibt eine bestimmte Zugriffsebene an, die zulässig ist, wenn der API-Schlüssel zur Authentifizierung bei Ihren Services verwendet wird. Weitere Informationen zur Erstellung einer Service-ID und zur Zuweisung von Richtlinien finden Sie in [Service-IDs erstellen und verwalten](/docs/iam/serviceid.html#serviceids). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung der API-Schlüssel von Service-IDs verwendet werden, sind in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) zu finden.
 
 Jeder API-Schlüssel, der einer Service-ID zugeordnet wurde, übernimmt die Richtlinie, die der Service-ID zugewiesen wurde. Wenn Sie z. B. festlegen möchten, dass eine Anwendung nur zur Anzeige von Ressourcen in einem Service berechtigt sein soll, dann müssen Sie einen API-Schlüssel verwenden, der einer Service-ID zugeordnet ist, für die eine Richtlinie definiert wurde, der die Rolle `Anzeigeberechtigter` zugeordnet wurde. Wenn Sie hingegen für eine andere Anwendung festlegen möchten, dass diese über vollständigen Zugriff innerhalb eines Service verfügen soll, dann müssen Sie einen API-Schlüssel verwenden, dem eine zweite Service-ID zugeordnet ist, für die eine Richtlinie zugewiesen wurde, der die Rolle `Administrator` zugeordnet wurde.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2017-11-16"
 # Benutzer einladen und Benutzern Zugriff zuweisen
 {: #iamuserinv}
 
-Zum Einladen von Benutzern und Verwalten ausstehender Benutzer müssen Sie entweder ein Kontoeigner oder ein Organisationsmanager sein oder über die Infrastructure-Berechtigungen zum Hinzufügen von Benutzern verfügen. Sie können Benutzer einladen, Einladungen abbrechen und anstehende Einladungen erneut an eingeladene Benutzer senden. Darüber hinaus können Sie einen einzelnen Benutzer oder mehrere Benutzer gleichzeitig einladen.  
+Zum Einladen von Benutzern und Verwalten ausstehender Einladungen müssen Sie entweder ein Kontoeigner oder ein Organisationsmanager sein oder über die Infrastructure-Berechtigungen zum Hinzufügen von Benutzern verfügen. Sie können Benutzer einladen, Einladungen abbrechen und anstehende Einladungen erneut an eingeladene Benutzer senden. Darüber hinaus können Sie einen einzelnen Benutzer oder mehrere Benutzer gleichzeitig einladen.  
 {:shortdesc}
 
 ## Benutzer einladen
@@ -53,7 +53,7 @@ Sie können Zugriff auf alle Services in einer Ressourcengruppe oder aber auf ei
 3. Wählen Sie eine Ressourcengruppe aus.
 4. Wählen Sie eine Rolle für das Feld **Zugriff für eine Ressourcengruppe zuweisen** aus, um dem Benutzer die Anzeige der Ressourcengruppe im Dashboard, das Bearbeiten des Ressourcengruppennamens oder das Verwalten des Benutzerzugriffs auf die Gruppe zu ermöglichen. Sie können **Kein Zugriff** auswählen, wenn der Benutzer ausschließlich Zugriff auf die Ressource erhalten soll, die Sie angeben, nicht jedoch auf die Gruppe, in der die Ressource enthalten ist.
 5. Wählen Sie einen Service in der Ressourcengruppe aus, oder wählen Sie aus, dass der Zugriff auf alle Services in der ausgewählten Gruppe bereitgestellt werden soll. 
-6. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen. Dieser Zugriff gilt nur für die Ressourcen, die Sie für die Richtlinie ausgewählt haben. Der Zugriff auf den Container selbst, der die Ressourcengruppe darstellt, wird hingegen nicht erteilt. 
+6. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen. Dieser Zugriff gilt nur für die Ressourcen, die Sie für die Richtlinie ausgewählt haben. Der Zugriff auf den Container selbst, der die Ressourcengruppe darstellt, wird hingegen nicht erteilt.
 
 
 #### Ressourcenzugriff
@@ -68,7 +68,7 @@ Sie können Zugriffsberechtigungen für eine einzelne Ressource innerhalb Ihres 
 6. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
     * **Ressourcentyp**: Geben Sie **Bucket** ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
-7. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen. 
+7. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
 
 Weiterführende Informationen zu den Rollen bei der Zuweisung von Zugriffsberechtigungen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html#iamusermanrol).
 
@@ -92,7 +92,7 @@ Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [bluemix iam accou
 
 ### Zugriff auf Infrastruktur für {{site.data.keyword.BluSoftlayer_notm}}
 
-Die zugewiesenen Berechtigungen werden automatisch auf die Untergruppe von Berechtigungen eingeschränkt, die Sie haben. Weitere Informationen zu den Berechtigungssets finden Sie in [Infrastructure-Berechtigungen](/docs/iam/users_roles.html#infrapermissions).
+Die zugewiesenen Berechtigungen werden automatisch auf die Untergruppe von Berechtigungen eingeschränkt, die Sie haben. Weitere Informationen zu den Berechtigungssets finden Sie in [Infrastructure-Berechtigungen](/docs/iam/infrastructureaccess.html#infrapermission).
 
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Infrastructure-Zugriff**.
 2. Wählen Sie ein Berechtigungsset aus, um den Zugriffsbereich zu definieren.

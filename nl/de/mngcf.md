@@ -38,7 +38,7 @@ Wenn Sie der Manager einer Organisation sind, deren Mitglied der Benutzer noch n
 2. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriffsberechtigungen zuweisen wollen, das Menü **Aktionen** aus und klicken Sie dann auf **Zugriff zuweisen**.
 3. Wählen Sie die Option zum **Zuweisen mit Cloud Foundry** aus.
 4. Wählen Sie **Organisation zuweisen** aus.
-5. Weisen Sie dem Benutzer die gewünschten Zugriffsberechtigungen zu: 
+5. Weisen Sie dem Benutzer die gewünschten Zugriffsberechtigungen zu:
    * Wählen Sie eine Organisation aus, der der Benutzer hinzugefügt werden soll.
    * Weisen Sie eine Organisationsrolle zu.
    * Wählen Sie eine Region aus.

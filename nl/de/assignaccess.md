@@ -18,11 +18,11 @@ lastupdated: "2017-07-26"
 Bei der Einladung weisen Sie den Benutzern Zugriffsberechtigungen, Cloud Foundry-Rollen und -Richtlinien sowie Infrastructure-Berechtigungen zu. Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, können Sie Benutzer aus dem gesamten Konto, der gesamten Organisation, dem gesamten Bereich oder der gesamten Serviceinstanz einladen und mit Zugriffsberechtigungen ausstatten. In den folgenden Abschnitten werden die drei Arten von Zugriff beschrieben, die einem eingeladenen Benutzer zugeordnet werden können.
 {:shortdesc}
 
-## Durch Identity and Access aktivierte Services
+## Services mit aktiviertem Identity and Access Management
 
 Sie können eine einzelne Servicerichtlinie zuordnen, wenn Sie einen neuen Benutzer einladen. Sobald der Benutzer die Einladung angenommen hat, können Sie zusätzliche Servicerichtlinien hinzufügen.
 
-1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Durch Identity and Access aktivierte Services**.
+1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services mit aktiviertem Identity and Access Management**.
 2. Wählen Sie einen Service aus.
 3. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus.
 4. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.

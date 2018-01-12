@@ -42,7 +42,7 @@ Für Services, die die Erstellung von Cloud IAM-Richtlinien für die Verwaltung 
 
 ## Wie nutze ich Cloud IAM?
 
-Sie können auf Cloud IAM zugreifen und Cloud IAM nutzen, indem Sie auf die Identity and Access-Benutzerschnittstelle oder die CLI von {{site.data.keyword.Bluemix_notm}} zugreifen.
+Sie können auf Cloud IAM zugreifen und Cloud IAM nutzen, indem Sie auf die Identity and Access Management-Benutzerschnittstelle oder die Befehlszeilenschnittstelle für {{site.data.keyword.Bluemix_notm}} zugreifen.
 
 Um auf Cloud IAM über die Benutzerschnittstelle zuzugreifen, rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** auf.
 

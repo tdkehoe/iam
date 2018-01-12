@@ -16,13 +16,13 @@ lastupdated: "2017-11-16"
 # Cloud Foundry-Zugriff
 {: #cfaccess}
 
-Zum aktuellen Zeitpunkt können nicht alle Services unter Verwendung von Cloud IAM verwaltet werden. Sie können die Nutzung von Cloud Foundry für diese Serviceinstanzen fortsetzen, indem Sie Benutzern Zugriff auf die Organisation und den Bereich erteilen, zu der bzw. dem die Instanz gehört. Dazu wird eine Cloud Foundry-Rolle zugewiesen, um die Zugriffsebene zu definieren, die erlaubt werden soll. 
+Zum aktuellen Zeitpunkt können nicht alle Services unter Verwendung von Cloud IAM verwaltet werden. Sie können die Nutzung von Cloud Foundry für diese Serviceinstanzen fortsetzen, indem Sie Benutzern Zugriff auf die Organisation und den Bereich erteilen, zu der bzw. dem die Instanz gehört. Dazu wird eine Cloud Foundry-Rolle zugewiesen, um die Zugriffsebene zu definieren, die erlaubt werden soll.
 
 
 ## Cloud Foundry-Rollen
 {: #cfroles}
 
-Cloud Foundry-Rollen gewähren Zugriff für Organisationen und Bereiche innerhalb des Kontos. Cloud Foundry-Rollen aktivieren keine Benutzerberechtigungen zum Ausführen von Aktionen im Kontext eines Service innerhalb des gesamten Kontos.  
+Cloud Foundry-Rollen gewähren Zugriff für Organisationen und Bereiche innerhalb des Kontos. Cloud Foundry-Rollen aktivieren keine Benutzerberechtigungen zum Ausführen von Aktionen im Kontext eines Service innerhalb des gesamten Kontos. 
 
 Die folgenden Rollen können auf Organisationsebene hinzugefügt werden:
 
