@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -94,7 +94,7 @@ lastupdated: "2017-11-16"
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 基礎架構存取
 
-指派的許可權自動受限於您所擁有的許可權子集。如需許可權集的相關資訊，請參閱[基礎架構許可權](/docs/iam/users_roles.html#infrapermissions)。
+指派的許可權自動受限於您所擁有的許可權子集。如需許可權集的相關資訊，請參閱[基礎架構許可權](/docs/iam/infrastructureaccess.html#infrapermission)。
 
 1. 從**邀請使用者**畫面中，展開**基礎架構存取**區段。
 2. 選取許可權集，以定義存取範圍。

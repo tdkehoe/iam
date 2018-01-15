@@ -13,7 +13,7 @@ lastupdated: "2017-11-16"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# 開始使用指導教學
+# 入門指導教學
 {: #getstarted}
 
 本指導教學旨在協助您藉由邀請使用者加入您的帳戶，並將 Cloud IAM 存取權指派給這些使用者，來快速開始使用「IBM Cloud 身分及存取管理 (IAM)」。 

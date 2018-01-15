@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 创建服务标识是为了支持通过在 {{site.data.keyword.Bluemix_notm}} 内部和外部托管的应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务。应用程序使用 API 密钥作为特定服务标识进行认证，并被授予与该服务标识关联的访问权。
 
-一旦创建了服务标识后，就可以开始创建 API 密钥并分配服务策略。每个策略都会指定在使用 API 密钥向服务进行认证时所允许的访问级别。有关创建服务标识和分配策略的更多信息，请参阅[创建和管理服务标识](serviceids.html)。有关用于管理服务标识 API 密钥的 CLI 命令的详细信息，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
+一旦创建了服务标识后，就可以开始创建 API 密钥并分配服务策略。每个策略都会指定在使用 API 密钥向服务进行认证时所允许的访问级别。有关创建服务标识和分配策略的更多信息，请参阅[创建和管理服务标识](/docs/iam/serviceid.html#serviceids)。有关用于管理服务标识 API 密钥的 CLI 命令的详细信息，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
 
 与服务标识关联的每个 API 密钥都将继承已分配给该服务标识的策略。例如，如果希望一个应用程序只能查看某个服务中的资源，那么就要为某个服务标识分配具有`查看者`角色的策略，然后使用与该服务标识关联的 API 密钥。如果希望另一个应用程序能够具有对服务的完全访问权，那么就要为另一个服务标识分配具有`管理员`角色的策略，然后使用与该服务标识关联的 API 密钥。
 

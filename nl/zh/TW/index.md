@@ -42,7 +42,7 @@ lastupdated: "2017-11-16"
 
 ## 如何使用 Cloud IAM？
 
-您可以透過「身分及存取使用者介面」或 {{site.data.keyword.Bluemix_notm}} 的 CLI 來存取及使用 Cloud IAM。
+您可以透過「身分及存取」使用者介面或 {{site.data.keyword.Bluemix_notm}} 的 CLI 來存取及使用 Cloud IAM。
 
 若要使用使用者介面來存取 Cloud IAM，請移至**管理** &gt; **安全** &gt; **身分及存取**。
 

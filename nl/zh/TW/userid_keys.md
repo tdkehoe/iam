@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 聯合或非聯合使用者可以建立 API 金鑰以在 CLI 上使用，或是在自動化作業之中使用，以您的使用者身分登入。您可以使用使用者介面或 CLI 來管理 API 金鑰，方法是列出金鑰、建立金鑰、更新金鑰，或刪除金鑰。若要管理與您使用者身分相關聯的 {{site.data.keyword.Bluemix_notm}} API 金鑰，請移至**管理** &gt; **安全** &gt; **平台 API 金鑰**，以查看具有說明及日期的 API 金鑰清單。然後，您可以從這個頁面建立、編輯或刪除 API 金鑰。如需可用 CLI 指令的完整清單，請參閱[用來管理 API 金鑰及原則的指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
 
-身為[聯合使用者](/docs/admin/adminpublic.html#federatedid)，您可以利用 `BLUEMIX_API_KEY` 環境變數來使用 API 金鑰進行登入。如需使用 API 金鑰進行登入的相關資訊，請參閱[使用聯合 ID 登入](/docs/iam/login_fedid.html)。
+身為[聯合使用者](/docs/admin/adminpublic.html#federatedid)，您可以利用 `BLUEMIX_API_KEY` 環境變數來使用 API 金鑰進行登入。如需使用 API 金鑰進行登入的相關資訊，請參閱[使用聯合 ID 登入](/docs/cli/login_federated_id.html#federated_id)。
 
 ## 建立 API 金鑰
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017
 
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2017-11-16"
 <dt>API 密钥</dt>
 <dd>通过 Cloud IAM 提供了平台 API 密钥，以供您用于通过将 API 或 CLI 用作用户或服务标识进行认证。这些 API 密钥是通过 Cloud IAM 提供的，因此通常无法用于在 IBM Cloud 之外使用 IBM 标识进行认证。</dd>
 <dt>资源</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} 资源通过其云资源名称 (CRN) 进行识别。有关更多信息，请参阅[云资源名称](/docs/iam/crn.html)。</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} 资源通过其云资源名称 (CRN) 进行识别。有关更多信息，请参阅[云资源名称](/docs/overview/crn.html#crn)。</dd>
 </dl>
 
 ## 访问权管理

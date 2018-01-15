@@ -16,7 +16,7 @@ lastupdated: "2017-11-16"
 # IAM 及 Cloud Foundry 存取模型
 {: #accessmodels}
 
-目前，並非所有 {{site.data.keyword.Bluemix_notm}} 服務都支援使用 Cloud IAM 存取管理。未啟用 Cloud IAM 的服務會繼續根據 Cloud Foundry 組織及空間中的使用者角色，來判定使用者是否有權存取資源。您可以使用「{{site.data.keyword.Bluemix_notm}} 身分及存取使用者介面」，來管理使用 Cloud IAM 或 Cloud Foundry 存取管理系統的服務存取權。
+目前，並非所有 {{site.data.keyword.Bluemix_notm}} 服務都支援使用 Cloud IAM 存取管理。未啟用 Cloud IAM 的服務會繼續根據 Cloud Foundry 組織及空間中的使用者角色，來判定使用者是否有權存取資源。您可以使用 {{site.data.keyword.Bluemix_notm}}「身分及存取」使用者介面，來管理使用 Cloud IAM 或 Cloud Foundry 存取管理系統的服務存取權。
 
 
 ## 切換至 Cloud IAM 的 Cloud Foundry 服務

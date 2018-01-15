@@ -20,7 +20,7 @@ lastupdated: "2017-11-16"
 {: #federated_id}
 
 
-[聯合 ID](/docs/admin/adminpublic.html#federatedid) 是公司網域內已向 IBM 註冊的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。身為聯合使用者，您可以使用一次性密碼或 API 金鑰從指令行介面 (CLI) 登入 {{site.data.keyword.Bluemix}}。
+[聯合 ID](/docs/admin/adminpublic.html#federatedid) 是已向 IBM 登錄之公司網域內的 ID，因此您可以使用網域及使用者認證來存取 IBM Web 應用程式。身為聯合使用者，您可以使用一次性密碼或 API 金鑰從指令行介面 (CLI) 登入 {{site.data.keyword.Bluemix}}。
 使用 API 金鑰，即可透過 CLI 自動化登入處理程序。
 {: shortdesc}
 

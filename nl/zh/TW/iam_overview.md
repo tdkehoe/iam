@@ -4,7 +4,7 @@ copyright:
 
   years: 2017
 
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2017-11-16"
 <dt>API 金鑰</dt>
 <dd>平台 API 金鑰是透過 Cloud IAM 提供，可讓您使用 API 或 CLI 作為使用者或服務 ID 來進行鑑別。這些 API 金鑰是透過 Cloud IAM 所提供，因此，通常無法在 IBM Cloud 外部使用 IBM ID 進行鑑別。</dd>
 <dt>資源</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} 資源是依其雲端資源名稱 (CRN) 進行識別。如需相關資訊，請參閱[雲端資源名稱](/docs/iam/crn.html)。</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} 資源是依其雲端資源名稱 (CRN) 進行識別。如需相關資訊，請參閱[雲端資源名稱](/docs/overview/crn.html#crn)。</dd>
 </dl>
 
 ## 存取管理

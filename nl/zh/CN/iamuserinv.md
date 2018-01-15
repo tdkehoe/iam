@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -93,7 +93,7 @@ lastupdated: "2017-11-16"
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 基础架构访问权
 
-分配的许可权会自动限制为您拥有的许可权子集。有关许可权集的更多信息，请参阅[基础架构许可权](/docs/iam/users_roles.html#infrapermissions)。
+分配的许可权会自动限制为您拥有的许可权子集。有关许可权集的更多信息，请参阅[基础架构许可权](/docs/iam/infrastructureaccess.html#infrapermission)。
 
 1. 在**邀请用户**屏幕中，展开**基础架构访问权**部分。
 2. 选择用于定义访问权作用域的许可权集。

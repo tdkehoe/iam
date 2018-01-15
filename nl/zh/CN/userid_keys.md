@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2017
-lastupdated: "2017-11-16"
+lastupdated: "2017-12-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 联合或非联合用户可以创建要在 CLI 上使用的 API 密钥，或者作为自动化的一部分创建 API 密钥，以便以您的用户身份登录。您可以使用 UI 或 CLI 通过列出密钥、创建密钥、更新密钥或删除密钥来管理 API 密钥。要管理与您的用户身份关联的 {{site.data.keyword.Bluemix_notm}} API 密钥，请转至**管理** &gt; **安全性** &gt; **平台 API 密钥**来查看 API 密钥及其描述和日期的列表。然后，可以在此页面中创建、编辑或删除 API 密钥。要获取可用 CLI 命令的完整列表，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
 
-作为[联合用户](/docs/admin/adminpublic.html#federatedid)，您可以使用 API 密钥，通过 `BLUEMIX_API_KEY` 环境变量来登录。有关使用 API 密钥进行登录的更多信息，请参阅[使用联合标识登录](/docs/iam/login_fedid.html)。
+作为[联合用户](/docs/admin/adminpublic.html#federatedid)，您可以使用 API 密钥，通过 `BLUEMIX_API_KEY` 环境变量来登录。有关使用 API 密钥进行登录的更多信息，请参阅[使用联合标识登录](/docs/cli/login_federated_id.html#federated_id)。
 
 ## 创建 API 密钥
 
