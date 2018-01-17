@@ -23,7 +23,6 @@ Managing identity and access
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
-    mfa.md
     iamuserinv.md
 
     {: .topicgroup}
@@ -45,7 +44,4 @@ Managing identity and access
         apikeys.md
         userid_keys.md
         serviceid_keys.md
-    {: .navgroup-end}
-
-    {: .navgroup id="reference"}
     {: .navgroup-end}
