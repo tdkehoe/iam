@@ -2,7 +2,7 @@
 
 copyright:
 
-  anos: 2015, 2017 última atualização: "16-11-2017"
+  years: 2015, 2017 lastupdated: "2017-12-07"
 
 ---
 
@@ -94,7 +94,7 @@ Veja [Funções do Cloud Foundry](/docs/iam/cfaccess.html#cfroles) para obter ma
 
 ### Acesso à infraestrutura do {{site.data.keyword.BluSoftlayer_notm}}
 
-As permissões designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Para obter mais informações sobre os conjuntos de permissões, veja [Permissões de infraestrutura](/docs/iam/users_roles.html#infrapermissions).
+As permissões designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Para obter mais informações sobre os conjuntos de permissões, veja [Permissões de infraestrutura](/docs/iam/infrastructureaccess.html#infrapermission).
 
 1. Na tela **Convidar usuários**, expanda a seção **Acesso à infraestrutura**.
 2. Selecione uma permissão configurada para definir o escopo de acesso.

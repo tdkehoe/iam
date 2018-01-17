@@ -60,7 +60,7 @@ Usando uma combinação dessas funções em uma política de acesso único, é p
 * Recursos em uma instância individual
 * Um tipo de recurso único em uma instância, por exemplo, um depósito em uma instância do {{site.data.keyword.objectstorageshort}}
 
-Para permitir que outro usuário tenha acesso total à conta com o propósito de gerenciar acesso de usuário e gerenciar todos os recursos da conta, incluindo a capacidade de criar grupos de recursos, configure uma política que dê ao usuário acesso a todos os recursos da conta selecionando **Todos os serviços ativados pelo Identity and Access** com a função **Administrador** designada.
+Para permitir que outro usuário tenha acesso total à conta com o propósito de gerenciar acesso de usuário e gerenciar todos os recursos da conta, incluindo a capacidade de criar grupos de recursos, configure uma política que dê ao usuário acesso a todos os recursos da conta selecionando **Todos os serviços ativados pelo Identity and Access** com a função **Administrador** designada. 
 {: tip}
 
 ### Funções de gerenciamento de plataforma
@@ -74,6 +74,7 @@ As funções de gerenciamento de plataforma permitem que os usuários sejam desi
 | Aplicativos |  Criar, excluir, editar e visualizar instâncias. Gerenciar aliases, ligações e credenciais | Criar e excluir IDs e chaves API | Visualizar e editar o nome do grupo de recursos | Criar, excluir, editar, suspender, continuar, visualizar e ligar somente as instâncias especificadas no grupo de recursos |
 | Administrator |  Todas as ações de gerenciamento para serviços | Criar e excluir IDs e chaves API, designar políticas a IDs | Visualizar, editar e gerenciar o acesso para o grupo de recursos | Todas as ações de gerenciamento para as instâncias especificadas no grupo de recursos |
 {: caption="Tabela 2. Exemplo de funções e ações de gerenciamento de plataforma" caption-side="top"}
+{: #platformrolestable}
 
 Alguns serviços podem mapear ações específicas para as funções de gerenciamento de plataforma que estão relacionadas ao gerenciamento do serviço em vez do acesso do serviço. Como um exemplo, consulte a tabela a seguir que detalha as ações do serviço {{site.data.keyword.containershort_notm}} que são mapeadas para essas funções.
 
