@@ -22,6 +22,7 @@ Identität und Zugriff verwalten
 
     {: .navgroup id="howto"}
     login_fedid.md
+    connect_dedicated_id.md
     iamuserinv.md
 
     {: .topicgroup}
@@ -30,6 +31,7 @@ Identität und Zugriff verwalten
         mngiam.md
         mngcf.md
         mnginfra.md
+
 
     {: .topicgroup}
     Mit Services arbeiten

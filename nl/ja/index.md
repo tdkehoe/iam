@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-01-10"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-11-16"
 
 ## Cloud IAM とは?
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) を使用すると、プラットフォームおよびインフラストラクチャー・サービスの両方に関してユーザーをセキュアに認証でき、また、{{site.data.keyword.Bluemix_notm}} プラットフォーム全体で一貫してリソースへのアクセスを制御できます。 一部の {{site.data.keyword.Bluemix_notm}} サービスは、Cloud IAM を使用したアクセス制御に対応しており、ご使用のアカウント内で[リソース・グループ](/docs/admin/resourcegroups.html)に編成されて、ユーザーが一度に複数のリソースに素早く簡単にアクセスできるようになっています。 ご使用のアカウント内のリソースへのアクセス権限をユーザーおよびサービス ID に割り当てるために、Cloud IAM アクセス・ポリシーが使用されます。
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) を使用すると、プラットフォームおよびインフラストラクチャー・サービスの両方に関してユーザーをセキュアに認証でき、また、{{site.data.keyword.Bluemix_notm}} プラットフォーム全体で一貫してリソースへのアクセスを制御できます。 一部の {{site.data.keyword.Bluemix_notm}} サービスは、Cloud IAM を使用したアクセス制御に対応しており、ご使用のアカウント内で[リソース・グループ](/docs/account/resourcegroups.html)に編成されて、ユーザーが一度に複数のリソースに素早く簡単にアクセスできるようになっています。 ご使用のアカウント内のリソースへのアクセス権限をユーザーおよびサービス ID に割り当てるために、Cloud IAM アクセス・ポリシーが使用されます。
 
 1 つのポリシーで、1 人のユーザーまたは 1 つの[サービス ID](/docs/iam/serviceid.html#serviceids) に、属性を組み合わせてアクセス有効範囲を定義した 1 つ以上の役割が割り当てられます。 ポリシーはインスタンス・レベルまで細分化した単一サービスへのアクセス権限を指定できます。また、まとめて 1 つのリソース・グループに編成されたリソースの集合にポリシーを適用することもできます。 割り当てる[ユーザー役割](/docs/iam/users_roles.html#iamusermanrol)に基づいて、異なるアクセス・レベルがユーザーまたはサービス ID に許可され、UI の使用または特定タイプの API 呼び出しの実行によってプラットフォーム管理タスクの実行やサービスへのアクセスを行えるようになります。
 

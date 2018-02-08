@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -30,7 +30,7 @@ Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs, 
 ## Affectation d'un nouvel accès
 {: #assignaccess}
 
-### Accès à des ressources au sein d'un groupe de ressources 
+### Accès à des ressources au sein d'un groupe de ressources
 
 Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressources ou uniquement à un service d'un groupe de ressources, procédez comme suit :
 
@@ -46,15 +46,15 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 ### Accès aux ressources
 {: #resourceaccess}
 
-Pour affecter des droits d'accès à une ressource individuelle du compte ou l'accès à toutes les ressources du compte, procédez comme suit : 
+Pour affecter des droits d'accès à une ressource individuelle du compte ou l'accès à toutes les ressources du compte, procédez comme suit :
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous voulez affecter un accès, sélectionnez le menu **Actions**, puis cliquez sur **Affecter un accès**.
 3. Sélectionnez **Affecter l'accès aux ressources**.
 4. Sélectionnez un service ou sélectionnez **Tous les services avec l'offre Identity and Access activée**.
-5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
+5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
 6. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
+7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment.
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
 8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.

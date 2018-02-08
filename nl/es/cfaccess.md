@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -22,7 +22,7 @@ En este momento, no todos los servicios se pueden gestionar utilizando Cloud IAM
 ## Roles de Cloud Foundry
 {: #cfroles}
 
-Los roles de Cloud Foundry otorgan acceso a las organizaciones y espacios dentro de la cuenta. Los roles de Cloud Foundry no habilitan permisos de usuario para completar acciones dentro del contexto de un servicio en la cuenta. 
+Los roles de Cloud Foundry otorgan acceso a las organizaciones y espacios dentro de la cuenta. Los roles de Cloud Foundry no habilitan permisos de usuario para completar acciones dentro del contexto de un servicio en la cuenta.
 
 Los siguientes roles se pueden asignar a nivel de organización:
 

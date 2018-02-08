@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-08-23"
 
 ---
@@ -25,5 +25,3 @@ As chaves API podem ser associadas ao seguinte:
 É possível criar e usar as chaves API que estão vinculadas a sua conta. Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. Para obter mais informações sobre como usar uma chave API associada à sua identidade de usuário, veja [Gerenciando chaves API do usuário](userid_keys.html).
 
 Também é possível usar as chaves API associadas aos IDs de serviço criados. Os IDs de serviço são usados para conectar um aplicativo dentro ou fora do {{site.data.keyword.Bluemix_notm}} a um serviço {{site.data.keyword.Bluemix_notm}}. Para obter mais informações sobre como criar chaves API associadas a um ID de serviço, veja [Gerenciando chaves API do ID de serviço](serviceid_keys.html).
-
-

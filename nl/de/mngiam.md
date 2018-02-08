@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -30,7 +30,7 @@ Um den Zugriff zu verwalten oder Benutzern neue Zugriffsberechtigungen zuzuweise
 ## Neue Zugriffsberechtigungen zuweisen
 {: #assignaccess}
 
-### Zugriff auf Ressourcen in einer Ressourcengruppe 
+### Zugriff auf Ressourcen in einer Ressourcengruppe
 
 Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für einen einzelnen Service in einer Ressourcengruppe zuzuweisen, müssen Sie die folgenden Schritte ausführen:
 
@@ -46,15 +46,15 @@ Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für 
 ### Zugriff auf Ressourcen
 {: #resourceaccess}
 
-Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einzelne Ressource im Konto oder für alle Ressourcen im Konto zuzuweisen: 
+Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einzelne Ressource im Konto oder für alle Ressourcen im Konto zuzuweisen:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Benutzer** aus.
 2. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriffsberechtigungen zuweisen wollen, das Menü **Aktionen** aus und klicken Sie dann auf **Zugriff zuweisen**.
 3. Wählen Sie die Option **Zugriff auf Ressourcen zuweisen** aus.
 4. Wählen Sie einen Service oder die Option **Alle Services mit aktiviertem Identity and Access Management** aus.
-5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
+5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
 6. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
+7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen.
     * **Ressourcentyp**: Geben Sie **Bucket** ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 8. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen.

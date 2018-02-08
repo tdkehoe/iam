@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2018-01-11"
 
 ---
 
@@ -21,14 +21,10 @@ copyright:
 | Permissão configurada | Descrição das ações |
 |---------------------------|------------------------|
 |Visualização Apenas | Os usuários com essa permissão podem visualizar somente os itens dentro do sistema.|
-|Usuário Básico | Os usuários com essa permissão podem executar ações básicas dentro do sistema, como incluir um chamado e gerenciar dispositivos para os quais eles receberam acesso. |
+|Usuário Básico | Os usuários com essa permissão podem executar ações básicas dentro do sistema, tal como gerenciar dispositivos ao quais eles receberam acesso. |
 |Super usuário | Os usuários com essa permissão podem executar todas as ações disponíveis no sistema. |
 {:caption="Tabela 1. Permissões de infraestrutura" caption-side="top"}
 
-Permissões adicionais podem ser configuradas depois que o usuário aceitou o convite. O conjunto inicial de permissões designado no convite não concede acesso aos dispositivos; por isso, deve-se conceder o acesso ao dispositivo no portal de controle depois que o usuário aceitou o convite. 
+Permissões adicionais podem ser configuradas depois que o usuário aceitou o convite. O conjunto inicial de permissões designado no convite não concede acesso aos dispositivos; por isso, deve-se conceder o acesso ao dispositivo no portal de controle depois que o usuário aceitou o convite.
 
-Acesse o ícone Menu ![Menu icon](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura** para acessar o portal de controle para trabalhar com permissões de usuário para infraestrutura. Acessar **Conta** &gt; **Usuários** exibe sua lista de usuários na qual é possível configurar o acesso ao dispositivo e outras permissões de infraestrutura. Para obter mais informações, acesse [Gerenciando o acesso à infraestrutura](/docs/iam/mnginfra.html#managing-infrastructure-access).
-
-
-
-
+Acesse o ícone Menu ![ícone Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura** para acessar o portal de controle para trabalhar com permissões de usuário para infraestrutura. Acessar **Conta** &gt; **Usuários** exibe sua lista de usuários na qual é possível configurar o acesso ao dispositivo e outras permissões de infraestrutura. Para obter mais informações, acesse [Gerenciando o acesso à infraestrutura](/docs/iam/mnginfra.html#managing-infrastructure-access).

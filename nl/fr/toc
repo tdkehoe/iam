@@ -22,6 +22,7 @@ Gestion de l'identité et de l'accès
 
     {: .navgroup id="howto"}
     login_fedid.md
+    connect_dedicated_id.md
     iamuserinv.md
 
     {: .topicgroup}
@@ -30,6 +31,7 @@ Gestion de l'identité et de l'accès
         mngiam.md
         mngcf.md
         mnginfra.md
+
 
     {: .topicgroup}
     Utilisation des services

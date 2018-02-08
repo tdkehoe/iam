@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -30,7 +30,7 @@ Para gestionar el acceso o asignar nuevos accesos a usuarios, debe ser el propie
 ## Asignación de nuevos accesos
 {: #assignaccess}
 
-### Acceso a recursos dentro de un grupo de recursos 
+### Acceso a recursos dentro de un grupo de recursos
 
 Para asignar acceso a todos los recursos de un grupo de recursos o solo a un servicio del grupo, complete los siguientes pasos:
 
@@ -46,15 +46,15 @@ Para asignar acceso a todos los recursos de un grupo de recursos o solo a un ser
 ### Acceso a recursos
 {: #resourceaccess}
 
-Para asignar acceso a un recurso individual en la cuenta o acceso a todos los recursos de la cuenta, complete los siguientes pasos: 
+Para asignar acceso a un recurso individual en la cuenta o acceso a todos los recursos de la cuenta, complete los siguientes pasos:
 
 1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Usuarios**.
 2. En la fila del usuario al que desea asignar acceso, seleccione el menú **Acciones** y pulse **Asignar acceso**.
 3. Seleccione **Asignar acceso a recursos**.
 4. Seleccione un servicio o seleccione **Todos los servicios habilitados para identidad y acceso**.
-5. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
+5. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita.
 6. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
-7. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
+7. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo.
     * **Tipo de recurso**: indique **grupo**.
     * **ID de recurso**: Especifique el nombre de su grupo.
 8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.

@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -39,12 +39,6 @@ En la invitación de cuenta inicial, es posible que haya definido algunos permis
 
 1. Pulse el icono de Menú ![Icono de menú](../icons/icon_hamburger.svg) y seleccione **Infraestructura**.
 2. Vaya a **Cuenta** &gt; **Usuarios**.
-3. Pulse el enlace en la columna **Acceso de dispositivos** para el usuario para el que desea actualizar el acceso. El enlace dirá **Gestionar** o el número de dispositivos a los que tiene acceso el usuario. Como alternativa, puede pulsar **Editar acceso al portal** en el menú de acciones que le lleva a la página de permisos. Desde ahí seleccione el separador **Acceso de dispositivos**. 
+3. Pulse el enlace en la columna **Acceso de dispositivos** para el usuario para el que desea actualizar el acceso. El enlace dirá **Gestionar** o el número de dispositivos a los que tiene acceso el usuario. Como alternativa, puede pulsar **Editar acceso al portal** en el menú de acciones que le lleva a la página de permisos. Desde ahí seleccione el separador **Acceso de dispositivos**.
 4. Seleccione los dispositivos para los que desea proporcionar acceso al usuario.
 5. Pulse **Actualizar acceso de dispositivos**.
-
-
-
-
-
-

@@ -2,7 +2,8 @@
 
 copyright:
 
-  years: 2015, 2017 lastupdated: "2017-12-07"
+  years: 2015, 2018
+lastupdated: "2017-12-07"
 
 ---
 
@@ -24,12 +25,12 @@ Cada chave API que estiver associada a um ID de serviço herdará a política qu
 
 Crie uma chave API para associar a um ID de serviço.
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**. 
+1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
 2. Se você não tiver um ID de serviço já criado, crie o ID de serviço.
 3. No menu **Ações**, acesse a opção **Gerenciar ID de serviço**.
 4. Clique em **Criar** na seção de chaves API.
 5. Inclua um nome e uma descrição para identificar facilmente a chave API.
-6. Clique **Criar**.
+6. Clique em **Criar**.
 7. Salve sua chave API copiando ou fazendo download dela em um local seguro.
 
 **Nota**: por razões de segurança, a chave API está disponível para ser copiada ou transferida por download somente no momento da criação. Se a chave API for perdida, uma nova chave API deverá ser criada.
@@ -38,7 +39,7 @@ Crie uma chave API para associar a um ID de serviço.
 
 É possível atualizar uma chave API editando o nome ou a descrição usada para identificar a chave na UI.
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**. 
+1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
 2. Se você não tiver um ID de serviço já criado, crie o ID de serviço.
 3. No menu **Ações**, acesse a opção **Gerenciar ID de serviço**.
 4. No menu **Ações** na seção de chaves API, acesse a opção **Editar nome e descrição**.
@@ -48,9 +49,7 @@ Crie uma chave API para associar a um ID de serviço.
 
 É possível excluir uma chave API associada a um ID de serviço. No entanto, a exclusão de uma chave API atualmente em uso por um aplicativo removerá a capacidade de autenticação desse aplicativo nos serviços.
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**. 
+1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
 2. Se você não tiver um ID de serviço já criado, crie o ID de serviço.
 3. No menu **Ações**, acesse a opção **Gerenciar ID de serviço**.
 4. No menu **Ações** na seção de chaves API, acesse a opção **Excluir chave**.
-
-

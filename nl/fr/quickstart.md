@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -16,9 +16,9 @@ lastupdated: "2017-11-16"
 # Tutoriel d'initiation
 {: #getstarted}
 
-Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapidement avec IBM Cloud Identity and Access Management (IAM) en invitant les utilisateurs de votre compte et en affectant des droits d'accès Cloud IAM à ces utilisateurs. 
+Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapidement avec IBM Cloud Identity and Access Management (IAM) en invitant les utilisateurs de votre compte et en affectant des droits d'accès Cloud IAM à ces utilisateurs.
 
-Ce tutoriel concerne les ressources gérées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess). 
+Ce tutoriel concerne les ressources gérées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Etape 1 : invitez des utilisateurs et affectez-leur un accès initial
@@ -49,9 +49,9 @@ Vous pouvez accorder à un utilisateur l'accès à un groupe de ressources ou à
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 2. Cliquez sur le nom de l'utilisateur auquel vous voulez affecter un accès.
 3. Cliquez sur **Affecter un accès**.
-4. Choisissez comment vous voulez affecter l'accès : 
+4. Choisissez comment vous voulez affecter l'accès :
     * Sélectionnez **Affecter l'accès au sein d'un groupe de ressources** pour accorder l'accès à toutes les ressources d'un groupe ou uniquement aux ressources d'un service spécifique du groupe. Vous pouvez également accorder à l'utilisateur le droit d'afficher, d'éditer ou de gérer l'accès au groupe de ressources en sélectionnant un rôle pour l'accès au groupe de ressources. Sélectionnez **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle appartient.
-    * Sélectionnez **Affecter l'accès aux ressources** pour affecter l'accès à toutes les ressources du compte pour lesquelles l'offre Identity and Access est activée, à toutes les ressources d'un service spécifique du compte, à une seule instance ou à une seule ressource d'une instance de service spécifique. 
+    * Sélectionnez **Affecter l'accès aux ressources** pour affecter l'accès à toutes les ressources du compte pour lesquelles l'offre Identity and Access est activée, à toutes les ressources d'un service spécifique du compte, à une seule instance ou à une seule ressource d'une instance de service spécifique.
 5. Sélectionnez toute combinaison de rôles afin de définir la portée de l'accès. Pour plus d'informations, voir [Rôles Cloud IAM](/docs/iam/users_roles.html#iamusermanrol).
 6. Cliquez sur **Affecter**.
 
@@ -64,7 +64,7 @@ Vous pouvez mettre à jour un accès existant en éditant les rôles affectés �
 2. Sélectionnez le nom de l'utilisateur dont vous voulez éditer l'accès.
 3. Depuis la ligne contenant la règle à éditer, cliquez sur **Editer la règle** dans le menu **Actions**.
 4. Editez la règle en mettant à jour les rôles affectés.
-5. Cliquez sur **Sauvegarder**. 
+5. Cliquez sur **Sauvegarder**.
 
 Vous pouvez supprimer l'accès d'un utilisateur en cliquant sur l'option **Retirer** dans le menu **Actions** de la règle que vous voulez retirer.
 

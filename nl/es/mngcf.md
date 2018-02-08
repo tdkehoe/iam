@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -55,4 +55,3 @@ Si necesita revisar su acceso asignado en una cuenta a la que ha sido añadido, 
 3. Revise sus roles asignados en la sección de acceso de Cloud Foundry.
 
 Si necesita acceso adicional, debe ponerse en contacto con el gestor de la organización o el propietario de la cuenta para actualizar el rol de Cloud Foundry que tiene asignado.
-

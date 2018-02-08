@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2017
-lastupdated: "2017-12-07"
+  years: 2015, 2018
+lastupdated: "2018-01-10"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2017-12-07"
 # ユーザーの API キーの管理
 {: #userapikey}
 
-フェデレーテッド・ユーザーまたは非フェデレーテッド・ユーザーは、API キーを作成し、CLI で使用したり、ID としてログインするための自動化の一部として使用したりすることができます。 キーのリスト、キーの作成、キーの更新、またはキーの削除を行うことにより、UI または CLI を使用して API キーを管理できます。 ユーザー ID に関連付けられた {{site.data.keyword.Bluemix_notm}} API キーを管理するには、**「管理」** &gt; **「セキュリティー」** &gt; **「プラットフォーム API キー」**に移動して、説明および日付と共に API キーのリストを表示します。 次に、このページから API キーを作成、編集、および削除できます。 使用可能な CLI コマンドの完全リストについては、[API キーとポリシーを管理するためのコマンド](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)を参照してください。
+フェデレーテッド・ユーザーまたは非フェデレーテッド・ユーザーは、API キーを作成し、CLI で使用したり、ID としてログインするための自動化の一部として使用したりすることができます。 キーのリスト、キーの作成、キーの更新、またはキーの削除を行うことにより、UI または CLI を使用して API キーを管理できます。 ユーザー ID に関連付けられた {{site.data.keyword.Bluemix_notm}} API キーを管理するには、**「管理」** &gt; **「セキュリティー」** &gt; **「プラットフォーム API キー」**に移動して、説明および日付と共に API キーのリストを表示します。 次に、このページから API キーを作成、編集、および削除できます。 そして、使用可能な CLI コマンドの全リストについては、[`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam) を参照してください。
 
-[フェデレーテッド・ユーザー](/docs/admin/adminpublic.html#federatedid)の場合、`BLUEMIX_API_KEY` 環境変数を使用することにより、API キーを使用してログインすることができます。 ログインのための API キーの使用について詳しくは、[フェデレーテッド ID を使用したログイン](/docs/cli/login_federated_id.html#federated_id)を参照してください。
+[フェデレーテッド・ユーザー](/docs/account/adminpublic.html#federatedid)の場合、`BLUEMIX_API_KEY` 環境変数を使用することにより、API キーを使用してログインすることができます。 ログインのための API キーの使用について詳しくは、[フェデレーテッド ID を使用したログイン](/docs/cli/login_federated_id.html#federated_id)を参照してください。
 
 ## API キーの作成
 

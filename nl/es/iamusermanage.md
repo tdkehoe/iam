@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-16"
 
@@ -28,13 +28,3 @@ Complete los siguientes pasos para gestionar los usuarios de su cuenta:
 
 Para obtener más información sobre los mandatos de la interfaz de línea de mandatos que se utilizan para gestionar cuentas, organizaciones y espacios, consulte [Mandatos para la gestión de cuentas, organizaciones y roles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}
-
-
-
-
-
-
-
-
-
-

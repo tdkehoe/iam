@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-12-07"
 
@@ -33,7 +33,7 @@ El concepto de identidad en {{site.data.keyword.Bluemix_notm}} IAM consta de los
 
 ## Gestión de acceso
 
-El concepto de gestión de acceso en {{site.data.keyword.Bluemix_notm}} consta de unos cuantos componentes interrelacionados, incluyendo usuarios, recursos, políticas, roles, acciones y el sistema de control de Cloud IAM, que permite a los usuarios realizar acciones en recursos dentro de una cuenta. 
+El concepto de gestión de acceso en {{site.data.keyword.Bluemix_notm}} consta de unos cuantos componentes interrelacionados, incluyendo usuarios, recursos, políticas, roles, acciones y el sistema de control de Cloud IAM, que permite a los usuarios realizar acciones en recursos dentro de una cuenta.
 
 Puede revisar la siguiente lista para obtener más información sobre estos componentes de Cloud IAM:
 
@@ -51,9 +51,3 @@ Puede revisar la siguiente lista para obtener más información sobre estos comp
 <dt>Sistema de gestión de acceso</dt>
 <dd>El sistema de control de Cloud IAM permite o deniega acciones de usuarios en el contexto de un servicio en función de la política asignada. Cuando un usuario intenta completar una acción específica, el sistema de control utiliza los atributos definidos en la política para determinar si el usuario tiene permiso para realizar esa tarea.</dd>
 </dl>
-
-
-
-
-
-

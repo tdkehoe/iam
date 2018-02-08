@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-12-07"
 
 ---
@@ -21,7 +21,7 @@ Zum Einladen von Benutzern und Verwalten ausstehender Einladungen müssen Sie en
 
 ## Benutzer einladen
 
-Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen in Ihrem Konto zu verwalten: 
+Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen in Ihrem Konto zu verwalten:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und dann auf **Benutzer**. Die Seite 'Benutzer' enthält eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen und dem aktuellen Status des aktuell ausgewählten Kontos.
 2. Klicken Sie auf **Benutzer einladen**.
@@ -52,7 +52,7 @@ Sie können Zugriff auf alle Services in einer Ressourcengruppe oder aber auf ei
 2. Wählen Sie diese Option aus, um den Zugriff auf die Ressourcen in einer **Ressourcengruppe** zuzuweisen.
 3. Wählen Sie eine Ressourcengruppe aus.
 4. Wählen Sie eine Rolle für das Feld **Zugriff für eine Ressourcengruppe zuweisen** aus, um dem Benutzer die Anzeige der Ressourcengruppe im Dashboard, das Bearbeiten des Ressourcengruppennamens oder das Verwalten des Benutzerzugriffs auf die Gruppe zu ermöglichen. Sie können **Kein Zugriff** auswählen, wenn der Benutzer ausschließlich Zugriff auf die Ressource erhalten soll, die Sie angeben, nicht jedoch auf die Gruppe, in der die Ressource enthalten ist.
-5. Wählen Sie einen Service in der Ressourcengruppe aus, oder wählen Sie aus, dass der Zugriff auf alle Services in der ausgewählten Gruppe bereitgestellt werden soll. 
+5. Wählen Sie einen Service in der Ressourcengruppe aus, oder wählen Sie aus, dass der Zugriff auf alle Services in der ausgewählten Gruppe bereitgestellt werden soll.
 6. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen. Dieser Zugriff gilt nur für die Ressourcen, die Sie für die Richtlinie ausgewählt haben. Der Zugriff auf den Container selbst, der die Ressourcengruppe darstellt, wird hingegen nicht erteilt.
 
 
@@ -63,9 +63,9 @@ Sie können Zugriffsberechtigungen für eine einzelne Ressource innerhalb Ihres 
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services**.
 2. Wählen Sie die Option aus, um den Zugriff auf eine **Ressource** zuzuweisen.
 3. Wählen Sie einen Service aus.
-4. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
+4. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
 5. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-6. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
+6. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen.
     * **Ressourcentyp**: Geben Sie **Bucket** ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 7. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
@@ -109,7 +109,7 @@ Als Kontoeigner eines verknüpften Kontos können Sie reine VPN-Benutzer hinzuf�
 1. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
 2. Rufen Sie **Konto** &gt; **Benutzer** auf.
 3. Klicken Sie auf die Option zum **Hinzufügen reiner VPN-Benutzer**.
-4. Geben Sie die personenbezogenen Daten des Benutzers ein. 
+4. Geben Sie die personenbezogenen Daten des Benutzers ein.
 5. Klicken Sie auf **Benutzer hinzufügen**.
 6. Legen Sie die Portalberechtigungen für den Benutzer fest.
 7. Klicken Sie auf die Option zum **Hinzufügen von Portalberechtigungen**, um die Berechtigungen zu speichern.

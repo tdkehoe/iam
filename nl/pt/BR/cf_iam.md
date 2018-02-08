@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -29,5 +29,4 @@ Conforme os serviços começam a ativar o uso do Cloud IAM, é possível esperar
 * Para as instâncias existentes em sua conta que já usam o gerenciamento de acesso do Cloud Foundry designando usuários a uma organização e espaço com uma função do Cloud Foundry, é possível continuar a usar essas instâncias sem nenhuma mudança.
 * Para criar novas instâncias, cada uma será designada a um grupo de recursos em sua conta e, depois, será possível usar o Cloud IAM para gerenciar o acesso a essa instância e ao grupo de recursos ao qual ela pertence, se você for administrador no grupo de recursos.
 
-Os serviços que suportam o uso do Cloud IAM têm vários benefícios, incluindo a capacidade de se conectar a apps e serviços em qualquer espaço do Cloud Foundry, que permite conectar apps e serviços de diferentes regiões. Além disso, cada instância gerenciada pelo Cloud IAM pertence a um grupo de recursos e os grupos de recursos não têm o escopo definido por região, portanto é possível provisionar apps e serviços de regiões diferentes no mesmo grupo de recursos. Você também tem a capacidade de usar o controle de acesso de baixa granularidade para uma instância individual. 
-
+Os serviços que suportam o uso do Cloud IAM têm vários benefícios, incluindo a capacidade de se conectar a apps e serviços em qualquer espaço do Cloud Foundry, que permite conectar apps e serviços de diferentes regiões. Além disso, cada instância gerenciada pelo Cloud IAM pertence a um grupo de recursos e os grupos de recursos não têm o escopo definido por região, portanto é possível provisionar apps e serviços de regiões diferentes no mesmo grupo de recursos. Você também tem a capacidade de usar o controle de acesso de baixa granularidade para uma instância individual.

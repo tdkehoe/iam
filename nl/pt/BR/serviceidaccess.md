@@ -2,7 +2,8 @@
 
 copyright:
 
-  anos: 2015, 2017 última atualização: "16-11-2017"
+  years: 2015, 2018
+lastupdated: "2017-11-16"
 
 ---
 
@@ -14,7 +15,7 @@ copyright:
 # Gerenciando políticas de acesso do ID de serviço
 {: #serviceidpolicy}
 
-Ao criar um ID de serviço, é possível designar políticas de serviço para esse ID de serviço para controlar o nível de acesso permitido quando ele é usado para autenticação nos serviços. É possível atualizar essas políticas de acesso designadas a qualquer momento mudando uma política existente, excluindo uma política ou designando uma nova. 
+Ao criar um ID de serviço, é possível designar políticas de serviço para esse ID de serviço para controlar o nível de acesso permitido quando ele é usado para autenticação nos serviços. É possível atualizar essas políticas de acesso designadas a qualquer momento mudando uma política existente, excluindo uma política ou designando uma nova.
 
 **Nota**: se você excluir ou editar uma política existente para um ID de serviço que estiver sendo usado atualmente, ela poderá causar interrupção de serviço.
 
@@ -32,16 +33,16 @@ Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um 
 8. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário. Este acesso só se aplica aos recursos que você selecionou para a política. Ela não fornece acesso ao contêiner real que é o grupo de recursos.
 9. Selecione **Designar**.
 
-Para designar acesso a um recurso individual na conta, conclua as etapas a seguir: 
+Para designar acesso a um recurso individual na conta, conclua as etapas a seguir:
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
 2. Selecione o ID de serviço na tabela para a qual você deseja designar uma política de serviço.
 3. Clique em **Designar acesso**.
 4. Selecione **Designar por recurso**.
 5. Selecione um serviço.
-6. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
+6. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado.
 7. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-8. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito. 
+8. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito.
     * **Tipo de recurso**: insira **depósito**.
     * **ID do recurso**: Insira o nome do bucket.
 9. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário.

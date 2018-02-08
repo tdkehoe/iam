@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -28,13 +28,3 @@ Para gerenciar usuários em sua conta, conclua as etapas a seguir:
 
 Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}
-
-
-
-
-
-
-
-
-
-

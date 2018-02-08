@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -39,12 +39,6 @@ In der ursprünglichen Kontoeinladung haben Sie möglicherweise bestimmte Anfang
 
 1. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
 2. Rufen Sie **Konto** &gt; **Benutzer** auf.
-3. Klicken Sie für den Benutzer, dessen Zugriffsberechtigungen aktualisiert werden sollen, auf den Link in der Spalte **Gerätezugriff**. Der Link trägt entweder die Bezeichnung **Verwalten** oder er ist mit der Anzahl der Geräte gekennzeichnet, auf die der Benutzer Zugriff hat. Alternativ hierzu können Sie auch im Aktionsmenü auf die Option zum **Bearbeiten des Portalzugriffs** klicken. Daraufhin wird die Seite mit den Berechtigungen aufgerufen. Wählen Sie auf dieser Seite die Registerkarte **Gerätezugriff** aus. 
+3. Klicken Sie für den Benutzer, dessen Zugriffsberechtigungen aktualisiert werden sollen, auf den Link in der Spalte **Gerätezugriff**. Der Link trägt entweder die Bezeichnung **Verwalten** oder er ist mit der Anzahl der Geräte gekennzeichnet, auf die der Benutzer Zugriff hat. Alternativ hierzu können Sie auch im Aktionsmenü auf die Option zum **Bearbeiten des Portalzugriffs** klicken. Daraufhin wird die Seite mit den Berechtigungen aufgerufen. Wählen Sie auf dieser Seite die Registerkarte **Gerätezugriff** aus.
 4. Wählen Sie die Geräte aus, auf die der Benutzer Zugriff haben soll.
 5. Klicken Sie auf die Option zum **Aktualisieren des Gerätezugriffs**.
-
-
-
-
-
-

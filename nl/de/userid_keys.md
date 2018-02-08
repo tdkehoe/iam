@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2017
-lastupdated: "2017-12-07"
+  years: 2015, 2018
+lastupdated: "2018-01-10"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2017-12-07"
 # API-Schlüssel für Benutzer verwalten
 {: #userapikey}
 
-Ein eingebundener oder nicht eingebundener Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Zum Verwalten der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Plattform-API-Schlüssel** auf, um eine Liste Ihrer API-Schlüssel mit Beschreibungen und Datumsangaben anzuzeigen. Sie können dann über diese Seite API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+Ein eingebundener oder nicht eingebundener Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Zum Verwalten der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Plattform-API-Schlüssel** auf, um eine Liste Ihrer API-Schlüssel mit Beschreibungen und Datumsangaben anzuzeigen. Sie können dann über diese Seite API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie im Abschnitt [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
 
-Als [eingebundener Benutzer](/docs/admin/adminpublic.html#federatedid) können Sie einen API-Schlüssel für die Anmeldung nutzen, indem Sie die Umgebungsvariable `BLUEMIX_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssels für die Anmeldung finden Sie in [Mit eingebundener ID anmelden](/docs/cli/login_federated_id.html#federated_id).
+Als [eingebundener Benutzer](/docs/account/adminpublic.html#federatedid) können Sie einen API-Schlüssel für die Anmeldung nutzen, indem Sie die Umgebungsvariable `BLUEMIX_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssels für die Anmeldung finden Sie in [Mit eingebundener ID anmelden](/docs/cli/login_federated_id.html#federated_id).
 
 ## API-Schlüssel erstellen
 

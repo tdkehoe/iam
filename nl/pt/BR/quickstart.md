@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -16,9 +16,9 @@ copyright:
 # Tutorial Introdução
 {: #getstarted}
 
-Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access Management (IAM) funcionando rapidamente, convidando usuários para sua conta e designando acesso ao Cloud IAM para esses usuários. 
+Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access Management (IAM) funcionando rapidamente, convidando usuários para sua conta e designando acesso ao Cloud IAM para esses usuários.
 
-Este tutorial diz respeito aos recursos gerenciados pelo IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar acesso, é possível usar o [acesso do Cloud Foundry](/docs/iam/cfaccess.html#cfaccess). 
+Este tutorial diz respeito aos recursos gerenciados pelo IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar acesso, é possível usar o [acesso do Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Etapa 1: convidar usuários e designar acesso inicial
@@ -49,9 +49,9 @@ Depois de ter convidado usuários e designado o acesso inicial, você talvez des
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
 2. Clique no nome do usuário para o qual você deseja designar acesso.
 3. Clique em **Designar acesso**.
-4. Escolha como deseja designar o acesso: 
+4. Escolha como deseja designar o acesso:
     * Selecione **Designar acesso dentro de um grupo de recursos** para designar acesso a todos os recursos em um grupo ou apenas a recursos para um serviço específico em um grupo. Também é possível fornecer ao usuário o acesso para visualizar, editar ou gerenciar acesso para o grupo de recursos, selecionando uma função para acesso ao grupo de recursos. Selecione **Sem acesso** se você deseja que o usuário tenha acesso somente ao recurso especificado e não ao grupo em que ele está organizado.
-    * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica. 
+    * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica.
 5. Selecione qualquer combinação de funções para definir o escopo de acesso. Veja [Funções do Cloud IAM](/docs/iam/users_roles.html#iamusermanrol) para obter mais informações.
 6. Clique em **Designar**.
 
@@ -64,7 +64,7 @@ Depois de ter convidado usuários e designado o acesso inicial, você talvez des
 2. Selecione o nome do usuário para o qual você deseja editar o acesso.
 3. Na linha para a política que você deseja editar, clique em **Editar política** no menu **Ações**.
 4. Edite a política atualizando as funções designadas.
-5. Clique **Salvar.** 
+5. Clique em **Salvar**.
 
 É possível remover o acesso de um usuário clicando na opção **Remover** do menu **Ações** para a política que você deseja remover.
 

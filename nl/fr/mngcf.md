@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -55,4 +55,3 @@ Si vous devez vérifier l'accès qui vous a été affecté sur un compte auquel 
 3. Revoyez les rôles affectés dans la section Accès Cloud Foundry.
 
 Si vous avez besoin d'accès supplémentaires, vous devez contacter le responsable de votre organisation ou le propriétaire du compte afin de mettre à jour le rôle Cloud Foundry affecté.
-

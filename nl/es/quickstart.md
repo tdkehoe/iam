@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -16,9 +16,9 @@ lastupdated: "2017-11-16"
 # Guía de aprendizaje de iniciación
 {: #getstarted}
 
-Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar rápidamente con IBM Cloud Identity and Access Management (IAM) invitando usuarios a su cuenta y asignándoles acceso de Cloud IAM. 
+Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar rápidamente con IBM Cloud Identity and Access Management (IAM) invitando usuarios a su cuenta y asignándoles acceso de Cloud IAM.
 
-Esta guía de aprendizaje es para recursos gestionados por IAM. Para los servicios que no soportan la creación de políticas de Cloud IAM para gestionar el acceso, puede utilizar el [Acceso de Cloud Foundry](/docs/iam/cfaccess.html#cfaccess). 
+Esta guía de aprendizaje es para recursos gestionados por IAM. Para los servicios que no soportan la creación de políticas de Cloud IAM para gestionar el acceso, puede utilizar el [Acceso de Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Paso 1: Invitar usuarios y asignar acceso inicial
@@ -49,9 +49,9 @@ Puede asignar acceso a un usuario para un grupo de recursos o un único recurso.
 1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Usuarios**.
 2. Pulse el nombre del usuario al que desea asignar el acceso.
 3. Pulse **Asignar acceso**.
-4. Elija la forma de asignar el acceso: 
+4. Elija la forma de asignar el acceso:
     * Seleccione **Asignar acceso dentro de un grupo de recursos** para asignar acceso a todos los recursos dentro de un grupo o solo a los recursos de un servicio específico dentro de un grupo. También debe proporcionar el usuario con acceso para ver, editar o gestionar el acceso al grupo de recursos seleccionando un rol para acceder al grupo de recursos. Seleccione **Sin acceso** si desea que el usuario solo tenga acceso al recurso especificado y no al grupo en el que está organizado.
-    * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica. 
+    * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica.
 5. Seleccione cualquier combinación de roles para definir el ámbito del acceso. Consulte [Roles de Cloud IAM](/docs/iam/users_roles.html#iamusermanrol) para obtener más información.
 6. Pulse **Asignar**.
 
@@ -64,7 +64,7 @@ Puede actualizar los accesos existentes editando los roles asignados a un usuari
 2. Seleccione el nombre del usuario para el que desea editar el acceso.
 3. En la fila de la política que desea editar, pulse **Editar política** desde el menú de **Acciones**.
 4. Edite la política actualizando los roles asignados.
-5. Pulse **Guardar**. 
+5. Pulse **Guardar**.
 
 Puede eliminar el acceso de un usuario pulsando la opción **Eliminar** en el menú de **Acciones** de la política que desea eliminar.
 

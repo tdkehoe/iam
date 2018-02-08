@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -22,7 +22,7 @@ Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud 
 ## Rôles Cloud Foundry
 {: #cfroles}
 
-Les rôles Cloud Foundry accordent l'accès à des organisations et des espaces d'un compte. Les rôles Cloud Foundry n'activent pas de droits utilisateur permettant de réaliser des actions dans le contexte d'un service du compte. 
+Les rôles Cloud Foundry accordent l'accès à des organisations et des espaces d'un compte. Les rôles Cloud Foundry n'activent pas de droits utilisateur permettant de réaliser des actions dans le contexte d'un service du compte.
 
 Les rôles suivants peuvent être affectés au niveau de l'organisation :
 

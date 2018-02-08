@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2017
-lastupdated: "2017-12-07"
+  years: 2015, 2018
+lastupdated: "2018-01-10"
 
 ---
 
@@ -15,9 +15,9 @@ lastupdated: "2017-12-07"
 # Gestion des clés d'API d'utilisateur
 {: #userapikey}
 
-Un utilisateur, fédéré ou non, peut créer une clé d'API afin de l'utiliser depuis l'interface CLI ou, dans le cadre de l'automatisation, pour se connecter sous votre identité d'utilisateur. Vous pouvez utiliser l'interface utilisateur ou l'interface de ligne de commande pour gérer vos clés d'API en les répertoriant, en créant des clés, en les mettant à jour, ou en les supprimant. Pour gérer les clés d'API {{site.data.keyword.Bluemix_notm}} associées à votre identité d'utilisateur, accédez à **Gérer** &gt; **Sécurité** &gt; **Clés d'API de la plateforme** afin d'afficher la liste de vos clés d'API, leurs descriptions et leurs dates. Depuis cette page, vous pouvez ensuite créer; éditer ou supprimer des clés d'API. Pour obtenir la liste complète des commandes CLI disponibles, voir [Commandes de gestion des clés d'API et des règles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+Un utilisateur, fédéré ou non, peut créer une clé d'API afin de l'utiliser depuis l'interface CLI ou, dans le cadre de l'automatisation, pour se connecter sous votre identité d'utilisateur. Vous pouvez utiliser l'interface utilisateur ou l'interface de ligne de commande pour gérer vos clés d'API en les répertoriant, en créant des clés, en les mettant à jour, ou en les supprimant. Pour gérer les clés d'API {{site.data.keyword.Bluemix_notm}} associées à votre identité d'utilisateur, accédez à **Gérer** &gt; **Sécurité** &gt; **Clés d'API de la plateforme** afin d'afficher la liste de vos clés d'API, leurs descriptions et leurs dates. Depuis cette page, vous pouvez ensuite créer; éditer ou supprimer des clés d'API. Pour obtenir la liste complète des commandes CLI disponibles, voir [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
 
-En tant qu'[utilisateur fédéré](/docs/admin/adminpublic.html#federatedid), vous pouvez utiliser une clé d'API pour vous connecter par le biais de la variable d'environnement `BLUEMIX_API_KEY`. Pour plus d'informations sur l'utilisation d'une clé d'API pour la connexion, voir [Connexion à l'aide d'un ID fédéré](/docs/cli/login_federated_id.html#federated_id).
+En tant qu'[utilisateur fédéré](/docs/account/adminpublic.html#federatedid), vous pouvez utiliser une clé d'API pour vous connecter par le biais de la variable d'environnement `BLUEMIX_API_KEY`. Pour plus d'informations sur l'utilisation d'une clé d'API pour la connexion, voir [Connexion à l'aide d'un ID fédéré](/docs/cli/login_federated_id.html#federated_id).
 
 ## Création d'une clé d'API
 

@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-12-07"
 
@@ -34,7 +34,7 @@ werden. Diese API-Schlüssel werden über Cloud IAM bereitgestellt und können a
 
 ## Zugriffsmanagement
 
-Das Konzept des Zugriffsmanagements in {{site.data.keyword.Bluemix_notm}} basiert auf einer Reihe von Komponenten, die zueinander in Beziehung stehen. Dazu gehören Benutzer, Ressourcen, Richtlinien, Rollen, Aktionen und das Cloud IAM-Steuersystem, die es Benutzern erlauben, Aktionen für die Ressourcen innerhalb eines Kontos auszuführen. 
+Das Konzept des Zugriffsmanagements in {{site.data.keyword.Bluemix_notm}} basiert auf einer Reihe von Komponenten, die zueinander in Beziehung stehen. Dazu gehören Benutzer, Ressourcen, Richtlinien, Rollen, Aktionen und das Cloud IAM-Steuersystem, die es Benutzern erlauben, Aktionen für die Ressourcen innerhalb eines Kontos auszuführen.
 
 In der folgenden Liste erfahren Sie mehr über diese Cloud IAM-Komponenten:
 
@@ -52,9 +52,3 @@ In der folgenden Liste erfahren Sie mehr über diese Cloud IAM-Komponenten:
 <dt>System für das Zugriffsmanagement</dt>
 <dd>Das Cloud IAM-Steuersystem erlaubt oder verweigert die Ausführung von Aktionen durch Benutzer innerhalb des Kontextes eines Service auf Basis der zugewiesenen Richtlinie. Wenn ein Benutzer versucht, eine bestimmte Aktion auszuführen, dann verwendet das Steuersystem die Attribute, die in der Richtlinie definiert sind, um festzustellen, ob der Benutzer über die Berechtigung zur Ausführung dieser Task verfügt.</dd>
 </dl>
-
-
-
-
-
-

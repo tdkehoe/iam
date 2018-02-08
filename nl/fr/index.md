@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-01-10"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-11-16"
 
 ## Qu'est-ce que Cloud IAM ?
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vous permet d'authentifier de manière sécurisée les utilisateurs des services de plateforme et d'infrastructure et de contrôler de façon cohérente l'accès aux ressources de la plateforme {{site.data.keyword.Bluemix_notm}}. Un ensemble de services {{site.data.keyword.Bluemix_notm}} sont activés pour utiliser Cloud IAM afin de contrôler les accès. Ils sont organisés en [groupes de ressources](/docs/admin/resourcegroups.html) dans votre compte pour offrir à des utilisateurs sélectionnés un accès rapide et facile à plusieurs ressources à la fois. Des règles d'accès Cloud IAM permettent d'affecter à des ID utilisateur et de service un accès aux ressources de votre compte.
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vous permet d'authentifier de manière sécurisée les utilisateurs des services de plateforme et d'infrastructure et de contrôler de façon cohérente l'accès aux ressources de la plateforme {{site.data.keyword.Bluemix_notm}}. Un ensemble de services {{site.data.keyword.Bluemix_notm}} sont activés pour utiliser Cloud IAM afin de contrôler les accès. Ils sont organisés en [groupes de ressources](/docs/account/resourcegroups.html) dans votre compte pour offrir à des utilisateurs sélectionnés un accès rapide et facile à plusieurs ressources à la fois. Des règles d'accès Cloud IAM permettent d'affecter à des ID utilisateur et de service un accès aux ressources de votre compte.
 
 Une règle affecte à un utilisateur ou à un [ID de service](/docs/iam/serviceid.html#serviceids) un ou plusieurs rôles en utilisant une combinaison d'attributs pour définir la portée de l'accès. La règle peut fournir un accès à un seul service, jusqu'au niveau instance, ou s'appliquer à un ensemble de ressources organisées dans un groupe de ressources. En fonction des [rôles utilisateur](/docs/iam/users_roles.html#iamusermanrol) que vous affectez, différents niveaux d'accès sont accordés à l'ID utilisateur ou de service, lui permettant d'effectuer des tâches de gestion de plateforme ou d'accéder à un service via l'interface utilisateur, ou d'émettre des appels API de types spécifiques.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -39,12 +39,6 @@ No convite da conta inicial, você pode ter configurado algumas permissões inic
 
 1. Clique no ícone de Menu ![ícone de Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**.
 2. Acesse **Conta** &gt; **Usuários**.
-3. Clique no link na coluna **Acesso ao dispositivo** para o usuário para o qual você deseja atualizar o acesso. O link indicará **Gerenciar** ou o número de dispositivos aos quais o usuário tem acesso. Como alternativa, é possível clicar em **Editar acesso ao portal** no menu de ações que o leva à página de permissões. A partir daí, selecione a guia **Acesso ao dispositivo**. 
+3. Clique no link na coluna **Acesso ao dispositivo** para o usuário para o qual você deseja atualizar o acesso. O link indicará **Gerenciar** ou o número de dispositivos aos quais o usuário tem acesso. Como alternativa, é possível clicar em **Editar acesso ao portal** no menu de ações que o leva à página de permissões. A partir daí, selecione a guia **Acesso ao dispositivo**.
 4. Selecione os dispositivos aos quais você deseja fornecer acesso para o usuário.
 5. Clique em **Atualizar acesso ao dispositivo**.
-
-
-
-
-
-

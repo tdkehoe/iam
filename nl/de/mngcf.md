@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -55,4 +55,3 @@ Wenn Sie Ihre zugewiesenen Zugriffsberechtigungen in einem Konto überprüfen m�
 3. Überprüfen Sie die zugewiesenen Rollen im Abschnitt 'Cloud Foundry-Zugriff'.
 
 Wenn Sie weiterführende Zugriffsberechtigungen benötigen, müssen Sie sich an den Organisationsmanager oder den Kontoeigner wenden, um Ihre zugewiesene Cloud Foundry-Rolle zu aktualisieren.
-

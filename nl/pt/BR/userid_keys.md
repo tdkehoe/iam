@@ -2,7 +2,8 @@
 
 copyright:
 
-  years: 2015, 2017 lastupdated: "2017-12-07"
+  years: 2015, 2018
+lastupdated: "2018-01-10"
 
 ---
 
@@ -14,9 +15,9 @@ copyright:
 # Gerenciando chaves API do usuário
 {: #userapikey}
 
-Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. É possível usar a UI ou CLI para gerenciar suas chaves API, listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar as chaves API do {{site.data.keyword.Bluemix_notm}} associadas à sua identidade do usuário, acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma** para ver uma lista de suas chaves API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API desta página. Para obter uma lista completa de comandos da CLI disponíveis, veja [Comandos para gerenciar chaves API e políticas](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. É possível usar a UI ou CLI para gerenciar suas chaves API, listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar as chaves API do {{site.data.keyword.Bluemix_notm}} associadas à sua identidade do usuário, acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma** para ver uma lista de suas chaves API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API desta página. E para obter uma lista completa de comandos da CLI disponíveis, consulte [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
 
-Como um [usuário federado](/docs/admin/adminpublic.html#federatedid), é possível usar uma chave API para efetuar login usando a variável de ambiente `BLUEMIX_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja [Efetuando login com um ID federado](/docs/cli/login_federated_id.html#federated_id).
+Como um [usuário federado](/docs/account/adminpublic.html#federatedid), é possível usar uma chave API para efetuar login usando a variável de ambiente `BLUEMIX_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja [Efetuando login com um ID federado](/docs/cli/login_federated_id.html#federated_id).
 
 ## Criando uma chave API
 

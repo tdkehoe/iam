@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-12-07"
 
 ---
@@ -25,7 +25,7 @@ Cada clave de API que está asociada con un ID de servicio hereda la política q
 
 Crear una clave de API para asociar con un ID de servicio.
 
-1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**. 
+1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Si no tiene un ID de servicio ya creado, créelo.
 3. Desde el menú **Acciones**, vaya a la opción **Gestionar ID de servicio**.
 4. Pulse **Crear** en la sección de claves de API.
@@ -39,7 +39,7 @@ Crear una clave de API para asociar con un ID de servicio.
 
 Puede actualizar una clave de API editando el nombre o la descripción utilizada para identificar la clave en la IU.
 
-1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**. 
+1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Si no tiene un ID de servicio ya creado, créelo.
 3. Desde el menú **Acciones**, vaya a la opción **Gestionar ID de servicio**.
 4. Desde el menú **Acciones** de la sección de claves de API, vaya a la opción **Editar nombre y descripción**.
@@ -49,9 +49,7 @@ Puede actualizar una clave de API editando el nombre o la descripción utilizada
 
 Puede suprimir una clave de API que esté asociada con un ID de servicio. Sin embargo, suprimir una clave de API que está utilizando actualmente una aplicación eliminará la capacidad de dicha aplicación para autenticarse con los servicios.
 
-1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**. 
+1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Si no tiene un ID de servicio ya creado, créelo.
 3. Desde el menú **Acciones**, vaya a la opción **Gestionar ID de servicio**.
 4. Desde el menú **Acciones** de la sección de claves de API, vaya a la opción **Suprimir clave**.
-
-

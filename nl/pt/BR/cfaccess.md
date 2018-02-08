@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -22,7 +22,7 @@ No momento, nem todos os serviços podem ser gerenciados usando o Cloud IAM. É 
 ## Funções do Cloud Foundry
 {: #cfroles}
 
-As funções do Cloud Foundry concedem acesso a organizações e espaços dentro da conta. As funções do Cloud Foundry não ativam as permissões de usuário para concluir ações dentro do contexto de um serviço na conta. 
+As funções do Cloud Foundry concedem acesso a organizações e espaços dentro da conta. As funções do Cloud Foundry não ativam as permissões de usuário para concluir ações dentro do contexto de um serviço na conta.
 
 As funções a seguir podem ser designadas no nível de organização:
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2018-01-10"
 
 ---
 
@@ -18,7 +18,7 @@ copyright:
 
 ## O que é Cloud IAM?
 
-O {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) permite que você autentique usuários com segurança para os serviços de plataforma e infraestrutura e controle o acesso aos recursos de forma consistente na plataforma {{site.data.keyword.Bluemix_notm}}. ''''''junto de serviços do {{site.data.keyword.Bluemix_notm}} é ativado para usar o Cloud IAM para controle de acesso e é organizado em [grupos de recursos](/docs/admin/resourcegroups.html) dentro de sua conta para permitir que seja fornecido aos usuários acesso rápido e fácil a mais de um recurso de cada vez. As políticas de acesso ao Cloud IAM são usadas para designar aos usuários e IDs de serviço o acesso aos recursos em sua conta.
+O {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) permite que você autentique usuários com segurança para os serviços de plataforma e infraestrutura e controle o acesso aos recursos de forma consistente na plataforma {{site.data.keyword.Bluemix_notm}}. ''''''junto de serviços do {{site.data.keyword.Bluemix_notm}} é ativado para usar o Cloud IAM para controle de acesso e é organizado em [grupos de recursos](/docs/account/resourcegroups.html) dentro de sua conta para permitir que seja fornecido aos usuários acesso rápido e fácil a mais de um recurso de cada vez. As políticas de acesso ao Cloud IAM são usadas para designar aos usuários e IDs de serviço o acesso aos recursos em sua conta.
 
 Uma política designa a um usuário ou [ID de serviço](/docs/iam/serviceid.html#serviceids) uma ou mais funções com uma combinação de atributos que definem o escopo de acesso. A política pode fornecer acesso a um único serviço até o nível da instância ou a política pode se aplicar a um conjunto de recursos organizados juntos em um grupo de recursos. Dependendo das [funções de usuário](/docs/iam/users_roles.html#iamusermanrol) que você designa, o usuário ou ID de serviço é permitido diferentes níveis de acesso para concluir tarefas de gerenciamento de plataforma ou acessar um serviço usando a UI ou executar tipos específicos de chamadas API.
 

@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-11-16"
 
 ---
@@ -15,7 +15,7 @@ lastupdated: "2017-11-16"
 # Gestión de políticas de acceso de ID de servicio
 {: #serviceidpolicy}
 
-Al crear un ID de servicio, puede asignar políticas de servicio para dicho ID de servicio para controlar el nivel de acceso permitido cuando se utiliza para autenticarse con los servicios. Puede actualizar estas políticas de acceso asignadas en cualquier momento cambiando una política existente, suprimiendo una política o asignando una nueva. 
+Al crear un ID de servicio, puede asignar políticas de servicio para dicho ID de servicio para controlar el nivel de acceso permitido cuando se utiliza para autenticarse con los servicios. Puede actualizar estas políticas de acceso asignadas en cualquier momento cambiando una política existente, suprimiendo una política o asignando una nueva.
 
 **Nota**: Si suprime o edita una política existente para un ID de servicio actualmente en uso, puede causar una interrupción de servicio.
 
@@ -33,16 +33,16 @@ Para asignar acceso a todos los recursos de un grupo de recursos o solo a un ser
 8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario. Este acceso solo se aplica a los recursos que ha seleccionado para la política. No proporciona acceso al contenedor actual que es el grupo de recursos.
 9. Seleccione **Asignar**.
 
-Para asignar acceso a un recurso individual en la cuenta, complete los siguientes pasos: 
+Para asignar acceso a un recurso individual en la cuenta, complete los siguientes pasos:
 
 1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
 2. Seleccione el ID de servicio desde la tabla para la que desea asignar una política de servicios.
 3. Pulse **Asignar acceso**.
 4. Seleccione **Asignar por recurso**.
 5. Seleccione un servicio.
-6. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
+6. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita.
 7. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
-8. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
+8. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo.
     * **Tipo de recurso**: indique **grupo**.
     * **ID de recurso**: Especifique el nombre de su grupo.
 9. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.

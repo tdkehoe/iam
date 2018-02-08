@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -29,5 +29,4 @@ A mesure que les services commence à activer l'utilisation de Cloud IAM, vous p
 * Pour les instances existantes de votre compte qui utilisent déjà la gestion des accès Cloud Foundry en affectant des utilisateurs à une organisation et un espace avec un rôle Cloud Foundry, vous pouvez continuer à utiliser ces instances sans aucune modification.
 * Pour la création de nouvelles instances, vous affectez à chacune un groupe de ressources dans votre compte, puis vous pouvez utiliser Cloud IAM pour gérer l'accès à cette instance et au groupe de ressources auquel elle appartient, si vous être l'administrateur du groupe de ressources.
 
-Les services qui prennent en charge l'utilisation de Cloud IAM en tirent plusieurs avantages, notamment la possibilité de se connecter à des applications et des services dans n'importe quel espace Cloud Foundry, ce qui vous permet de vous connecter à des applications et des services à partir de différentes régions. De plus, chaque instance gérée par Cloud IAM appartient à un groupe de ressources et la portée des groupes de ressources n'est pas établie par région, de sorte que vous pouvez mettre à disposition des applications et des services issus de différentes régions dans un même groupe de ressources. Vous avez également la possibilité d'utiliser le contrôle d'accès à granularité fine jusqu'au niveau d'une instance individuelle. 
-
+Les services qui prennent en charge l'utilisation de Cloud IAM en tirent plusieurs avantages, notamment la possibilité de se connecter à des applications et des services dans n'importe quel espace Cloud Foundry, ce qui vous permet de vous connecter à des applications et des services à partir de différentes régions. De plus, chaque instance gérée par Cloud IAM appartient à un groupe de ressources et la portée des groupes de ressources n'est pas établie par région, de sorte que vous pouvez mettre à disposition des applications et des services issus de différentes régions dans un même groupe de ressources. Vous avez également la possibilité d'utiliser le contrôle d'accès à granularité fine jusqu'au niveau d'une instance individuelle.

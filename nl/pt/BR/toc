@@ -22,6 +22,7 @@ Gerenciando a identidade e o acesso
 
     {: .navgroup id="howto"}
     login_fedid.md
+    connect_dedicated_id.md
     iamuserinv.md
 
     {: .topicgroup}
@@ -30,6 +31,7 @@ Gerenciando a identidade e o acesso
         mngiam.md
         mngcf.md
         mnginfra.md
+
 
     {: .topicgroup}
     Trabalhando com serviços

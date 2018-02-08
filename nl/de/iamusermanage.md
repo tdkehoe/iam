@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-16"
 
@@ -28,13 +28,3 @@ Um Benutzer in Ihrem Konto zu verwalten, führen Sie die folgenden Schritte aus:
 
 Weitere Details zu den CLI-Befehlen, die zum Verwalten von Accounts, Organisationen und Bereichen verwendet werden, finden Sie unter [Befehle für die Verwaltung von Konten, Organisationen und Rollen](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}
-
-
-
-
-
-
-
-
-
-

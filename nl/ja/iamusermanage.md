@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-16"
 
@@ -28,13 +28,3 @@ lastupdated: "2017-11-16"
 
 アカウント、組織、およびスペースを管理するために使用される CLI コマンドの詳細については、[アカウント、組織、および役割を管理するためのコマンド](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)を参照してください。
 {: tip}
-
-
-
-
-
-
-
-
-
-

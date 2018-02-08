@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -39,12 +39,6 @@ Dans l'invitation de compte initiale, vous devez avoir défini certains droits i
 
 1. Cliquez sur l'icône de menu ![Icône de menu](../icons/icon_hamburger.svg), puis sélectionnez **Infrastructure**.
 2. Accédez à **Compte** &gt; **Utilisateurs**.
-3. Cliquez sur le lien de la colonne **Accès Terminal** pour l'utilisateur dont vous voulez mettre à jour l'accès. Le lien indique **Gérer** ou le nombre de périphériques auxquels l'utilisateur a accès. Vous pouvez également cliquer sur **Edit Portal Access** dans le menu Actions pour accéder à la page des droits. Dans cette page, sélectionnez l'onglet **Accès Terminal**. 
+3. Cliquez sur le lien de la colonne **Accès Terminal** pour l'utilisateur dont vous voulez mettre à jour l'accès. Le lien indique **Gérer** ou le nombre de périphériques auxquels l'utilisateur a accès. Vous pouvez également cliquer sur **Edit Portal Access** dans le menu Actions pour accéder à la page des droits. Dans cette page, sélectionnez l'onglet **Accès Terminal**.
 4. Sélectionnez les périphériques auxquels vous voulez accorder l'accès à l'utilisateur.
 5. Cliquez sur **Update Device Access**.
-
-
-
-
-
-

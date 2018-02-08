@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -25,12 +25,12 @@ Para gerenciar o acesso ou designar um novo acesso para usuários, deve-se ser o
 2. Selecione o nome do usuário para o qual você deseja designar acesso.
 3. Na linha da política que você deseja editar, selecione o menu **Ações** e, em seguida, clique em **Editar política**.
 4. Edite a política.
-5. Clique **Salvar.**
+5. Clique em **Salvar**.
 
 ## Designando novo acesso
 {: #assignaccess}
 
-### Acesso aos recursos dentro de um grupo de recursos 
+### Acesso aos recursos dentro de um grupo de recursos
 
 Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um serviço em um grupo de recursos, conclua as etapas a seguir:
 
@@ -46,15 +46,15 @@ Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um 
 ### Acesso a recursos
 {: #resourceaccess}
 
-Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir: 
+Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir:
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
 2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** e, em seguida, clique em **Designar acesso**.
 3. Selecione **Designar acesso a recursos**.
 4. Selecione um serviço ou selecione **Todos os serviços ativados pelo Identity and Access**.
-5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
+5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado.
 6. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito. 
+7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito.
     * **Tipo de recurso**: insira **depósito**.
     * **ID do recurso**: Insira o nome do bucket.
 8. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário.

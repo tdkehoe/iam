@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-11-16"
 
 ---
@@ -15,7 +15,7 @@ lastupdated: "2017-11-16"
 # Zugriffsrichtlinien für Service-IDs verwalten
 {: #serviceidpolicy}
 
-Wenn Sie eine Service-ID erstellen, dann können sie dieser Service-ID Servicerichtlinien zuweisen, um die Zugriffsebene zu steuern, die zulässig ist, wenn sie zur Authentifizierung bei Ihren Services verwendet wird. Sie können diese zugewiesenen Zugriffsrichtlinien jederzeit aktualisieren, indem Sie eine vorhandene Richtlinie ändern, eine Richtlinie löschen oder eine neue Richtlinie zuweisen. 
+Wenn Sie eine Service-ID erstellen, dann können sie dieser Service-ID Servicerichtlinien zuweisen, um die Zugriffsebene zu steuern, die zulässig ist, wenn sie zur Authentifizierung bei Ihren Services verwendet wird. Sie können diese zugewiesenen Zugriffsrichtlinien jederzeit aktualisieren, indem Sie eine vorhandene Richtlinie ändern, eine Richtlinie löschen oder eine neue Richtlinie zuweisen.
 
 **Hinweis:** Wenn Sie eine vorhandene Richtlinie für eine momentan verwendete Service-ID löschen oder bearbeiten, dann kann es zu Serviceunterbrechungen kommen.
 
@@ -33,16 +33,16 @@ Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für 
 8. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen. Dieser Zugriff gilt nur für die Ressourcen, die Sie für die Richtlinie ausgewählt haben. Der Zugriff auf den Container selbst, der die Ressourcengruppe darstellt, wird hingegen nicht erteilt.
 9. Wählen Sie **Zuweisen** aus.
 
-Führen Sie die folgenden Schritte aus, um die Zugriffsberechtigungen für eine einzelne Ressource im Konto zuzuweisen: 
+Führen Sie die folgenden Schritte aus, um die Zugriffsberechtigungen für eine einzelne Ressource im Konto zuzuweisen:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** &gt; **Service-IDs**.
 2. Wählen Sie die Service-ID, der Sie eine Servicerichtlinie zuweisen wollen, in der Tabelle aus.
 3. Klicken Sie auf **Zugriff zuweisen**.
 4. Wählen Sie die Option für die **Zuweisung nach Ressource** aus.
 5. Wählen Sie einen Service aus.
-6. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
+6. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
 7. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-8. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
+8. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen.
     * **Ressourcentyp**: Geben Sie **Bucket** ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 9. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen.

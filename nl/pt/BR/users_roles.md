@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -23,17 +23,17 @@ Todos os serviços que são organizados em um grupo de recursos em sua conta sã
 ## O que são políticas do Cloud IAM e quem pode designá-las?
 {: #iamusermanpol}
 
-É possível fornecer acesso para usuários e IDs de serviço criando políticas que configuram um destino para o usuário ou ID de serviço acessar e uma função que define qual tipo de acesso é permitido. Uma política concede a um usuário ou ID de serviço uma ou múltiplas funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto aplicável de recursos. Ao designar uma política, primeiro você escolhe entre configurar a política para um grupo de recursos ou um recurso individual. Em seguida, dependendo de sua seleção inicial, é possível selecionar um serviço dentro de um grupo de recursos ou uma única instância para o recurso selecionado. Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, é possível selecionar uma função ou funções, para designar. 
+É possível fornecer acesso para usuários e IDs de serviço criando políticas que configuram um destino para o usuário ou ID de serviço acessar e uma função que define qual tipo de acesso é permitido. Uma política concede a um usuário ou ID de serviço uma ou múltiplas funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto aplicável de recursos. Ao designar uma política, primeiro você escolhe entre configurar a política para um grupo de recursos ou um recurso individual. Em seguida, dependendo de sua seleção inicial, é possível selecionar um serviço dentro de um grupo de recursos ou uma única instância para o recurso selecionado. Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, é possível selecionar uma função ou funções, para designar.
 
 Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra as tarefas de gerenciamento de política e a função que é necessária para cada uma.
 
 | Ações | Função necessária |
 |----------|---------|
-| Criar uma política em uma conta para todos os serviços e instâncias | Proprietário ou administrador de conta em todos os serviços na conta | 
+| Criar uma política em uma conta para todos os serviços e instâncias | Proprietário ou administrador de conta em todos os serviços na conta |
 | Criar uma política em um serviço em uma conta | Proprietário ou administrador da conta no serviço na conta |
 | Criar uma política em uma instância de serviço | Proprietário da conta, administrador no serviço na conta, administrador em todos os serviços no grupo de recursos relevantes ou administrador na instância de serviço |
 | Criar uma política para gerenciar um grupo de recursos | Proprietário ou administrador da conta para um grupo de recursos |
-{: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"} 
+{: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"}
 
 
 ## Funções do Cloud IAM
@@ -42,11 +42,11 @@ Será possível designar e gerenciar políticas se você possuir a função adeq
 Com o Cloud IAM, é possível gerenciar e definir acesso para usuários e recursos em sua conta. Se o serviço que você usa pode ser gerenciado usando o IAM, há dois tipos de funções que podem ser designadas: funções de gerenciamento de plataforma e funções de acesso ao serviço.
 
 <dl>
-<dt>Funções de gerenciamento de plataforma</dt> 
+<dt>Funções de gerenciamento de plataforma</dt>
 <dd>As funções de gerenciamento de plataforma abrangem uma gama de ações, incluindo a capacidade de criar instâncias, gerenciar IDs de serviço, gerenciar usuários e permissões e criar grupos de recursos. As funções da plataforma mais comuns são administrador, editor, operador, visualizador. </dd>
 <dt>Funções de acesso de serviço</dt>
 <dd>As funções de acesso ao serviço definem a capacidade de um usuário ou serviço para executar ações em uma instância de serviço, como acessar a UI ou executar chamadas API. Há três funções possíveis: gerenciador, gravador e leitor. </dd>
-</dl> 
+</dl>
 
 Você pode não ver todas as funções listadas como opções ao designar políticas na UI, pois somente as funções disponíveis para o serviço que você selecionou na política são exibidas. Para obter informações específicas sobre quais funções são ativadas e quais ações que cada função de acesso permite para cada serviço, consulte a documentação para esse serviço.
 {: tip}
@@ -60,7 +60,7 @@ Usando uma combinação dessas funções em uma política de acesso único, é p
 * Recursos em uma instância individual
 * Um tipo de recurso único em uma instância, por exemplo, um depósito em uma instância do {{site.data.keyword.objectstorageshort}}
 
-Para permitir que outro usuário tenha acesso total à conta com o propósito de gerenciar acesso de usuário e gerenciar todos os recursos da conta, incluindo a capacidade de criar grupos de recursos, configure uma política que dê ao usuário acesso a todos os recursos da conta selecionando **Todos os serviços ativados pelo Identity and Access** com a função **Administrador** designada. 
+Para permitir que outro usuário tenha acesso total à conta com o propósito de gerenciar acesso de usuário e gerenciar todos os recursos da conta, incluindo a capacidade de criar grupos de recursos, configure uma política que dê ao usuário acesso a todos os recursos da conta selecionando **Todos os serviços ativados pelo Identity and Access** com a função **Administrador** designada.
 {: tip}
 
 ### Funções de gerenciamento de plataforma
@@ -100,5 +100,3 @@ As funções de acesso ao serviço permitem que os usuários sejam designados a 
 | Gravador | Escritores têm permissões além da função leitor, incluindo a criação e a edição de recursos específicos do serviço. | Criar e destruir depósitos e objetos |
 | Gerente | Gerentes têm permissões além da função de escritor para concluir ações privilegiadas, conforme definido pelo serviço. Além disso, é possível criar e editar recursos específicos do serviço. | Gerenciar todos os aspectos de armazenamento de dados, criar e destruir depósitos e objetos |
 {: caption="Tabela 4. Exemplo de funções de usuário e ações de acesso ao serviço" caption-side="top"}
-
-

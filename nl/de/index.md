@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-01-10"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-11-16"
 
 ## Was ist Cloud IAM?
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ermöglicht Ihnen die sichere Authentifizierung von Benutzern für Plattform- und Infrastrukturservices und die einheitliche Steuerung des Zugriffs auf Ressourcen innerhalb der {{site.data.keyword.Bluemix_notm}}-Plattform. Ein Set von {{site.data.keyword.Bluemix_notm}}-Services sind für die Nutzung von Cloud IAM zur Zugriffssteuerung aktiviert und in [Ressourcengruppen](/docs/admin/resourcegroups.html) innerhalb Ihres Kontos organisiert. Auf diese Weise erhalten Benutzer den schnellen und einfachen Zugriff auf mehrere Ressourcen gleichzeitig. Die Cloud IAM-Zugriffsrichtlinien werden verwendet, um Benutzern und Service-IDs die Zugriffsberechtigungen für die Ressourcen innerhalb Ihres Kontos zuzuweisen.
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ermöglicht Ihnen die sichere Authentifizierung von Benutzern für Plattform- und Infrastrukturservices und die einheitliche Steuerung des Zugriffs auf Ressourcen innerhalb der {{site.data.keyword.Bluemix_notm}}-Plattform. Ein Set von {{site.data.keyword.Bluemix_notm}}-Services sind für die Nutzung von Cloud IAM zur Zugriffssteuerung aktiviert und in [Ressourcengruppen](/docs/account/resourcegroups.html) innerhalb Ihres Kontos organisiert. Auf diese Weise erhalten Benutzer den schnellen und einfachen Zugriff auf mehrere Ressourcen gleichzeitig. Die Cloud IAM-Zugriffsrichtlinien werden verwendet, um Benutzern und Service-IDs die Zugriffsberechtigungen für die Ressourcen innerhalb Ihres Kontos zuzuweisen.
 
 Eine Richtlinie weist einer Benutzer- oder einer [Service-ID](/docs/iam/serviceid.html#serviceids) mindestens eine Rolle mit einer Kombination aus Attributen zu, die den Geltungsbereich der Zugriffsberechtigungen definieren. Die Richtlinie kann Zugriff auf einen einzelnen Service bis auf die Instanzebene erteilen, oder für ein Set von Ressourcen gelten, die in einer Ressourcengruppe organisiert sind. Abhängig von den von Ihnen zugewiesenen [Benutzerrollen](/docs/iam/users_roles.html#iamusermanrol) erhält die Benutzer- oder Service-ID variierende Ebenen des Zugriffs zur Ausführung von Tasks für das Plattformmanagement oder für den Zugriff auf einen Service mithilfe einer Benutzerschnittstelle oder durch Ausführung bestimmter Typen von API-Aufrufen.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-última atualização: "16-11-2017"
+lastupdated: "2017-11-16"
 
 ---
 
@@ -55,4 +55,3 @@ Se for necessário revisar seu acesso designado em uma conta à qual tenha sido 
 3. Revise suas funções designadas na seção de acesso ao Cloud Foundry.
 
 Se você precisa de acesso adicional, deve-se entrar em contato com o gerenciador de organização ou proprietário da conta para atualizar sua função designada do Cloud Foundry.
-
