@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -55,4 +55,3 @@ lastupdated: "2017-11-16"
 3. 在 Cloud Foundry 存取區段中，檢閱已指派的角色。
 
 如果您需要其他存取權，則必須與組織管理員或帳戶擁有者聯絡，以更新已指派的 Cloud Foundry 角色。
-

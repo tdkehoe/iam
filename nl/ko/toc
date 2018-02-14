@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="iam" audience="platform" href="/docs/iam/quickstart.html"}
-Identity and Access Management
+ID 및 액세스 관리
 
     {: .navgroup id="learn"}
     quickstart.md
@@ -22,6 +22,7 @@ Identity and Access Management
 
     {: .navgroup id="howto"}
     login_fedid.md
+    connect_dedicated_id.md
     iamuserinv.md
 
     {: .topicgroup}
@@ -30,6 +31,7 @@ Identity and Access Management
         mngiam.md
         mngcf.md
         mnginfra.md
+
 
     {: .topicgroup}
     서비스 작업

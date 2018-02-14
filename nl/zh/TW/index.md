@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-01-10"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-11-16"
 
 ## 何謂 Cloud IAM？
 
-「{{site.data.keyword.Bluemix_notm}} 身分及存取管理 (IAM)」可讓您安全地鑑別平台及基礎架構服務的使用者，並跨 {{site.data.keyword.Bluemix_notm}} 平台一致地控制資源的存取。讓一組 {{site.data.keyword.Bluemix_notm}} 服務使用 Cloud IAM 來存取控制，並在帳戶內組織為[資源群組](/docs/admin/resourcegroups.html)，讓使用者可以同時快速並輕鬆地存取多個資源。Cloud IAM 存取原則是用來指派使用者及服務 ID 對帳戶內資源的存取權。
+「{{site.data.keyword.Bluemix_notm}} 身分及存取管理 (IAM)」可讓您安全地鑑別平台及基礎架構服務的使用者，並跨 {{site.data.keyword.Bluemix_notm}} 平台一致地控制資源的存取。讓一組 {{site.data.keyword.Bluemix_notm}} 服務使用 Cloud IAM 來存取控制，並在帳戶內組織為[資源群組](/docs/account/resourcegroups.html)，讓使用者可以同時快速並輕鬆地存取多個資源。Cloud IAM 存取原則是用來指派使用者及服務 ID 對帳戶內資源的存取權。
 
 原則會使用用於定義存取範圍的屬性組合，將一個以上的角色指派給使用者或[服務 ID](/docs/iam/serviceid.html#serviceids)。原則可以提供單一服務（直到實例層次）的存取權，也可以套用至一組在資源群組中組織在一起的資源。根據您指派的[使用者角色](/docs/iam/users_roles.html#iamusermanrol)，容許使用者或服務 ID 有不同的存取層次來完成平台管理作業，或使用使用者介面或執行特定類型的 API 呼叫來存取服務。
 

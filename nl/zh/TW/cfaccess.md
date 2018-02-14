@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -22,7 +22,7 @@ lastupdated: "2017-11-16"
 ## Cloud Foundry 角色
 {: #cfroles}
 
-Cloud Foundry 角色會授與帳戶內組織及空間的存取權。Cloud Foundry 角色不會啟用使用者許可權，以在帳戶中的服務環境定義內完成動作。 
+Cloud Foundry 角色會授與帳戶內組織及空間的存取權。Cloud Foundry 角色不會啟用使用者許可權，以在帳戶中的服務環境定義內完成動作。
 
 您可以在組織層次指派下列角色：
 

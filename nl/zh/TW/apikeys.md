@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 lastupdated: "2017-08-23"
 
 ---
@@ -25,5 +25,3 @@ API 金鑰可以與下列項目相關聯：
 您可以建立及使用鏈結至您帳戶的 API 金鑰。聯合或非聯合使用者可以建立 API 金鑰以在 CLI 上使用，或是在自動化作業之中使用，以您的使用者身分登入。如需使用與您使用者身分相關聯的 API 金鑰的相關資訊，請參閱[管理使用者 API 金鑰](userid_keys.html)。
 
 您也可以使用與所建立服務 ID 相關聯的 API 金鑰。服務 ID 是用來將 {{site.data.keyword.Bluemix_notm}} 內部或外部的應用程式連接至 {{site.data.keyword.Bluemix_notm}} 服務。如需建立與服務 ID 相關聯的 API 金鑰的相關資訊，請參閱[管理服務 ID API 金鑰](serviceid_keys.html)。
-
-

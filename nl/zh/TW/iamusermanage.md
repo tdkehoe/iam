@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-16"
 
@@ -28,13 +28,3 @@ lastupdated: "2017-11-16"
 
 如需用來管理帳戶、組織及空間的 CLI 指令的詳細資料，請參閱[用來管理帳戶、組織及角色的指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)。
 {: tip}
-
-
-
-
-
-
-
-
-
-

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-01-10"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-11-16"
 
 ## 什么是 Cloud IAM？
 
-通过 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM)，您可以在整个 {{site.data.keyword.Bluemix_notm}} 平台上以一致的方式，安全地对平台和基础架构服务的用户进行认证并控制对资源的访问权。支持一组 {{site.data.keyword.Bluemix_notm}} 服务使用 Cloud IAM 进行访问控制，这些服务在您的帐户中组织成[资源组](/docs/admin/resourcegroups.html)，让用户能够快速、轻松地一次访问多个资源。Cloud IAM 访问策略用于为用户和服务标识分配对帐户中资源的访问权。
+通过 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM)，您可以在整个 {{site.data.keyword.Bluemix_notm}} 平台上以一致的方式，安全地对平台和基础架构服务的用户进行认证并控制对资源的访问权。支持一组 {{site.data.keyword.Bluemix_notm}} 服务使用 Cloud IAM 进行访问控制，这些服务在您的帐户中组织成[资源组](/docs/account/resourcegroups.html)，让用户能够快速、轻松地一次访问多个资源。Cloud IAM 访问策略用于为用户和服务标识分配对帐户中资源的访问权。
 
 策略通过属性组合来定义访问权的作用域，从而为用户或[服务标识](/docs/iam/serviceid.html#serviceids)分配一个或多个角色。策略可以提供对单个服务下至实例级别的访问权，策略也可以应用于组织成资源组的一组资源。根据分配的[用户角色](/docs/iam/users_roles.html#iamusermanrol)，允许用户或服务标识具有不同级别的访问权，以通过使用 UI 或执行特定类型的 API 调用来完成平台管理任务或访问服务。
 
@@ -46,4 +46,4 @@ lastupdated: "2017-11-16"
 
 要使用 UI 来访问 Cloud IAM，请转至**管理** &gt; **安全** &gt; **身份和访问权**。
 
-要使用 CLI 来访问 Cloud IAM ，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
+要使用 CLI 来访问 Cloud IAM，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。

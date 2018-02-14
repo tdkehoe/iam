@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2017
+  years: 2017, 2018
 
 lastupdated: "2017-11-16"
 
@@ -22,7 +22,7 @@ lastupdated: "2017-11-16"
 ## Cloud Foundry 角色
 {: #cfroles}
 
-Cloud Foundry 角色授予对帐户内组织和空间的访问权。Cloud Foundry 角色不会授予用户在帐户的服务上下文中完成操作的许可权。 
+Cloud Foundry 角色授予对帐户内组织和空间的访问权。Cloud Foundry 角色不会授予用户在帐户的服务上下文中完成操作的许可权。
 
 可以在组织级别分配以下角色：
 
