@@ -17,6 +17,14 @@ lastupdated: "2018-02-14"
 # IAM video transcript
 {: #transcript}
 
+When you choose to assign access to a user in the Identity and Access Management (IAM) UI, you are prompted with a few choices by which you can assign access: by resource group, resource, or Cloud Foundry access. On this page is a video that introduces users to the new fine-grained access that IAM provides through access to resources and resources within resource groups. The following section provides the transcript for this video for users who might need an alternative format or a translated version.
+
+## Video
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="https://youtu.be/_I8Yui8ke_I" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Video transcript
+
 Previously, assigning user access was limited to Cloud Foundry orgs and spaces. 
 
 Now with the new IBM Cloud Identity and Access Management, fine-grained access control is available!
