@@ -90,7 +90,7 @@ lastupdated: "2018-01-16"
     
       ```
     
-    * 環境変数を設定します。さらに、ご使用のシステムにも環境変数を設定できます。 例えば、BLUEMIX_API_KEY=api_key_string と指定します。ここで、`api_key_string` は、API キーのカスタム値です。 環境変数が設定された後は、CLI から単純に `bluemix login` を指定できます。 
+    * 環境変数を設定します。 さらに、ご使用のシステムにも環境変数を設定できます。 例えば、BLUEMIX_API_KEY=api_key_string と指定します。ここで、`api_key_string` は、API キーのカスタム値です。 環境変数が設定された後は、CLI から単純に `bluemix login` を指定できます。 
   
   Cloud Foundry CLI を使用してログインするには、以下のように、ユーザー名として `apikey` を指定し、パスワードとして API キー・ストリングを指定します。
 
