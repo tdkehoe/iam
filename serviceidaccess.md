@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-02-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 When you create a service ID, you can assign service policies for that service ID to control the level of access that is allowed when it is used to authenticate with your services. You can update these assigned access policies at any time by changing an existing policy, deleting a policy, or assigning a new one.
 
-**Note**: If you delete or edit an existing policy for a service ID currently being used, it might cause service interupption.
+**Note**: If you delete or edit an existing policy for a service ID currently being used, it might cause service interuption.
 
 ## Assigning new access
 
