@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-01-11"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -20,11 +20,14 @@ You can set the following initial permission sets when you invite a user:
 
 | Permission set | Description of actions |
 |---------------------------|------------------------|
-|View Only | Users with this permission can only view items within the system.|
-|Basic User | Users with this permission can perform basic actions within the system, such as managing devices they have been granted access to. |
+|View Only | Users with this permission can only view items within the system. For example, users can view tickets, hardware and virtual server details, licenses, bandwidth details, and the account summary which includes invoices and payments.  |
+|Basic User | Users with this permission can view, search, add, and edit tickets, manage devices they have been granted access to, add IP addresses, manage email delivery services, add, edit, and view DNS records, add new users with access to infrastructure, and manage notifications.  |
 |Super User | Users with this permission can perform all actions available in the system. |
 {:caption="Table 1. Infrastructure permissions" caption-side="top"}
 
-Additional permissions can be set after the user has accepted the invitation. The initial permission set assigned on the invitation does not grant access to devices, so you must grant device access in the control portal after the user has accepted the invitation.
+Additional permissions can be set after the user has accepted the invitation. The initial permission set assigned on the invitation does not grant access to devices, so you must grant device access in the control portal after the user has accepted the invitation. 
 
 Go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure** to access the control portal for working with user permissions for infrastructure. Going to **Account** &gt; **Users** displays your users list where you can set device access and other infrastructure permissions. For more information, go to [Managing infrastructure access](/docs/iam/mnginfra.html#managing-infrastructure-access).
+
+
+
