@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -29,3 +29,10 @@ To create a service ID, go to **Manage** &gt; **Security** &gt; **Identity and A
 ## Updating a service ID
 
 You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. However, any changes you make to an existing service ID, such as changing the assigned policies or deleting an API key that is currently being used, might cause service interruptions to applications using that service ID.
+
+## Examples of how to use a service ID
+
+The following are examples of how a Service ID is used with the {{site.data.keyword.objectstorageshort}} and Cloud SQL Query services.
+
+- {{site.data.keyword.objectstorageshort}} - [Getting Started](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-).
+- Cloud SQL Query - [How to use the SQL Query REST API ![External link icon](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
