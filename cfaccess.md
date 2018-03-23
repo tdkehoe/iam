@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-23"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2017-11-16"
 {: #cfaccess}
 
 At this time, not all services can be managed by using Cloud IAM. You can continue to use Cloud Foundry for these service instances by providing users access to the org and space to which the instance belongs with a Cloud Foundry role assigned to define the level of access that is allowed.
+
+
+![Access model using Cloud Foundry orgs and spaces in an account](images/cf-diagram.svg "How access in an account works by using Cloud Foundry orgs, spaces, and roles")
 
 
 ## Cloud Foundry roles
