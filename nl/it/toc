@@ -1,0 +1,47 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="iam" audience="platform" href="/docs/iam/quickstart.html"}
+Gestione di identità e accesso
+
+    {: .navgroup id="learn"}
+    quickstart.md
+
+    {: .topicgroup}
+    Cos'è IAM?
+        index.md
+        iam_overview.md
+        cf_iam.md
+
+    {: .topicgroup}
+    Ruoli utente e autorizzazioni
+        users_roles.md
+        cfaccess.md
+        infrastructureaccess.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    login_fedid.md
+    connect_dedicated_id.md
+    iamuserinv.md
+
+    {: .topicgroup}
+    Gestione di utenti e accesso
+        iamusermanage.md
+        mngiam.md
+        mngcf.md
+        mnginfra.md
+
+
+    {: .topicgroup}
+    Gestione dei servizi
+        serviceid.md
+        serviceidaccess.md
+        authorizations.md
+
+    {: .topicgroup}
+    Chiavi API
+        apikeys.md
+        userid_keys.md
+        serviceid_keys.md
+    {: .navgroup-end}
