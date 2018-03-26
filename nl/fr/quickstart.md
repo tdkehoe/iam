@@ -21,7 +21,7 @@ Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapideme
 Ce tutoriel concerne les ressources gérées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
-## Etape 1 : invitez des utilisateurs et affectez-leur un accès initial
+## Etape 1 : Inviter des utilisateurs et leur affecter un accès initial
 
 Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour ces utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section Accès de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
 
@@ -38,7 +38,7 @@ En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM a
 
 Pour plus d'informations, voir [Invitation d'utilisateurs et affectation d'accès](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Etape 2 : Gérez l'accès d'utilisateurs existants
+## Etape 2 : Gérer l'accès d'utilisateurs existants
 
 Après avoir invité des utilisateurs et leur avoir affecté un accès initial, vous voudrez sans doute leur affecter des accès supplémentaires ou éditer leur accès initial pour vous assure que tous les utilisateurs de votre compte bénéficient du niveau d'accès souhaité.
 

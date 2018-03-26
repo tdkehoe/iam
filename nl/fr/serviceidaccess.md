@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-02-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 Lorsque vous créez un ID de service, vous pouvez affecter des règles de service pour cet ID de service afin de contrôler le niveau d'accès autorisé lorsqu'il est utilisé pour l'authentification auprès de vos services. Vous pouvez mettre à jour les règles d'accès affectées à tout moment en changeant une règle existante, en supprimant une règle ou en en affectant une nouvelle.
 
-**Remarque** : si vous supprimez ou éditer une règle existante pour un ID de service en cours d'utilisation, cela peut entraîner une interruption de service.
+**Remarque** : le fait de supprimer ou d'éditer une règle existante pour un ID de service en cours d'utilisation peut entraîner une interruption de service.
 
 ## Affectation d'un nouvel accès
 
