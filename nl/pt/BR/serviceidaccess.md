@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-02-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 Ao criar um ID de serviço, é possível designar políticas de serviço para esse ID de serviço para controlar o nível de acesso permitido quando ele é usado para autenticação nos serviços. É possível atualizar essas políticas de acesso designadas a qualquer momento mudando uma política existente, excluindo uma política ou designando uma nova.
 
-**Nota**: se você excluir ou editar uma política existente para um ID de serviço que estiver sendo usado atualmente, ela poderá causar interrupção de serviço.
+**Nota**: se você excluir ou editar uma política existente para um ID de serviço atualmente sendo usado, isso poderá causar interrupção de serviço.
 
 ## Designando novo acesso
 

@@ -67,7 +67,7 @@ Para permitir que outro usuário tenha acesso total à conta com o propósito de
 
 As funções de gerenciamento de plataforma permitem que os usuários sejam designados a diferentes níveis de permissão para executar ações da plataforma na conta. Além das descrições das funções fornecidas no console, as tabelas a seguir fornecem exemplos para algumas das ações de gerenciamento de plataforma que os usuários designados a cada função podem executar. É possível consultar a documentação para cada serviço para entender como as funções se aplicam a usuários dentro do contexto do serviço que está sendo usado.
 
-| Detalhes da política de acesso | Ações que um usuário pode executar em serviços na conta | Ações para IDs de serviço | Ações para acesso a grupos de recursos | Ação em recursos em grupos de recursos |
+| Detalhes da política de acesso  | Ações que um usuário pode executar em serviços na conta | Ações para IDs de serviço | Ações para acesso a grupos de recursos | Ação em recursos em grupos de recursos |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|
 | Designar acesso a | Um ou todos os serviços ativados por IAM | Serviço de identidade do IAM | Grupo de recursos selecionados | Serviço selecionado em um grupo de recursos |
 | Função de visualizador | Visualizar instâncias, aliases, ligações e credenciais | Visualizar IDs e chaves API | Visualizar grupo de recursos | Visualizar somente instâncias especificadas no grupo de recursos |
