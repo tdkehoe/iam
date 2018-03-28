@@ -67,7 +67,7 @@ Otorgar acceso completo a la cuenta a otro usuario, con el propósito de gestion
 
 Los roles de gestión de plataforma permiten asignar a los usuarios distintos niveles de permiso para realizar acciones de plataforma en la cuenta. Además de las descripciones de los roles que se proporcionan en la consola, las siguientes tablas proporcionan ejemplos para algunas de acciones de gestión de plataforma que los usuarios asignados a cada rol pueden hacer. Puede consultar la documentación de cada servicio para saber cómo se aplican los roles a los usuarios en el contexto del servicio que está utilizando.
 
-| Detalles de política de acceso | Acciones que un usuario puede realizar en servicios de la cuenta | Acciones para ID de servicio | Acciones para acceder a grupos de recursos | Acción en recursos dentro de grupos de recursos |
+| Detalles de política de acceso  | Acciones que un usuario puede realizar en servicios de la cuenta | Acciones para ID de servicio | Acciones para acceder a grupos de recursos | Acción en recursos dentro de grupos de recursos |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|
 | Asignar acceso a | Uno o todos los servicios habilitados de IAM | Servicio de identidad IAM | Grupo de recursos seleccionado | Servicio seleccionado en un grupo de recursos |
 | Rol Visor | Ver instancias, alias, enlaces y credenciales | Ver ID y claves de API | Ver grupo de recursos | Ver solo instancias especificadas en el grupo de recursos |
