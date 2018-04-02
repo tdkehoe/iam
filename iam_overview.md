@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -40,6 +40,8 @@ You can review the following list to learn more about these Cloud IAM components
 <dl>
 <dt>Users</dt>
 <dd>All users within an account are identified by their IBMids. Users can be invited to the account and given access to resources. Access can be assigned to individual resources, down to the instance level, or to a set of resources that are organized in an account resource group.</dd>
+<dt>Access group</dt>
+<dd>A group of users and service IDs can be created by the account owner so that the same access can be assigned to all entities within the group with a single policy.</dd>
 <dt>Resources</dt>
 <dd>Account resources are the provisioned service offerings that are selected from the catalog or finer-grained resources within a service instance.</dd>
 <dt>Policies</dt>
