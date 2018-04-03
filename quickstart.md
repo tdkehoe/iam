@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -38,9 +38,41 @@ As the account owner, you can assign Cloud IAM roles for users that you invite i
 
 For more information, see [Inviting users and assigning access](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Step 2: Manage access for existing users
+## Step 2: Create access groups
 
-After you have invited users and assigned initial access, you might want to assign additional access or edit the initial access that you assigned to ensure all of the users in your account have the desired level of access.
+To streamline the process of assigning access to users in your account, you can create access groups which are made up of users and service IDs that you select, then you can then easily assign access by defining a single policy for the entire group.
+
+### Set up your groups
+
+To create an access group, complete the following steps:
+
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Access Groups**.
+2. Click **Create**.
+3. Enter a name and optional description for your group, and click **Create**.
+
+Next, continue to set up your group by adding users or service IDs:
+
+1. Select the name of the group that you want to add to.
+2. Click **Add users**.
+3. Select the users that you want to add from the list, and click **Add to group**.
+4. To add service IDs to the group, click the **Service IDs** tab and click **Add service ID**.
+5. Select the IDs that you want to add from the list, and click **Add to group**.
+
+### Assign access to your groups
+
+After you have created your groups, you can assign access to all entities within the group with a single policy.
+
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Access Groups**.
+2. Select the name of the group that you want to assign access for.
+3. Click **Assign access** to set up a policy that assigns access to a single resource in the account or all resources within a resource group.
+
+By organizing resources in resource groups and users in access groups, you can assign a group of users access to a group of resources with a single policy thereby reducing the overall number of policies you need to manage.
+{: tip}
+
+
+## Step 3: Manage access for existing users
+
+After you have invited users, assigned initial access, and created your access groups, you might want to assign additional access or edit the initial access that you assigned to ensure all users and groups in your account have the desired level of access.
 
 ### Assigning new access
 

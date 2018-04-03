@@ -3,7 +3,9 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+
+lastupdated: "2018-04-02"
+
 
 ---
 
@@ -32,7 +34,7 @@ To create an access group, complete the following steps:
 Next, continue to set up your group by adding users or service IDs:
 
 1. Select the name of the group that you want to add to.
-2. Click **Add users** on the **Users** tab. 
+2. Click **Add users** on the **Users** tab.
 3. Select the users that you want to add from the list, and click **Add to group**.
 4. To add service IDs to the group, click the **Service IDs** tab, and click **Add service ID**.
 5. Select the IDs that you want to add from the list, and click **Add to group**.
