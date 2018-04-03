@@ -67,7 +67,7 @@ Per consentire a un altro utente l'accesso completo all'account ai fini della ge
 
 I ruoli di gestione della piattaforma consentono di assegnare agli utenti diversi livelli di autorizzazione per l'esecuzione di azioni della piattaforma all'interno dell'account. Oltre alle descrizioni dei ruoli fornite nella console, le seguenti tabelle forniscono esempi di alcune azioni di gestione della piattaforma che gli utenti assegnati a ciascun ruolo possono eseguire. Puoi fare riferimento alla documentazione di ciascun servizio per comprendere in che modo i ruoli vengano applicati agli utenti nel contesto del servizio utilizzato.
 
-| Dettagli della politica di accesso | Azioni che un utente può eseguire sui servizi dell'account | Azioni per gli ID di servizio | Azioni per l'accesso ai gruppi di risorse | Azione sulle risorse nei gruppi di risorse |
+| Dettagli della politica di accesso  | Azioni che un utente può eseguire sui servizi dell'account | Azioni per gli ID di servizio | Azioni per l'accesso ai gruppi di risorse | Azione sulle risorse nei gruppi di risorse |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|
 | Assegna accesso a | Uno o tutti i servizi abilitati a IAM | Servizio di identità IAM | Gruppo di risorse selezionato | Servizio selezionato in un gruppo di risorse |
 | Ruolo visualizzatore | Visualizzare istanze, alias, bind e credenziali | Visualizzare ID e chiavi API | Visualizzare il gruppo di risorse | Visualizzare solo le istanze specificate nel gruppo di risorse |
