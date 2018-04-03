@@ -3,7 +3,9 @@
 copyright:
 
   years: 2018
+
 lastupdated: "2018-04-02"
+
 
 ---
 
@@ -46,7 +48,7 @@ You can delete a group by selecting the **Remove group** option. When you remove
 After you have set up your group with the users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
 
 1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Access Groups**.
-2. Select the name of the group that you want to assign access to.
+2. Select the name of the group that you want to assign access to. 
 3. Click the **Access policies** tab.
-4. Click **Assign access**.
+4. Click **Assign access**. 
 5. Choose to assign access by resources within a resource group or individual resources available within the account.
