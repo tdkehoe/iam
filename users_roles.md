@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-04-04"
 
 ---
 
@@ -23,17 +23,17 @@ All services that are organized into a resource group in your account are manage
 ## What are Cloud IAM policies and who can assign them?
 {: #iamusermanpol}
 
-A policy grants a user or service ID one or multiple roles to a set of resources to enable specific actions to be taken within the context of the specified target resources. When you assign a policy, you first choose from setting the policy for a resource group or an individual resource. Then, depending on your initial selection, you can select a service within a resource group or a single instance for the selected resource. More configuration options might be available, depending on the service you select. Finally, you can select a role, or roles, to assign.
+A policy grants a user or service ID one or multiple roles to a set of resources to enable specific actions to be taken within the context of the specified target resources. When you assign a policy, you first choose from setting the policy for a resource group or an individual resource. Then, depending on your initial selection, you can select a service within a resource group or a single instance for the selected resource. More configuration options might be available, depending on the service you select. Finally, you can select a role, or roles, to assign. 
 
 You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
 | Action | Required role |
 |----------|---------|
-| Create a policy in an account for all services and instances | Account owner or administrator on all services in the account |
+| Create a policy in an account for all services and instances | Account owner or administrator on all services in the account | 
 | Create a policy on a service in an account | Account owner or administrator on the service in the account |
 | Create a policy on a service instance | Account owner, administrator on the service in the account, administrator on all services in the relevant resource group, or administrator on the service instance |
 | Create a policy to manage a resource group | Account owner or administrator to a resource group |
-{: caption="Table 1. Users allowed to create access policies" caption-side="top"}
+{: caption="Table 1. Users allowed to create access policies" caption-side="top"} 
 
 
 ## Cloud IAM roles
@@ -42,11 +42,11 @@ You can assign and manage policies if you have the proper role. The following ta
 With Cloud IAM, you can manage and define access for users and resources in your account. There are two types of roles that can be assigned: platform management roles and service access roles.
 
 <dl>
-<dt>Platform management roles</dt>
+<dt>Platform management roles</dt> 
 <dd>Platform management roles cover a range of actions, including the ability to create instances, manage service IDs, manage users and permissions, and create resource groups. The most common platform roles are administrator, editor, operator, viewer. </dd>
 <dt>Service access roles</dt>
 <dd>Service access roles define a user or service’s ability to perform actions on a service instance such as accessing the UI or performing API calls. There are three possible roles: manager, writer, and reader. </dd>
-</dl>
+</dl> 
 
 You might not see all of the roles listed as options when you assign policies in the UI because only the roles available for the service that you have selected are displayed. For specific information on what roles are enabled and what actions each access role allows for each service, refer to the documentation for that service.
 {: tip}
@@ -60,20 +60,20 @@ By using a combination of these roles in a single access policy, you can provide
 * Resources in an individual instance
 * A single resource type within an instance, for example, a bucket in a {{site.data.keyword.objectstorageshort}} instance
 
-To enable another user full access to the account for the purposes of managing user access and managing all account resources including the ability to create resource groups, set up a policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** role assigned.
+To enable another user full access to the account for the purposes of managing user access and managing all account resources including the ability to create resource groups, set up a policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** role assigned. 
 {: tip}
 
 ### Platform management roles
 
 Platform management roles enable users to be assigned varying levels of permission for performing platform actions within the account. The following tables provide examples for some of the platform management actions that users assigned each role can do. You can refer to the documentation for each service to understand how the roles apply to users within the context of the service that is being used.
 
-| Access policy details  | Actions a user can perform on services in the account | Actions for service IDs | Actions for access to resource groups | Action on resources within resource groups |
-|:-----------------|:--------------|:---------------|:----------------|:-----------------|
-| Assign access to | One or all IAM-enabled services | IAM Identity Service | Selected resource group | Selected service in a resource group |
-| Viewer role | View instances, aliases, bindings, and credentials | View IDs and API keys | View resource group | View only specified instances in the resource group |
-| Operator role |  View instances and manage aliases, bindings, and credentials | Not applicable | Not applicable | Not applicable |
-| Editor role |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create and delete IDs and API keys | View and edit name of resource group | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group |
-| Administrator role |  All management actions for services | Create and delete IDs and API keys, assign policies to IDs | View, edit, and manage access for the resource group | All management actions for the specified instances in the resource group |
+| Access policy details  | Actions a user can perform on services in the account | Actions for service IDs | Actions for access to resource groups | Action on resources within resource groups | Actions for managing access groups |
+|:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
+| Assign access to | One or all IAM-enabled services | IAM Identity Service | Selected resource group | Selected service in a resource group | IAM Access Groups |
+| Viewer role | View instances, aliases, bindings, and credentials | View IDs and API keys | View resource group | View only specified instances in the resource group | View access groups and members |
+| Operator role |  View instances and manage aliases, bindings, and credentials | Not applicable | Not applicable | Not applicable | Not applicable |
+| Editor role |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create and delete IDs and API keys | View and edit name of resource group | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View, create, delete, and edit access groups in the account |
+| Administrator role |  All management actions for services | Create and delete IDs and API keys, assign policies to IDs | View, edit, and manage access for the resource group | All management actions for the specified instances in the resource group | View, create, delete, edit, and manage access for working with access groups |
 {: caption="Table 2. Example platform management roles and actions" caption-side="top"}
 {: #platformrolestable}
 
@@ -101,3 +101,4 @@ Service access roles enable users to be assigned different levels of permission 
 | Writer | Writers have permissions beyond the reader role, including creating and editing service-specific resources. | Create and destroy buckets and objects |
 | Manager | Managers have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | Manage all aspects of data storage, create and destroy buckets and objects |
 {: caption="Table 4. Example service access user roles and actions" caption-side="top"}
+
