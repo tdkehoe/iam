@@ -22,6 +22,8 @@ lastupdated: "2018-04-05"
 
 A policy assigns a user or [service ID](/docs/iam/serviceid.html#serviceids) one or more roles with a combination of attributes that define the scope of access. The policy can provide access to a single service down to the instance level, or the policy can apply to a set of resources organized together in a resource group. Depending on the [user roles](/docs/iam/users_roles.html#iamusermanrol) that you assign, the user or service ID is allowed varying levels of access for completing platform management tasks or accessing a service by using the UI or performing specific types of API calls.
 
+![IAM for access control in an account](images/iam-diagram.svg "How access management works in an account by using IAM")
+
 For services that do not support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess).
 
 
