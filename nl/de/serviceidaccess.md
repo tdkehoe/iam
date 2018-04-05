@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-02-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-11-16"
 
 Wenn Sie eine Service-ID erstellen, dann können sie dieser Service-ID Servicerichtlinien zuweisen, um die Zugriffsebene zu steuern, die zulässig ist, wenn sie zur Authentifizierung bei Ihren Services verwendet wird. Sie können diese zugewiesenen Zugriffsrichtlinien jederzeit aktualisieren, indem Sie eine vorhandene Richtlinie ändern, eine Richtlinie löschen oder eine neue Richtlinie zuweisen.
 
-**Hinweis:** Wenn Sie eine vorhandene Richtlinie für eine momentan verwendete Service-ID löschen oder bearbeiten, dann kann es zu Serviceunterbrechungen kommen.
+**Hinweis:** Wenn Sie eine vorhandene Richtlinie für eine momentan verwendete Service-ID löschen oder bearbeiten, kann es zu Serviceunterbrechungen kommen. 
 
 ## Neue Zugriffsberechtigungen zuweisen
 

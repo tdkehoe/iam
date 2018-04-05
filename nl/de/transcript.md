@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-02-14" 
+lastupdated: "2018-02-16" 
 
 ---
 
@@ -16,6 +16,11 @@ lastupdated: "2018-02-14"
 
 # IAM-Videoaufzeichnung
 {: #transcript}
+
+Wenn Sie einem Benutzer in der Identity and Access Management-Benutzerschnittstelle (IAM) Zugriff erteilen möchten, müssen Sie zunächst auswählen, wonach: nach Ressourcengruppe, nach Ressource oder nach Cloud Foundry-Zugriff. Auf dieser Seite finden Sie ein Video, das Benutzern den neuen differenzierten Zugriff von IAM auf Ressourcen und Ressourcen in Ressourcengruppen erläutert. Im folgenden Abschnitt wird die Mitschrift dieses Videos für Benutzer bereitgestellt, die ein alternatives Format oder eine landessprachliche Version benötigen.  
+
+
+## Videomitschrift
 
 Bisher war das Zuweisen von Benutzerzugriff auf Cloud Foundry-Organisationen und -Bereiche begrenzt. 
 
