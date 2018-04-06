@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -20,6 +20,8 @@ Service IDs are created to enable access to your {{site.data.keyword.Bluemix_not
 Once you create a service ID, you can start creating API keys and assigning service policies. Each policy specifies the level of access that is allowed when the API key is used to authenticate with your services. For more information about creating a service ID and assigning policies, see [Creating and managing service IDs](/docs/iam/serviceid.html#serviceids). For details on the CLI commands that are used to manage service ID API keys, see [Commands for managing API keys and policies](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
 Each API key that is associated with a service ID inherits the policy that has been assigned to the service ID. For example, if you want one application to be able to simply view resources within a service, then you need to use an API key associated with a service ID that has a policy assigned with the `Viewer` role. And, if you want another application to be able to have full access within a service, then you need to use an API key associated with a second service ID that has a policy assigned with the `Administrator` role.
+
+For more information, see [Examples of how to use a service ID](/docs/iam/serviceid.html#examples-of-how-to-use-a-service-id).
 
 ## Creating an API key for a service ID
 
