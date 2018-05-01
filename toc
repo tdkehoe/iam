@@ -23,6 +23,7 @@ Managing identity and access
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
+    mfa.md
     iamuserinv.md
 
     {: .topicgroup}
