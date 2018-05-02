@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-07-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -20,16 +20,16 @@ You assign access for users as you invite them, assigning Cloud Foundry roles, p
 
 ## Identity and access enabled services
 
-You can assign a single service policy when you invite a new user. Once the user has accepted the invitation, you can add additional service policies.
+You can assign a single service policy when you invite a new user. When the user accepts the invitation, you can add additional service policies.
 
 1. From the **Invite users** screen, expand the **Identity and Access enabled services** section.
 2. Select a service.
 3. Select **All current regions** or a specific region.
 4. Select **All current service instances** or select a specific service instance.
 5. Select a role to define the scope of access for the policy.
-6. Optional: Select **Add role** to specify an additional role for the policy.
+6. Optionally, you can select **Add role** to specify an another role for the policy.
 
-See [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol) for more specific information about the roles when setting service policies.
+For more information about the roles when setting service policies, see [Identity and access management policies and roles](/docs/iam/users_roles.html#iamusermanpol).
 
 ## Cloud Foundry access
 
@@ -42,17 +42,17 @@ When you invite new users, you can choose to add the user to an organization in 
 5. Select **All current regions** or a specific region.
 6. Select **All current spaces** or a specific space.
 7. Select a space role to define the level of access to the selected spaces.
-8. Optional: Select **Add role** to specify an additional role.
+8. Optionally, you can select **Add role** to specify an another role for the policy.
 
-See [Cloud Foundry roles](/docs/iam/users_roles.html#cfroles) for more specific information about these roles.
+For more information about these roles, see [Cloud Foundry roles](/docs/iam/users_roles.html#cfroles).
 
-**Note**: You can add a Cloud Foundry role using the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+**Note**: You can add a Cloud Foundry role by using the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
 
 ## Infrastructure access
 
-The actual permissions assigned are automatically limited to the subset of permissions that you have. For more information about the permissions and what actions the user can perform with each, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
+The actual permissions that are assigned are automatically limited to the subset of permissions that you have. For more information about the permissions and what actions the user can complete with each, see [Infrastructure permissions](/docs/iam/users_roles.html#infrapermissions).
 
 1. From the **Invite users** screen, expand the **Infrastructure access** section.
 2. Select a permission to define the scope of access.
 
-For information about configuring access for users after they have been added to your account, see [Managing users and access](/docs/iam/iamusermanage.html).
+For information about configuring access for users after they are added to your account, see [Managing users and access](/docs/iam/iamusermanage.html).
