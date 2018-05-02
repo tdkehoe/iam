@@ -30,12 +30,12 @@ You can also use API keys that are associated with service IDs that you create. 
 
 ## Other {{site.data.keyword.Bluemix_notm}} API keys
 
-In addition to your platform API keys, there are a couple other types of API keys that you might use while using {{site.data.keyword.Bluemix_notm}}:
+In addition to your platform API keys, there are a couple other types of API keys that you might use in {{site.data.keyword.Bluemix_notm}}:
 
 * Infrastructure API keys
 * Service-specific API keys
 
-Infrastructure API keys are created in the customer portal and are associated with your SoftLayer account user ID and are used when accessing the APIs for infrastructure services.
+Infrastructure API keys are created in the customer portal and are associated with your SoftLayer account user ID and are used when you access the APIs for infrastructure services.
 
 Some services in {{site.data.keyword.Bluemix_notm}} might also provide an API key for you to use when interacting with the service. For example, if you are viewing the service details of a Watson service from your dashboard, you can create a credential, which includes an API key and secret, that is specific to just that service on the Service Credentials tab.
 
