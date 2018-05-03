@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-11-16"
 
 # Managing infrastructure access
 
-In the initial account invitation, you might have set some initial permissions for your users. You can update permissions for infrastructure or add device access from the Infrastructure option in the console at anytime. To access the infrastructure permissions, go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**. Then, go to **Account** &gt; **Users** to get started.
+In the initial account invitation, you might set some initial permissions for your users. You can update permissions for infrastructure or add device access from the Infrastructure option in the console at anytime. To access the infrastructure permissions, go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**. Then, go to **Account** &gt; **Users** to get started.
 
 ## Updating permissions
 
@@ -39,6 +39,6 @@ In the initial account invitation, you might have set some initial permissions f
 
 1. Click the Menu icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**.
 2. Go to **Account** &gt; **Users**.
-3. Click the link in the **Device access** column for the user that you want to update access for. The link will either say **Manage** or the number of devices the user has access to. As an alternative, you can click **Edit Portal Access** from the actions menu which takes you to the permissions page. From there select the **Device Access** tab.
+3. Click the link in the **Device access** column for the user that you want to update access for. The link option is either **Manage** or the number of devices the user has access to. As an alternative, you can click **Edit Portal Access** from the actions menu that takes you to the permissions page. From there, select the **Device Access** tab.
 4. Select the devices that you want to provide the user with access to.
 5. Click **Update Device Access**.
