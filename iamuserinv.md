@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -23,7 +23,7 @@ To invite users and manage outstanding invitations, you must be either an accoun
 
 To invite users or manage user invitations in your account, complete the following steps:
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then click **Users**. The Users page displays a list of users with their email addresses and current status for the currently selected account.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then click **Users**. The Users page displays a list of users with their email addresses and status for the currently selected account.
 2. Click **Invite users**.
 3. Specify the email address of the user. If you are inviting more than one user with a single invitation, they are all assigned the same access.
 4. Add one or more of the access options that you manage. You must assign at least one access option. For any additional access options that you don't add and configure, the default value of *no access* is assigned. You might see one or all of the following access options, depending on the options that you are authorized to manage: **Services**, **Cloud Foundry access**, **{{site.data.keyword.Bluemix_notm}} infrastructure access**. For more information, see [Assigning user access](/docs/iam/iamuserinv.html#assignaccess).
