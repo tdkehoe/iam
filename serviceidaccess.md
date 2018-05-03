@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-02-26"
 
 When you create a service ID, you can assign service policies for that service ID to control the level of access that is allowed when it is used to authenticate with your services. You can update these assigned access policies at any time by changing an existing policy, deleting a policy, or assigning a new one.
 
-**Note**: If you delete or edit an existing policy for a service ID currently being used, it might cause service interuption.
+**Note**: If you delete or edit an existing policy for a service ID currently being used, it might cause service interruption.
 
 ## Assigning new access
 
@@ -28,9 +28,9 @@ To assign access to all resources in a resource group or to just one service wit
 3. Click **Assign access**.
 4. Select to **Assign by resource group**.
 5. Select a resource group.
-6. Choose a role for the **Assign access to resource group** field to enable the user to view the resource group on their dashboard, edit the resource group name, or manage user access to the group. You can select **No access**, if you want the user to only have access to the resource that you specify and not the group that it is assigned to.
+6. Choose a role for the **Assign access to resource group** field. This option allows the user to view the resource group on their dashboard, edit the resource group name, or manage user access to the group. You can select **No access**, if you want the user to have access to only the resource that you specify and not the group that it is assigned to.
 7. Select a service within the resource group, or select to provide access to all services within the selected group.
-8. Choose any combination of roles to assign the desired access for the user. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
+8. Choose any combination of roles to assign the wanted access for the user. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
 9. Select **Assign**.
 
 To assign access to an individual resource in the account, complete the following steps:
