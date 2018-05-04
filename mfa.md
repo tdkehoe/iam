@@ -63,6 +63,7 @@ It might take up to 5 minutes for you to be able to log back in with MFA set up 
 
 If you encounter an error message stating that you've already setup authentication, but your verification code is not working or you do not have your verification code to enter, you must contact the [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to reset your MFA enrollment.
 {: tip}
+{: #mfahelp}
 
 
 ## Disabling multi-factor authentication
