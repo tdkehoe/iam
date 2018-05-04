@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-05-01"
+lastupdated: "2018-05-04"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-05-01"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
 
 # Enabling multi-factor authentication
 {: #enablemfa}
@@ -52,7 +53,6 @@ Complete the following steps to set up your one-time passcode with an authentica
 1. Log in with your IBMid and password. 
 
 It might take up to 5 minutes for you to be able to log back in with MFA set up after it is enabled.
-{: tip}
 
 2. Select **Verify** on the **Verification is required** screen to set up MFA with an authenticator app.
 3. Select **Setup your authenticator app** to get a one-time code sent to your email to continue setting up the authenticator app.
@@ -60,6 +60,9 @@ It might take up to 5 minutes for you to be able to log back in with MFA set up 
 5. Scan the barcode with your app, or click **Can't scan the barcode?** to end a manually provided key. 
 6. Click **Continue** to enter your code.
 7. Enter your code and select **Verify**. 
+
+If you encounter an error message stating that you've already setup authentication, but your verification code is not working or you do not have your verification code to enter, you must contact the [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to reset your MFA enrollment.
+{: tip}
 
 
 ## Disabling multi-factor authentication
