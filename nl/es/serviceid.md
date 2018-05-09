@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -29,3 +29,10 @@ Para crear un ID de servicio, vaya a **Gestionar** &gt; **Seguridad** &gt; **Ide
 ## Actualización de un ID de servicio
 
 Puede actualizar un ID de servicio cambiando el nombre y la descripción en cualquier momento. También puede suprimir y crear nuevas claves de API según sea necesario o actualizar las políticas de acceso asignadas. Sin embargo, los cambios que realice en un ID de servicio existente, como por ejemplo cambiar las políticas asignadas o suprimir una clave de API que se está utilizando actualmente, podría causar interrupciones del servicio para aplicaciones que utilizan dicho ID de servicio.
+
+## Ejemplos sobre cómo utilizar un ID de servicio
+
+A continuación, se muestran ejemplos sobre cómo utilizar un ID de servicio con los servicios {{site.data.keyword.objectstorageshort}} y Cloud SQL Query.
+
+- {{site.data.keyword.objectstorageshort}} - [Guía de inicio](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-).
+- Cloud SQL Query - [Cómo utilizar la API REST de SQL Query ![Icono de enlace externo](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.

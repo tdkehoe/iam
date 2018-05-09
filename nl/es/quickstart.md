@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -38,9 +38,41 @@ Como propietario de cuenta, puede asignar roles de Cloud IAM a los usuarios que 
 
 Para obtener más información, consulte [Invitación de usuarios y asignación de acceso](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Paso 2: Gestionar el acceso de usuarios existentes
+## Paso 2: Crear grupos de acceso
 
-Después de invitar a usuarios y asignarles el acceso inicial, es posible que desee asignar accesos adicionales o editar el acceso inicial que asignó para asegurarse de que todos los usuarios en su cuenta tienen el nivel de acceso deseado.
+Para racionalizar el proceso de asignación de acceso a los usuarios de su cuenta, puede crear grupos de acceso compuestos por usuarios e ID de servicio que haya seleccionado y asignar acceso fácilmente definiendo una política única para todo el grupo.
+
+### Configurar los grupos
+
+Para crear un grupo de acceso, complete los pasos siguientes:
+
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Grupos de acceso**.
+2. Pulse **Crear**.
+3. Especifique un nombre y una descripción opcional para el grupo y pulse **Crear**.
+
+A continuación, siga configurando el grupo añadiendo usuarios o ID de servicio:
+
+1. Seleccione el nombre del grupo al que desea añadir.
+2. Pulse **Añadir usuarios**.
+3. Seleccione los usuarios de la lista que desea añadir y pulse **Añadir a grupo**.
+4. Para añadir ID de servicio al grupo pulse el separador **ID de servicio** y luego **Añadir ID de servicio**.
+5. Seleccione los ID de la lista que desea añadir y pulse **Añadir grupo**.
+
+### Asignar acceso a los grupos
+
+Cuando haya creado los grupos, puede asignar acceso a todas las entidades del grupo con una política única.
+
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Grupos de acceso**.
+2. Seleccione el nombre del grupo al que desea asignar el acceso.
+3. Pulse **Asignar acceso** para configurar una política que asigne acceso a un único recurso de la cuenta o a todos los recursos dentro de un grupo de recursos.
+
+Al organizar recursos en grupos de recursos y usuarios en grupos de acceso, puede asignar a un grupo de usuarios el acceso a un grupo de recursos con una política única reduciendo el número total de políticas que debe gestionar.
+{: tip}
+
+
+## Paso 3: Gestionar el acceso de usuarios existentes
+
+Después de invitar usuarios, asignar el acceso inicial y crear grupos de acceso, es posible que desee asignar acceso adicional o editar el acceso inicial asignado para garantizar que todos los usuarios y grupos de su cuenta tienen el nivel de acceso deseado.
 
 ### Asignación de nuevos accesos
 

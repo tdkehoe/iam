@@ -26,8 +26,9 @@ Gestión de acceso e identidades
     iamuserinv.md
 
     {: .topicgroup}
-    Gestión de accesos y usuarios
+    Managing users and access
         iamusermanage.md
+        groups.md
         mngiam.md
         mngcf.md
         mnginfra.md

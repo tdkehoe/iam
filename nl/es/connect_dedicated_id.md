@@ -44,7 +44,7 @@ Si el ID dedicado ya se ha conectado al IBMid público, se autenticará y se ini
 Sin embargo, si el ID dedicado no se ha conectado con el IBMid público, se le solicitará que se conecte manualmente al IBMid público:
 
 ```
-  Está registrándose con un ID de IBM no asociado con ningún usuario dedicado.
+  Está registrándose con un IBMid no asociado con ningún usuario dedicado.
   Para configurar la conexión, especifique las credenciales del usuario dedicado.
 
   Elija un tipo de credencial:

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -22,11 +22,11 @@ El concepto de identidad en {{site.data.keyword.Bluemix_notm}} IAM consta de los
 
 <dl>
 <dt>Identidades de usuario</dt>
-<dd>Todos los usuarios están identificados por su ID de IBM.</dd>
+<dd>Todos los usuarios están identificados por su IBMid.</dd>
 <dt>Identidades de servicio y app</dt>
 <dd>Los ID de servicio son las características de Cloud IAM utilizadas para proporcionar una identidad separada para servicios y aplicaciones. Puede crear un ID de servicio para que lo utilice una aplicación que necesita acceso a sus servicios de {{site.data.keyword.Bluemix_notm}} para que no se tengan que utilizar credenciales de usuario individual.</dd>
 <dt>Claves de API</dt>
-<dd>Las claves de API de plataforma están disponibles a través de Cloud IAM para que las utilice para autenticar utilizando API o CLI como usuario o ID de servicio. Estas claves de API están proporcionadas a través de Cloud IAM y, por lo tanto, no se pueden utilizar de forma general para autenticarse con el ID de IBM fuera de IBM Cloud. </dd>
+<dd>Las claves de API de plataforma están disponibles a través de Cloud IAM para que las utilice para autenticar utilizando API o CLI como usuario o ID de servicio. Estas claves de API están proporcionadas a través de Cloud IAM y, por lo tanto, no se pueden utilizar de forma general para autenticarse con el IBMid fuera de IBM Cloud. </dd>
 <dt>Recursos</dt>
 <dd>Los recursos de {{site.data.keyword.Bluemix_notm}} se identifican por sus nombres de recurso de nube (CRN). Para obtener más información, consulte [Nombres de recursos de nube](/docs/overview/crn.html#crn).</dd>
 </dl>
@@ -39,7 +39,9 @@ Puede revisar la siguiente lista para obtener más información sobre estos comp
 
 <dl>
 <dt>Usuarios</dt>
-<dd>Todos los usuarios dentro de una cuenta están identificados por sus ID de IBM. Se puede invitar a los usuarios a la cuenta y darles acceso a recursos. El acceso se puede asignar a recursos individuales, a nivel de instancia, o a un conjunto de recursos organizado en un grupo de recursos de cuenta.</dd>
+<dd>Todos los usuarios dentro de una cuenta están identificados por sus IBMid. Se puede invitar a los usuarios a la cuenta y darles acceso a recursos. El acceso se puede asignar a recursos individuales, a nivel de instancia, o a un conjunto de recursos organizado en un grupo de recursos de cuenta.</dd>
+<dt>Grupo de acceso</dt>
+<dd>El propietario de la cuenta puede crear un grupo de usuarios y de ID de servicios para que sea posible asignar el mismo acceso a todas las entidades dentro del grupo con una única política.</dd>
 <dt>Recursos</dt>
 <dd>Los recursos de cuenta son las ofertas de servicio de suministro seleccionadas del catálogo o los recursos granulares dentro de una instancia de servicio.</dd>
 <dt>Políticas</dt>

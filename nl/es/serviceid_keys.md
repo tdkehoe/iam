@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -20,6 +20,8 @@ Los ID de servicio se crean para permitir el acceso a los servicios de {{site.da
 Una vez que haya creado un ID de servicio, puede empezar a crear claves de API y a asignar políticas de servicio. Cada política especifica el nivel de acceso permitido cuando se utiliza la clave de API para autenticarse con los servicios. Para obtener más información sobre la creación de un ID de servicio y la asignación de políticas, consulte [Creación y gestión de ID de servicio](/docs/iam/serviceid.html#serviceids). Para obtener detalles sobre los mandatos de CLI que se utilizan para gestionar las claves de API de ID de servicio, consulte [Mandatos para gestionar claves de API y políticas](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
 
 Cada clave de API que está asociada con un ID de servicio hereda la política que se ha asignado al ID de servicio. Por ejemplo, si desea que una aplicación pueda simplemente ver recursos dentro de un servicio, necesitará utilizar una clave de API asociada con un ID de servicio que tenga una política asignada con el rol `Visor`. Y, si desea que otra aplicación pueda tener acceso completo dentro de un servicio, necesitará utilizar una clave de API asociada con un segundo ID de servicio que tenga una política asignada con el rol `Administrador`.
+
+Para obtener más información, consulte [Ejemplos de cómo utilizar un ID de servicio](/docs/iam/serviceid.html#examples-of-how-to-use-a-service-id).
 
 ## Creación de una clave de API para un ID de servicio
 
