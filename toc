@@ -46,6 +46,7 @@ Managing identity and access
         apikeys.md
         userid_keys.md
         serviceid_keys.md
+        apikey_iamtoken.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
