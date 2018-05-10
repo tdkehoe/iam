@@ -18,7 +18,7 @@ lastupdated: "2017-12-15"
 # 授與服務之間的存取權
 {: #serviceauth}
 
-{{site.data.keyword.Bluemix_notm}}「身分及存取管理 (IAM)」系統的許多功能，都著重在管理及施行使用者和其應用程式對 {{site.data.keyword.Bluemix_notm}} 資源的存取。不過，在其他情況下，您可能需要提供一個服務來存取另一個服務中的使用者資源。您帳戶中的所有使用者都可以建立授權，但只有具有 `Administrator` 角色的使用者才能刪除授權。您可以在**授權**頁面上，設定及檢視帳戶內已授與的授權。
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 系統的許多功能，都著重在管理及施行使用者和其應用程式對 {{site.data.keyword.Bluemix_notm}} 資源的存取。不過，在其他情況下，您可能需要提供一個服務來存取另一個服務中的使用者資源。您帳戶中的所有使用者都可以建立授權，但只有具有 `Administrator` 角色的使用者才能刪除授權。您可以在**授權**頁面上，設定及檢視帳戶內已授與的授權。
 
 ## 建立授權
 

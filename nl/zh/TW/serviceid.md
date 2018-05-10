@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -29,3 +29,10 @@ lastupdated: "2017-11-16"
 ## 更新服務 ID
 
 您隨時可以變更名稱及說明，來更新服務 ID。也可以視需要刪除及建立新的 API 金鑰，或更新所指派的存取原則。不過，您對現有服務 ID 進行的任何變更（例如，變更已指派的原則，或刪除目前正在使用的 API 金鑰），可能會導致使用該服務 ID 之應用程式的服務岔斷。
+
+## 如何使用服務 ID 的範例
+
+下列範例說明服務 ID 與 {{site.data.keyword.objectstorageshort}} 及 Cloud SQL Query 服務如何搭配使用。
+
+- {{site.data.keyword.objectstorageshort}} - [開始使用](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-)。
+- Cloud SQL Query - [How to use the SQL Query REST API ![外部鏈結圖示](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}。
