@@ -17,7 +17,7 @@ lastupdated: "2018-02-16"
 # Trascrizione video IAM
 {: #transcript}
 
-Quando scegli di assegnare l'accesso a un utente nella IU Identity and Access Management (IAM), ti vengono presentate alcune scelte con cui puoi assegnare l'accesso: accesso al gruppo di risorse, alla risora o a Cloud Foundry. In questa pagina è presente un video che introduce agli utenti il nuovo accesso accurato che IAM fornisce tramite l'accesso alle risorse e alle risorse all'interno dei gruppi di risorse. La seguente sezione fornisce la trascrizione per questo video per gli utenti che possono aver bisogno di un formato alternativo o di una versione tradotta.  
+Quando scegli di assegnare l'accesso a un utente nella IU Identity and Access Management (IAM), ti vengono presentate alcune scelte con cui puoi assegnare l'accesso: accesso al gruppo di risorse, alla risora o a Cloud Foundry. In questa pagina è presente un video che introduce agli utenti il nuovo accesso accurato che IAM fornisce tramite l'accesso alle risorse e alle risorse all'interno dei gruppi di risorse. La seguente sezione fornisce la trascrizione per questo video per gli utenti che possono aver bisogno di un formato alternativo o di una versione tradotta. 
 
 
 ## Trascrizione video

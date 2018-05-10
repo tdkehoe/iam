@@ -28,6 +28,7 @@ Gestione di identità e accesso
     {: .topicgroup}
     Gestione di utenti e accesso
         iamusermanage.md
+        groups.md
         mngiam.md
         mngcf.md
         mnginfra.md

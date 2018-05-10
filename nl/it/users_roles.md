@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-02-15"
+lastupdated: "2018-04-04"
 
 ---
 
@@ -23,7 +23,7 @@ Tutti i servizi che sono organizzati in un gruppo di risorse nel tuo account ven
 ## Cosa sono le politiche Cloud IAM e chi può assegnarle?
 {: #iamusermanpol}
 
-Puoi fornire l'accesso per gli utenti e gli ID servizio creando delle politiche che impostano una destinazione per l'accesso dell'utente o dell'ID servizio e un ruolo che definisce quale tipo di accesso è consentito. Una politica concede a un utente o ID servizio uno o più ruoli per un insieme di risorse utilizzando una combinazione di attributi per definire l'insieme applicabile di risorse. Quando assegni una politica, per prima cosa devi scegliere se impostare la politica per un gruppo di risorse o per una singola risorsa. Quindi, a seconda della tua selezione iniziale, puoi selezionare un servizio all'interno di un gruppo di risorse o una singola istanza per la risorsa selezionata. Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, puoi selezionare uno o più ruoli da assegnare. 
+Una politica concede a un utente o ID servizio uno o più ruoli per un insieme di risorse per abilitare l'utilizzo di azioni specifiche all'interno del contesto delle risorse di destinazione specificate. Quando assegni una politica, per prima cosa devi scegliere se impostare la politica per un gruppo di risorse o per una singola risorsa. Quindi, a seconda della tua selezione iniziale, puoi selezionare un servizio all'interno di un gruppo di risorse o una singola istanza per la risorsa selezionata. Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, puoi selezionare uno o più ruoli da assegnare. 
 
 Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente tabella mostra le attività di gestione delle politiche e il ruolo richiesto per ciascuna.
 
@@ -39,7 +39,7 @@ Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente t
 ## Ruoli Cloud IAM
 {: #iamusermanrol}
 
-Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel tuo account. Se il servizio che utilizzi può essere gestito mediante IAM, è possibile assegnare due tipi di ruoli: i ruoli di gestione della piattaforma e i ruoli di accesso al servizio.
+Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel tuo account. Esistono due tipi di ruoli: i ruoli di gestione della piattaforma e i ruoli di accesso al servizio. 
 
 <dl>
 <dt>Ruoli di gestione della piattaforma</dt> 
@@ -48,7 +48,7 @@ Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel
 <dd>I ruoli di accesso al servizio definiscono la capacità di un utente o un servizio di eseguire azioni su un'istanza del servizio, come l'accesso all'interfaccia utente o l'esecuzione di chiamate API. Ci sono tre possibili ruoli: gestore, scrittore e lettore. </dd>
 </dl> 
 
-Potresti non vedere tutti i ruoli elencati come opzioni quando assegni le politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli disponibili per il servizio che hai selezionato nella politica. Per informazioni specifiche su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ogni servizio, fai riferimento alla documentazione di quel servizio.
+Potresti non vedere tutti i ruoli elencati come opzioni quando assegni le politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli disponibili per il servizio che hai selezionato. Per informazioni specifiche su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ogni servizio, fai riferimento alla documentazione di quel servizio.
 {: tip}
 
 Utilizzando una combinazione di questi ruoli in una singola politica di accesso, puoi fornire l'accesso specifico per utenti e ID servizio assegnando l'accesso con una delle seguenti opzioni:
@@ -65,15 +65,15 @@ Per consentire a un altro utente l'accesso completo all'account ai fini della ge
 
 ### Ruoli di gestione della piattaforma
 
-I ruoli di gestione della piattaforma consentono di assegnare agli utenti diversi livelli di autorizzazione per l'esecuzione di azioni della piattaforma all'interno dell'account. Oltre alle descrizioni dei ruoli fornite nella console, le seguenti tabelle forniscono esempi di alcune azioni di gestione della piattaforma che gli utenti assegnati a ciascun ruolo possono eseguire. Puoi fare riferimento alla documentazione di ciascun servizio per comprendere in che modo i ruoli vengano applicati agli utenti nel contesto del servizio utilizzato.
+I ruoli di gestione della piattaforma consentono di assegnare agli utenti diversi livelli di autorizzazione per l'esecuzione di azioni della piattaforma all'interno dell'account. Le seguenti tabelle forniscono esempi di alcune azioni di gestione della piattaforma che gli utenti assegnati a ciascun ruolo possono eseguire. Puoi fare riferimento alla documentazione di ciascun servizio per comprendere in che modo i ruoli vengano applicati agli utenti nel contesto del servizio utilizzato.
 
-| Dettagli della politica di accesso  | Azioni che un utente può eseguire sui servizi dell'account | Azioni per gli ID di servizio | Azioni per l'accesso ai gruppi di risorse | Azione sulle risorse nei gruppi di risorse |
-|:-----------------|:--------------|:---------------|:----------------|:-----------------|
-| Assegna accesso a | Uno o tutti i servizi abilitati a IAM | Servizio di identità IAM | Gruppo di risorse selezionato | Servizio selezionato in un gruppo di risorse |
-| Ruolo visualizzatore | Visualizzare istanze, alias, bind e credenziali | Visualizzare ID e chiavi API | Visualizzare il gruppo di risorse | Visualizzare solo le istanze specificate nel gruppo di risorse |
-| Ruolo operatore |  Visualizzare istanze e gestire alias, bind e credenziali | Non applicabile | Non applicabile | Non applicabile |
-| Ruolo editor |  Creare, eliminare, modificare e visualizzare istanze. Gestire alias, bind e credenziali | Creare ed eliminare ID e chiavi API | Visualizzare e modificare il nome del gruppo di risorse | Creare, eliminare, modificare, sospendere, riprendere, visualizzare e associare solo le istanze specificate nel gruppo di risorse |
-| Ruolo amministratore |  Tutte le azioni di gestione per i servizi | Creare ed eliminare ID e chiavi API, assegnare politiche agli ID | Visualizzare, modificare e gestire l'accesso per il gruppo di risorse | Tutte le azioni di gestione per le istanze specificate nel gruppo di risorse |
+| Dettagli della politica di accesso  | Azioni che un utente può eseguire sui servizi dell'account | Azioni per gli ID di servizio | Azioni per l'accesso ai gruppi di risorse | Azione sulle risorse nei gruppi di risorse | Azioni per la gestione dei gruppi di accesso |
+|:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
+| Assegna accesso a | Uno o tutti i servizi abilitati a IAM | Servizio di identità IAM | Gruppo di risorse selezionato | Servizio selezionato in un gruppo di risorse | Gruppi di accesso IAM |
+| Ruolo visualizzatore | Visualizzare istanze, alias, bind e credenziali | Visualizzare ID e chiavi API | Visualizzare il gruppo di risorse | Visualizzare solo le istanze specificate nel gruppo di risorse | Visualizza i gruppi di accesso e i membri |
+| Ruolo operatore |  Visualizzare istanze e gestire alias, bind e credenziali | Non applicabile | Non applicabile | Non applicabile | Non applicabile |
+| Ruolo editor |  Creare, eliminare, modificare e visualizzare istanze. Gestire alias, bind e credenziali | Creare ed eliminare ID e chiavi API | Visualizzare e modificare il nome del gruppo di risorse | Creare, eliminare, modificare, sospendere, riprendere, visualizzare e associare solo le istanze specificate nel gruppo di risorse | Visualizzare, creare, eliminare e modificare i gruppi di accesso nell'account. |
+| Ruolo amministratore |  Tutte le azioni di gestione per i servizi | Creare ed eliminare ID e chiavi API, assegnare politiche agli ID | Visualizzare, modificare e gestire l'accesso per il gruppo di risorse | Tutte le azioni di gestione per le istanze specificate nel gruppo di risorse | Visualizzare, creare, eliminare, modificare e gestire l'accesso per utilizzare i gruppi di accesso |
 {: caption="Tabella 2. Ruoli e azioni di esempio per la gestione della piattaforma" caption-side="top"}
 {: #platformrolestable}
 

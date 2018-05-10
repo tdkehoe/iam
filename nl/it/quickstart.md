@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -38,9 +38,41 @@ In qualità di proprietario dell'account, puoi assegnare i ruoli di Cloud IAM pe
 
 Per ulteriori informazioni, vedi [Invito di utenti e assegnazione dell'accesso](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Passo 2: gestisci l'accesso per gli utenti esistenti
+## Passo 2: crea i gruppi di accesso
 
-Dopo aver invitato gli utenti e assegnato l'accesso iniziale, potresti voler assegnare un accesso aggiuntivo o modificare l'accesso iniziale che hai assegnato per garantire che tutti gli utenti nel tuo account abbiano il livello di accesso desiderato.
+Per semplificare il processo di assegnazione dell'accesso agli utenti nel tuo account, puoi creare gruppi di accesso che sono costituiti da utenti e ID del servizio da te selezionati, a cui puoi facilmente assegnare l'accesso definendo una sola politica per l'intero gruppo.
+
+### Configura i tuoi gruppi
+
+Per creare un gruppo di accesso, completa la seguente procedura:
+
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Gruppi di accesso**.
+2. Fai clic su **Crea**.
+3. Immetti un nome e una descrizione facoltativi per il gruppo e fai clic su **Crea**.
+
+Successivamente, continua a configurare il tuo gruppo aggiungendo utenti o ID del servizio:
+
+1. Seleziona il nome del gruppo che vuoi aggiungere.
+2. Fai clic su **Aggiungi utenti**. 
+3. Seleziona gli utenti che vuoi aggiungere dall'elenco e fai clic su **Aggiungi al gruppo**.
+4. Per aggiungere gli ID del servizio al gruppo, fai clic sulla scheda **ID servizio** e su **Aggiungi ID servizio**. 
+5. Seleziona gli ID che vuoi aggiungere dall'elenco e fai clic su **Aggiungi al gruppo**.
+
+### Assegna l'accesso ai tuoi gruppi 
+
+Dopo aver creato i tuoi gruppi, puoi assegnare l'accesso a tutte le entità all'interno del gruppo con una sola politica. 
+
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Gruppi di accesso**.
+2. Seleziona il nome del gruppo a cui vuoi assegnare l'accesso. 
+3. Fai clic su **Assegna accesso** per configurare una politica che assegna l'accesso a una sola risorsa nell'account o a tutte le risorse in un gruppo di risorse. 
+
+Per organizzare le risorse in gruppi di risorse e gli utenti in gruppi di accesso, puoi assegnare a un gruppo di utenti l'accesso a un gruppo di risorse con una sola politica riducendo il numero complessivo di politiche che devi gestire.
+{: tip}
+
+
+## Passo 3: gestisci l'accesso per gli utenti esistenti
+
+Dopo aver invitato gli utenti, assegnato l'accesso iniziale e creato i tuoi gruppi di accesso, potresti voler assegnare un accesso aggiuntivo o modificare l'accesso iniziale che hai assegnato per garantire che tutti gli utenti e i gruppi nel tuo account abbiano il livello di accesso desiderato. 
 
 ### Assegnazione del nuovo accesso
 
