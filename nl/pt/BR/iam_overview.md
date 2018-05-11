@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -40,6 +40,9 @@ O conceito de gerenciamento de acesso no {{site.data.keyword.Bluemix_notm}} cons
 <dl>
 <dt>Usuários</dt>
 <dd>Todos os usuários dentro de uma conta são identificados por seus IBMids. Os usuários podem ser convidados para a conta e receber acesso aos recursos. O acesso pode ser designado a recursos individuais, até o nível da instância ou a um conjunto de recursos que são organizados em um grupo de recursos da conta.</dd>
+<dt>Grupo de acesso</dt>
+<dd>Um grupo de usuários e IDs de serviço pode ser criado pelo proprietário da conta para que o mesmo acesso
+possa ser designado a todas as entidades dentro do grupo com uma política única.</dd>
 <dt>Resources</dt>
 <dd>Os recursos de conta são as ofertas de serviços provisionados que são selecionadas do catálogo ou recursos de baixa granularidade em uma instância de serviço.</dd>
 <dt>Políticas</dt>

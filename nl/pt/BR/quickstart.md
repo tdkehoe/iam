@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -38,9 +38,50 @@ Como proprietário da conta, é possível designar funções do Cloud IAM para u
 
 Para obter mais informações, veja [Convidando usuários e designando acesso](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Etapa 2: gerenciar acesso para usuários existentes
+## Etapa 2: criar grupos de acesso
 
-Depois de ter convidado usuários e designado o acesso inicial, você talvez deseje designar acesso adicional ou editar o acesso inicial designado para assegurar que todos os usuários em sua conta tenham o nível desejado de acesso.
+Para aperfeiçoar o processo de designação de acesso aos usuários em sua conta, é possível criar grupos
+de acesso que sejam formados por usuários e IDs de serviço que você seleciona e, em seguida, é possível
+designar acesso facilmente definindo uma política única para o grupo inteiro.
+
+### Configure seus grupos
+
+Para criar um grupo de acesso, conclua as etapas a seguir:
+
+1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Grupos de acesso**.
+2. Clique em **Criar**.
+3. Insira um nome e uma descrição opcional para seu grupo e clique em **Criar**.
+
+Em seguida, continue a configurar seu grupo incluindo usuários ou IDs de serviço:
+
+1. Selecione o nome do grupo que deseja incluir.
+2. Clique em **Incluir usuários**.
+3. Selecione os usuários que deseja incluir na lista e clique em **Incluir no grupo**.
+4. Para incluir IDs de serviço no grupo, clique na guia **IDs de serviço** e
+clique em **Incluir ID de serviço**.
+5. Selecione os IDs que deseja incluir na lista e clique em **Incluir no grupo**.
+
+### Designe acesso aos seus grupos
+
+Depois de ter criado seus grupos, é possível designar acesso a todas as entidades dentro do grupo com uma
+política única.
+
+1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Grupos de acesso**.
+2. Selecione o nome do grupo para o qual você deseja designar acesso.
+3. Clique em **Designar acesso** para configurar uma política que designa acesso a
+um único recurso na conta ou a todos os recursos em um grupo de recursos.
+
+Ao organizar recursos em grupos de recursos e usuários em grupos de acesso, é possível designar a um
+grupo de usuários acesso a um grupo de recursos com uma política única, reduzindo, portanto, o número geral de
+políticas que você precisa gerenciar.
+{: tip}
+
+
+## Etapa 3: gerenciar acesso para usuários existentes
+
+Depois de ter convidado usuários, designado acesso inicial e criado seus grupos de acesso, talvez você
+queira designar acesso adicional ou editar o acesso inicial que você designou para assegurar que todos os
+usuários e grupos em sua conta tenham o nível de acesso desejado.
 
 ### Designando novo acesso
 

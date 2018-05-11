@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-02-15"
+lastupdated: "2018-04-04"
 
 ---
 
@@ -23,7 +23,8 @@ Todos os serviços que são organizados em um grupo de recursos em sua conta sã
 ## O que são políticas do Cloud IAM e quem pode designá-las?
 {: #iamusermanpol}
 
-É possível fornecer acesso para usuários e IDs de serviço criando políticas que configuram um destino para o usuário ou ID de serviço acessar e uma função que define qual tipo de acesso é permitido. Uma política concede a um usuário ou ID de serviço uma ou múltiplas funções para um conjunto de recursos usando uma combinação de atributos para definir o conjunto aplicável de recursos. Ao designar uma política, primeiro você escolhe entre configurar a política para um grupo de recursos ou um recurso individual. Em seguida, dependendo de sua seleção inicial, é possível selecionar um serviço dentro de um grupo de recursos ou uma única instância para o recurso selecionado. Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, é possível selecionar uma função ou funções, para designar. 
+Uma política concede a um usuário ou ID de serviço uma ou múltiplas funções para um conjunto de recursos
+para permitir que ações específicas sejam tomadas dentro do contexto dos recursos de destino especificados. Ao designar uma política, primeiro você escolhe entre configurar a política para um grupo de recursos ou um recurso individual. Em seguida, dependendo de sua seleção inicial, é possível selecionar um serviço dentro de um grupo de recursos ou uma única instância para o recurso selecionado. Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, é possível selecionar uma função ou funções, para designar. 
 
 Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra as tarefas de gerenciamento de política e a função que é necessária para cada uma.
 
@@ -39,7 +40,9 @@ Será possível designar e gerenciar políticas se você possuir a função adeq
 ## Funções do Cloud IAM
 {: #iamusermanrol}
 
-Com o Cloud IAM, é possível gerenciar e definir acesso para usuários e recursos em sua conta. Se o serviço que você usa pode ser gerenciado usando o IAM, há dois tipos de funções que podem ser designadas: funções de gerenciamento de plataforma e funções de acesso ao serviço.
+Com o Cloud IAM, é possível gerenciar e definir acesso para usuários e recursos em sua conta. Há dois
+tipos de funções que podem ser designadas: funções de gerenciamento de plataforma e funções de acesso de
+serviço.
 
 <dl>
 <dt>Funções de gerenciamento de plataforma</dt> 
@@ -48,7 +51,8 @@ Com o Cloud IAM, é possível gerenciar e definir acesso para usuários e recurs
 <dd>As funções de acesso ao serviço definem a capacidade de um usuário ou serviço para executar ações em uma instância de serviço, como acessar a UI ou executar chamadas API. Há três funções possíveis: gerenciador, gravador e leitor. </dd>
 </dl> 
 
-Você pode não ver todas as funções listadas como opções ao designar políticas na UI, pois somente as funções disponíveis para o serviço que você selecionou na política são exibidas. Para obter informações específicas sobre quais funções são ativadas e quais ações que cada função de acesso permite para cada serviço, consulte a documentação para esse serviço.
+Talvez você não veja todas as funções listadas como opções ao designar políticas na UI, pois apenas as
+funções disponíveis para o serviço que você selecionou são exibidas. Para obter informações específicas sobre quais funções são ativadas e quais ações que cada função de acesso permite para cada serviço, consulte a documentação para esse serviço.
 {: tip}
 
 Usando uma combinação dessas funções em uma política de acesso único, é possível fornecer acesso de baixa granularidade para usuários e IDs de serviço designando acesso em qualquer um dos seguintes:
@@ -65,15 +69,22 @@ Para permitir que outro usuário tenha acesso total à conta com o propósito de
 
 ### Funções de gerenciamento de plataforma
 
-As funções de gerenciamento de plataforma permitem que os usuários sejam designados a diferentes níveis de permissão para executar ações da plataforma na conta. Além das descrições das funções fornecidas no console, as tabelas a seguir fornecem exemplos para algumas das ações de gerenciamento de plataforma que os usuários designados a cada função podem executar. É possível consultar a documentação para cada serviço para entender como as funções se aplicam a usuários dentro do contexto do serviço que está sendo usado.
+As funções de gerenciamento de plataforma permitem que os usuários sejam designados a diferentes níveis de permissão para executar ações da plataforma na conta. 
+As tabelas a seguir fornecem exemplos para algumas das ações de gerenciamento de plataforma que os usuários
+designados a cada função podem executar. É possível consultar a documentação para cada serviço para entender como as funções se aplicam a usuários dentro do contexto do serviço que está sendo usado.
 
-| Detalhes da política de acesso  | Ações que um usuário pode executar em serviços na conta | Ações para IDs de serviço | Ações para acesso a grupos de recursos | Ação em recursos em grupos de recursos |
-|:-----------------|:--------------|:---------------|:----------------|:-----------------|
-| Designar acesso a | Um ou todos os serviços ativados por IAM | Serviço de identidade do IAM | Grupo de recursos selecionados | Serviço selecionado em um grupo de recursos |
-| Função de visualizador | Visualizar instâncias, aliases, ligações e credenciais | Visualizar IDs e chaves API | Visualizar grupo de recursos | Visualizar somente instâncias especificadas no grupo de recursos |
-| Função de operador |  Visualizar instâncias e gerenciar aliases, ligações e credenciais | Não aplicável | Não aplicável | Não aplicável |
-| Função do editor |  Criar, excluir, editar e visualizar instâncias. Gerenciar aliases, ligações e credenciais | Criar e excluir IDs e chaves API | Visualizar e editar o nome do grupo de recursos | Criar, excluir, editar, suspender, continuar, visualizar e ligar somente as instâncias especificadas no grupo de recursos |
-| Função de administrador |  Todas as ações de gerenciamento para serviços | Criar e excluir IDs e chaves API, designar políticas a IDs | Visualizar, editar e gerenciar o acesso para o grupo de recursos | Todas as ações de gerenciamento para as instâncias especificadas no grupo de recursos |
+| Detalhes da política de acesso  | Ações que um usuário pode executar em serviços na conta | Ações para IDs de serviço | Ações para acesso a grupos de recursos | Ação em recursos em grupos de recursos | 
+Ações para gerenciamento de grupos de acesso |
+|:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
+| Designar acesso a | Um ou todos os serviços ativados por IAM | Serviço de identidade do IAM | Grupo de recursos selecionados | Serviço selecionado em um grupo de recursos | 
+Grupos de acesso ao IAM |
+| Função de visualizador | Visualizar instâncias, aliases, ligações e credenciais | Visualizar IDs e chaves API | Visualizar grupo de recursos | Visualizar somente instâncias especificadas no grupo de recursos | 
+Visualizar grupos de acesso e membros |
+| Função de operador |  Visualizar instâncias e gerenciar aliases, ligações e credenciais | Não aplicável | Não aplicável | Não aplicável | Não aplicável |
+| Função do editor |  Criar, excluir, editar e visualizar instâncias. Gerenciar aliases, ligações e credenciais | Criar e excluir IDs e chaves API | Visualizar e editar o nome do grupo de recursos | Criar, excluir, editar, suspender, continuar, visualizar e ligar somente as instâncias especificadas no grupo de recursos | 
+Visualizar, criar, excluir e editar grupos de acesso na conta |
+| Função de administrador |  Todas as ações de gerenciamento para serviços | Criar e excluir IDs e chaves API, designar políticas a IDs | Visualizar, editar e gerenciar o acesso para o grupo de recursos | Todas as ações de gerenciamento para as instâncias especificadas no grupo de recursos | 
+Visualizar, criar, excluir, editar e gerenciar o acesso para trabalhar com grupos de acesso |
 {: caption="Tabela 2. Exemplo de funções e ações de gerenciamento de plataforma" caption-side="top"}
 {: #platformrolestable}
 

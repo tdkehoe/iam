@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -16,7 +16,13 @@ lastupdated: "2017-11-16"
 # Acesso ao Cloud Foundry
 {: #cfaccess}
 
-No momento, nem todos os serviços podem ser gerenciados usando o Cloud IAM. É possível continuar a usar o Cloud Foundry para essas instâncias de serviço, fornecendo aos usuários acesso à organização e ao espaço aos quais a instância pertence com uma função do Cloud Foundry designada para definir o nível de acesso que é permitido.
+Atualmente, nem todos os serviços podem ser gerenciados usando o Cloud IAM. É possível continuar a usar
+funções do Cloud Foundry para acessar essas instâncias de serviço. Os usuários são incluídos na organização e
+no espaço aos quais a instância pertence com uma função do Cloud Foundry designada. 
+
+
+![Acesso usando organizações e espaços do Cloud Foundry em uma conta](images/cf-diagram.svg "Como o acesso em uma conta funciona usando organizações,espaços e funções do Cloud Foundry")
+
 
 
 ## Funções do Cloud Foundry
@@ -39,9 +45,11 @@ As funções a seguir podem ser designadas no nível de espaço:
 |------------|-------------|
 |Gerente | Os gerenciadores de espaço podem incluir usuários existentes e gerenciar funções dentro do espaço. O gerenciador de espaço também pode visualizar o número de instâncias, ligações de serviço e
 o uso recurso para cada aplicativo no espaço. |
-|Desenvolvedor | Desenvolvedores de espaço podem criar, excluir e gerenciar aplicativos e serviços dentro do espaço. Algumas das tarefas de gerenciamento incluem implementar aplicativos, iniciar ou parar
-aplicativos, renomear um aplicativo, excluir um aplicativo, renomear um espaço, ligar ou desvincular um serviço para um aplicativo, visualizar o número ou as instâncias, ligações de serviço e uso de recurso
-para cada aplicativo no espaço. Além disso, o desenvolvedor de espaço pode associar uma URL interna ou externa com um aplicativo no espaço.   |
+|Desenvolvedor | Desenvolvedores de espaço podem criar, excluir e gerenciar aplicativos e serviços dentro do espaço. 
+Algumas das tarefas de gerenciamento incluem implementação de apps, início ou parada de aplicativos,
+renomeação de um app, exclusão de um app, renomeação de um espaço, ligação ou desvinculação de um serviço para
+um aplicativo, visualização do número ou de instâncias, ligações de serviço e uso de recurso para cada
+aplicativo no espaço. Além disso, o desenvolvedor de espaço pode associar uma URL interna ou externa com um aplicativo no espaço.   |
 |Auditor | Auditores de espaço têm acesso somente leitura a todas as informações sobre o espaço, como informações sobre o número de instâncias, ligações de serviço e uso de recurso para cada aplicativo no
 espaço. |
 {:caption="Tabela 2. Funções e permissões de espaço" caption-side="top"}
