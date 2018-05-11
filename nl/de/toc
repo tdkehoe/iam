@@ -26,8 +26,9 @@ Identität und Zugriff verwalten
     iamuserinv.md
 
     {: .topicgroup}
-    Benutzer und Zugriff verwalten
+    Benutzer und Benutzerzugriff verwalten
         iamusermanage.md
+        groups.md
         mngiam.md
         mngcf.md
         mnginfra.md

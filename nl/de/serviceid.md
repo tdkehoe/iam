@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -29,3 +29,10 @@ Zum Erstellen einer Service-ID müssen Sie die Optionen **Verwalten** &gt; **Sic
 ## Service-ID aktualisieren
 
 Um eine Service-ID zu aktualisieren, können Sie jederzeit ihren Namen und die Beschreibung ändern. Außerdem können Sie API-Schlüssel löschen und neue API-Schlüssel erstellen, wenn dies erforderlich ist, oder die zugewiesenen Zugriffsrichtlinien aktualisieren. Alle von Ihnen an einer vorhandenen Service-ID durchgeführten Änderungen (z. B. das Ändern der zugewiesenen Richtlinien oder das Löschen eines API-Schlüssels, der momentan verwendet wird) können zu Serviceunterbrechungen für Anwendungen führen, die diese Service-ID verwenden.
+
+## Beispiele für die Verwendung einer Service-ID
+
+Die folgenden Beispiele zeigen, wie eine Service-ID mit den {{site.data.keyword.objectstorageshort}}- und Cloud SQL Query-Services verwendet wird.
+
+- {{site.data.keyword.objectstorageshort}} - [Einführung](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-).
+- Cloud SQL Query - [Verwendung der SQL Query-REST-API ![Symbol für externen Link](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.

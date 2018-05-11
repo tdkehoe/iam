@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -33,14 +33,46 @@ En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM a
 4. Dans la section **Accès**, développez l'option **Services**.
 5. Sélectionner d'accorder l'accès à une **Ressource** ou à des ressources d'un **Groupe de ressources**.
 6. En fonction de votre sélection, suivez les invites afin de spécifier l'accès à une instance de service individuelle, à tous les services avec l'offre Identity and Access activée, à toutes les ressources d'un groupe de ressources ou à un service spécifique du groupe de ressources sélectionné. Si vous avez sélectionné l'option Groupe de ressources, vous pouvez également accorder à l'utilisateur le droit d'afficher, d'éditer ou de gérer l'accès au groupe de ressources en sélectionnant un rôle pour l'accès au groupe de ressources.
-7. Si vous détenez le droit approprié, vous pouvez également affecter un accès Cloud Foundry ou à l'infrastructure sur l'invitation.
+7. Si vous détenez le droit approprié, vous pouvez également affecter un accès à Cloud Foundry ou à l'infrastructure lors de l'invitation.
 8. Cliquez sur **Inviter des utilisateurs**.
 
 Pour plus d'informations, voir [Invitation d'utilisateurs et affectation d'accès](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Etape 2 : Gérer l'accès d'utilisateurs existants
+## Etape 2 : Créer des groupes d'accès
 
-Après avoir invité des utilisateurs et leur avoir affecté un accès initial, vous voudrez sans doute leur affecter des accès supplémentaires ou éditer leur accès initial pour vous assure que tous les utilisateurs de votre compte bénéficient du niveau d'accès souhaité.
+Afin de rationaliser le processus d'affectation d'accès à des utilisateurs de votre compte, vous pouvez créer des groupes d'accès constitués d'utilisateurs et d'ID de service que vous sélectionnez, puis affecter facilement des accès en définissant une seule règle pour l'ensemble du groupe. 
+
+### Configuration de vos groupes
+
+Pour créer un groupe d'accès, procédez comme suit :
+
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Groupes d'accès**.
+2. Cliquez sur **Créer**.
+3. Entrez un nom et une description facultative pour votre groupe, puis cliquez sur **Créer**.
+
+Ensuite, continuez de configurer votre groupe en ajoutant des utilisateurs ou des ID de service :
+
+1. Sélectionnez le nom du groupe sur lequel vous voulez effectuer des ajouts. 
+2. Cliquez sur **Ajouter des utilisateurs**.
+3. Sélectionnez dans la liste les utilisateurs que vous souhaitez ajouter, puis cliquez sur **Ajouter au groupe**.
+4. Pour ajouter des ID de service au groupe, cliquez sur l'onglet **ID de service**, puis cliquez sur **Ajouter un ID de service**.
+5. Sélectionnez dans la liste les ID que vous souhaitez ajouter, puis cliquez sur **Ajouter au groupe**.
+
+### Affectation d'accès à vos groupes
+
+Une fois votre groupe créé, vous pouvez affecter des accès à toutes les entités du groupe à l'aide d'une seule règle. 
+
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Groupes d'accès**.
+2. Sélectionnez le nom du groupe auquel vous voulez affecter des accès. 
+3. Cliquez sur **Affecter un accès** pour définir une règle permettant d'affecter un accès à une seule ressource du compte ou à toutes les ressources d'un groupe de ressources. 
+
+Le fait d'organiser des ressources en groupes de ressources et des utilisateurs en groupes d'accès vous permet d'affecter un groupe d'accès utilisateur à un groupe de ressources à l'aide d'une seule règle et de réduire ainsi le nombre global de règles que vous devez gérer.
+{: tip}
+
+
+## Etape 3 : Gérer l'accès d'utilisateurs existants
+
+Après avoir invité des utilisateurs, leur avoir affecté un accès initial et avoir créé des groupes d'accès, vous voudrez sans doute leur affecter des accès supplémentaires ou éditer leur accès initial pour vous assurer que tous les utilisateurs et groupes de votre compte bénéficient du niveau d'accès souhaité.
 
 ### Affectation d'un nouvel accès
 

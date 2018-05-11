@@ -28,6 +28,7 @@
     {: .topicgroup}
     管理用户和访问权
         iamusermanage.md
+        groups.md
         mngiam.md
         mngcf.md
         mnginfra.md

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -20,6 +20,8 @@ Service-IDs werden erstellt, um Anwendungen, die sowohl in als auch außerhalb v
 Nach Erstellung einer Service-ID können Sie mit der Erstellung von API-Schlüsseln und der Zuweisung von Servicerichtlinien beginnen. Jede Richtlinie gibt eine bestimmte Zugriffsebene an, die zulässig ist, wenn der API-Schlüssel zur Authentifizierung bei Ihren Services verwendet wird. Weitere Informationen zur Erstellung einer Service-ID und zur Zuweisung von Richtlinien finden Sie in [Service-IDs erstellen und verwalten](/docs/iam/serviceid.html#serviceids). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung der API-Schlüssel von Service-IDs verwendet werden, sind in [Befehle zur Verwaltung von API-Schlüsseln und Richtlinien](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam) zu finden.
 
 Jeder API-Schlüssel, der einer Service-ID zugeordnet wurde, übernimmt die Richtlinie, die der Service-ID zugewiesen wurde. Wenn Sie z. B. festlegen möchten, dass eine Anwendung nur zur Anzeige von Ressourcen in einem Service berechtigt sein soll, dann müssen Sie einen API-Schlüssel verwenden, der einer Service-ID zugeordnet ist, für die eine Richtlinie definiert wurde, der die Rolle `Anzeigeberechtigter` zugeordnet wurde. Wenn Sie hingegen für eine andere Anwendung festlegen möchten, dass diese über vollständigen Zugriff innerhalb eines Service verfügen soll, dann müssen Sie einen API-Schlüssel verwenden, dem eine zweite Service-ID zugeordnet ist, für die eine Richtlinie zugewiesen wurde, der die Rolle `Administrator` zugeordnet wurde.
+
+Weitere Informationen finden Sie unter [Beispiele für die Verwendung einer Service-ID](/docs/iam/serviceid.html#examples-of-how-to-use-a-service-id).
 
 ## API-Schlüssel für Service-ID erstellen
 

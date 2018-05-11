@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -29,3 +29,10 @@ lastupdated: "2017-11-16"
 ## 更新服务标识
 
 您可以随时通过更改服务标识的名称和描述来更新该服务标识。还可以根据需要删除和创建新的 API 密钥，或更新分配的访问策略。但是，对现有服务标识进行的任何更改（例如，更改分配的策略或删除当前正在使用的 API 密钥）可能会导致使用该服务标识的应用程序发生服务中断。
+
+## 如何使用服务标识的示例
+
+下面是如何将服务标识与 {{site.data.keyword.objectstorageshort}} 和 Cloud SQL 查询服务配合使用的示例。
+
+- {{site.data.keyword.objectstorageshort}} - [入门](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-)。
+- Cloud SQL Query - [如何使用 SQL 查询 REST API ![外部链接图标](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}。

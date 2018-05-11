@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -16,7 +16,10 @@ lastupdated: "2017-11-16"
 # Cloud Foundry 访问权
 {: #cfaccess}
 
-目前，并非所有服务都可以使用 Cloud IAM 进行管理。对于这些服务实例，可以继续使用 Cloud Foundry，方法是使用分配用于定义所允许访问级别的 Cloud Foundry 角色，向用户提供对该实例所属组织和空间的访问权。
+目前，并非所有服务都可以使用 Cloud IAM 进行管理。您可以继续使用 Cloud Foundry 角色来访问这些服务实例。用户将添加到实例所属的组织和空间，并分配 Cloud Foundry 角色。 
+
+
+![使用帐户中的 Cloud Foundry 组织和空间进行访问](images/cf-diagram.svg "如何使用 Cloud Foundry 组织、空间和角色使帐户中的访问权生效")
 
 
 ## Cloud Foundry 角色

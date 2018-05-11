@@ -17,7 +17,7 @@ lastupdated: "2018-02-16"
 # Retranscription vidéo IAM
 {: #transcript}
 
-Lorsque vous choisissez d'affecter des droits d'accès à un utilisateur dans l'interface utilisateur Identity and Access Management (IAM), vous êtes invité à spécifier quelques options relatives au type d'accès que vous souhaitez affecter : par groupe de ressources, par ressource ou Cloud Foundry. Cette page comporte une vidéo qui présente aux utilisateurs les nouveaux droits d'accès à granularité fine fournis par IAM via l'accès à des ressources et à des ressources contenues dans des groupes de ressources. La section suivante contient la retranscription de cette vidéo pour les utilisateurs qui auraient besoin de la version traduite ou d'un autre format de cette vidéo.  
+Lorsque vous choisissez d'affecter des droits d'accès à un utilisateur dans l'interface utilisateur Identity and Access Management (IAM), vous êtes invité à spécifier quelques options relatives au type d'accès que vous souhaitez affecter : par groupe de ressources, par ressource ou Cloud Foundry. Cette page comporte une vidéo qui présente aux utilisateurs les nouveaux droits d'accès à granularité fine fournis par IAM via l'accès à des ressources et à des ressources contenues dans des groupes de ressources. La section suivante contient la retranscription de cette vidéo pour les utilisateurs qui auraient besoin de la version traduite ou d'un autre format de cette vidéo. 
 
 
 ## Retranscription de la vidéo

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-12"
 
 ---
 
@@ -16,7 +16,10 @@ lastupdated: "2017-11-16"
 # Cloud Foundry-Zugriff
 {: #cfaccess}
 
-Zum aktuellen Zeitpunkt können nicht alle Services unter Verwendung von Cloud IAM verwaltet werden. Sie können die Nutzung von Cloud Foundry für diese Serviceinstanzen fortsetzen, indem Sie Benutzern Zugriff auf die Organisation und den Bereich erteilen, zu der bzw. dem die Instanz gehört. Dazu wird eine Cloud Foundry-Rolle zugewiesen, um die Zugriffsebene zu definieren, die erlaubt werden soll.
+Derzeit können nicht alle Services unter Verwendung von Cloud IAM verwaltet werden. Sie können Cloud Foundry-Rollen weiterhin für den Zugriff auf diese Serviceinstanzen verwenden. Benutzer werden zu der Organisation und zu dem Bereich hinzugefügt, zu der bzw. dem die Instanz gehört. Dazu wird eine Cloud Foundry-Rolle zugewiesen. 
+
+
+![Zugriff mithilfe von Cloud Foundry-Organisationen und -Bereichen in einem Konto](images/cf-diagram.svg "Informationen zum Zugriff in einem Konto mithilfe von Cloud Foundry-Organisationen, -Bereichen und -Rollen")
 
 
 ## Cloud Foundry-Rollen

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -38,9 +38,41 @@ Als Kontoeigner können Sie den von Ihnen eingeladenen Benutzern im Abschnitt 'S
 
 Weitere Informationen finden Sie in [Benutzer einladen und Benutzern Zugriff zuweisen](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Schritt 2: Zugriff für vorhandene Benutzer verwalten
+## Schritt 2: Zugriffsgruppen erstellen
 
-Nachdem Sie Benutzer eingeladen und die Anfangszugriffsberechtigungen zugewiesen haben, können Sie weiterführende Zugriffsberechtigungen zuweisen oder die Anfangszugriffsberechtigungen bearbeiten, die Sie zugewiesen haben. Auf diese Weise können Sie sicherstellen, dass alle Benutzer in Ihrem Konto die gewünschte Zugriffsebene erhalten.
+Um die Zuweisung von Zugriff für Benutzer in Ihrem Konto zu optimieren, können Sie Zugriffsgruppen erstellen, die aus von Ihnen ausgewählten Benutzern und Service-IDs bestehen. Anschließend können Sie den Zugriff ohne großen Aufwand zuweisen, indem Sie eine einzige Richtlinie für die gesamte Gruppe definieren.
+
+### Ihre Gruppen einrichten
+
+Führen Sie die folgenden Schritte aus, um eine Zugriffsgruppe zu erstellen:
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Zugriffsgruppen** aus.
+2. Klicken Sie auf **Erstellen**.
+3. Geben Sie einen Namen und eine optionale Beschreibung für Ihre Gruppe ein und klicken Sie auf **Erstellen**.
+
+Fahren Sie danach mit der Einrichtung Ihrer Gruppe fort, indem Sie Benutzer oder Service-IDs hinzufügen:
+
+1. Wählen Sie den Namen der Gruppe aus, zu der Sie diese hinzufügen wollen.
+2. Klicken Sie auf **Benutzer hinzufügen**. 
+3. Wählen Sie die Benutzer, die Sie hinzufügen möchten, in der Liste aus und klicken Sie auf **Zu Gruppe hinzufügen**.
+4. Wenn Sie Service-IDs zu der Gruppe hinzufügen wollen, klicken Sie auf **Service-IDs** und anschließend auf **Service-ID hinzufügen**.
+5. Wählen Sie die IDs, die Sie hinzufügen möchten, in der Liste aus und klicken Sie auf **Zu Gruppe hinzufügen**.
+
+### Zugriff auf Ihre Gruppen zuweisen
+
+Nachdem Sie Ihre Gruppen erstellt haben, können Sie mit einer einzigen Richtlinie allen Entitäten in der Gruppe den Zugriff zuweisen.
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Zugriffsgruppen** aus.
+2. Wählen Sie den Namen der Gruppe aus, für die Sie Zugriff zuweisen wollen.
+3. Klicken Sie auf **Zugriff zuweisen**, um eine Richtlinie einzurichten, die den Zugriff auf eine einzelne Ressource im Konto oder auf alle Ressourcen in einer Ressourcengruppe zuweist.
+
+Durch die Organisation von Ressourcen in Ressourcengruppen und Benutzer in Zugriffsgruppen können Sie einer Gruppe von Benutzern mit einer einzigen Richtlinie den Zugriff auf eine Gruppe von Ressourcen zuweisen. Dies verringert die Gesamtzahl der Richtlinien, die Sie verwalten müssen.
+{: tip}
+
+
+## Schritt 3: Zugriff für vorhandene Benutzer verwalten
+
+Nachdem Sie Benutzer eingeladen, den Erstzugriff zugewiesen und Ihre Zugriffsgruppen erstellt haben, können Sie weiterführenden Zugriff zuweisen oder die Anfangszugriffsberechtigungen bearbeiten, die Sie zugewiesen haben. Auf diese Weise können Sie sicherstellen, dass alle Benutzer und Gruppen in Ihrem Konto die gewünschte Zugriffsebene erhalten.
 
 ### Neue Zugriffsberechtigungen zuweisen
 

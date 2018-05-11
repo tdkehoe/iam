@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -41,6 +41,8 @@ In der folgenden Liste erfahren Sie mehr über diese Cloud IAM-Komponenten:
 <dl>
 <dt>Benutzer</dt>
 <dd>Alle Benutzer innerhalb eines Kontos werden mithilfe Ihrer IBMid identifiziert. Benutzer können zu dem Konto eingeladen werden und es kann ihnen Zugriff auf Ressourcen erteilt werden. Der Zugriff kann einzelnen Ressourcen (bis zur Instanzebene) oder aber einem Set von Ressourcen zugewiesen werden, die in einer Kontoressourcengruppe organisiert sind.</dd>
+<dt>Zugriffsgruppe</dt>
+<dd>Der Kontoeigner kann eine Gruppe von Benutzern und Service-IDs erstellen, damit allen Entitäten in der Gruppe derselbe Zugriff mit einer einzigen Richtlinie zugewiesen werden kann.</dd>
 <dt>Ressourcen</dt>
 <dd>Kontoressourcen stellen die bereitgestellten Serviceangebote dar, die aus dem Katalog oder den differenzierteren Ressourcen innerhalb einer Serviceinstanz ausgewählt werden.</dd>
 <dt>Richtlinien</dt>

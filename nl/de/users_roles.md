@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-02-15"
+lastupdated: "2018-04-04"
 
 ---
 
@@ -23,7 +23,7 @@ Alle Services, die in einer Ressourcengruppe in Ihrem Konto zusammengefasst sind
 ## Was sind Cloud IAM-Richtlinien und wer kann sie zuweisen?
 {: #iamusermanpol}
 
-Sie können Zugriffsberechtigungen für Benutzer und Service-IDs bereitstellen, indem Sie Richtlinien erstellen, die ein Ziel für den Benutzer oder die Service-ID festlegen, auf das zugegriffen werden soll, und außerdem eine Rolle, in der definiert ist, welcher Zugriffstyp zulässig ist. Eine Richtlinie weist einem Benutzer oder einer Service-ID einzelne oder mehrere Rollen für ein Ressourcenset zu. Dazu wird eine Kombination von Attributen zur Definition des betreffenden Ressourcensets verwendet. Wenn Sie eine Richtlinie zuweisen, geben Sie zuerst an, ob eine Richtlinie für eine Ressourcengruppe oder eine einzelne Ressource definiert werden soll. Anschließend können Sie abhängig von der zuerst getroffenen Auswahl einen Service in einer Ressourcengruppe oder eine einzelne Instanz für die ausgewählte Ressource auswählen. Abhängig von dem Service, den Sie auswählen, können weitere Konfigurationsoptionen verfügbar sein. Abschließend können Sie einzelne oder mehrere Rollen auswählen, die zugewiesen werden sollen. 
+Eine Richtlinie weist einem Benutzer oder einer Service-ID einzelne oder mehrere Rollen für eine Gruppe von Ressourcen zu, um im Kontext der angegebenen Zielressourcen bestimmte Aktion zu ermöglichen. Wenn Sie eine Richtlinie zuweisen, geben Sie zuerst an, ob eine Richtlinie für eine Ressourcengruppe oder eine einzelne Ressource definiert werden soll. Anschließend können Sie abhängig von der zuerst getroffenen Auswahl einen Service in einer Ressourcengruppe oder eine einzelne Instanz für die ausgewählte Ressource auswählen. Abhängig von dem Service, den Sie auswählen, können weitere Konfigurationsoptionen verfügbar sein. Abschließend können Sie einzelne oder mehrere Rollen auswählen, die zugewiesen werden sollen. 
 
 Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle haben. In der folgenden Tabelle werden die Richtlinienmanagementtasks und die jeweils erforderliche Rolle aufgeführt.
 
@@ -39,7 +39,7 @@ Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle
 ## Cloud IAM-Rollen
 {: #iamusermanrol}
 
-Mit Cloud IAM können Sie die Zugriffsberechtigungen für Benutzer und Ressourcen in Ihrem Konto verwalten und definieren. Wenn der verwendete Service mit IAM verwaltet werden kann, können zwei Typen von Rollen zugewiesen werden: Plattformmanagement- und Servicezugriffsrollen.
+Mit Cloud IAM können Sie die Zugriffsberechtigungen für Benutzer und Ressourcen in Ihrem Konto verwalten und definieren. Es können zwei Typen von Rollen zugewiesen werden: Plattformmanagement- und Servicezugriffsrollen.
 
 <dl>
 <dt>Plattformmanagementrollen</dt> 
@@ -48,7 +48,7 @@ Mit Cloud IAM können Sie die Zugriffsberechtigungen für Benutzer und Ressource
 <dd>Servicezugriffsrollen definieren die Möglichkeit eines Benutzers oder eines Service, bestimmte Aktionen für eine Serviceinstanz auszuführen. Hierzu zählen z. B. der Zugriff auf die Benutzerschnittstelle oder das Ausführen von API-Aufrufen. Es gibt drei mögliche Rollen: Manager, Schreibberechtigter (Writer) und Leseberechtigter (Reader). </dd>
 </dl> 
 
-Möglicherweise werden nicht alle als Optionen aufgeführten Rollen angezeigt, wenn Sie Richtlinien in der Benutzerschnittstelle zuweisen, da nur die Rollen, die für den in der Richtlinie ausgewählten Service verfügbar sind, angezeigt werden. Spezifische Informationen zu den aktivierten Rollen und zu den Aktionen, die die einzelnen Zugriffsrollen für den jeweiligen Service ermöglichen, sind in der Dokumentation zum betreffenden Service beschrieben.
+Möglicherweise werden nicht alle als Optionen aufgeführten Rollen angezeigt, wenn Sie Richtlinien in der Benutzerschnittstelle zuweisen, da nur die Rollen angezeigt werden, die für den von Ihnen ausgewählten Service verfügbar sind. Spezifische Informationen zu den aktivierten Rollen und zu den Aktionen, die die einzelnen Zugriffsrollen für den jeweiligen Service ermöglichen, sind in der Dokumentation zum betreffenden Service beschrieben.
 {: tip}
 
 Durch Verwendung einer Zusammenstellung dieser Rollen in einer einzigen Zugriffsrichtlinie können Sie differenzierte Zugriffsberechtigungen für Benutzer und Service-IDs bereitstellen, indem Sie den Zugriff auf die folgenden Komponenten zuweisen:
@@ -65,15 +65,15 @@ Um einem weiteren Benutzer den uneingeschränkten Zugriff auf das Konto zu ertei
 
 ### Plattformmanagementrollen
 
-Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsstufen für die Durchführung von Plattformaktionen im Konto zugewiesen werden. Neben den Beschreibungen der Rollen, die in der Konsole verfügbar sind, werden in den folgenden Tabellen Beispiele für einige der Plattformmanagementaktionen aufgeführt, die Benutzer durchführen können, denen die entsprechende Rolle zugewiesen wurde. In der Dokumentation zu den verschiedenen Services finden Sie Informationen dazu, wie die Rollen für Benutzer im Kontext des momentan verwendeten Service angewendet werden.
+Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsstufen für die Durchführung von Plattformaktionen im Konto zugewiesen werden. In den folgenden Tabellen werden Beispiele für einige der Plattformmanagementaktionen aufgeführt, die Benutzer durchführen können, denen die entsprechende Rolle zugewiesen wurde. In der Dokumentation zu den verschiedenen Services finden Sie Informationen dazu, wie die Rollen für Benutzer im Kontext des momentan verwendeten Service angewendet werden.
 
-| Zugriffsrichtlinie - Details  | Aktionen, die ein Benutzer für Services im Konto durchführen kann | Aktionen für Service-IDs | Aktionen für Zugriff auf Ressourcengruppen | Aktion für Ressourcen in Ressourcengruppen |
-|:-----------------|:--------------|:---------------|:----------------|:-----------------|
-| Zugriff zuweisen für | Einen oder alle IAM-fähigen Services | IAM Identity Service | Ausgewählte Ressourcengruppe | Ausgewählten Service in einer Ressourcengruppe |
-| Anzeigeberechtigten-Rolle | Instanzen, Aliasnamen, Bindungen und Berechtigungsnachweise anzeigen | IDs und API-Schlüssel anzeigen | Ressourcengruppe anzeigen | Nur angegebene Instanzen in der Ressourcengruppe anzeigen |
-| Operatorrolle |  Instanzen anzeigen und Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
-| Bearbeiterrolle |  Instanzen erstellen, löschen, bearbeiten und anzeigen. Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | IDs und API-Schlüssel erstellen und löschen | Name der Ressourcengruppe anzeigen und bearbeiten | Nur angegebene Instanzen in der Ressourcengruppe erstellen, löschen, bearbeiten, aussetzen, wiederaufnehmen, anzeigen und binden |
-| Administratorrolle |  Alle Verwaltungsaktionen für Services | IDs und API-Schlüssel erstellen und löschen, Richtlinien zu IDs zuweisen | Zugriff für die Ressourcengruppe anzeigen, bearbeiten und verwalten | Alle Verwaltungsaktionen für die angegebenen Instanzen in der Ressourcengruppe |
+| Zugriffsrichtlinie - Details  | Aktionen, die ein Benutzer für Services im Konto durchführen kann | Aktionen für Service-IDs | Aktionen für Zugriff auf Ressourcengruppen | Aktion für Ressourcen in Ressourcengruppen | Aktionen für die Verwaltung von Zugriffsgruppen |
+|:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
+| Zugriff zuweisen für | Einen oder alle IAM-fähigen Services | IAM Identity Service | Ausgewählte Ressourcengruppe | Ausgewählten Service in einer Ressourcengruppe | IAM-Zugriffsgruppen |
+| Anzeigeberechtigten-Rolle | Instanzen, Aliasnamen, Bindungen und Berechtigungsnachweise anzeigen | IDs und API-Schlüssel anzeigen | Ressourcengruppe anzeigen | Nur angegebene Instanzen in der Ressourcengruppe anzeigen | Zugriffsgruppen und Mitglieder anzeigen |
+| Operatorrolle |  Instanzen anzeigen und Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
+| Bearbeiterrolle |  Instanzen erstellen, löschen, bearbeiten und anzeigen. Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | IDs und API-Schlüssel erstellen und löschen | Name der Ressourcengruppe anzeigen und bearbeiten | Nur angegebene Instanzen in der Ressourcengruppe erstellen, löschen, bearbeiten, aussetzen, wiederaufnehmen, anzeigen und binden | Zugriffsgruppen in dem Konto anzeigen, erstellen, löschen und bearbeiten |
+| Administratorrolle |  Alle Verwaltungsaktionen für Services | IDs und API-Schlüssel erstellen und löschen, Richtlinien zu IDs zuweisen | Zugriff für die Ressourcengruppe anzeigen, bearbeiten und verwalten | Alle Verwaltungsaktionen für die angegebenen Instanzen in der Ressourcengruppe | Zugriff für das Arbeiten mit Zugriffsgruppen anzeigen, erstellen, löschen, bearbeiten und verwalten |
 {: caption="Tabelle 2. Beispiele für Plattformmanagementrollen und Aktionen" caption-side="top"}
 {: #platformrolestable}
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-04-17"
 
 ---
 
@@ -12,21 +12,25 @@ lastupdated: "2017-11-16"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
 
-# Modèles d'accès IAM et Cloud Foundry
+# Migration des instances de service Cloud Foundry vers un groupe de ressources
 {: #accessmodels}
 
-Actuellement, les services {{site.data.keyword.Bluemix_notm}} ne prennent pas tous en charge l'utilisation de la gestion des accès Cloud IAM. Les services pour lesquels l'utilisation de Cloud IAM n'est pas activée s'appuient toujours sur un rôle utilisateur et un espace dans une organisation Cloud Foundry pour déterminer si un utilisation détient le droit d'accéder aux ressources. Vous pouvez utiliser l'interface utilisateur {{site.data.keyword.Bluemix_notm}} Identity and Access pour gérer l'accès aux services qui se servent de systèmes de gestion des accès Cloud IAM ou Cloud Foundry.
+Vous êtes prévenu sur votre tableau de bord à mesure que les services cessent d'utiliser des organisations, des espaces et des rôles Cloud Foundry au profit d'IAM (Identity and Access Management) et de groupes de ressources Cloud. Lorsqu'un service quitte Cloud Foundry, vous êtes invité à faire migrer les instances de service existantes qui appartiennent à une organisation et à un espace dans un [groupe de ressources](/docs/account/resourcegroups.html#rgs). 
 
+Lorsque vous faites migrer des instances de service Cloud Foundry existantes vers un groupe de ressources, L'affectation de groupe que vous effectuez ne peut pas être modifiée une fois la migration terminée. Par conséquent, vous devez être certain de la manière dont vous souhaitez organiser des ressources dans le compte avant de procéder à la migration. Cela peut signifier que vous devez créer un ou plusieurs groupes de ressources, si vous disposez d'un compte payant, avant de procéder à la migration.
+{: tip}
 
-## Passage des services Cloud Foundry à Cloud IAM
-{: #cftoiam}
-
-Si vous utilisez actuellement un service Cloud Foundry qui commence à prendre en charge l'utilisation de la gestion des accès Cloud IAM, vous recevrez une notification vous indiquant que vous pouvez désormais bénéficier du contrôle d'accès avec IAM pour les nouvelles instances de service que vous créez.
-
-A mesure que les services commence à activer l'utilisation de Cloud IAM, vous pourrez noter les évolutions suivantes :
-
-* Pour les instances existantes de votre compte qui utilisent déjà la gestion des accès Cloud Foundry en affectant des utilisateurs à une organisation et un espace avec un rôle Cloud Foundry, vous pouvez continuer à utiliser ces instances sans aucune modification.
-* Pour la création de nouvelles instances, vous affectez à chacune un groupe de ressources dans votre compte, puis vous pouvez utiliser Cloud IAM pour gérer l'accès à cette instance et au groupe de ressources auquel elle appartient, si vous être l'administrateur du groupe de ressources.
+## Pourquoi faire migrer mes instances de service ?
 
 Les services qui prennent en charge l'utilisation de Cloud IAM en tirent plusieurs avantages, notamment la possibilité de se connecter à des applications et des services dans n'importe quel espace Cloud Foundry, ce qui vous permet de vous connecter à des applications et des services à partir de différentes régions. De plus, chaque instance gérée par Cloud IAM appartient à un groupe de ressources et la portée des groupes de ressources n'est pas établie par région, de sorte que vous pouvez mettre à disposition des applications et des services issus de différentes régions dans un même groupe de ressources. Vous avez également la possibilité d'utiliser le contrôle d'accès à granularité fine jusqu'au niveau d'une instance individuelle.
+ 
+
+## Comment fonctionne la migration ?
+
+Lors de la migration d'une instance de service depuis une organisation et un espace Cloud Foundry dans un groupe de ressources, une nouvelle instance de service liée est créée dans le groupe de ressources. L'instance d'origine dans l'organisation et l'espace Cloud Foundry se transforme en [alias](/docs/cfapps/connecting_apps.html#what_is_alias).
+
+Vous pouvez faire migrer vos instances de service une par une lorsque vous êtes prévenu sur le tableau de bord par une icône associée à votre instance de service Cloud Foundry, ou le message sur la page des détails de service peut vous conduire directement à l'assistant qui vous guide lors du processus. Avant d'effectuer la migration, décidez de quelle façon vous souhaitez organiser vos ressources, puis choisissez une instance de service éligible en utilisant le menu **Actions** sur le tableau de bord et en sélectionnant **Migrate to a resource group**. Sélectionnez un groupe de ressources vers lequel faire migrer l'instance durant le processus. Une fois que vous avez correctement fait migré une instance, elle apparaît dans la section Services de votre tableau de bord. L'alias demeure dans la section Cloud Foundry du tableau de bord.  
+
+
