@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-12-07"
+lastupdated: "2018-04-02"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2017-12-07"
 <dt>API 키</dt>
 <dd>플랫폼 API 키는 사용자 또는 서비스 ID로서 API 또는 CLI를 사용하여 인증하는 데 이용할 수 있도록 Cloud IAM을 통해 사용이 가능합니다. 이러한 API 키는 Cloud IAM을 통해 제공됩니다. 따라서 이는 일반적으로 IBM Cloud 외부에서 IBM ID를 인증하는 데는 사용될 수 없습니다. </dd>
 <dt>리소스</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} 리소스는 CRN(Cloud Resource Name)으로 식별됩니다. 자세한 정보는 [CRN(Cloud Resource Name)](/docs/overview/crn.html#crn)을 참조하십시오.</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} 리소스는 클라우드 리소스 이름(CRN)으로 식별됩니다. 자세한 정보는 [클라우드 리소스 이름](/docs/overview/crn.html#crn)을 참조하십시오.</dd>
 </dl>
 
 ## 액세스 관리
@@ -40,6 +40,8 @@ lastupdated: "2017-12-07"
 <dl>
 <dt>사용자</dt>
 <dd>계정 내의 모든 사용자는 IBM ID로 식별됩니다. 사용자는 계정에 초대되고 리소스에 대한 액세스를 부여받을 수 있습니다. 액세스는 인스턴스 레벨까지 단일 서비스에 지정되거나 계정 리소스 그룹에서 구성된 리소스 세트에 지정될 수 있습니다.</dd>
+<dt>액세스 그룹</dt>
+<dd>단일 정책을 사용하는 그룹 내 모든 엔티티에 동일한 액세스를 지정할 수 있도록 계정 소유자가 사용자 및 서비스 ID 그룹을 작성할 수 있습니다.</dd>
 <dt>리소스</dt>
 <dd>계정 리소스는 카탈로그에서 선택된 프로비저닝된 서비스 오퍼링이거나 서비스 인스턴스 내의 세분화된 리소스입니다.</dd>
 <dt>정책</dt>

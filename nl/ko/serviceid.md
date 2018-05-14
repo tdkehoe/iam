@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2018
-lastupdated: "2017-11-16"
+lastupdated: "2018-03-19"
 
 ---
 
@@ -29,3 +29,10 @@ lastupdated: "2017-11-16"
 ## 서비스 ID 업데이트
 
 언제든 이름 및 설명을 변경하여 서비스 ID를 업데이트할 수 있습니다. 또한 필요에 따라 키를 삭제하고 새 API 키를 작성하거나 지정된 액세스 정책을 업데이트할 수도 있습니다. 하지만 기존 서비스 ID를 변경하면(예: 지정된 정책 변경 또는 현재 사용 중인 API 키 삭제) 이 서비스 ID를 사용하는 애플리케이션에서 서비스가 중단될 수 있습니다.
+
+## 서비스 ID 사용 방법에 대한 예제
+
+다음은 {{site.data.keyword.objectstorageshort}} 및 Cloud SQL Query 서비스에 서비스 ID를 사용하는 방법에 대한 예제입니다.
+
+- {{site.data.keyword.objectstorageshort}} - [시작하기](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-).
+- Cloud SQL Query - [SQL Query REST API 사용 방법 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
