@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-04-16"
 # Managing user API keys
 {: #userapikey}
 
-A federated or non-federated user can create an API key to use on the CLI or as part of automation to log in as your user identity. You can use the UI or the CLI to manage your API keys by listing your keys, creating keys, updating keys, or deleting keys. To manage the {{site.data.keyword.Bluemix_notm}} API keys associated with your user identity, go to **Manage** &gt; **Security** &gt; **Platform API keys** to see a list of your API Keys with descriptions and dates. Then, you can create, edit or delete API keys from this page. And, for a full list of available CLI commands, see [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
+A federated or non-federated user can create an API key to use on the CLI or as part of automation to log in as your user identity. You can use the UI or the CLI to manage your API keys by listing your keys, creating keys, updating keys, or deleting keys. To manage the {{site.data.keyword.Bluemix_notm}} API keys associated with your user identity, go to **Manage** &gt; **Security** &gt; **Platform API keys** to see a list of your API Keys with descriptions and dates. Then, you can create, edit or delete API keys from this page. And, for a full list of available CLI commands, see [`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam).
 
 As a [federated user](/docs/account/adminpublic.html#federatedid), you can use an API key to login by using the `BLUEMIX_API_KEY` environment variable. For more information about using an API key for logging in, see [Logging in with a federated ID](/docs/cli/login_federated_id.html#federated_id).
 
@@ -35,10 +35,10 @@ To create an API key for your user identity in the UI:
 
 To create an API key by using the CLI:
 
-1. Enter `bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. For example:
+1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. For example:
 
 ```
-bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" -f key_file
 ``` 
 
 
@@ -55,10 +55,10 @@ To edit an API key:
 
 To edit an API key by using the CLI:
 
-1. Enter `bluemix iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example:
+1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example:
 
 ```
-bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
+ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
 
 ## Deleting an API key
@@ -72,4 +72,4 @@ To delete an API key:
 3. Then, confirm the deletion by clicking **Delete key**.
 
 To delete an API key by using the CLI:
-1. Enter `bluemix iam api-key-delete NAME` in your command prompt, specifying the name of your key that should be deleted.
+1. Enter `ibmcloud iam api-key-delete NAME` in your command prompt, specifying the name of your key that should be deleted.
