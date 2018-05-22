@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -30,7 +30,7 @@ To invite users or manage user invitations in your account, complete the followi
 
 If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
 
-If you want to invite users by using the CLI, see the [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) command.
+If you want to invite users by using the CLI, see the [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) command.
 {: tip}
 
 ## Assigning user access
@@ -87,7 +87,7 @@ When you invite new users, you can choose to add the user to an organization in 
 
 See [Cloud Foundry roles](/docs/iam/cfaccess.html#cfroles) for more information about the roles.
 
-You can add a Cloud Foundry role by using the [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} infrastructure access
