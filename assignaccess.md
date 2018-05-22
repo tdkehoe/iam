@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ When you invite new users, you can choose to add the user to an organization in 
 
 For more information about these roles, see [Cloud Foundry roles](/docs/iam/users_roles.html#cfroles).
 
-**Note**: You can add a Cloud Foundry role by using the [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+**Note**: You can add a Cloud Foundry role by using the [ibmcloud iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
 
 ## Infrastructure access
 
