@@ -61,6 +61,18 @@ To edit an API key by using the CLI:
 ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
 
+## Locking an API key
+
+For platform API keys that represent your user identity you can prevent policies from being changed and the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. 
+
+### How to lock an API key from the UI
+
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Platform API Keys**.
+2. Identify the row of the API key that you want to lock, and select **Lock API key** from the **Actions** menu.
+
+You can unlock your API key at any time to update, delete, or add an access policy or remove the API key from your account. Select the API key from the table that you want to unlock and select **Unlock API key** from the **Actions menu**.
+{: tip}
+
 ## Deleting an API key
 
 If you are using a key rotation strategy, you might want to delete an older key and replace it with a new key.
