@@ -41,7 +41,7 @@ Vous pouvez passer en revue la liste suivante pour en savoir plus sur ces compos
 <dt>Utilisateurs</dt>
 <dd>Tous les utilisateurs d'un compte sont identifiés par leur IBMid. Des utilisateurs peuvent être invités dans le compte et se voir accorder l'accès à des ressources. L'accès peut être affecté à des ressources individuelles, jusqu'au niveau instance, ou à un ensemble de ressources organisées dans un groupe de ressources du compte.</dd>
 <dt>Groupe d'accès</dt>
-<dd>Un groupe d'utilisateurs et d'ID de service peut être créé par le propriétaire de compte de sorte que le même accès puisse être affecté à toutes les entités au sein du groupe au moyen d'une seule règle. </dd>
+<dd>Un groupe d'utilisateurs et d'ID de service peut être créé par le propriétaire de compte de sorte que le même accès puisse être affecté à toutes les entités au sein du groupe au moyen d'une seule règle.</dd>
 <dt>Ressources</dt>
 <dd>Les ressources d'un compte sont les offres de service mises à disposition, sélectionnées dans le catalogue, ou des ressources à granularité plus fine au sein d'une instance de service.</dd>
 <dt>Règles</dt>

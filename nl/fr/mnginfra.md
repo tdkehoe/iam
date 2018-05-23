@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-11-16"
 
 # Gestion de l'accès à l'infrastructure
 
-Dans l'invitation de compte initiale, vous devez avoir défini certains droits initiaux pour vos utilisateurs. Vous pouvez mettre à jour des droits d'infrastructure ou ajouter des accès à des périphériques à partir de l'option d'infrastructure de la console à tout moment. Pour accéder aux droits d'infrastructure, accédez à l'icône de menu ![Icône de menu](../icons/icon_hamburger.svg), puis sélectionnez **Infrastructure**. Ensuite, accédez à **Compte** &gt; **Utilisateurs** pour démarrer.
+Dans l'invitation de compte initiale, vous pouvez définir certains droits initiaux pour vos utilisateurs. Vous pouvez mettre à jour des droits d'infrastructure ou ajouter des accès à des périphériques à partir de l'option d'infrastructure de la console à tout moment. Pour accéder aux droits d'infrastructure, accédez à l'icône de menu ![Icône de menu](../icons/icon_hamburger.svg), puis sélectionnez **Infrastructure**. Ensuite, accédez à **Compte** &gt; **Utilisateurs** pour démarrer.
 
 ## Mise à jour des droits
 
@@ -39,6 +39,6 @@ Dans l'invitation de compte initiale, vous devez avoir défini certains droits i
 
 1. Cliquez sur l'icône de menu ![Icône de menu](../icons/icon_hamburger.svg), puis sélectionnez **Infrastructure**.
 2. Accédez à **Compte** &gt; **Utilisateurs**.
-3. Cliquez sur le lien de la colonne **Accès Terminal** pour l'utilisateur dont vous voulez mettre à jour l'accès. Le lien indique **Gérer** ou le nombre de périphériques auxquels l'utilisateur a accès. Vous pouvez également cliquer sur **Edit Portal Access** dans le menu Actions pour accéder à la page des droits. Dans cette page, sélectionnez l'onglet **Accès Terminal**.
+3. Cliquez sur le lien de la colonne **Accès Terminal** pour l'utilisateur dont vous voulez mettre à jour l'accès. L'option de lien est **Gérer** ou le nombre de périphériques auxquels l'utilisateur a accès. Vous pouvez également cliquer sur **Modifier accès au portail** dans le menu Actions pour accéder à la page des droits. Sur cette page, sélectionnez l'onglet **Accès Terminal**.
 4. Sélectionnez les périphériques auxquels vous voulez accorder l'accès à l'utilisateur.
 5. Cliquez sur **Update Device Access**.

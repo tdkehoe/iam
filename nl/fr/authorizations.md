@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-12-15"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-12-15"
 # Octroi d'accès entre services
 {: #serviceauth}
 
-La plupart des fonctionnalités du système IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}} se concentrent sur la gestion et l'application de l'accès aux ressources {{site.data.keyword.Bluemix_notm}} par les utilisateurs et leurs applications. Il existe toutefois d'autres scénarios dans lesquels vous pouvoir avoir besoin de fournir un service avec accès à une ressource d'un utilisateur dans un autre service. Tous les utilisateurs de votre compte peuvent créer une autorisation, mais seul un utilisateur disposant du rôle `Administrateur` est en mesure de supprimer une autorisation. Vous pouvez définir et afficher les autorisations qui ont été accordées dans votre compte sur la page **Autorisations**.
+La plupart des fonctionnalités du système IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}} se concentrent sur la gestion et l'application de l'accès aux ressources {{site.data.keyword.Bluemix_notm}} par les utilisateurs et leurs applications. Il existe toutefois d'autres scénarios dans lesquels vous pouvoir avoir besoin de fournir un service avec accès à une ressource d'un utilisateur dans un autre service. Tous les utilisateurs de votre compte peuvent créer une autorisation, mais seul un utilisateur disposant du rôle `Administrateur` est en mesure de supprimer une autorisation. Vous pouvez configurer et afficher des autorisations dans votre compte sur la page **Autorisations**.
 
 ## Création d'une autorisation
 

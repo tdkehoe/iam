@@ -40,7 +40,7 @@ Pour plus d'informations, voir [Invitation d'utilisateurs et affectation d'accè
 
 ## Etape 2 : Créer des groupes d'accès
 
-Afin de rationaliser le processus d'affectation d'accès à des utilisateurs de votre compte, vous pouvez créer des groupes d'accès constitués d'utilisateurs et d'ID de service que vous sélectionnez, puis affecter facilement des accès en définissant une seule règle pour l'ensemble du groupe. 
+Afin de rationaliser le processus d'affectation d'accès à des utilisateurs de votre compte, vous pouvez créer des groupes d'accès constitués d'utilisateurs et d'ID de service que vous sélectionnez, puis affecter facilement des accès en définissant une seule règle pour l'ensemble du groupe.
 
 ### Configuration de vos groupes
 
@@ -52,7 +52,7 @@ Pour créer un groupe d'accès, procédez comme suit :
 
 Ensuite, continuez de configurer votre groupe en ajoutant des utilisateurs ou des ID de service :
 
-1. Sélectionnez le nom du groupe sur lequel vous voulez effectuer des ajouts. 
+1. Sélectionnez le nom du groupe sur lequel vous voulez effectuer des ajouts.
 2. Cliquez sur **Ajouter des utilisateurs**.
 3. Sélectionnez dans la liste les utilisateurs que vous souhaitez ajouter, puis cliquez sur **Ajouter au groupe**.
 4. Pour ajouter des ID de service au groupe, cliquez sur l'onglet **ID de service**, puis cliquez sur **Ajouter un ID de service**.
@@ -60,11 +60,11 @@ Ensuite, continuez de configurer votre groupe en ajoutant des utilisateurs ou de
 
 ### Affectation d'accès à vos groupes
 
-Une fois votre groupe créé, vous pouvez affecter des accès à toutes les entités du groupe à l'aide d'une seule règle. 
+Une fois votre groupe créé, vous pouvez affecter des accès à toutes les entités du groupe à l'aide d'une seule règle.
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Groupes d'accès**.
-2. Sélectionnez le nom du groupe auquel vous voulez affecter des accès. 
-3. Cliquez sur **Affecter un accès** pour définir une règle permettant d'affecter un accès à une seule ressource du compte ou à toutes les ressources d'un groupe de ressources. 
+2. Sélectionnez le nom du groupe auquel vous voulez affecter des accès.
+3. Cliquez sur **Affecter un accès** pour définir une règle permettant d'affecter un accès à une seule ressource du compte ou à toutes les ressources d'un groupe de ressources.
 
 Le fait d'organiser des ressources en groupes de ressources et des utilisateurs en groupes d'accès vous permet d'affecter un groupe d'accès utilisateur à un groupe de ressources à l'aide d'une seule règle et de réduire ainsi le nombre global de règles que vous devez gérer.
 {: tip}

@@ -39,7 +39,7 @@ Vous pouvez affecter et gérer des règles si le rôle approprié vous a été a
 ## Rôles Cloud IAM
 {: #iamusermanrol}
 
-Cloud IAM vous permet de gérer et de définir les droits d'accès des utilisateurs et des ressources dans votre compte. Deux types de rôle peuvent être affectés : des rôles de gestion de plateforme et des rôles d'accès à un service. 
+Cloud IAM vous permet de gérer et de définir les droits d'accès des utilisateurs et des ressources dans votre compte. Deux types de rôle peuvent être affectés : des rôles de gestion de plateforme et des rôles d'accès à un service.
 
 <dl>
 <dt>Rôles de gestion de plateforme</dt> 

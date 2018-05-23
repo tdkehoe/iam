@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -23,14 +23,14 @@ Pour inviter des utilisateurs et gérer des invitations en attente, vous devez �
 
 Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre compte, procédez comme suit :
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**. La page Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut actuel pour le compte actuellement sélectionné.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**. La page Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut pour le compte actuellement sélectionné.
 2. Cliquez sur **Inviter des utilisateurs**.
 3. Spécifiez l'adresse électronique de l'utilisateur. Si vous invitez plusieurs utilisateurs avec une même invitation, ils bénéficient tous du même droit d'accès.
 4. Ajoutez une ou plusieurs options d'accès que vous gérez. Vous devez affecter au moins une option d'accès. Pour les options d'accès supplémentaires que vous n'ajoutez ou ne configurez pas, la valeur par défaut *Aucun accès* lui est affectée. L'une des options suivantes ou toutes les options d'accès suivantes peuvent s'afficher, selon celles que vous êtes autorisé à gérer : **Services**, **Accès Cloud Foundry**, **Accès à l'infrastructure {{site.data.keyword.Bluemix_notm}}**. Pour plus d'informations, voir [Octroi d'un accès utilisateur](/docs/iam/iamuserinv.html#assignaccess).
 
 Si vous déterminez qu'un utilisateur n'a pas besoin d'un accès, vous pouvez annuler l'invitation de n'importe quel utilisateur dont l'état indique **En cours de traitement** ou **En attente** dans la colonne **Statut**. Si un utilisateur invité n'a pas reçu d'invitation, vous pouvez renvoyer l'invitation à n'importe quel utilisateur dont l'état indique **En attente**.
 
-Si vous voulez inviter des utilisateurs à l'aide de l'interface de ligne de commande, reportez-vous à la commande [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite).
+Si vous voulez inviter des utilisateurs à l'aide de l'interface de ligne de commande, reportez-vous à la commande [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite).
 {: tip}
 
 ## Octroi d'un accès utilisateur
@@ -87,7 +87,7 @@ Lorsque vous invitez de nouveaux utilisateurs, vous pouvez choisir d'ajouter l'u
 
 Pour plus d'informations sur les rôles, voir [Rôles Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
 
-Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite),
+Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite),
 mais vous devez utiliser l'interface utilisateur pour lui accorder d'autres accès ou autorisations.
 {: tip}
 

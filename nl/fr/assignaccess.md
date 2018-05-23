@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-07-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -20,16 +20,16 @@ Vous accordez un accès aux utilisateurs lorsque vous les invitez, en leur affec
 
 ## Services avec l'offre Identity and Access activée
 
-Vous pouvez affecter une règle de service unique lorsque vous invitez un nouvel utilisateur. Une fois que l'utilisateur a accepté l'invitation, vous pouvez ajouter des règles de service supplémentaires.
+Vous pouvez affecter une règle de service unique lorsque vous invitez un nouvel utilisateur. Lorsque l'utilisateur accepte l'invitation, vous pouvez ajouter des règles de service supplémentaires.
 
 1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services avec l'offre Identity and Access activée**.
 2. Sélectionnez un service.
 3. Sélectionnez **Toutes les régions en cours** ou une région spécifique.
 4. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
 5. Sélectionnez un rôle afin de définir la portée de l'accès pour la règle.
-6. Facultatif : sélectionnez **Ajouter un rôle** afin de spécifier un rôle supplémentaire pour la règle.
+6. Vous pouvez éventuellement sélectionner **Ajouter un rôle** afin de spécifier un autre rôle pour la règle. 
 
-Voir [Règles et rôles dans Identity and Access Management](/docs/iam/users_roles.html#iamusermanpol) pour plus d'informations sur les rôles lors de la définition de règles de services.
+Pour plus d'informations sur les rôles à utiliser lors de la définition de règles de service, voir [Règles et rôles IAM (Identity and Access Management)](/docs/iam/users_roles.html#iamusermanpol).
 
 ## Accès Cloud Foundry
 
@@ -42,11 +42,11 @@ Lorsque vous invitez de nouveaux utilisateurs, vous pouvez choisir d'ajouter l'u
 5. Sélectionnez **Toutes les régions en cours** ou une région spécifique.
 6. Sélectionnez **Tous les espaces en cours** ou un espace spécifique.
 7. Sélectionnez un rôle d'espace pour définir son niveau d'accès aux espaces sélectionnés.
-8. Facultatif : sélectionnez **Ajouter un rôle** pour lui attribuer un rôle supplémentaire.
+8. Vous pouvez éventuellement sélectionner **Ajouter un rôle** afin de spécifier un autre rôle pour la règle. 
 
-Voir [Rôles Cloud Foundry](/docs/iam/users_roles.html#cfroles) pour des informations plus spécifiques sur ces rôles.
+Pour plus d'informations sur ces rôles, voir [Rôles Cloud Foundry](/docs/iam/users_roles.html#cfroles).
 
-**Remarque **: vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande CLI [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mais vous devez utiliser l'interface utilisateur pour lui accorder d'autres accès ou autorisations.
+**Remarque **: vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande d'interface de ligne de commande [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mais vous devez utiliser l'interface utilisateur pouraccorder d'autres droits d'accès. 
 
 ## Accès à l'infrastructure
 
@@ -55,4 +55,4 @@ Les droits réels accordés sont limités automatiquement au sous-ensemble de dr
 1. Dans l'écran **Inviter des utilisateurs**, développez la section **Accès Infrastructure**.
 2. Sélectionnez un droit afin de définir la portée de l'accès.
 
-Pour plus d'informations sur la configuration de l'accès utilisateurs après leur ajout à votre compte, voir [Gestion des utilisateurs et des accès](/docs/iam/iamusermanage.html).
+Pour plus d'informations sur la configuration des droits d'accès pour les utilisateurs une fois que vous les avez ajoutés à votre compte, voir [Gestion des utilisateurs et des accès](/docs/iam/iamusermanage.html).

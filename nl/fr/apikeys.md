@@ -30,12 +30,12 @@ Vous pouvez également utiliser les clés d'API associées aux ID de service que
 
 ## Autres clés d'{{site.data.keyword.Bluemix_notm}}
 
-Outre les clés d'API de votre plateforme, il existe d'autres types d'API que vous pouvez employer lorsque vous utilisez {{site.data.keyword.Bluemix_notm}} :
+Outre les clés d'API de votre plateforme, il existe deux autres types d'API que vous pouvez utiliser dans {{site.data.keyword.Bluemix_notm}} :
 
 * clés d'API de l'infrastructure
 * clés d'API spécifiques au service
 
-Les clés d'API de l'infrastructure sont créés dans le portail client et sont associées à l'ID utilisateur de votre compte SoftLayer ; elles sont utilisées lorsque vous accédez aux API des services d'infrastructure.
+Les clés d'API de l'infrastructure sont créées dans le portail client et sont associées à l'ID utilisateur de votre compte SoftLayer ; elles sont utilisées lorsque vous accédez aux API des services d'infrastructure.
 
 Certains services dans {{site.data.keyword.Bluemix_notm}} peuvent également fournir une clé d'API que vous utilisez lorsque vous interagissez avec le service. Par exemple, si vous affichez les détails d'un service Watson à partir de votre tableau de bord, vous pouvez créer des données d'identification, qui incluent une clé d'API et une valeur confidentielle, spécifiques uniquement à ce service sur l'onglet Données d'identification pour le service.
 

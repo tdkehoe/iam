@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -27,7 +27,7 @@ Lorsque vous invitez un utilisateur, vous pouvez attribuer les ensembles de droi
 
 Des droits supplémentaires peuvent être accordés à l'utilisateur une fois qu'il a accepté l'invitation. L'ensemble de droits initiaux accordé lors de l'invitation ne donne pas accès aux périphériques. Par conséquent, vous devez octroyer l'accès aux périphériques dans le portail de contrôle une fois que l'utilisateur a accepté l'invitation. 
 
-Lorsque vous invitez une personne à rejoindre le compte, seuls vous et l'utilisateur principal du compte softlayer pouvez adapter les droits d'accès pour l'utilisateur. Si vous affectez les droits d'accès et que vous n'êtes pas l'utilisateur principal, vous pouvez affecter uniquement le niveau de droits d'accès ou un sous-ensemble des droits d'accès qui vous sont déjà affectés. Toutefois, un utilisateur principal peut mettre à jour les droits d'accès de n'importe quel utilisateur dans le compte avec n'importe quel niveau d'accès.  
+Lorsque vous invitez une personne à rejoindre le compte, seuls vous et l'utilisateur principal du compte softlayer pouvez adapter les droits d'accès pour l'utilisateur. Si vous affectez les droits d'accès et que vous n'êtes pas l'utilisateur principal, vous pouvez affecter uniquement le niveau de droits d'accès ou un sous-ensemble des droits d'accès qui vous sont déjà affectés. Toutefois, un utilisateur principal peut mettre à jour les droits d'accès de n'importe quel utilisateur dans le compte avec n'importe quel niveau d'accès. 
 
 Cliquez sur l'icône de menu ![Icône de menu](../icons/icon_hamburger.svg), puis sélectionnez **Infrastructure** pour accéder au portail de contrôle afin de définir des droits utilisateur pour l'infrastructure. Accédez à  **Compte** &gt; **Utilisateurs** pour afficher la liste des utilisateurs dans laquelle vous pouvez définir l'accès aux périphériques ainsi que d'autres droits relatifs à l'infrastructure. Pour plus d'informations sur l'affectation d'accès, voir [Gestion de l'accès d'infrastructure](/docs/iam/mnginfra.html#managing-infrastructure-access).
 

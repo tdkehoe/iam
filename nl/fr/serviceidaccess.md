@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -28,7 +28,7 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 3. Cliquez sur **Affecter un accès**.
 4. Sélectionnez **Assign by resource group**.
 5. Sélectionnez un groupe de ressources.
-6. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources sur son tableau de bord, éditer le nom du groupe de ressources ou gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle est affectée.
+6. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources**. Cette option permet à l'utilisateur d'afficher le groupe de ressources sur son tableau de bord, d'éditer le nom du groupe de ressources ou de gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle est affectée.
 7. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
 8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle. Il n'accorde pas l'accès au conteneur que constitue le groupe de ressources.
 9. Sélectionnez **Affecter**.

@@ -32,7 +32,7 @@ Vous pouvez mettre à jour un ID de service en changeant le nom et la descriptio
 
 ## Exemples d'utilisation d'un ID de service
 
-Vous trouverez ci-après des exemples d'utilisation d'un ID de service avec les services {{site.data.keyword.objectstorageshort}} et Cloud SQL Query. 
+Vous trouverez ci-après des exemples d'utilisation d'un ID de service avec les services {{site.data.keyword.objectstorageshort}} et Cloud SQL Query.
 
 - {{site.data.keyword.objectstorageshort}} - [Initiation](/docs/services/cloud-object-storage/getting-started-cli.html#getting-started-cli-).
 - Cloud SQL Query - [How to use the SQL Query REST API ![Icône de lien externe](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
