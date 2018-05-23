@@ -30,7 +30,7 @@ Per creare un ID servizio, vai a **Gestisci** &gt; **Sicurezza** &gt; **Identit√
 
 Puoi aggiornare un ID servizio modificando il nome e la descrizione in qualsiasi momento. Puoi anche eliminare e creare nuove chiavi API come necessario oppure aggiornare le politiche di accesso assegnate. Tuttavia, qualsiasi modifica da te apportata a un ID servizio esistente, quali la modifica delle politiche assegnate o l'eliminazione di una chiave API attualmente utilizzata, potrebbe causare delle interruzioni del servizio per le applicazioni che utilizzano tale ID servizio.
 
-## Esempi di come utilizzare un ID servizio 
+## Esempi di come utilizzare un ID servizio
 
 I seguenti sono esempi di come un ID servizio viene utilizzato con i servizi {{site.data.keyword.objectstorageshort}} e Cloud SQL Query.
 

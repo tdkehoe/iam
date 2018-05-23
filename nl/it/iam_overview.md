@@ -40,7 +40,7 @@ Puoi esaminare il seguente elenco per ulteriori informazioni su questi component
 <dl>
 <dt>Utenti</dt>
 <dd>Tutti gli utenti all'interno di un account sono identificati dai loro ID IBM. Gli utenti possono essere invitati all'account e avere accesso alle risorse. L'accesso può essere assegnato a singole risorse, fino al livello di istanza, o a un insieme di risorse che sono organizzate in un gruppo di risorse dell'account.</dd>
-<dt>Gruppo di accesso </dt>
+<dt>Gruppo di accesso</dt>
 <dd>Un gruppo di utenti e di ID del servizio può essere creato dal proprietario dell'account in modo che lo stesso accesso possa essere assegnato a tutte le entità all'interno del gruppo con una sola politica.</dd>
 <dt>Risorse</dt>
 <dd>Le risorse dell'account sono le offerte dei servizi con provisioning selezionate dal catalogo o le risorse specifiche all'interno di un'istanza del servizio.</dd>

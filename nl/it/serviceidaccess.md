@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -28,7 +28,7 @@ Per assegnare l'accesso a tutte le risorse in un gruppo di risorse o a un solo s
 3. Fai clic su **Assegna accesso**.
 4. Seleziona **Assegna per gruppo di risorse**.
 5. Seleziona un gruppo di risorse.
-6. Scegli un ruolo per il campo **Assegna l'accesso al gruppo di risorse** per consentire all'utente di visualizzare il gruppo di risorse sul proprio dashboard, modificare il nome del gruppo di risorse o gestire l'accesso dell'utente al gruppo. Puoi selezionare **Nessun accesso** se vuoi che l'utente abbia accesso solo alla risorsa da te specificata e non al gruppo a cui è assegnata.
+6. Scegli un ruolo per il campo **Assegna l'accesso al gruppo di risorse**. Questa opzione consente all'utente di visualizzare il gruppo di risorse sul proprio dashboard, modificare il nome del gruppo di risorse o gestire l'accesso dell'utente al gruppo. Puoi selezionare **Nessun accesso** se vuoi che l'utente abbia accesso solo alla risorsa da te specificata e non al gruppo a cui è assegnata.
 7. Seleziona un servizio nel gruppo di risorse o scegli di fornire l'accesso a tutti i servizi all'interno del gruppo selezionato.
 8. Scegli qualsiasi combinazione di ruoli per assegnare l'accesso desiderato per l'utente. Questo accesso si applica solo alle risorse che hai selezionato per la politica. Non dà accesso al contenitore reale che è il gruppo di risorse.
 9. Seleziona **Assegna**.

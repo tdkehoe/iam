@@ -16,7 +16,7 @@ lastupdated: "2018-04-12"
 # Accesso Cloud Foundry
 {: #cfaccess}
 
-Al momento, non tutti i servizi possono essere gestiti utilizzando Cloud IAM. Puoi continuare a utilizzare i ruoli Cloud Foundry per l'accesso a queste istanze del servizio.  Gli utenti vengono aggiunti all'organizzazione e allo spazio a cui l'istanza appartiene con un ruolo Cloud Foundry assegnato.  
+Al momento, non tutti i servizi possono essere gestiti utilizzando Cloud IAM. Puoi continuare a utilizzare i ruoli Cloud Foundry per l'accesso a queste istanze del servizio. Gli utenti vengono aggiunti all'organizzazione e allo spazio a cui l'istanza appartiene con un ruolo Cloud Foundry assegnato. 
 
 
 ![Accesso a un account utilizzando le organizzazioni, gli spazi e i ruoli Cloud Foundry](images/cf-diagram.svg "Come funziona l'accesso a un account utilizzando le organizzazioni, gli spazi e i ruoli Cloud Foundry")

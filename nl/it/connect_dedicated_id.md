@@ -19,7 +19,7 @@ lastupdated: "2018-01-16"
 # Connessione di un ID dedicato al tuo ID IBM pubblico
 {: #connect_dedicated_id}
 
-Per accedere a un cloud dedicato in cui è disponibile il servizio IAM pubblico, la CLI {{site.data.keyword.Bluemix_notm}} ti richidere di accedere con il tuo ID IBM pubblico invece del tuo ID dedicato.
+Per accedere a un cloud dedicato in cui è disponibile il servizio IAM pubblico, la CLI {{site.data.keyword.Bluemix_notm}} ti richiedere di accedere con il tuo ID IBM pubblico invece del tuo ID dedicato.
 
 
 ```

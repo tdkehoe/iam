@@ -33,7 +33,7 @@ Per i servizi che non supportano la creazione di politiche Cloud IAM per la gest
 <dl>
 <dt>Gestione utenti</dt>
 <dd>La gestione utenti unificata ti consente di aggiungere ed eliminare gli utenti in un account per i servizi di piattaforma e infrastruttura. Puoi creare un gruppo di utenti denominato gruppo di accesso per rendere l'assegnazione dell'accesso a più di un utente alla volta un'attività più facile e veloce.</dd>
-<dt>Controllo accesso specifico</dt>
+<dt>Controllo dell'accesso dettagliato</dt>
 <dd>L'accesso per gli utenti e gli ID servizio è definito da una politica. All'interno della politica, l'ambito di accesso di un utente, un ID del servizio o di un gruppo di accesso può essere assegnato a un insieme di risorse in un gruppo di risorse o a una singola risorsa. Dopo aver impostato l'ambito, puoi definire quali azioni sono consentite dall'oggetto della politica selezionando i ruoli di accesso. I ruoli forniscono un modo per personalizzare il livello di accesso concesso per l'oggetto della politica per eseguire attività di gestione della piattaforma e accedere all'interfaccia utente di un servizio o eseguire chiamate API.</dd>
 <dt>Chiavi API per l'autenticazione dell'utente</dt>
 <dd>È possibile creare più chiavi API per utente per supportare gli scenari di rotazione della chiave e la stessa chiave può essere utilizzata per accedere a più servizi. Le chiavi API dell'utente della piattaforma consentono agli utenti che utilizzano l'autenticazione a due fattori o un ID federato di automatizzare l'autenticazione dalla riga di comando.</dd>

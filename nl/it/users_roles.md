@@ -39,7 +39,7 @@ Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente t
 ## Ruoli Cloud IAM
 {: #iamusermanrol}
 
-Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel tuo account. Esistono due tipi di ruoli: i ruoli di gestione della piattaforma e i ruoli di accesso al servizio. 
+Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel tuo account. Esistono due tipi di ruoli: i ruoli di gestione della piattaforma e i ruoli di accesso al servizio.
 
 <dl>
 <dt>Ruoli di gestione della piattaforma</dt> 
@@ -51,7 +51,7 @@ Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel
 Potresti non vedere tutti i ruoli elencati come opzioni quando assegni le politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli disponibili per il servizio che hai selezionato. Per informazioni specifiche su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ogni servizio, fai riferimento alla documentazione di quel servizio.
 {: tip}
 
-Utilizzando una combinazione di questi ruoli in una singola politica di accesso, puoi fornire l'accesso specifico per utenti e ID servizio assegnando l'accesso con una delle seguenti opzioni:
+Utilizzando una combinazione di questi ruoli in una singola politica di accesso, puoi fornire l'accesso dettagliato per utenti e ID servizio assegnando l'accesso a quanto segue:
 
 * Tutte le risorse nell'account
 * Tutte le risorse all'interno di tutti i servizi che appartengono a un singolo gruppo di risorse nonché la possibilità di gestire il gruppo di risorse

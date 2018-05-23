@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -23,14 +23,14 @@ Per invitare gli utenti e gestire gli inviti in sospeso, devi essere un propriet
 
 Per invitare gli utenti o per gestire gli inviti utente nel tuo account, completa la seguente procedura:
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **Utenti**. La pagina Utenti visualizza un elenco di utenti con i rispettivi indirizzi e-mail e lo stato corrente per l'account attualmente selezionato.
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **Utenti**. La pagina Utenti visualizza un elenco di utenti con i rispettivi indirizzi e-mail e lo stato per l'account attualmente selezionato.
 2. Fai clic su **Invita utenti**.
 3. Specifica l'indirizzo e-mail dell'utente. Se inviti più di un utente con un singolo invito, a tutti viene assegnato lo stesso accesso.
 4. Aggiungi una o più delle opzioni di accesso che gestisci. Devi assegnare almeno un'opzione di accesso. Per tutte le ulteriori opzioni di accesso che non aggiungi e configuri, viene assegnato il valore predefinito *nessun accesso*. Potresti visualizzare una o tutte le seguenti opzioni di accesso, a seconda delle opzioni che sei autorizzato a gestire: **Servizi**, **Accesso Cloud Foundry**, **Accesso infrastruttura {{site.data.keyword.Bluemix_notm}}**. Per ulteriori informazioni, vedi [Assegnazione dell'accesso utente](/docs/iam/iamuserinv.html#assignaccess).
 
 Se determini che un utente non ha bisogno dell'accesso, puoi annullare un invito per tutti gli utenti visualizzati in uno stato **Elaborazione** o **In sospeso** nella colonna **Stato**. Se un utente invitato non riceve un invito, puoi reinviare l'invito a tutti gli utenti nello stato **In sospeso**.
 
-Se vuoi invitare gli utenti utilizzando la CLI, vedi il comando [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite).
+Se vuoi invitare gli utenti utilizzando la CLI, vedi il comando [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite).
 {: tip}
 
 ## Assegnazione dell'accesso utente
@@ -87,7 +87,7 @@ Quando inviti un nuovo utente, puoi scegliere di aggiungerlo a un'organizzazione
 
 Per ulteriori informazioni, vedi [Ruoli Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
 
-Puoi aggiungere un ruolo Cloud Foundry utilizzando il comando della CLI [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), ma per assegnare un altro accesso o altre autorizzazioni devi utilizzare l'interfaccia utente.
+Puoi aggiungere un ruolo Cloud Foundry utilizzando il comando della CLI [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite), ma per assegnare un altro accesso o altre autorizzazioni devi utilizzare l'interfaccia utente.
 {: tip}
 
 ### Accesso all'infrastruttura {{site.data.keyword.BluSoftlayer_notm}}

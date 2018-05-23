@@ -53,18 +53,18 @@ Per creare un gruppo di accesso, completa la seguente procedura:
 Successivamente, continua a configurare il tuo gruppo aggiungendo utenti o ID del servizio:
 
 1. Seleziona il nome del gruppo che vuoi aggiungere.
-2. Fai clic su **Aggiungi utenti**. 
+2. Fai clic su **Aggiungi utenti**.
 3. Seleziona gli utenti che vuoi aggiungere dall'elenco e fai clic su **Aggiungi al gruppo**.
-4. Per aggiungere gli ID del servizio al gruppo, fai clic sulla scheda **ID servizio** e su **Aggiungi ID servizio**. 
+4. Per aggiungere gli ID del servizio al gruppo, fai clic sulla scheda **ID servizio** e su **Aggiungi ID servizio**.
 5. Seleziona gli ID che vuoi aggiungere dall'elenco e fai clic su **Aggiungi al gruppo**.
 
-### Assegna l'accesso ai tuoi gruppi 
+### Assegna l'accesso ai tuoi gruppi
 
-Dopo aver creato i tuoi gruppi, puoi assegnare l'accesso a tutte le entità all'interno del gruppo con una sola politica. 
+Dopo aver creato i tuoi gruppi, puoi assegnare l'accesso a tutte le entità all'interno del gruppo con una sola politica.
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Gruppi di accesso**.
-2. Seleziona il nome del gruppo a cui vuoi assegnare l'accesso. 
-3. Fai clic su **Assegna accesso** per configurare una politica che assegna l'accesso a una sola risorsa nell'account o a tutte le risorse in un gruppo di risorse. 
+2. Seleziona il nome del gruppo a cui vuoi assegnare l'accesso.
+3. Fai clic su **Assegna accesso** per configurare una politica che assegna l'accesso a una sola risorsa nell'account o a tutte le risorse in un gruppo di risorse.
 
 Per organizzare le risorse in gruppi di risorse e gli utenti in gruppi di accesso, puoi assegnare a un gruppo di utenti l'accesso a un gruppo di risorse con una sola politica riducendo il numero complessivo di politiche che devi gestire.
 {: tip}
@@ -72,7 +72,7 @@ Per organizzare le risorse in gruppi di risorse e gli utenti in gruppi di access
 
 ## Passo 3: gestisci l'accesso per gli utenti esistenti
 
-Dopo aver invitato gli utenti, assegnato l'accesso iniziale e creato i tuoi gruppi di accesso, potresti voler assegnare un accesso aggiuntivo o modificare l'accesso iniziale che hai assegnato per garantire che tutti gli utenti e i gruppi nel tuo account abbiano il livello di accesso desiderato. 
+Dopo aver invitato gli utenti, assegnato l'accesso iniziale e creato i tuoi gruppi di accesso, potresti voler assegnare un accesso aggiuntivo o modificare l'accesso iniziale che hai assegnato per garantire che tutti gli utenti e i gruppi nel tuo account abbiano il livello di accesso desiderato.
 
 ### Assegnazione del nuovo accesso
 
