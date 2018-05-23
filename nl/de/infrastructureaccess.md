@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -25,7 +25,7 @@ Sie können bei der Einladung eines Benutzers die folgenden Ausgangsberechtigung
 |Superuser | Benutzer mit dieser Berechtigung können alle verfügbaren Aktionen im System ausführen. |
 {:caption="Tabelle 1. Infrastructure-Berechtigungen" caption-side="top"}
 
-Weitere Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung akzeptiert hat. Das Ausgangsberechtigungsset, das zum Zeitpunkt der Einladung festgelegt wird, erteilt keinen Zugriff auf Geräte. Die Zugriffsberechtigungen für Geräte müssen deshalb im Steuerungsportal erteilt werden, nachdem der Benutzer die Einladung akzeptiert hat.  
+Weitere Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung akzeptiert hat. Das Ausgangsberechtigungsset, das zum Zeitpunkt der Einladung festgelegt wird, erteilt keinen Zugriff auf Geräte. Die Zugriffsberechtigungen für Geräte müssen deshalb im Steuerungsportal erteilt werden, nachdem der Benutzer die Einladung akzeptiert hat. 
 
 Wenn Sie jemanden zum Konto einladen, können nur Sie und der Masterbenutzer des SoftLayer-Kontos die Berechtigungen für den Benutzer anpassen. Wenn Sie die Berechtigungen zuweisen und nicht der Masterbenutzer sind, können Sie nur die Berechtigungsebene oder eine Untergruppe der bereits zugewiesenen Berechtigungen zuweisen. Ein Masterbenutzer kann jedoch die Berechtigungen jedes Benutzers in dem Konto aktualisieren, um eine beliebige Zugriffsebene zu haben. 
 

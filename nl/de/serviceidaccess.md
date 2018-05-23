@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-02-26"
 
 Wenn Sie eine Service-ID erstellen, dann können sie dieser Service-ID Servicerichtlinien zuweisen, um die Zugriffsebene zu steuern, die zulässig ist, wenn sie zur Authentifizierung bei Ihren Services verwendet wird. Sie können diese zugewiesenen Zugriffsrichtlinien jederzeit aktualisieren, indem Sie eine vorhandene Richtlinie ändern, eine Richtlinie löschen oder eine neue Richtlinie zuweisen.
 
-**Hinweis:** Wenn Sie eine vorhandene Richtlinie für eine momentan verwendete Service-ID löschen oder bearbeiten, kann es zu Serviceunterbrechungen kommen.
+**Hinweis:** Wenn Sie eine vorhandene Richtlinie für eine momentan verwendete Service-ID löschen oder bearbeiten, kann es zu Serviceunterbrechungen kommen. 
 
 ## Neue Zugriffsberechtigungen zuweisen
 
@@ -28,7 +28,7 @@ Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für 
 3. Klicken Sie auf **Zugriff zuweisen**.
 4. Wählen Sie die Option für die **Zuweisung nach Ressourcengruppe** aus.
 5. Wählen Sie eine Ressourcengruppe aus.
-6. Wählen Sie eine Rolle für das Feld **Zugriff für eine Ressourcengruppe zuweisen** aus, um dem Benutzer die Anzeige der Ressourcengruppe im Dashboard, das Bearbeiten des Ressourcengruppennamens oder das Verwalten des Benutzerzugriffs auf die Gruppe zu ermöglichen. Sie können **Kein Zugriff** auswählen, wenn der Benutzer ausschließlich Zugriff auf die Ressource erhalten soll, die Sie angeben, nicht jedoch auf die Gruppe, der die Ressource zugewiesen ist.
+6. Wählen Sie eine Rolle für das Feld **Zugriff für eine Ressourcengruppe zuweisen** aus. Diese Option ermöglicht dem Benutzer, die Ressourcengruppe im Dashboard anzuzeigen, den Ressourcengruppennamen zu bearbeiten oder den Benutzerzugriff auf die Gruppe zu verwalten. Sie können **Kein Zugriff** auswählen, wenn der Benutzer ausschließlich Zugriff auf die Ressource erhalten soll, die Sie angeben, nicht jedoch auf die Gruppe, der die Ressource zugewiesen ist.
 7. Wählen Sie einen Service in der Ressourcengruppe aus, oder wählen Sie aus, dass der Zugriff auf alle Services in der ausgewählten Gruppe bereitgestellt werden soll.
 8. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen. Dieser Zugriff gilt nur für die Ressourcen, die Sie für die Richtlinie ausgewählt haben. Der Zugriff auf den Container selbst, der die Ressourcengruppe darstellt, wird hingegen nicht erteilt.
 9. Wählen Sie **Zuweisen** aus.

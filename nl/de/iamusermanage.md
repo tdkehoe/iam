@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-05-14"
 
 ---
 
@@ -25,6 +25,8 @@ Führen Sie zur Verwaltung der Benutzer in Ihrem Konto die folgenden Schritte au
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Konto** &gt; **Benutzer**. Das Fenster 'Benutzer' zeigt eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen für das aktuell ausgewählte Konto an.
 2. Wählen Sie den Benutzernamen aus oder klicken Sie im Menü **Aktionen** auf **Benutzer verwalten**.
 3. Abhängig von der Aktion, die Sie ausführen müssen, können Sie anschließend den Benutzer entfernen, Zugriffsberechtigungen zuweisen oder die vorhandenen Zugriffsberechtigungen des Benutzers bearbeiten.
+
+**Hinweis**: Nur Kontoeigner können Benutzer aus dem Konto entfernen. 
 
 Weitere Details zu den CLI-Befehlen, die zum Verwalten von Accounts, Organisationen und Bereichen verwendet werden, finden Sie unter [Befehle für die Verwaltung von Konten, Organisationen und Rollen](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}

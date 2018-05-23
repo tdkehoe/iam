@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-07-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -20,16 +20,16 @@ Bei der Einladung weisen Sie den Benutzern Zugriffsberechtigungen, Cloud Foundry
 
 ## Services mit aktiviertem Identity and Access Management
 
-Sie können eine einzelne Servicerichtlinie zuordnen, wenn Sie einen neuen Benutzer einladen. Sobald der Benutzer die Einladung angenommen hat, können Sie zusätzliche Servicerichtlinien hinzufügen.
+Sie können eine einzelne Servicerichtlinie zuordnen, wenn Sie einen neuen Benutzer einladen. Sobald der Benutzer die Einladung annimmt, können Sie zusätzliche Servicerichtlinien hinzufügen. 
 
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services mit aktiviertem Identity and Access Management**.
 2. Wählen Sie einen Service aus.
 3. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus.
 4. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
 5. Wählen Sie eine Rolle aus, um den Zugriffsbereich für die Richtlinie zu definieren.
-6. Optional: Wählen Sie **Rolle hinzufügen** aus, um eine weitere Rolle für die Richtlinie anzugeben.
+6. Optional können Sie **Rolle hinzufügen** auswählen, um eine weitere Rolle für die Richtlinie anzugeben. 
 
-Weitere Informationen zu den Rollen beim Festlegen von Servicerichtlinien finden Sie unter [Richtlinien und Rollen für Identity and Access Management](/docs/iam/users_roles.html#iamusermanpol).
+Weitere Informationen zu den Rollen beim Einrichten von Servicerichtlinien finden Sie unter [Richtlinien und Rollen für Identity and Access Management](/docs/iam/users_roles.html#iamusermanpol). 
 
 ## Cloud Foundry-Zugriff
 
@@ -42,15 +42,15 @@ Wenn Sie neue Benutzer einladen, können Sie den Benutzer zu einer Organisation 
 5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus.
 6. Wählen Sie **Alle aktuellen Bereiche** oder einen bestimmten Bereich aus.
 7. Wählen Sie eine Bereichsrolle aus, um die Zugriffsebene für die ausgewählten Bereiche zu definieren.
-8. Optional: Wählen Sie **Rolle hinzufügen** aus, um eine zusätzliche Rolle anzugeben.
+8. Optional können Sie **Rolle hinzufügen** auswählen, um eine weitere Rolle für die Richtlinie anzugeben. 
 
-Nähere Informationen zu diesen Rollen finden Sie in [Cloud Foundry-Rollen](/docs/iam/users_roles.html#cfroles).
+Weitere Informationen zu diesen Rollen finden Sie unter [Cloud Foundry-Rollen](/docs/iam/users_roles.html#cfroles). 
 
-**Hinweis**: Sie können eine Cloud Foundry-Rolle mithilfe der Befehlszeile [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) hinzufügen, müssen jedoch die Benutzerschnittstelle auch zur Erteilung anderer Zugriffsrechte oder Berechtigungen verwenden.
+**Hinweis**: Sie können eine Cloud Foundry-Rolle mithilfe der Befehlszeile [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) hinzufügen, müssen jedoch die Benutzerschnittstelle auch zur Erteilung anderer Zugriffsrechte oder Berechtigungen verwenden. 
 
 ## Infrastructure-Zugriff
 
-Die tatsächlichen zugewiesenen Berechtigungen werden automatisch auf die Untergruppe von Berechtigungen eingeschränkt, die Sie haben. Weitere Informationen zu den Berechtigungen und welche Aktionen der Benutzer mit jeder dieser Berechtigungen ausführen kann, finden Sie unter [Infrastructure-Berechtigungen](/docs/iam/users_roles.html#infrapermissions).
+Die tatsächlichen zugewiesenen Berechtigungen werden automatisch auf die Untergruppe von Berechtigungen eingeschränkt, die Sie haben. Weitere Informationen zu den Berechtigungen und welche Aktionen der Benutzer mit jeder dieser Berechtigungen ausführen kann, finden Sie unter [Infrastructure-Berechtigungen](/docs/iam/users_roles.html#infrapermissions). 
 
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Infrastructure-Zugriff**.
 2. Wählen Sie eine Berechtigung aus, um den Zugriffsbereich zu definieren.

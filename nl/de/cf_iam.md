@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-17"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -22,15 +22,15 @@ Wenn Services von Cloud Foundry-Organisationen, -Bereichen und -Rollen auf die V
 Wenn Sie vorhandene Cloud Foundry-Serviceinstanzen in eine Ressourcengruppe migrieren, kann die Gruppenzuweisung nicht mehr geändert werden, nachdem die Migration abgeschlossen ist. Sie müssen sich also vor der Migration sicher sein, wie Sie die Ressourcen in dem Konto organisieren möchten. Dies könnte bedeuten, dass Sie vor der Migration eine oder mehrere Ressourcengruppen erstellen müssen, wenn Sie ein gebührenpflichtiges Konto haben.
 {: tip}
 
-## Warum sollte ich meine Serviceinstanzen migrieren?
+## Warum sollte ich Serviceinstanzen migrieren?
 
-Services, die die Benutzung von Cloud IAM unterstützen, verfügen über verschiedene Vorteile einschließlich der Möglichkeit zur Herstellung von Verbindungen zu Apps und Services in einem beliebigen Cloud Foundry-Bereich. Auf diese Weise können Sie Verbindungen für Apps und Services aus unterschiedlichen Regionen herstellen. Zusätzlich hierzu gehört jede von Cloud IAM verwaltete Instanz zu einer Ressourcengruppe. Die Ressourcengruppen sind nicht regionsorientiert, sodass Sie Apps und Services aus unterschiedlichen Regionen in derselben Ressourcengruppe bereitstellen können. Außerdem verfügen Sie über die Möglichkeit, die differenzierte Zugriffssteuerung für jede einzelne Instanz zu verwenden.
+Services, die Cloud IAM unterstützen, haben diverse Vorteile. Dazu zählt die Möglichkeit zur Herstellung von Verbindungen zu Apps und Services in einem beliebigen Cloud Foundry-Bereich. Auf diese Weise können Sie Verbindungen für Apps und Services aus unterschiedlichen Regionen herstellen. Darüber hinaus gehört jede von Cloud IAM verwaltete Instanz zu einer Ressourcengruppe. Da Ressourcengruppen nicht auf eine bestimmte Region bezogen sind, können Sie Apps und Services aus verschiedenen Regionen in derselben Ressourcengruppe bereitstellen. Außerdem können Sie die differenzierte Zugriffssteuerung für jede einzelne Instanz verwenden. 
  
 
 ## Wie funktioniert Migration?
 
 Bei der Migration einer Serviceinstanz aus einer Cloud Foundry-Organisation und einem Cloud Foundry-Bereich in einer Ressourcengruppe wird eine neue verknüpfte Serviceinstanz in der Ressourcengruppe erstellt. Die ursprüngliche Instanz in der Cloud Foundry-Organisation und dem Cloud Foundry-Bereich wird zu einem [Aliasnamen](/docs/cfapps/connecting_apps.html#what_is_alias).
 
-Sie können Ihre Serviceinstanzen einzeln migrieren, wenn Sie über ein Symbol im Dashboard benachrichtigt werden, das Ihrer Cloud Foundry-Serviceinstanz zugeordnet ist, oder mit der Nachricht auf der Seite mit den Servicedetails, die Sie direkt zu dem Assistenten leiten kann, der Sie durch den Prozess führt. Treffen Sie vor der Migration eine Entscheidung darüber, wie Sie Ihre Ressourcen organisieren wollen. Dann können Sie eine infrage kommende Serviceinstanz wählen, indem Sie im Dashboard im Menü **Aktionen** die Option **In eine Ressourcengruppe migrieren** auswählen. Während des Prozesses wählen Sie eine Ressourcengruppe aus, in die die Instanz migriert werden soll. Nachdem Sie eine Instanz erfolgreich migriert haben, wird sie im Bereich 'Services' Ihres Dashboards angezeigt. Der Aliasname verbleibt im Bereich 'Cloud Foundry' des Dashboards. 
+Sie können Ihre Serviceinstanzen einzeln migrieren, wenn Sie benachrichtigt werden. Sie werden über ein Symbol im Dashboard benachrichtigt, das Ihrer Cloud Foundry-Serviceinstanz zugeordnet ist, oder mit der Nachricht auf der Seite mit den Servicedetails, die Sie direkt zu dem Assistenten leiten kann, der Sie durch den Prozess führt. Vor der Migration müssen Sie entscheiden, wie Ihre Ressourcen organisiert sein sollen. Dann können Sie eine infrage kommende Serviceinstanz wählen, indem Sie im Dashboard im Menü **Aktionen** die Option **In eine Ressourcengruppe migrieren** auswählen. Während des Prozesses wählen Sie eine Ressourcengruppe aus, in die die Instanz migriert werden soll. Nachdem Sie eine Instanz erfolgreich migriert haben, wird sie im Bereich 'Services' Ihres Dashboards angezeigt. Der Aliasname verbleibt im Abschnitt 'Cloud Foundry' des Dashboards.  
 
 

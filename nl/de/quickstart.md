@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um eine Zugriffsgruppe zu erstellen:
 Fahren Sie danach mit der Einrichtung Ihrer Gruppe fort, indem Sie Benutzer oder Service-IDs hinzufügen:
 
 1. Wählen Sie den Namen der Gruppe aus, zu der Sie diese hinzufügen wollen.
-2. Klicken Sie auf **Benutzer hinzufügen**. 
+2. Klicken Sie auf **Benutzer hinzufügen**.
 3. Wählen Sie die Benutzer, die Sie hinzufügen möchten, in der Liste aus und klicken Sie auf **Zu Gruppe hinzufügen**.
 4. Wenn Sie Service-IDs zu der Gruppe hinzufügen wollen, klicken Sie auf **Service-IDs** und anschließend auf **Service-ID hinzufügen**.
 5. Wählen Sie die IDs, die Sie hinzufügen möchten, in der Liste aus und klicken Sie auf **Zu Gruppe hinzufügen**.

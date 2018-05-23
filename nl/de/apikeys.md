@@ -30,7 +30,7 @@ Sie können außerdem API-Schlüssel verwenden, die den von Ihnen erstellten Ser
 
 ## Weitere {{site.data.keyword.Bluemix_notm}}-API-Schlüssel
 
-Zusätzlich zu den Plattform-API-Schlüsseln gibt es eine Reihe anderer Typen von API-Schlüsseln, die Sie bei der Verwendung von {{site.data.keyword.Bluemix_notm}} möglicherweise verwenden:
+Zusätzlich zu den Plattform-API-Schlüsseln gibt es eine Reihe anderer Typen von API-Schlüsseln, die Sie in {{site.data.keyword.Bluemix_notm}} möglicherweise verwenden:
 
 * Infrastruktur-API-Schlüssel
 * Servicespezifische API-Schlüssel
