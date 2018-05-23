@@ -157,17 +157,15 @@
          id="rect41" />
       <text
          id="text43"
-         x="61.600006"
-         y="321.5"
-         style="fill:#ffffff">
+         x="123.99996"
+         y="339.10007"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+         sodipodi:linespacing="125%">
         <tspan
-           font-size="18"
-           font-weight="bold"
-           x="125"
-           y="339.5"
-           textLength="43.2"
-           id="tspan45"
-           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">ユーザー</tspan>
+           sodipodi:role="line"
+           id="tspan5417"
+           x="123.99996"
+           y="339.10007">ユーザー</tspan>
       </text>
       <path
          d="M 459 171 L 459 234 L 306 234 L 153 234 L 153 281.1"
@@ -179,19 +177,16 @@
          stroke-dasharray="1,4"
          id="path47" />
       <text
-         transform="translate(266 206)"
-         fill="#101e28"
-         id="text49">
+         id="text49"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+         sodipodi:linespacing="125%"
+         x="266"
+         y="220.40005">
         <tspan
-           font-family="IBM Plex Sans"
-           font-size="16"
-           font-weight="300"
-           fill="#101e28"
-           x="0"
-           y="16"
-           textLength="60.304"
-           id="tspan51"
-           style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">次のものを多数持つ</tspan>
+           sodipodi:role="line"
+           id="tspan5390"
+           x="266"
+           y="220.40005">次のものを多数持つ</tspan>
       </text>
       <rect
          x="378"
@@ -212,17 +207,15 @@
          id="rect57" />
       <text
          id="text59"
-         x="402.20007"
-         y="321.20004"
-         style="fill:#101e28">
+         x="426.20016"
+         y="340.40012"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+         sodipodi:linespacing="125%">
         <tspan
-           font-size="18"
-           font-weight="bold"
-           x="422.40005"
-           y="339.20004"
-           textLength="140.4"
-           id="tspan61"
-           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">組織の役割</tspan>
+           sodipodi:role="line"
+           id="tspan5415"
+           x="426.20016"
+           y="340.40012">組織の役割</tspan>
       </text>
       <rect
          x="693"
@@ -243,17 +236,15 @@
          id="rect67" />
       <text
          id="text69"
-         x="744.39929"
-         y="321.5"
-         style="fill:#101e28">
+         x="765.19897"
+         y="339.10007"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+         sodipodi:linespacing="125%">
         <tspan
-           font-size="18"
-           font-weight="bold"
-           x="764.5993"
-           y="339.5"
-           textLength="129.6"
-           id="tspan71"
-           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">組織</tspan>
+           sodipodi:role="line"
+           id="tspan5413"
+           x="765.19897"
+           y="339.10007">組織</tspan>
       </text>
       <rect
          x="378"
@@ -326,17 +317,15 @@
          id="rect89" />
       <text
          id="text91"
-         x="662.80054"
-         y="646.7998"
-         style="fill:#ffffff">
+         x="710.7998"
+         y="664.39954"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+         sodipodi:linespacing="125%">
         <tspan
-           font-size="18"
-           font-weight="bold"
-           x="710.00049"
-           y="664.7998"
-           textLength="86.4"
-           id="tspan93"
-           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic">サービス・インスタンス</tspan>
+           sodipodi:role="line"
+           id="tspan5451"
+           x="710.7998"
+           y="664.39954">サービス・インスタンス</tspan>
       </text>
       <path
          d="M 243 333 L 310.5 333 L 362.1 333"
@@ -393,51 +382,6 @@
          stroke-dasharray="1,4"
          id="path107" />
       <text
-         transform="translate(599 204)"
-         fill="#101e28"
-         id="text109">
-        <tspan
-           font-family="IBM Plex Sans"
-           font-size="16"
-           font-weight="300"
-           fill="#101e28"
-           x="0"
-           y="16"
-           textLength="60.304"
-           id="tspan111"
-           style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">次のものを多数持つ</tspan>
-      </text>
-      <text
-         transform="translate(797 395)"
-         fill="#101e28"
-         id="text115">
-        <tspan
-           font-family="IBM Plex Sans"
-           font-size="16"
-           font-weight="300"
-           fill="#101e28"
-           x="0"
-           y="16"
-           textLength="60.304"
-           id="tspan117"
-           style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">次のものを多数持つ</tspan>
-      </text>
-      <text
-         transform="translate(797 561.5)"
-         fill="#101e28"
-         id="text121">
-        <tspan
-           font-family="IBM Plex Sans"
-           font-size="16"
-           font-weight="300"
-           fill="#101e28"
-           x="0"
-           y="16"
-           textLength="60.304"
-           id="tspan123"
-           style="-inkscape-font-specification:MS UI Gothic;font-family:MS UI Gothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">次のものを多数持つ</tspan>
-      </text>
-      <text
          id="text127"
          x="306.00015"
          y="311.00003"
@@ -467,26 +411,52 @@
          id="path133" />
       <text
          id="text135"
-         x="140.19955"
-         y="465"
-         style="fill:#101e28">
+         x="167.39966"
+         y="487.40009"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:Sans;-inkscape-font-specification:Sans"
+         sodipodi:linespacing="125%">
         <tspan
-           font-size="16"
-           font-weight="300"
-           x="140.19955"
-           y="481"
-           textLength="31.36"
-           id="tspan137"
-           style="font-size:16px;font-weight:300;fill:#101e28;font-family:IBM Plex Sans" />
-        <tspan
-           font-size="16"
-           font-weight="300"
-           x="171.43155"
-           y="481"
-           textLength="46.864"
-           id="tspan139"
-           style="font-size:16px;font-weight:300;fill:#101e28;font-family:IBM Plex Sans">割り当てられているもの</tspan>
+           sodipodi:role="line"
+           id="tspan5419"
+           x="167.39966"
+           y="487.40009">割り当てられているもの</tspan>
       </text>
     </g>
   </g>
+  <text
+     id="text49-4"
+     style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+     sodipodi:linespacing="125%"
+     x="567.47168"
+     y="219.30446">
+    <tspan
+       sodipodi:role="line"
+       id="tspan5390-5"
+       x="567.47168"
+       y="219.30446">次のものを多数持つ</tspan>
+  </text>
+  <text
+     id="text49-4-8"
+     style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+     sodipodi:linespacing="125%"
+     x="800.24164"
+     y="414.4476">
+    <tspan
+       sodipodi:role="line"
+       id="tspan5390-5-9"
+       x="800.24164"
+       y="414.4476">次のものを多数持つ</tspan>
+  </text>
+  <text
+     id="text49-4-4"
+     style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#101e28;font-family:MS UI Gothic;-inkscape-font-specification:MS UI Gothic"
+     sodipodi:linespacing="125%"
+     x="801.73376"
+     y="584.11725">
+    <tspan
+       sodipodi:role="line"
+       id="tspan5390-5-4"
+       x="801.73376"
+       y="584.11725">次のものを多数持つ</tspan>
+  </text>
 </svg>

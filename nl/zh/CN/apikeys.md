@@ -30,12 +30,12 @@ lastupdated: "2018-01-26"
 
 ## 其他 {{site.data.keyword.Bluemix_notm}} API 密钥
 
-除了平台 API 密钥，在使用 {{site.data.keyword.Bluemix_notm}} 时还可使用其他两种类型的 API 密钥：
+除了平台 API 密钥之外，还有两个其他类型的 API 密钥可在 {{site.data.keyword.Bluemix_notm}} 中使用：
 
 * 基础架构 API 密钥
 * 特定于服务的 API 密钥
 
-基础架构 API 密钥是在客户门户网站中创建的，与 SoftLayer 帐户用户标识相关联，在访问基础架构服务的 API 时使用。
+基础架构 API 密钥是在客户门户网站中创建的，与 SoftLayer 帐户的用户标识相关联，可用于访问基础架构服务 API。
 
 {{site.data.keyword.Bluemix_notm}} 中的某些服务可能还会为您提供用于与服务进行交互的 API 密钥。例如，如果从仪表板查看 Watson 服务的服务详细信息，您可以在“服务凭证”选项卡上创建仅特定于该服务的凭证（包括 API 密钥和私钥）。
 

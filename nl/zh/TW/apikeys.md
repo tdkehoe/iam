@@ -30,7 +30,7 @@ lastupdated: "2018-01-26"
 
 ## 其他 {{site.data.keyword.Bluemix_notm}} API 金鑰
 
-除了您的平台 API 金鑰之外，使用 {{site.data.keyword.Bluemix_notm}} 時還有一些您可能使用的其他 API 金鑰類型：
+除了您的平台 API 金鑰之外，在 {{site.data.keyword.Bluemix_notm}} 中還有一些您可能使用的其他 API 金鑰類型：
 
 * 基礎架構 API 金鑰
 * 服務特有的 API 金鑰

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -23,14 +23,14 @@ lastupdated: "2017-12-07"
 
 要邀请用户或管理帐户中的用户邀请，请完成以下步骤：
 
-1. 在菜单栏中，单击**管理** &gt; **安全性** &gt; **身份和访问权**，然后单击**用户**。“用户”页面将显示用户列表，其中包含用户的电子邮件地址以及当前所选帐户的当前状态。
+1. 在菜单栏中，单击**管理** &gt; **安全性** &gt; **身份和访问权**，然后单击**用户**。“用户”页面会列出当前所选帐户中的用户，以及用户的电子邮件地址和状态。
 2. 单击**邀请用户**。
 3. 指定用户的电子邮件地址。如果是使用单个邀请来邀请多个用户，那么将为所有用户分配相同的访问权。
 4. 添加所管理的一个或多个访问权选项。必须至少分配一个访问权选项。对于未添加和配置的任何其他访问权选项，都会分配缺省值*无访问权*。根据您有权管理的选项，可能会看到以下一个或全部访问权选项：**服务**、**Cloud Foundry 访问权**和 **{{site.data.keyword.Bluemix_notm}} 基础架构访问权**。有关更多信息，请参阅[分配用户访问权](/docs/iam/iamuserinv.html#assignaccess)。
 
 如果确定某个用户不需要访问权，那么可以对**状态**列中显示为**正在处理**或**暂挂**状态的任何用户取消邀请。如果被邀请用户未收到邀请，那么可以向处于**暂挂**状态的任何用户重新发送邀请。
 
-如果您想要使用 CLI 来邀请用户，请参阅 [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) 命令。
+如果要使用 CLI 来邀请用户，请参阅 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) 命令。
 {: tip}
 
 ## 分配用户访问权
@@ -88,7 +88,7 @@ lastupdated: "2017-12-07"
 
 有关这些角色的更多信息，请参阅 [Cloud Foundry 角色](/docs/iam/cfaccess.html#cfroles)。
 
-您可以使用 [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 命令来添加 Cloud Foundry 角色，但是必须使用 UI 来分配其他访问权或许可权。
+您可以使用 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) CLI 命令来添加 Cloud Foundry 角色，但必须使用 UI 来分配其他访问权或许可权。
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 基础架构访问权

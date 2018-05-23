@@ -30,7 +30,7 @@ lastupdated: "2018-01-26"
 
 ## その他の {{site.data.keyword.Bluemix_notm}} API キー
 
-プラットフォーム API キーに加え、以下に示すように、{{site.data.keyword.Bluemix_notm}} を使用しているときに使用する可能性があるその他のタイプの API がいくつかあります。
+プラットフォーム API キーに加えて、{{site.data.keyword.Bluemix_notm}} で使用する可能性があるその他のタイプの API がいくつかあります。
 
 * インフラストラクチャー API キー
 * サービス固有の API キー

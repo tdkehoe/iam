@@ -46,6 +46,6 @@ lastupdated: "2018-04-05"
 
 您可以通过 Identity and Access UI 或 {{site.data.keyword.Bluemix_notm}} CLI 来访问和使用 Cloud IAM。
 
-要使用 UI 来访问 Cloud IAM，请转至**管理** &gt; **安全** &gt; **身份和访问权**。
+要使用 UI 来访问 Cloud IAM，请转至**管理** &gt; **安全性** &gt; **身份和访问权**。
 
 要使用 CLI 来访问 Cloud IAM，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。

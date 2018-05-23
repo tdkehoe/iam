@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-07-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -20,16 +20,16 @@ lastupdated: "2017-07-26"
 
 ## ID 및 액세스 사용 서비스
 
-새 사용자를 초대할 때 단일 서비스 정책을 지정할 수 있습니다. 일단 사용자가 초대를 수용한 경우에는 서비스 정책을 더 추가할 수 있습니다.
+새 사용자를 초대할 때 단일 서비스 정책을 지정할 수 있습니다. 사용자가 초대를 수락하면 서비스 정책을 더 추가할 수 있습니다.
 
 1. **사용자 초대** 화면에서 **ID 및 액세스 사용 서비스** 섹션을 펼치십시오.
 2. 서비스를 선택하십시오.
 3. **모든 현재 지역** 또는 특정 지역을 선택하십시오.
 4. **모든 현재 서비스 인스턴스**를 선택하거나 특정 서비스 인스턴스를 선택하십시오.
 5. 정책에 대한 액세스 권한의 범위를 정의하기 위한 역할을 선택하십시오.
-6. 선택사항: **역할 추가**를 선택하여 정책에 대한 추가 역할을 지정하십시오.
+6. 선택적으로 **역할 추가**를 선택하여 다른 역할을 정책에 지정할 수 있습니다.
 
-서비스 정책을 설정할 때의 역할에 대한 보다 자세한 정보는 [Identity and Access Management 정책 및 역할](/docs/iam/users_roles.html#iamusermanpol)을 참조하십시오.
+서비스 정책 설정 시 역할에 대한 자세한 정보는 [Identity and Access Management 정책 및 역할](/docs/iam/users_roles.html#iamusermanpol)을 참조하십시오.
 
 ## Cloud Foundry 액세스
 
@@ -42,15 +42,15 @@ lastupdated: "2017-07-26"
 5. **모든 현재 지역** 또는 특정 지역을 선택하십시오.
 6. **모든 현재 영역** 또는 특정 영역을 선택하십시오.
 7. 선택한 영역에 대한 액세스 레벨을 정의하려면 영역 역할을 선택하십시오.
-8. 선택사항: 추가 역할을 지정하려면 **역할 추가**를 선택하십시오.
+8. 선택적으로 **역할 추가**를 선택하여 다른 역할을 정책에 지정할 수 있습니다.
 
-이러한 역할에 대한 보다 자세한 정보는 [Cloud Foundry 역할](/docs/iam/users_roles.html#cfroles)을 참조하십시오.
+이러한 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam/users_roles.html#cfroles)을 참조하십시오.
 
-**참고**: [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 기타 액세스 또는 권한을 지정하려면 UI를 사용해야 합니다.
+**참고**: [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 역할을 지정하려면 UI를 사용해야 합니다.
 
 ## 인프라 액세스
 
-지정된 실제 권한은 보유한 권한의 서브세트로 자동으로 제한됩니다. 권한 및 사용자가 각 권한으로 수행할 수 있는 조치에 대한 자세한 정보는 [인프라 권한](/docs/iam/users_roles.html#infrapermissions)을 참조하십시오.
+지정되는 실제 권한은 보유한 권한의 서브세트로 자동으로 제한됩니다. 권한 및 사용자가 각 권한으로 완료할 수 있는 조치에 대한 자세한 정보는 [인프라 권한](/docs/iam/users_roles.html#infrapermissions)을 참조하십시오.
 
 1. **사용자 초대** 화면에서 **인프라 액세스** 섹션을 펼치십시오.
 2. 액세스의 범위를 정의하기 위한 권한을 선택하십시오.

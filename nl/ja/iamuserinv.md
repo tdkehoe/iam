@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -23,14 +23,14 @@ lastupdated: "2017-12-07"
 
 アカウントでユーザーを招待したりユーザーの招待を管理したりするには、以下の手順を実行します。
 
-1. メニュー・バーで、**「管理」** &gt; **「セキュリティー」** &gt; **「ID およびアクセス」**をクリックして、**「ユーザー」**をクリックします。 「ユーザー」ページに、現在選択されているアカウントのユーザーのリストが E メール・アドレスおよび現在の状況とともに表示されます。
+1. メニュー・バーで、**「管理」** &gt; **「セキュリティー」** &gt; **「ID およびアクセス」**をクリックして、**「ユーザー」**をクリックします。 「ユーザー」ページに、選択されているアカウントのユーザーのリストが E メール・アドレスおよび現在の状況とともに表示されます。
 2. **「ユーザーの招待」**をクリックします。
 3. ユーザーの E メール・アドレスを指定します。 1 つの招待で複数のユーザーを招待すると、すべてのユーザーに同じアクセス権限が割り当てられます。
 4. 管理する 1 つ以上のアクセス・オプションを追加します。 少なくとも 1 つのアクセス・オプションを割り当ててください。 追加して構成しないその他のアクセス・オプションには、デフォルト値の *no access* が割り当てられます。 自分が管理権限を持っているオプションに応じて、**「サービス」**、**「Cloud Foundry アクセス権限」**、**「{{site.data.keyword.Bluemix_notm}} インフラストラクチャー・アクセス権限」**のアクセス・オプションの 1 つまたはすべてが表示されます。 詳しくは、[ユーザー・アクセスの割り当て](/docs/iam/iamuserinv.html#assignaccess)を参照してください。
 
 ユーザーのアクセス権限は必要ないと判断した場合は、**「状況」**列に**「処理中」**または**「保留中」**の状態と表示されているユーザーの招待を取り消すことができます。 招待されたユーザーが招待を受け取らなかった場合、**「保留中」**状態のユーザーに招待を再送することができます。
 
-CLI を使用してユーザーを招待したい場合は、[bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) コマンドを参照してください。
+CLI を使用してユーザーを招待したい場合は、[bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) コマンドを参照してください。
 {: tip}
 
 ## ユーザー・アクセスの割り当て
@@ -87,7 +87,7 @@ CLI を使用してユーザーを招待したい場合は、[bluemix iam accoun
 
 役割について詳しくは、『[Cloud Foundry の役割](/docs/iam/cfaccess.html#cfroles)』を参照してください。
 
-Cloud Foundry の役割を追加するには、[bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite)CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるには UI を使用する必要があります。
+Cloud Foundry の役割を追加するには、[bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite)CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるには UI を使用する必要があります。
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} インフラストラクチャー・アクセス権限

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -23,14 +23,14 @@ lastupdated: "2017-12-07"
 
 若要在您帳戶中邀請使用者，或管理使用者邀請，請完成下列步驟：
 
-1. 從功能表列中，按一下**管理** &gt; **安全** &gt; **身分及存取**，然後按一下**使用者**。「使用者」頁面會顯示一份使用者清單，其中包含其在目前所選取帳戶的電子郵件位址及現行狀態。
+1. 從功能表列中，按一下**管理** &gt; **安全** &gt; **身分及存取**，然後按一下**使用者**。「使用者」頁面會顯示一份使用者清單，其中包含其在目前所選取帳戶的電子郵件位址及狀態。
 2. 按一下**邀請使用者**。
 3. 指定使用者的電子郵件位址。如果您使用單一邀請來邀請多位使用者，則他們都會獲指派相同的存取權。
 4. 新增您管理的一個以上存取選項。您必須至少指派一個存取選項。對於您未新增及配置的任何其他存取選項，會指派預設值：*不可存取*。視您獲授權管理的選項而定，您可能會看到下列其中一個或所有存取選項：**服務**、**Cloud Foundry 存取**、**{{site.data.keyword.Bluemix_notm}} 基礎架構存取**。如需相關資訊，請參閱[指派使用者存取權](/docs/iam/iamuserinv.html#assignaccess)。
 
 如果判定使用者不需要存取權，您可以針對**狀態**直欄中的**處理中**或**擱置中**狀態所顯示的任何使用者，取消邀請。如果受邀使用者沒有收到邀請，您可以將邀請重新傳送給處於**擱置中**狀態的任何使用者。
 
-如果您要使用 CLI 來邀請使用者，請參閱 [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) 指令。
+如果您要使用 CLI 來邀請使用者，請參閱 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) 指令。
 {: tip}
 
 ## 指派使用者存取權
@@ -89,7 +89,7 @@ lastupdated: "2017-12-07"
 
 如需角色的相關資訊，請參閱 [Cloud Foundry 角色](/docs/iam/cfaccess.html#cfroles)。
 
-您可以使用 [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
+您可以使用 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 基礎架構存取

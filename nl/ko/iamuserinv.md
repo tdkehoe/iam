@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -23,14 +23,14 @@ lastupdated: "2017-12-07"
 
 사용자를 초대하거나 계정에서 사용자 초대를 관리하려면 다음 단계를 완료하십시오.
 
-1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후에 **사용자**를 클릭하십시오. 사용자 페이지는 현재 선택된 계정의 현재 상태 및 해당 이메일 주소와 함께 사용자의 목록을 표시합니다.
+1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후에 **사용자**를 클릭하십시오. 사용자 페이지는 현재 선택된 계정의 상태 및 해당 이메일 주소와 함께 사용자의 목록을 표시합니다.
 2. **사용자 초대**를 클릭하십시오.
 3. 사용자의 이메일 주소를 지정하십시오. 한 번의 초대에서 두 명 이상의 사용자를 초대하는 경우에는 모든 사용자에게 동일한 액세스가 지정됩니다.
 4. 관리 중인 하나 이상의 액세스 옵션을 추가하십시오. 최소한 하나의 액세스 옵션을 지정해야 합니다. 추가하거나 구성하지 않는 추가 액세스 옵션에는 기본값인 *액세스 없음*이 지정됩니다. 관리 권한이 부여되는 옵션에 따라 **서비스**, **Cloud Foundry 액세스**, **{{site.data.keyword.Bluemix_notm}} 인프라 액세스** 등의 액세스 옵션 중 하나 또는 모두가 나타날 수 있습니다. 자세한 정보는 [사용자 액세스 지정](/docs/iam/iamuserinv.html#assignaccess)을 참조하십시오.
 
 사용자에게 액세스 권한이 필요 없다고 판단되면 **상태** 열에서 **처리 중** 또는 **보류 중** 상태로 표시된 사용자에 대한 초대를 취소할 수 있습니다. 초대된 사용자가 초대장을 받지 못한 경우에는 **보류 중** 상태인 사용자에게 초대를 재전송할 수 있습니다.
 
-CLI를 사용하여 사용자를 초대하려는 경우에는 [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) 명령을 참조하십시오.
+CLI를 사용하여 사용자를 초대하려는 경우에는 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) 명령을 참조하십시오.
 {: tip}
 
 ## 사용자 액세스 지정
@@ -87,7 +87,7 @@ Cloud IAM 정책, Cloud Foundry 액세스 및 인프라 권한을 지정하여 �
 
 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam/cfaccess.html#cfroles)을 참조하십시오.
 
-[bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 기타 액세스 또는 권한을 지정하려면 UI를 사용해야 합니다.
+[bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 권한을 지정하는 데에는 UI를 사용해야 합니다.
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 인프라 액세스
