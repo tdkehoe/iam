@@ -45,8 +45,7 @@ As funções a seguir podem ser designadas no nível de espaço:
 |------------|-------------|
 |Gerente | Os gerenciadores de espaço podem incluir usuários existentes e gerenciar funções dentro do espaço. O gerenciador de espaço também pode visualizar o número de instâncias, ligações de serviço e
 o uso recurso para cada aplicativo no espaço. |
-|Desenvolvedor | Desenvolvedores de espaço podem criar, excluir e gerenciar aplicativos e serviços dentro do espaço. 
-Algumas das tarefas de gerenciamento incluem implementação de apps, início ou parada de aplicativos,
+|Desenvolvedor | Desenvolvedores de espaço podem criar, excluir e gerenciar aplicativos e serviços dentro do espaço. Algumas das tarefas de gerenciamento incluem implementação de apps, início ou parada de aplicativos,
 renomeação de um app, exclusão de um app, renomeação de um espaço, ligação ou desvinculação de um serviço para
 um aplicativo, visualização do número ou de instâncias, ligações de serviço e uso de recurso para cada
 aplicativo no espaço. Além disso, o desenvolvedor de espaço pode associar uma URL interna ou externa com um aplicativo no espaço.   |

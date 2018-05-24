@@ -30,12 +30,12 @@ Também é possível usar as chaves API associadas aos IDs de serviço criados. 
 
 ## Outras chaves API do {{site.data.keyword.Bluemix_notm}}
 
-Além das chaves API de sua plataforma, há alguns outros tipos de chaves API que você pode usar ao usar o {{site.data.keyword.Bluemix_notm}}:
+Além de suas chaves API da plataforma, há alguns outros tipos de chaves API que você pode usar no {{site.data.keyword.Bluemix_notm}}:
 
 * Chaves API de infraestrutura
 * Chaves API específicas do serviço
 
-As chaves API de infraestrutura são criadas no portal do cliente, estão associadas ao ID do usuário de sua conta do SoftLayer e são usadas ao acessar as APIs para serviços de infraestrutura.
+As chaves API de infraestrutura são criadas no portal do cliente e estão associadas a seu ID do usuário da conta do SoftLayer e são usadas quando você acessa as APIs para serviços de infraestrutura.
 
 Alguns serviços no {{site.data.keyword.Bluemix_notm}} também podem fornecer uma chave API para você usar ao interagir com o serviço. Por exemplo, se você estiver visualizando os detalhes do serviço de um serviço do Watson em seu painel, será possível criar uma credencial, que inclui uma chave API e o segredo, que é específica apenas para esse serviço na guia Credenciais de serviço.
 

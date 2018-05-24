@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-05-14"
 
 ---
 
@@ -26,6 +26,8 @@ de usuários, designação de acesso e edição do acesso designado:
 1. Na barra de menus, clique em **Gerenciar** &gt; **Conta** &gt; **Usuários**. A janela Usuários exibe uma lista de usuários com seus endereços de e-mail para a conta selecionada atualmente.
 2. Selecione o nome do usuário ou clique em **Gerenciar usuários** no menu **Ações**.
 3. Em seguida, dependendo de qual ação você precisa tomar, é possível escolher remover o usuário, designar acesso ou editar o acesso existente do usuário.
+
+**Nota**: somente proprietários da conta podem remover usuários da conta.
 
 Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}

@@ -20,8 +20,7 @@ lastupdated: "2018-04-05"
 
 O {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) permite que você
 autentique usuários com segurança para os serviços de plataforma e controle o acesso aos recursos de forma
-consistente na plataforma. {{site.data.keyword.Bluemix_notm}} ''''''junto de serviços do {{site.data.keyword.Bluemix_notm}} é ativado para usar o Cloud IAM para controle de acesso e é organizado em [grupos de recursos](/docs/account/resourcegroups.html) dentro de sua conta para permitir que seja fornecido aos usuários acesso rápido e fácil a mais de um recurso de cada vez. As políticas de acesso ao Cloud IAM são usadas para designar aos usuários e IDs de serviço o acesso aos recursos em sua conta. 
-É possível agrupar um conjunto de usuários e IDs de serviço em um [grupo de
+consistente na plataforma. {{site.data.keyword.Bluemix_notm}} ''''''junto de serviços do {{site.data.keyword.Bluemix_notm}} é ativado para usar o Cloud IAM para controle de acesso e é organizado em [grupos de recursos](/docs/account/resourcegroups.html) dentro de sua conta para permitir que seja fornecido aos usuários acesso rápido e fácil a mais de um recurso de cada vez. As políticas de acesso ao Cloud IAM são usadas para designar aos usuários e IDs de serviço o acesso aos recursos em sua conta. É possível agrupar um conjunto de usuários e IDs de serviço em um [grupo de
 acesso](/docs/iam/groups.html) para fornecer facilmente o mesmo nível de acesso a todas as entidades dentro do grupo.
 
 Uma política designa a um usuário ou [ID de serviço](/docs/iam/serviceid.html#serviceids) uma ou mais funções com uma combinação de atributos que definem o escopo de acesso. A política pode fornecer acesso a um único serviço até o nível da instância ou a política pode se aplicar a um conjunto de recursos organizados juntos em um grupo de recursos. Dependendo das [funções de usuário](/docs/iam/users_roles.html#iamusermanrol) que você designa, o usuário ou ID de serviço é permitido diferentes níveis de acesso para concluir tarefas de gerenciamento de plataforma ou acessar um serviço usando a UI ou executar tipos específicos de chamadas API.
@@ -37,8 +36,7 @@ Para serviços que não suportam a criação de políticas do Cloud IAM para ger
 
 <dl>
 <dt>Gerenciamento de usuários</dt>
-<dd>O gerenciamento de usuários unificado permite que você inclua e exclua usuários em uma conta para serviços de plataforma e infraestrutura. 
-É possível criar um grupo de usuários chamado de grupo de acesso para tornar a designação de acesso para mais
+<dd>O gerenciamento de usuários unificado permite que você inclua e exclua usuários em uma conta para serviços de plataforma e infraestrutura. É possível criar um grupo de usuários chamado de grupo de acesso para tornar a designação de acesso para mais
 de um usuário por vez uma tarefa rápida e fácil.</dd>
 <dt>Controle de acesso de baixa granularidade</dt>
 <dd>O acesso para usuários e IDs de serviço é definido por uma política. Na política, o escopo de acesso para

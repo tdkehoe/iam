@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-12-07"
+lastupdated: "2018-05-08"
 
 ---
 
@@ -25,7 +25,7 @@ usuários, cancelar convites e reenviar um convite pendente para um usuário con
 
 Para convidar usuários ou gerenciar convites de usuários em sua conta, conclua as etapas a seguir:
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, clique em **Usuários**. A página Usuários exibe uma lista de usuários com seus endereços de e-mail e o status atual para a conta atualmente selecionada.
+1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, clique em **Usuários**. A janela Usuários exibe uma lista de usuários com seus endereços de e-mail e o status da conta selecionada atualmente.
 2. Clique em **Convidar usuários**.
 3. Especifique o endereço de e-mail do usuário. Se você estiver convidando mais de um usuário com um convite único, eles serão todos designados ao mesmo acesso.
 4. Inclua uma ou mais das opções de acesso que você gerencia. Deve-se designar pelo menos uma opção de acesso. Para quaisquer opções de acesso adicionais que você não incluir nem configurar, o valor padrão de
@@ -33,7 +33,7 @@ Para convidar usuários ou gerenciar convites de usuários em sua conta, conclua
 
 Se você determinar que um usuário não precisa de acesso, será possível cancelar um convite de quaisquer usuários que forem mostrados em um estado **Processando** ou **Pendente** na coluna **Status**. Se um usuário convidado não tiver recebido um convite, será possível reenviar o convite para qualquer usuário em um estado **Pendente**.
 
-Se você deseja convidar usuários usando a CLI, veja o comando [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite).
+Se você deseja convidar usuários usando a CLI, veja o comando [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite).
 {: tip}
 
 ## Designando Acesso do Usuário
@@ -90,7 +90,7 @@ Ao convidar novos usuários, é possível escolher incluir o usuário em uma org
 
 Veja [Funções do Cloud Foundry](/docs/iam/cfaccess.html#cfroles) para obter mais informações sobre as funções.
 
-É possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
+É possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
 {: tip}
 
 ### Acesso à infraestrutura do {{site.data.keyword.BluSoftlayer_notm}}

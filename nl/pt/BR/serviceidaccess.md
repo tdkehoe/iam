@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-02-26"
 
 Ao criar um ID de serviço, é possível designar políticas de serviço para esse ID de serviço para controlar o nível de acesso permitido quando ele é usado para autenticação nos serviços. É possível atualizar essas políticas de acesso designadas a qualquer momento mudando uma política existente, excluindo uma política ou designando uma nova.
 
-**Nota**: se você excluir ou editar uma política existente para um ID de serviço atualmente sendo usado, isso poderá causar interrupção de serviço.
+**Nota**: se você exclui ou edita uma política existente para um ID de serviço atualmente em uso, isso pode causar interrupção do serviço.
 
 ## Designando novo acesso
 
@@ -28,7 +28,7 @@ Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um 
 3. Clique em **Designar acesso**.
 4. Selecione **Designar por grupo de recursos**.
 5. Selecione um grupo de recursos.
-6. Escolha uma função para o campo **Designar acesso ao grupo de recursos** para permitir que o usuário visualize o grupo de recursos em seu painel, edite o nome do grupo de recursos ou gerencie o acesso de usuário ao grupo. É possível selecionar **Sem acesso**, se você deseja que o usuário tenha acesso somente ao recurso especificado e não ao grupo ao qual ele está designado.
+6. Escolha uma função para o campo **Designar acesso ao grupo de recursos**. Essa opção permite que o usuário visualize o grupo de recursos em seu painel, edite o nome do grupo de recursos ou gerencie o acesso de usuário ao grupo. É possível selecionar **Sem acesso** se você deseja que o usuário tenha acesso somente ao recurso especificado e não ao grupo ao qual ele está designado.
 7. Selecione um serviço no grupo de recursos ou opte por fornecer acesso a todos os serviços no grupo selecionado.
 8. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário. Este acesso só se aplica aos recursos que você selecionou para a política. Ela não fornece acesso ao contêiner real que é o grupo de recursos.
 9. Selecione **Designar**.

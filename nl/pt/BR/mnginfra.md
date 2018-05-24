@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-11-16"
 
 # Gerenciando o acesso à infraestrutura
 
-No convite da conta inicial, você pode ter configurado algumas permissões iniciais para seus usuários. É possível atualizar permissões para infraestrutura ou incluir acesso ao dispositivo por meio da opção Infraestrutura no console a qualquer momento. Para acessar as permissões de infraestrutura, acesse o ícone de Menu ![Menu icon](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**. Em seguida, acesse **Conta** &gt; **Usuários** para iniciar.
+No convite da conta inicial, você pode configurar algumas permissões iniciais para seus usuários. É possível atualizar permissões para infraestrutura ou incluir acesso ao dispositivo por meio da opção Infraestrutura no console a qualquer momento. Para acessar as permissões de infraestrutura, acesse o ícone de Menu ![Menu icon](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**. Em seguida, acesse **Conta** &gt; **Usuários** para iniciar.
 
 ## Atualizando permissões
 
@@ -39,6 +39,6 @@ No convite da conta inicial, você pode ter configurado algumas permissões inic
 
 1. Clique no ícone de Menu ![ícone de Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**.
 2. Acesse **Conta** &gt; **Usuários**.
-3. Clique no link na coluna **Acesso ao dispositivo** para o usuário para o qual você deseja atualizar o acesso. O link indicará **Gerenciar** ou o número de dispositivos aos quais o usuário tem acesso. Como alternativa, é possível clicar em **Editar acesso ao portal** no menu de ações que o leva à página de permissões. A partir daí, selecione a guia **Acesso ao dispositivo**.
+3. Clique no link na coluna **Acesso ao dispositivo** para o usuário para o qual você deseja atualizar o acesso. A opção de link é **Gerenciar** ou o número de dispositivos aos quais o usuário tem acesso. Como alternativa, é possível clicar em **Editar acesso ao portal** no menu de ações que o leva para a página de permissões. De lá, selecione a guia **Acesso ao dispositivo**.
 4. Selecione os dispositivos aos quais você deseja fornecer acesso para o usuário.
 5. Clique em **Atualizar acesso ao dispositivo**.
