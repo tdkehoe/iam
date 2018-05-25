@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-05-14"
 
 ---
 
@@ -25,6 +25,8 @@ Para gestionar los usuarios de su cuenta, complete los pasos siguientes para acc
 1. Desde la barra de menús, pulse **Gestionar** &gt; **Cuenta** &gt; **Usuarios**. La ventana Usuarios muestra una lista de los usuarios con sus direcciones de correo electrónico de las cuentas actualmente seleccionadas.
 2. Seleccione el nombre de usuario o pulse **Gestionar usuario** desde el menú **Acciones**.
 3. A continuación, dependiendo de qué acción deba realizar, puede optar por eliminar el usuario, asignar acceso o editar el acceso existente del usuario.
+
+**Nota**: Solo los propietarios de una cuenta pueden eliminar usuario de la cuenta.
 
 Para obtener más información sobre los mandatos de la interfaz de línea de mandatos que se utilizan para gestionar cuentas, organizaciones y espacios, consulte [Mandatos para la gestión de cuentas, organizaciones y roles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}

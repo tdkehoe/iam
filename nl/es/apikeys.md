@@ -30,7 +30,7 @@ También puede utilizar las claves de API asociadas con los ID de servicio que c
 
 ## Otras claves de API de {{site.data.keyword.Bluemix_notm}}
 
-Además de las claves de API de plataforma, hay un par de claves de API de otro tipo que puede utilizar con {{site.data.keyword.Bluemix_notm}}:
+Además de la plataforma claves de API, hay un par de otros tipos de claves de API que puede utilizar en {{site.data.keyword.Bluemix_notm}}:
 
 * Claves de API de infraestructura
 * Claves de API específicas de servicio

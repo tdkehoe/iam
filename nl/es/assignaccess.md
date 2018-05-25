@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2017-07-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -20,16 +20,16 @@ Puede asignar acceso a los usuarios a medida que los invita, asignando permisos 
 
 ## Servicios habilitados para identificación y acceso
 
-Puede asignar una política de servicio individual cuando invite a un nuevo usuario. Una vez que el usuario ha aceptado la invitación, puede añadir políticas de servicio adicionales.
+Puede asignar una política de servicio individual cuando invite a un nuevo usuario. Cuando el usuario acepte la invitación, podrá añadir políticas de servicio adicionales.
 
 1. Desde la pantalla **Invitar a usuarios**, amplíe la sección **Servicios habilitados para Identity and Access**.
 2. Seleccione un servicio.
 3. Seleccione **Todas las regiones actuales** o una región específica.
 4. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
 5. Seleccione un rol para definir el ámbito del acceso para la política.
-6. Opcional: Seleccione **Añadir rol** para especificar un rol adicional para la política.
+6. De forma opcional, puede seleccionar **Añadir rol** para especificar otro rol para la política.
 
-Consulte [Roles y políticas de gestión de acceso e identidad](/docs/iam/users_roles.html#iamusermanpol) para obtener información específica sobre los roles al establecer políticas de servicio.
+Para obtener más información sobre los roles al configurar políticas de servicio, consulte [Roles y políticas de gestión de acceso e identidad](/docs/iam/users_roles.html#iamusermanpol).
 
 ## Acceso de Cloud Foundry
 
@@ -42,17 +42,17 @@ Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en 
 5. Seleccione **Todas las regiones actuales** o una región específica.
 6. Seleccione **Todos los espacios actuales** o un espacio específico.
 7. Seleccione un rol de espacio para definir el nivel de acceso a los espacios seleccionados.
-8. Opcional: Seleccione **Añadir rol** para especificar un rol adicional.
+8. De forma opcional, puede seleccionar **Añadir rol** para especificar otro rol para la política.
 
-Consulte [Roles de Cloud Foundry](/docs/iam/users_roles.html#cfroles) para obtener información más específica sobre estos roles.
+Para obtener más información sobre los roles, consulte [Roles de Cloud Foundry](/docs/iam/users_roles.html#cfroles).
 
-**Nota**: Es posible añadir un rol de Cloud Foundry utilizando el mandato de interfaz de línea de mandatos [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), sin embargo, se debe utilizar la interfaz de usuario para asignar otros permisos o accesos.
+**Nota**: Es posible añadir un rol de Cloud Foundry utilizando el mandato de CLI [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), pero debe utilizarse la interfaz de usuario para asignar otro acceso o permisos.
 
 ## Acceso de infraestructura
 
-Los permisos reales asignados se limitan automáticamente al subconjunto de permisos que posee. Para obtener más información sobre los permisos y las acciones que puede desempeñar el usuario, consulte [Permisos de infraestructura](/docs/iam/users_roles.html#infrapermissions).
+Los permisos reales asignados se limitan automáticamente al subconjunto de permisos que posee. Para obtener más información sobre los permisos y las acciones que puede llevar a cabo el usuario, consulte [Permisos de infraestructura](/docs/iam/users_roles.html#infrapermissions).
 
 1. Desde la pantalla **Invitar usuarios**, expanda la sección **Acceso de infraestructura**.
 2. Seleccione un permiso para definir el ámbito del acceso.
 
-Para obtener información sobre la configuración del acceso para los usuarios después de que hayan sido añadidos a su cuenta, consulte [Gestión de usuarios y accesos](/docs/iam/iamusermanage.html).
+Para obtener información sobre la configuración del acceso para los usuarios después de que se añadan a su cuenta, consulte [Gestión de usuarios y acceso](/docs/iam/iamusermanage.html).

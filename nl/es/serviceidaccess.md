@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-05-02"
 
 ---
 
@@ -28,7 +28,7 @@ Para asignar acceso a todos los recursos de un grupo de recursos o solo a un ser
 3. Pulse **Asignar acceso**.
 4. Seleccione **Asignar por grupo de recursos**.
 5. Seleccione un grupo de recursos.
-6. Elija un rol para el campo **Asignar acceso a un grupo de recursos** para permitir al usuario ver el grupo de recursos en su panel de control, editar el nombre del grupo de recursos o gestionar el acceso de usuario al grupo. Puede seleccionar **Sin acceso** si desea que el usuario solo tenga acceso al recurso que especifique y no al grupo en el que está asignado.
+6. Seleccione un rol para el campo **Asignar acceso a un grupo de recursos**. Esta opción permite al usuario visualizar el grupo de recursos en su panel de control, editar el nombre del grupo de recursos o gestionar el acceso de usuario al grupo. Puede seleccionar **Sin acceso**, si desea que el usuario tenga acceso solo al recurso que especifica y no al grupo al que está asignado.
 7. Seleccione un servicio dentro del grupo de recursos o seleccione proporcionar acceso a todos los servicios dentro del grupo seleccionado.
 8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario. Este acceso solo se aplica a los recursos que ha seleccionado para la política. No proporciona acceso al contenedor actual que es el grupo de recursos.
 9. Seleccione **Asignar**.
