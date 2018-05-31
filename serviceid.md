@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
   
-lastupdated: "2018-05-22"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -34,7 +34,7 @@ You can update a service ID by changing the name and description at any time. Yo
 
 ## Locking a service ID
 
-To avoid a situation where your service ID is deleted causing an outage or disruption for the users of your service, you can lock your service ID. Locking a service ID also prevents any policies from being changed, deleted, or assigned. In addition to the ability to lock a service ID, you can [lock individual API keys](/docs/iam/serviceid_keys.html#lockkey) that are associated with each service ID in your account. 
+To avoid a situation where your service ID is deleted causing an outage or disruption for the users of your service, you have the option to lock your service ID using the UI or CLI.  Locking a service ID also prevents any policies from being changed, deleted, or assigned. In addition to the ability to lock a service ID, you can [lock individual API keys](/docs/iam/serviceid_keys.html#lockkey) that are associated with each service ID in your account. 
 
 Locked service IDs cannot be deleted and the access policies can't be updated. However, locked service IDs can still be removed from any access group that they are added to. This means that any access that is assigned to the ID by its membership in an access group is removed when the service ID is removed from the access group.
 {: tip}
@@ -70,6 +70,71 @@ A locked service ID is indicated by the ![Locked icon](images/locked.svg "Locked
 
 To unlock a service ID, select the service ID from the table that you want to unlock and select **Unlock service ID** from the **Actions** menu. You must have the appropriate level of access to unlock a service ID.
 {: tip}
+
+### Locking and unlocking a service ID using the CLI
+
+To lock a service ID, use the following command:
+
+```
+ibmcloud iam service-id-lock (NAME|UUID) [-f, --force]
+```
+
+Command Options:
+
+<dl>
+  <dt>NAME (required)</dt>
+  <dd>Name of the service, exclusive with UUID</dd>
+  <dt>UUID (required)</dt>
+  <dd>UUID of the service, exclusive with NAME</dd>
+  <dt>-f, --force</dt>
+  <dd>Lock without confirmation</dd>
+</dl>
+
+<strong>Examples</strong>:
+
+Lock service ID `sample-test` without confirmation
+
+```
+ibmcloud iam service-id-lock sample-test -f
+```
+
+Lock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
+
+```
+ibmcloud iam service-id-lock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
+```
+
+To unlock a service ID, use the following command:
+
+ ```
+ibmcloud iam service-id-unlock (NAME|UUID) [-f, --force]
+```
+
+Command Options:
+
+<dl>
+  <dt>NAME (required)</dt>
+  <dd>Name of the service, exclusive with UUID</dd>
+  <dt>UUID (required)</dt>
+  <dd>UUID of the service, exclusive with NAME</dd>
+  <dt>-f, --force</dt>
+  <dd>Unlock without confirmation</dd>
+</dl>
+
+<strong>Examples</strong>:
+
+Unlock service ID `sample-test` without confirmation
+
+```
+ibmcloud iam service-id-unlock sample-test -f
+```
+
+Unlock service ID `ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976`
+
+```
+ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
+```
+
 
 
 ## Examples of how to use a service ID
