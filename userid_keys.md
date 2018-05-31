@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-05-31"
 
 ---
 
@@ -63,7 +63,7 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 
 ## Locking an API key
 
-For platform API keys that represent your user identity you can prevent policies from being changed and the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. 
+For platform API keys that represent your user identity you can prevent policies from being changed and the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. You have the option to lock and unlock your API key by using the UI or CLI.
 
 ### How to lock an API key from the UI
 
@@ -72,6 +72,61 @@ For platform API keys that represent your user identity you can prevent policies
 
 You can unlock your API key at any time to update, delete, or add an access policy or remove the API key from your account. Select the API key from the table that you want to unlock and select **Unlock API key** from the **Actions menu**.
 {: tip}
+
+### How to lock and unlock an API key using the CLI
+
+To lock a platform API key, use the following command:
+
+```
+ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
+```
+
+<strong>Prerequisites</strong>:  Endpoint, Login
+
+<strong>Command options</strong>:
+<dl>
+<dt>NAME (required)</dt>
+<dd>Name of the API key to be locked, exclusive with UUID</dd>
+<dt>UUID (required)</dt>
+<dd>UUID of the API key to be locked, exclusive with NAME</dd>
+<dt>-f, --force</dt>
+<dd>Force lock without confirmation.</dd>
+</dl>
+
+<strong>Example</strong>:
+
+Lock API key test-api-key
+
+```
+ibmcloud iam api-key-lock test-api-key
+```
+
+To unlock a platform API key, run the following command:
+
+```
+ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
+```
+
+<strong>Prerequisites</strong>:  Endpoint, Login
+
+<strong>Command options</strong>:
+<dl>
+<dt>NAME (required)</dt>
+<dd>Name of the API key to be unlocked, exclusive with UUID</dd>
+<dt>UUID (required)</dt>
+<dd>UUID of the API key to be unlocked, exclusive with NAME</dd>
+<dt>-f, --force</dt>
+<dd>Force unlock without confirmation.</dd>
+</dl>
+
+<strong>Example</strong>:
+
+Unlock API key test-api-key
+
+```
+ibmcloud iam api-key-unlock test-api-key
+```
+
 
 ## Deleting an API key
 
