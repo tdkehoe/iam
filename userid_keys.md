@@ -63,7 +63,7 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 
 ## Locking an API key
 
-For platform API keys that represent your user identity you can prevent policies from being changed and the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. You have the option to lock and unlock your API key by using the UI or CLI.
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon. You have the option to lock and unlock your API key by using the UI or CLI.
 
 ### How to lock an API key from the UI
 
