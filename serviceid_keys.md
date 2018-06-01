@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-06-01"
 
 ---
 
@@ -45,6 +45,58 @@ You can update an API key by editing the name or description used to identify th
 2. If you don't have a service ID created already, create the service ID.
 3. From the **Actions** menu, go to the **Manage service ID** option.
 4. From the **Actions** menu in the API keys section, go to the **Edit name & description** option.
+
+## Locking a service ID's API key
+{: #lockkey}
+
+For API keys that represent the identity of the service ID, you can prevent policies from being changed and the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon in the UI.
+
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Service IDs**.
+2. Identify the row of the service ID that you want to select an API key for, and select the name of the service ID.
+3. Select **API keys**.
+4. Hover on the row of the API key that you want to lock, and click the **Actions** menu to open a list of options.
+5. Click **Lock API key**.
+
+You can unlock your API key at any time to update, delete, or add an access policy, or to remove the API key.
+{: tip}
+
+### Locking or unlocking a service ID API key with the CLI
+
+To lock a service ID API key, use the following command:
+
+```
+ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
+
+<strong>Prerequisites</strong>: Endpoint, Login, Target
+
+<strong>Command Options</strong>:
+<dl>
+  <dt>APIKEY_NAME (required)</dt>
+  <dd>Name of the API key, exclusive with APIKEY_UUID</dd>
+  <dt>APIKEY_UUID (required)</dt>
+  <dd>UUID of the API key, exclusive with APIKEY_NAME</dd>
+  <dt>SERVICE_ID_NAME (required)</dt>
+  <dd>Name of the service ID, exclusive with SERVICE_ID_UUID</dd>
+  <dt>SERVICE_ID_UUID (required)</dt>
+  <dd>UUID of the service ID, exclusive with SERVICE_ID_NAME</dd>
+  <dt>-f, --force</dt>
+  <dd>Lock without confirmation</dd>
+</dl>
+
+<strong>Examples</strong>:
+
+Lock service API key `sample-key` of service ID `sample-service`:
+
+```
+ibmcloud iam service-api-key-lock sample-key sample-service
+```
+
+To unlock a service ID API key, use the following command:
+
+```
+ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
 
 
 ## Deleting an API key for a service ID
