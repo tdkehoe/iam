@@ -49,7 +49,7 @@ You can update an API key by editing the name or description used to identify th
 ## Locking a service ID's API key
 {: #lockkey}
 
-For API keys that represent the identity of the service ID, you can prevent policies from being changed and the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon in the UI.
+For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon in the UI.
 
 1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Service IDs**.
 2. Identify the row of the service ID that you want to select an API key for, and select the name of the service ID.
