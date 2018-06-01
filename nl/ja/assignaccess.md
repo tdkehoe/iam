@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ lastupdated: "2018-05-02"
 
 これらの役割について詳しくは、『[Cloud Foundry の役割](/docs/iam/users_roles.html#cfroles)』を参照してください。
 
-**注**: Cloud Foundry の役割を追加するには、[bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるには UI を使用する必要があります。
+**注**: Cloud Foundry の役割を追加するには、[ibmcloud iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_account_user_invite) CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるには UI を使用する必要があります。
 
 ## インフラストラクチャー・アクセス権限
 

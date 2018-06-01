@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2018-05-08"
 
 ユーザーのアクセス権限は必要ないと判断した場合は、**「状況」**列に**「処理中」**または**「保留中」**の状態と表示されているユーザーの招待を取り消すことができます。 招待されたユーザーが招待を受け取らなかった場合、**「保留中」**状態のユーザーに招待を再送することができます。
 
-CLI を使用してユーザーを招待したい場合は、[bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) コマンドを参照してください。
+CLI を使用してユーザーを招待したい場合は、[ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) コマンドを参照してください。
 {: tip}
 
 ## ユーザー・アクセスの割り当て
@@ -87,7 +87,7 @@ CLI を使用してユーザーを招待したい場合は、[bluemix account us
 
 役割について詳しくは、『[Cloud Foundry の役割](/docs/iam/cfaccess.html#cfroles)』を参照してください。
 
-Cloud Foundry の役割を追加するには、[bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite)CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるには UI を使用する必要があります。
+Cloud Foundry の役割を追加するには、[ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite)CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるには UI を使用する必要があります。
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} インフラストラクチャー・アクセス権限

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-04-16"
 # ユーザーの API キーの管理
 {: #userapikey}
 
-フェデレーテッド・ユーザーまたは非フェデレーテッド・ユーザーは、API キーを作成し、CLI で使用したり、ID としてログインするための自動化の一部として使用したりすることができます。 キーのリスト、キーの作成、キーの更新、またはキーの削除を行うことにより、UI または CLI を使用して API キーを管理できます。 ユーザー ID に関連付けられた {{site.data.keyword.Bluemix_notm}} API キーを管理するには、**「管理」** &gt; **「セキュリティー」** &gt; **「プラットフォーム API キー」**に移動して、説明および日付と共に API キーのリストを表示します。 次に、このページから API キーを作成、編集、および削除できます。 そして、使用可能な CLI コマンドの全リストについては、[`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam) を参照してください。
+フェデレーテッド・ユーザーまたは非フェデレーテッド・ユーザーは、API キーを作成し、CLI で使用したり、ID としてログインするための自動化の一部として使用したりすることができます。 キーのリスト、キーの作成、キーの更新、またはキーの削除を行うことにより、UI または CLI を使用して API キーを管理できます。 ユーザー ID に関連付けられた {{site.data.keyword.Bluemix_notm}} API キーを管理するには、**「管理」** &gt; **「セキュリティー」** &gt; **「プラットフォーム API キー」**に移動して、説明および日付と共に API キーのリストを表示します。 次に、このページから API キーを作成、編集、および削除できます。 そして、使用可能な CLI コマンドの全リストについては、[`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam) を参照してください。
 
 [フェデレーテッド・ユーザー](/docs/account/adminpublic.html#federatedid)の場合、`BLUEMIX_API_KEY` 環境変数を使用することにより、API キーを使用してログインすることができます。 ログインのための API キーの使用について詳しくは、[フェデレーテッド ID を使用したログイン](/docs/cli/login_federated_id.html#federated_id)を参照してください。
 
@@ -35,10 +35,10 @@ UI でユーザー ID の API キーを作成するには、以下のように�
 
 CLI で API キーを作成するには、以下の手順を実行します。
 
-1. コマンド・プロンプトに `bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` と入力し、名前と説明、およびキーを保存するためのファイルを指定します。 例えば次のようにします。
+1. コマンド・プロンプトに `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` と入力し、名前と説明、およびキーを保存するためのファイルを指定します。 例えば次のようにします。
 
 ```
-bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" -f key_file
 ``` 
 
 
@@ -55,10 +55,10 @@ API キーを編集するには、以下の手順を実行します。
 
 CLI を使用して API キーを編集するには、以下の手順を実行します。
 
-1. コマンド・プロンプトに、キーの古い名前、新しい名前、および説明を指定して `bluemix iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` と入力します。 例えば次のようにします。
+1. コマンド・プロンプトに、キーの古い名前、新しい名前、および説明を指定して `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` と入力します。 例えば次のようにします。
 
 ```
-bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
+ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
 
 ## API キーの削除
@@ -72,4 +72,4 @@ API キーを削除するには、以下の手順を実行します。
 3. 次に、**「キーの削除」**をクリックして、削除を確認します。
 
 CLI を使用して API キーを削除するには、以下の手順を実行します。
-1. コマンド・プロンプトに、削除するキーを指定して `bluemix iam api-key-delete NAME` と入力します。
+1. コマンド・プロンプトに、削除するキーを指定して `ibmcloud iam api-key-delete NAME` と入力します。

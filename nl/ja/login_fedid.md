@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-01-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -31,12 +31,12 @@ lastupdated: "2018-01-16"
 {: tip}
 
 ### {{site.data.keyword.Bluemix_notm}} CLIから
-1. `bluemix login` コマンドに `--sso` オプションを指定します。
+1. `ibmcloud login` コマンドに `--sso` オプションを指定します。
 2. プロンプトの URL にアクセスしてワンタイム・パスコードを取得します。
 3. 入力として CLI にパスコード値をコピー・アンド・ペーストします。
     
   ``` 
-  bluemix login --sso
+  ibmcloud login --sso
   API endpoint: https://api.ng.bluemix.net
       
   One Time Code (Get one at https://iam.ng.bluemix.net/oidc/passcode)> 
@@ -65,10 +65,10 @@ lastupdated: "2018-01-16"
 
 必要な API キーは、{{site.data.keyword.Bluemix_notm}} プラットフォームでの認証に使用される {{site.data.keyword.Bluemix_notm}} の API キーです。Softlayer の API キーまたは {{site.data.keyword.Bluemix_notm}} サービスの API キーではありません。
 
-1. [`bluemix iam api-key-create` コマンド](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_api_key_create)を使用して API キーを作成します。 以下に示すように、コマンド・ウィンドウにキーを表示するのではなく API キー・ファイルを生成するには、`-f` オプションを使用します。
+1. [`ibmcloud iam api-key-create` コマンド](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create)を使用して API キーを作成します。 以下に示すように、コマンド・ウィンドウにキーを表示するのではなく API キー・ファイルを生成するには、`-f` オプションを使用します。
 
    ```
-   bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
+   ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
   
    ```
 
@@ -79,18 +79,18 @@ lastupdated: "2018-01-16"
     * 以下のように API キーを直接呼び出す。
   
       ```
-      bluemix login --apikey <api_key_string>
+      ibmcloud login --apikey <api_key_string>
     
       ```
     
     * 以下のようにキー・ファイルを使用して API キーを呼び出す。 
   
       ```
-      bluemix login --apikey @key_file_name
+      ibmcloud login --apikey @key_file_name
     
       ```
     
-    * 環境変数を設定します。 さらに、ご使用のシステムにも環境変数を設定できます。 例えば、BLUEMIX_API_KEY=api_key_string と指定します。ここで、`api_key_string` は、API キーのカスタム値です。 環境変数が設定された後は、CLI から単純に `bluemix login` を指定できます。 
+    * 環境変数を設定します。 さらに、ご使用のシステムにも環境変数を設定できます。 例えば、BLUEMIX_API_KEY=api_key_string と指定します。ここで、`api_key_string` は、API キーのカスタム値です。 環境変数が設定された後は、CLI から単純に `ibmcloud login` を指定できます。 
   
   Cloud Foundry CLI を使用してログインするには、以下のように、ユーザー名として `apikey` を指定し、パスワードとして API キー・ストリングを指定します。
 
