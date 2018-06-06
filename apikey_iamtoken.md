@@ -22,11 +22,11 @@ lastupdated: "2018-05-09"
 
 ### POST /identity/token
 
-### Headers:
+### Headers
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
-### With parameters:
+### Parameters
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
   - apikey=*[Api key]*
 
@@ -42,7 +42,7 @@ curl -k -X POST \
 
 The following sample is the expected response:
 
-### Response:
+### Response
 
 ```
 {
