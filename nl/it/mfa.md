@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -37,7 +37,7 @@ Se hai un account collegato e hai in precedenza configurato la [2FA nel portale 
 
 ## Abilitazione dell'autenticazione multifattore
 
-Per abilitare la MFA devi essere l'amministratore dell'account. L'abilitazione della MFA non ha ripercussioni sugli utenti che hanno già eseguito l'accesso, poiché l'implementazione della MFA sull'account ha effetto solo sui nuovi accessi. Qualsiasi amministratore che abilita la MFA per l'account deve informare gli utenti dell'account che la MFA è abilitata e descrivere l'impatto sugli utenti al loro successivo accesso nel caso in cui gli utenti desiderino eseguirne la configurazione anticipatamente.
+Per abilitare la MFA devi essere l'amministratore dell'account. L'abilitazione della MFA non ha ripercussioni sugli utenti che hanno già eseguito l'accesso, poiché l'implementazione della MFA sull'account ha effetto solo sui nuovi accessi. Qualsiasi amministratore che abiliti la MFA per l'account deve informare gli utenti dell'account che la MFA è abilitata e descrivere l'impatto sugli utenti al loro successivo accesso. 
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **Impostazioni**.
 2. Seleziona **Autenticazione multifattore (MFA)** &gt; e fai quindi clic su **Applica le modifiche**.
@@ -46,7 +46,7 @@ Per abilitare la MFA devi essere l'amministratore dell'account. L'abilitazione d
 ## Configurazione del passcode monouso
 {: #setupapp}
 
-Dopo che hai abilitato la MFA per il tuo account, dovrai configurare il passcode monouso con un'applicazione autenticatore la volta successiva che esegui l'accesso. Anche tutti gli utenti nel tuo account dovranno configurare il passcode monouso al loro successivo accesso. 
+Dopo aver abilitato la MFA sul tuo account, devi configurare il passcode monouso con un'applicazione autenticatore la prossima volta che esegui l'accesso. Anche tutti gli utenti nel tuo account devono configurare il passcode monouso al loro successivo accesso. 
 
 Completa la seguente procedura per configurare il tuo passcode monouso con l'applicazione autenticatore per la prima volta.
 
@@ -57,11 +57,11 @@ Potrebbero volerci fino a 5 minuti perché tu possa eseguire nuovamente l'access
 2. Seleziona **Verify** nella schermata **Verification is required** per configurare la MFA con un'applicazione autenticatore.
 3. Seleziona **Setup your authenticator app** per ottenere un codice monouso inviato alla tua email per continuare la configurazione dell'applicazione autenticatore.
 4. Seleziona **Verify**.
-5. Esegui la scansione del codice a barre con la tua applicazione oppure fai clic su **Can't scan the barcode?** per immettere una chiave fornita manualmente. 
+5. Esegui la scansione del codice a barre con la tua applicazione oppure fai clic su **Can't scan the bar code?** per immettere una chiave fornita manualmente. 
 6. Fai clic su **Continue** per immettere il tuo codice.
 7. Immetti il tuo codice e seleziona **Verify**. 
 
-Se riscontri un messaggio di errore che indica che hai già configurato l'autenticazione ma il tuo codice di verifica non sta funzionando o non hai il tuo codice di verifica da immettere, devi contattare l'[Helpdesk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") per reimpostare la tua registrazione dell'MFA.
+Se visualizzi un messaggio di errore che indica che hai già configurato l'autenticazione ma il tuo codice di verifica non sta funzionando o non hai il tuo codice di verifica da immettere, devi contattare l'[Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno") per reimpostare la tua registrazione della MFA.
 {: tip}
 {: #mfahelp}
 

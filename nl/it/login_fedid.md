@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-01-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -31,14 +31,14 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 {: tip}
 
 ### Dalla CLI {{site.data.keyword.Bluemix_notm}}
-1. Specifica l'opzione `--sso` con il comando `bluemix login`.
+1. Specifica l'opzione `--sso` con il comando `ibmcloud login`.
 2. Segui l'URL nel prompt per ottenere il passcode monouso.
 3. Copia e incolla il valore del passcode nella CLI.
     
   ``` 
-  bluemix login --sso
-  API endpoint: https://api.ng.bluemix.net
-      
+  ibmcloud login --sso
+  Endpoint API: https://api.ng.bluemix.net
+
   Codice monouso (Ottienine uno in  https://iam.ng.bluemix.net/oidc/passcode)> 
   Autenticazione in corso...
   OK
@@ -52,8 +52,8 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
     
   ```
   cf login --sso
-  API endpoint: https://api.ng.bluemix.net
-      
+  Endpoint API: https://api.ng.bluemix.net
+
   Codice monouso (Ottienine uno in https://login.ng.bluemix.net/UAALoginServerWAR/passcode)>
   Autenticazione in corso...
   OK
@@ -65,11 +65,11 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 
 La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API Softlayer o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
-1. Crea una chiave API con il [comando `bluemix iam api-key-create`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
+1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
 
    ```
-   bluemix iam api-key-create NOME [-d DESCRIZIONE] [-f, --file FILE]
-  
+   ibmcloud iam api-key-create NOME [-d DESCRIZIONE] [-f, --file FILE]
+
    ```
 
 2. Accedi con la chiave API. 
@@ -79,29 +79,29 @@ La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} util
     * Chiama direttamente la chiave API.
   
       ```
-      bluemix login --apikey <api_key_string>
+      ibmcloud login --apikey <api_key_string>
     
       ```
     
     * Chiama la chiave API con il file della chiave: 
   
       ```
-      bluemix login --apikey @key_file_name
+      ibmcloud login --apikey @key_file_name
     
       ```
     
-    * Imposta una variabile di ambiente. Puoi anche impostare una variabile di ambiente nel tuo sistema. Ad esempio, BLUEMIX_API_KEY=api_key_string, dove `api_key_string` è il valore personalizzato della chiave API. Una volta impostata la variabile di ambiente, puoi semplicemente specificare `bluemix login` dalla CLI. 
+    * Imposta una variabile di ambiente. Puoi anche impostare una variabile di ambiente nel tuo sistema. Ad esempio, BLUEMIX_API_KEY=api_key_string, dove `api_key_string` è il valore personalizzato della chiave API. Una volta impostata la variabile di ambiente, puoi semplicemente specificare `ibmcloud login` dalla CLI. 
   
   Per accedere utilizzando la CLI Cloud Foundry, specifica `apikey` come nome utente e la stringa della chiave API come password:
 
     ```
     cf login
-    API endpoint: https://api.ng.bluemix.net
+    Endpoint API: https://api.ng.bluemix.net
   
     Email> apikey
   
     Password>
-Authenticating...
+Autenticazione in corso...
 OK
   
     ```
