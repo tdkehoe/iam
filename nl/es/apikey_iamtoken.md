@@ -16,7 +16,7 @@ lastupdated: "2018-05-09"
 # Cómo obtener una señal de IAM de {{site.data.keyword.Bluemix_notm}} utilizando una clave de API
 {: #iamtoken_from_apikey}
 
-Solo pueden acceder a las API de {{site.data.keyword.Bluemix}} los usuarios autorizados por un rol de IAM asignado. Por lo tanto, el usuario que está llamando a la API debe pasar credenciales para la API para poder realizar la autenticación. Puede generar una señal de IAM utilizando su clave de API del ID de servicio o persona, como se describe aquí. Este proceso también se utiliza si está desarrollando una aplicación que debe trabajar con otros servicios de {{site.data.keyword.Bluemix_notm}}. Debe utilizar una clave API de ID de servicio para obtener una señal de acceso y pasarla a cada uno de los servicios de {{site.data.keyword.Bluemix_notm}}.
+Solo pueden acceder a las API de {{site.data.keyword.Bluemix}} los usuarios autorizados por un rol de IAM asignado. Por lo tanto, el usuario que está llamando a la API debe pasar credenciales para la API para autenticar. Puede generar una señal de IAM utilizando su clave de API del ID de servicio o persona, como se describe aquí. Este proceso también se utiliza si está desarrollando una aplicación que debe trabajar con otros servicios de {{site.data.keyword.Bluemix_notm}}. Debe utilizar una clave API de ID de servicio para obtener una señal de acceso y pasarla a cada uno de los servicios de {{site.data.keyword.Bluemix_notm}}.
 
 1. Utilice el mandato `curl` siguiente para generar una señal de IAM utilizando una clave de API.
 
@@ -40,7 +40,7 @@ curl -k -X POST \
 ```
 {: codeblock}
 
-A continuación, se muestra la respuesta esperada:
+El ejemplo siguiente es la respuesta esperada:
 
 ### Respuesta:
 
