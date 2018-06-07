@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2018-05-08"
 
 如果判定使用者不需要存取權，您可以針對**狀態**直欄中的**處理中**或**擱置中**狀態所顯示的任何使用者，取消邀請。如果受邀使用者沒有收到邀請，您可以將邀請重新傳送給處於**擱置中**狀態的任何使用者。
 
-如果您要使用 CLI 來邀請使用者，請參閱 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) 指令。
+如果您要使用 CLI 來邀請使用者，請參閱 [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) 指令。
 {: tip}
 
 ## 指派使用者存取權
@@ -89,7 +89,7 @@ lastupdated: "2018-05-08"
 
 如需角色的相關資訊，請參閱 [Cloud Foundry 角色](/docs/iam/cfaccess.html#cfroles)。
 
-您可以使用 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
+您可以使用 [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 基礎架構存取

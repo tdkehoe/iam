@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ lastupdated: "2018-05-02"
 
 如需這些角色的相關資訊，請參閱 [Cloud Foundry 角色](/docs/iam/users_roles.html#cfroles)。
 
-**附註**：您可以使用 [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
+**附註**：您可以使用 [ibmcloud iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須以使用者介面來指派其他存取權或許可權。
 
 ## 基礎架構存取
 

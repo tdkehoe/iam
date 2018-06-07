@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-01-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -31,12 +31,12 @@ lastupdated: "2018-01-16"
 {: tip}
 
 ### 從 {{site.data.keyword.Bluemix_notm}} CLI
-1. 指定 `bluemix login` 指令並使用 `--sso` 選項。
+1. 指定 `ibmcloud login` 指令並使用 `--sso` 選項。
 2. 遵循提示中的 URL，以取得一次性密碼。
 3. 複製並貼上 CLI 中的密碼值作為您的輸入。
     
   ``` 
-  bluemix login --sso
+  ibmcloud login --sso
   API endpoint: https://api.ng.bluemix.net
       
   One Time Code (Get one at https://iam.ng.bluemix.net/oidc/passcode)> 
@@ -65,11 +65,12 @@ lastupdated: "2018-01-16"
 
 必要 API 金鑰是用來向 {{site.data.keyword.Bluemix_notm}} 平台進行鑑別的 {{site.data.keyword.Bluemix_notm}} API 金鑰，而不是 Softlayer API 金鑰或 {{site.data.keyword.Bluemix_notm}} 服務 API 金鑰。
 
-1. 使用 [`bluemix iam api-key-create` 指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
+1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
 
    ```
-bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
-```
+   ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
+  
+   ```
 
 2. 使用 API 金鑰登入。 
 
@@ -78,28 +79,34 @@ bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
     * 直接呼叫 API 金鑰：
   
       ```
-      bluemix login --apikey <api_key_string>
+      ibmcloud login --apikey <api_key_string>
     
       ```
     
     * 使用金鑰檔來呼叫 API 金鑰： 
   
       ```
-      bluemix login --apikey @key_file_name
+      ibmcloud login --apikey @key_file_name
     
       ```
     
-    * 設定環境變數。此外，您也可以在系統上設定環境變數。例如，BLUEMIX_API_KEY=api_key_string，其中 `api_key_string` 是 API 金鑰的自訂值。設定環境變數之後，只需要從 CLI 指定 `bluemix login` 即可。 
+    * 設定環境變數。此外，您也可以在系統上設定環境變數。例如，BLUEMIX_API_KEY=api_key_string，其中 `api_key_string` 是 API 金鑰的自訂值。設定環境變數之後，只需要從 CLI 指定 `ibmcloud login` 即可。 
   
   若要使用 Cloud Foundry CLI 登入，請指定 `apikey` 作為使用者名稱，並指定 API 金鑰字串作為密碼：
 
     ```
-    cf login
+        cf login
     API endpoint: https://api.ng.bluemix.net
   
+    
+  
     Email> apikey
+  
+    
   
     Password>
 Authenticating...
 OK
-```
+
+  
+    ```
