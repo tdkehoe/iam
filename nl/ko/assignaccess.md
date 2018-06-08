@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,7 +46,7 @@ lastupdated: "2018-05-02"
 
 이러한 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam/users_roles.html#cfroles)을 참조하십시오.
 
-**참고**: [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 역할을 지정하려면 UI를 사용해야 합니다.
+**참고**: [ibmcloud iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 권한 또는 권한을 지정하려면 UI를 사용해야 합니다. 
 
 ## 인프라 액세스
 

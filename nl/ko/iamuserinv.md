@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2018-05-08"
 
 사용자에게 액세스 권한이 필요 없다고 판단되면 **상태** 열에서 **처리 중** 또는 **보류 중** 상태로 표시된 사용자에 대한 초대를 취소할 수 있습니다. 초대된 사용자가 초대장을 받지 못한 경우에는 **보류 중** 상태인 사용자에게 초대를 재전송할 수 있습니다.
 
-CLI를 사용하여 사용자를 초대하려는 경우에는 [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) 명령을 참조하십시오.
+CLI를 사용하여 사용자를 초대하려는 경우에는 [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) 명령을 참조하십시오.
 {: tip}
 
 ## 사용자 액세스 지정
@@ -87,7 +87,7 @@ Cloud IAM 정책, Cloud Foundry 액세스 및 인프라 권한을 지정하여 �
 
 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam/cfaccess.html#cfroles)을 참조하십시오.
 
-[bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 권한을 지정하는 데에는 UI를 사용해야 합니다.
+[ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 권한 또는 권한을 지정하려면 UI를 사용해야 합니다.
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} 인프라 액세스

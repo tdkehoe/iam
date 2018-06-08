@@ -18,7 +18,7 @@ lastupdated: "2018-05-04"
 
 다음 표에는 {{site.data.keyword.Bluemix_notm}} IAM(Identity and Access Management) 리소스에 대한 최대 한계가 나열되어 있습니다. 이러한 한계는 {{site.data.keyword.Bluemix_notm}} IAM 리소스를 작성할 수 있는 모든 사용자에게 적용되고, 한계를 초과하는 경우 예외를 수신하게 되며, 해당 한계를 초과하여 새 리소스를 작성할 수 없습니다.
 
-| 리소스   | 최대    |
+| 리소스 | 최대 |
 |----------|---------|
 | 계정당 액세스 그룹 | 500 |
 | 사용자당 액세스 그룹 | 30 |

@@ -30,7 +30,7 @@ API(Application Programming Interface) 키는 호출 애플리케이션 또는 �
 
 ## 기타 {{site.data.keyword.Bluemix_notm}} API 키
 
-플랫폼 API 키 외에도, {{site.data.keyword.Bluemix_notm}}에서 사용할 수 있는 몇 가지 다른 API 키 유형이 있습니다. 
+플랫폼 API 키 외에도, {{site.data.keyword.Bluemix_notm}}에서 사용할 수 있는 몇 가지 다른 API 키 유형이 있습니다.
 
 * 인프라 API 키
 * 서비스 특정 API 키
