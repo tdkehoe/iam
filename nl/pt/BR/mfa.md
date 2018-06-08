@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -16,13 +16,13 @@ lastupdated: "2018-05-04"
 # Ativando a autenticação de diversos fatores
 {: #enablemfa}
 
-A autenticação de diversos fatores (MFA) inclui uma camada extra de segurança em sua conta solicitando que todos os usuários forneçam uma senha descartável baseada em tempo, além de seu IBMid e da senha padrão durante o login. Isso também é conhecido geralmente como autenticação de dois fatores (2FA). A ativação desse recurso para sua conta requer que não apenas você use o padrão de segurança adicional no login, mas também todos os usuários que são incluídos em sua conta.
+A autenticação de diversos fatores (MFA) inclui uma camada extra de segurança em sua conta solicitando que todos os usuários forneçam uma senha descartável baseada em tempo, além de seu IBMid e senha padrão durante o login. Isso também é conhecido geralmente como autenticação de dois fatores (2FA). A ativação desse recurso para sua conta requer que não apenas você use o padrão de segurança adicional no login, mas também todos os usuários que são incluídos em sua conta.
 
 ## Considerações
 
 Antes de ativar a autenticação de diversos fatores para sua conta, revise as considerações a seguir:
 
-* Quando você ativar a MFA para sua conta, todos os usuários que forem incluídos em sua conta precisarão concluir o processo de 2FA na próxima vez que efetuarem login.
+* Quando você ativar a MFA para sua conta, todos os usuários nela incluídos deverão concluir o processo 2FA na próxima vez que efetuarem login.
 * As chaves API para usuários e IDs de serviço continuarão funcionando após a MFA ser ativada.
 * Se você requer o uso de login de CLI ou UI do CF nativo no Cloud Foundry, deve-se usar as chaves API ou a conexão única (SSO) após a MFA ser ativada para a conta.
 * A MFA não é suportada para usuários que efetuam login com uma identidade federada.
@@ -37,7 +37,7 @@ Se você tem uma conta vinculada e configurou anteriormente a [2FA no portal de 
 
 ## Ativando a autenticação de diversos fatores
 
-Para ativar a MFA, deve-se ser o administrador de conta. A ativação da MFA não afeta usuários que já estão com login efetuado, pois o cumprimento da MFA na conta entra em vigor somente em novos logins. Qualquer administrador que ative a MFA para a conta deve notificar os usuários da conta de que a MFA está ativada e descrever o impacto para os usuários em seu próximo login no caso de os usuários desejarem configurá-lo antes do tempo.
+Para ativar a MFA, deve-se ser o administrador de conta. A ativação da MFA não afeta usuários já conectados, pois o cumprimento da MFA na conta entra em vigor apenas em novos logins. Qualquer administrador que ative a MFA para a conta deve notificar os usuários da conta de que a MFA está ativada e descrever o impacto para os usuários em seu próximo login. 
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Configurações**.
 2. Selecione **Autenticação de diversos fatores** &gt; e, em seguida, clique em **Aplicar mudanças**.
@@ -46,7 +46,7 @@ Para ativar a MFA, deve-se ser o administrador de conta. A ativação da MFA nã
 ## Configurando a senha descartável
 {: #setupapp}
 
-Depois de ativar a MFA em sua conta, você precisará configurar a senha descartável com um app de autenticador na próxima vez que efetuar login. Todos os usuários em sua conta terão que configurar a senha descartável no próximo login. 
+Depois que você ativa a MFA em sua conta, deve-se configurar a senha descartável com um app autenticador na próxima vez que o login é efetuado. Todos os usuários em sua conta também devem configurar a senha descartável no próximo login. 
 
 Conclua as etapas a seguir para configurar sua senha descartável com um aplicativo autenticador pela primeira vez:
 
@@ -57,11 +57,11 @@ Pode levar até 5 minutos para que você possa efetuar login novamente com a MFA
 2. Selecione **Verificar** na tela **Verificação é necessária** para configurar a MFA com um aplicativo autenticador.
 3. Selecione **Configurar seu aplicativo autenticador** para ter um código descartável enviado para seu e-mail para continuar a configurar o aplicativo autenticador.
 4. Selecione **Verificar**.
-5. Escaneie o código de barras com seu app ou clique em **Não é possível escanear o código de barras?** para terminar uma chave fornecida manualmente. 
+5. Varra o código de barras com seu app ou clique em **Não é possível varrer o código de barras?** para inserir uma chave fornecida manualmente. 
 6. Clique em **Continuar** para inserir seu código.
 7. Insira seu código e selecione **Verificar**. 
 
-No caso de uma mensagem de erro dizendo que a autenticação já foi configurada, mas o seu código de verificação não está funcionando ou você não tem o código de verificação para inserir, deve-se entrar em contato com o [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") para reconfigurar sua inscrição da MFA.
+Se você encontra uma mensagem de erro indicando que já configurou a autenticação, mas seu código de verificação não está funcionando ou você não tem o código de verificação para inserir, deve-se entrar em contato com o [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") para reconfigurar sua inscrição da MFA.
 {: tip}
 {: #mfahelp}
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -46,9 +46,9 @@ Ao convidar novos usuários, é possível escolher incluir o usuário em uma org
 
 Para obter mais informações sobre essas funções, veja [Funções do Cloud Foundry](/docs/iam/users_roles.html#cfroles).
 
-**Nota**: é possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
+**Nota**: é possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
 
-## Acesso ao Infrastructure
+## Acesso à infraestrutura
 
 As permissões reais designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Para obter mais informações sobre as permissões e quais ações o usuário pode concluir com cada uma, veja [Permissões de infraestrutura](/docs/iam/users_roles.html#infrapermissions).
 

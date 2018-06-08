@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-04-16"
 # Gerenciando chaves API do usuário
 {: #userapikey}
 
-Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. É possível usar a UI ou CLI para gerenciar suas chaves API, listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar as chaves API do {{site.data.keyword.Bluemix_notm}} associadas à sua identidade do usuário, acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma** para ver uma lista de suas chaves API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API desta página. E para obter uma lista completa de comandos da CLI disponíveis, consulte [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
+Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. É possível usar a UI ou CLI para gerenciar suas chaves API, listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar as chaves API do {{site.data.keyword.Bluemix_notm}} associadas à sua identidade do usuário, acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma** para ver uma lista de suas chaves API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API desta página. E, para obter uma lista completa de comandos da CLI disponíveis, veja [`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam).
 
 Como um [usuário federado](/docs/account/adminpublic.html#federatedid), é possível usar uma chave API para efetuar login usando a variável de ambiente `BLUEMIX_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja [Efetuando login com um ID federado](/docs/cli/login_federated_id.html#federated_id).
 
@@ -35,10 +35,10 @@ Para criar uma chave API para sua identidade de usuário na UI:
 
 Para criar uma chave API usando a CLI:
 
-1. Insira `bluemix iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` no prompt de comandos e especifique um nome, uma descrição e um arquivo para salvar sua chave. Por exemplo:
+1. Insira `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` no prompt de comandos e especifique um nome, uma descrição e um arquivo para salvar sua chave. Por exemplo:
 
 ```
-bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" -f key_file
 ``` 
 
 
@@ -55,10 +55,10 @@ Para editar uma chave API:
 
 Para editar uma chave API usando a CLI:
 
-1. Insira `bluemix iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` no prompt de comandos, especificando o nome antigo, o novo nome e a nova descrição para a chave. Por exemplo:
+1. Insira `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` no prompt de comandos, especificando o nome antigo, o novo nome e a nova descrição para a chave. Por exemplo:
 
 ```
-bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
+ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
 
 ## Excluindo uma chave API
@@ -72,4 +72,4 @@ Para excluir uma chave API:
 3. Em seguida, confirme a exclusão clicando em **Excluir chave**.
 
 Para excluir uma chave API usando a CLI:
-1. Insira `bluemix iam api-key-delete NAME` no prompt de comandos, especificando o nome da chave que deve ser excluída.
+1. Insira `ibmcloud iam api-key-delete NAME` no prompt de comandos, especificando o nome da chave que deve ser excluída.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -33,7 +33,7 @@ Para convidar usuários ou gerenciar convites de usuários em sua conta, conclua
 
 Se você determinar que um usuário não precisa de acesso, será possível cancelar um convite de quaisquer usuários que forem mostrados em um estado **Processando** ou **Pendente** na coluna **Status**. Se um usuário convidado não tiver recebido um convite, será possível reenviar o convite para qualquer usuário em um estado **Pendente**.
 
-Se você deseja convidar usuários usando a CLI, veja o comando [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite).
+Se desejar convidar usuários usando a CLI, veja o comando [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Designando Acesso do Usuário
@@ -90,7 +90,7 @@ Ao convidar novos usuários, é possível escolher incluir o usuário em uma org
 
 Veja [Funções do Cloud Foundry](/docs/iam/cfaccess.html#cfroles) para obter mais informações sobre as funções.
 
-É possível incluir uma função do Cloud Foundry usando o comando da CLI [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
+É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
 {: tip}
 
 ### Acesso à infraestrutura do {{site.data.keyword.BluSoftlayer_notm}}
