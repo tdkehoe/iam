@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-04-16"
 # Gestion des clés d'API d'utilisateur
 {: #userapikey}
 
-Un utilisateur, fédéré ou non, peut créer une clé d'API afin de l'utiliser depuis l'interface CLI ou, dans le cadre de l'automatisation, pour se connecter sous votre identité d'utilisateur. Vous pouvez utiliser l'interface utilisateur ou l'interface de ligne de commande pour gérer vos clés d'API en les répertoriant, en créant des clés, en les mettant à jour, ou en les supprimant. Pour gérer les clés d'API {{site.data.keyword.Bluemix_notm}} associées à votre identité d'utilisateur, accédez à **Gérer** &gt; **Sécurité** &gt; **Clés d'API de la plateforme** afin d'afficher la liste de vos clés d'API, leurs descriptions et leurs dates. Depuis cette page, vous pouvez ensuite créer; éditer ou supprimer des clés d'API. Pour obtenir la liste complète des commandes CLI disponibles, voir [`bluemix iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam).
+Un utilisateur, fédéré ou non, peut créer une clé d'API afin de l'utiliser depuis l'interface CLI ou, dans le cadre de l'automatisation, pour se connecter sous votre identité d'utilisateur. Vous pouvez utiliser l'interface utilisateur ou l'interface de ligne de commande pour gérer vos clés d'API en les répertoriant, en créant des clés, en les mettant à jour, ou en les supprimant. Pour gérer les clés d'API {{site.data.keyword.Bluemix_notm}} associées à votre identité d'utilisateur, accédez à **Gérer** &gt; **Sécurité** &gt; **Clés d'API de la plateforme** afin d'afficher la liste de vos clés d'API, leurs descriptions et leurs dates. Depuis cette page, vous pouvez ensuite créer; éditer ou supprimer des clés d'API. Pour obtenir la liste complète des commandes CLI disponibles, voir [`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam).
 
 En tant qu'[utilisateur fédéré](/docs/account/adminpublic.html#federatedid), vous pouvez utiliser une clé d'API pour vous connecter par le biais de la variable d'environnement `BLUEMIX_API_KEY`. Pour plus d'informations sur l'utilisation d'une clé d'API pour la connexion, voir [Connexion à l'aide d'un ID fédéré](/docs/cli/login_federated_id.html#federated_id).
 
@@ -35,10 +35,10 @@ Afin de créer une clé d'API pour votre identité d'utilisateur dans l'interfac
 
 Pour créer une clé d'API dans l'interface de ligne de commande (CLI), procédez comme suit :
 
-1. Entrez `bluemix iam api-key-create NOM [-d DESCRIPTION] [-f, --file FICHIER]` dans votre invite de commande et spécifiez un nom, une description et un fichier pour l'enregistrement de votre clé. Par exemple :
+1. Entrez `ibmcloud iam api-key-create NOM [-d DESCRIPTION] [-f, --file FICHIER]` dans votre invite de commande et spécifiez un nom, une description et un fichier pour l'enregistrement de votre clé. Par exemple :
 
 ```
-bluemix iam api-key-create MyKey -d "this is my API key" -f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" -f key_file
 ``` 
 
 
@@ -55,10 +55,10 @@ Pour éditer une clé d'API :
 
 Pour modifier une clé d'API à l'aide de l'interface de ligne de commande :
 
-1. Entrez `bluemix iam api-key-update NOM [-n NOM] [-d DESCRIPTION]` dans votre invite de commande, en spécifiant l'ancien nom, le nouveau et la nouvelle description de la clé. Par exemple :
+1. Entrez `ibmcloud iam api-key-update NOM [-n NOM] [-d DESCRIPTION]` dans votre invite de commande, en spécifiant l'ancien nom, le nouveau et la nouvelle description de la clé. Par exemple :
 
 ```
-bluemix iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
+ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
 ```
 
 ## Suppression d'une clé d'API
@@ -72,4 +72,4 @@ Pour supprimer une clé d'API :
 3. Ensuite, confirmez la suppression en cliquant sur **Supprimer la clé**.
 
 Pour supprimer une clé d'API à l'aide de l'interface de ligne de commande :
-1. Entrez `bluemix iam api-key-delete NOM` dans votre invite de commande, en spécifiant le nom de la clé à supprimer.
+1. Entrez `ibmcloud iam api-key-delete NOM` dans votre invite de commande, en spécifiant le nom de la clé à supprimer.

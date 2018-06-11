@@ -26,7 +26,7 @@ Dans le cadre de la gestion d'utilisateurs sur votre compte, effectuez les actio
 2. Sélectionnez le nom d'utilisateur ou cliquez sur **Gérer un utilisateur** dans le menu **Actions**.
 3. Ensuite, selon l'action que vous devez exécuter, vous pouvez choisir de retirer l'utilisateur, d'affecter un accès ou d'éditer l'accès existant de l'utilisateur.
 
-**Remarque** : seuls les propriétaires de compte peuvent retirer des utilisateurs du compte. 
+**Remarque** : seuls les propriétaires de compte peuvent retirer des utilisateurs du compte.
 
 Pour plus d'informations sur les commandes CLI utilisées pour gérer les comptes, les organisations, et les espaces, voir [Commandes pour la gestion de comptes, d'organisations et de rôles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
 {: tip}

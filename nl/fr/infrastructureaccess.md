@@ -21,7 +21,7 @@ Lorsque vous invitez un utilisateur, vous pouvez attribuer les ensembles de droi
 | Ensemble de droits | Description des actions |
 |---------------------------|------------------------|
 |Affichage uniquement | Les utilisateurs dotés de ce droit ne peuvent afficher que les éléments dans le système. Par exemple, les utilisateurs peuvent afficher des tickets, des détails sur les serveurs matériel et les serveurs virtuels, des licences, des détails sur la bande passante et le récapitulatif d'un compte incluant des factures et des paiements. |
-|Utilisateur de base | Les utilisateurs dotés de ce droit peuvent afficher, rechercher, ajouter et éditer des tickets, gérer les unités pour lesquelles ils disposent d'un droit d'accès, ajouter des adresses IP, gérer des services de distribution de courrier électronique, ajouter, éditer et afficher des enregistrements DNS, ajouter de nouveaux utilisateurs possédant un droit d'accès à l'infrastructure et gérer des notifications.  |
+|Utilisateur de base | Les utilisateurs dotés de ce droit peuvent afficher, rechercher, ajouter et éditer des tickets, gérer les unités pour lesquelles ils disposent d'un droit d'accès, ajouter des adresses IP, gérer des services de distribution de courrier électronique, ajouter, éditer et afficher des enregistrements DNS, ajouter de nouveaux utilisateurs possédant un droit d'accès à l'infrastructure et gérer des notifications. |
 |Superutilisateur | Les utilisateurs dotés de ce droit peuvent réaliser toutes les actions disponibles dans le système. |
 {:caption="Tableau 1. Droits relatifs à l'infrastructure" caption-side="top"}
 

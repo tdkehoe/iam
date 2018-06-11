@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez affecter une règle de service unique lorsque vous invitez un nouvel
 3. Sélectionnez **Toutes les régions en cours** ou une région spécifique.
 4. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
 5. Sélectionnez un rôle afin de définir la portée de l'accès pour la règle.
-6. Vous pouvez éventuellement sélectionner **Ajouter un rôle** afin de spécifier un autre rôle pour la règle. 
+6. Vous pouvez éventuellement sélectionner **Ajouter un rôle** afin de spécifier un autre rôle pour la règle.
 
 Pour plus d'informations sur les rôles à utiliser lors de la définition de règles de service, voir [Règles et rôles IAM (Identity and Access Management)](/docs/iam/users_roles.html#iamusermanpol).
 
@@ -42,11 +42,11 @@ Lorsque vous invitez de nouveaux utilisateurs, vous pouvez choisir d'ajouter l'u
 5. Sélectionnez **Toutes les régions en cours** ou une région spécifique.
 6. Sélectionnez **Tous les espaces en cours** ou un espace spécifique.
 7. Sélectionnez un rôle d'espace pour définir son niveau d'accès aux espaces sélectionnés.
-8. Vous pouvez éventuellement sélectionner **Ajouter un rôle** afin de spécifier un autre rôle pour la règle. 
+8. Vous pouvez éventuellement sélectionner **Ajouter un rôle** afin de spécifier un autre rôle pour la règle.
 
 Pour plus d'informations sur ces rôles, voir [Rôles Cloud Foundry](/docs/iam/users_roles.html#cfroles).
 
-**Remarque **: vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande d'interface de ligne de commande [bluemix iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_account_user_invite), mais vous devez utiliser l'interface utilisateur pouraccorder d'autres droits d'accès. 
+**Remarque **: vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande d'interface de ligne de commande [ibmcloud iam account-user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_account_user_invite), mais vous devez utiliser l'interface utilisateur pour lui accorder d'autres droits d'accès ou autorisations.
 
 ## Accès à l'infrastructure
 

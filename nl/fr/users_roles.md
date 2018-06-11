@@ -63,7 +63,7 @@ A l'aide d'une combinaison de ces rôles dans une même règle d'accès, vous po
 Pour accorder à un autre utilisateur l'accès complet au compte à des fins de gestion des utilisateurs et de gestion de toutes les ressources du compte ainsi que la possibilité de créer des groupes de ressources, définissez une règle accordant à l'utilisateur l'accès à toutes les ressources du compte en sélectionnant **Tous les services avec l'offre Identity and Access activée** et le rôle **Administrateur** affecté. 
 {: tip}
 
-### Rôles Gestion de la plateforme
+### Rôles de gestion de plateforme
 
 Les rôles Gestion de la plateforme permettent aux utilisateurs de se voir affecter différents niveaux de droits pour effectuer des actions de plateforme dans le compte. Les tableaux suivants fournissent des exemples de certaines des actions de gestion de plateforme que les utilisateurs affectés à chaque rôle peuvent réaliser. Pour comprendre comment les rôles s'appliquent aux utilisateurs dans le contexte du service que vous utilisez, reportez-vous à la documentation afférente à chaque service.
 

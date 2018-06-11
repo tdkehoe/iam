@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -30,7 +30,7 @@ Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre 
 
 Si vous déterminez qu'un utilisateur n'a pas besoin d'un accès, vous pouvez annuler l'invitation de n'importe quel utilisateur dont l'état indique **En cours de traitement** ou **En attente** dans la colonne **Statut**. Si un utilisateur invité n'a pas reçu d'invitation, vous pouvez renvoyer l'invitation à n'importe quel utilisateur dont l'état indique **En attente**.
 
-Si vous voulez inviter des utilisateurs à l'aide de l'interface de ligne de commande, reportez-vous à la commande [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite).
+Si vous voulez inviter des utilisateurs depuis l'interface de ligne de commande, reportez-vous à la commande [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Octroi d'un accès utilisateur
@@ -87,7 +87,7 @@ Lorsque vous invitez de nouveaux utilisateurs, vous pouvez choisir d'ajouter l'u
 
 Pour plus d'informations sur les rôles, voir [Rôles Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
 
-Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite),
+Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite),
 mais vous devez utiliser l'interface utilisateur pour lui accorder d'autres accès ou autorisations.
 {: tip}
 
