@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-01-16"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -31,12 +31,12 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
 {: tip}
 
 ### Über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle
-1. Geben Sie die Option `--sso` mit dem Befehl `bluemix login` an.
+1. Geben Sie die Option `--sso` mit dem Befehl `ibmcloud login` an.
 2. Folgen Sie der URL in der Eingabeaufforderung, um den einmaligen Kenncode abzurufen.
 3. Verwenden den Kenncodewert in der Befehlszeilenschnittstelle per Cut-and-paste als Ihre Eingabe.
     
   ``` 
-  bluemix login --sso
+  ibmcloud login --sso
   API endpoint: https://api.ng.bluemix.net
       
   One Time Code (Get one at https://iam.ng.bluemix.net/oidc/passcode)> 
@@ -65,10 +65,10 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
 
 Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, der für die Authentifizierung bei der {{site.data.keyword.Bluemix_notm}}-Plattform verwendet wird, und nicht der Softlayer-API-Schlüssel oder der {{site.data.keyword.Bluemix_notm}}-Service-API-Schlüssel.
 
-1. Erstellen Sie einen API-Schlüssel mit dem Befehl [`bluemix iam api-key-create`](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_iam_api_key_create). Verwenden Sie die Option `-f`, um eine API-Schlüsseldatei zu erstellen, anstatt den Schlüssel im Befehlsfenster anzuzeigen:
+1. Erstellen Sie einen API-Schlüssel mit dem Befehl [`ibmcloud iam api-key-create`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create). Verwenden Sie die Option `-f`, um eine API-Schlüsseldatei zu erstellen, anstatt den Schlüssel im Befehlsfenster anzuzeigen:
 
    ```
-   bluemix iam api-key-create NAME [-d BESCHREIBUNG] [-f, --file DATEI]
+   ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
   
    ```
 
@@ -79,18 +79,18 @@ Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-
     * API-Schlüssel direkt aufrufen
   
       ```
-      bluemix login --apikey <api-schlüsselzeichenfolge>
+      ibmcloud login --apikey <api-schlüsselzeichenfolge>
     
       ```
     
     * API-Schlüssel mit der Schlüsseldatei aufrufen: 
   
       ```
-      bluemix login --apikey @schlüsseldateiname
+      ibmcloud login --apikey @schlüsseldateiname
     
       ```
     
-    * Legen Sie eine Umgebungsvariable fest. Darüber hinaus können Sie auf Ihrem System auch eine Umgebungsvariable definieren. Beispiel: BLUEMIX_API_KEY=api-schlüsselzeichenfolge, wobei `api-schlüsselzeichenfolge` der angepasste Wert des API-Schlüssels ist. Wenn die Umgebungsvariable definiert wurde, können Sie einfach `bluemix login` in der Befehlszeilenschnittstelle angeben. 
+    * Legen Sie eine Umgebungsvariable fest. Darüber hinaus können Sie auf Ihrem System auch eine Umgebungsvariable definieren. Beispiel: BLUEMIX_API_KEY=api-schlüsselzeichenfolge, wobei `api-schlüsselzeichenfolge` der angepasste Wert des API-Schlüssels ist. Nachdem die Umgebungsvariable definiert worden ist, können Sie einfach `ibmcloud login` in der Befehlszeilenschnittstelle angeben. 
   
   Um sich über die Cloud Foundry-Befehlszeilenschnittstelle anzumelden, geben Sie `apikey` als Benutzernamen und die API-Schlüsselzeichenfolge als Kennwort an:
 

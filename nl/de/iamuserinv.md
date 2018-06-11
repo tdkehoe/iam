@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-05-22"
 
 ---
 
@@ -23,14 +23,14 @@ Zum Einladen von Benutzern und Verwalten ausstehender Einladungen müssen Sie en
 
 Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen in Ihrem Konto zu verwalten:
 
-1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und dann auf **Benutzer**. Die Seite 'Benutzer' enthält eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen und dem Status des aktuell ausgewählten Kontos. 
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und dann auf **Benutzer**. Die Seite 'Benutzer' enthält eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen und dem Status des aktuell ausgewählten Kontos.
 2. Klicken Sie auf **Benutzer einladen**.
 3. Geben Sie die E-Mail-Adresse des Benutzers an. Wenn Sie mehrere Benutzer mit einer einzigen Einladung einladen, dann wird diesen Benutzern der gleiche Zugriff erteilt.
 4. Fügen Sie eine oder mehrere der von Ihnen verwalteten Zugriffsoptionen hinzu. Sie müssen mindestens eine Zugriffsoption zuweisen. Für alle weiteren Zugriffsoptionen, die Sie nicht hinzufügen und konfigurieren, wird der Standardwert *Kein Zugriff* zugewiesen. Abhängig von den Optionen, zu deren Verwaltung Sie berechtigt sind, zeigt das System eine der folgenden Zugriffsoptionen oder alle folgenden Zugriffsoptionen an: **Services**, **Cloud Foundry-Zugriff**, **{{site.data.keyword.Bluemix_notm}}-Infrastructure-Zugriff**. Weitere Informationen zu diesem Thema erhalten Sie in [Benutzerzugriff zuweisen](/docs/iam/iamuserinv.html#assignaccess).
 
 Wenn Sie entscheiden, dass ein Benutzer keinen Zugriff benötigt, können Sie eine Einladung für beliebige Benutzer abbrechen, die mit dem Status **Verarbeitung läuft** (Processing) oder **Anstehend** (Pending) in der Spalte **Status** angezeigt werden. Wenn ein eingeladener Benutzer keine Einladung empfangen hat, können Sie die Einladung an jeden Benutzer mit dem Status **Anstehend** erneut senden.
 
-Wenn Sie Benutzer über die CLI einladen möchten, verwenden Sie den Befehl [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite).
+Wenn Sie Benutzer über die CLI einladen möchten, verwenden Sie den Befehl [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Benutzerzugriff zuweisen
@@ -87,7 +87,7 @@ Wenn Sie neue Benutzer einladen, können Sie den Benutzer zu einer Organisation 
 
 Weiterführende Informationen zu den Rollen finden Sie in [Cloud Foundry-Rollen](/docs/iam/cfaccess.html#cfroles).
 
-Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [bluemix account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#bluemix_account_user_invite) hinzufügen, müssen jedoch die Benutzerschnittstelle auch zur Erteilung anderer Zugriffsrechte oder Berechtigungen verwenden.
+Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) hinzufügen, müssen jedoch die Benutzerschnittstelle auch zur Erteilung anderer Zugriffsrechte oder Berechtigungen verwenden.
 {: tip}
 
 ### Zugriff auf Infrastruktur für {{site.data.keyword.BluSoftlayer_notm}}
