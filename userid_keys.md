@@ -38,7 +38,7 @@ To create an API key by using the CLI, use the following command:
 1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. See the following example:
 
 ```
-ibmcloud iam api-key-create MyKey -d "this is my API key" -f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
 ``` 
 
 
