@@ -11,7 +11,6 @@ Gerenciando a identidade e o acesso
     O que é IAM?
         index.md
         iam_overview.md
-        cf_iam.md
 
     {: .topicgroup}
     Funções de usuário e permissões

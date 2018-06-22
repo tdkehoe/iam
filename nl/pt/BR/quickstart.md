@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-06-06"
 
 ---
 
@@ -18,12 +18,12 @@ lastupdated: "2018-04-02"
 
 Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access Management (IAM) funcionando rapidamente, convidando usuários para sua conta e designando acesso ao Cloud IAM para esses usuários.
 
-Este tutorial diz respeito aos recursos gerenciados pelo IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar acesso, é possível usar o [acesso do Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
+Este tutorial se aplica somente a [recursos](/docs/resources/acct_resources.html#resource) gerenciados pelo IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar acesso, é possível usar o [acesso do Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Etapa 1: convidar usuários e designar acesso inicial
 
-É possível convidar um ou múltiplos usuários e configurar uma política de acesso inicial para os usuários no convite. Se você convidar múltiplos usuários em um convite, o mesmo acesso será designado a cada um deles. Na seção Acesso da página Convidar usuários, aparecem somente as seções que você tem permissão para designar.
+É possível convidar um ou múltiplos usuários e configurar uma política de acesso inicial para os usuários no convite. Se você convidar múltiplos usuários em um convite, o mesmo acesso será designado a cada um deles. Na seção **Acesso** da página Convidar usuários, você vê somente as seções que você tem permissão para designar.
 
 Como proprietário da conta, é possível designar funções do Cloud IAM para usuários que você convida na seção Serviços. É possível fornecer acesso a todos os recursos em um grupo de recursos, todos os recursos para um serviço específico em um grupo de recursos, todos os serviços ativados pelo Identity and Access na conta ou um único recurso na política inicial que você designa no convite:
 

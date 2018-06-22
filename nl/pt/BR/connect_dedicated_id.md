@@ -19,7 +19,7 @@ lastupdated: "2018-05-22"
 # Conectando um ID dedicado ao seu IBMid público
 {: #connect_dedicated_id}
 
-Para efetuar login em uma nuvem dedicada na qual o serviço IAM público está disponível, a CLI do {{site.data.keyword.Bluemix_notm}} solicita que você efetue login com seu IBMid público em vez do ID dedicado.
+Para efetuar login em uma nuvem dedicada na qual o serviço IAM público está disponível, deve-se efetuar login na CLI do {{site.data.keyword.Bluemix_notm}} com seu IBMid público em vez do ID dedicado.
 
 
 ```
@@ -32,7 +32,7 @@ Para efetuar login em uma nuvem dedicada na qual o serviço IAM público está d
   E-mail>
 ```
 
-Se seu ID dedicado já foi conectado ao IBMid público, ele autenticará e efetuará login:
+Se seu ID dedicado já está conectado ao IBMid público, ele se autentica e efetua login:
 
 ```
   Authenticating...
@@ -41,16 +41,16 @@ Se seu ID dedicado já foi conectado ao IBMid público, ele autenticará e efetu
   Conectado ao usuário dedicado my_dedicated_id
 ```
 
-No entanto, se seu ID dedicado não foi conectado ao IBMid público, você será solicitado a conectar-se manualmente com o IBMid público:
+No entanto, se seu ID dedicado ainda não estiver conectado ao IBMid público, será solicitado que você se conecte manualmente ao IBMid público:
 
 ```
-  Você está efetuando login com um IBMid que não está associado a nenhum usuário dedicado.
-  Para configurar a conexão, insira as credenciais do usuário dedicado.
+  You are logging in with an IBMid that is not associated with any dedicated user.
+  To set up the connection, input the credentials of the dedicated user.
 
-  Escolha um tipo de credencial:
-  1. Nome do usuário e senha
-  2. Um código de tempo (obtenha um em https://login.{dedicated_env}.bluemix.net.com/passcode)
-  Insira um número>
+  Choose a credential type:
+  1. User name and password
+  2. One Time Code (Get one at https://login.{dedicated_env}.bluemix.net.com/passcode)
+  Enter a number>
 ```
 
 Selecione uma opção para inserir as credenciais para o ID dedicado. Após a autenticação bem-sucedida, seu ID dedicado será conectado a seu IBMid público.
