@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-06-01"
 
 ---
 
@@ -45,6 +45,58 @@ API キーの更新は、UI で API キーを識別するために使用され�
 2. まだサービス ID を作成していない場合は、サービス ID を作成します。
 3. **「アクション」**メニューから、**「サービス ID の管理」**オプションに進みます。
 4. API キー・セクションの**「アクション」**メニューから、**「名前および説明の編集」**オプションに進みます。
+
+## サービス ID の API キーのロック
+{: #lockkey}
+
+サービス ID のアイデンティティーを表す API キーの場合、API キーをロックすることにより削除されないようにすることができます。ロックされた API キーは、UI 上に ![ロック済みアイコン](images/locked.svg "ロック済み") アイコンで示されます。
+
+1. メニュー・バーで、**「管理」** &gt; **「セキュリティー」** &gt; **「ID およびアクセス」**をクリックし、**「サービス ID」**を選択します。
+2. API キーの選択対象サービス ID の行を特定し、サービス ID の名前を選択します。
+3. **「API キー」**を選択します。
+4. ロックする API キーの行の上にカーソルを移動し、**「アクション」**メニューをクリックしてオプション・リストを開きます。
+5. **「API キーのロック (Lock API key)」**をクリックします。
+
+アクセス・ポリシーを更新、削除、または追加したり、API キーを削除したりするために、API キーはいつでもアンロックできます。
+{: tip}
+
+### CLI を使用したサービス ID の API キーのロックまたはアンロック
+
+サービス ID の API キーをロックするには、以下のコマンドを使用します。
+
+```
+ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
+
+<strong>前提条件</strong>: エンドポイント、ログイン、ターゲット
+
+<strong>コマンド・オプション</strong>:
+<dl>
+  <dt>APIKEY_NAME (必須)</dt>
+  <dd>API キーの名前。APIKEY_UUID と同時に指定することはできません。</dd>
+  <dt>APIKEY_UUID (必須)</dt>
+  <dd>API キーの UUID。APIKEY_NAME と同時に指定することはできません。</dd>
+  <dt>SERVICE_ID_NAME (必須)</dt>
+  <dd>サービス ID の名前。SERVICE_ID_UUID と同時に指定することはできません。</dd>
+  <dt>SERVICE_ID_UUID (必須)</dt>
+  <dd>サービス ID の UUID。SERVICE_ID_NAME と同時に指定することはできません。</dd>
+  <dt>-f, --force</dt>
+  <dd>確認を求めずにロックします</dd>
+</dl>
+
+<strong>例</strong>:
+
+サービス ID `sample-service` のサービス API キー `sample-key` をロックします
+
+```
+ibmcloud iam service-api-key-lock sample-key sample-service
+```
+
+サービス ID の API キーをアンロックするには、以下のコマンドを使用します。
+
+```
+ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
 
 
 ## サービス ID 用の API キーの削除

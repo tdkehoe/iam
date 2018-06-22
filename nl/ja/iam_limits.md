@@ -16,7 +16,7 @@ lastupdated: "2018-05-04"
 # {{site.data.keyword.Bluemix_notm}} IAM の限度
 {: #iam_limits}
 
-以下の表に、{{site.data.keyword.Bluemix_notm}} ID およびアクセス管理 (IAM) リソースの最大限度を示します。 これらの限度は、{{site.data.keyword.Bluemix_notm}} IAM リソースを作成できるすべてのユーザーに適用されます。限度を超えると例外を受け取り、その限度を超えて新規リソースを作成することは許可されません。
+以下の表に、{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) リソースの最大限度をリストします。これらの限度は、{{site.data.keyword.Bluemix_notm}} IAM リソースを作成できるすべてのユーザーに適用されます。限度を超えると例外を受け取り、その限度を超えて新規リソースを作成することは許可されません。
 
 | リソース | 最大 |
 |----------|---------|
