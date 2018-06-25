@@ -11,7 +11,6 @@ Gestion de l'identité et de l'accès
     Qu'est-ce qu'IAM ?
         index.md
         iam_overview.md
-        cf_iam.md
 
     {: .topicgroup}
     Droits et rôles utilisateur

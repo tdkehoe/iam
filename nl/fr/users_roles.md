@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-04"
+lastupdated: "2018-06-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-04"
 # Accès IAM
 {: #userroles}
 
-Tous les services organisés en groupe de ressources dans votre compte sont gérés avec {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Le rôle d'administrateur des accès au compte pour le service Cloud IAM est automatiquement affecté aux propriétaires de compte. En tant qu'administrateur de compte, vous pouvez affecter et gérer l'accès des utilisateurs, créer des groupes de ressources, mettre à disposition des instances de service et déléguer toutes les autres tâches en affectant les rôles Cloud IAM. Vous accordez l'accès à des ID utilisateur et de service en créant des règles qui définissent une cible à laquelle l'ID utilisateur ou de service peut accéder et un rôle qui détermine le type d'accès autorisé.
+Tous les services organisés en groupe de ressources dans votre compte sont gérés avec {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Le rôle d'administrateur des accès au compte pour le service Cloud IAM est automatiquement affecté aux propriétaires de compte. En tant qu'administrateur de compte, vous pouvez affecter et gérer l'accès pour les utilisateurs, créer des groupes de ressources et mettre à disposition des instances de service en affectant les rôles Cloud IAM. Vous accordez l'accès à des ID utilisateur et de service en créant des règles qui définissent une cible à laquelle l'ID utilisateur ou de service peut accéder et un rôle qui détermine le type d'accès autorisé.
 
 
 ## Quelles sont les règles Cloud IAM et qui peut les affecter ?

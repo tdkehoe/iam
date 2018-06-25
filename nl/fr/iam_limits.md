@@ -16,7 +16,7 @@ lastupdated: "2018-05-04"
 # Limites IAM pour {{site.data.keyword.Bluemix_notm}}
 {: #iam_limits}
 
-Le tableau suivant répertorie les limites maximales pour les ressources IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}}. Ces limites s'appliquent à tous les utilisateurs qui peuvent créer des ressources IAM {{site.data.keyword.Bluemix_notm}}. En cas de dépassement d'une limite, une exception est envoyée à l'utilisateur car celui-ci n'est pas autorisé à créer des ressources au-delà de cette limite.
+Le tableau suivant répertorie les limites maximales pour les ressources {{site.data.keyword.Bluemix_notm}} IAM (Identity and Access Management). Ces limites s'appliquent à tous les utilisateurs qui peuvent créer des ressources IAM {{site.data.keyword.Bluemix_notm}}. En cas de dépassement d'une limite, une exception est envoyée à l'utilisateur car celui-ci n'est pas autorisé à créer des ressources au-delà de cette limite.
 
 | Ressource | Max |
 |----------|---------|

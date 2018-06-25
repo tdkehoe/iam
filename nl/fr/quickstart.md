@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-06-06"
 
 ---
 
@@ -18,12 +18,12 @@ lastupdated: "2018-04-02"
 
 Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapidement avec IBM Cloud Identity and Access Management (IAM) en invitant les utilisateurs de votre compte et en affectant des droits d'accès Cloud IAM à ces utilisateurs.
 
-Ce tutoriel concerne les ressources gérées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
+Ce tutoriel concerne les [ressources](/docs/resources/acct_resources.html#resource) gérées par IAM uniquement. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Etape 1 : Inviter des utilisateurs et leur affecter un accès initial
 
-Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour ces utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section Accès de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
+Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour ces utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section **Accès** de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
 
 En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM aux utilisateurs que vous invitez dans la section Services. Dans la règle initiale que vous affectez dans l'invitation, vous pouvez accorder l'accès à toutes les ressources d'un groupe de ressources, toutes les ressources d'un service spécifique d'un groupe de ressources, toutes les ressources des services avec l'offre Identity and Access activée du compte ou à une seule ressource :
 

@@ -19,7 +19,7 @@ lastupdated: "2018-05-22"
 # Connexion d'un ID dédié à votre IBMid public
 {: #connect_dedicated_id}
 
-Pour une connexion à un cloud dédié sur lequel un service IAM public est disponible, l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} vous demande de vous connecter avec votre IBMid public plutôt que via l'ID dédié.
+Pour vous connecter à un cloud dédié dans lequel le service IAM public est disponible, vous devez vous connecter à l'interface CLI {{site.data.keyword.Bluemix_notm}} en utilisant votre IBMid public et non l'ID dédié.
 
 
 ```
@@ -32,7 +32,7 @@ Pour une connexion à un cloud dédié sur lequel un service IAM public est disp
   E-mail>
 ```
 
-Si votre ID dédié a déjà été connecté à l'IBMid public, il s'authentifie et se connecte :
+Si votre ID dédié est déjà connecté à l'IBMid public, il s'authentifie et se connecte :
 
 ```
   Authentification en cours...
@@ -41,7 +41,7 @@ Si votre ID dédié a déjà été connecté à l'IBMid public, il s'authentifie
   Connecté à l'utilisateur dédié my_dedicated_id
 ```
 
-Toutefois, si votre ID dédié n'a pas été connecté à l'IBMid public, vous êtes invité à vous connecter manuellement à l'IBMid public :
+Toutefois, si votre ID dédié n'est pas déjà connecté à l'IBMid public, vous êtes invité à vous y connecter manuellement :
 
 ```
   Vous vous connectez avec un IBMid qui n'est associé à aucun utilisateur dédié.
