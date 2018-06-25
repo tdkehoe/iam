@@ -15,7 +15,7 @@ lastupdated: "2018-05-02"
 
 # Gestione dell'accesso all'infrastruttura
 
-Nell'invito dell'account iniziale, potresti impostare alcune autorizzazioni iniziali per i tuoi utenti. Puoi aggiornare le autorizzazioni per l'infrastruttura o aggiungere l'accesso al dispositivo dall'opzione Infrastruttura nella console in qualsiasi momento. Per accedere alle autorizzazioni per l'infrastruttura, vai all'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**. Quindi, vai a **Account** &gt; **Utenti** per iniziare.
+Nell'invito dell'account iniziale, potresti impostare alcune autorizzazioni iniziali per i tuoi utenti. Puoi aggiornare le autorizzazioni per l'infrastruttura o aggiungere l'accesso al dispositivo dall'opzione Infrastruttura nella console in qualsiasi momento. Per accedere alle autorizzazioni per l'infrastruttura, vai all'icona **Menu** ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**. Quindi, vai a **Account** &gt; **Utenti** per iniziare.
 
 ## Aggiornamento delle autorizzazioni
 
@@ -28,7 +28,7 @@ Nell'invito dell'account iniziale, potresti impostare alcune autorizzazioni iniz
 
 ## Aggiornamento dell'accesso VPN
 
-1. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**.
+1. Fai clic sull'icona **Menu** ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**.
 2. Vai a **Account** &gt; **Utenti**.
 3. Dal menu **Azioni**, seleziona **Modifica accesso VPN**.
 4. Seleziona un **Tipo di VPN**.
@@ -37,7 +37,7 @@ Nell'invito dell'account iniziale, potresti impostare alcune autorizzazioni iniz
 
 ## Aggiunta dell'accesso al dispositivo
 
-1. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**.
+1. Fai clic sull'icona **Menu** ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**.
 2. Vai a **Account** &gt; **Utenti**.
 3. Fai clic sul link nella colonna **Accesso al dispositivo** per l'utente per il quale vuoi aggiornare l'accesso. L'opzione del link è **Gestisci** o il numero di dispositivi a cui l'utente ha accesso. In alternativa, puoi fare clic su **Modifica accesso al portale** dal menu Azioni per passare alla pagina delle autorizzazioni. Da lì, seleziona la scheda **Accesso al dispositivo**.
 4. Seleziona i dispositivi per i quali vuoi concedere l'accesso utente.

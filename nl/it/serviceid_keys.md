@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-06-01"
 
 ---
 
@@ -45,6 +45,58 @@ Puoi aggiornare una chiave API modificando il nome o la descrizione utilizzati p
 2. Se non hai già un ID servizio creato, crea l'ID servizio.
 3. Dal menu **Azioni**, vai all'opzione **Gestisci ID servizio**.
 4. Dal menu **Azioni** nella sezione delle chiavi API, vai all'opzione **Modifica nome e descrizione**.
+
+## Blocco di una chiave API dell'ID servizio
+{: #lockkey}
+
+Per le chiavi API che rappresentano l'identità dell'ID servizio, puoi impedire l'eliminazione della chiave API bloccandola. Un chiave API bloccata viene indicata dall'icona ![icona Bloccato](images/locked.svg "Bloccato") nella IU.
+
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **ID servizio**.
+2. Identifica la riga dell'ID servizio di cui vuoi selezionare una chiave API e seleziona il nome dell'ID servizio. 
+3. Seleziona **Chiavi API**.
+4. Passa con il mouse sulla riga della chiave API che vuoi bloccare e fai clic sul menu **Azioni** per aprire un elenco di opzioni.
+5. Fai clic su **Blocca chiave API**.
+
+Puoi sbloccare la tua chiave API in qualsiasi momento per aggiornare, eliminare o aggiungere una politica di accesso o per rimuovere la chiave API.
+{: tip}
+
+### Blocco e sblocco di una chiave API dell'ID servizio con la CLI
+
+Per bloccare una chiave API dell'ID servizio, utilizza il seguente comando: 
+
+```
+ibmcloud iam service-api-key-lock (NOME_CHIAVE_API|UUID_CHIAVE_API) (NOME_ID_SERVIZIO|UUID_ID_SERVIZIO) [-f, --force]
+```
+
+<strong>Prerequisiti</strong>: Endpoint, Accesso, Destinazione
+
+<strong>Opzioni del comando</strong>:
+<dl>
+  <dt>NOME_CHIAVE_API (obbligatorio)</dt>
+  <dd>Nome della chiave API, esclusivo con UUID_CHIAVE_API</dd>
+  <dt>UUID_CHIAVE_API (obbligatorio)</dt>
+  <dd>UUID della chiave API, esclusivo con NOME_CHIAVE_API</dd>
+  <dt>NOME_ID_SERVIZIO (obbligatorio)</dt>
+  <dd>Nome dell'ID servizio, esclusivo con UUID_ID_SERVIZIO</dd>
+  <dt>UUID_ID_SERVIZIO (obbligatorio)</dt>
+  <dd>UUID dell'ID servizio, esclusivo con NOME_ID_SERVIZIO</dd>
+  <dt>-f, --force</dt>
+  <dd>Blocca senza conferma</dd>
+</dl>
+
+<strong>Esempi</strong>:
+
+Blocca la chiave API del servizio `sample-key` dell'ID servizio `sample-service`:
+
+```
+ibmcloud iam service-api-key-lock sample-key sample-service
+```
+
+Per sbloccare una chiave API dell'ID servizio, utilizza il seguente comando: 
+
+```
+ibmcloud iam service-api-key-unlock (NOME_CHIAVE_API|UUID_CHIAVE_API) (NOME_ID_SERVIZIO|UUID_ID_SERVIZIO) [-f, --force]
+```
 
 
 ## Eliminazione di una chiave API per un ID servizio

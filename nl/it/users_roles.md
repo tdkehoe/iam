@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-04"
+lastupdated: "2018-06-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-04"
 # Accesso IAM
 {: #userroles}
 
-Tutti i servizi che sono organizzati in un gruppo di risorse nel tuo account vengono gestiti utilizzando {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Ai proprietari dell'account viene assegnato automaticamente il ruolo di amministratore di account per Cloud IAM. Come amministratore dell'account, puoi assegnare e gestire l'accesso per gli utenti, creare gruppi di risorse, eseguire il provisioning delle istanze del servizio e tutte le altre attività che possono essere delegate assegnando i ruoli di Cloud IAM. Fornisci l'accesso per gli utenti e gli ID servizio creando delle politiche che impostano una destinazione per l'accesso dell'utente o dell'ID servizio e un ruolo che definisce quale tipo di accesso è consentito.
+Tutti i servizi che sono organizzati in un gruppo di risorse nel tuo account vengono gestiti utilizzando {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Ai proprietari dell'account viene assegnato automaticamente il ruolo di amministratore di account per Cloud IAM. Come amministratore dell'account, puoi assegnare e gestire l'accesso per gli utenti, creare gruppi di risorse ed eseguire il provisioning delle istanze del servizio assegnando i ruoli di Cloud IAM. Fornisci l'accesso per gli utenti e gli ID servizio creando delle politiche che impostano una destinazione per l'accesso dell'utente o dell'ID servizio e un ruolo che definisce quale tipo di accesso è consentito.
 
 
 ## Cosa sono le politiche Cloud IAM e chi può assegnarle?
