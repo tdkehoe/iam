@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-04"
+lastupdated: "2018-06-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-04"
 # IAM 访问权
 {: #userroles}
 
-在帐户中组织成资源组的所有服务均使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 进行管理。将自动为帐户所有者分配 Cloud IAM 的帐户管理员角色。作为帐户管理员，您可以为用户分配和管理访问权，创建资源组，供应服务实例，以及执行可以通过分配 Cloud IAM 角色来委派的其他所有任务。可以通过创建策略来为用户或服务标识设置要访问的目标以及设置用于定义允许的访问权类型的角色，从而为用户和服务标识提供访问权。
+在帐户中组织成资源组的所有服务均使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 进行管理。将自动为帐户所有者分配 Cloud IAM 的帐户管理员角色。作为帐户管理员，您可以通过分配 Cloud IAM 角色，为用户分配和管理访问权，创建资源组和供应服务实例。可以通过创建策略来为用户或服务标识设置要访问的目标以及设置用于定义允许的访问权类型的角色，从而为用户和服务标识提供访问权。
 
 
 ## 什么是 Cloud IAM 策略？谁可以分配这些策略？

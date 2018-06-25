@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-06-01"
 
 ---
 
@@ -45,6 +45,58 @@ lastupdated: "2018-04-06"
 2. 如果尚未创建服务标识，请创建服务标识。
 3. 在**操作**菜单中，转至**管理服务标识**选项。
 4. 从“API 密钥”部分的**操作**菜单中，转至**编辑名称和描述**选项。
+
+## 锁定服务标识的 API 密钥
+{: #lockkey}
+
+对于表示服务标识身份的 API 密钥，可以通过锁定 API 密钥来防止将其删除。在 UI 中，锁定的 API 密钥由 ![“已锁定”图标](images/locked.svg "已锁定") 图标指示。
+
+1. 在菜单栏中，单击**管理** &gt; **安全性** &gt; **身份和访问权**，然后选择**服务标识**。
+2. 确定要为其选择 API 密钥的服务标识所在的行，然后选择服务标识的名称。
+3. 选择 **API 密钥**。
+4. 将鼠标悬停在要锁定的 API 密钥所在的行上，然后单击**操作**菜单以打开选项列表。
+5. 单击**锁定 API 密钥**。
+
+您可以随时解锁 API 密钥以更新、删除或添加访问策略，也可以除去 API 密钥。
+{: tip}
+
+### 使用 CLI 锁定或解锁服务标识的 API 密钥
+
+要锁定服务标识的 API 密钥，请使用以下命令：
+
+```
+ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
+
+<strong>先决条件</strong>：端点、登录和目标
+
+<strong>命令选项</strong>：
+<dl>
+  <dt>APIKEY_NAME（必填）</dt>
+  <dd>API 密钥的名称，与 APIKEY_UUID 互斥 </dd>
+  <dt>APIKEY_UUID（必填）</dt>
+  <dd>API 密钥的 UUID，与 APIKEY_NAME 互斥 </dd>
+  <dt>SERVICE_ID_NAME（必需）</dt>
+  <dd>服务标识的名称，与 SERVICE_ID_UUID 互斥 </dd>
+  <dt>SERVICE_ID_UUID（必填）</dt>
+  <dd>服务标识的 UUID，与 SERVICE_ID_NAME 互斥 </dd>
+  <dt>-f, --force</dt>
+  <dd>锁定而不确认</dd>
+</dl>
+
+<strong>示例</strong>：
+
+锁定服务标识 `sample-service` 的服务 API 密钥 `sample-key`：
+
+```
+ibmcloud iam service-api-key-lock sample-key sample-service
+```
+
+要解锁服务标识的 API 密钥，请使用以下命令：
+
+```
+ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
 
 
 ## 删除服务标识的 API 密钥
