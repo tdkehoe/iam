@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-06-01"
 
 ---
 
@@ -45,6 +45,58 @@ Sie können einen API-Schlüssel aktualisieren, indem Sie den Namen oder die Bes
 2. Wenn Sie noch keine Service-ID erstellt haben, dann erstellen Sie nun die Service-ID.
 3. Rufen Sie im Menü **Aktionen** die Option **Service-ID verwalten** auf.
 4. Rufen Sie im Menü **Aktionen** im Abschnitt für die API-Schlüssel die Option **Name & Beschreibung bearbeiten** auf.
+
+## API-Schlüssel einer Service-ID sperren
+{: #lockkey}
+
+Sie können das Löschen von API-Schlüsseln, die die Identität der Service-ID darstellen, verhindern, indem Sie sie sperren. Ein gesperrter API-Schlüssel ist in der Benutzerschnittstelle durch das Symbol ![Sperrsymbol](images/locked.svg "Gesperrt") gekennzeichnet.
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Service-IDs** aus.
+2. Bestimmen Sie die Zeile der Service-ID, für die Sie einen API-Schlüssel auswählen möchten, und wählen Sie den Namen der Service-ID aus.
+3. Wählen Sie **API-Schlüssel** aus.
+4. Bewegen Sie den Mauszeiger über die Zeile des API-Schlüssels, der gesperrt werden soll, und klicken Sie auf das Menü **Aktionen**, um eine Liste mit Optionen zu öffnen.
+5. Klicken Sie auf **API-Schlüssel sperren**.
+
+Sie können den API-Schlüssel zu jedem beliebigen Zeitpunkt entsperren, um ihn zu aktualisieren, zu löschen oder zu entfernen oder um eine Zugriffsrichtlinie hinzuzufügen.
+{: tip}
+
+### API-Schlüssel einer Service-ID über die Befehlszeilenschnittstelle sperren bzw. entsperren
+
+Verwenden Sie den folgenden Befehl, um den API-Schlüssel einer Service-ID zu sperren:
+
+```
+ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
+
+<strong>Voraussetzungen</strong>: Endpunkt, Anmeldung, Ziel
+
+<strong>Befehlsoptionen</strong>:
+<dl>
+  <dt>APIKEY_NAME (erforderlich)</dt>
+  <dd>Der Name des API-Schlüssels, gegenseitig ausschließend mit APIKEY_UUID</dd>
+  <dt>APIKEY_UUID (erforderlich)</dt>
+  <dd>Die UUID des API-Schlüssels, gegenseitig ausschließend mit APIKEY_NAME</dd>
+  <dt>SERVICE_ID_NAME (erforderlich)</dt>
+  <dd>Der Name der Service-ID, gegenseitig ausschließend mit SERVICE_ID_UUID</dd>
+  <dt>SERVICE_ID_UUID (erforderlich)</dt>
+  <dd>Die UUID der Service-ID, gegenseitig ausschließend mit SERVICE_ID_NAME</dd>
+  <dt>-f, --force</dt>
+  <dd>Sperren ohne Bestätigung</dd>
+</dl>
+
+<strong>Beispiele</strong>:
+
+Service-API-Schlüssel `sample-key` der Service-ID `sample-service` sperren:
+
+```
+ibmcloud iam service-api-key-lock sample-key sample-service
+```
+
+Verwenden Sie den folgenden Befehl, um den API-Schlüssel einer Service-ID zu entsperren:
+
+```
+ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
 
 
 ## API-Schlüssel für Service-ID löschen

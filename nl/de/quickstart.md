@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-06-06"
 
 ---
 
@@ -18,12 +18,12 @@ lastupdated: "2018-04-02"
 
 Dieses Lernprogramm soll Sie dabei unterstützen, sich schnell mit IBM Cloud Identity and Access Management (IAM) vertraut zu machen. Dazu werden Benutzer zu Ihrem Konto eingeladen und Sie werden diesen Benutzern Cloud IAM-Zugriffsberechtigungen zuweisen.
 
-Dieses Lernprogramm wurde für Ressourcen konzipiert, die mit IAM verwaltet werden. Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie den [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess) verwenden.
+Dieses Lernprogramm bezieht sich ausschließlich auf [Ressourcen](/docs/resources/acct_resources.html#resource), die mit IAM verwaltet werden. Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie den [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess) verwenden.
 
 
 ## Schritt 1: Benutzer einladen und Anfangszugriffsberechtigungen zuweisen
 
-Sie können einzelne oder auch mehrere Benutzer einladen und die Richtlinie für die Anfangszugriffsberechtigungen der eingeladenen Benutzer festlegen. Wenn Sie in einer einzigen Einladung mehrere Benutzer einladen, dann werden diesen Benutzern die gleichen Zugriffsberechtigungen zugewiesen. Im Abschnitt 'Zugriff' der Seite 'Benutzer einladen' werden nur die Abschnitte angezeigt, zu deren Zuweisung sie berechtigt sind.
+Sie können einzelne oder auch mehrere Benutzer einladen und die Richtlinie für die Anfangszugriffsberechtigungen der eingeladenen Benutzer festlegen. Wenn Sie in einer einzigen Einladung mehrere Benutzer einladen, dann werden diesen Benutzern die gleichen Zugriffsberechtigungen zugewiesen. Im Abschnitt **Zugriff** der Seite 'Benutzer einladen' werden nur die Abschnitte angezeigt, zu deren Zuweisung sie berechtigt sind.
 
 Als Kontoeigner können Sie den von Ihnen eingeladenen Benutzern im Abschnitt 'Services' Cloud IAM-Rollen zuweisen. Sie können dabei den Zugriff auf alle Ressourcen einer Ressourcengruppe, alle Ressourcen für einen bestimmten Service in einer Ressourcengruppe, alle Services mit aktiviertem Identity and Access Management im Konto oder für eine einzelne Ressource in der Anfangsrichtlinie bereitstellen, die Sie in der Einladung zuweisen wollen:
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-04"
+lastupdated: "2018-06-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-04"
 # IAM-Zugriff
 {: #userroles}
 
-Alle Services, die in einer Ressourcengruppe in Ihrem Konto zusammengefasst sind, werden mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet. Kontoeignern wird automatisch die Kontoadministratorrolle für Cloud IAM zugewiesen. Als Kontoadministrator können Sie Benutzern Zugriffsberechtigungen zuweisen und diese Zugriffsberechtigungen verwalten. Außerdem können Sie Ressourcengruppen erstellen, Serviceinstanzen bereitstellen und alle anderen Tasks ausführen, die delegiert werden können, indem die entsprechenden Cloud IAM-Rollen zugewiesen werden. Sie können Zugriffsberechtigungen für Benutzer und Service-IDs bereitstellen, indem Sie Richtlinien erstellen, die ein Ziel für den Benutzer oder die Service-ID festlegen, auf das zugegriffen werden soll, und außerdem eine Rolle, in der definiert ist, welcher Zugriffstyp zulässig ist.
+Alle Services, die in einer Ressourcengruppe in Ihrem Konto zusammengefasst sind, werden mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet. Kontoeignern wird automatisch die Kontoadministratorrolle für Cloud IAM zugewiesen. Als Kontoadministrator können Sie Benutzern Zugriffsberechtigungen zuweisen und diese Zugriffsberechtigungen verwalten, Ressourcengruppen erstellen und Serviceinstanzen bereitstellen, indem Sie die entsprechenden Cloud IAM-Rollen zweisen. Sie können Zugriffsberechtigungen für Benutzer und Service-IDs bereitstellen, indem Sie Richtlinien erstellen, die ein Ziel für den Benutzer oder die Service-ID festlegen, auf das zugegriffen werden soll, und außerdem eine Rolle, in der definiert ist, welcher Zugriffstyp zulässig ist.
 
 
 ## Was sind Cloud IAM-Richtlinien und wer kann sie zuweisen?

@@ -19,7 +19,7 @@ lastupdated: "2018-05-22"
 # Dedizierte ID mit öffentlicher IBMid verbinden
 {: #connect_dedicated_id}
 
-Bei der Anmeldung bei einer dedizierten Cloud, bei der der öffentliche IAM-Service verfügbar ist, werden Sie von der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle dazu aufgefordert, sich nicht mit der dedizierten ID, sondern mit Ihrer öffentlichen IBMid anzumelden.
+Bei der Anmeldung bei einer dedizierten Cloud, bei der der öffentliche IAM-Service verfügbar ist, müssen Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle mit Ihrer öffentlichen IBMid anmelden, nicht mit der dedizierten ID.
 
 
 ```

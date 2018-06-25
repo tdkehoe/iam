@@ -22,11 +22,11 @@ Auf {{site.data.keyword.Bluemix}}-APIs kann nur von Benutzern zugegriffen werden
 
 ### POST /identity/token
 
-### Header:
+### Header
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
-### Mit Parametern:
+### Parameter
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
   - apikey=*[api-schlüssel]*
 
@@ -42,7 +42,7 @@ curl -k -X POST \
 
 Das folgende Beispiel zeigt, welche Antwort erwartet wird:
 
-### Antwort:
+### Antwort
 
 ```
 {

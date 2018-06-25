@@ -11,7 +11,6 @@ Identität und Zugriff verwalten
     Was ist IAM?
         index.md
         iam_overview.md
-        cf_iam.md
 
     {: .topicgroup}
     Benutzerrollen und Berechtigungen

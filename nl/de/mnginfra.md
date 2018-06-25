@@ -13,9 +13,9 @@ lastupdated: "2018-05-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Infrastructure-Zugriff verwalten
+# Infrastrukturzugriff
 
-In der ursprünglichen Kontoeinladung legen Sie möglicherweise bestimmte Anfangsberechtigungen für Ihre Benutzer fest. Sie können die Berechtigungen für die Infrastruktur aktualisieren oder Gerätezugriff über die Infrastrukturoption an der Konsole jederzeit hinzufügen. Um auf die Infrastructure-Berechtigungen zuzugreifen, rufen Sie das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) auf und wählen Sie dann **Infrastruktur** aus. Rufen Sie dann die Optionen **Konto** &gt; **Benutzer** auf, um mit der Arbeit zu beginnen.
+In der ursprünglichen Kontoeinladung legen Sie möglicherweise bestimmte Anfangsberechtigungen für Ihre Benutzer fest. Sie können die Berechtigungen für die Infrastruktur aktualisieren oder Gerätezugriff über die Infrastrukturoption an der Konsole jederzeit hinzufügen. Um auf die Infrastrukturberechtigungen zuzugreifen, rufen Sie das Symbol **Menü** ![Menüsymbol](../icons/icon_hamburger.svg) auf und wählen Sie dann **Infrastruktur** aus. Rufen Sie dann die Optionen **Konto** &gt; **Benutzer** auf, um mit der Arbeit zu beginnen.
 
 ## Berechtigungen aktualisieren
 
@@ -28,7 +28,7 @@ In der ursprünglichen Kontoeinladung legen Sie möglicherweise bestimmte Anfang
 
 ## VPN-Zugriff aktualisieren
 
-1. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
+1. Klicken Sie auf das Symbol **Menü** ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
 2. Rufen Sie **Konto** &gt; **Benutzer** auf.
 3. Wählen Sie im Menü **Aktionen** die Option **VPN-Zugriff bearbeiten** aus.
 4. Wählen Sie einen **VPN-Typ** aus.
@@ -37,7 +37,7 @@ In der ursprünglichen Kontoeinladung legen Sie möglicherweise bestimmte Anfang
 
 ## Gerätezugriff hinzufügen
 
-1. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
+1. Klicken Sie auf das Symbol **Menü** ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
 2. Rufen Sie **Konto** &gt; **Benutzer** auf.
 3. Klicken Sie für den Benutzer, dessen Zugriffsberechtigungen aktualisiert werden sollen, auf den Link in der Spalte **Gerätezugriff**. Der Link lautet entweder **Verwalten** oder er ist mit der Anzahl der Geräte gekennzeichnet, auf die der Benutzer Zugriff hat. Alternativ hierzu können Sie auch im Aktionsmenü auf die Option zum **Bearbeiten des Portalzugriffs** klicken. Daraufhin wird die Seite mit den Berechtigungen aufgerufen. Wählen Sie auf dieser Seite die Registerkarte **Gerätezugriff** aus.
 4. Wählen Sie die Geräte aus, auf die der Benutzer Zugriff haben soll.
