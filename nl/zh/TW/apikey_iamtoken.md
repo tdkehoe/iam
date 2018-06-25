@@ -13,7 +13,7 @@ lastupdated: "2018-05-09"
 {:screen: .screen}
 {:tip: .tip}
 
-# 如何使用 API 金鑰取得 {{site.data.keyword.Bluemix_notm}} IAM 記號
+# 使用 API 金鑰取得 {{site.data.keyword.Bluemix_notm}} IAM 記號
 {: #iamtoken_from_apikey}
 
 {{site.data.keyword.Bluemix}} API 只能由被指派的 IAM 角色所授權的使用者存取。因此，呼叫 API 的使用者必須傳遞認證，API 才能進行鑑別。您可以依照這裡的說明，利用個人或服務 ID 的 API 金鑰來產生 IAM 記號。如果您要開發需要使用其他 {{site.data.keyword.Bluemix_notm}} 服務的應用程式，也會使用此處理程序。您必須使用服務 ID API 金鑰，讓存取記號傳遞給每個 {{site.data.keyword.Bluemix_notm}} 服務。
@@ -22,11 +22,11 @@ lastupdated: "2018-05-09"
 
 ### POST /identity/token
 
-### 標頭：
+### 標頭
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
-### 使用參數：
+### 參數
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
   - apikey=*[API 金鑰]*
 
@@ -42,7 +42,7 @@ curl -k -X POST \
 
 下列範例是預期的回應：
 
-### 回應：
+### 回應
 
 ```
 {

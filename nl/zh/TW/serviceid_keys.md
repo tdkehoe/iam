@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-06-01"
 
 ---
 
@@ -45,6 +45,58 @@ lastupdated: "2018-04-06"
 2. 如果您尚未建立服務 ID，請建立服務 ID。
 3. 從**動作**功能表中，移至**管理服務 ID** 選項。
 4. 從「API 金鑰」區段的**動作**功能表中，移至**編輯名稱及說明**選項。
+
+## 鎖定服務 ID 的 API 金鑰
+{: #lockkey}
+
+針對代表服務 ID 身分的 API 金鑰，您可以將其鎖定，以防止 API 金鑰被刪除。已鎖定的 API 金鑰在使用者介面中會以 ![「已鎖定」圖示](images/locked.svg "已鎖定") 圖示來表示。
+
+1. 從功能表列中按一下**管理** &gt; **安全** &gt; **身分及存取**，然後選取**服務 ID**。
+2. 識別您要為其選取 API 金鑰的服務 ID 列，然後選取服務 ID 的名稱。
+3. 選取 **API 金鑰**。
+4. 將游標移至您要鎖定的 API 金鑰列上，然後按一下**動作**功能表，以開啟選項清單。
+5. 按一下**鎖定 API 金鑰**。
+
+您可以隨時解除鎖定 API 金鑰，以更新、刪除或新增存取原則，或是移除 API 金鑰。
+{: tip}
+
+### 使用 CLI 來鎖定或解除鎖定服務 ID API 金鑰
+
+若要鎖定服務 ID API 金鑰，請使用下列指令：
+
+```
+ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
+
+<strong>必要條件</strong>：端點、登入、目標
+
+<strong>指令選項</strong>：
+<dl>
+  <dt>APIKEY_NAME（必要）</dt>
+  <dd>API 金鑰的名稱，不能與 APIKEY_UUID 同時使用</dd>
+  <dt>APIKEY_UUID（必要）</dt>
+  <dd>API 金鑰的 UUID，不能與 APIKEY_NAME 同時使用</dd>
+  <dt>SERVICE_ID_NAME（必要）</dt>
+  <dd>服務 ID 的名稱，不能與 SERVICE_ID_UUID 同時使用</dd>
+  <dt>SERVICE_ID_UUID（必要）</dt>
+  <dd>服務 ID 的 UUID，不能與 SERVICE_ID_NAME 同時使用</dd>
+  <dt>-f, --force</dt>
+  <dd>鎖定而不進行確認</dd>
+</dl>
+
+<strong>範例</strong>：
+
+服務 ID `sample-service` 的鎖定服務 API 金鑰 `sample-key`：
+
+```
+ibmcloud iam service-api-key-lock sample-key sample-service
+```
+
+若要解除鎖定服務 ID API 金鑰，請使用下列指令：
+
+```
+ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
+```
 
 
 ## 刪除服務 ID 的 API 金鑰

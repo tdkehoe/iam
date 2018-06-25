@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-04-04"
+lastupdated: "2018-06-07"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-04"
 # IAM 存取
 {: #userroles}
 
-在您帳戶中，組織成資源群組的所有服務都是使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 進行管理。帳戶擁有者會自動獲指派 Cloud IAM 的帳戶管理者角色。身為帳戶管理者，您可以指派及管理使用者的存取權、建立資源群組、佈建服務實例，以及藉由指派 Cloud IAM 角色可委派的所有其他作業。您可以藉由建立原則來提供使用者及服務 ID 的存取權，而這些原則設定使用者或服務 ID 要存取的目標，以及設定可定義所容許存取類型的角色。
+在您帳戶中，組織成資源群組的所有服務都是使用 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 進行管理。帳戶擁有者會自動獲指派 Cloud IAM 的帳戶管理者角色。身為帳戶管理者，您可以藉由指派 Cloud IAM 角色來指派和管理使用者的存取權、建立資源群組，以及佈建服務實例。您可以藉由建立原則來提供使用者及服務 ID 的存取權，而這些原則設定使用者或服務 ID 要存取的目標，以及設定可定義所容許存取類型的角色。
 
 
 ## 何謂 Cloud IAM 原則以及誰可以指派它們？
