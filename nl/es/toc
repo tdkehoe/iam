@@ -11,7 +11,6 @@ Gestión de acceso e identidades
     ¿Qué es IAM?
         index.md
         iam_overview.md
-        cf_iam.md
 
     {: .topicgroup}
     Permisos y roles de usuario
@@ -27,7 +26,7 @@ Gestión de acceso e identidades
     iamuserinv.md
 
     {: .topicgroup}
-    Managing users and access
+    Gestión de usuarios y acceso
         iamusermanage.md
         groups.md
         mngiam.md

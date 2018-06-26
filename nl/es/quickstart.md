@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-06-06"
 
 ---
 
@@ -18,12 +18,12 @@ lastupdated: "2018-04-02"
 
 Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar rápidamente con IBM Cloud Identity and Access Management (IAM) invitando usuarios a su cuenta y asignándoles acceso de Cloud IAM.
 
-Esta guía de aprendizaje es para recursos gestionados por IAM. Para los servicios que no soportan la creación de políticas de Cloud IAM para gestionar el acceso, puede utilizar el [Acceso de Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
+Esta guía de aprendizaje se aplica solo a [recursos](/docs/resources/acct_resources.html#resource) gestionados por IAM. Para los servicios que no soportan la creación de políticas de Cloud IAM para gestionar el acceso, puede utilizar el [Acceso de Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
 ## Paso 1: Invitar usuarios y asignar acceso inicial
 
-Puede invitar a uno o varios usuarios y establecer una política de acceso inicial para los usuarios en la invitación. Si invita varios usuarios en una invitación se asigna el mismo acceso a todos ellos. En la sección Acceso de la página Invitar a usuarios solo ve las secciones que tiene permitido asignar.
+Puede invitar a uno o varios usuarios y establecer una política de acceso inicial para los usuarios en la invitación. Si invita varios usuarios en una invitación se asigna el mismo acceso a todos ellos. En la sección **Acceso** de la página Invitar a usuarios, solo verá las secciones que tiene permiso para asignar.
 
 Como propietario de cuenta, puede asignar roles de Cloud IAM a los usuarios que invite en la sección Servicios. Puede proporcionar acceso a todos los recursos en un grupo de recursos, a todos los recursos para un servicio específico en un grupo de recursos, a todos los servicios habilitados para identificación y acceso en la cuenta o a un único recurso en la política inicial que asigne en la invitación:
 

@@ -19,7 +19,7 @@ lastupdated: "2018-05-22"
 # Conexión de un ID dedicado a su IBMid público
 {: #connect_dedicated_id}
 
-Para iniciar sesión en una nube dedicada en la que el servicio IAM público está disponible, la CLI de {{site.data.keyword.Bluemix_notm}} le solicita iniciar sesión con el IBMid público en lugar del ID dedicado.
+Para iniciar sesión en una nube dedicada en la que el servicio IAM público está disponible, debe iniciar sesión en la CLI de {{site.data.keyword.Bluemix_notm}} con el IBMid público en lugar del ID dedicado.
 
 
 ```
@@ -32,7 +32,7 @@ Para iniciar sesión en una nube dedicada en la que el servicio IAM público est
   Correo electrónico>
 ```
 
-Si el ID dedicado ya se ha conectado al IBMid público, se autenticará y se iniciará sesión:
+Si el ID dedicado ya está conectado al IBMid público, se autentica e inicia sesión:
 
 ```
   Autenticando...
@@ -41,10 +41,10 @@ Si el ID dedicado ya se ha conectado al IBMid público, se autenticará y se ini
   Conectado con el usuario dedicado my_dedicated_id
 ```
 
-Sin embargo, si el ID dedicado no se ha conectado con el IBMid público, se le solicitará que se conecte manualmente al IBMid público:
+Sin embargo, si el ID dedicado ya no está conectado al IBMid público, se le solicitará que se conecte manualmente al IBMid público:
 
 ```
-  Está registrándose con un IBMid no asociado con ningún usuario dedicado.
+  Está registrándose con IBMid no asociado con ningún usuario dedicado.
   Para configurar la conexión, especifique las credenciales del usuario dedicado.
 
   Elija un tipo de credencial:
