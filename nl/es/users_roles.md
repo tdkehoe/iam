@@ -77,7 +77,7 @@ Los roles de gestión de plataforma permiten asignar a los usuarios distintos ni
 {: caption="Tabla 2. Roles y acciones de gestión de plataforma de ejemplo" caption-side="top"}
 {: #platformrolestable}
 
-Algunos servicios pueden correlacionar acciones específicas con los roles de gestión de plataforma que están relacionados con la gestión del servicio en lugar de con el acceso al servicio. Como ejemplo, consulte en la tabla siguiente los detalles de las acciones de servicio de {{site.data.keyword.containershort_notm}} que están correlacionadas con dichos roles.
+Algunos servicios pueden correlacionar acciones específicas con los roles de gestión de plataforma que están relacionados con la gestión del servicio en lugar de con el acceso al servicio. Como ejemplo, consulte en la tabla siguiente los detalles de las acciones del servicio {{site.data.keyword.containershort_notm}} que están correlacionadas con dichos roles.
 
 
 | Rol de gestión de plataforma | Descripción de acciones | Acciones de ejemplo para {{site.data.keyword.containershort_notm}} |
@@ -86,16 +86,16 @@ Algunos servicios pueden correlacionar acciones específicas con los roles de ge
 | Editor | Realizar todas las acciones de plataforma excepto la gestión de la cuenta y la asignación de políticas de acceso |<ul><li>Enlazar un servicio a un clúster</li><li>Crear un webhook</li></ul> |
 | Operador | Realizar acciones de plataforma necesarias para configurar y operar instancias de servicio, como la visualización de un panel de control de servicio. | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Rearrancar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
 | Administrador | Realiza todas las acciones de plataforma basadas en el recurso al que se está asignando este rol, incluida la asignación de políticas de acceso a otros usuarios. |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
-{: caption="Tabla 3. Roles y acciones de gestión de plataforma de ejemplo para el servicio de {{site.data.keyword.containershort_notm}}" caption-side="top"}
+{: caption="Tabla 3. Roles y acciones de gestión de plataforma de ejemplo para el servicio {{site.data.keyword.containershort_notm}}" caption-side="top"}
 
 
 ### Roles de acceso de servicio
 
-Los roles de acceso de servicio permiten asignar a los usuarios diferentes niveles de permiso para llamar a la API del servicio y acceder a la IU para el servicio. La tabla siguiente proporciona acciones de ejemplo que se pueden realizar en los roles asignados en función del uso del servicio de {{site.data.keyword.objectstorageshort}}.
+Los roles de acceso de servicio permiten asignar a los usuarios diferentes niveles de permiso para llamar a la API del servicio y acceder a la IU para el servicio. La tabla siguiente proporciona acciones de ejemplo que se pueden realizar en los roles asignados en función del uso del servicio {{site.data.keyword.objectstorageshort}}.
 
 **Nota**: Las acciones que se pueden llevar a cabo para cada rol asignado varían en función de servicio seleccionado para la política.
 
-| Rol de acceso de servicio | Descripción de acciones | Acciones de ejemplo para el servicio de {{site.data.keyword.objectstorageshort}} |
+| Rol de acceso de servicio | Descripción de acciones | Acciones de ejemplo para el servicio {{site.data.keyword.objectstorageshort}} |
 |:-----------------|:-----------------|:-----------------|
 |  Lector | Realizar acciones de sólo lectura dentro de un servicio como la visualización de recursos específicos del servicio | Listar y descargar objetos |
 | Escritor | Los escritores tienen permisos más allá del rol de lector, incluida la creación y la edición de recursos específicos del servicio. | Crear y destruir grupos y objetos |
