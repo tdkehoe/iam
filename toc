@@ -29,6 +29,7 @@ Managing identity and access
     Managing users and access
         iamusermanage.md
         groups.md
+        accessgroup_rules.md
         mngiam.md
         mngcf.md
         mnginfra.md
