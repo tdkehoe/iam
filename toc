@@ -51,4 +51,5 @@ Managing identity and access
 
     {: .navgroup id="reference"}
     iam_limits.md
+    monitoring.md
     {: .navgroup-end}
