@@ -68,7 +68,7 @@ Para bloquear una clave de API de ID de servicio, utilice el mandato siguiente:
 ibmcloud iam service-api-key-lock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|SERVICE_ID_UUID) [-f, --force]
 ```
 
-<strong>Requisitos previos</strong>:  Punto final, inicio de sesión, destino
+<strong>Requisitos previos</strong>: Punto final, inicio de sesión, destino
 
 <strong>Opciones de mandato</strong>:
 <dl>

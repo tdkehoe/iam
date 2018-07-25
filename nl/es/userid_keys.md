@@ -81,7 +81,7 @@ Para bloquear una clave de API de plataforma, utilice el mandato siguiente:
 ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 ```
 
-<strong>Requisitos previos</strong>:  Punto final, Inicio de sesión
+<strong>Requisitos previos</strong>: Punto final, Inicio de sesión
 
 <strong>Opciones de mandato</strong>:
 <dl>
@@ -107,7 +107,7 @@ Para desbloquear una clave de API de plataforma, ejecute el mandato siguiente:
 ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 ```
 
-<strong>Requisitos previos</strong>:  Punto final, Inicio de sesión
+<strong>Requisitos previos</strong>: Punto final, Inicio de sesión
 
 <strong>Opciones de mandato</strong>:
 <dl>
