@@ -26,9 +26,10 @@ Identität und Zugriff verwalten
     iamuserinv.md
 
     {: .topicgroup}
-    Benutzer und Benutzerzugriff verwalten
+    Benutzer und Zugriff verwalten
         iamusermanage.md
         groups.md
+        accessgroup_rules.md
         mngiam.md
         mngcf.md
         mnginfra.md
@@ -50,4 +51,5 @@ Identität und Zugriff verwalten
 
     {: .navgroup id="reference"}
     iam_limits.md
+    monitoring.md
     {: .navgroup-end}

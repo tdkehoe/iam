@@ -35,10 +35,10 @@ Führen Sie die folgenden Schritte aus, um einen API-Schlüssel für Ihre Benutz
 
 Verwenden Sie den folgenden Befehl, um einen API-Schlüssel über die Befehlszeilenschnittstelle zu erstellen:
 
-1. Geben Sie `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in der Eingabeaufforderung ein und geben Sie einen Namen, eine Beschreibung und eine Datei zum Speichern des Schlüssels ein. Beispiel: 
+1. Geben Sie `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in der Eingabeaufforderung ein und geben Sie einen Namen, eine Beschreibung und eine Datei zum Speichern des Schlüssels ein. Beispiel:
 
 ```
-ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ``` 
 
 
@@ -63,8 +63,7 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "neue Beschreibung des
 
 ## API-Schlüssel sperren
 
-
-Sie können das Löschen von API-Schlüsseln der Plattform, die ihre Benutzeridentität darstellen, verhindern, indem Sie sie sperren. Ein gesperrter API-Schlüssel ist durch das Symbol ![Sperrsymbol](images/locked.svg "Gesperrt") gekennzeichnet. Das Sperren und Entsperren von API-Schlüsseln ist über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle möglich.
+Sie können das Löschen von API-Schlüsseln der Plattform, die Ihre Benutzeridentität darstellen, verhindern, indem Sie sie sperren. Ein gesperrter API-Schlüssel ist durch das Symbol ![Sperrsymbol](images/locked.svg "Gesperrt") gekennzeichnet. Das Sperren und Entsperren von API-Schlüsseln ist über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle möglich.
 
 ### API-Schlüssel über die Benutzerschnittstelle sperren bzw. entsperren
 
