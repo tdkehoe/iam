@@ -15,6 +15,7 @@ lastupdated: "2018-07-11"
 {:tip: .tip}
 
 # Creating dynamic rules for access groups
+{: #rules}
 
 You can create dynamic rules to automatically add federated users to access groups based on specific identity attributes. When your users log in with a federated ID, the data from the identity provider dynamically maps your users to an access group based on the rules that you set.
 
