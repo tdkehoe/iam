@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -21,7 +21,7 @@ To invite users and manage outstanding invitations, you must be either an accoun
 
 ## Inviting users
 
-To invite users or manage user invitations in your account, complete the following steps:
+To invite users or manage user invitations in your account, complete the following steps: 
 
 1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then click **Users**. The Users page displays a list of users with their email addresses and status for the currently selected account.
 2. Click **Invite users**.
@@ -30,7 +30,7 @@ To invite users or manage user invitations in your account, complete the followi
 
 If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
 
-If you want to invite users by using the CLI, see the [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) command.
+If you want to invite users by using the CLI, see the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) command.
 {: tip}
 
 ## Assigning user access
@@ -52,7 +52,7 @@ You can assign access to all services within a resource group or a single servic
 2. Select to assign access to resources in a **Resource group**.
 3. Choose a resource group.
 4. Choose a role for the **Assign access to a resource group** field to enable the user to view the resource group on the dashboard, edit the resource group name, or manage user access to the group. You can select **No access**, if you want the user to have access only to the resource that you specify and not the group that it is organized in.
-5. Select a service within the resource group, or select to provide access to all services within the selected group.
+5. Select a service within the resource group, or select to provide access to all services within the selected group. 
 6. Select any combination of roles to assign the wanted access. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
 
 
@@ -63,9 +63,9 @@ You can assign access to a single resource within your account down to the insta
 1. From the **Invite users** screen, expand the **Services** section.
 2. Select to assign access to a **Resource**.
 3. Select a service.
-4. Select **All current regions** or a specific region, if your are prompted.
+4. Select **All current regions** or a specific region, if your are prompted. 
 5. Select **All current service instances** or select a specific service instance.
-6. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level.
+6. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
     * **Resource type**: Enter **bucket**.
     * **Resource ID**: Enter the name of your bucket.
 7. Select any combination of roles to assign the wanted access.
@@ -87,7 +87,7 @@ When you invite new users, you can choose to add the user to an organization in 
 
 See [Cloud Foundry roles](/docs/iam/cfaccess.html#cfroles) for more information about the roles.
 
-You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
+You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) CLI command, but the UI must be used to assign other access or permissions.
 {: tip}
 
 ### {{site.data.keyword.BluSoftlayer_notm}} infrastructure access
@@ -109,7 +109,7 @@ As the account owner of a linked account, you can add a VPN-only user.
 1. Click the Menu icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**.
 2. Go to **Account** &gt; **Users**.
 3. Click **Add VPN Only User**.
-4. Enter the personal information details for the user.
+4. Enter the personal information details for the user. 
 5. Click **Add User**.
 6. Set portal permissions for the user.
 7. Click **Add Portal Permissions** to save the permissions.
