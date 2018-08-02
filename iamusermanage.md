@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ To manage users in your account, complete the following steps to access the opti
 
 **Note**: Only account owners can remove users from the account.
 
-For details on the CLI commands that are used to manage accounts, orgs, and spaces, see [Commands for managing accounts, orgs, and roles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+For details on the CLI commands that are used to manage accounts, orgs, and spaces, see [Commands for managing accounts, orgs, and roles](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles).
 {: tip}
 
 You can also create access groups to organize a set of users and service IDs to make assigning access to more than one user at a time a quick and easy process:
@@ -37,3 +37,4 @@ You can also create access groups to organize a set of users and service IDs to 
 2. Click **Create access group**.
 3. Enter a name and description for your group, and click **Create**.
 4. After your group is created, click the name of the group to get started by adding users and assigning access to the group.
+
