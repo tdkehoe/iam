@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -59,6 +59,12 @@ To edit an existing policy:
 3. Identify the row of the policy that you want to edit, and select **Edit policy** from the **Actions** menu.
 4. Make your changes, and then save the policy.
 
+To update a service policy using the CLI, you can use the [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_update) command.
+```
+ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
+```
+{: codeblock}
+
 ## Removing access
 
 To remove an existing policy:
@@ -67,3 +73,9 @@ To remove an existing policy:
 2. Select the service ID from the table that you want to delete a service policy for.
 3. Identify the row of the policy that you want to delete, and select **Remove** from the **Actions** menu.
 4. Review the details of the policy that you are about to remove, and then click **Remove** to confirm.
+
+To delete a service policy using the CLI, you can use the [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) command.
+```
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
