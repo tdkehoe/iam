@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-01"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -59,6 +59,7 @@ To update an API key for a service ID using the CLI, you can use the [ibmcloud i
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
+{: codeblock}
 
 ## Locking a service ID's API key
 {: #lockkey}
