@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -65,7 +65,7 @@ Because a one-time passcode retrieves code from the {{site.data.keyword.Bluemix_
 
 The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the Softlayer API key or {{site.data.keyword.Bluemix_notm}} service API key.
 
-1. Create an API key with the [`ibmcloud iam api-key-create` command](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create). Use the `-f` option to generate an API key file instead of showing the key in the command window:
+1. Create an API key with the [`ibmcloud iam api-key-create` command](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Use the `-f` option to generate an API key file instead of showing the key in the command window:
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
