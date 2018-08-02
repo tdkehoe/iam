@@ -29,6 +29,7 @@
     管理用户和访问权
         iamusermanage.md
         groups.md
+        accessgroup_rules.md
         mngiam.md
         mngcf.md
         mnginfra.md
@@ -50,4 +51,5 @@
 
     {: .navgroup id="reference"}
     iam_limits.md
+    monitoring.md
     {: .navgroup-end}

@@ -38,7 +38,7 @@ lastupdated: "2018-06-06"
 1. 在命令提示字元中輸入 `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]`，並指定名稱、說明和儲存金鑰用的檔案。請參閱下列範例：
 
 ```
-ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ``` 
 
 
@@ -86,9 +86,9 @@ ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 <strong>指令選項</strong>：
 <dl>
 <dt>NAME（必要）</dt>
-<dd>要鎖定之 API 金鑰的名稱，不能與 UUID 同時使用。</dd>
+<dd>要鎖定之 API 金鑰的名稱，與 UUID 不能同時使用。</dd>
 <dt>UUID（必要）</dt>
-<dd>要鎖定之 API 金鑰的 UUID，不能與 NAME 同時使用。</dd>
+<dd>要鎖定之 API 金鑰的 UUID，與 NAME 不能同時使用。</dd>
 <dt>-f, --force</dt>
 <dd>強制鎖定，而不進行確認。</dd>
 </dl>
@@ -112,9 +112,9 @@ ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 <strong>指令選項</strong>：
 <dl>
 <dt>NAME（必要）</dt>
-<dd>要解除鎖定之 API 金鑰的名稱，不能與 UUID 同時使用。</dd>
+<dd>要解除鎖定之 API 金鑰的名稱，與 UUID 不能同時使用。</dd>
 <dt>UUID（必要）</dt>
-<dd>要解除鎖定之 API 金鑰的 UUID，不能與 NAME 同時使用。</dd>
+<dd>要解除鎖定之 API 金鑰的 UUID，與 NAME 不能同時使用。</dd>
 <dt>-f, --force</dt>
 <dd>強制解除鎖定，而不進行確認。</dd>
 </dl>

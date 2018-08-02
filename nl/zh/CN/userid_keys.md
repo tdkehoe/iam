@@ -38,7 +38,7 @@ lastupdated: "2018-06-06"
 1. 在命令提示符处输入 `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]`，并指定名称、描述和用于保存密钥的文件。请参阅以下示例：
 
 ```
-ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ``` 
 
 
