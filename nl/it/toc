@@ -29,6 +29,7 @@ Gestione di identità e accesso
     Gestione di utenti e accesso
         iamusermanage.md
         groups.md
+        accessgroup_rules.md
         mngiam.md
         mngcf.md
         mnginfra.md
@@ -50,4 +51,5 @@ Gestione di identità e accesso
 
     {: .navgroup id="reference"}
     iam_limits.md
+    monitoring.md
     {: .navgroup-end}

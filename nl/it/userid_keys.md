@@ -15,7 +15,7 @@ lastupdated: "2018-06-06"
 # Gestione delle chiavi API utente
 {: #userapikey}
 
-Un utente federato o non federato può creare una chiave API da utilizzare nella CLI o come parte dell'automazione per eseguire l'accesso come tua identità utente. Puoi utilizzare l'IU o la CLI per gestire le tue chiavi API attraverso l'elenco, la creazione, l'aggiornamento o l'eliminazione delle chiavi. Per gestire le chiavi API {{site.data.keyword.Bluemix_notm}} associate alla tua identità utente, vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API della piattaforma** per visualizzare un elenco delle tue chiavi API con descrizioni e date. Quindi, puoi creare, modificare o eliminare le chiavi API. E per un elenco completo dei comandi CLI disponibili, consulta [`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam).
+Un utente federato o non federato può creare una chiave API da utilizzare nella CLI o come parte dell'automazione per eseguire l'accesso come tua identità utente. Puoi utilizzare l'IU o la CLI per gestire le tue chiavi API attraverso l'elenco, la creazione, l'aggiornamento o l'eliminazione delle chiavi. Per gestire le chiavi API {{site.data.keyword.Bluemix_notm}} associate alla tua identità utente, vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API della piattaforma** per visualizzare un elenco delle tue chiavi API con descrizioni e date. Quindi puoi creare, modificare o eliminare chiavi API. E per un elenco completo dei comandi CLI disponibili, consulta [`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam).
 
 Come [utente federato](/docs/account/adminpublic.html#federatedid), puoi usare una chiave API per eseguire l'accesso utilizzando la variabile di ambiente `BLUEMIX_API_KEY`. Per ulteriori informazioni sull'utilizzo di una chiave API per l'accesso, vedi [Accesso con un ID federato](/docs/cli/login_federated_id.html#federated_id).
 
@@ -23,7 +23,7 @@ Come [utente federato](/docs/account/adminpublic.html#federatedid), puoi usare u
 
 In qualità di utente {{site.data.keyword.Bluemix_notm}}, potresti voler utilizzare una chiave API quando abiliti un programma o uno script senza distribuire la tua password allo script. Un vantaggio di utilizzare una chiave API può essere che un utente o un'organizzazione può creare più chiavi API per programmi diversi e le chiavi API possono essere eliminate in modo indipendente se compromesse senza interferire con altre chiavi API o con l'utente. Puoi creare fino a 20 chiavi API.
 
-Per creare una chiave API per la tua identità utente nell'IU, completa la seguente procedura: 
+Per creare una chiave API per la tua identità utente nell'IU, completa la seguente procedura:
 
 1. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API della piattaforma**.
 2. Fai clic su **Crea chiave API**.
@@ -33,12 +33,12 @@ Per creare una chiave API per la tua identità utente nell'IU, completa la segue
 
 **Nota**: per motivi di sicurezza, la chiave API è disponibile per essere copiata o scaricata solo durante la fase di creazione. Se la chiave API viene persa, dovrai crearne una nuova.
 
-Per creare una chiave API utilizzando la CLI, utilizza il seguente comando: 
+Per creare una chiave API utilizzando la CLI, utilizza il seguente comando:
 
-1. Immetti `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` nel prompt dei comandi, e specificare un nome, una descrizione, e file per salvare la tua chiave. Consulta il seguente esempio:
+1. Immetti `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` nel prompt dei comandi, e specificare un nome, una descrizione, e file per salvare la tua chiave. Vedi il seguente esempio:
 
 ```
-ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ``` 
 
 
@@ -46,14 +46,14 @@ ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
 
 Se desideri modificare il nome o la descrizione di una chiave API, completa le seguenti istruzioni nella IU o nella CLI.
 
-Per modificare una chiave API, completa la seguente procedura: 
+Per modificare una chiave API, completa la seguente procedura:
 
 1. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API della piattaforma**.
 2. Dal menu **Azioni** di una chiave API elencata nella tabella, fai clic su **Modifica nome e descrizione** 
 3. Aggiorna le informazioni per la tua chiave API.
 4. Fai clic su **Aggiorna chiave API**.
 
-Per modificare una chiave API utilizzando la CLI, immetti il seguente comando: 
+Per modificare una chiave API utilizzando la CLI, utilizza il seguente comando:
 
 1. Immetti `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` nel tuo prompt dei comandi, specificando il vecchio nome, il nuovo nome e la nuova descrizione della chiave. Ad esempio:
 
@@ -63,19 +63,19 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 
 ## Blocco di una chiave API
 
-Per le chiavi API della piattaforma che rappresentano la tua identità utente, puoi impedire l'eliminazione della chiave API bloccandola. Un chiave API bloccata viene indicata dall'icona ![icona Bloccato](images/locked.svg "Bloccato"). Puoi bloccare e sbloccare la tua chiave API utilizzando la IU o la CLI. 
+Per le chiavi API della piattaforma che rappresentano la tua identità utente, puoi evitarne l'eliminazione eseguendone il blocco. Una chiave API bloccata è indicata dall'icona ![Icona di bloccato](images/locked.svg "Bloccato"). Puoi bloccare e sbloccare la tua chiave API utilizzando l'IU o la CLI.
 
-### Blocco e sblocco di una chiave API dalla IU
+### Blocco e sblocco di una chiave API dall'IU
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **Chiavi API della piattaforma**.
-2. Identifica la riga della chiave API che vuoi bloccare e seleziona **Blocca la chiave API** dal menu **Azioni**.
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identity and Access** e seleziona quindi **Chiavi API della piattaforma**.
+2. Identifica la riga della chiave API che vuoi bloccare e seleziona **Blocca chiave API** dal menu **Azioni**.
 
-Puoi sbloccare la tua chiave API in qualsiasi momento per aggiornare, eliminare o aggiungere una politica di accesso o per rimuovere la chiave API dal tuo account. Seleziona la chiave API dalla tabella che vuoi sbloccare e seleziona **Sblocca la chiave API** dal menu **Azioni**.
+Puoi sbloccare la tua chiave API in qualsiasi momento per aggiornare, eliminare o aggiungere una politica di accesso oppure rimuovere la chiave API dal tuo account. Seleziona la chiave API dalla tabella che vuoi sbloccare e seleziona **Sblocca chiave API** dal menu **Azioni**.
 {: tip}
 
 ### Blocco e sblocco di una chiave API utilizzando la CLI
 
-Per bloccare una chiave API della piattaforma, utilizza il seguente comando: 
+Per bloccare una chiave API della piattaforma, utilizza il seguente comando:
 
 ```
 ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
@@ -86,11 +86,11 @@ ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 <strong>Opzioni del comando</strong>:
 <dl>
 <dt>NOME (obbligatorio)</dt>
-<dd>Nome della chiave API da bloccare, esclusivo con UUID. </dd>
+<dd>Nome della chiave API da bloccare, esclusivo con UUID.</dd>
 <dt>UUID (obbligatorio)</dt>
-<dd>UUID della chiave API da bloccare, esclusivo con NOME. </dd>
+<dd>UUID della chiave API da bloccare, esclusivo con NAME.</dd>
 <dt>-f, --force</dt>
-<dd>Forza blocco senza conferma. </dd>
+<dd>Forza il blocco senza conferma.</dd>
 </dl>
 
 <strong>Esempio</strong>:
@@ -101,7 +101,7 @@ Blocca la chiave API `test-api-key`
 ibmcloud iam api-key-lock test-api-key
 ```
 
-Per sbloccare una chiave API della piattaforma, immetti il seguente comando:  
+Per sbloccare una chiave API della piattaforma, esegui il seguente comando:
 
 ```
 ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
@@ -112,11 +112,11 @@ ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 <strong>Opzioni del comando</strong>:
 <dl>
 <dt>NOME (obbligatorio)</dt>
-<dd>Nome della chiave API da sbloccare, esclusivo con UUID. </dd>
+<dd>Nome della chiave API da sbloccare, esclusivo con UUID.</dd>
 <dt>UUID (obbligatorio)</dt>
-<dd>UUID della chiave API da sbloccare, esclusivo con NOME. </dd>
+<dd>UUID della chiave API da sbloccare, esclusivo con NAME.</dd>
 <dt>-f, --force</dt>
-<dd>Forza sblocco senza conferma. </dd>
+<dd>Forza lo sblocco senza conferma.</dd>
 </dl>
 
 <strong>Esempio</strong>:
@@ -132,11 +132,11 @@ ibmcloud iam api-key-unlock test-api-key
 
 Se stai utilizzando una strategia di rotazione della chiave, potresti voler eliminare una chiave vecchia e sostituirla con una nuova.
 
-Per eliminare una chiave API, completa la seguente procedura:  
+Per eliminare una chiave API, completa la seguente procedura: 
 
 1. Vai a **Gestisci** &gt; **Sicurezza** &gt; **Chiavi API della piattaforma**.
 2. Dal menu **Azioni** di una chiave API elencata nella tabella, fai clic su **Elimina**.
 3. Conferma infine l'eliminazione facendo clic su **Elimina chiave**.
 
 Per eliminare una chiave API utilizzando la CLI:
-1. Immetti `ibmcloud iam api-key-delete NAME` nel tuo prompt dei comandi, specificando il nome della chiave da eliminare. 
+1. Immetti `ibmcloud iam api-key-delete NAME` nel tuo prompt dei comandi, specificando il nome della chiave da eliminare.
