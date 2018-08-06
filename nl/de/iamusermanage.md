@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ Führen Sie zur Verwaltung der Benutzer in Ihrem Konto die folgenden Schritte au
 
 **Hinweis**: Nur Kontoeigner können Benutzer aus dem Konto entfernen.
 
-Weitere Details zu den CLI-Befehlen, die zum Verwalten von Accounts, Organisationen und Bereichen verwendet werden, finden Sie unter [Befehle für die Verwaltung von Konten, Organisationen und Rollen](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Weitere Details zu den CLI-Befehlen, die zum Verwalten von Accounts, Organisationen und Bereichen verwendet werden, finden Sie unter [Befehle für die Verwaltung von Konten, Organisationen und Rollen](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles).
 {: tip}
 
 Sie können auch Zugriffsgruppen erstellen, um eine Gruppe von Benutzern und Service-IDs zu organisieren und so die Zuweisung von gleichzeitigem Zugriff auf mehrere Benutzer zu beschleunigen und zu vereinfachen:
@@ -37,3 +37,4 @@ Sie können auch Zugriffsgruppen erstellen, um eine Gruppe von Benutzern und Ser
 2. Klicken Sie auf **Zugriffsgruppe erstellen**.
 3. Geben Sie einen Namen und eine Beschreibung für Ihre Gruppe ein und klicken Sie auf **Erstellen**.
 4. Klicken Sie nach der Erstellung Ihrer Gruppe auf den Gruppennamen, um Benutzer hinzuzufügen und Zugriff auf die Gruppe zuzuweisen.
+

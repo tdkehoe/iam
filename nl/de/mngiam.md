@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -27,10 +27,19 @@ Um den Zugriff zu verwalten oder Benutzern neue Zugriffsberechtigungen zuzuweise
 4. Bearbeiten Sie die Richtlinie.
 5. Klicken Sie auf **Speichern**.
 
+Wenn Sie eine Benutzerrichtlinie über die Befehlszeilenschnittstelle aktualisieren möchten, können Sie den Befehl [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) verwenden.
+```
+ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
+
 ## Neue Zugriffsberechtigungen zuweisen
 {: #assignaccess}
 
-### Zugriff auf Ressourcen in einer Ressourcengruppe
+Um einem Benutzer Zugriffsberechtigungen für alle Kontoressourcen und die Berechtigung zum Verwalten des Benutzerzugriffs, zum Erstellen von Ressourcengruppen und zum Ausführen aller anderen IAM-Management-Tasks zu erteilen, wählen Sie die Option **Alle Services mit aktiviertem Identity and Access Management** für diese Richtlinie aus und weisen Sie dabei die Rolle **Administrator** zu.
+{: tip}
+
+### Zugriff auf Ressourcen in einer Ressourcengruppe 
 
 Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für einen einzelnen Service in einer Ressourcengruppe zuzuweisen, müssen Sie die folgenden Schritte ausführen:
 
@@ -46,22 +55,19 @@ Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für 
 ### Zugriff auf Ressourcen
 {: #resourceaccess}
 
-Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einzelne Ressource im Konto oder für alle Ressourcen im Konto zuzuweisen:
+Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einzelne Ressource im Konto oder für alle Ressourcen im Konto zuzuweisen: 
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Benutzer** aus.
 2. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriffsberechtigungen zuweisen wollen, das Menü **Aktionen** aus und klicken Sie dann auf **Zugriff zuweisen**.
 3. Wählen Sie die Option **Zugriff auf Ressourcen zuweisen** aus.
 4. Wählen Sie einen Service oder die Option **Alle Services mit aktiviertem Identity and Access Management** aus.
-5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
+5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
 6. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen.
+7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
     * **Ressourcentyp**: Geben Sie **Bucket** ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 8. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen.
 9. Klicken Sie auf **Zuweisen**.
-
-Um einem Benutzer Zugriffsberechtigungen für alle Kontoressourcen und die Berechtigung zum Verwalten des Benutzerzugriffs, zum Erstellen von Ressourcengruppen und zum Ausführen aller anderen IAM-Management-Tasks zu erteilen, wählen Sie die Option **Alle Services mit aktiviertem Identity and Access Management** für diese Richtlinie aus und weisen Sie dabei die Rolle **Administrator** zu.
-{: tip}
 
 
 ## Zugriffsberechtigungen entfernen
@@ -70,6 +76,12 @@ Um einem Benutzer Zugriffsberechtigungen für alle Kontoressourcen und die Berec
 2. Wählen Sie den Benutzernamen aus, dessen Zugriffsberechtigungen entfernt werden sollen.
 3. Wählen Sie in der Zeile für die Richtlinie, die entfernt werden soll, das Menü **Aktionen** aus und klicken Sie dann auf **Entfernen**.
 4. Überprüfen Sie die Details zur Benutzerrichtlinie, die entfernt werden soll, und bestätigen Sie dann die Ausführung der Aktion, indem Sie auf **Entfernen** klicken.
+
+Wenn Sie eine Benutzerrichtlinie über die Befehlszeilenschnittstelle entfernen möchten, können Sie den Befehl [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete) verwenden.
+```
+ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 ## Zugewiesene Zugriffsberechtigungen überprüfen
 

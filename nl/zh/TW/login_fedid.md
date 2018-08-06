@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -65,7 +65,7 @@ lastupdated: "2018-05-22"
 
 必要 API 金鑰是用來向 {{site.data.keyword.Bluemix_notm}} 平台進行鑑別的 {{site.data.keyword.Bluemix_notm}} API 金鑰，而不是 Softlayer API 金鑰或 {{site.data.keyword.Bluemix_notm}} 服務 API 金鑰。
 
-1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
+1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
@@ -79,14 +79,14 @@ lastupdated: "2018-05-22"
     * 直接呼叫 API 金鑰：
   
       ```
-      ibmcloud login --apikey <api_key_string>
+ibmcloud login --apikey <api_key_string>
     
       ```
     
     * 使用金鑰檔來呼叫 API 金鑰： 
   
       ```
-      ibmcloud login --apikey @key_file_name
+ibmcloud login --apikey @key_file_name
     
       ```
     
@@ -95,7 +95,7 @@ lastupdated: "2018-05-22"
   若要使用 Cloud Foundry CLI 登入，請指定 `apikey` 作為使用者名稱，並指定 API 金鑰字串作為密碼：
 
     ```
-        cf login
+    cf login
     API endpoint: https://api.ng.bluemix.net
   
     

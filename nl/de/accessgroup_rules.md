@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-07-11"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,6 +15,7 @@ lastupdated: "2018-07-11"
 {:tip: .tip}
 
 # Dynamische Regeln für Zugriffsgruppen erstellen
+{: #rules}
 
 Sie können dynamische Regeln erstellen, um föderierte Benutzer auf der Basis bestimmter Identitätsattribute automatisch zu Zugriffsgruppen hinzuzufügen. Wenn sich Benutzer mit einer föderierten IUD anmelden, werden die vom Identitätsprovider bereitgestellten Daten dazu verwendet, die Benutzer auf der Basis der von Ihnen festgelegten Regeln dynamisch einer Zugriffsgruppe zuzuordnen.
 

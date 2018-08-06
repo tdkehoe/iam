@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -40,6 +40,12 @@ Fahren Sie danach mit der Einrichtung Ihrer Gruppe fort, indem Sie Benutzer oder
 Sie können eine Gruppe löschen, indem Sie die Option **Gruppe entfernen** auswählen. Beim Entfernen einer Gruppe aus dem Konto entfernen Sie alle Benutzer und Service-IDs aus der Gruppe sowie den gesamten der Gruppe zugewiesenen Zugriff.
 {: tip}
 
+Wenn Sie eine Zugriffsgruppe über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) verwenden.
+```
+ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
+```
+{: codeblock}
+
 
 ## Zugriff auf eine Gruppe zuweisen
 
@@ -50,3 +56,9 @@ Nachdem Sie Ihre Gruppe mit Benutzern und Service-IDs eingerichtet haben, könne
 3. Klicken Sie auf die Registerkarte **Zugriffsrichtlinien**.
 4. Klicken Sie auf **Zugriff zuweisen**. 
 5. Wählen Sie die Zuweisung von Zugriff nach Ressourcen in einer Ressourcengruppe oder nach einzelnen im Konto verfügbaren Ressourcen aus.
+
+Wenn Sie eine Zugriffsgruppenrichtlinie über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) verwenden.
+```
+ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}

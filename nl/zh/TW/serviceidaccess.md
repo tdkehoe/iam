@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -60,6 +60,12 @@ lastupdated: "2018-05-02"
 3. 識別您要編輯的原則列，然後從**動作**功能表中選取**編輯原則**。
 4. 進行變更，然後儲存原則。
 
+若要使用 CLI 更新服務原則，您可以使用 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_update) 指令。
+```
+ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
+```
+{: codeblock}
+
 ## 移除存取權
 
 若要移除現有原則，請執行下列動作
@@ -68,3 +74,9 @@ lastupdated: "2018-05-02"
 2. 從表格中，選取您要刪除服務原則的服務 ID。
 3. 識別您要刪除的原則列，然後從**動作**功能表中選取**移除**。
 4. 檢閱您即將移除之原則的詳細資料，然後按一下**移除**進行確認。
+
+若要使用 CLI 刪除服務原則，您可以使用 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) 指令。
+```
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}

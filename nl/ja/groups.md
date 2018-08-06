@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -40,6 +40,12 @@ lastupdated: "2018-03-30"
 **「グループの削除 (Remove group)」**オプションを選択してグループを削除することができます。 グループをアカウントから削除すると、すべてのユーザーとサービス ID がグループから削除され、グループに割り当てられたすべてのアクセス権限が削除されます。
 {: tip}
 
+CLI を使用してアクセス・グループを作成するには、[ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) コマンドを使用します。
+```
+ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
+```
+{: codeblock}
+
 
 ## グループへのアクセス権限の割り当て
 
@@ -50,3 +56,9 @@ lastupdated: "2018-03-30"
 3. **「アクセス・ポリシー」**タブをクリックします。
 4. **「アクセス権限の割り当て (Assign access)」**をクリックします。 
 5. リソース・グループ内のリソース別にアクセスを割り当てるのか、アカウント内で使用可能な個々のリソース別にアクセス権限を割り当てるのかを選択します。
+
+CLI を使用してアクセス・グループ・ポリシーを作成するには、[ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) コマンドを使用します。
+```
+ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}

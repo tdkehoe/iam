@@ -15,7 +15,7 @@ lastupdated: "2018-06-06"
 # ユーザーの API キーの管理
 {: #userapikey}
 
-フェデレーテッド・ユーザーまたは非フェデレーテッド・ユーザーは、API キーを作成し、CLI で使用したり、ID としてログインするための自動化の一部として使用したりすることができます。 キーのリスト、キーの作成、キーの更新、またはキーの削除を行うことにより、UI または CLI を使用して API キーを管理できます。 ユーザー ID に関連付けられた {{site.data.keyword.Bluemix_notm}} API キーを管理するには、**「管理」** &gt; **「セキュリティー」** &gt; **「プラットフォーム API キー」**に移動して、説明および日付と共に API キーのリストを表示します。 次に、API キーを作成、編集、または削除できます。 そして、使用可能な CLI コマンドの全リストについては、[`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam) を参照してください。
+フェデレーテッド・ユーザーまたは非フェデレーテッド・ユーザーは、API キーを作成し、CLI で使用したり、ID としてログインするための自動化の一部として使用したりすることができます。 キーのリスト、キーの作成、キーの更新、またはキーの削除を行うことにより、UI または CLI を使用して API キーを管理できます。 ユーザー ID に関連付けられた {{site.data.keyword.Bluemix_notm}} API キーを管理するには、**「管理」** &gt; **「セキュリティー」** &gt; **「プラットフォーム API キー」**に移動して、説明および日付と共に API キーのリストを表示します。 次に、API キーを作成、編集、または削除できます。 そして、使用可能な CLI コマンドの全リストについては、[`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_keys) を参照してください。
 
 [フェデレーテッド・ユーザー](/docs/account/adminpublic.html#federatedid)の場合、`BLUEMIX_API_KEY` 環境変数を使用することにより、API キーを使用してログインできます。 ログインのための API キーの使用について詳しくは、[フェデレーテッド ID を使用したログイン](/docs/cli/login_federated_id.html#federated_id)を参照してください。
 

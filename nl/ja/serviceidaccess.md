@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -59,6 +59,12 @@ lastupdated: "2018-05-02"
 3. 編集するポリシーの行を識別し、**「アクション」**メニューから**「ポリシーの編集」**を選択します。
 4. 変更を行い、ポリシーを保存します。
 
+CLI を使用してサービス・ポリシーを更新するには、[ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_update) コマンドを使用します。
+```
+ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
+```
+{: codeblock}
+
 ## アクセス権限の削除
 
 既存のポリシーを削除するには、以下のようにします。
@@ -67,3 +73,9 @@ lastupdated: "2018-05-02"
 2. サービス・ポリシーを削除するサービス ID を表から選択します。
 3. 削除するポリシーの行を識別し、**「アクション」**メニューから**「削除」**を選択します。
 4. 削除しようとしているポリシーの詳細を検討し、確認のために**「削除」**をクリックします。
+
+CLI を使用してサービス・ポリシーを削除するには、[ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) コマンドを使用します。
+```
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}

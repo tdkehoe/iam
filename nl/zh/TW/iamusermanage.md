@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2018-05-14"
 
 **附註**：只有帳戶擁有者可以從帳戶移除使用者。
 
-如需用來管理帳戶、組織及空間的 CLI 指令的詳細資料，請參閱[用來管理帳戶、組織及角色的指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)。
+如需用來管理帳戶、組織及空間的 CLI 指令的詳細資料，請參閱[用來管理帳戶、組織及角色的指令](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles)。
 {: tip}
 
 您也可以建立存取群組來組織一組使用者和服務 ID，以便使得一次指派多個使用者的存取權成為快速而輕鬆的處理程序：
@@ -37,3 +37,4 @@ lastupdated: "2018-05-14"
 2. 按一下**建立存取群組**。
 3. 輸入群組的名稱和說明，然後按一下**建立**。
 4. 建立群組之後，請按一下群組名稱，藉由新增使用者及指派群組的存取權來開始。
+

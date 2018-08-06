@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -59,6 +59,12 @@ Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu bearbeiten:
 3. Ermitteln Sie die Zeile der Richtlinie, die bearbeitet werden soll, und wählen Sie dann die Option **Richtlinie bearbeiten** im Menü **Aktionen** aus.
 4. Nehmen Sie die gewünschten Änderungen vor und speichern Sie dann die Richtlinie.
 
+Wenn Sie eine Servicerichtlinie über die Befehlszeilenschnittstelle aktualisieren möchten, können Sie den Befehl [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_update) verwenden.
+```
+ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
+```
+{: codeblock}
+
 ## Zugriffsberechtigungen entfernen
 
 Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu entfernen:
@@ -67,3 +73,9 @@ Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu entfernen:
 2. Wählen Sie die Service-ID, für die eine Servicerichtlinie gelöscht werden soll, in der Tabelle aus.
 3. Ermitteln Sie die Zeile der Richtlinie, die gelöscht werden soll, und wählen Sie dann die Option **Entfernen** im Menü **Aktionen** aus.
 4. Überprüfen Sie die Details zur Richtlinie, die entfernt werden soll, und klicken Sie dann auf **Entfernen**, um die Ausführung der Aktion zu bestätigen.
+
+Wenn Sie eine Servicerichtlinie über die Befehlszeilenschnittstelle löschen möchten, können Sie den Befehl [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) verwenden.
+```
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
