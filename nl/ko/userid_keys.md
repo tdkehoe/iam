@@ -38,7 +38,7 @@ CLI를 사용하여 API 키를 작성하려면 다음 명령을 사용하십시�
 1. 명령 프롬프트에 `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]`을 입력하고 이름, 설명 및 키를 저장하기 위한 파일을 지정하십시오. 다음 예를 참조하십시오.
 
 ```
-ibmcloud iam api-key-create MyKey -d "this is my API key" --f key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
 ``` 
 
 
