@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -38,7 +38,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
   ``` 
   ibmcloud login --sso
   Endpoint API: https://api.ng.bluemix.net
-
+      
   Codice monouso (Ottienine uno in  https://iam.ng.bluemix.net/oidc/passcode)> 
   Autenticazione in corso...
   OK
@@ -53,7 +53,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
   ```
   cf login --sso
   Endpoint API: https://api.ng.bluemix.net
-
+      
   Codice monouso (Ottienine uno in https://login.ng.bluemix.net/UAALoginServerWAR/passcode)>
   Autenticazione in corso...
   OK
@@ -65,11 +65,11 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 
 La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API Softlayer o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
-1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
+1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
 
    ```
    ibmcloud iam api-key-create NOME [-d DESCRIZIONE] [-f, --file FILE]
-
+  
    ```
 
 2. Accedi con la chiave API. 

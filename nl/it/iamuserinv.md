@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -21,7 +21,7 @@ Per invitare gli utenti e gestire gli inviti in sospeso, devi essere un propriet
 
 ## Invito di utenti
 
-Per invitare gli utenti o per gestire gli inviti utente nel tuo account, completa la seguente procedura:
+Per invitare gli utenti o per gestire gli inviti utente nel tuo account, completa la seguente procedura: 
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona quindi **Utenti**. La pagina Utenti visualizza un elenco di utenti con i rispettivi indirizzi e-mail e lo stato per l'account attualmente selezionato.
 2. Fai clic su **Invita utenti**.
@@ -30,7 +30,7 @@ Per invitare gli utenti o per gestire gli inviti utente nel tuo account, complet
 
 Se determini che un utente non ha bisogno dell'accesso, puoi annullare un invito per tutti gli utenti visualizzati in uno stato **Elaborazione** o **In sospeso** nella colonna **Stato**. Se un utente invitato non riceve un invito, puoi reinviare l'invito a tutti gli utenti nello stato **In sospeso**.
 
-Se vuoi invitare gli utenti utilizzando la CLI, vedi il comando [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
+Se vuoi invitare gli utenti utilizzando la CLI, vedi il comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Assegnazione dell'accesso utente
@@ -52,7 +52,7 @@ Puoi assegnare l'accesso a tutti i servizi all'interno di un gruppo di risorse o
 2. Seleziona l'opzione per assegnare l'accesso alle risorse in un **Gruppo di risorse**.
 3. Scegli un gruppo di risorse.
 4. Scegli un ruolo per il campo **Assegna accesso a un gruppo di risorse** per consentire all'utente di visualizzare il gruppo di risorse sul dashboard, modificare il nome del gruppo di risorse o gestire l'accesso dell'utente al gruppo. Puoi selezionare **Nessun accesso** se vuoi che l'utente abbia accesso solo alla risorsa da te specificata e non al gruppo in cui è organizzata.
-5. Seleziona un servizio nel gruppo di risorse o scegli di fornire l'accesso a tutti i servizi all'interno del gruppo selezionato.
+5. Seleziona un servizio nel gruppo di risorse o scegli di fornire l'accesso a tutti i servizi all'interno del gruppo selezionato. 
 6. Seleziona qualsiasi combinazione di ruoli per assegnare l'accesso desiderato. Questo accesso si applica solo alle risorse che hai selezionato per la politica. Non dà accesso al contenitore reale che è il gruppo di risorse.
 
 
@@ -63,9 +63,9 @@ Puoi assegnare l'accesso a una singola risorsa all'interno del tuo account a sec
 1. Dalla schermata **Invita utenti**, espandi la sezione **Servizi**.
 2. Seleziona l'opzione per assegnare l'accesso a una **Risorsa**.
 3. Seleziona un servizio.
-4. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto.
+4. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto. 
 5. Seleziona **Tutte le istanze del servizio correnti** o una specifica istanza del servizio.
-6. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket.
+6. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket. 
     * **Tipo di risorsa**: immetti **bucket**.
     * **ID risorsa**: immetti il nome del tuo bucket.
 7. Seleziona qualsiasi combinazione di ruoli per assegnare l'accesso desiderato.
@@ -87,7 +87,7 @@ Quando inviti un nuovo utente, puoi scegliere di aggiungerlo a un'organizzazione
 
 Per ulteriori informazioni, vedi [Ruoli Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
 
-Puoi aggiungere un ruolo Cloud Foundry utilizzando il comando della CLI [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite), ma per assegnare un altro accesso o altre autorizzazioni è necessario utilizzare l'interfaccia utente.
+Puoi aggiungere un ruolo Cloud Foundry utilizzando il comando della CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite), ma per assegnare un altro accesso o altre autorizzazioni è necessario utilizzare l'interfaccia utente.
 {: tip}
 
 ### Accesso all'infrastruttura {{site.data.keyword.BluSoftlayer_notm}}
@@ -109,7 +109,7 @@ Come proprietario dell'account di un account collegato, puoi aggiungere un utent
 1. Fai clic sull'icona Menu ![Icona Menu](../icons/icon_hamburger.svg) e seleziona **Infrastruttura**.
 2. Vai a **Account** &gt; **Utenti**.
 3. Fai clic su **Aggiungi utente solo VPN**.
-4. Immetti i dettagli delle informazioni personali per l'utente.
+4. Immetti i dettagli delle informazioni personali per l'utente. 
 5. Fai clic su **Aggiungi utente**.
 6. Imposta le autorizzazioni del portale per l'utente.
 7. Fai clic su **Aggiungi autorizzazioni portale** per salvare le autorizzazioni.

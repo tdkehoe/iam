@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -27,10 +27,19 @@ Per gestire l'accesso o assegnare un nuovo accesso per gli utenti, devi essere i
 4. Modifica la politica.
 5. Fai clic su **Salva**.
 
+Per aggiornare una politica utente utilizzando la CLI, puoi utilizzare il comando [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
+```
+ibmcloud iam user-policy-update NOME_UTENTE ID_POLITICA [-v, --version VERSIONE] {-f, --file FILE_JSON | [--roles NOME_RUOLO1,NOME_RUOLO2...] [--service-name NOME_SERVIZIO] [--service-instance ISTANZA_SERVIZIO] [--region REGIONE] [--resource-type TIPO_RISORSA] [--resource RISORSA] [--resource-group-name NOME_GRUPPO_RISORSE] [--resource-group-id ID_GRUPPO_RISORSE]}
+```
+{: codeblock}
+
 ## Assegnazione del nuovo accesso
 {: #assignaccess}
 
-### Accesso alle risorse all'interno di un gruppo di risorse
+Per consentire a un utente di accedere a tutte le risorse dell'account con la possibilità di gestire l'accesso degli utenti, creare gruppi di risorse e completare tutte le altre attività di gestione IAM, seleziona l'opzione **Tutti i sevizi abilitati per l'accesso e l'identità** per questa politica con il ruolo **Amministratore** assegnato.
+{: tip}
+
+### Accesso alle risorse all'interno di un gruppo di risorse 
 
 Per assegnare l'accesso a tutte le risorse in un gruppo di risorse o a un solo servizio all'interno di un gruppo di risorse, completa la seguente procedura:
 
@@ -46,22 +55,19 @@ Per assegnare l'accesso a tutte le risorse in un gruppo di risorse o a un solo s
 ### Accesso alle risorse
 {: #resourceaccess}
 
-Per assegnare l'accesso a una singola risorsa o a tutte le risorse nell'account, completa la seguente procedura:
+Per assegnare l'accesso a una singola risorsa o a tutte le risorse nell'account, completa la seguente procedura: 
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**.
 2. Dalla riga per l'utente a cui desideri assegnare l'accesso, seleziona il menu **Azioni** e fai quindi clic su **Assegna accesso**.
 3. Seleziona **Assegna l'accesso alle risorse**.
 4. Seleziona un servizio o seleziona **Tutti i servizi abilitati per l'accesso e l'identità**.
-5. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto.
+5. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto. 
 6. Seleziona **Tutte le istanze del servizio correnti** o una specifica istanza del servizio.
-7. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket.
+7. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket. 
     * **Tipo di risorsa**: immetti **bucket**.
     * **ID risorsa**: immetti il nome del tuo bucket.
 8. Scegli qualsiasi combinazione di ruoli per assegnare l'accesso desiderato per l'utente.
 9. Fai clic su **Assegna**.
-
-Per consentire a un utente di accedere a tutte le risorse dell'account con la possibilità di gestire l'accesso degli utenti, creare gruppi di risorse e completare tutte le altre attività di gestione IAM, seleziona l'opzione **Tutti i sevizi abilitati per l'accesso e l'identità** per questa politica con il ruolo **Amministratore** assegnato.
-{: tip}
 
 
 ## Rimozione dell'accesso
@@ -70,6 +76,12 @@ Per consentire a un utente di accedere a tutte le risorse dell'account con la po
 2. Seleziona il nome dell'utente per il quale vuoi rimuovere l'accesso.
 3. Dalla riga per la politica che vuoi rimuovere, seleziona il menu **Azioni** e fai quindi clic su **Rimuovi**.
 4. Riesamina i dettagli della politica utente che stai per rimuovere e quindi conferma facendo clic su **Rimuovi**.
+
+Per rimuovere una politica utente utilizzando la CLI, puoi utilizzare il comando [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete).
+```
+ibmcloud iam user-policy-delete ID_UTENTE ID_POLITICA [-f, --force]
+```
+{: codeblock}
 
 ## Controllo del tuo accesso assegnato
 

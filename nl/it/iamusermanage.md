@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ Per gestire gli utenti nel tuo account, completa la seguente procedura per acced
 
 **Nota**: solo i proprietari dell'account possono rimuovere gli utenti dall'account.
 
-Per informazioni dettagliate sui comandi CLI utilizzati per gestire account, organizzazioni e spazi, vedi [Comandi per gestire account, organizzazioni e ruoli](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Per informazioni dettagliate sui comandi CLI utilizzati per gestire account, organizzazioni e spazi, vedi [Comandi per gestire account, organizzazioni e ruoli](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles).
 {: tip}
 
 Puoi anche creare gruppi di accesso per organizzare una serie di utenti e ID del servizio per rendere l'assegnazione dell'accesso a più di un utente alla volta un processo più facile e veloce:
@@ -37,3 +37,4 @@ Puoi anche creare gruppi di accesso per organizzare una serie di utenti e ID del
 2. Fai clic su **Crea un gruppo di accesso**.
 3. Immetti un nome e una descrizione per il gruppo e fai clic su **Crea**.
 4. Dopo aver creato il tuo gruppo, fai clic sul suo nome per iniziare ad aggiungere gli utenti e ad assegnare l'accesso al gruppo.
+

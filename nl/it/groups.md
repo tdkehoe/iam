@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -40,6 +40,12 @@ Successivamente, continua a configurare il tuo gruppo aggiungendo utenti o ID de
 Puoi eliminare un gruppo selezionando l'opzione **Rimuovi gruppo**. Quando rimuovi un gruppo dall'account, stai rimuovendo tutti gli utenti e gli ID del servizio dal gruppo e tutto l'accesso assegnato al gruppo.
 {: tip}
 
+Per creare un gruppo di accesso utilizzando la CLI, puoi utilizzare il comando [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create).
+```
+ibmcloud iam access-group-create NOME_GRUPPO [-d, --description DESCRIZIONE]
+```
+{: codeblock}
+
 
 ## Assegnazione dell'accesso a un gruppo
 
@@ -50,3 +56,9 @@ Dopo aver configurato il tuo gruppo con gli utenti e gli ID del servizio, puoi a
 3. Fai clic sulla scheda **Politiche di accesso**.
 4. Fai clic su **Assegna accesso**. 
 5. Scegli di assegnare l'accesso alle risorse all'interno di un gruppo di risorse o alle risorse individuali disponibili nell'account.
+
+Per creare una politica del gruppo di accesso utilizzando la CLI, puoi utilizzare il comando [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create).
+```
+ibmcloud iam access-group-policy-create NOME_GRUPPO {-f, --file @FILE_JSON | --roles NOME_RUOLO1,NOME_RUOLO2... [--service-name NOME_SERVIZIO] [--service-instance ISTANZA_SERVIZIO] [--region REGIONE] [--resource-type TIPO_RISORSA] [--resource RISORSA] [--resource-group-name NOME_GRUPPO_RISORSE] [--resource-group-id ID_GRUPPO_RISORSE]}
+```
+{: codeblock}
