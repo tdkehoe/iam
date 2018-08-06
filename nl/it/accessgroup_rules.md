@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -15,9 +15,8 @@ lastupdated: "2018-08-02"
 {:tip: .tip}
 
 # Creazione di regole dinamiche per i gruppi di accesso
-{: #rules}
 
-Puoi creare delle regole dinamiche per aggiungere automaticamente gli utenti federati ai gruppi di accesso in base a specifici attributi di identità. Quando i tuoi utenti eseguono l'accesso con un ID federato, i dati dal provider di identità associano dinamicamente i tuoi utenti a un gruppo di accesso in base alle regole da te impostate.
+Puoi creare delle regole dinamiche per aggiungere automaticamente gli utenti federati ai gruppi di accesso in base a specifici attributi di identità. Quando i tuoi utenti eseguono l'accesso con un ID federato, i dati dal provider di identità associano dinamicamente i tuoi utenti a un gruppo di accesso in base alle regole da te impostate. 
 
 Gli utenti dispongono già di informazioni di identità specifiche all'interno del dominio della tua azienda e, quando accedono con un ID federato, questi dati possono essere passati utilizzando le asserzioni SAML. Le asserzioni SAML o le istruzioni di attributo configurate all'interno del provider di identità forniscono i dati utilizzati per creare ciascuna regola. Ad esempio, ci potrebbe essere un'istruzione di attributo true o false che definisce gli utenti come gestori. Queste informazioni possono essere utilizzate per aggiungere tutti gli utenti che sono gestori a un gruppo di accesso specifico per i gestori da te creato nel tuo account {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi la [Regola di esempio](accessgroup_rules.html#example).
 
@@ -63,6 +62,6 @@ Il seguente esempio include i valori per ciascuno dei campi nella pagina **Aggiu
 | Provider di identità | `https://idp.example.org/SAML2` |
 | Scadenza (in ore) | 12 |
 | Aggiungi utenti quando (nome attributo) | isManager |
-| Criteri di controllo | Uguale  |
+| Criteri di controllo | Uguale |
 | Valore |  true |
 {: caption="Tabella 1. Regola dinamica di esempio per i gruppi di accesso" caption-side="top"}

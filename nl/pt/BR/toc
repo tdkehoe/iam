@@ -29,6 +29,7 @@ Gerenciando a identidade e o acesso
     Gerenciando usuários e acesso
         iamusermanage.md
         groups.md
+        accessgroup_rules.md
         mngiam.md
         mngcf.md
         mnginfra.md
@@ -49,5 +50,5 @@ Gerenciando a identidade e o acesso
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    iam_limits.md
+    iam_limits.md monitoring.md
     {: .navgroup-end}
