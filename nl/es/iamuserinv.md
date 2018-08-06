@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -21,7 +21,7 @@ Para invitar a usuarios y gestionar invitaciones pendientes, debe ser propietari
 
 ## Invitación a usuarios
 
-Complete los siguientes pasos para invitar a usuarios o para gestionar invitaciones de usuario en su cuenta:
+Complete los siguientes pasos para invitar a usuarios o para gestionar invitaciones de usuario en su cuenta: 
 
 1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego pulse **Usuarios**. La página Usuarios muestra una lista de los usuarios con sus direcciones de correo electrónico y el estado de las cuentas actualmente seleccionadas.
 2. Pulse **Invitar usuarios**.
@@ -30,7 +30,7 @@ Complete los siguientes pasos para invitar a usuarios o para gestionar invitacio
 
 Si determina que un usuario no necesita acceso, puede cancelar una invitación para cualquier usuario que se muestre en estado **Procesando** o **Pendiente** en la columna **Estado**. Si un usuario invitado no ha recibido una invitación, puede volver a enviar la invitación a cualquier usuario en estado **Pendiente**.
 
-Si desea invitar a usuarios utilizando la interfaz de línea de mandatos, consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
+Si desea invitar a usuarios utilizando la interfaz de línea de mandatos, consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Asignación de acceso de usuario
@@ -52,7 +52,7 @@ Puede asignar acceso a todos los servicios dentro de un grupo de recursos o a un
 2. Seleccione para asignar acceso a recursos en un **Grupo de recursos**.
 3. Elija un grupo de recursos.
 4. Elija un rol para el campo **Asignar acceso a un grupo de recursos** para permitir al usuario ver el grupo de recursos en el panel de control, editar el nombre del grupo de recursos o gestionar el acceso de usuario al grupo. Puede seleccionar **Sin acceso** si desea que el usuario solo tenga acceso al recurso que especifique y no al grupo en el que está organizado.
-5. Seleccione un servicio dentro del grupo de recursos o seleccione proporcionar acceso a todos los servicios dentro del grupo seleccionado.
+5. Seleccione un servicio dentro del grupo de recursos o seleccione proporcionar acceso a todos los servicios dentro del grupo seleccionado. 
 6. Seleccione cualquier combinación de roles para asignar el acceso deseado. Este acceso solo se aplica a los recursos que ha seleccionado para la política. No proporciona acceso al contenedor actual que es el grupo de recursos.
 
 
@@ -63,9 +63,9 @@ Puede asignar acceso a un único recurso dentro de su cuenta en la instancia.
 1. Desde la pantalla **Invitar usuarios**, expanda la sección **Servicios**.
 2. Seleccione para asignar acceso a un **Recurso**.
 3. Seleccione un servicio.
-4. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita.
+4. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
 5. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
-6. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo.
+6. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
     * **Tipo de recurso**: indique **grupo**.
     * **ID de recurso**: Especifique el nombre de su grupo.
 7. Seleccione cualquier combinación de roles para asignar el acceso deseado.
@@ -87,7 +87,7 @@ Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en 
 
 Consulte [Roles de Cloud Foundry](/docs/iam/cfaccess.html#cfroles) para obtener más información sobre los roles.
 
-Es posible añadir un rol de Cloud Foundry utilizando el mandato de interfaz de línea de mandatos [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite), sin embargo, se debe utilizar la interfaz de usuario para asignar otros permisos o accesos.
+Es posible añadir un rol de Cloud Foundry utilizando el mandato de interfaz de línea de mandatos [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite), sin embargo, se debe utilizar la interfaz de usuario para asignar otros permisos o accesos.
 {: tip}
 
 ### Acceso de infraestructura de {{site.data.keyword.BluSoftlayer_notm}}
@@ -109,7 +109,7 @@ Como propietario de la cuenta de una cuenta enlazada, puede añadir un usuario d
 1. Pulse el icono de Menú ![Icono de menú](../icons/icon_hamburger.svg) y seleccione **Infraestructura**.
 2. Vaya a **Cuenta** &gt; **Usuarios**.
 3. Pulse **Añadir usuario solo VPN**.
-4. Especifique los detalles de la información personal del usuario.
+4. Especifique los detalles de la información personal del usuario. 
 5. Pulse **Añadir usuario**.
 6. Establezca permisos de portal para el usuario.
 7. Pulse **Añadir permisos del portal** para guardar los permisos.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-07-11"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,6 +15,7 @@ lastupdated: "2018-07-11"
 {:tip: .tip}
 
 # Creación de reglas dinámicas para grupos de acceso
+{: #rules}
 
 Puede crear reglas dinámicas para añadir de forma automática usuarios federados a grupos de acceso en función de determinados atributos de identidad. Cuando los usuarios inician una sesión con un ID federado, los datos del proveedor de identidades correlacionan dinámicamente los usuarios con un grupo de acceso en función de las reglas.
 

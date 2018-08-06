@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ Para gestionar los usuarios de su cuenta, complete los pasos siguientes para acc
 
 **Nota**: Solo los propietarios de una cuenta pueden eliminar usuario de la cuenta.
 
-Para obtener más información sobre los mandatos de la interfaz de línea de mandatos que se utilizan para gestionar cuentas, organizaciones y espacios, consulte [Mandatos para la gestión de cuentas, organizaciones y roles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Para obtener más información sobre los mandatos de la interfaz de línea de mandatos que se utilizan para gestionar cuentas, organizaciones y espacios, consulte [Mandatos para la gestión de cuentas, organizaciones y roles](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles).
 {: tip}
 
 También puede crear grupos de acceso para organizar un conjunto de usuarios e ID de servicio y hacer que el proceso de asignación de acceso a más de un usuario a la vez sea más rápido y sencillo:
@@ -37,3 +37,4 @@ También puede crear grupos de acceso para organizar un conjunto de usuarios e I
 2. Pulse **Crear grupo de acceso**.
 3. Especifique un nombre y una descripción para el grupo y pulse **Crear**.
 4. Cuando se haya creado el grupo, pulse en el nombre del grupo para empezar a añadir usuarios y asignar acceso al grupo.
+
