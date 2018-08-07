@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -25,7 +25,7 @@ lastupdated: "2018-03-30"
 
 액세스 그룹을 작성하려면 다음 단계를 완료하십시오.
 
-1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후에 **액세스 그룹**을 선택하십시오.
+1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후 **액세스 그룹**을 선택하십시오.
 2. **작성**을 클릭하십시오.
 3. 그룹에 대한 선택적 설명 및 이름을 입력하고 **작성**을 클릭하십시오.
 
@@ -40,13 +40,25 @@ lastupdated: "2018-03-30"
 **그룹 제거** 옵션을 선택하여 그룹을 삭제할 수 있습니다. 계정에서 그룹을 제거하면 그룹 및 그룹에 지정된 모든 액세스에서 사용자와 서비스 ID가 모두 제거됩니다.
 {: tip}
 
+CLI를 사용하여 액세스 그룹을 작성하기 위해 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
+```
+{: codeblock}
+
 
 ## 그룹에 액세스 지정
 
 사용자 및 서비스 ID로 그룹을 설정한 후 그룹에 공통 액세스 정책을 지정할 수 있습니다. 그룹에 설정한 정책은 그룹 내 모든 엔티티에 적용됩니다.
 
-1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후에 **액세스 그룹**을 선택하십시오.
+1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후 **액세스 그룹**을 선택하십시오.
 2. 액세스를 지정할 그룹의 이름을 선택하십시오. 
 3. **액세스 정책** 탭을 클릭하십시오.
 4. **액세스 지정**을 클릭하십시오. 
 5. 리소스 그룹 내 리소스 또는 계정 내에서 사용 가능한 개별 리소스로 액세스를 지정하도록 선택하십시오.
+
+CLI를 사용하여 액세스 그룹 정책을 작성하기 위해 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}

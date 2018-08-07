@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -59,6 +59,12 @@ lastupdated: "2018-05-02"
 3. 편집할 정책의 행을 식별하고 **조치** 메뉴에서 **정책 편집**을 선택하십시오.
 4. 변경사항을 작성한 다음 정책을 저장하십시오.
 
+CLI를 사용하여 서비스 정책을 업데이트하기 위해 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_update) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
+```
+{: codeblock}
+
 ## 액세스 제거
 
 기존 정책을 제거하려면 다음을 수행하십시오.
@@ -67,3 +73,9 @@ lastupdated: "2018-05-02"
 2. 테이블에서 서비스 정책을 삭제할 서비스 ID를 선택하십시오.
 3. 삭제할 정책의 행을 식별하고 **조치** 메뉴에서 **제거**를 선택하십시오.
 4. 제거할 정책의 세부사항을 검토한 후에 **제거**를 클릭하여 확인하십시오.
+
+CLI를 사용하여 서비스 정책을 삭제하기 위해 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}

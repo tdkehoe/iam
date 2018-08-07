@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2018-05-14"
 
 **注**：只有帐户所有者才能从帐户中除去用户。
 
-有关用于管理帐户、组织和空间的 CLI 命令的详细信息，请参阅[用于管理帐户、组织和角色的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg)。
+有关用于管理帐户、组织和空间的 CLI 命令的详细信息，请参阅[用于管理帐户、组织和角色的命令](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles)。
 {: tip}
 
 您还可以创建访问组来组织一组用户和服务标识，以便快速、轻松地一次为多个用户分配访问权：
@@ -37,3 +37,4 @@ lastupdated: "2018-05-14"
 2. 单击**创建访问组**。
 3. 输入组的名称和描述，然后单击**创建**。
 4. 创建组后，单击该组的名称以开始添加用户并为该组分配访问权。
+

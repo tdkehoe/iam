@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -27,10 +27,19 @@ lastupdated: "2017-11-16"
 4. 정책을 편집하십시오.
 5. **저장**을 클릭하십시오.
 
+CLI를 사용하여 사용자 정책을 업데이트하기 위해 [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
+
 ## 새 액세스 지정
 {: #assignaccess}
 
-### 리소스 그룹 내의 리소스에 액세스
+사용자 액세스 관리, 리소스 그룹 작성 및 기타 모든 IAM 관리 태스크 완료 기능과 함께 모든 계정 리소스에 대한 사용자 액세스를 사용하려면 **관리자** 역할이 지정된 이 정책에 대해 **모든 ID 및 액세스 사용 서비스** 옵션을 선택하십시오.
+{: tip}
+
+### 리소스 그룹 내의 리소스에 액세스 
 
 리소스 그룹의 모든 리소스에 대해 또는 리소스 그룹 내의 하나의 서비스에 대해서만 액세스를 지정하려면 다음 단계를 완료하십시오.
 
@@ -46,22 +55,19 @@ lastupdated: "2017-11-16"
 ### 리소스에 액세스
 {: #resourceaccess}
 
-계정의 개별 리소스에 대한 액세스 또는 계정의 모든 리소스에 대한 액세스를 지정하려면 다음 단계를 완료하십시오.
+계정의 개별 리소스에 대한 액세스 또는 계정의 모든 리소스에 대한 액세스를 지정하려면 다음 단계를 완료하십시오. 
 
 1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후에 **사용자**를 선택하십시오.
 2. 액세스를 지정할 사용자에 대한 행에서 **조치** 메뉴를 선택한 후에 **액세스 지정**을 클릭하십시오.
 3. **리소스에 대한 액세스 지정**을 선택하십시오.
 4. 서비스를 선택하거나 **모든 ID 및 액세스 사용 서비스**를 선택하십시오.
-5. 프롬프트되는 경우 **모든 현재 지역** 또는 특정 지역을 선택하십시오.
+5. 프롬프트되는 경우 **모든 현재 지역** 또는 특정 지역을 선택하십시오. 
 6. **모든 현재 서비스 인스턴스**를 선택하거나 특정 서비스 인스턴스를 선택하십시오.
-7. 선택한 서비스에 따라 다음 필드를 볼 수 있습니다. 이러한 필드에 값을 입력하지 않으면 버킷 레벨 대신 서비스 인스턴스 레벨에서 정책이 지정됩니다.
+7. 선택한 서비스에 따라 다음 필드를 볼 수 있습니다. 이러한 필드에 값을 입력하지 않으면 버킷 레벨 대신 서비스 인스턴스 레벨에서 정책이 지정됩니다. 
     * **리소스 유형**: **버킷**을 입력하십시오.
     * **리소스 ID**: 버킷의 이름을 입력하십시오.
 8. 사용자에 대해 원하는 액세스를 지정하기 위한 역할의 임의의 조합을 선택하십시오.
 9. **지정**을 클릭하십시오.
-
-사용자 액세스 관리, 리소스 그룹 작성 및 기타 모든 IAM 관리 태스크 완료 기능과 함께 모든 계정 리소스에 대한 사용자 액세스를 사용하려면 **관리자** 역할이 지정된 이 정책에 대해 **모든 ID 및 액세스 사용 서비스** 옵션을 선택하십시오.
-{: tip}
 
 
 ## 액세스 제거
@@ -70,6 +76,12 @@ lastupdated: "2017-11-16"
 2. 해당 액세스를 제거할 사용자 이름을 선택하십시오.
 3. 제거할 정책에 대한 행에서 **조치** 메뉴를 선택한 후에 **제거**를 클릭하십시오.
 4. 제거할 사용자 정책 세부사항을 검토한 후에 **제거**를 클릭하여 확인하십시오.
+
+CLI를 사용하여 사용자 정책을 제거하기 위해 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 ## 지정된 액세스 검토
 

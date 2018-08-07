@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-01"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -11,13 +11,15 @@ lastupdated: "2018-06-01"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+
 
 # 서비스 ID API 키 관리
 {: #serviceidapikeys}
 
 서비스 ID는 {{site.data.keyword.Bluemix_notm}} 내부 및 외부 모두에서 호스팅되는 애플리케이션에 의한 {{site.data.keyword.Bluemix_notm}} 서비스 액세스가 가능하도록 작성되었습니다. API 키는 애플리케이션에서 사용되어 특정 서비스 ID로 인증하며 해당 서비스 ID와 연관된 액세스를 부여받습니다.
 
-서비스 ID를 작성하면 API 키 작성 및 서비스 정책 지정을 시작할 수 있습니다. 각 정책은 API 키가 서비스 인증에 사용될 때 허용되는 액세스 레벨을 지정합니다. 서비스 ID 작성 및 정책 지정에 대한 자세한 정보는 [서비스 ID 작성 및 관리](/docs/iam/serviceid.html#serviceids)를 참조하십시오. 서비스 ID API 키 관리에 사용되는 CLI 명령에 대한 세부사항은 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오.
+서비스 ID를 작성하면 API 키 작성 및 서비스 정책 지정을 시작할 수 있습니다. 각 정책은 API 키가 서비스 인증에 사용될 때 허용되는 액세스 레벨을 지정합니다. 서비스 ID 작성 및 정책 지정에 대한 자세한 정보는 [서비스 ID 작성 및 관리](/docs/iam/serviceid.html#serviceids)를 참조하십시오. 서비스 ID API 키 관리에 사용되는 CLI 명령에 대한 세부사항은 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)을 참조하십시오.
 
 서비스 ID와 연관된 각 API 키는 서비스 ID에 지정된 정책을 상속합니다. 예를 들어, 하나의 애플리케이션이 서비스 내에서 리소스를 볼 수 있게 하려면 정책이 `Viewer` 역할에 지정된 서비스 ID와 연관된 API 키를 사용해야 합니다. 그리고 다른 애플리케이션이 서비스 내에서 전체 액세스 권한을 가질 수 있게 하려면 정책이 `Administrator` 역할에 지정된 두 번째 서비스 ID와 연관된 API 키를 사용해야 합니다.
 
@@ -35,7 +37,14 @@ lastupdated: "2018-06-01"
 6. **작성**을 클릭하십시오.
 7. 보안 위치에 복사하거나 다운로드하여 API 키를 저장하십시오.
 
-**참고**: 보안상 이유로 API 키는 작성 시에만 복사하거나 다운로드할 수 있습니다. API 키를 유실한 경우에는 새 API 키를 작성해야 합니다.
+보안상의 이유로 인해 API 키는 작성 시에만 복사 또는 다운로드에 사용 가능합니다. API 키를 유실한 경우에는 새 API 키를 작성해야 합니다.
+{: tip}
+
+CLI를 사용하여 서비스 ID에 대한 API 키를 작성하기 위해 [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTION] [--file FILE] [-f, --force]
+```
+{: codeblock}
 
 ## 서비스 ID의 API 키 업데이트
 
@@ -45,6 +54,12 @@ UI에서 키를 식별하는 데 사용되는 이름 또는 설명을 편집하�
 2. 서비스 ID가 아직 작성되지 않은 경우 서비스 ID를 작성하십시오.
 3. **조치** 메뉴에서 **서비스 ID 관리** 옵션으로 이동하십시오.
 4. API 키 섹션의 **조치** 메뉴에서 **이름 및 설명 편집** 옵션으로 이동하십시오.
+
+CLI를 사용하여 서비스 ID에 대한 API 키를 업데이트하기 위해 [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_update) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
+```
+{: codeblock}
 
 ## 서비스 ID API 키 잠금
 {: #lockkey}
@@ -107,3 +122,9 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 2. 서비스 ID가 아직 작성되지 않은 경우 서비스 ID를 작성하십시오.
 3. **조치** 메뉴에서 **서비스 ID 관리** 옵션으로 이동하십시오.
 4. API 키 섹션의 **조치** 메뉴에서 **키 삭제** 옵션으로 이동하십시오.
+
+CLI를 사용하여 서비스 ID에 대한 API 키를 삭제하기 위해 [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_delete) 명령을 사용할 수 있습니다. 
+```
+ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
+```
+{: codeblock}

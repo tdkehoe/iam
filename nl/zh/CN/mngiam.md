@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -27,10 +27,19 @@ lastupdated: "2017-11-16"
 4. 编辑策略。
 5. 单击**保存**。
 
+要使用 CLI 更新用户策略，可以使用 [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) 命令。
+```
+ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
+
 ## 分配新访问权
 {: #assignaccess}
 
-### 对资源组中资源的访问权
+要使用户具有对所有帐户资源的访问权，以便有能力管理用户访问权，创建资源组以及完成其他所有 IAM 管理任务，请为此策略选择**所有启用“身份和访问权”的服务**选项并分配**管理员**角色。
+{: tip}
+
+### 对资源组中资源的访问权 
 
 要分配对资源组中所有资源的访问权，或分配仅对资源组中一项服务的访问权，请完成以下步骤：
 
@@ -46,22 +55,19 @@ lastupdated: "2017-11-16"
 ### 对资源的访问权
 {: #resourceaccess}
 
-要分配对帐户中单个资源的访问权或对帐户中所有资源的访问权，请完成以下步骤：
+要分配对帐户中单个资源的访问权或对帐户中所有资源的访问权，请完成以下步骤： 
 
 1. 在菜单栏中，单击**管理** &gt; **安全性** &gt; **身份和访问权**，然后选择**用户**。
 2. 在要为其分配访问权的用户所在的行中，选择**操作**菜单，然后单击**分配访问权**。
 3. 选择**分配对资源的访问权**。
 4. 选择服务或选择**所有启用“身份和访问权”的服务**。
-5. 选择**所有当前区域**或特定区域（如果系统提示选择）。
+5. 选择**所有当前区域**或特定区域（如果系统提示选择）。 
 6. 选择**所有当前服务实例**或选择特定服务实例。
-7. 根据所选择的服务，可能会看到以下字段。如果您未输入这些字段的值，那么会在服务实例级别而非存储区级别来分配策略。
+7. 根据所选择的服务，可能会看到以下字段。如果您未输入这些字段的值，那么会在服务实例级别而非存储区级别来分配策略。 
     * **资源类型**：输入**存储区**。
     * **资源标识**：输入存储区的名称。
 8. 选择任意角色组合来为用户分配所需的访问权。
 9. 单击**分配**。
-
-要使用户具有对所有帐户资源的访问权，以便有能力管理用户访问权，创建资源组以及完成其他所有 IAM 管理任务，请为此策略选择**所有启用“身份和访问权”的服务**选项并分配**管理员**角色。
-{: tip}
 
 
 ## 除去访问权
@@ -70,6 +76,12 @@ lastupdated: "2017-11-16"
 2. 选择要除去其访问权的用户名。
 3. 从要除去的策略所在的行中，选择**操作**菜单，然后单击**除去**。
 4. 复查即将要除去的用户策略的详细信息，然后通过单击**除去**进行确认。
+
+要使用 CLI 除去用户策略，可以使用 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete) 命令。
+```
+ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 ## 复查分配的访问权
 

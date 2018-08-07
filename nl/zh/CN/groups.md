@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -40,6 +40,12 @@ lastupdated: "2018-03-30"
 可以通过选择**除去组**选项来删除组。从帐户中除去组时，将除去该组中的所有用户和服务标识以及分配给该组的所有访问权。
 {: tip}
 
+要使用 CLI 创建访问组，可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) 命令。
+```
+ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
+```
+{: codeblock}
+
 
 ## 为组分配访问权
 
@@ -50,3 +56,9 @@ lastupdated: "2018-03-30"
 3. 单击**访问策略**选项卡。
 4. 单击**分配访问权**。 
 5. 选择是按资源组中的资源还是按帐户中可用的单个资源分配访问权。
+
+要使用 CLI 创建访问组策略，可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) 命令。
+```
+ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}

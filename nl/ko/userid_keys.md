@@ -15,7 +15,7 @@ lastupdated: "2018-06-06"
 # 사용자 API 키 관리
 {: #userapikey}
 
-연합 또는 비연합 사용자는 CLI에서 또는 자동화의 일부로 사용하여 사용자 ID로 로그인하기 위해 API 키를 작성할 수 있습니다. UI 또는 CLI를 사용하여 키 나열, 키 작성, 키 업데이트 또는 키 삭제를 수행하여 API 키를 관리할 수 있습니다. 사용자 ID와 연관된 {{site.data.keyword.Bluemix_notm}} API 키를 관리하려면 **관리** &gt; **보안** &gt; **플랫폼 API 키**로 이동하여 설명 및 날짜와 함께 API 키의 목록을 보십시오. 그런 다음 API 키를 작성, 편집 또는 삭제할 수 있습니다. 또한 사용 가능한 CLI 명령의 전체 목록은 [`ibmcloud iam api-keys`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam)를 참조하십시오.
+연합 또는 비연합 사용자는 CLI에서 또는 자동화의 일부로 사용하여 사용자 ID로 로그인하기 위해 API 키를 작성할 수 있습니다. UI 또는 CLI를 사용하여 키 나열, 키 작성, 키 업데이트 또는 키 삭제를 수행하여 API 키를 관리할 수 있습니다. 사용자 ID와 연관된 {{site.data.keyword.Bluemix_notm}} API 키를 관리하려면 **관리** &gt; **보안** &gt; **플랫폼 API 키**로 이동하여 설명 및 날짜와 함께 API 키의 목록을 보십시오. 그런 다음 API 키를 작성, 편집 또는 삭제할 수 있습니다. 또한 사용 가능한 CLI 명령의 전체 목록은 [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_keys)를 참조하십시오.
 
 [연합 사용자](/docs/account/adminpublic.html#federatedid)로서, `BLUEMIX_API_KEY` 환경 변수를 사용하여 로그인하는 데 API 키를 사용할 수 있습니다. 로그인을 위한 API 키 사용에 대한 자세한 정보는 [연합 ID로 로그인](/docs/cli/login_federated_id.html#federated_id)을 참조하십시오.
 
