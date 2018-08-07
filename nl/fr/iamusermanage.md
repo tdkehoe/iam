@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -28,7 +28,7 @@ Dans le cadre de la gestion d'utilisateurs sur votre compte, effectuez les actio
 
 **Remarque** : seuls les propriétaires de compte peuvent retirer des utilisateurs du compte.
 
-Pour plus d'informations sur les commandes CLI utilisées pour gérer les comptes, les organisations, et les espaces, voir [Commandes pour la gestion de comptes, d'organisations et de rôles](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Pour plus d'informations sur les commandes CLI utilisées pour gérer les comptes, les organisations, et les espaces, voir [Commandes pour la gestion de comptes, d'organisations et de rôles](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles).
 {: tip}
 
 Vous pouvez aussi créer des groupes d'accès afin d'organiser un ensemble d'utilisateurs et d'ID de service pour faciliter et accélérer l'affectation d'accès à plusieurs utilisateurs à la fois:
@@ -37,3 +37,4 @@ Vous pouvez aussi créer des groupes d'accès afin d'organiser un ensemble d'uti
 2. Cliquez sur **Créer un groupe d'accès**.
 3. Entrez un nom et une description pour votre groupe, puis cliquez sur **Créer**.
 4. Une fois votre groupe créé, cliquez sur le nom du groupe pour commencer à ajouter des utilisateurs et à affecter des accès au groupe.
+

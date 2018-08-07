@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-07-11"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -15,6 +15,7 @@ lastupdated: "2018-07-11"
 {:tip: .tip}
 
 # Création de règles dynamiques pour les groupes d'accès
+{: #rules}
 
 Vous pouvez créer des règles dynamiques pour ajouter dynamiquement des utilisateurs fédérés à des groupes d'accès en fonction d'attributs d'identité spécifiques. Lorsque vos utilisateurs se connectent avec un ID fédéré, les données du fournisseur d'identité mappent dynamiquement vos utilisateurs à un groupe d'accès en fonction des règles définies.
 

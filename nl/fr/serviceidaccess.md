@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-02"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -26,7 +26,7 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**.
 2. Sélectionnez l'ID de service pour laquelle vous souhaitez affecter une règle de service.
 3. Cliquez sur **Affecter un accès**.
-4. Sélectionnez **Assign by resource group**.
+4. Sélectionnez l'option d'affectation par groupe de ressources****.
 5. Sélectionnez un groupe de ressources.
 6. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources**. Cette option permet à l'utilisateur d'afficher le groupe de ressources sur son tableau de bord, d'éditer le nom du groupe de ressources ou de gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle est affectée.
 7. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
@@ -59,6 +59,12 @@ Pour éditer une règle existante :
 3. Identifiez la ligne contenant la règle à éditer, puis sélectionnez **Editer la règle** dans le menu **Actions**.
 4. Apportez vos modifications, puis sauvegardez la règle.
 
+Pour mettre à jour une règle de service à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_update).
+```
+ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
+```
+{: codeblock}
+
 ## Retrait de l'accès
 
 Pour retirer une règle existante :
@@ -67,3 +73,9 @@ Pour retirer une règle existante :
 2. Sélectionnez l'ID de service pour laquelle vous souhaitez supprimer une règle de service.
 3. Identifiez la ligne contenant la règle à supprimer, puis sélectionnez **Retirer** dans le menu **Actions**.
 4. Revoyez les détails relatifs à la règle que vous êtes sur le point de retirer, puis cliquez sur **Retirer** pour confirmer.
+
+Pour supprimer une règle de service à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete).
+```
+ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
+```
+{: codeblock}

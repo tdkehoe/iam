@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -27,10 +27,19 @@ Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs, 
 4. Editez la règle.
 5. Cliquez sur **Sauvegarder**.
 
+Pour mettre à jour une règle utilisateur à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
+```
+ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
+
 ## Affectation d'un nouvel accès
 {: #assignaccess}
 
-### Accès à des ressources au sein d'un groupe de ressources
+Pour autoriser un utilisateur à accéder à toutes les ressources du compte avec la possibilité de gérer les accès utilisateur, de créer un groupe de ressources et d'effectuer toutes les autres tâches de gestion IAM, sélectionnez l'option **Tous les services avec l'offre Identity and Access activée** pour cette règle avec le rôle **Administrateur** affecté.
+{: tip}
+
+### Accès à des ressources au sein d'un groupe de ressources 
 
 Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressources ou uniquement à un service d'un groupe de ressources, procédez comme suit :
 
@@ -46,22 +55,19 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 ### Accès aux ressources
 {: #resourceaccess}
 
-Pour affecter des droits d'accès à une ressource individuelle du compte ou l'accès à toutes les ressources du compte, procédez comme suit :
+Pour affecter des droits d'accès à une ressource individuelle du compte ou l'accès à toutes les ressources du compte, procédez comme suit : 
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous voulez affecter un accès, sélectionnez le menu **Actions**, puis cliquez sur **Affecter un accès**.
 3. Sélectionnez **Affecter l'accès aux ressources**.
 4. Sélectionnez un service ou sélectionnez **Tous les services avec l'offre Identity and Access activée**.
-5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
+5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
 6. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment.
+7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
 8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.
 9. Cliquez sur **Affecter**.
-
-Pour autoriser un utilisateur à accéder à toutes les ressources du compte avec la possibilité de gérer les accès utilisateur, de créer un groupe de ressources et d'effectuer toutes les autres tâches de gestion IAM, sélectionnez l'option **Tous les services avec l'offre Identity and Access activée** pour cette règle avec le rôle **Administrateur** affecté.
-{: tip}
 
 
 ## Retrait de l'accès
@@ -70,6 +76,12 @@ Pour autoriser un utilisateur à accéder à toutes les ressources du compte ave
 2. Sélectionnez le nom de l'utilisateur auquel vous voulez retirer des l'accès.
 3. Sur la ligne contenant la règle à retirer, sélectionnez le menu **Actions**, puis cliquez sur **Retirer**.
 4. Revoyez les détails relatifs à la règle que vous êtes sur le point de retirer, puis confirmez le retrait en cliquant sur **Retire**.
+
+Pour retirer une règle utilisateur à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete).
+```
+ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 ## Révision des accès affectés
 

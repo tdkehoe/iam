@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -21,7 +21,7 @@ Pour inviter des utilisateurs et gérer des invitations en attente, vous devez �
 
 ## Invitation d'utilisateurs
 
-Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre compte, procédez comme suit :
+Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre compte, procédez comme suit : 
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sur **Utilisateurs**. La page Utilisateurs affiche une liste d'utilisateurs avec leur adresse électronique et leur statut pour le compte actuellement sélectionné.
 2. Cliquez sur **Inviter des utilisateurs**.
@@ -30,7 +30,7 @@ Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre 
 
 Si vous déterminez qu'un utilisateur n'a pas besoin d'un accès, vous pouvez annuler l'invitation de n'importe quel utilisateur dont l'état indique **En cours de traitement** ou **En attente** dans la colonne **Statut**. Si un utilisateur invité n'a pas reçu d'invitation, vous pouvez renvoyer l'invitation à n'importe quel utilisateur dont l'état indique **En attente**.
 
-Si vous voulez inviter des utilisateurs depuis l'interface de ligne de commande, reportez-vous à la commande [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
+Si vous voulez inviter des utilisateurs depuis l'interface de ligne de commande, reportez-vous à la commande [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Octroi d'un accès utilisateur
@@ -52,7 +52,7 @@ Vous pouvez accorder l'accès à tous les services d'un groupe de ressources ou 
 2. Sélectionnez d'affecter l'accès aux ressources d'un **groupe de ressources**.
 3. Sélectionnez un groupe de ressources.
 4. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources sur le tableau de bord, éditer le nom du groupe de ressources ou gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle appartient.
-5. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
+5. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné. 
 6. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle. Il n'accorde pas l'accès au conteneur que constitue le groupe de ressources.
 
 
@@ -63,9 +63,9 @@ Vous pouvez accorder l'accès à une seule ressource de votre compte jusqu'au ni
 1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services**.
 2. Sélectionnez d'affecter l'accès une **ressource**.
 3. Sélectionnez un service.
-4. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
+4. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
 5. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-6. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment.
+6. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
 7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
@@ -87,7 +87,7 @@ Lorsque vous invitez de nouveaux utilisateurs, vous pouvez choisir d'ajouter l'u
 
 Pour plus d'informations sur les rôles, voir [Rôles Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
 
-Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite),
+Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite),
 mais vous devez utiliser l'interface utilisateur pour lui accorder d'autres accès ou autorisations.
 {: tip}
 
@@ -110,7 +110,7 @@ En tant que propriétaire d'un compte lié, vous pouvez ajouter un utilisateur V
 1. Cliquez sur l'icône menu ![Icône de menu](../icons/icon_hamburger.svg), puis sélectionnez **Infrastructure**.
 2. Accédez à **Compte** &gt; **Utilisateurs**.
 3. Cliquez sur **Add VPN Only User**.
-4. Entrez les détails des informations personnelles de l'utilisateur.
+4. Entrez les détails des informations personnelles de l'utilisateur. 
 5. Cliquez sur **Ajouter un utilisateur**.
 6. Définissez les droits sur le portail de l'utilisateur.
 7. Cliquez sur **Add Portal Permissions** pour sauvegarder les droits.
