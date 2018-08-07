@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -64,7 +64,7 @@ Como uma senha única recupera código do console do {{site.data.keyword.Bluemix
 
 A chave API necessária é a chave API do {{site.data.keyword.Bluemix_notm}} usada para se autenticar na plataforma do {{site.data.keyword.Bluemix_notm}}, não a chave API do Softlayer ou a chave API do serviço {{site.data.keyword.Bluemix_notm}}.
 
-1. Crie uma chave API com o comando [`ibmcloud iam api-key-create`](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_iam_api_key_create). Use a opção `-f` para gerar um arquivo de chave API, em vez de mostrar a chave na janela de comando:
+1. Crie uma chave API com o comando [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Use a opção `-f` para gerar um arquivo de chave API, em vez de mostrar a chave na janela de comando:
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]

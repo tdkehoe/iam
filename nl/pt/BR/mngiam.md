@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2017-11-16"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -27,10 +27,19 @@ Para gerenciar o acesso ou designar um novo acesso para usuários, deve-se ser o
 4. Edite a política.
 5. Clique em **Salvar**.
 
+Para atualizar uma política de usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
+```
+ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
+
 ## Designando novo acesso
 {: #assignaccess}
 
-### Acesso aos recursos dentro de um grupo de recursos
+Para permitir a um usuário o acesso a todos os recursos com a capacidade de gerenciar o acesso de usuário, criar grupos de recursos e concluir todas as outras tarefas de gerenciamento do IAM, selecione a opção **Todos os serviços ativados pelo Identity and Access** para essa política com a função **Administrador** designada.
+{: tip}
+
+### Acesso aos recursos dentro de um grupo de recursos 
 
 Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um serviço em um grupo de recursos, conclua as etapas a seguir:
 
@@ -46,22 +55,19 @@ Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um 
 ### Acesso a recursos
 {: #resourceaccess}
 
-Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir:
+Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir: 
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
 2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** e, em seguida, clique em **Designar acesso**.
 3. Selecione **Designar acesso a recursos**.
 4. Selecione um serviço ou selecione **Todos os serviços ativados pelo Identity and Access**.
-5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado.
+5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
 6. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito.
+7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito. 
     * **Tipo de recurso**: insira **depósito**.
     * **ID do recurso**: Insira o nome do bucket.
 8. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário.
 9. Clique em **Designar**.
-
-Para permitir a um usuário o acesso a todos os recursos com a capacidade de gerenciar o acesso de usuário, criar grupos de recursos e concluir todas as outras tarefas de gerenciamento do IAM, selecione a opção **Todos os serviços ativados pelo Identity and Access** para essa política com a função **Administrador** designada.
-{: tip}
 
 
 ## Removendo o acesso
@@ -70,6 +76,12 @@ Para permitir a um usuário o acesso a todos os recursos com a capacidade de ger
 2. Selecione o nome do usuário para o qual você deseja remover o acesso.
 3. Na linha para a política que você deseja remover, selecione o menu **Ações** e, em seguida, clique em **Remover**.
 4. Revise os detalhes de política do usuário que você está prestes a remover e, em seguida, confirme clicando em **Remover**.
+
+Para remover uma política de usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete).
+```
+ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
+```
+{: codeblock}
 
 ## Revisando seu acesso designado
 

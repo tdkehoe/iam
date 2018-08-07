@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -23,7 +23,7 @@ usuários, cancelar convites e reenviar um convite pendente para um usuário con
 
 ## Convidando usuários
 
-Para convidar usuários ou gerenciar convites de usuários em sua conta, conclua as etapas a seguir:
+Para convidar usuários ou gerenciar convites de usuários em sua conta, conclua as etapas a seguir: 
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, clique em **Usuários**. A janela Usuários exibe uma lista de usuários com seus endereços de e-mail e o status da conta selecionada atualmente.
 2. Clique em **Convidar usuários**.
@@ -33,7 +33,7 @@ Para convidar usuários ou gerenciar convites de usuários em sua conta, conclua
 
 Se você determinar que um usuário não precisa de acesso, será possível cancelar um convite de quaisquer usuários que forem mostrados em um estado **Processando** ou **Pendente** na coluna **Status**. Se um usuário convidado não tiver recebido um convite, será possível reenviar o convite para qualquer usuário em um estado **Pendente**.
 
-Se desejar convidar usuários usando a CLI, veja o comando [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite).
+Se desejar convidar usuários usando a CLI, veja o comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
 {: tip}
 
 ## Designando Acesso do Usuário
@@ -55,7 +55,7 @@ Você designa acesso para os usuários à medida que os convida, designando pol�
 2. Selecione para designar acesso aos recursos em um **Grupo de recursos**.
 3. Escolha um grupo de recursos.
 4. Escolha uma função para o campo **Designar acesso a um grupo de recursos** para permitir que o usuário visualize o grupo de recursos no painel, edite o nome do grupo de recursos ou gerencie o acesso de usuário ao grupo. É possível selecionar **Sem acesso**, se você deseja que o usuário tenha acesso somente ao recurso especificado e não ao grupo em que ele está organizado.
-5. Selecione um serviço no grupo de recursos ou opte por fornecer acesso a todos os serviços no grupo selecionado.
+5. Selecione um serviço no grupo de recursos ou opte por fornecer acesso a todos os serviços no grupo selecionado. 
 6. Selecione qualquer combinação de funções para designar o acesso desejado. Este acesso só se aplica aos recursos que você selecionou para a política. Ela não fornece acesso ao contêiner real que é o grupo de recursos.
 
 
@@ -66,9 +66,9 @@ Você designa acesso para os usuários à medida que os convida, designando pol�
 1. Na tela **Convidar usuários**, expanda a seção **Serviços**.
 2. Selecione para designar acesso a um **Recurso**.
 3. Selecione um serviço.
-4. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado.
+4. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
 5. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-6. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito.
+6. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não digitar valores para esses campos, a política será designada no nível da instância de serviço em vez do nível de depósito. 
     * **Tipo de recurso**: insira **depósito**.
     * **ID do recurso**: Insira o nome do bucket.
 7. Selecione qualquer combinação de funções para designar o acesso desejado.
@@ -90,7 +90,7 @@ Ao convidar novos usuários, é possível escolher incluir o usuário em uma org
 
 Veja [Funções do Cloud Foundry](/docs/iam/cfaccess.html#cfroles) para obter mais informações sobre as funções.
 
-É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
+É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite), mas a UI deve ser usada para designar outro acesso ou permissões.
 {: tip}
 
 ### Acesso à infraestrutura do {{site.data.keyword.BluSoftlayer_notm}}
@@ -112,7 +112,7 @@ Como proprietário da conta de uma conta vinculada, é possível incluir um usu�
 1. Clique no ícone de Menu ![ícone de Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**.
 2. Acesse **Conta** &gt; **Usuários**.
 3. Clique em **Incluir usuário somente VPN**.
-4. Insira os detalhes de informações pessoais para o usuário.
+4. Insira os detalhes de informações pessoais para o usuário. 
 5. Clique em **Incluir usuário**.
 6. Configure as permissões do portal para o usuário.
 7. Clique em **Incluir permissões do portal** para salvar as permissões.

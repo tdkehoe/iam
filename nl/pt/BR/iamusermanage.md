@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-05-14"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -29,7 +29,7 @@ de usuários, designação de acesso e edição do acesso designado:
 
 **Nota**: somente proprietários da conta podem remover usuários da conta.
 
-Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_acctorg).
+Para obter detalhes sobre os comandos da CLI que são usados para gerenciar contas, organizações e espaços, veja [Comandos para gerenciar contas, organizações e funções](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#commands-for-managing-accounts-orgs-and-roles).
 {: tip}
 
 Também é possível criar grupos de acesso para organizar um conjunto de usuários e IDs de serviço para
@@ -40,3 +40,4 @@ tornar a designação de acesso para mais de um usuário por vez um processo rá
 3. Insira um nome e uma descrição para seu grupo e clique em **Criar**.
 4. Depois que seu grupo é criado, clique no nome do grupo para começar a incluir usuários e designar
 acesso ao grupo.
+

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-08-02"
 
 ---
 
@@ -49,6 +49,12 @@ remover um grupo da conta, você está removendo todos os usuários e IDs de ser
 designado ao grupo.
 {: tip}
 
+Para criar um grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create).
+```
+ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
+```
+{: codeblock}
+
 
 ## Designando acesso a um grupo
 
@@ -62,3 +68,9 @@ entidades dentro do grupo.
 4. Clique em **Designar acesso**. 
 5. Escolha para designar o acesso por recursos em um grupo de recursos ou recursos individuais
 disponíveis dentro da conta.
+
+Para criar uma política de grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create).
+```
+ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
+```
+{: codeblock}
