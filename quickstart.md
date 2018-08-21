@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-06-06"
+lastupdated: "2018-08-21"
 
 ---
 
@@ -21,7 +21,7 @@ This tutorial is intended to help you get up and running quickly with IBM Cloud 
 This tutorial applies to IAM-managed [resources](/docs/resources/acct_resources.html#resource) only. For services that do not support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam/cfaccess.html#cfaccess).
 
 
-## Step 1: Invite users and assign initial access
+## Step 1. Invite users and assign initial access
 
 You can invite a one or multiple users and set an initial access policy for the users on the invitation. If you invite multiple users in one invitation, the same access is assigned to each of the users. In the **Access** section of the Invite users page, you only see the sections that you are permitted to assign.
 
@@ -38,7 +38,7 @@ As the account owner, you can assign Cloud IAM roles for users that you invite i
 
 For more information, see [Inviting users and assigning access](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Step 2: Create access groups
+## Step 2. Create access groups
 
 To streamline the process of assigning access to users in your account, you can create access groups which are made up of users and service IDs that you select, then you can then easily assign access by defining a single policy for the entire group.
 
@@ -70,7 +70,7 @@ By organizing resources in resource groups and users in access groups, you can a
 {: tip}
 
 
-## Step 3: Manage access for existing users
+## Step 3. Manage access for existing users
 
 After you have invited users, assigned initial access, and created your access groups, you might want to assign additional access or edit the initial access that you assigned to ensure all users and groups in your account have the desired level of access.
 
