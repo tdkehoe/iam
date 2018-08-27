@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -40,7 +40,7 @@ lastupdated: "2018-08-02"
 您可以選取**移除群組**選項，來刪除群組。當您從帳戶移除群組時，您會從群組移除所有使用者和服務 ID，以及指派給該群組的所有存取權。
 {: tip}
 
-若要使用 CLI 建立存取群組，您可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) 指令。
+若要使用 CLI 建立存取群組，您可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create) 指令。
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

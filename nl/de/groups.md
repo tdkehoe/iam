@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -40,7 +40,7 @@ Fahren Sie danach mit der Einrichtung Ihrer Gruppe fort, indem Sie Benutzer oder
 Sie können eine Gruppe löschen, indem Sie die Option **Gruppe entfernen** auswählen. Beim Entfernen einer Gruppe aus dem Konto entfernen Sie alle Benutzer und Service-IDs aus der Gruppe sowie den gesamten der Gruppe zugewiesenen Zugriff.
 {: tip}
 
-Wenn Sie eine Zugriffsgruppe über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) verwenden.
+Wenn Sie eine Zugriffsgruppe über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create) verwenden.
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

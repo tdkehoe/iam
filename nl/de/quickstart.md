@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-06-06"
+lastupdated: "2018-08-21"
 
 ---
 
@@ -21,7 +21,7 @@ Dieses Lernprogramm soll Sie dabei unterstützen, sich schnell mit IBM Cloud Ide
 Dieses Lernprogramm bezieht sich ausschließlich auf [Ressourcen](/docs/resources/acct_resources.html#resource), die mit IAM verwaltet werden. Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie den [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess) verwenden.
 
 
-## Schritt 1: Benutzer einladen und Anfangszugriffsberechtigungen zuweisen
+## Schritt 1. Benutzer einladen und Anfangszugriffsberechtigungen zuweisen
 
 Sie können einzelne oder auch mehrere Benutzer einladen und die Richtlinie für die Anfangszugriffsberechtigungen der eingeladenen Benutzer festlegen. Wenn Sie in einer einzigen Einladung mehrere Benutzer einladen, dann werden diesen Benutzern die gleichen Zugriffsberechtigungen zugewiesen. Im Abschnitt **Zugriff** der Seite 'Benutzer einladen' werden nur die Abschnitte angezeigt, zu deren Zuweisung sie berechtigt sind.
 
@@ -38,7 +38,7 @@ Als Kontoeigner können Sie den von Ihnen eingeladenen Benutzern im Abschnitt 'S
 
 Weitere Informationen finden Sie in [Benutzer einladen und Benutzern Zugriff zuweisen](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Schritt 2: Zugriffsgruppen erstellen
+## Schritt 2. Zugriffsgruppen erstellen
 
 Um die Zuweisung von Zugriff für Benutzer in Ihrem Konto zu optimieren, können Sie Zugriffsgruppen erstellen, die aus von Ihnen ausgewählten Benutzern und Service-IDs bestehen. Anschließend können Sie den Zugriff ohne großen Aufwand zuweisen, indem Sie eine einzige Richtlinie für die gesamte Gruppe definieren.
 
@@ -70,7 +70,7 @@ Durch die Organisation von Ressourcen in Ressourcengruppen und Benutzer in Zugri
 {: tip}
 
 
-## Schritt 3: Zugriff für vorhandene Benutzer verwalten
+## Schritt 3. Zugriff für vorhandene Benutzer verwalten
 
 Nachdem Sie Benutzer eingeladen, den Erstzugriff zugewiesen und Ihre Zugriffsgruppen erstellt haben, können Sie weiterführenden Zugriff zuweisen oder die Anfangszugriffsberechtigungen bearbeiten, die Sie zugewiesen haben. Auf diese Weise können Sie sicherstellen, dass alle Benutzer und Gruppen in Ihrem Konto die gewünschte Zugriffsebene erhalten.
 
