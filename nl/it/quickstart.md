@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-06-06"
+lastupdated: "2018-08-21"
 
 ---
 
@@ -21,7 +21,7 @@ Questa esercitazione ha lo scopo di aiutarti a iniziare rapidamente a lavorare c
 Questa esercitazione si applica solo alle [risorse](/docs/resources/acct_resources.html#resource) gestite da IAM. Per i servizi che non supportano la creazione di politiche Cloud IAM per la gestione dell'accesso, puoi utilizzare [Accesso Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
-## Passo 1: invita gli utenti e assegna l'accesso iniziale
+## Passo 1. Invita gli utenti e assegna l'accesso iniziale
 
 Puoi invitare uno o più utenti e impostare una politica di accesso iniziale per gli utenti al momento dell'invito. Se inviti più utenti in un unico invito, lo stesso accesso viene assegnato a ciascuno degli utenti. Nella sezione **Accesso** della pagina Invita utenti, sono visualizzate solo le sezioni che sei autorizzato ad assegnare.
 
@@ -38,7 +38,7 @@ In qualità di proprietario dell'account, puoi assegnare i ruoli di Cloud IAM pe
 
 Per ulteriori informazioni, vedi [Invito di utenti e assegnazione dell'accesso](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Passo 2: crea i gruppi di accesso
+## Passo 2. Crea i gruppi di accesso
 
 Per semplificare il processo di assegnazione dell'accesso agli utenti nel tuo account, puoi creare gruppi di accesso che sono costituiti da utenti e ID del servizio da te selezionati, a cui puoi facilmente assegnare l'accesso definendo una sola politica per l'intero gruppo.
 
@@ -70,7 +70,7 @@ Per organizzare le risorse in gruppi di risorse e gli utenti in gruppi di access
 {: tip}
 
 
-## Passo 3: gestisci l'accesso per gli utenti esistenti
+## Passo 3. Gestisci l'accesso per gli utenti esistenti
 
 Dopo aver invitato gli utenti, assegnato l'accesso iniziale e creato i tuoi gruppi di accesso, potresti voler assegnare un accesso aggiuntivo o modificare l'accesso iniziale che hai assegnato per garantire che tutti gli utenti e i gruppi nel tuo account abbiano il livello di accesso desiderato.
 
