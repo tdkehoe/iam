@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -40,7 +40,7 @@ lastupdated: "2018-08-02"
 **「グループの削除 (Remove group)」**オプションを選択してグループを削除することができます。 グループをアカウントから削除すると、すべてのユーザーとサービス ID がグループから削除され、グループに割り当てられたすべてのアクセス権限が削除されます。
 {: tip}
 
-CLI を使用してアクセス・グループを作成するには、[ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create) コマンドを使用します。
+CLI を使用してアクセス・グループを作成するには、[ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create) コマンドを使用します。
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```
