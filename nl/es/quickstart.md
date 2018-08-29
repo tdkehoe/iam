@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-06-06"
+lastupdated: "2018-08-21"
 
 ---
 
@@ -21,7 +21,7 @@ Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar ráp
 Esta guía de aprendizaje se aplica solo a [recursos](/docs/resources/acct_resources.html#resource) gestionados por IAM. Para los servicios que no soportan la creación de políticas de Cloud IAM para gestionar el acceso, puede utilizar el [Acceso de Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
-## Paso 1: Invitar usuarios y asignar acceso inicial
+## Paso 1. Invitar usuarios y asignar acceso inicial
 
 Puede invitar a uno o varios usuarios y establecer una política de acceso inicial para los usuarios en la invitación. Si invita varios usuarios en una invitación se asigna el mismo acceso a todos ellos. En la sección **Acceso** de la página Invitar a usuarios, solo verá las secciones que tiene permiso para asignar.
 
@@ -38,7 +38,7 @@ Como propietario de cuenta, puede asignar roles de Cloud IAM a los usuarios que 
 
 Para obtener más información, consulte [Invitación de usuarios y asignación de acceso](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Paso 2: Crear grupos de acceso
+## Paso 2. Crear grupos de acceso
 
 Para racionalizar el proceso de asignación de acceso a los usuarios de su cuenta, puede crear grupos de acceso compuestos por usuarios e ID de servicio que haya seleccionado y asignar acceso fácilmente definiendo una política única para todo el grupo.
 
@@ -70,7 +70,7 @@ Al organizar recursos en grupos de recursos y usuarios en grupos de acceso, pued
 {: tip}
 
 
-## Paso 3: Gestionar el acceso de usuarios existentes
+## Paso 3. Gestionar el acceso de usuarios existentes
 
 Después de invitar usuarios, asignar el acceso inicial y crear grupos de acceso, es posible que desee asignar acceso adicional o editar el acceso inicial asignado para garantizar que todos los usuarios y grupos de su cuenta tienen el nivel de acceso deseado.
 
