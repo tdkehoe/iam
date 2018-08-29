@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -40,7 +40,7 @@ Ensuite, continuez de configurer votre groupe en ajoutant des utilisateurs ou de
 Vous pouvez supprimer un groupe en sélectionnant l'option **Retirer le groupe**. Lorsque vous retirez un groupe du compte, vous retirez tous les utilisateurs et ID de service du groupe et tous les accès affectés à ce dernier.
 {: tip}
 
-Pour créer un groupe d'accès à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create).
+Pour créer un groupe d'accès à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create).
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

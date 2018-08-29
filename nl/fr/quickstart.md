@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-06-06"
+lastupdated: "2018-08-21"
 
 ---
 
@@ -21,7 +21,7 @@ Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapideme
 Ce tutoriel concerne les [ressources](/docs/resources/acct_resources.html#resource) gérées par IAM uniquement. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion des accès, vous pouvez utiliser [Accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
-## Etape 1 : Inviter des utilisateurs et leur affecter un accès initial
+## Etape 1. Inviter des utilisateurs et leur affecter un accès initial
 
 Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour ces utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section **Accès** de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
 
@@ -38,7 +38,7 @@ En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM a
 
 Pour plus d'informations, voir [Invitation d'utilisateurs et affectation d'accès](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Etape 2 : Créer des groupes d'accès
+## Etape 2. Créer des groupes d'accès
 
 Afin de rationaliser le processus d'affectation d'accès à des utilisateurs de votre compte, vous pouvez créer des groupes d'accès constitués d'utilisateurs et d'ID de service que vous sélectionnez, puis affecter facilement des accès en définissant une seule règle pour l'ensemble du groupe.
 
@@ -70,7 +70,7 @@ Le fait d'organiser des ressources en groupes de ressources et des utilisateurs 
 {: tip}
 
 
-## Etape 3 : Gérer l'accès d'utilisateurs existants
+## Etape 3. Gérer l'accès d'utilisateurs existants
 
 Après avoir invité des utilisateurs, leur avoir affecté un accès initial et avoir créé des groupes d'accès, vous voudrez sans doute leur affecter des accès supplémentaires ou éditer leur accès initial pour vous assurer que tous les utilisateurs et groupes de votre compte bénéficient du niveau d'accès souhaité.
 

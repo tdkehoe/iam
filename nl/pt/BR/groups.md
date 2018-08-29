@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-08-20"
 
 ---
 
@@ -49,7 +49,7 @@ remover um grupo da conta, você está removendo todos os usuários e IDs de ser
 designado ao grupo.
 {: tip}
 
-Para criar um grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_create).
+Para criar um grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create).
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

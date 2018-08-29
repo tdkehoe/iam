@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-06-06"
+lastupdated: "2018-08-21"
 
 ---
 
@@ -21,7 +21,7 @@ Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access 
 Este tutorial se aplica somente a [recursos](/docs/resources/acct_resources.html#resource) gerenciados pelo IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar acesso, é possível usar o [acesso do Cloud Foundry](/docs/iam/cfaccess.html#cfaccess).
 
 
-## Etapa 1: convidar usuários e designar acesso inicial
+## Etapa 1. Convidar os usuários e designar o acesso inicial
 
 É possível convidar um ou múltiplos usuários e configurar uma política de acesso inicial para os usuários no convite. Se você convidar múltiplos usuários em um convite, o mesmo acesso será designado a cada um deles. Na seção **Acesso** da página Convidar usuários, você vê somente as seções que você tem permissão para designar.
 
@@ -38,7 +38,7 @@ Como proprietário da conta, é possível designar funções do Cloud IAM para u
 
 Para obter mais informações, veja [Convidando usuários e designando acesso](/docs/iam/iamuserinv.html#iamuserinv).
 
-## Etapa 2: criar grupos de acesso
+## Etapa 2. Criar grupos de acesso
 
 Para aperfeiçoar o processo de designação de acesso aos usuários em sua conta, é possível criar grupos
 de acesso que sejam formados por usuários e IDs de serviço que você seleciona e, em seguida, é possível
@@ -77,7 +77,7 @@ políticas que você precisa gerenciar.
 {: tip}
 
 
-## Etapa 3: gerenciar acesso para usuários existentes
+## Etapa 3. Gerenciar o acesso para os usuários existentes
 
 Depois de ter convidado usuários, designado acesso inicial e criado seus grupos de acesso, talvez você
 queira designar acesso adicional ou editar o acesso inicial que você designou para assegurar que todos os
