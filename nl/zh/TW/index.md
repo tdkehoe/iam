@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-05"
+lastupdated: "2018-08-29"
 
 ---
 
@@ -48,4 +48,4 @@ lastupdated: "2018-04-05"
 
 若要使用使用者介面來存取 Cloud IAM，請移至**管理** &gt; **安全** &gt; **身分及存取**。
 
-若要使用 CLI 來存取 Cloud IAM，請參閱[用來管理 API 金鑰及原則的指令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
+若要使用 CLI 來存取 Cloud IAM，請參閱[用來管理 API 金鑰及原則的指令](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)。
