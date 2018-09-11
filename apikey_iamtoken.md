@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-09"
+lastupdated: "2018-09-11"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-05-09"
 # Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key
 {: #iamtoken_from_apikey}
 
-{{site.data.keyword.Bluemix}} APIs can be accessed only by users that are authorized by an assigned IAM role. Therefore, the user that is calling the API must pass credentials for the API to authenticate. You can generate an IAM token by using either your personal or service ID's API key as described here. This process is also used if you are developing an application that needs to work with other {{site.data.keyword.Bluemix_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.Bluemix_notm}} services.
+{{site.data.keyword.Bluemix}} APIs can be accessed only by users that are authorized by an assigned IAM role. Therefore, the user that is calling the API must pass credentials for the API to authenticate. You can generate an IAM token by using either your [personal API key](/docs/iam/userid_keys.html#userapikey) or a [service ID's API key](/docs/iam/serviceid_keys.html#serviceidapikeys). This process is also used if you are developing an application that needs to work with other {{site.data.keyword.Bluemix_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.Bluemix_notm}} services.
 
 1. Use the following `curl` command to generate an IAM token by using an API key.
 
