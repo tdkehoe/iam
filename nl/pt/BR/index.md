@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-05"
+lastupdated: "2018-08-29"
 
 ---
 
@@ -55,4 +55,5 @@ recursos ou recurso único. Após o escopo ser configurado, é possível definir
 
 Para acessar o Cloud IAM usando a UI, acesse **Gerenciar** &gt; **Segurança** &gt; **Identity and Access**.
 
-Para acessar o Cloud IAM usando a CLI, consulte [Comandos para gerenciar chaves API e políticas](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+Para acessar o Cloud IAM usando a CLI, consulte
+[Comandos para gerenciar as chaves API e as políticas](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
