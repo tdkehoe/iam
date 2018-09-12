@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-05"
+lastupdated: "2018-08-29"
 
 ---
 
@@ -48,4 +48,4 @@ lastupdated: "2018-04-05"
 
 UI를 사용하여 Cloud IAM에 액세스하려면 **관리** &gt; **보안** &gt; **ID 및 액세스**로 이동하십시오.
 
-CLI를 사용하여 Cloud IAM에 액세스하려면 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)을 참조하십시오.
+CLI를 사용하여 Cloud IAM에 액세스하려면 [API 키 및 정책 관리를 위한 명령](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)을 참조하십시오.

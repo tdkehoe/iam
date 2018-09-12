@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-05"
+lastupdated: "2018-08-29"
 
 ---
 
@@ -48,4 +48,4 @@ lastupdated: "2018-04-05"
 
 要使用 UI 来访问 Cloud IAM，请转至**管理** &gt; **安全性** &gt; **身份和访问权**。
 
-要使用 CLI 来访问 Cloud IAM，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam)。
+要使用 CLI 来访问 Cloud IAM，请参阅[用于管理 API 密钥和策略的命令](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)。
