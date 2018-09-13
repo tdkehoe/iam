@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-08-27"
 
 ---
 
@@ -21,10 +21,10 @@ Le tableau suivant répertorie les limites maximales pour les ressources {{site.
 | Ressource | Max |
 |----------|---------|
 | Groupes d'accès par compte | 500 |
-| Groupes d'accès par utilisateur | 30 |
-| ID de service par compte | 2000 |
+| Groupes d'accès par utilisateur | 50 | 
+| ID de service par compte | 2000 | 
 | Clés d'API par identité | 20 |
 {:caption="Tableau 1. Limites de compte IAM" caption-side="top"}
 
-Un maximum de 1 000 règles et autorisations de service à service sont recommandées pour un compte afin de garantir des performances optimales au sein de ce compte.
+Un maximum de 1 000 règles et autorisations de service à service sont recommandées pour un compte afin de garantir des performances optimales au sein de ce compte. 
 {: tip}
