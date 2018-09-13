@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-08-27"
 
 ---
 
@@ -21,10 +21,10 @@ In der folgenden Tabelle sind die Maximalwerte für {{site.data.keyword.Bluemix_
 | Ressource | Max. |
 |----------|---------|
 | Zugriffsgruppen pro Konto | 500 |
-| Zugriffsgruppen pro Benutzer | 30 |
-| Service-IDs pro Konto | 2000 |
+| Zugriffsgruppen pro Benutzer | 50 | 
+| Service-IDs pro Konto | 2000 | 
 | API-Schlüssel pro Identität | 20 |
 {:caption="Tabelle 1. IAM-Kontolimits" caption-side="top"}
 
-Für eine optimale Leistung Ihres Kontos werden maximal 1.000 Richtlinien und Service-zu-Service-Autorisierungen empfohlen.
+Für eine optimale Leistung Ihres Kontos werden maximal 1.000 Richtlinien und Service-zu-Service-Autorisierungen empfohlen. 
 {: tip}
