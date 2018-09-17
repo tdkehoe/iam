@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-05"
+lastupdated: "2018-08-29"
 
 ---
 
@@ -48,4 +48,4 @@ Puede acceder y utilizar Cloud IAM a través de la interfaz de usuario de Identi
 
 Para acceder a Cloud IAM utilizando la interfaz de usuario, vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso**.
 
-Para acceder a Cloud IAM utilizando la CLI, consulte los [Mandatos para gestionar claves de API y políticas](/docs/cli/reference/bluemix_cli/bx_cli.html#bx_commands_iam).
+Para acceder a Cloud IAM utilizando la CLI, consulte los [Mandatos para gestionar claves de API y políticas](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).

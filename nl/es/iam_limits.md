@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-08-27"
 
 ---
 
@@ -13,18 +13,18 @@ lastupdated: "2018-05-04"
 {:screen: .screen}
 {:tip: .tip}
 
-# Límites de IAM de {{site.data.keyword.Bluemix_notm}}
+# Límites de {{site.data.keyword.Bluemix_notm}} IAM
 {: #iam_limits}
 
-La tabla siguiente lista los límites máximos para los recursos de Identity and Access Management (IAM) de {{site.data.keyword.Bluemix_notm}}. Estos límites se aplican a cualquier usuario que pueda crear recursos de IAM de {{site.data.keyword.Bluemix_notm}}; si se supera un límite, recibirá una excepción y no podrá crear ningún recurso nuevo que supere dicho límite.
+La tabla siguiente lista los límites máximos para los recursos de {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Estos límites se aplican a cualquier usuario que pueda crear recursos de {{site.data.keyword.Bluemix_notm}} IAM; si se supera un límite, recibirá una excepción y no podrá crear ningún recurso nuevo que supere dicho límite.
 
 | Recurso | Máximo |
 |----------|---------|
 | Grupos de acceso por cuenta | 500 |
-| Grupos de acceso por usuario | 30 |
-| ID de servicio por cuenta | 2000 |
+| Grupos de acceso por usuario | 50 | 
+| ID de servicio por cuenta | 2000 | 
 | Claves de API por identidad | 20 |
 {:caption="Tabla 1. Límites de cuenta de IAM" caption-side="top"}
 
-Se recomienda un máximo de 1,000 políticas y servicios en las autorizaciones de servicio de una cuenta para garantizar un rendimiento óptimo en su cuenta.
+Se recomienda un máximo de 1,000 políticas y servicios en las autorizaciones de servicio de una cuenta para garantizar un rendimiento óptimo en su cuenta. 
 {: tip}

@@ -17,7 +17,7 @@ lastupdated: "2018-07-23"
 # Seguimiento de sucesos IAM
 {: #tracking}
 
-Como responsable de seguridad, auditor o gestor, puede utilizar el servicio de {{site.data.keyword.cloudaccesstrailfull}} para realizar el seguimiento de cómo interactúan los usuarios y las aplicaciones con Identity and Access Management (IAM) de {{site.data.keyword.Bluemix_notm}}. 
+Como responsable de seguridad, auditor o gestor, puede utilizar el servicio de {{site.data.keyword.cloudaccesstrailfull}} para realizar el seguimiento de cómo interactúan los usuarios y las aplicaciones con {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). 
 
 Puede realizar un seguimiento de los siguientes sucesos:
 
