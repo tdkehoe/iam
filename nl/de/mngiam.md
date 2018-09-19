@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -14,10 +14,10 @@ lastupdated: "2018-08-02"
 {:new_window: target="_blank"}
 {:tip: .tip}
 
-# IAM-Zugriff verwalten
+# Zugriff auf Ressourcen verwalten
 {: #iammanidaccser}
 
-Um den Zugriff zu verwalten oder Benutzern neue Zugriffsberechtigungen zuzuweisen, müssen Sie der Kontoeigner, der Administrator für alle Services im Konto oder der zugewiesene Administrator für den entsprechenden Service oder die entsprechende Serviceinstanz sein. Weitere Informationen zu den Zugriffsrichtlinien und Rollen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html).
+Um den Zugriff zu verwalten oder mithilfe von IAM-Richtlinien Benutzern neue Zugriffsberechtigungen zuzuweisen, müssen Sie der Kontoeigner, der Administrator für alle Services im Konto oder der zugewiesene Administrator für den entsprechenden Service oder die entsprechende Serviceinstanz sein. Weitere Informationen zu den Zugriffsrichtlinien und Rollen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html).
 
 ## Vorhandene Zugriffsberechtigungen bearbeiten
 
@@ -26,6 +26,9 @@ Um den Zugriff zu verwalten oder Benutzern neue Zugriffsberechtigungen zuzuweise
 3. Wählen Sie in der Zeile für die Richtlinie, die bearbeitet werden soll, das Menü **Aktionen** aus und klicken Sie dann auf **Richtlinie bearbeiten**.
 4. Bearbeiten Sie die Richtlinie.
 5. Klicken Sie auf **Speichern**.
+
+Bei der Bearbeitung des Zugriffs für einen Benutzer oder eine Gruppe erhalten Sie möglicherweise eine Nachricht, in der angegeben wird, dass Richtlinien nicht doppelt vorhanden sein dürfen. Wenn Sie eine vorhandene Richtlinie bearbeiten und die von Ihnen vorgenommenen Änderungen in Konflikt mit bereits zugewiesenen Zugriffsberechtigungen stehen, können Sie auswählen, die zu bearbeitende Richtlinie zu ändern, um andere Zugriffsberechtigungen bereitzustellen, oder Sie können zu der Richtlinie wechseln, mit der der Konflikt besteht, um diese zu überprüfen und ggf. Änderungen vorzunehmen. Möglicherweise sollten Sie die in Arbeit befindliche Richtlinie löschen, wenn bereits eine Richtlinie vorhanden ist, die Ihren Anforderungen entspricht.
+{: tip}
 
 Wenn Sie eine Benutzerrichtlinie über die Befehlszeilenschnittstelle aktualisieren möchten, können Sie den Befehl [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) verwenden.
 ```
@@ -68,6 +71,11 @@ Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einz
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 8. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen.
 9. Klicken Sie auf **Zuweisen**.
+
+Möglicherweise erhalten Sie eine Nachricht, in der angegeben wird, dass für die von Ihnen ausgewählten Details bereits eine Richtlinie vorhanden ist. Wenn eine Richtlinie mit exakt diesen Details und Rollen erstellt wird, werden Sie aufgefordert, die neue Richtlinie zu ändern, da Richtlinien nicht doppelt vorhanden sein dürfen. Wenn Sie eine Richtlinie mit den gleichen Details jedoch mit anderen Rollenzuweisungen als in einer vorhandenen Richtlinie erstellen, werden Sie aufgefordert, die vorhandene Richtlinie zu überprüfen und sie mit Rollenzuweisungen zu aktualisieren, die Sie zuweisen möchten.
+{: tip}
+
+
 
 
 ## Zugriffsberechtigungen entfernen
