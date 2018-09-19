@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -14,10 +14,10 @@ lastupdated: "2018-08-02"
 {:new_window: target="_blank"}
 {:tip: .tip}
 
-# Gestión del acceso IAM
+# Gestión del acceso a los recursos
 {: #iammanidaccser}
 
-Para gestionar el acceso o asignar nuevos accesos a usuarios, debe ser el propietario de la cuenta, el administrado de todos los servicios de la cuenta o el administrador asignado para un servicio o instancia de servicio particular. Para obtener más información sobre las políticas de acceso y los roles, consulte [Acceso de IAM](/docs/iam/users_roles.html).
+Para gestionar el acceso o asignar nuevos accesos a usuarios utilizando las políticas de IAM, debe ser el propietario de la cuenta, el administrado de todos los servicios de la cuenta o el administrador asignado para un servicio o instancia de servicio particular. Para obtener más información sobre las políticas de acceso y los roles, consulte [Acceso de IAM](/docs/iam/users_roles.html).
 
 ## Edición de accesos existentes
 
@@ -26,6 +26,9 @@ Para gestionar el acceso o asignar nuevos accesos a usuarios, debe ser el propie
 3. En la fila de la política que desee editar, seleccione el menú **Acciones** y pulse **Editar política**.
 4. Edite la política.
 5. Pulse **Guardar**.
+
+Al editar el acceso de un usuario o grupo, es posible que reciba un mensaje acerca de no permitir las políticas duplicadas. Si está editando una política existente y los cambios que realiza entran en conflicto con el acceso que ya se ha asignado, puede modificar la política que está editando para proporcionar un acceso distinto o puede ir a la política existente con la que se encuentra en conflicto para revisarla y realizar cambios si es necesario. Es posible que desee suprimir la política que está editando si ya existe una política duplicada que cumple con sus necesidades.
+{: tip}
 
 Para actualizar una política de usuario utilizando la CLI, puede utilizar el mandato [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
 ```
@@ -68,6 +71,11 @@ Para asignar acceso a un recurso individual en la cuenta o acceso a todos los re
     * **ID de recurso**: Especifique el nombre de su grupo.
 8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.
 9. Pulse **Asignar**.
+
+Es posible que reciba un mensaje que indica que existe una política para los detalles que ha seleccionado. Si se crea una política con los detalles y roles exactos, se le solicitará realizar cambios en la nueva política puesto que las políticas duplicadas no están permitidas. Si crea una política con los mismos detalles pero con una asignación de roles distinta como política existente, se le solicitará revisar y actualizar la política existente con las asignaciones de roles que desea asignar.
+{: tip}
+
+
 
 
 ## Eliminación de acceso

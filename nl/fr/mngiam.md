@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -14,10 +14,10 @@ lastupdated: "2018-08-02"
 {:new_window: target="_blank"}
 {:tip: .tip}
 
-# Gestion d'accès IAM
+# Gestion de l'accès aux ressources
 {: #iammanidaccser}
 
-Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs, vous devez être le propriétaire du compte, l'administrateur de tous les services du compte ou l'administrateur affecté au service ou à l'instance de service spécifique. Pour plus d'informations sur les règles d'accès et les rôles, voir [Accès IAM](/docs/iam/users_roles.html).
+Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs en utilisant des règles IAM, vous devez être le propriétaire du compte, l'administrateur de tous les services du compte ou l'administrateur affecté au service ou à l'instance de service spécifique. Pour plus d'informations sur les règles d'accès et les rôles, voir [Accès IAM](/docs/iam/users_roles.html).
 
 ## Edition d'un accès existant
 
@@ -26,6 +26,9 @@ Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs, 
 3. Sur la ligne contenant la règle à éditer, sélectionnez le menu **Actions**, puis cliquez sur **Editer la règle**.
 4. Editez la règle.
 5. Cliquez sur **Sauvegarder**.
+
+Lorsque vous modifiez l'accès pour un utilisateur ou un groupe, un message peut s'afficher indiquant que les règles en double ne sont pas autorisées. Si vous éditez une règle existante et que les modifications effectuées entrent en conflit avec l'accès déjà affecté, vous pouvez choisir de changer la règle en cours d'édition pour offrir un autre accès ou accéder à la règle existante en conflit afin d'effectuer les modifications nécessaires. Vous pouvez également supprimer la règle en cours d'édition s'il existe déjà une règle identique répondant à vos besoins.
+{: tip}
 
 Pour mettre à jour une règle utilisateur à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
 ```
@@ -49,7 +52,7 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 4. Sélectionnez un groupe de ressources.
 5. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources sur son tableau de bord, éditer le nom du groupe de ressources ou gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle appartient.
 6. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
-7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle. Il n'accorde pas l'accès au conteneur que constitue le groupe de ressources.
+7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle et ne permet pas d'accéder au conteneur que constitue le groupe de ressources.
 8. Cliquez sur **Affecter**.
 
 ### Accès aux ressources
@@ -63,11 +66,16 @@ Pour affecter des droits d'accès à une ressource individuelle du compte ou l'a
 4. Sélectionnez un service ou sélectionnez **Tous les services avec l'offre Identity and Access activée**.
 5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
 6. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez pas de valeurs pour ces zones, la règle est affectée au niveau instance de service et au niveau compartiment. 
+7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez aucune valeur dans ces zones, la règle est affectée au niveau instance de service et non au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
 8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.
 9. Cliquez sur **Affecter**.
+
+Un message peut s'afficher indiquant qu'il existe déjà une règle s'appliquant aux éléments sélectionnés. Si une règle incluant exactement les même rôles et les mêmes détails est créée, vous êtes invité à modifier la nouvelle règle car il n'est pas autorisé d'avoir des règles en double. Si vous créez une règle ayant les mêmes détails qu'une règle existante mais différentes affectations de rôle, vous êtes invité à consulter et mettre à jour la règle existante en incluant les affectations de rôle souhaitées.
+{: tip}
+
+
 
 
 ## Retrait de l'accès
@@ -85,7 +93,7 @@ ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 
 ## Révision des accès affectés
 
-Si vous devez vérifier l'accès qui vous a été affecté sur un compte auquel vous avez ajouté, procédez comme suit :
+Pour vérifier l'accès affecté à un compte auquel vous avez été ajouté, procédez comme suit :
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 2. Sélectionnez votre nom.
