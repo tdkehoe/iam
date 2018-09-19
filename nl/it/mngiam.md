@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -14,10 +14,10 @@ lastupdated: "2018-08-02"
 {:new_window: target="_blank"}
 {:tip: .tip}
 
-# Gestione dell'accesso IAM
+# Gestione dell'accesso alle risorse
 {: #iammanidaccser}
 
-Per gestire l'accesso o assegnare un nuovo accesso per gli utenti, devi essere il proprietario dell'account, l'amministratore su tutti i servizi nell'account o l'amministratore assegnato per il servizio o l'istanza del servizio particolare. Per ulteriori informazioni sulle politiche di accesso e sui ruoli, vedi [Accesso IAM](/docs/iam/users_roles.html).
+Per gestire l'accesso o assegnare un nuovo accesso per gli utenti utilizzando le politiche IAM, devi essere il proprietario dell'account, l'amministratore su tutti i servizi nell'account o l'amministratore assegnato per il servizio o l'istanza del servizio particolare. Per ulteriori informazioni sulle politiche di accesso e sui ruoli, vedi [Accesso IAM](/docs/iam/users_roles.html).
 
 ## Modifica dell'accesso esistente
 
@@ -26,6 +26,9 @@ Per gestire l'accesso o assegnare un nuovo accesso per gli utenti, devi essere i
 3. Dalla riga per la politica che vuoi modificare, seleziona il menu **Azioni** e fai quindi clic su **Modifica politica**.
 4. Modifica la politica.
 5. Fai clic su **Salva**.
+
+Quando modifichi l'accesso per un utente o un gruppo, potresti ricevere un messaggio relativo al non consentimento delle politiche duplicate. Se stai modificando una politica esistente e le modifiche apportate sono in conflitto con l'accesso già assegnato, puoi scegliere di modificare la politica che stai modificando al momento per fornire un accesso differente, oppure puoi andare alla politica esistente in conflitto per controllare e apportare le modifiche se necessario. Potresti voler eliminare la politica che stai modificando, se esiste già una politica duplicata che soddisfa le tue esigenze.
+{: tip}
 
 Per aggiornare una politica utente utilizzando la CLI, puoi utilizzare il comando [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
 ```
@@ -68,6 +71,11 @@ Per assegnare l'accesso a una singola risorsa o a tutte le risorse nell'account,
     * **ID risorsa**: immetti il nome del tuo bucket.
 8. Scegli qualsiasi combinazione di ruoli per assegnare l'accesso desiderato per l'utente.
 9. Fai clic su **Assegna**.
+
+Potresti ricevere un messaggio che indica che esiste già una politica per i dettagli che hai selezionato. Se stai creando una politica con gli stessi dettagli e ruoli, ti viene richiesto di apportare modifiche alla nuova politica poiché non sono consentite politiche duplicate. Se stai creando una politica con gli stessi dettagli ma con assegnazioni di ruoli differenti rispetto a una politica esistente, ti viene richiesto di controllare e aggiornare la politica esistente con le assegnazioni dei ruoli che vuoi assegnare.
+{: tip}
+
+
 
 
 ## Rimozione dell'accesso
