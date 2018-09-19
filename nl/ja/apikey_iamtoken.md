@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-09"
+lastupdated: "2018-09-11"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-05-09"
 # API キーを使用した {{site.data.keyword.Bluemix_notm}} IAM トークンの取得
 {: #iamtoken_from_apikey}
 
-{{site.data.keyword.Bluemix}} API には、割り当てられた IAM 役割によって許可されたユーザーのみがアクセスできます。 したがって、API を呼び出すユーザーは、認証のために API 用の資格情報を渡す必要があります。 ここで説明するように、個人またはサービス ID の API キーを使用して、IAM トークンを生成できます。 このプロセスは、他の {{site.data.keyword.Bluemix_notm}} サービスと協力する必要があるアプリケーションを開発している場合にも使用されます。 サービス ID API キーを使用して、各 {{site.data.keyword.Bluemix_notm}} サービスに渡されるアクセス・トークンを取得する必要があります。
+{{site.data.keyword.Bluemix}} API には、割り当てられた IAM 役割によって許可されたユーザーのみがアクセスできます。 したがって、API を呼び出すユーザーは、認証のために API 用の資格情報を渡す必要があります。 IAM トークンは、[個人の API キー](/docs/iam/userid_keys.html#userapikey)または[サービス ID の API キー](/docs/iam/serviceid_keys.html#serviceidapikeys)のいずれかを使用して生成できます。このプロセスは、他の {{site.data.keyword.Bluemix_notm}} サービスと協力する必要があるアプリケーションを開発している場合にも使用されます。 サービス ID API キーを使用して、各 {{site.data.keyword.Bluemix_notm}} サービスに渡されるアクセス・トークンを取得する必要があります。
 
 1. 次の `curl` コマンドを使用して、API キーを使用して IAM トークンを生成します。
 
