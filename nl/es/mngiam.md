@@ -72,7 +72,7 @@ Para asignar acceso a un recurso individual en la cuenta o acceso a todos los re
 8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.
 9. Pulse **Asignar**.
 
-Es posible que reciba un mensaje que indica que existe una política para los detalles que ha seleccionado. Si se crea una política con los detalles y roles exactos, se le solicitará realizar cambios en la nueva política puesto que las políticas duplicadas no están permitidas. Si crea una política con los mismos detalles pero con una asignación de roles distinta como política existente, se le solicitará revisar y actualizar la política existente con las asignaciones de roles que desea asignar.
+Es posible que reciba un mensaje que indica que existe una política para los detalles que ha seleccionado. Si se crea una política con los detalles y roles exactos, se le solicitará realizar cambios en la nueva política puesto que las políticas duplicadas no están permitidas. Si crea una política con los mismos detalles pero con una asignación de roles distinta como una política existente, se le solicitará revisar y actualizar la política existente con las asignaciones de roles que desea asignar.
 {: tip}
 
 
