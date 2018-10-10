@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -19,7 +19,12 @@ lastupdated: "2018-08-20"
 
 An access group can be created to organize a set of users and service IDs into a single entity that makes it easy for you to assign permissions. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
 
-To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy giving access to all resources within that group instead of creating access policies for individual service instances within your account.  
+To manage or create new access groups, you must be the account owner, administrator or editor on all Identity and Access enabled services in the account, or the assigned administrator or editor for the IAM Access Groups Service. For more information about access policies and roles, see [IAM access](/docs/iam/users_roles.html#userroles).
+
+Additionally, an administrator or editor can be assigned to an individual group by creating an access policy where the resource is the Access Group ID. An administrator or editor of the group can update and delete the group, as well as create, update, and delete members or access policies for the group. A user assigned the viewer role can only retrieve and list groups, members, and assigned access.
+
+To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy giving access to all resources within that group instead of creating access policies for individual service instances within your account. 
+{: tip}
 
 ## Creating an access group
 
@@ -57,7 +62,7 @@ After you set up your group with users and service IDs, you can assign a common 
 4. Click **Assign access**. 
 5. Choose to assign access by resources within a resource group or individual resources available within the account.
 
-To create an access group policy using the CLI, you can use the [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) command.
+To create an access group policy using the CLI, you can use the [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create) command.
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
