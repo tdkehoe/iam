@@ -69,7 +69,7 @@ Platform management roles enable users to be assigned varying levels of permissi
 
 | Access policy details  | Actions a user can perform on services in the account | Actions for service IDs | Actions for access to resource groups | Action on resources within resource groups | Actions for managing access groups |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
-| Assign access to | One or all IAM-enabled services | IAM Identity Service | Selected resource group | Selected service in a resource group | IAM Access Groups |
+| *Service* | One or all IAM-enabled services selected | IAM Identity Service selected | Selected resource group | Selected service in a resource group | IAM Access Groups selected |
 | Viewer role | View instances, aliases, bindings, and credentials | View IDs and API keys | View resource group | View only specified instances in the resource group | View access groups and members |
 | Operator role |  View instances and manage aliases, bindings, and credentials | Not applicable | Not applicable | Not applicable | Not applicable |
 | Editor role |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create and delete IDs and API keys | View and edit name of resource group | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View, create, delete, and edit access groups in the account |
