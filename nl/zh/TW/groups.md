@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -19,7 +19,12 @@ lastupdated: "2018-08-20"
 
 您可以建立存取群組，將一組使用者和服務 ID 組織成單一實體，方便您指派許可權。您可以指派單一原則給群組，而不是針對每個個別使用者或服務 ID 指派相同的存取權多次。
 
-若要更輕鬆地指派及管理存取權，您可以設定資源群組，來組織您想要一群使用者能存取的一組資源。設定好資源群組之後，您可以指派一個原則，來提供對該群組內所有資源的存取權，而不是為您帳戶內的個別服務實例建立存取原則。  
+若要管理或建立新的存取群組，您必須是帳戶擁有者、帳戶中所有已啟用身分及存取之服務的管理者或編輯者，或是 IAM 存取群組服務的受指派管理者或編輯者。如需存取原則及角色的相關資訊，請參閱 [IAM 存取](/docs/iam/users_roles.html#userroles)。
+
+此外，管理者或編輯者可以藉由建立存取原則（其中資源是存取群組 ID）來指派到個別群組。群組的管理者或編輯者可以更新及刪除群組，也可以建立、更新和刪除群組的成員或存取原則。被指派檢視者角色的使用者只能擷取和列出群組、成員及已指派的存取權。
+
+若要更輕鬆地指派及管理存取權，您可以設定資源群組，來組織您想要一群使用者能存取的一組資源。設定好資源群組之後，您可以指派一個原則，來提供對該群組內所有資源的存取權，而不是為您帳戶內的個別服務實例建立存取原則。
+{: tip}
 
 ## 建立存取群組
 
@@ -57,7 +62,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 4. 按一下**指派存取權**。 
 5. 選擇依資源群組內的資源指派存取權，還是依帳戶內可用的個別資源指派存取權。
 
-若要使用 CLI 建立存取群組原則，您可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) 指令。
+若要使用 CLI 建立存取群組原則，您可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create) 指令。
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

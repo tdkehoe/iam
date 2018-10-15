@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -19,7 +19,12 @@ lastupdated: "2018-08-20"
 
 可以创建一个访问组，用于将一组用户和服务标识组织成单个实体，供您轻松分配许可权。您可以将单个策略分配给该组，而不用对每个用户或服务标识多次指定相同的访问权。
 
-要更轻松地分配和管理访问权，可以设置资源组来组织希望用户组有权访问的一组资源。设置资源组后，可以为其分配策略，用于授予对该组内所有资源的访问权，而不用为帐户内的各个服务实例分别创建访问策略。  
+要管理访问组或创建新的访问组，您必须是帐户所有者、帐户中所有启用了身份和访问权的服务的管理员或编辑者，或者是为 IAM 访问组服务分配的管理员或编辑者。有关访问策略和角色的更多信息，请参阅 [IAM 访问权](/docs/iam/users_roles.html#userroles)。
+
+此外，可以通过创建访问策略（其中资源是访问组标识），将管理员或编辑者分配给单个组。该组的管理员或编辑者可以更新和删除该组，还可以创建、更新和删除该组的成员或访问策略。分配了查看者角色的用户只能检索和列出组、成员和分配的访问权。
+
+要更轻松地分配和管理访问权，可以设置资源组来组织希望用户组有权访问的一组资源。设置资源组后，可以为其分配策略，用于授予对该组内所有资源的访问权，而不用为帐户内的各个服务实例分别创建访问策略。
+{: tip}
 
 ## 创建访问组
 
@@ -57,7 +62,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 4. 单击**分配访问权**。 
 5. 选择是按资源组中的资源还是按帐户中可用的单个资源分配访问权。
 
-要使用 CLI 创建访问组策略，可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) 命令。
+要使用 CLI 创建访问组策略，可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create) 命令。
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

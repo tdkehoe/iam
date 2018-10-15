@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -19,7 +19,12 @@ lastupdated: "2018-08-20"
 
 Eine Zugriffsgruppe kann erstellt werden, um eine Gruppe von Benutzern und Service-IDs in einer einzigen Entität zu organisieren, die es Ihnen leicht macht, Berechtigungen zuzuweisen. Sie können der Gruppe eine einzige Richtlinie zuweisen, anstatt denselben Zugriff mehrmals für den einzelnen Benutzer oder die einzelne Service-ID zuzuweisen.
 
-Um die Zuweisung und Verwaltung des Zugriffs noch einfacher zu gestalten, können Sie Ressourcengruppen einrichten, um eine Gruppe von Ressourcen zu organisieren, auf die eine Gruppe von Benutzern Zugriff haben soll. Wenn Ihre Ressourcengruppe eingerichtet ist, können Sie eine Richtlinie zuordnen, die den Zugriff auf alle Ressourcen in dieser Gruppe ermöglicht, anstatt Zugriffsrichtlinien für einzelne Serviceinstanzen innerhalb Ihres Kontos zu erstellen.  
+Zur Verwaltung oder Erstellung neuer Zugriffsgruppen müssen Sie Kontoeigner, Administrator oder Bearbeitungsberechtigter für alle Services im Konto sein, die für Identity and Access aktiviert sind; oder Sie müssen der zugewiesene Administrator oder Bearbeitungsberechtigte für den IAM-Zugriffsgruppenservice sein. Weitere Informationen zu den Zugriffsrichtlinien und Rollen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html#userroles).
+
+Darüber hinaus kann ein Administrator oder ein Bearbeitungsberechtigter einer einzelnen Gruppe zugewiesen werden, indem eine Zugriffsrichtlinie erstellt wird, deren Ressource die Zugriffsgruppen-ID ist. Ein Administrator oder Bearbeitungsberechtigter der Gruppe kann die Gruppe aktualisieren und löschen sowie Mitglieder oder Zugriffsrichtlinien für die Gruppe erstellen, aktualisieren und löschen. Ein Benutzer, dem die Rolle eines Anzeigeberechtigten zugewiesen ist, kann nur Gruppen, Mitglieder und zugewiesene Zugriffsberechtigungen anzeigen und auflisten.
+
+Um die Zuweisung und Verwaltung des Zugriffs noch einfacher zu gestalten, können Sie Ressourcengruppen einrichten, um eine Gruppe von Ressourcen zu organisieren, auf die eine Gruppe von Benutzern Zugriff haben soll. Wenn Ihre Ressourcengruppe eingerichtet ist, können Sie eine Richtlinie zuordnen, die den Zugriff auf alle Ressourcen in dieser Gruppe ermöglicht, anstatt Zugriffsrichtlinien für einzelne Serviceinstanzen innerhalb Ihres Kontos zu erstellen. 
+{: tip}
 
 ## Zugriffsgruppe erstellen
 
@@ -57,7 +62,7 @@ Nachdem Sie Ihre Gruppe mit Benutzern und Service-IDs eingerichtet haben, könne
 4. Klicken Sie auf **Zugriff zuweisen**. 
 5. Wählen Sie die Zuweisung von Zugriff nach Ressourcen in einer Ressourcengruppe oder nach einzelnen im Konto verfügbaren Ressourcen aus.
 
-Wenn Sie eine Zugriffsgruppenrichtlinie über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) verwenden.
+Wenn Sie eine Zugriffsgruppenrichtlinie über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create) verwenden.
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

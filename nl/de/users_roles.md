@@ -17,7 +17,7 @@ lastupdated: "2018-06-07"
 # IAM-Zugriff
 {: #userroles}
 
-Alle Services, die in einer Ressourcengruppe in Ihrem Konto zusammengefasst sind, werden mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet. Kontoeignern wird automatisch die Kontoadministratorrolle für Cloud IAM zugewiesen. Als Kontoadministrator können Sie Benutzern Zugriffsberechtigungen zuweisen und diese Zugriffsberechtigungen verwalten, Ressourcengruppen erstellen und Serviceinstanzen bereitstellen, indem Sie die entsprechenden Cloud IAM-Rollen zweisen. Sie können Zugriffsberechtigungen für Benutzer und Service-IDs bereitstellen, indem Sie Richtlinien erstellen, die ein Ziel für den Benutzer oder die Service-ID festlegen, auf das zugegriffen werden soll, und außerdem eine Rolle, in der definiert ist, welcher Zugriffstyp zulässig ist.
+Alle Services, die in einer Ressourcengruppe in Ihrem Konto zusammengefasst sind, werden mithilfe von {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) verwaltet. Kontoeignern wird automatisch die Kontoadministratorrolle für Cloud IAM zugewiesen. Als Kontoadministrator können Sie Benutzern Zugriffsberechtigungen zuweisen und diese Zugriffsberechtigungen verwalten, Ressourcengruppen erstellen und Serviceinstanzen bereitstellen, indem Sie die entsprechenden Cloud IAM-Rollen zuweisen. Sie können Zugriffsberechtigungen für Benutzer und Service-IDs bereitstellen, indem Sie Richtlinien erstellen, die ein Ziel für den Benutzer oder die Service-ID festlegen, auf das zugegriffen werden soll, und außerdem eine Rolle, in der definiert ist, welcher Zugriffstyp zulässig ist.
 
 
 ## Was sind Cloud IAM-Richtlinien und wer kann sie zuweisen?
@@ -69,7 +69,7 @@ Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsst
 
 | Zugriffsrichtlinie - Details  | Aktionen, die ein Benutzer für Services im Konto durchführen kann | Aktionen für Service-IDs | Aktionen für Zugriff auf Ressourcengruppen | Aktion für Ressourcen in Ressourcengruppen | Aktionen für die Verwaltung von Zugriffsgruppen |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
-| Zugriff zuweisen für | Einen oder alle IAM-fähigen Services | IAM Identity Service | Ausgewählte Ressourcengruppe | Ausgewählten Service in einer Ressourcengruppe | IAM-Zugriffsgruppen |
+| *Service* | Einen oder alle ausgewählten IAM-fähigen Services | Ausgewählter IAM Identity Service | Ausgewählte Ressourcengruppe | Ausgewählten Service in einer Ressourcengruppe | Ausgewählte IAM-Zugriffsgruppen |
 | Anzeigeberechtigten-Rolle | Instanzen, Aliasnamen, Bindungen und Berechtigungsnachweise anzeigen | IDs und API-Schlüssel anzeigen | Ressourcengruppe anzeigen | Nur angegebene Instanzen in der Ressourcengruppe anzeigen | Zugriffsgruppen und Mitglieder anzeigen |
 | Operatorrolle |  Instanzen anzeigen und Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Bearbeiterrolle |  Instanzen erstellen, löschen, bearbeiten und anzeigen. Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | IDs und API-Schlüssel erstellen und löschen | Name der Ressourcengruppe anzeigen und bearbeiten | Nur angegebene Instanzen in der Ressourcengruppe erstellen, löschen, bearbeiten, aussetzen, wiederaufnehmen, anzeigen und binden | Zugriffsgruppen in dem Konto anzeigen, erstellen, löschen und bearbeiten |
