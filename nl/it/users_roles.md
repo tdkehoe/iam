@@ -69,7 +69,7 @@ I ruoli di gestione della piattaforma consentono di assegnare agli utenti divers
 
 | Dettagli della politica di accesso  | Azioni che un utente può eseguire sui servizi dell'account | Azioni per gli ID di servizio | Azioni per l'accesso ai gruppi di risorse | Azione sulle risorse nei gruppi di risorse | Azioni per la gestione dei gruppi di accesso |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
-| Assegna accesso a | Uno o tutti i servizi abilitati a IAM | Servizio di identità IAM | Gruppo di risorse selezionato | Servizio selezionato in un gruppo di risorse | Gruppi di accesso IAM |
+| *Servizio* | Uno o tutti i servizi abilitati a IAM selezionati | Servizio di identità IAM selezionato | Gruppo di risorse selezionato | Servizio selezionato in un gruppo di risorse | Gruppi di accesso IAM selezionati |
 | Ruolo visualizzatore | Visualizzare istanze, alias, bind e credenziali | Visualizzare ID e chiavi API | Visualizzare il gruppo di risorse | Visualizzare solo le istanze specificate nel gruppo di risorse | Visualizza i gruppi di accesso e i membri |
 | Ruolo operatore |  Visualizzare istanze e gestire alias, bind e credenziali | Non applicabile | Non applicabile | Non applicabile | Non applicabile |
 | Ruolo editor |  Creare, eliminare, modificare e visualizzare istanze. Gestire alias, bind e credenziali | Creare ed eliminare ID e chiavi API | Visualizzare e modificare il nome del gruppo di risorse | Creare, eliminare, modificare, sospendere, riprendere, visualizzare e associare solo le istanze specificate nel gruppo di risorse | Visualizzare, creare, eliminare e modificare i gruppi di accesso nell'account. |

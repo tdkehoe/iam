@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -19,7 +19,12 @@ lastupdated: "2018-08-20"
 
 許可の割り当てを簡単に行うことができるように、アクセス・グループを作成して、ユーザーとサービス ID のセットを単一のエンティティーに編成することができます。 個々のユーザーまたはサービス ID ごとに同じアクセス権限を複数回割り当てるのではなく、単一のポリシーをグループに割り当てることができます。
 
-アクセス権限の割り当てと管理をさらに簡単にするには、ユーザーのグループがアクセスできるリソースのセットを編成するように、リソース・グループをセットアップします。 リソース・グループがセットアップされたら、アカウント内の個々のサービス・インスタンス用にアクセス・ポリシーを作成するのではなく、そのグループ内のすべてのリソースにアクセス権限を付与するポリシーを割り当てることができます。  
+新規アクセス・グループの管理または作成を行うには、アカウント所有者であるか、アカウント内のすべての ID およびアクセス対応サービスの管理者またはエディターであるか、または、IAM アクセス・グループ・サービスに割り当てられた管理者またはエディターである必要があります。 アクセス・ポリシーおよび役割について詳しくは、[IAM アクセス権限](/docs/iam/users_roles.html#userroles)を参照してください。
+
+さらに、リソースがアクセス・グループ ID であるアクセス・ポリシーを作成することにより、管理者またはエディターを個々のグループに割り当てることができます。 グループの管理者またはエディターは、グループの更新と削除、およびグループのメンバーまたはアクセス・ポリシーの作成、更新、削除を行うことができます。 ビューアー役割を割り当てられたユーザーは、グループ、メンバー、および割り当てられたアクセス権限の取得とリストのみを行うことができます。
+
+アクセス権限の割り当てと管理をさらに簡単にするには、ユーザーのグループがアクセスできるリソースのセットを編成するように、リソース・グループをセットアップします。 リソース・グループがセットアップされたら、アカウント内の個々のサービス・インスタンス用にアクセス・ポリシーを作成するのではなく、そのグループ内のすべてのリソースに対するアクセス権限を付与するポリシーを割り当てることができます。
+{: tip}
 
 ## アクセス・グループの作成
 
@@ -57,7 +62,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 4. **「アクセス権限の割り当て (Assign access)」**をクリックします。 
 5. リソース・グループ内のリソース別にアクセスを割り当てるのか、アカウント内で使用可能な個々のリソース別にアクセス権限を割り当てるのかを選択します。
 
-CLI を使用してアクセス・グループ・ポリシーを作成するには、[ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create) コマンドを使用します。
+CLI を使用してアクセス・グループ・ポリシーを作成するには、[ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create) コマンドを使用します。
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
