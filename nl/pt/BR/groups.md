@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -21,11 +21,16 @@ Um grupo de acesso pode ser criado para organizar um conjunto de usuários e IDs
 única entidade que facilita a designação de permissões. É possível designar uma política única ao grupo em vez
 de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço individual.
 
+Para gerenciar ou criar novos grupos de acesso, deve-se ser o editor, o administrador ou o proprietário da conta em todos os serviços ativados do Identity and Access na conta ou o administrador ou o editor designado para o Serviço de grupos de acesso do IAM. Para obter mais informações sobre funções e políticas de acesso, veja [Acesso ao IAM](/docs/iam/users_roles.html#userroles).
+
+Além disso, um administrador ou um editor pode ser designado a um grupo individual criando uma política de acesso na qual o recurso é o ID do grupo de acesso. Um administrador ou um editor do grupo pode atualizar e excluir o grupo, bem como criar, atualizar e excluir membros ou políticas de acesso do grupo. Um usuário com a função de visualizador designada só pode recuperar e listar grupos, membros e acesso designado.
+
 Para facilitar ainda mais a designação e o gerenciamento de acesso, é possível configurar
 grupos de recursos para organizar um conjunto de recursos ao qual você deseja que um grupo de usuários
 tenha acesso. Quando seu grupo de recursos é configurado, é possível designar uma política fornecendo acesso a
 todos os recursos dentro desse grupo em vez de criar políticas de acesso para instâncias de serviço
-individuais dentro de sua conta.  
+individuais dentro de sua conta. 
+{: tip}
 
 ## Criando um grupo de acesso
 
@@ -69,7 +74,7 @@ entidades dentro do grupo.
 5. Escolha para designar o acesso por recursos em um grupo de recursos ou recursos individuais
 disponíveis dentro da conta.
 
-Para criar uma política de grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create).
+Para criar uma política de grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create).
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

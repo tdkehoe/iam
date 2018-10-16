@@ -74,7 +74,7 @@ designados a cada função podem executar. É possível consultar a documentaç�
 
 | Detalhes da política de acesso  | Ações que um usuário pode executar em serviços na conta | Ações para IDs de serviço | Ações para acesso a grupos de recursos | Ação em recursos em grupos de recursos | Ações para gerenciamento de grupos de acesso |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
-| Designar acesso a | Um ou todos os serviços ativados por IAM | Serviço de identidade do IAM | Grupo de recursos selecionados | Serviço selecionado em um grupo de recursos | Grupos de acesso ao IAM |
+| *Serviço* | Um ou todos os serviços ativados por IAM selecionados | Serviço de Identidade do IAM selecionado | Grupo de recursos selecionados | Serviço selecionado em um grupo de recursos | Grupos de acesso ao IAM selecionados |
 | Função de visualizador | Visualizar instâncias, aliases, ligações e credenciais | Visualizar IDs e chaves API | Visualizar grupo de recursos | Visualizar somente instâncias especificadas no grupo de recursos | Visualizar grupos de acesso e membros |
 | Função de operador |  Visualizar instâncias e gerenciar aliases, ligações e credenciais | Não aplicável | Não aplicável | Não aplicável | Não aplicável |
 | Função do editor |  Criar, excluir, editar e visualizar instâncias. Gerenciar aliases, ligações e credenciais | Criar e excluir IDs e chaves API | Visualizar e editar o nome do grupo de recursos | Criar, excluir, editar, suspender, continuar, visualizar e ligar somente as instâncias especificadas no grupo de recursos | Visualizar, criar, excluir e editar grupos de acesso na conta |
