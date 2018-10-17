@@ -69,7 +69,7 @@ Los roles de gestión de plataforma permiten asignar a los usuarios distintos ni
 
 | Detalles de política de acceso  | Acciones que un usuario puede realizar en servicios de la cuenta | Acciones para ID de servicio | Acciones para acceder a grupos de recursos | Acción en recursos dentro de grupos de recursos | Acciones para gestionar grupos de acceso |
 |:-----------------|:--------------|:---------------|:----------------|:-----------------|:--------------|
-| Asignar acceso a | Uno o todos los servicios habilitados de IAM | Servicio de identidad IAM | Grupo de recursos seleccionado | Servicio seleccionado en un grupo de recursos | Grupos de acceso de IAM |
+| *servicio* | Uno o todos los servicios habilitados de IAM seleccionados | Servicio de identidad IAM seleccionado | Grupo de recursos seleccionado | Servicio seleccionado en un grupo de recursos | Grupos de acceso de IAM seleccionados |
 | Rol Visor | Ver instancias, alias, enlaces y credenciales | Ver ID y claves de API | Ver grupo de recursos | Ver solo instancias especificadas en el grupo de recursos | Visualizar miembros y grupos de acceso |
 | Rol Operador |  Ver instancias y gestionar alias, enlaces y credenciales | No aplicable | No aplicable | No aplicable | No aplicable |
 | Rol Editor |  Crear, suprimir, editar y ver instancias. Gestionar alias, enlaces y credenciales | Crear y suprimir ID y claves de API | Ver y editar el nombre de grupo de recursos | Crear, suprimir, editar, suspender, reanudar, ver y enlazar solo instancias especificadas en el grupo de recursos | Ver, crear, suprimir y editar grupos de acceso en la cuenta |

@@ -17,7 +17,7 @@ lastupdated: "2018-09-04"
 # Gestión del acceso a los recursos
 {: #iammanidaccser}
 
-Para gestionar el acceso o asignar nuevos accesos a usuarios utilizando las políticas de IAM, debe ser el propietario de la cuenta, el administrado de todos los servicios de la cuenta o el administrador asignado para un servicio o instancia de servicio particular. Para obtener más información sobre las políticas de acceso y los roles, consulte [Acceso de IAM](/docs/iam/users_roles.html).
+Para gestionar el acceso o asignar nuevos accesos a usuarios utilizando las políticas de IAM, debe ser el propietario de la cuenta, el administrador de todos los servicios de la cuenta o el administrador asignado para un servicio o instancia de servicio particular. Para obtener más información sobre las políticas de acceso y los roles, consulte [Acceso de IAM](/docs/iam/users_roles.html).
 
 ## Edición de accesos existentes
 

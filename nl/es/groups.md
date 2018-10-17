@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-08-20"
+lastupdated: "2018-10-10"
 
 ---
 
@@ -19,7 +19,12 @@ lastupdated: "2018-08-20"
 
 Se puede crear un grupo de acceso para organizar un conjunto de usuarios e ID de servicio en una sola entidad, lo que le facilita la asignación de permisos. Puede asignar una única política al grupo en lugar de asignar el mismo acceso varias veces por usuario individual o ID de servicio.
 
-Para facilitar aún más la asignación y gestión de accesos, puede configurar grupos de recursos para organizar el conjunto de recursos al que desea que un grupo de usuarios tenga acceso. Cuando el grupo de recursos esté configurado, podrá asignar una política otorgando acceso a todos los recursos del grupo, en lugar de crear políticas de acceso para instancias de servicio individuales de su cuenta.  
+Para gestionar o crear nuevos grupos de acceso, debe ser el propietario de la cuenta, el administrador o editor de todos los servicios habilitados para identidad y acceso, o el administrador o editor asignados para el servicio de grupos de acceso de IAM. Para obtener más información sobre las políticas de acceso y los roles, consulte [Acceso de IAM](/docs/iam/users_roles.html#userroles).
+
+Además, se puede asignar un administrador o editor a un grupo individual creando una política de acceso donde el recurso es el ID del grupo de acceso. Un administrador o editor del grupo puede actualizar y suprimir el grupo, así como crear, actualizar y suprimir miembros o políticas de acceso del grupo. Un usuario que tiene asignado el rol de visor solo puede recuperar y listar grupos, miembros y acceso asignado.
+
+Para facilitar aún más la asignación y gestión de accesos, puede configurar grupos de recursos para organizar el conjunto de recursos al que desea que un grupo de usuarios tenga acceso. Cuando el grupo de recursos esté configurado, podrá asignar una política otorgando acceso a todos los recursos del grupo, en lugar de crear políticas de acceso para instancias de servicio individuales de su cuenta. 
+{: tip}
 
 ## Creación de un grupo de acceso
 
@@ -57,7 +62,7 @@ Después de configurar el grupo con usuarios e ID de servicio, puede asignar una
 4. Pulse **Asignar acceso**. 
 5. Elija asignar acceso por recursos en un grupo de recursos o en recursos individuales disponibles en la cuenta.
 
-Para crear una política de grupo de acceso utilizando la CLI, puede utilizar el mandato [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_iam_access_group_policy_create).
+Para crear una política de grupo de acceso utilizando la CLI, puede utilizar el mandato [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create).
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
