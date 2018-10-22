@@ -23,7 +23,7 @@ Ce tutoriel concerne les [ressources](/docs/resources/acct_resources.html#resour
 
 ## Etape 1. Inviter des utilisateurs et leur affecter un accès initial
 
-Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour ces utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section **Accès** de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
+Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour les utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section **Accès** de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
 
 En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM aux utilisateurs que vous invitez dans la section Services. Dans la règle initiale que vous affectez dans l'invitation, vous pouvez accorder l'accès à toutes les ressources d'un groupe de ressources, toutes les ressources d'un service spécifique d'un groupe de ressources, toutes les ressources des services avec l'offre Identity and Access activée du compte ou à une seule ressource :
 
