@@ -23,7 +23,8 @@ Este tutorial se aplica somente a [recursos](/docs/resources/acct_resources.html
 
 ## Etapa 1. Convidar os usuários e designar o acesso inicial
 
-É possível convidar um ou múltiplos usuários e configurar uma política de acesso inicial para os usuários no convite. Se você convidar múltiplos usuários em um convite, o mesmo acesso será designado a cada um deles. Na seção **Acesso** da página Convidar usuários, você vê somente as seções que você tem permissão para designar.
+É possível convidar um ou múltiplos usuários e configurar uma política de acesso inicial para os usuários no
+convite. Se você convidar múltiplos usuários em um convite, o mesmo acesso será designado a cada um deles. Na seção **Acesso** da página Convidar usuários, você vê somente as seções que você tem permissão para designar.
 
 Como proprietário da conta, é possível designar funções do Cloud IAM para usuários que você convida na seção Serviços. É possível fornecer acesso a todos os recursos em um grupo de recursos, todos os recursos para um serviço específico em um grupo de recursos, todos os serviços ativados pelo Identity and Access na conta ou um único recurso na política inicial que você designa no convite:
 
