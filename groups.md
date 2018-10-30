@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-10-10"
 
 An access group can be created to organize a set of users and service IDs into a single entity that makes it easy for you to assign permissions. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
 
-To manage or create new access groups, you must be the account owner, administrator or editor on all Identity and Access enabled services in the account, or the assigned administrator or editor for the IAM Access Groups Service. For more information about access policies and roles, see [IAM access](/docs/iam/users_roles.html#userroles).
+To manage or create new access groups, you must be the account owner, administrator or editor on the IAM Access Groups service in the account, or the assigned administrator or editor for the all account management services. Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access Group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/iam/users_roles.html#platformrolestable2).
 
 Additionally, an administrator or editor can be assigned to an individual group by creating an access policy where the resource is the Access Group ID. An administrator or editor of the group can update and delete the group, as well as create, update, and delete members or access policies for the group. A user assigned the viewer role can only retrieve and list groups, members, and assigned access.
 
