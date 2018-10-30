@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-17"
+lastupdated: "2018-10-30"
 
 
 
@@ -46,7 +46,7 @@ The access management systems are entirely different. IAM resources belong to a 
 
 Go to **Manage** &gt; **Access (IAM)**, and select your name in the User column. Then, depending on the access you're looking for, open the different tabs:
 
-* To determine which access groups you're in, select **Access group**.
+* To determine which access groups you're in, select **Access groups**.
 * For IAM access, select the **Access policies**.
 * For Cloud Foundry roles, select **Cloud Foundry access**.
 
@@ -92,7 +92,10 @@ For example platform management roles and actions for account management service
 ## Who can remove users?
 {: #remove-users}
 
-Only the account owner can remove users. 
+The account owner can always add and remove users. Also, any user with either the following two policy types can remove users:
+
+* Editor or Administrator on All account management services
+* Editor or Administrator on the User management account management service
 
 ## How do I turn on multi-factor authentication?
 {: #multi-factor}
@@ -116,3 +119,10 @@ With the start of {{site.data.keyword.Bluemix_notm}}, an open source platform se
 
 Access control and account resource organization are the major differences between resource groups and Cloud Foundry orgs and spaces. Resource groups organize IAM-enabled services in an account that are access controlled by using IAM policies. Orgs and spaces are managed by using Cloud Foundry roles for access control, and Cloud Foundry resources are assigned to spaces. Orgs and spaces can be used to organize and control access to resources only within the Cloud Foundry realm, while resource groups and IAM can be used for multiple types of resources across {{site.data.keyword.Bluemix_notm}}.
 
+## How do I assign a user as an account administrator? 
+{: #account-administrator}
+
+To delegate the account administrator role by using IAM policies, you should create two policies:
+
+* Administrator on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account
+* Administrator on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and tracking billing and usage.
