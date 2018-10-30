@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-21"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -25,13 +25,13 @@ This tutorial applies to IAM-managed [resources](/docs/resources/acct_resources.
 
 You can invite one or multiple users and set an initial access policy for the users on the invitation. If you invite multiple users in one invitation, the same access is assigned to each of the users. In the **Access** section of the Invite users page, you only see the sections that you are permitted to assign.
 
-As the account owner, you can assign Cloud IAM roles for users that you invite in the Services section. You can provide access to all resources in a resource group, all resources for a specific service in a resource group, all Identity and Access enabled services in the account, or a single resource in the initial policy that you assign in the invitation:
+As the account owner, you can assign Cloud IAM roles for users that you invite in the Services section. You can provide access to all resources in a resource group, all resources for a specific service in a resource group, all Identity and Access enabled services in the account, a single resource in the account, or access to account management services:
 
 1. Go to **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. Click **Invite users**.
 3. Specify the email address of the users that you want to invite.
 4. In the **Access** section, expand the **Services** option.
-5. Choose to assign access to a **Resource** or to resources within a **Resource group**.
+5. Choose to assign access to a **Resource**, resources within a **Resource group**, or **Account management services**.
 6. Depending on your selection, follow the prompts to specify the access to an individual service instance, all Identity and Access enabled services, all resources in a resource group, or to a specific service within the selected resource group. If you selected the resource group option, you can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group.
 7. If you have permission, you can also assign Cloud Foundry or infrastructure access on the invitation.
 8. Click **Invite users**.
@@ -84,6 +84,7 @@ You can assign access to a user for a resource group or a single resource.
 4. Choose how you want to assign access:
     * Select **Assign access within a resource group** to assign access to all resources within a group or to just resources for a specific service within a group. You can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group. Select **No access** if you want the user to only have access to the specified resource and not the group that it is organized in.
     * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance.
+    * Select **Assign access to Account management services** to assign access to all account management services or just one account management service. 
 5. Select any combination of roles to define the scope of access. See [Cloud IAM roles](/docs/iam/users_roles.html#iamusermanrol) for more information.
 6. Click **Assign**.
 
