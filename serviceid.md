@@ -46,16 +46,16 @@ In order for a user to have access to lock and unlock service IDs and API keys t
 * Access to all service IDs in the account
 * Access to a specific service ID in the account
 
-To assign access to all service IDs in the account, set an access policy with the following details:
+To assign access to all service IDs in the account, set an access policy for account management services with the following details:
 
 * Editor or Administrator role 
 * IAM Identity Service
 
-To assign access to a specific service ID in the account, set an access policy with the following details:
+To assign access to a specific service ID in the account, set an access policy for account management services with the following details:
 
 * Editor or Administrator role
 * IAM Identity Service
-* Specify `serviceid` in the **Resource type** field 
+* Specify "serviceid" in the **Resource type** field 
 * Specify the service ID identifier in the **Resource ID** field
 
 To get the identifier of a specific service ID, go to **Manage** > **Security** > **Identity & Access**, then select **Service IDs**. Select the service ID that you want to view details for, and copy the ID value.

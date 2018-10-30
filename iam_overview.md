@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -45,9 +45,9 @@ You can review the following list to learn more about these Cloud IAM components
 <dt>Resources</dt>
 <dd>Account resources are the provisioned service offerings that are selected from the catalog or finer-grained resources within a service instance.</dd>
 <dt>Policies</dt>
-<dd>Policies are how users or service IDs in the account are given permission to access account resources. Policies include a subject, target, and role. The subject is the user or service ID that you are providing access to. The target of the policy is the resource to which you want to provide access. And, the roles are the way to define the level of access or allowed actions on the target of the policy. There are three types of policies that allow access to account resources: a resource group policy, a resource instance policy, and an account-wide policy for access to all Identity and Access enabled services. Depending on your selections, there might be custom configuration options such as defining access down to resources in a specific region or defining access to the granular level of a service-specific resource within an instance.</dd>
+<dd>Policies are how users, service IDs, and access groups in the account are given permission to access account resources. Policies include a subject, target, and role. The subject is the user, service ID, or access group that you are providing access. The target of the policy is the resource to which you want to provide access. And, the roles are the way to define the level of access or allowed actions on the target of the policy. There are different types of policies that allow access to account resources: a resource group policy, a resource instance policy, an account-wide policy for access to all Identity and Access enabled services, and a policy on all or one account management services. Depending on your selections, custom configuration options such as defining access down to resources in a specific region or defining access to the granular level of a service-specific resource within an instance might be available.</dd>
 <dt>Roles</dt>
-<dd>Cloud IAM access roles allow a user to complete specific tasks on the resource that is defined in the policy. There are two types of access roles: platform management and service access. Platform management roles define allowable actions for managing resources at the platform level including user access, creation of instances and service IDs, and managing resource groups, for example. And, service access roles define allowable actions within the context of using the service. These roles are  customized based on the service that is selected within the policy.</dd>
+<dd>Cloud IAM access roles allow a user to complete specific tasks on the resource that is defined in the policy. There are two types of access roles: platform management and service access. Platform management roles define allowable actions for managing resources at the platform level such as user access and creation of service instances, for example. Platform roles also apply to actions that can be taken within the context of account management services such as inviting and removing users, managing access groups, manging service IDs, and private catalog offerings. And, service access roles define allowable actions within the context of using the service such as calling service APIs. These roles are customized based on the service that is selected within the policy.</dd>
 <dt>Actions</dt>
 <dd>Actions are mapped to the Cloud IAM roles to enable users to perform only specific tasks when they are assigned the different roles. Allowable actions for each role might change based on the service that is being accessed because each service defines how that role maps to the use of the service. </dd>
 <dt>Access management system</dt>
