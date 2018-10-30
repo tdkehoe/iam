@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -47,6 +47,16 @@ To assign access to an individual resource in the account, complete the followin
     * **Resource ID**: Enter the name of your bucket.
 9. Choose any combination of roles to assign the desired access for the user.
 10. Select **Assign**.
+
+To assign access to an individual account management services or all account management services, complete the following steps:
+
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
+2. Select the service ID from the table that you want to assign a service policy for.
+3. Click **Assign access**.
+4. Select to assign access to **Account Management Services**
+5. Select **All Account Management Services** or select a specific account management service.
+6. Select any combination of roles to assign the wanted access.
+
 
 
 
