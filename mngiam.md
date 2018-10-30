@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -36,10 +36,16 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ```
 {: codeblock}
 
-## Assigning new access
+### Assigning new access
 {: #assignaccess}
 
-To enable a user access to all account resources with the ability to manage user access, create resource groups, and complete all other IAM management tasks, select the **All Identity and Access enabled services** option for this policy with the **Administrator** role assigned.
+You can assign access by using any of the three types of policies: 
+
+* Access to resources within a resource group including the option for just one or all
+* Access to resources in the account including including the option for just one type or all types
+* Access to account management services including the option for just one or all services
+
+If you want to enable a user full administrator access to complete account management tasks such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must create two policies: one on **All Identity and Access enabled services** with the role administrator and one on **All Account Management Services** with the role administrator.
 {: tip}
 
 ### Access to resources within a resource group 
@@ -75,7 +81,15 @@ To assign access to an individual resource in the account or access to all resou
 You might receive a message that a policy already exists for the details that you've selected. If a policy with the exact details and roles is being created, you're prompted to make changes to the new policy since duplicate policies aren't allowed. If you're creating a policy with the same details but different role assignments as an existing policy, you're prompted to review and update the existing policy with the role assignments that you want to assign.
 {: tip}
 
+### Access to account management services 
 
+To assign access to one or all account management services, complete the following steps: 
+
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
+2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
+3. Select to assign access to **Account Management Services**
+4. Select **All Account Management Services** or select a specific account management service.
+5. Select any combination of roles to assign the wanted access.
 
 
 ## Removing access
