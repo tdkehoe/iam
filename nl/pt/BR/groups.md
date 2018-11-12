@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -21,7 +21,12 @@ Um grupo de acesso pode ser criado para organizar um conjunto de usuários e IDs
 única entidade que facilita a designação de permissões. É possível designar uma política única ao grupo em vez
 de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço individual.
 
-Para gerenciar ou criar novos grupos de acesso, deve-se ser o editor, o administrador ou o proprietário da conta em todos os serviços ativados do Identity and Access na conta ou o administrador ou o editor designado para o Serviço de grupos de acesso do IAM. Para obter mais informações sobre funções e políticas de acesso, veja [Acesso ao IAM](/docs/iam/users_roles.html#userroles).
+Para gerenciar ou criar novos grupos de acesso, deve-se ser o proprietário da conta, o administrador ou o editor
+no serviço Grupos de acesso do IAM na conta ou o administrador ou o editor designado para todos os serviços de
+gerenciamento de conta. Além disso, um administrador ou editor pode ter acesso designado para gerenciar um grupo individual criando
+uma política de acesso em que o recurso é o ID do grupo de acesso. Para obter mais informações sobre as políticas de
+acesso e as funções para o serviço Grupos de acesso do IAM, consulte
+[Acesso do IAM](/docs/iam/users_roles.html#platformrolestable2).
 
 Além disso, um administrador ou um editor pode ser designado a um grupo individual criando uma política de acesso na qual o recurso é o ID do grupo de acesso. Um administrador ou um editor do grupo pode atualizar e excluir o grupo, bem como criar, atualizar e excluir membros ou políticas de acesso do grupo. Um usuário com a função de visualizador designada só pode recuperar e listar grupos, membros e acesso designado.
 

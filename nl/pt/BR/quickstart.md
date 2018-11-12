@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-21"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -26,13 +26,16 @@ Este tutorial se aplica somente a [recursos](/docs/resources/acct_resources.html
 É possível convidar um ou múltiplos usuários e configurar uma política de acesso inicial para os usuários no
 convite. Se você convidar múltiplos usuários em um convite, o mesmo acesso será designado a cada um deles. Na seção **Acesso** da página Convidar usuários, você vê somente as seções que você tem permissão para designar.
 
-Como proprietário da conta, é possível designar funções do Cloud IAM para usuários que você convida na seção Serviços. É possível fornecer acesso a todos os recursos em um grupo de recursos, todos os recursos para um serviço específico em um grupo de recursos, todos os serviços ativados pelo Identity and Access na conta ou um único recurso na política inicial que você designa no convite:
+Como proprietário da conta, é possível designar funções do Cloud IAM para usuários que você convida na seção Serviços. É possível fornecer acesso a todos os recursos em um grupo de recursos, a todos os recursos para um serviço específico
+em um grupo de recursos, a todos os serviços ativados para o Identity and Access na conta, a um único recurso na conta ou
+aos serviços de gerenciamento de conta:
 
 1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identity and Access** e, em seguida, selecione **Usuários**.
 2. Clique em **Convidar usuários**.
 3. Especifique o endereço de e-mail dos usuários que você deseja convidar.
 4. Na seção **Acesso**, expanda a opção **Serviços**.
-5. Escolha designar o acesso a um **Recurso** ou a recursos em um **Grupo de recursos**.
+5. Escolha designar acesso a um **Recurso**, aos recursos em um **Grupo de
+recursos** ou aos **Serviços de gerenciamento de conta**.
 6. Dependendo de sua seleção, siga os prompts para especificar o acesso a uma instância de serviço individual, todos os serviços ativados pelo Identity and Access, todos os recursos em um grupo de recursos ou a um serviço específico dentro do grupo de recursos selecionado. Se você selecionou a opção de grupo de recursos, também é possível fornecer ao usuário o acesso para visualizar, editar ou gerenciar acesso para o grupo de recursos, selecionando uma função para acesso ao grupo de recursos.
 7. Se você tiver permissão, também será possível designar o acesso ao Cloud Foundry ou à infraestrutura no convite.
 8. Clique em **Convidar usuários**.
@@ -94,6 +97,8 @@ usuários e grupos em sua conta tenham o nível de acesso desejado.
 4. Escolha como deseja designar o acesso:
     * Selecione **Designar acesso dentro de um grupo de recursos** para designar acesso a todos os recursos em um grupo ou apenas a recursos para um serviço específico em um grupo. Também é possível fornecer ao usuário o acesso para visualizar, editar ou gerenciar acesso para o grupo de recursos, selecionando uma função para acesso ao grupo de recursos. Selecione **Sem acesso** se você deseja que o usuário tenha acesso somente ao recurso especificado e não ao grupo em que ele está organizado.
     * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica.
+    * Selecione **Designar acesso aos serviços de gerenciamento de conta** para designar
+acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de gerenciamento de conta. 
 5. Selecione qualquer combinação de funções para definir o escopo de acesso. Veja [Funções do Cloud IAM](/docs/iam/users_roles.html#iamusermanrol) para obter mais informações.
 6. Clique em **Designar**.
 

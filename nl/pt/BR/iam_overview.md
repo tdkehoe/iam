@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -46,9 +46,18 @@ possa ser designado a todas as entidades dentro do grupo com uma política únic
 <dt>Resources</dt>
 <dd>Os recursos de conta são as ofertas de serviços provisionados que são selecionadas do catálogo ou recursos de baixa granularidade em uma instância de serviço.</dd>
 <dt>Políticas</dt>
-<dd>As políticas são como os usuários ou IDs de serviço na conta recebem permissão para acessar recursos da conta. As políticas incluem um assunto, o destino e a função. O assunto é o ID do usuário ou serviço ao qual você está fornecendo acesso. O destino da política é o recurso ao qual você deseja fornecer acesso. Além disso, as funções servem para definir o nível de acesso ou as ações permitidas no destino da política. Há três tipos de políticas que permitem o acesso a recursos da conta: uma política de grupo de recursos, uma política de instância de recurso e uma política de conta para acesso a todos os serviços ativados pelo Identity and Access. Dependendo de suas seleções, pode haver opções de configuração customizada, como definir o acesso a recursos em uma região específica ou definir o acesso ao nível granular de um recurso específico de serviço dentro de uma instância.</dd>
+<dd>As políticas são como a permissão é concedida aos usuários, aos IDs de serviço e aos grupos de acesso na conta para acessar os recursos da conta. As políticas incluem um assunto, o destino e a função. O assunto é o usuário, o ID do serviço ou o grupo de acesso ao qual você está concedendo acesso. O destino da política é o recurso ao qual você deseja fornecer acesso. Além disso, as funções servem para definir o nível de acesso ou as ações permitidas no destino da política. Há diferentes tipos de políticas que permitem o acesso aos recursos da conta: uma política de grupo de recursos, uma
+política de instância de recurso, uma política de toda a conta para acesso a todos os serviços ativados para o Identity
+and Access e uma política em todos ou em um serviço de gerenciamento de conta. Dependendo de suas seleções, as opções de
+configuração customizadas, como a definição de acesso aos recursos em uma região específica ou a definição de acesso ao
+nível granular de um recurso específico de serviço em uma instância, podem estar disponíveis.</dd>
 <dt>Funções</dt>
-<dd>As funções de acesso do Cloud IAM permitem que um usuário conclua tarefas específicas no recurso que é definido na política. Há dois tipos de funções de acesso: gerenciamento de plataforma e acesso de serviço. As funções de gerenciamento de plataforma definem as ações permitidas para gerenciar recursos no nível de plataforma, incluindo acesso de usuário, criação de instâncias e IDs de serviço e gerenciamento de grupos de recursos, por exemplo. Além disso, as funções de acesso de serviço definem as ações permitidas dentro do contexto de uso do serviço. Essas funções são customizadas com base no serviço que é selecionado dentro da política.</dd>
+<dd>As funções de acesso do Cloud IAM permitem que um usuário conclua tarefas específicas no recurso que é definido na política. Há dois tipos de funções de acesso: gerenciamento de plataforma e acesso de serviço. As funções de gerenciamento da plataforma definem as ações permitidas para gerenciar os recursos no nível da plataforma,
+como o acesso do usuário e a criação de instâncias de serviço. As funções da plataforma também se aplicam
+às ações que podem ser tomadas dentro do contexto dos serviços de gerenciamento de conta, como convidar e remover
+usuários, gerenciar grupos de acesso, gerenciar IDs de serviço e as ofertas do catálogo privado. Além disso, as
+funções de acesso de serviço definem as ações permitidas dentro do contexto do uso do serviço, como a chamada das APIs
+de serviço. Essas funções são customizadas com base no serviço que é selecionado dentro da política.</dd>
 <dt>Ações</dt>
 <dd>As ações são mapeadas para as funções do Cloud IAM para permitir que os usuários executem somente tarefas específicas quando eles são designados a funções diferentes. As ações permitidas para cada função podem mudar com base no serviço que está sendo acessado porque cada serviço define como essa função é mapeada para o uso do serviço. </dd>
 <dt>Sistema de gerenciamento de acesso</dt>

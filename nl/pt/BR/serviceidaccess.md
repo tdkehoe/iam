@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -47,6 +47,17 @@ Para designar acesso a um recurso individual na conta, conclua as etapas a segui
     * **ID do recurso**: Insira o nome do bucket.
 9. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário.
 10. Selecione **Designar**.
+
+Para designar acesso a um serviço de gerenciamento de conta individual ou a todos os serviços de gerenciamento de
+conta, conclua as etapas a seguir:
+
+1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
+2. Selecione o ID de serviço na tabela para a qual você deseja designar uma política de serviço.
+3. Clique em **Designar acesso**.
+4. Selecione para designar acesso aos **Serviços de gerenciamento de conta**
+5. Selecione **Todos os serviços de gerenciamento de conta** ou selecione um serviço de gerenciamento de conta específico.
+6. Selecione qualquer combinação de funções para designar o acesso desejado.
+
 
 
 

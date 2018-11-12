@@ -48,16 +48,18 @@ Para que um usuário tenha acesso para bloquear e desbloquear IDs de serviço e 
 * Acesso a todos os IDs de serviço na conta
 * Acesso a um ID de serviço específico na conta
 
-Para designar acesso a todos os IDs de serviço na conta, configure uma política de acesso com os detalhes a seguir:
+Para designar acesso a todos os IDs de serviço na conta, configure uma política de acesso para os serviços de
+gerenciamento de conta com os detalhes a seguir:
 
 * Função Editor ou Administrador 
 * Serviço de identidade do IAM
 
-Para designar acesso a um ID de serviço específico na conta, configure uma política de acesso com os detalhes a seguir:
+Para designar acesso a um ID de serviço específico na conta, configure uma política de acesso para os serviços de
+gerenciamento de conta com os detalhes a seguir:
 
 * Função Editor ou Administrador
 * Serviço de identidade do IAM
-* Especifique `serviceid` no campo **Tipo de recurso** 
+* Especifique "serviceid" no campo **Tipo de recurso** 
 * Especifique o identificador de ID do serviço no campo **ID do recurso**
 
 Para obter o identificador de um ID de serviço específico, acesse **Gerenciar** > **Segurança** > **Identidade e acesso**, em seguida, selecione **IDs de serviço**. Selecione o ID do serviço para o qual você deseja visualizar detalhes e copie o valor do ID.
@@ -113,6 +115,7 @@ ibmcloud iam service-id-unlock (NAME|UUID) [-f, --force]
 ```
 
 Opções de comando:
+
 <dl>
   <dt>NAME (necessário)</dt>
   <dd>Nome do serviço, exclusivo com UUID</dd>

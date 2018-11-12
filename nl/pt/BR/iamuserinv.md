@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -45,7 +45,22 @@ Você designa acesso para os usuários à medida que os convida, designando pol�
 
 É possível designar acesso criando uma política de acesso inicial ao Cloud IAM quando você convida um novo usuário. Nesta seção, é possível fornecer a um usuário acesso aos serviços em um grupo de recursos com acesso ao grupo de recursos ou a um recurso individual na conta. Depois que o usuário aceita o convite, é possível designar acesso adicional. Veja [Gerenciando acesso ao IAM](/docs/iam/mngiam.html#iammanidaccser) para obter detalhes sobre como editar políticas para incluir funções extras, designar mais acesso ou remover uma política para um usuário.
 
-**Nota**: dependendo de qual serviço você seleciona ao designar a política, talvez não veja todos os campos que são descritos nos procedimentos a seguir.
+Dependendo do serviço selecionado ao designar a política, você pode não ver todos os campos que são
+descritos nos procedimentos a seguir.
+{: tip}
+
+#### Acesso aos serviços de gerenciamento de conta
+
+Fornecer um acesso do usuário a serviços de gerenciamento de conta é a maneira de delegar alguns de seus recursos
+como um proprietário da conta. Por exemplo, é possível delegar a capacidade para visualizar o faturamento e o uso,
+convidar e remover usuários, gerenciar os grupos de acesso ou gerenciar os IDs de serviço. É possível fornecer acesso a
+todos os serviços de gerenciamento de conta ou a apenas um.
+
+1. Na tela **Convidar usuários**, expanda a seção **Serviços**.
+2. Selecione para designar acesso aos **serviços de gerenciamento de conta**
+3. Selecione **Todos os serviços de gerenciamento de conta** ou selecione um serviço de
+gerenciamento de conta específico.
+4. Selecione qualquer combinação de funções para designar o acesso desejado.
 
 #### Acesso ao grupo de recursos
 

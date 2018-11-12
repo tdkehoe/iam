@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -36,10 +36,20 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ```
 {: codeblock}
 
-## Designando novo acesso
+### Designando novo acesso
 {: #assignaccess}
 
-Para permitir a um usuário o acesso a todos os recursos com a capacidade de gerenciar o acesso de usuário, criar grupos de recursos e concluir todas as outras tarefas de gerenciamento do IAM, selecione a opção **Todos os serviços ativados pelo Identity and Access** para essa política com a função **Administrador** designada.
+É possível designar acesso usando qualquer um dos três tipos de políticas: 
+
+* Acesso aos recursos dentro de um grupo de recursos, incluindo a opção para apenas um ou todos
+* Acesso aos recursos na conta, incluindo a opção para apenas um tipo ou todos os tipos
+* Acesso aos serviços de gerenciamento de conta, incluindo a opção para apenas um ou todos os serviços
+
+Se você deseja ativar um acesso total de administrador para concluir as tarefas de gerenciamento de conta, como
+convidar e remover usuários, visualizar o faturamento e o uso, gerenciar os IDs de serviço, gerenciar os grupos de acesso,
+gerenciar o acesso do usuário e o acesso a todos os recursos da conta, deve-se criar duas políticas: uma em
+**Todos os serviços ativados para o Identity and Access** com o administrador da
+função e uma em **Todos os serviços de gerenciamento de conta** com o administrador da função.
 {: tip}
 
 ### Acesso aos recursos dentro de um grupo de recursos 
@@ -75,7 +85,15 @@ Para designar acesso a um recurso individual na conta ou acesso a todos os recur
 Você pode receber uma mensagem de que uma política já existe para os detalhes que você selecionou. Se uma política com os detalhes e as funções exatos estiver sendo criada, você será solicitado a fazer mudanças na nova política, pois as políticas duplicadas não são permitidas. Se você estiver criando uma política com os mesmos detalhes, mas designações de função diferentes de uma política existente, será solicitado que revise e atualize a política existente com as designações de função que deseja designar.
 {: tip}
 
+### Acesso aos serviços de gerenciamento de conta 
 
+Para designar acesso a um ou todos os serviços de gerenciamento de conta, conclua as etapas a seguir: 
+
+1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
+2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** e, em seguida, clique em **Designar acesso**.
+3. Selecione para designar acesso aos **Serviços de gerenciamento de conta**
+4. Selecione **Todos os serviços de gerenciamento de conta** ou selecione um serviço de gerenciamento de conta específico.
+5. Selecione qualquer combinação de funções para designar o acesso desejado.
 
 
 ## Removendo o acesso
