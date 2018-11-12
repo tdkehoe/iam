@@ -52,3 +52,7 @@ Gerenciando a identidade e o acesso
     {: .navgroup id="reference"}
     iam_limits.md monitoring.md
     {: .navgroup-end}
+    
+    {: .navgroup id="help"}
+    faqs.md
+    {: .navgroup-end}
