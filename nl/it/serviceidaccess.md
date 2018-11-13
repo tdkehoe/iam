@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -47,6 +47,16 @@ Per assegnare l'accesso a una singola risorsa nell'account, completa la seguente
     * **ID risorsa**: immetti il nome del tuo bucket.
 9. Scegli qualsiasi combinazione di ruoli per assegnare l'accesso desiderato per l'utente.
 10. Seleziona **Assegna**.
+
+Per assegnare l'accesso a uno o a tutti i servizi di gestione dell'account, completa la seguente procedura:
+
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** &gt; **ID servizio**.
+2. Seleziona l'ID servizio dalla tabella per cui vuoi assegnare una politica di servizio.
+3. Fai clic su **Assegna accesso**.
+4. Seleziona per assegnare l'accesso ai **servizi di gestione dell'account**
+5. Seleziona **Tutti i servizi di gestione Account** o seleziona un servizio specifico.
+6. Seleziona qualsiasi combinazione di ruoli per assegnare l'accesso desiderato.
+
 
 
 

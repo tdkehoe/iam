@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -36,10 +36,16 @@ ibmcloud iam user-policy-update NOME_UTENTE ID_POLITICA [-v, --version VERSIONE]
 ```
 {: codeblock}
 
-## Assegnazione del nuovo accesso
+### Assegnazione del nuovo accesso
 {: #assignaccess}
 
-Per consentire a un utente di accedere a tutte le risorse dell'account con la possibilità di gestire l'accesso degli utenti, creare gruppi di risorse e completare tutte le altre attività di gestione IAM, seleziona l'opzione **Tutti i sevizi abilitati per l'accesso e l'identità** per questa politica con il ruolo **Amministratore** assegnato.
+Puoi assegnare l'accesso utilizzando uno qualsiasi di questi tre tipi di politiche: 
+
+* Accesso alle risorse all'interno di un gruppo di risorse inclusa l'opzione per una sola o per tutte
+* Accesso alle risorse nell'account inclusa l'opzione per un solo tipo o per tutti i tipi
+* Accesso ai servizi di gestione dell'account, inclusa l'opzione per uno o per tutti i servizi
+
+Se vuoi abilitare un accesso da amministratore completo di un utente per completare le attività di gestione dell'account come l'invito e la rimozione degli utenti, la visualizzazione della fatturazione e dell'utilizzo, la gestione degli ID servizio, la gestione dei gruppi di accesso, la gestione dell'accesso utente e l'accesso a tutte le risorse dell'account, devi creare due politiche: una su **Tutti i servizi abilitati per l'accesso e l'identità** con il ruolo di amministratore e una su **Tutti i servizi di gestione account** con il ruolo di amministratore.
 {: tip}
 
 ### Accesso alle risorse all'interno di un gruppo di risorse 
@@ -75,7 +81,15 @@ Per assegnare l'accesso a una singola risorsa o a tutte le risorse nell'account,
 Potresti ricevere un messaggio che indica che esiste già una politica per i dettagli che hai selezionato. Se stai creando una politica con gli stessi dettagli e ruoli, ti viene richiesto di apportare modifiche alla nuova politica poiché non sono consentite politiche duplicate. Se stai creando una politica con gli stessi dettagli ma con assegnazioni di ruoli differenti rispetto a una politica esistente, ti viene richiesto di controllare e aggiornare la politica esistente con le assegnazioni dei ruoli che vuoi assegnare.
 {: tip}
 
+### Accesso ai servizi di gestione dell'account 
 
+Per assegnare l'accesso a uno o a tutti i servizi di gestione dell'account, completa la seguente procedura: 
+
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**.
+2. Dalla riga per l'utente a cui desideri assegnare l'accesso, seleziona il menu **Azioni** e fai quindi clic su **Assegna accesso**.
+3. Seleziona per assegnare l'accesso ai **servizi di gestione dell'account**
+4. Seleziona **Tutti i servizi di gestione Account** o seleziona un servizio specifico.
+5. Seleziona qualsiasi combinazione di ruoli per assegnare l'accesso desiderato.
 
 
 ## Rimozione dell'accesso

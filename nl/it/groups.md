@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-10-10"
 
 Un gruppo di accesso può essere creato per organizzare un insieme di utenti e ID del servizio in una sola entità che ti rende più facile assegnare le autorizzazioni. Puoi assegnare una sola politica al gruppo invece di assegnare lo stesso accesso più volte per ogni utente o ID del servizio individuale.
 
-Per gestire o creare nuovi gruppi di accesso, devi essere il proprietario, l'amministratore o l'editor dell'account su tutti i servizi abilitati per l'identità e l'accesso (IAM) nell'account o l'amministratore o l'editor assegnati al servizio dei gruppi di accesso IAM. Per ulteriori informazioni sulle politiche di accesso e sui ruoli, vedi [Accesso IAM](/docs/iam/users_roles.html#userroles).
+Per gestire o creare nuovi gruppi di accesso, devi essere il proprietario, l'amministratore o l'editor dell'account del servizio Gruppi di accesso IAM nell'account o l'amministratore o l'editor assegnati a tutti i servizi di gestione dell'account. Inoltre, è possibile assegnare l'accesso a un amministratore o un editor per gestire un solo gruppo creando una politica di accesso in cui la risorsa è l'ID del gruppo di accesso. Per ulteriori informazioni sulle politiche di accesso e sui ruoli per il servizio Gruppi di accesso IAM, consulta [Accesso IAM](/docs/iam/users_roles.html#platformrolestable2).
 
 Inoltre, è possibile assegnare un amministratore o un editor a un solo gruppo creando una politica di accesso in cui la risorsa è l'ID del gruppo di accesso. Un amministratore o un editor del gruppo può aggiornare ed eliminare il gruppo, così come creare, aggiornare ed eliminare i membri o le politiche di accesso del gruppo. Un utente con assegnato il ruolo di visualizzatore può solo richiamare ed elencare i gruppi, i membri e l'accesso assegnato.
 

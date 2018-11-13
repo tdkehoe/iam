@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -42,7 +42,17 @@ Assegna l'accesso agli utenti mentre li inviti assegnando le politiche Cloud IAM
 
 Puoi assegnare l'accesso creando una politica di accesso Cloud IAM iniziale quando inviti un nuovo utente. In questa sezione, puoi fornire a un utente l'accesso ai servizi in un gruppo di risorse con accesso al gruppo di risorse o a una singola risorsa nell'account. Dopo che l'utente ha accettato l'invito, puoi assegnare un accesso aggiuntivo. Vedi [Gestione dell'accesso IAM](/docs/iam/mngiam.html#iammanidaccser) per dettagli sulla modifica delle politiche per aggiungere altri ruoli, assegnare un ulteriore accesso o rimuovere una politica per un utente.
 
-**Nota**: a seconda del servizio che selezioni quando assegni la politica, potresti non vedere tutti i campi descritti nelle seguenti procedure.
+A seconda del servizio che selezioni quando assegni la politica, potresti non vedere tutti i campi descritti nelle seguenti procedure.
+{: tip}
+
+#### Accesso ai servizi di gestione dell'account
+
+Fornire un accesso utente ai servizi di gestione dell'account è il modo di delegare alcune delle tue funzionalità come proprietario di un account. Ad esempio, puoi delegare la capacità di visualizzare la fatturazione e l'utilizzo, di invitare gli utenti remoti, di gestire i gruppi di accesso o gli ID servizio. Puoi fornire l'accesso a tutti i servizi di gestione dell'account o a solo uno.
+
+1. Dalla schermata **Invita utenti**, espandi la sezione **Servizi**.
+2. Seleziona per assegnare l'accesso ai **servizi di gestione dell'account**
+3. Seleziona **Tutti i servizi di gestione account** o seleziona un servizio specifico.
+4. Seleziona qualsiasi combinazione di ruoli per assegnare l'accesso desiderato.
 
 #### Accesso al gruppo di risorse
 
