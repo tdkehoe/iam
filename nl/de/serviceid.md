@@ -46,24 +46,24 @@ Damit ein Benutzer über Zugriff zum Sperren und Entsperren von Service-IDs und 
 * Zugriff auf alle Service-IDs im Konto
 * Zugriff auf eine bestimmte Service-ID im Konto
 
-Wenn Sie Zugriff auf alle Service-IDs in einem Konto zuordnen möchten, definieren Sie eine Zugriffsrichtlinie mit den folgenden Details:
+Wenn Sie Zugriff auf alle Service-IDs in einem Konto zuweisen möchten, definieren Sie eine Zugriffsrichtlinie für Kontoverwaltungsservices mit den folgenden Details:
 
 * Bearbeiter- oder Administratorrolle 
 * IAM Identity Service
 
-Wenn Sie Zugriff auf eine bestimmte Service-ID in einem Konto zuordnen möchten, definieren Sie eine Zugriffsrichtlinie mit den folgenden Details:
+Wenn Sie Zugriff auf eine bestimmte Service-ID in einem Konto zuordnen möchten, definieren Sie eine Zugriffsrichtlinie für Kontoverwaltungsservices mit den folgenden Details:
 
 * Bearbeiter- oder Administratorrolle
 * IAM Identity Service
-* Angeben von `serviceid` im Feld **Ressourcentyp** 
+* Geben Sie im Feld **Ressourcentyp** "serviceid" an. 
 * Angeben der Service-ID im Feld **Ressourcen-ID**
 
-Zum Abrufen der Kennung einer bestimmten Service-ID wechseln Sie zu **Verwalten** > **Sicherheit** > **Identität & Zugriff** und anschließend **Service-IDs**. Wählen Sie die Service-ID aus, zu der Sie die Details anzeigen möchten, und kopieren Sie den ID-Wert.
+Zum Abrufen der Kennung einer bestimmten Service-ID wechseln Sie zu **Verwalten** > **Sicherheit** > **Identität & Zugriff** und wählen Sie anschließend **Service-IDs** aus. Wählen Sie die Service-ID aus, zu der Sie die Details anzeigen möchten, und kopieren Sie den ID-Wert.
 {: tip}
 
 ### Service-ID in Benutzerschnittstelle sperren
 
-Eine gesperrte Service-ID ist durch das Symbol ![Sperrsymbol](images/locked.svg "Gesperrt") gekennzeichnet. 
+Eine gesperrte Service-ID ist durch das Symbol ![Sperrsymbol](images/locked.svg "Gesperrt") gekennzeichnet.
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Service-IDs** aus.
 2. Ermitteln Sie die Zeile der Service-ID, die gesperrt werden soll, und wählen Sie dann die Option **Service-ID sperren** im Menü **Aktionen** aus.

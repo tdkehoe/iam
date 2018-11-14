@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -42,7 +42,17 @@ Bei der Einladung weisen Sie den Benutzern Zugriffsberechtigungen zu. Dazu führ
 
 Sie können die Zugriffsberechtigungen erteilen, indem Sie eine Cloud IAM-Ausgangszugriffsrichtlinie erstellen, wenn Sie einen neuen Benutzer einladen. In diesem Abschnitt können Sie einem Benutzer den Zugriff auf die Services in einer Ressourcengruppe mit Zugriff auf die Ressourcengruppe oder eine einzelne Ressource im Konto erteilen. Nachdem der Benutzer die Einladung akzeptiert hat, können Sie weitere Zugriffsberechtigungen zuweisen. Detaillierte Informationen zum Bearbeiten von Richtlinien für das Hinzufügen zusätzlicher Rollen, zum Zuweisen weiterer Zugriffsberechtigungen oder zum Entfernen einer Richtlinie für einen Benutzer finden Sie in [IAM-Zugriff verwalten](/docs/iam/mngiam.html#iammanidaccser).
 
-**Hinweis:** Abhängig von dem Service, den Sie bei der Zuweisung der Richtlinie ausgewählt haben, werden möglicherweise nicht alle in den folgenden Arbeitsschritten beschriebenen Felder angezeigt.
+Abhängig von dem Service, den Sie bei der Zuweisung der Richtlinie ausgewählt haben, werden möglicherweise nicht alle in den folgenden Arbeitsschritten beschriebenen Felder angezeigt.
+{: tip}
+
+#### Zugriff auf Kontoverwaltungsservices
+
+Die Bereitstellung von Benutzerzugriff auf die Kontoverwaltungsservices bietet Ihnen die Möglichkeit, einige Ihrer Funktionen als Kontoeigner zu delegieren. So können Sie z. B. die Fähigkeit delegieren, Abrechnung und Nutzung einzusehen, Benutzer einzuladen und zu entfernen und Zugriffsgruppen oder Service-IDs zu verwalten. Sie können Zugriff auf alle Kontoverwaltungsservices oder nur auf einen einzigen bereitstellen.
+
+1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services**.
+2. Wählen Sie diese Option aus, um Zugriff auf **Kontoverwaltungsservices** zu erteilen.
+3. Wählen Sie **Alle Kontoverwaltungsservices** oder einen bestimmten Kontoverwaltungsservice aus.
+4. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
 
 #### Zugriff auf Ressourcengruppen
 

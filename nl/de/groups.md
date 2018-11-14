@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-10-10"
 
 Eine Zugriffsgruppe kann erstellt werden, um eine Gruppe von Benutzern und Service-IDs in einer einzigen Entität zu organisieren, die es Ihnen leicht macht, Berechtigungen zuzuweisen. Sie können der Gruppe eine einzige Richtlinie zuweisen, anstatt denselben Zugriff mehrmals für den einzelnen Benutzer oder die einzelne Service-ID zuzuweisen.
 
-Zur Verwaltung oder Erstellung neuer Zugriffsgruppen müssen Sie Kontoeigner, Administrator oder Bearbeitungsberechtigter für alle Services im Konto sein, die für Identity and Access aktiviert sind; oder Sie müssen der zugewiesene Administrator oder Bearbeitungsberechtigte für den IAM-Zugriffsgruppenservice sein. Weitere Informationen zu den Zugriffsrichtlinien und Rollen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html#userroles).
+Um neue Zugriffsgruppen zu verwalten oder zu erstellen, müssen Sie der Kontoeigner, Administrator oder Bearbeiter für den IAM Access Groups-Service im Konto oder der zugeordnete Administrator oder Bearbeiter für alle Kontoverwaltungsservices sein. Darüber hinaus kann ein Administrator oder Bearbeiter für die Verwaltung einer einzelnen Gruppe zugewiesen werden, indem eine Zugriffsrichtlinie erstellt wird, deren Ressource die Zugriffsgruppen-ID ist. Weitere Informationen über Zugriffsrichtlinien und Rollen für den IAM-Zugriffsgruppenservice finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html#platformrolestable2).
 
 Darüber hinaus kann ein Administrator oder ein Bearbeitungsberechtigter einer einzelnen Gruppe zugewiesen werden, indem eine Zugriffsrichtlinie erstellt wird, deren Ressource die Zugriffsgruppen-ID ist. Ein Administrator oder Bearbeitungsberechtigter der Gruppe kann die Gruppe aktualisieren und löschen sowie Mitglieder oder Zugriffsrichtlinien für die Gruppe erstellen, aktualisieren und löschen. Ein Benutzer, dem die Rolle eines Anzeigeberechtigten zugewiesen ist, kann nur Gruppen, Mitglieder und zugewiesene Zugriffsberechtigungen anzeigen und auflisten.
 

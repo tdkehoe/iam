@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -30,16 +30,22 @@ IAM 정책을 사용하여 액세스를 관리하거나 사용자에 대해 새 
 사용자나 그룹에 대한 액세스 권한을 편집할 때 중복 정책을 허용하지 않는 데 관한 메시지가 표시될 수 있습니다. 기존 정책을 편집하고 변경한 사항이 이미 지정된 액세스 권한과 충돌하는 경우 다른 액세스 권한을 제공하기 위해 현재 편집 중인 정책을 변경하도록 선택하거나 충돌하는 기존 정책으로 돌아가 검토한 후 필요한 경우 변경할 수 있습니다. 요구사항을 충족하는 중복 정책이 이미 있으면 편집 중인 정책을 삭제할 수 있습니다.
 {: tip}
 
-CLI를 사용하여 사용자 정책을 업데이트하기 위해 [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) 명령을 사용할 수 있습니다. 
+CLI를 사용하여 사용자 정책을 업데이트하기 위해 [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) 명령을 사용할 수 있습니다.
 ```
 ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
 {: codeblock}
 
-## 새 액세스 지정
+### 새 액세스 지정
 {: #assignaccess}
 
-사용자 액세스 관리, 리소스 그룹 작성 및 기타 모든 IAM 관리 태스크 완료 기능과 함께 모든 계정 리소스에 대한 사용자 액세스를 사용하려면 **관리자** 역할이 지정된 이 정책에 대해 **모든 ID 및 액세스 사용 서비스** 옵션을 선택하십시오.
+세 가지 유형의 정책을 사용하여 액세스 권한을 지정할 수 있습니다. 
+
+* 하나 또는 모두에 대한 옵션을 포함하여 리소스 그룹 내 리소스에 액세스
+* 하나의 유형만 또는 모든 유형에 대한 옵션을 포함하여 계정의 리소스에 액세스
+* 하나 또는 모든 서비스에 대한 옵션을 포함하여 계정 관리 서비스에 액세스
+
+사용자에게 사용자 초대 및 제거, 청구 및 사용량 보기, 서비스 ID 관리, 액세스 그룹 관리, 사용자 액세스 관리, 모든 계정 서비스에 액세스와 같은 계정 관리 태스크를 완료할 수 있는 전체 관리자 액세스를 허용하려면 두 개의 정책(관리자 역할을 통한 **모든 ID 및 액세스 사용 서비스**에서 하나, 관리자 역할을 통한 **모든 계정 관리 서비스**에서 하나)을 작성해야 합니다.
 {: tip}
 
 ### 리소스 그룹 내의 리소스에 액세스 
@@ -75,7 +81,15 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 선택한 세부사항의 정책이 이미 있다는 메시지가 표시될 수 있습니다. 똑같은 세부사항과 역할이 있는 정책을 작성하는 경우 중복 정책이 허용되지 않으므로 새 정책을 변경하라고 프롬프트가 표시됩니다. 기존 정책과 세부사항는 같지만 역할은 다르게 지정된 정책을 작성하는 경우 기존 정책을 검토한 후 지정하려는 역할 지정으로 해당 정책을 업데이트하라는 프롬프트가 표시됩니다.
 {: tip}
 
+### 계정 관리 서비스에 액세스 
 
+하나 또는 모든 계정 관리 서비스에 대한 액세스를 지정하려면 다음 단계를 완료하십시오. 
+
+1. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 후에 **사용자**를 선택하십시오.
+2. 액세스를 지정할 사용자에 대한 행에서 **조치** 메뉴를 선택한 후에 **액세스 지정**을 클릭하십시오.
+3. **계정 관리 서비스**에 대한 액세스를 지정하도록 선택하십시오.
+4. **모든 계정 관리 서비스**를 선택하거나 특정 계정 관리 서비스를 선택하십시오.
+5. 원하는 액세스를 지정하기 위한 역할의 임의의 조합을 선택하십시오.
 
 
 ## 액세스 제거
@@ -85,7 +99,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 3. 제거할 정책에 대한 행에서 **조치** 메뉴를 선택한 후에 **제거**를 클릭하십시오.
 4. 제거할 사용자 정책 세부사항을 검토한 후에 **제거**를 클릭하여 확인하십시오.
 
-CLI를 사용하여 사용자 정책을 제거하기 위해 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete) 명령을 사용할 수 있습니다. 
+CLI를 사용하여 사용자 정책을 제거하기 위해 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete) 명령을 사용할 수 있습니다.
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

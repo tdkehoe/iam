@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -36,10 +36,16 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ```
 {: codeblock}
 
-## Neue Zugriffsberechtigungen zuweisen
+### Neue Zugriffsberechtigungen zuweisen
 {: #assignaccess}
 
-Um einem Benutzer Zugriffsberechtigungen für alle Kontoressourcen und die Berechtigung zum Verwalten des Benutzerzugriffs, zum Erstellen von Ressourcengruppen und zum Ausführen aller anderen IAM-Management-Tasks zu erteilen, wählen Sie die Option **Alle Services mit aktiviertem Identity and Access Management** für diese Richtlinie aus und weisen Sie dabei die Rolle **Administrator** zu.
+Sie können den Zugriff mit einem der drei folgenden Typen von Richtlinien zuweisen: 
+
+* Zugriff auf Ressourcen in einer Ressourcengruppe, einschließlich der Option für nur eine oder alle Gruppen. 
+* Zugriff auf Ressourcen im Konto, einschließlich der Option für nur einen oder alle Typen.
+* Zugriff auf Kontoverwaltungsservices, einschließlich der Option für nur einen oder alle Services.
+
+Wenn Sie einem Benutzer vollständigen Administratorzugriff für Kontoverwaltungstasks wie das Einladen und Entfernen von Benutzern, die Ansicht von Abrechnung und Nutzung, die Verwaltung von Service-IDs, Zugriffsgruppen und Benutzerzugriff sowie Zugriff auf alle Kontoressourcen erteilen möchten, müssen Sie zwei Richtlinien erstellen: eine für **Alle Services mit aktiviertem Identity and Access Management** mit dem Rollenadministrator und eine für **Alle Kontoverwaltungsservices** mit dem Rollenadministrator.
 {: tip}
 
 ### Zugriff auf Ressourcen in einer Ressourcengruppe 
@@ -75,7 +81,15 @@ Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einz
 Möglicherweise erhalten Sie eine Nachricht, in der angegeben wird, dass für die von Ihnen ausgewählten Details bereits eine Richtlinie vorhanden ist. Wenn eine Richtlinie mit exakt diesen Details und Rollen erstellt wird, werden Sie aufgefordert, die neue Richtlinie zu ändern, da Richtlinien nicht doppelt vorhanden sein dürfen. Wenn Sie eine Richtlinie mit den gleichen Details jedoch mit anderen Rollenzuweisungen als in einer vorhandenen Richtlinie erstellen, werden Sie aufgefordert, die vorhandene Richtlinie zu überprüfen und sie mit Rollenzuweisungen zu aktualisieren, die Sie zuweisen möchten.
 {: tip}
 
+### Zugriff auf Kontoverwaltungsservices 
 
+Führen Sie die folgenden Schritte aus, um Zugriff auf einen oder alle Kontoverwaltungsservices zu erteilen: 
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Benutzer** aus.
+2. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriffsberechtigungen zuweisen wollen, das Menü **Aktionen** aus und klicken Sie dann auf **Zugriff zuweisen**.
+3. Wählen Sie diese Option aus, um Zugriff auf **Kontoverwaltungsservices** zu erteilen.
+4. Wählen Sie **Alle Kontoverwaltungsservices** oder einen bestimmten Kontoverwaltungsservice aus.
+5. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
 
 
 ## Zugriffsberechtigungen entfernen

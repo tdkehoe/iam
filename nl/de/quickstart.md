@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-21"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -25,13 +25,13 @@ Dieses Lernprogramm bezieht sich ausschließlich auf [Ressourcen](/docs/resource
 
 Sie können einzelne oder auch mehrere Benutzer einladen und die Richtlinie für die Anfangszugriffsberechtigungen der eingeladenen Benutzer festlegen. Wenn Sie in einer einzigen Einladung mehrere Benutzer einladen, dann werden diesen Benutzern die gleichen Zugriffsberechtigungen zugewiesen. Im Abschnitt **Zugriff** der Seite 'Benutzer einladen' werden nur die Abschnitte angezeigt, zu deren Zuweisung sie berechtigt sind.
 
-Als Kontoeigner können Sie den von Ihnen eingeladenen Benutzern im Abschnitt 'Services' Cloud IAM-Rollen zuweisen. Sie können dabei den Zugriff auf alle Ressourcen einer Ressourcengruppe, alle Ressourcen für einen bestimmten Service in einer Ressourcengruppe, alle Services mit aktiviertem Identity and Access Management im Konto oder für eine einzelne Ressource in der Anfangsrichtlinie bereitstellen, die Sie in der Einladung zuweisen wollen:
+Als Kontoeigner können Sie den von Ihnen eingeladenen Benutzern im Abschnitt 'Services' Cloud IAM-Rollen zuweisen. Sie können Zugriff auf alle Ressourcen in einer Ressourcengruppe, alle Ressourcen für einen bestimmten Service in einer Ressourcengruppe, alle Services mit aktiviertem Identity and Access Management im Konto, eine einzelne Ressource im Konto oder Kontoverwaltungsservices bereitstellen:
 
 1. Rufen Sie **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** auf und wählen Sie dann **Benutzer** aus.
 2. Klicken Sie auf **Benutzer einladen**.
 3. Geben Sie die E-Mail-Adresse der Benutzer an, die eingeladen werden sollen.
 4. Erweitern Sie im Abschnitt **Zugriff** die Ansicht der Option **Services**.
-5. Wählen Sie aus, dass einer **Ressource** oder bestimmten Ressourcen einer **Ressourcengruppe** Zugriff erteilt werden soll.
+5. Wählen Sie diese Option aus, um Zugriff auf eine **Ressource**, auf Ressourcen innerhalb einer **Ressourcengruppe** oder auf **Kontoverwaltungsservices** zu erteilen.
 6. Abhängig von der getroffenen Auswahl müssen Sie dann den Eingabeaufforderungen folgen, um den Zugriff auf eine bestimmte Serviceinstanz, alle Services mit aktiviertem Identity and Access Management, alle Ressourcen einer Ressourcengruppe oder auf einen bestimmten Service in der ausgewählten Ressourcengruppe anzugeben. Wenn Sie die Option für die Ressourcengruppe ausgewählt haben, dann können Sie dem Benutzer auch die Zugriffsberechtigungen zum Anzeigen, Bearbeiten oder Verwalten des Zugriffs auf die Ressourcengruppe erteilen, indem Sie eine Rolle für den Zugriff auf die Ressourcengruppe auswählen.
 7. Wenn Sie über die erforderlichen Berechtigungen verfügen, dann können Sie in der Einladung auch den Cloud Foundry-Zugriff oder den Infrastructure-Zugriff erteilen.
 8. Klicken Sie auf **Benutzer einladen**.
@@ -84,6 +84,7 @@ Sie können einem Benutzer Zugriffsberechtigungen für eine Ressourcengruppe ode
 4. Wählen Sie aus, wie der Zugriff zugewiesen werden soll:
     * Wählen Sie **Zugriff in einer Ressourcengruppe zuweisen** aus, um den Zugriff auf alle Ressourcen in einer Gruppe oder nur auf die Ressourcen für einen bestimmten Service in einer Gruppe zuzuweisen. Sie können dem Benutzer auch die Zugriffsberechtigungen zum Anzeigen, Bearbeiten oder Verwalten des Zugriffs auf die Ressourcengruppe erteilen, indem Sie eine Rolle für den Zugriff auf die Ressourcengruppe auswählen. Wählen Sie **Kein Zugriff** aus, wenn der Benutzer lediglich Zugriff auf die angegebene Ressource und nicht auf die Gruppe erhalten soll, in der sich die Ressource befindet.
     * Wählen Sie **Zugriff auf Ressourcen zuweisen** aus, um den Zugriff auf alle Ressourcen mit aktiviertem Identity and Access Management innerhalb des Kontos, alle Ressourcen eines bestimmten Service innerhalb des Kontos, auf eine einzelne Instanz oder eine einzelne Ressource innerhalb einer bestimmten Serviceinstanz zuzuweisen.
+    * Wählen Sie **Zugriff auf Kontoverwaltungsservices zuweisen** aus, um Zugriff auf alle oder nur einen Kontoverwaltungsservice zu erteilen. 
 5. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um den Geltungsbereich der Zugriffsberechtigungen zu definieren. Weitere Informationen zu diesem Thema finden Sie im Abschnitt zu den [Cloud IAM-Rollen](/docs/iam/users_roles.html#iamusermanrol).
 6. Klicken Sie auf **Zuweisen**.
 

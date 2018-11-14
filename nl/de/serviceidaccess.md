@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -47,6 +47,16 @@ Führen Sie die folgenden Schritte aus, um die Zugriffsberechtigungen für eine 
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 9. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen.
 10. Wählen Sie **Zuweisen** aus.
+
+Führen Sie die folgenden Schritte aus, um Zugriff auf einen einzelnen Kontoverwaltungsservice oder alle Kontoverwaltungsservices zu erteilen:
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** &gt; **Service-IDs**.
+2. Wählen Sie die Service-ID, der Sie eine Servicerichtlinie zuweisen wollen, in der Tabelle aus.
+3. Klicken Sie auf **Zugriff zuweisen**.
+4. Wählen Sie diese Option aus, um Zugriff auf **Kontoverwaltungsservices** zu erteilen.
+5. Wählen Sie **Alle Kontoverwaltungsservices** oder einen bestimmten Kontoverwaltungsservice aus.
+6. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
+
 
 
 
