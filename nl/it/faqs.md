@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-30"
+lastupdated: "2018-10-17"
 
 
 
@@ -46,7 +46,7 @@ I sistemi di gestione dell'accesso sono completamente diversi. Le risorse IAM ap
 
 Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona il tuo nome nella colonna Utente. Quindi, a seconda dell'accesso che stai cercando, apri le diverse schede:
 
-* Per determinare quali sono i gruppi di accesso in cui ti trovi, seleziona **Gruppi di accesso**.
+* Per determinare quali sono i gruppi di accesso in cui ti trovi, seleziona **Gruppo di accesso**.
 * Per l'accesso IAM, seleziona **Politiche di accesso**.
 * Per i ruoli Cloud Foundry, seleziona **Accesso Cloud Foundry**.
 
@@ -92,15 +92,12 @@ Un esempio sono i ruoli e le azioni di gestione della piattaforma per i servizi 
 ## Chi può rimuovere gli utenti?
 {: #remove-users}
 
-Il proprietario dell'account può sempre aggiungere e rimuovere gli utenti. Inoltre, tutti gli utenti con i seguenti due tipi di politica possono rimuovere gli utenti:
-
-* Editor o Amministratore su tutti i servizi di gestione dell'account
-* Editor o Amministratore sul servizio di gestione dell'account di gestione dell'utente
+Solo il proprietario dell'account può rimuovere gli utenti. 
 
 ## Come attivo l'autenticazione multifattore?
 {: #multi-factor}
 
-Vai a **Gestisci** &gt; **Accesso (IAM)** e scegli **Impostazioni**. 
+Vai a **Gestisci** &gt; **Accesso (IAM)** e scegli **Impostazioni**.
 Scegli **Autenticazione multifattore (MFA)** e fai quindi clic su **Applica le modifiche**. Per ulteriori informazioni, vedi [Abilitazione dell'autenticazione multifattore](/docs/iam/mfa.html#enablemfa).
 
 ## Qual è la differenza tra i ruoli del servizio e della piattaforma? 
@@ -119,10 +116,3 @@ Con l'inizio di {{site.data.keyword.Bluemix_notm}}, un servizio di piattaforma o
 
 Il controllo dell'accesso e l'organizzazione delle risorse dell'account sono le principali differenze tra i gruppi di risorse le organizzazioni e gli spazi Cloud Foundry. I gruppi di risorse organizzano i servizi abilitati a IBM in un account di cui viene controllato l'accesso utilizzando le politiche IAM. Le organizzazioni e gli spazi sono gestiti utilizzando i ruoli Cloud Foundry per il controllo dell'accesso e le risorse Cloud Foundry sono assegnate agli spazi. Le organizzazioni e gli spazi possono essere utilizzati per organizzare e controllare l'accesso alle risorse solo all'interno dell'ambito Cloud Foundry mentre i gruppi di risorse e IAM possono essere utilizzati per più tipi di risorse in tutto {{site.data.keyword.Bluemix_notm}}.
 
-## Come posso assegnare un utente come amministratore dell'account? 
-{: #account-administrator}
-
-Per delegare il ruolo di amministratore dell'account utilizzando le politiche IAM, devi creare due politiche:
-
-* Amministratore su tutti i servizi di identità e accesso abilitati, che consente ad un utente di creare le istanze del servizio e di assegnare l'accesso utente a tutte le risorse nell'account
-* Amministratore su tutti i servizi di gestione dell'account, che consente ad un utente di completare attività come l'invito e la rimozione di utenti, la gestione dei gruppi di accesso, la gestione degli ID servizio, la gestione delle offerte del catalogo private e la traccia della fatturazione e dell'utilizzo.
