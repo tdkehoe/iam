@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-21"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -25,13 +25,13 @@ Esta guía de aprendizaje se aplica solo a [recursos](/docs/resources/acct_resou
 
 Puede invitar a uno o varios usuarios y establecer una política de acceso inicial para los usuarios en la invitación. Si invita varios usuarios en una invitación se asigna el mismo acceso a todos ellos. En la sección **Acceso** de la página Invitar a usuarios, solo verá las secciones que tiene permiso para asignar.
 
-Como propietario de cuenta, puede asignar roles de Cloud IAM a los usuarios que invite en la sección Servicios. Puede proporcionar acceso a todos los recursos en un grupo de recursos, a todos los recursos para un servicio específico en un grupo de recursos, a todos los servicios habilitados para identificación y acceso en la cuenta o a un único recurso en la política inicial que asigne en la invitación:
+Como propietario de cuenta, puede asignar roles de Cloud IAM a los usuarios que invite en la sección Servicios. Puede proporcionar acceso a todos los recursos de un grupo de recursos, a todos los recursos para un servicio específico de un grupo de recursos, a todos los servicios habilitados para Identity and Access en la cuenta, a un solo recurso de la cuenta o acceso a los servicios de gestión de cuentas: 
 
 1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Usuarios**.
 2. Pulse **Invitar usuarios**.
 3. Especifique la dirección de correo electrónico de los usuarios que desee invitar.
 4. En la sección **Acceso**, expanda la opción **Servicios**.
-5. Elija asignar acceso a un **Recurso** o a recursos dentro de un **Grupo de recursos**.
+5. Elija si desea asignar acceso a un **Recurso**, a los recursos de un **Grupo de recursos** o a los **Servicios de gestión de cuentas**.
 6. Dependiendo de su elección, siga las solicitudes para especificar el acceso a una instancia de servicio individual, a todos los servicios habilitados para identificación y acceso, a todos los recursos de un grupo de recursos o a un servicio específico dentro del grupo de recursos seleccionado. Si ha seleccionado la opción del grupo de recursos, también debe proporcionar el usuario con acceso para ver, editar o gestionar el acceso al grupo de recursos seleccionando un rol para acceder al grupo de recursos.
 7. Si tiene permisos, también puede asignar acceso de Cloud Foundry o de infraestructura en la invitación.
 8. Pulse **Invitar usuarios**.
@@ -84,6 +84,7 @@ Puede asignar acceso a un usuario para un grupo de recursos o un único recurso.
 4. Elija la forma de asignar el acceso:
     * Seleccione **Asignar acceso dentro de un grupo de recursos** para asignar acceso a todos los recursos dentro de un grupo o solo a los recursos de un servicio específico dentro de un grupo. También debe proporcionar el usuario con acceso para ver, editar o gestionar el acceso al grupo de recursos seleccionando un rol para acceder al grupo de recursos. Seleccione **Sin acceso** si desea que el usuario solo tenga acceso al recurso especificado y no al grupo en el que está organizado.
     * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica.
+    * Seleccione **Asignar acceso a servicios de gestión de cuentas** para asignar acceso a todos los servicios de gestión de cuentas o solo a un servicio de gestión de cuentas.  
 5. Seleccione cualquier combinación de roles para definir el ámbito del acceso. Consulte [Roles de Cloud IAM](/docs/iam/users_roles.html#iamusermanrol) para obtener más información.
 6. Pulse **Asignar**.
 

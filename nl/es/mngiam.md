@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -36,10 +36,16 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ```
 {: codeblock}
 
-## Asignación de nuevos accesos
+### Asignación de nuevos accesos
 {: #assignaccess}
 
-Para permitir que un usuario acceda a todos los recursos de cuenta con la capacidad de gestionar el acceso de usuario, crear grupos de recursos y completar todas las otras tareas de gestión de IAM, seleccione la opción **Todos los servicios habilitados para identidad y acceso** para esta política con el rol **Administrador** asignado.
+Puede asignar acceso utilizando cualquiera de estos tres tipos de políticas: 
+
+* Acceso a recursos dentro de un grupo de recursos, incluida la opción de seleccionar uno o todos
+* Acceso a recursos de la cuenta, incluida la opción de seleccionar un tipo o todos ellos
+* Acceso a servicios de gestión de la cuenta, incluida la opción de seleccionar un solo servicio o todos ellos
+
+Si desea habilitar el acceso completo de administrador para un usuario para que realice tareas de gestión de la cuenta, como invitar y eliminar usuarios, ver información de facturación y de uso, gestionar ID de servicio, gestionar grupos de acceso, gestionar acceso de usuarios y acceder a todos los recursos de la cuenta, debe crear dos políticas: una sobre **Todos los servicios habilitados para Identity and Access** con el rol de administrador y una sobre **Todos los servicios de gestión de cuentas** con el rol de administrador.
 {: tip}
 
 ### Acceso a recursos dentro de un grupo de recursos 
@@ -75,7 +81,15 @@ Para asignar acceso a un recurso individual en la cuenta o acceso a todos los re
 Es posible que reciba un mensaje que indica que existe una política para los detalles que ha seleccionado. Si se crea una política con los detalles y roles exactos, se le solicitará realizar cambios en la nueva política puesto que las políticas duplicadas no están permitidas. Si crea una política con los mismos detalles pero con una asignación de roles distinta como una política existente, se le solicitará revisar y actualizar la política existente con las asignaciones de roles que desea asignar.
 {: tip}
 
+### Acceso a los servicios de gestión de cuentas 
 
+Para asignar acceso a uno o a todos los servicios de gestión de cuentas, siga los pasos siguientes: 
+
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Usuarios**.
+2. En la fila del usuario al que desea asignar acceso, seleccione el menú **Acciones** y pulse **Asignar acceso**.
+3. Seleccione que desea asignar acceso a **Servicios de gestión de cuentas**
+4. Seleccione **Todos los servicios de gestión de cuentas** o seleccione un servicio de gestión de cuentas específico. 
+5. Seleccione cualquier combinación de roles para asignar el acceso deseado.
 
 
 ## Eliminación de acceso

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-10"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -19,9 +19,9 @@ lastupdated: "2018-10-10"
 
 Un groupe d'accès peut être créé afin d'organiser un ensemble d'utilisateurs et d'ID de service dans une seule entité et de faciliter l'affectation de droits d'accès. Vous pouvez affecter une seule règle au groupe au lieu d'affecter individuellement le même accès plusieurs fois pour chaque utilisateur ou ID de service.
 
-Pour gérer ou créer des groupes d'accès, vous devez être le propriétaire du compte, l'administrateur ou l'éditeur de tous les services avec l'offre Identity and Access activée dans le compte, ou l'administrateur ou l'éditeur affecté pour le service Groupes d'accès IAM. Pour plus d'informations sur les règles d'accès et les rôles, voir [Accès IAM](/docs/iam/users_roles.html#userroles).
+Pour gérer ou créer des groupes d'accès, vous devez être le propriétaire du compte, l'administrateur ou l'éditeur sur le service Groupes d'accès IAM dans le compte ou l'administrateur ou l'éditeur désigné pour tous les services de gestion de compte. En outre, un accès peut être affecté à un administrateur ou à un éditeur afin de gérer un groupe spécifique en créant une règle d'accès où la ressource correspond à l'ID du groupe d'accès. Pour plus d'informations sur les règles d'accès et les rôles pour le service Groupes d'accès IAM, voir [Accès IAM](/docs/iam/users_roles.html#platformrolestable2).
 
-En outre, vous pouvez affecter un administrateur ou un éditeur à un groupe individuel en créant une règle d'accès dans laquelle la ressource est l'ID du groupe d'accès. Un administrateur ou un éditeur de groupe peut mettre à jour et supprimer le groupe, ainsi que créer, mettre à jour et supprimer des membres ou des règles d'accès du groupe. Un utilisateur auquel est affecté le rôle d'afficheur peut uniquement extraire et répertorier des groupes, des membres et les accès affectés. 
+En outre, vous pouvez affecter un administrateur ou un éditeur à un groupe individuel en créant une règle d'accès dans laquelle la ressource est l'ID du groupe d'accès. Un administrateur ou un éditeur de groupe peut mettre à jour et supprimer le groupe, ainsi que créer, mettre à jour et supprimer des membres ou des règles d'accès du groupe. Un utilisateur auquel est affecté le rôle d'afficheur peut uniquement extraire et répertorier des groupes, des membres et les accès affectés.
 
 Pour faciliter davantage l'affectation et la gestion des accès, vous pouvez configurer des groupes de ressources afin d'organiser un ensemble de ressources auxquelles un groupe d'utilisateurs doit avoir accès. Lorsque votre groupe de ressources est configuré, vous pouvez affecter une règle donnant accès à toutes les ressources au sein de ce groupe au lieu de créer des règles d'accès individuellement pour des instances de service au sein de votre compte. 
 {: tip}

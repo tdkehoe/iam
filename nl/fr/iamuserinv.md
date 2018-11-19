@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -42,7 +42,17 @@ Vous accordez un accès aux utilisateurs lorsque vous les invitez, en leur affec
 
 Vous pouvez affecter un accès en créant une règle d'accès Cloud IAM initiale lorsque vous invitez un nouvel utilisateur. Dans cette section, vous pouvez accorder un accès utilisateur à des services dans un groupe de ressources avec accès au groupe de ressources ou à une ressource spécifique du compte. Une fois que l'utilisateur a accepté l'invitation, vous pouvez lui accorder des accès supplémentaires. Pour plus d'informations sur l'édition de règles afin d'ajouter des rôles supplémentaires, d'accorder plus de droits d'accès ou de supprimer une règle pour un utilisateur, voir [Gestion d'accès IAM](/docs/iam/mngiam.html#iammanidaccser).
 
-**Remarque** : selon le service que vous sélectionnez lorsque vous affectez la règle, il se peut que les zones décrites dans les procédure suivantes ne soient pas toutes affichées.
+Selon le service que vous sélectionnez lorsque vous affectez la règle, il se peut que les zones décrites dans les procédures suivantes ne soient pas toutes affichées.
+{: tip}
+
+#### Accès aux services de gestion de compte
+
+L'octroi à un utilisateur d'un accès aux services de gestion de compte permet de déléguer certaines de vos prérogatives en tant que propriétaire du compte. Par exemple, vous pouvez déléguer l'autorisation d'afficher les informations de facturation et d'utilisation, d'inviter et de supprimer des utilisateurs, de gérer des groupes d'accès ou de gérer des ID de service. Vous pouvez octroyer l'accès à tous les services de gestion de compte ou bien à un seul.
+
+1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services**.
+2. Sélectionnez d'affecter l'accès aux **Services de gestion des comptes**
+3. Sélectionnez **Tous les services de gestion des comptes** ou bien un service de gestion de compte spécifique.
+4. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
 
 #### Accès au groupe de ressources
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -47,6 +47,16 @@ Para asignar acceso a un recurso individual en la cuenta, complete los siguiente
     * **ID de recurso**: Especifique el nombre de su grupo.
 9. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.
 10. Seleccione **Asignar**.
+
+Para asignar acceso a servicios de gestión de cuentas individuales o a todos los servicios de gestión de cuentas, siga los pasos siguientes:
+
+1. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** &gt; **ID de servicio**.
+2. Seleccione el ID de servicio desde la tabla para la que desea asignar una política de servicios.
+3. Pulse **Asignar acceso**.
+4. Seleccione que desea asignar acceso a **Servicios de gestión de cuentas**
+5. Seleccione **Todos los servicios de gestión de cuentas** o seleccione un servicio de gestión de cuentas específico. 
+6. Seleccione cualquier combinación de roles para asignar el acceso deseado.
+
 
 
 

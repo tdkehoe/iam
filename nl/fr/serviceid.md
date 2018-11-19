@@ -46,16 +46,16 @@ Pour qu'un utilisateur puisse verrouiller et déverrouiller des ID de service et
 * Accès à tous les ID de service du compte
 * Accès à un ID de service spécifique du compte
 
-Pour affecter l'accès à tous les ID de service du compte, définissez une règle d'accès avec les détails suivants :
+Pour accorder un accès à tous les ID de service du compte, définissez une règle d'accès pour les services de gestion de compte d'après les informations suivantes :
 
 * Rôle Editeur ou Administrateur 
 * Service d'identité IAM
 
-Pour affecter l'accès à un ID de service spécifique du compte, définissez une règle d'accès avec les détails suivants :
+Pour accorder un accès à un ID de service spécifique dans le compte, définissez une règle d'accès pour les services de gestion de compte d'après les informations suivantes : 
 
 * Rôle Editeur ou Administrateur
 * Service d'identité IAM
-* Indiquez `serviceid` dans la zone **Type de ressource** 
+* Spécifiez "serviceid" dans la zone **Type de ressource** 
 * Indiquez l'identificateur d'ID de service dans la zone **ID de ressource**
 
 Pour obtenir l'identificateur d'un ID de service spécifique, accédez à **Gérer** > **Sécurité** > **Identity & Access** puis sélectionnez **ID de service**. Sélectionnez l'ID de service pour lequel vous souhaitez afficher les détails puis copiez la valeur de l'ID.
@@ -83,9 +83,9 @@ Options de commande :
 
 <dl>
   <dt>NAME (obligatoire)</dt>
-  <dd>Nom du service, s'utilise exclusivement avec UUID</dd>
+  <dd>Nom du service, exclut UUID</dd>
   <dt>UUID (obligatoire)</dt>
-  <dd>Identificateur unique universel du service, s'utilise exclusivement avec NAME</dd>
+  <dd>Identificateur unique universel du service, exclut NAME</dd>
   <dt>-f, --force</dt>
   <dd>Verrouiller sans confirmation</dd>
 </dl>
@@ -114,9 +114,9 @@ Options de commande :
 
 <dl>
   <dt>NAME (obligatoire)</dt>
-  <dd>Nom du service, s'utilise exclusivement avec UUID</dd>
+  <dd>Nom du service, exclut UUID</dd>
   <dt>UUID (obligatoire)</dt>
-  <dd>Identificateur unique universel du service, s'utilise exclusivement avec NAME</dd>
+  <dd>Identificateur unique universel du service, exclut NAME</dd>
   <dt>-f, --force</dt>
   <dd>Déverrouiller sans confirmation</dd>
 </dl>

@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-17"
+lastupdated: "2018-10-30"
 
 
 
@@ -31,7 +31,7 @@ Identity and Access Management (IAM) vous permet d'authentifier de manière séc
 
 Un service activé pour IAM doit résider dans un groupe de ressources et l'accès au service est accordé via les règles d'accès IAM. Lorsque vous créez un service activé pour IAM depuis le catalogue, vous devez l'affecter à un groupe de ressources. Pour plus d'informations, voir [Qu'est-ce qu'une ressource ?](/docs/resources/acct_resources.html#resource)
 
-{{site.data.keyword.containerlong_notm}} est la seule exception ; il est contrôlé par IAM, mais est toujours affecté au groupe de ressources par défaut. Par conséquent, vous ne disposez pas d'une autre option lorsque vous le créez depuis le catalogue. D'autre part, il ne peut pas être affecté à un autre groupe de ressources. 
+{{site.data.keyword.containerlong_notm}} est la seule exception ; il est contrôlé par IAM, mais est toujours affecté au groupe de ressources par défaut. Par conséquent, vous ne disposez pas d'une autre option lorsque vous le créez depuis le catalogue. D'autre part, il ne peut pas être affecté à un autre groupe de ressources.
 
 
 ## IAM et Cloud Foundry sont-ils associés ?
@@ -46,7 +46,7 @@ Leurs systèmes de gestion des accès sont complètement différents. Les ressou
 
 Accédez à **Gérer** &gt; **Accès (IAM)**et sélectionnez votre nom dans la colonne Utilisateur. Ensuite, selon l'accès recherché, ouvrez les différents onglets :
 
-* Pour déterminer les groupes d'accès où vous figurez, sélectionnez **Groupe d'accès**.
+* Pour déterminer les groupes d'accès où vous figurez, sélectionnez **Groupes d'accès**.
 * Pour accès IAM, sélectionnez **Règles d'accès**.
 * Pour les rôles Cloud Foundry, sélectionnez **Accès Cloud Foundry**.
 
@@ -92,12 +92,15 @@ Par exemple, pour les rôles de gestion de plateforme et les actions de services
 ## Qui est habilité à supprimer des utilisateurs ?
 {: #remove-users}
 
-Seul le propriétaire du compte peut supprimer des utilisateurs. 
+Le propriétaire du compte peut toujours ajouter et supprimer des utilisateurs. Par ailleurs, tout utilisateur affecté à l'un des deux types de règles suivantes peut supprimer des utilisateurs :
+
+* Editeur ou Administrateur pour Tous les services de gestion des comptes
+* Editeur ou Administrateur pour le service de gestion de compte utilisateur
 
 ## Comment activer l'authentification multi-facteur ?
 {: #multi-factor}
 
-Accédez à **Gérer** &gt; **Accèss (IAM)** et sélectionnez **Paramètres**.
+Accédez à **Gérer** &gt; **Accès (IAM)** et sélectionnez **Paramètres**.
 Sélectionnez **Authentification multi-facteur**, puis cliquez sur **Appliquer les modifications**. Pour plus d'informations, voir [Activation de l'authentification multi-facteur](/docs/iam/mfa.html#enablemfa).
 
 ## Quelle est la différence entre rôles de service et de plateforme ? 
@@ -116,3 +119,10 @@ Au début de {{site.data.keyword.Bluemix_notm}}, un service de plateforme open s
 
 Le contrôle d'accès et l'organisation des ressources du compte sont les principales différences entre les groupes de ressources et les organisations et espaces Cloud Foundry. Les groupes de ressources organisent les services activés pour IAM dans un compte dont l'accès est contrôlé via des règles IAM. Les organisations et les espaces sont gérés à l'aide de rôles Cloud Foundry pour le contrôle d'accès et les ressources Cloud Foundry sont affectées à des espaces. Vous ne pouvez utiliser des organisations et des espaces pour organiser et gérer l'accès aux ressources que dans le domaine Cloud Foundry, tandis que les groupes de ressources et IAM peuvent être utilisés pour de multiples types de ressources à travers {{site.data.keyword.Bluemix_notm}}.
 
+## Comment désigner un utilisateur comme administrateur de compte ? 
+{: #account-administrator}
+
+Pour déléguer le rôle d'administrateur de compte à l'aide de règles IAM, vous devez créer deux règles :
+
+* Administrateur sur Tous les services avec l'offre Identity and Access activée, ce qui autorise l'utilisateur à créer des instances de service et à attribuer aux utilisateurs un accès à toutes les ressources du compte
+* Administrateur sur Tous les services de gestion des comptes, ce qui autorise l'utilisateur à effectuer des tâches comme l'invitation et la suppression d'utilisateurs, la gestion de groupes d'accès, d'ID de service, des offres de catalogue privé et le suivi des informations de facturation et d'utilisation.

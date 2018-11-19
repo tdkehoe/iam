@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -47,6 +47,16 @@ Pour affecter des droits d'accès à une ressource individuelle du compte, proc�
     * **ID de ressource** : entrez le nom de votre compartiment
 9. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.
 10. Sélectionnez **Affecter**.
+
+Pour accorder un accès à des services de gestion de compte individuels ou à tous ces services, procédez comme suit :
+
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access** &gt; **ID de service**.
+2. Sélectionnez l'ID de service pour laquelle vous souhaitez affecter une règle de service.
+3. Cliquez sur **Affecter un accès**.
+4. Sélectionnez d'affecter l'accès aux **Services de gestion des comptes**
+5. Sélectionnez **Tous les services de gestion des comptes** ou bien un service de gestion de compte spécifique.
+6. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
+
 
 
 

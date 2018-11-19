@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-08-21"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -25,13 +25,13 @@ Ce tutoriel concerne les [ressources](/docs/resources/acct_resources.html#resour
 
 Vous pouvez inviter un ou plusieurs utilisateurs et définir une règle d'accès initiale sur l'invitation pour les utilisateurs. Si vous invitez plusieurs utilisateurs avec une seule invitation, le même accès est accordé à chacun de ces utilisateurs. Dans la section **Accès** de la page Inviter des utilisateurs, vous ne voyez que les sections des accès que vous êtes autorisé à affecter.
 
-En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM aux utilisateurs que vous invitez dans la section Services. Dans la règle initiale que vous affectez dans l'invitation, vous pouvez accorder l'accès à toutes les ressources d'un groupe de ressources, toutes les ressources d'un service spécifique d'un groupe de ressources, toutes les ressources des services avec l'offre Identity and Access activée du compte ou à une seule ressource :
+En tant que propriétaire de compte, vous pouvez affecter des rôles Cloud IAM aux utilisateurs que vous invitez dans la section Services. Vous pouvez accorder un accès à toutes les ressources d'un groupe de ressources, à toutes les ressources d'un service spécifique dans un groupe de ressources, à tous les services activés pour IAM dans le compte, à une ressource unique dans le compte ou encore à tous les services de gestion de compte :
 
 1. Accédez à **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 2. Cliquez sur **Inviter des utilisateurs**.
 3. Indiquez l'adresse électronique de l'utilisateur que vous voulez inviter.
 4. Dans la section **Accès**, développez l'option **Services**.
-5. Sélectionner d'accorder l'accès à une **Ressource** ou à des ressources d'un **Groupe de ressources**.
+5. Sélectionnez d'accorder l'accès à une **Ressource**, à des ressources dans un **Groupe de ressources** ou aux **Services de gestion des comptes**.
 6. En fonction de votre sélection, suivez les invites afin de spécifier l'accès à une instance de service individuelle, à tous les services avec l'offre Identity and Access activée, à toutes les ressources d'un groupe de ressources ou à un service spécifique du groupe de ressources sélectionné. Si vous avez sélectionné l'option Groupe de ressources, vous pouvez également accorder à l'utilisateur le droit d'afficher, d'éditer ou de gérer l'accès au groupe de ressources en sélectionnant un rôle pour l'accès au groupe de ressources.
 7. Si vous détenez le droit approprié, vous pouvez également affecter un accès à Cloud Foundry ou à l'infrastructure lors de l'invitation.
 8. Cliquez sur **Inviter des utilisateurs**.
@@ -84,6 +84,7 @@ Vous pouvez accorder à un utilisateur l'accès à un groupe de ressources ou à
 4. Choisissez comment vous voulez affecter l'accès :
     * Sélectionnez **Affecter l'accès au sein d'un groupe de ressources** pour accorder l'accès à toutes les ressources d'un groupe ou uniquement aux ressources d'un service spécifique du groupe. Vous pouvez également accorder à l'utilisateur le droit d'afficher, d'éditer ou de gérer l'accès au groupe de ressources en sélectionnant un rôle pour l'accès au groupe de ressources. Sélectionnez **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle appartient.
     * Sélectionnez **Affecter l'accès aux ressources** pour affecter l'accès à toutes les ressources du compte pour lesquelles l'offre Identity and Access est activée, à toutes les ressources d'un service spécifique du compte, à une seule instance ou à une seule ressource d'une instance de service spécifique.
+    * Sélectionnez **Affecter l'accès aux services de gestion des comptes** pour accorder l'accès à tous les services de gestion de compte ou bien à un seul. 
 5. Sélectionnez toute combinaison de rôles afin de définir la portée de l'accès. Pour plus d'informations, voir [Rôles Cloud IAM](/docs/iam/users_roles.html#iamusermanrol).
 6. Cliquez sur **Affecter**.
 

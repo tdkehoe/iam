@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -42,7 +42,17 @@ Puede asignar acceso a los usuarios a medida que los invita, asignando política
 
 Puede asignar acceso creando una política de acceso de Cloud IAM inicial cuando invite a un nuevo usuario. En esta sección, puede proporcionar un acceso de usuario a los servicios en un grupo de recursos con acceso al grupo de recursos o a un recurso individual en la cuenta. Cuando el usuario acepte la invitación, puede asignarle acceso adicional. Consulte [Gestión del acceso IAM](/docs/iam/mngiam.html#iammanidaccser) para obtener detalles sobre la edición de políticas para añadir roles extra, asignar más acceso o eliminar una política para un usuario.
 
-**Nota**: Dependiendo de qué servicio seleccione al asignar la política, es posible que no vea todos los campos descritos en los procedimientos siguientes.
+En función del servicio que seleccione al asignar la política, es posible que no vea todos los campos descritos en los procedimientos siguientes.
+{: tip}
+
+#### Acceso a servicios de gestión de cuentas
+
+Proporcionar a un usuario acceso a los servicios de gestión de cuentas es la forma de delegar algunas de sus funciones como propietario de la cuenta. Por ejemplo, puede delegar la capacidad de ver información de facturación y uso, de invitar y eliminar usuarios, de gestionar grupos de acceso o de gestionar ID de servicio. Puede proporcionar acceso a todos los servicios de gestión de cuentas o solo a uno. 
+
+1. Desde la pantalla **Invitar usuarios**, expanda la sección **Servicios**.
+2. Seleccione que desea asignar acceso a **servicios de gestión de cuentas**
+3. Seleccione **Todos los servicios de gestión de cuentas** o seleccione un servicio de gestión de cuentas específico. 
+4. Seleccione cualquier combinación de roles para asignar el acceso deseado.
 
 #### Acceso a grupo de recursos
 

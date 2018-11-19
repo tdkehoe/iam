@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-17"
+lastupdated: "2018-10-30"
 
 
 
@@ -44,16 +44,16 @@ Los sistemas de gestión de accesos son totalmente diferentes. Los recursos de I
 ## ¿Cómo puedo averiguar a qué tengo acceso?
 {: #iam-access}
 
-Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione el nombre en la columna Usuario. Luego, en función del acceso que busque, abra los distintos separadores: 
+Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione el nombre en la columna Usuario. Luego, en función del acceso que busque, abra los distintos separadores:
 
-* Para determinar los grupos de acceso en los que se encuentra, seleccione **Grupo de acceso**.
+* Para determinar los grupos de acceso en los que se encuentra, seleccione **Grupos de acceso**.
 * Para acceso de IAM, seleccione **Políticas de acceso**.
 * Para roles de Cloud Foundry, seleccione **Acceso de Cloud Foundry**.
 
 ## ¿Cómo puedo solicitar acceso a un recurso?
 {: #request-access}
 
-El propietario de la cuenta puede actualizar su acceso a cualquier recurso de la cuenta, o bien puede ponerse en contacto con cualquier usuario que tenga asignado el rol de administrador sobre el servicio o la instancia de servicio.  
+El propietario de la cuenta puede actualizar su acceso a cualquier recurso de la cuenta, o bien puede ponerse en contacto con cualquier usuario que tenga asignado el rol de administrador sobre el servicio o la instancia de servicio. 
 
 ## ¿Por qué debo utilizar grupos de recursos y grupos de acceso? 
 {: #resource-groups}
@@ -92,12 +92,16 @@ Para ver acciones y roles de gestión de plataforma de ejemplo para servicios de
 ## ¿Quién puede eliminar usuarios?
 {: #remove-users}
 
-Solo el propietario de la cuenta puede eliminar usuarios. 
+El propietario de la cuenta siempre puede añadir y eliminar usuarios. Además, cualquier usuario con los dos tipos de política siguientes puede eliminar usuarios:
+
+* Editor o administrador sobre todos los servicios de gestión de cuentas
+* Editor o administrador sobre el servicio de gestión de cuentas de gestión de usuarios
 
 ## ¿Cómo se activa la autenticación de varios factores?
 {: #multi-factor}
 
-Vaya a **Gestionar** &gt; **Acceso (IAM)** y elija **Configuración**. Seleccione **Autenticación de multifactores** y luego pulse **Aplicar cambios**. Para obtener más información, consulte [Habilitación de la autenticación de multifactores](/docs/iam/mfa.html#enablemfa).
+Vaya a **Gestionar** &gt; **Acceso (IAM)** y elija **Configuración**. 
+Seleccione **Autenticación de multifactores** y luego pulse **Aplicar cambios**. Para obtener más información, consulte [Habilitación de la autenticación de multifactores](/docs/iam/mfa.html#enablemfa).
 
 ## ¿Qué diferencia hay entre los roles de servicio y de plataforma? 
 {: #service-platform-roles}
@@ -111,7 +115,14 @@ Los roles de servicio y de plataforma son dos tipos distintos de roles:
 ## ¿Qué diferencia hay entre un grupo de recursos y las organizaciones y los espacios de Cloud Foundry?
 {: #groups-organizations}
 
-Al comienzo de {{site.data.keyword.Bluemix_notm}}, un servicio de plataforma de código abierto para el control de accesos y la organización de recursos denominado Cloud Foundry era el único método para organizar y controlar el acceso a los recursos. A medida que {{site.data.keyword.Bluemix_notm}} se fue ampliando, surgió la necesidad de disponer de un nuevo método que pudieran utilizar todos los tipos de servicios y recursos. Ahora se utilizan grupos de recursos para agrupar y organizar muchos tipos de recursos, y se utiliza IAM para controlar de forma coherente el acceso a los servicios y recursos. Varios servicios ya han adoptado el uso de grupos de recursos y de IAM, y otros servicios pasarán con el tiempo a utilizar el nuevo método para organizar recursos y gestionar el acceso. 
+Al comienzo de {{site.data.keyword.Bluemix_notm}}, un servicio de plataforma de código abierto para el control de accesos y la organización de recursos denominado Cloud Foundry era el único método para organizar y controlar el acceso a los recursos. A medida que {{site.data.keyword.Bluemix_notm}} se fue ampliando, surgió la necesidad de disponer de un nuevo método que pudieran utilizar todos los tipos de servicios y recursos. Ahora se utilizan grupos de recursos para agrupar y organizar muchos tipos de recursos, y se utiliza IAM para controlar de forma coherente el acceso a los servicios y recursos. Varios servicios ya han adoptado el uso de grupos de recursos y de IAM, y otros servicios pasarán con el tiempo a utilizar el nuevo método para organizar recursos y gestionar el acceso.
 
 El control de accesos y la organización de los recursos de la cuenta son las principales diferencias entre los grupos de recursos y las organizaciones y espacios de Cloud Foundry. Los grupos de recursos organizan los servicios habilitados para IAM en una cuenta cuyo acceso se controla mediante políticas de IAM. Las organizaciones y los espacios se gestionan utilizando roles de Cloud Foundry para el control de accesos y se asignan recursos de Cloud Foundry a espacios. Las organizaciones y los espacios se pueden utilizar para organizar y controlar el acceso a los recursos solo dentro del dominio de Cloud Foundry, mientras que los grupos de recursos e IAM se pueden utilizar para varios tipos de recursos en {{site.data.keyword.Bluemix_notm}}.
 
+## ¿Cómo designo un usuario como administrador de la cuenta? 
+{: #account-administrator}
+
+Para delegar el rol de administrador de la cuenta mediante políticas de IAM, debe crear dos políticas:
+
+* Administrador sobre todos los servicios habilitados para Identity and Access, lo que permite a un usuario crear instancias de servicio y asignar a los usuarios acceso a todos los recursos de la cuenta
+* Administrador sobre todos los servicios de gestión de cuentas, lo que permite a un usuario realizar tareas como invitar y eliminar usuarios, gestionar grupos de acceso, gestionar ID de servicio, gestionar ofertas de catálogo privadas y realizar un seguimiento de la facturación y del uso.

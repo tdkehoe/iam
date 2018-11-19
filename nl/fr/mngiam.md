@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-09-04"
+lastupdated: "2018-10-30"
 
 ---
 
@@ -36,10 +36,16 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ```
 {: codeblock}
 
-## Affectation d'un nouvel accès
+### Affectation d'un nouvel accès
 {: #assignaccess}
 
-Pour autoriser un utilisateur à accéder à toutes les ressources du compte avec la possibilité de gérer les accès utilisateur, de créer un groupe de ressources et d'effectuer toutes les autres tâches de gestion IAM, sélectionnez l'option **Tous les services avec l'offre Identity and Access activée** pour cette règle avec le rôle **Administrateur** affecté.
+Vous pouvez affecter un accès via trois types de règle : 
+
+* Accès aux ressources d'un groupe de ressources spécifique avec l'option de n'en inclure qu'une ou de les inclure toutes
+* Accès aux ressources du compte avec l'option de n'en inclure qu'un seul type ou de les inclure tous
+* Accès aux services de gestion de compte avec l'option de n'inclure qu'un seul service ou de les inclure tous
+
+Si vous désirez accorder à un utilisateur un accès administrateur complet pour lui permettre d'effectuer des tâches comme l'invitation ou la suppression d'utilisateurs, l'affichage de la facturation et de l'utilisation, la gestion des ID service, des groupes d'accès, des accès utilisateur et l'accès à toutes les ressources du compte, vous devez créer deux règles : une sur **Tous les services avec l'offre Identity and Access activée** avec le rôle administrateur et l'autre sur **Tous les services de gestion des comptes** avec le rôle administrateur.
 {: tip}
 
 ### Accès à des ressources au sein d'un groupe de ressources 
@@ -52,7 +58,7 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 4. Sélectionnez un groupe de ressources.
 5. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources sur son tableau de bord, éditer le nom du groupe de ressources ou gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès** si vous voulez que l'utilisateur accède uniquement à la ressource que vous indiquez et non au groupe auquel elle appartient.
 6. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
-7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle et ne permet pas d'accéder au conteneur que constitue le groupe de ressources.
+7. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle. Il n'accorde pas l'accès au conteneur réel constitué par le groupe de ressources.
 8. Cliquez sur **Affecter**.
 
 ### Accès aux ressources
@@ -75,7 +81,15 @@ Pour affecter des droits d'accès à une ressource individuelle du compte ou l'a
 Un message peut s'afficher indiquant qu'il existe déjà une règle s'appliquant aux éléments sélectionnés. Si une règle incluant exactement les même rôles et les mêmes détails est créée, vous êtes invité à modifier la nouvelle règle car il n'est pas autorisé d'avoir des règles en double. Si vous créez une règle ayant les mêmes détails qu'une règle existante mais différentes affectations de rôle, vous êtes invité à consulter et mettre à jour la règle existante en incluant les affectations de rôle souhaitées.
 {: tip}
 
+### Accès aux services de gestion de compte 
 
+Pour attribuer l'accès à l'un ou à tous les services de gestion de compte, procédez comme suit : 
+
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
+2. Sur la ligne de l'utilisateur auquel vous voulez affecter un accès, sélectionnez le menu **Actions**, puis cliquez sur **Affecter un accès**.
+3. Sélectionnez d'affecter l'accès aux **Services de gestion des comptes**
+4. Sélectionnez **Tous les services de gestion des comptes** ou bien un service de gestion de compte spécifique.
+5. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
 
 
 ## Retrait de l'accès

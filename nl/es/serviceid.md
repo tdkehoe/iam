@@ -46,16 +46,16 @@ Para que un usuario tenga acceso a bloquear y desbloquear ID de servicio y clave
 * Acceso a todos los ID de servicio de la cuenta
 * Acceso a un ID de servicio específico de la cuenta
 
-Para asignar acceso a todos los ID de servicio de la cuenta, establezca una política de acceso con los detalles siguientes:
+Para asignar acceso a todos los ID de servicio de la cuenta, establezca una política de acceso para los servicios de gestión de la cuenta con los detalles siguientes:
 
 * Rol de Editor o Administrador 
 * Servicio de identidad IAM
 
-Para asignar acceso a un ID de servicio específico de la cuenta, establezca una política de acceso con los detalles siguientes:
+Para asignar acceso a un ID de servicio específico en la cuenta, establezca una política de acceso para los servicios de gestión de la cuenta con los detalles siguientes:
 
 * Rol de Editor o Administrador
 * Servicio de identidad IAM
-* Especifique `serviceid` en el campo **Tipo de recurso** 
+* Especifique "serviceid" en el campo **Tipo de recurso** 
 * Especifique el identificador del ID de servicio en el campo **ID de recurso**
 
 Para obtener el identificador de un ID de servicio específico, vaya a **Gestionar** > **Seguridad** > **Identidad y acceso** y seleccione **ID de servicio**. Seleccione el ID de servicio para el que desea ver detalles, y copie el valor del ID.
