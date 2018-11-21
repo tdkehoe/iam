@@ -17,6 +17,8 @@ Gerenciando a identidade e o acesso
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
+        
+    bp_access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
