@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-29"
 
 
 
@@ -126,3 +126,8 @@ To delegate the account administrator role by using IAM policies, you should cre
 
 * Administrator on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account
 * Administrator on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and tracking billing and usage.
+
+## How do I add authentication into my web and mobile apps?
+{: #appid}
+
+IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid/index.html).
