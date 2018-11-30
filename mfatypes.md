@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-11-19"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -42,7 +42,7 @@ One of the benefits of IBMid MFA is that it is free and tied to your ID instead 
 ## Account-based MFA options
 {: #id-based}
 
-An account administrator must enable any of the following MFA options to be configured and used by a user in the account. This type of MFA is tied to a user's current account. If an administrator enables a different one of these MFA options for each account that a user is a member of, the user is prompted to authenticate a different way each time that they switch accounts. 
+An account administrator must enable any of the following MFA options to be configured and used by a user in the account. This type of MFA is tied to a user's current account. If an administrator enables a different one of these MFA options for each account that a user is a member of, the user is prompted to authenticate a different way each time that they switch accounts.
 
 If an account owner requires IBMid MFA for all users in the account, that IBMid MFA method overrides any other MFA options that are enabled and set up in a user's account. Therefore, even if a user has other MFA options, such as the following set up, the user is not prompted for them at login.
 
@@ -58,5 +58,3 @@ The following legacy MFA options are available only with former classic infrastr
 </dl>
 
 For more information about setting up MFA options, see [Setting up login security](/docs/account/login_settings.html#login-settings). And, if you are an account owner or administrator who manages other users' login settings, or you have the ability to manage your own login settings, see [Managing a user's login settings](/docs/iam/user_login.html#loginsettings).
-
-

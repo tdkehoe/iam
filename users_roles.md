@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-16"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -28,22 +28,22 @@ A policy grants a subject one or multiple roles to a set of resources so that sp
 
 | Action | Required Role |
 |----------|---------|
-| Create a policy in an account for all services and instances | Account owner or administrator on all account management services and all Identity and Access enabled services | 
+| Create a policy in an account for all services and instances | Account owner or administrator on all account management services and all Identity and Access enabled services |
 | Create a policy on a service in an account | Account owner, administrator on all Identity and Access enabled services, or administrator on the service in the account |
 | Create a policy on a service instance | Account owner, administrator on all Identity and Access enabled services, administrator on the service in the account, administrator on all services in the relevant resource group, or administrator on the service instance |
-{: caption="Table 1. Users allowed to create access policies" caption-side="top"} 
+{: caption="Table 1. Users allowed to create access policies" caption-side="top"}
 
-When you assign a policy, you start with the subject. After you select the subject of the policy, you can choose from setting the policy for a resource group, an individual resource, or an account management service. 
+When you assign a policy, you start with the subject. After you select the subject of the policy, you can choose from setting the policy for a resource group, an individual resource, or an account management service.
 
 Then, depending on your initial selection, you can select from the options:
-  
+
   * A service within a resource group
   * All resources in a resource group
   * All instances or a single instance for the selected resource
   * All IAM-enabled services in the account
-  * An account management service 
+  * An account management service
 
-More configuration options might be available, depending on the service you select. Finally, you select the roles to assign. 
+More configuration options might be available, depending on the service you select. Finally, you select the roles to assign.
 
 ## Common access policy types
 {: #policytypes}
@@ -68,11 +68,11 @@ To grant another user full access to the account for the purposes of managing us
 With Cloud IAM, you can manage and define access for users and resources in your account. Two types of roles can be assigned: platform management roles and service access roles.
 
 <dl>
-<dt>Platform management roles</dt> 
+<dt>Platform management roles</dt>
 <dd>Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to account management services that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.</dd>
 <dt>Service access roles</dt>
 <dd>Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The service access roles are manager, writer, and reader. </dd>
-</dl> 
+</dl>
 
 You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
 {: note}
@@ -100,7 +100,7 @@ The following table describes the common actions that you can perform based on t
 If you assign an access policy on **All account management services**, depending on the role that you select, the user can complete the following actions for each service for that role. In addition, this type of policy provides the user access to billing information and the ability to track usage based on their assigned role. See the following table for details.
 {: note}
 
-| Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for Support | Actions for all Account Management Services | 
+| Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for Support | Actions for all Account Management Services |
 |:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|
 | **Assign access to** |  IAM Identity Service |  IAM Access Groups |  Global resource catalog |  User Management  | Support Center | All account management services |
 | Viewer role |  <ul><li>View IDs</li></ul> |  <ul><li>View access groups and members</li></ul> | <ul><li>View private services</li></ul>  |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>View cases</li><li>Search cases</li></ul> |All viewer role actions for the account management services plus the following: <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View account name</li><li>View resource groups</li></ul> |
@@ -136,7 +136,3 @@ The actions that can be taken based on each assigned role vary based on the serv
 | Writer | Permissions beyond the reader role, including creating and editing service-specific resources | Create and destroy buckets and objects |
 | Manager | Permissions beyond the writer role to complete privileged actions as defined by the service, plus create and edit service-specific resources | Manage all aspects of data storage, create and destroy buckets and objects |
 {: caption="Table 5. Example service access user roles and actions" caption-side="top"}
-
-
-
-

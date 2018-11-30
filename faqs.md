@@ -6,7 +6,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-16"
+lastupdated: "2018-11-30"
 
 
 
@@ -23,7 +23,7 @@ lastupdated: "2018-11-16"
 # FAQs
 {: #iamfaq}
 
-## What is {{site.data.keyword.cloud_notm}} Identity and Access Management? 
+## What is {{site.data.keyword.cloud_notm}} Identity and Access Management?
 {: #whatisiam}
 {: faq}
 
@@ -61,13 +61,13 @@ Go to **Manage** &gt; **Access (IAM)**, and select your name on the Users page. 
 {: #request-access}
 {: faq}
 
-The account owner can update your access to any resource in the account, or you can contact any user who is assigned the administrator role on the service or service instance. 
+The account owner can update your access to any resource in the account, or you can contact any user who is assigned the administrator role on the service or service instance.
 
 ## Why should I use resource groups and access groups?
 {: #resource-groups}
 {: faq}
 
-A resource group is a logical container for resources. When a resource is created, it's assigned to a resource group and can’t be moved after it's added. 
+A resource group is a logical container for resources. When a resource is created, it's assigned to a resource group and can’t be moved after it's added.
 
 An access group is used to easily organize a set of users and service IDs into a single entity to make access assignments easy. You can assign a single policy to an access group to grant all members those permissions. If you have more than one user or service ID that needs the same access, create an access group instead of assigning the same access multiple times per individual user or service ID.
 
@@ -103,7 +103,7 @@ For classic infrastructure, you must have the Manage user classic infrastructure
 
 When you have access to manage a resource group, you can view, edit the name, and manage access for the resource group itself depending on the assigned role. Access to a resource group itself doesn't give a user access to the resources within the group.
 
-When you have access to resources within a resource group, you can edit, delete, and create instances, or have all management actions for the specified services within the resource group depending on the assigned role. 
+When you have access to resources within a resource group, you can edit, delete, and create instances, or have all management actions for the specified services within the resource group depending on the assigned role.
 
 For example, platform management roles and actions for account management services, see [Platform roles table](/docs/iam/users_roles.html#platformrolestable2).
 
@@ -120,16 +120,16 @@ The account owner can remove any users from the account, and any user with the f
 {: #multi-factor}
 {: faq}
 
-1. Go to **Manage** &gt; **Access (IAM)**, and select **Settings**. 
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Settings**.
 2. Choose **Multi-factor authentication**, and then click **Yes, I'm sure**. For more information, see [Requiring MFA for users in your account](/docs/iam/mfa.html#enablemfa).
 
-## What is the difference between service and platform roles? 
+## What is the difference between service and platform roles?
 {: #service-platform-roles}
 {: faq}
 
-Service and platform roles are two different types of roles: 
+Service and platform roles are two different types of roles:
 
-* Platform roles are how you work with a service within an account such as creating instances, binding instances, and managing user's access to the service. For platform services these roles enable users to create resource groups and manage service IDs, for example. Platform roles are: administrator, editor, operator, and viewer. 
+* Platform roles are how you work with a service within an account such as creating instances, binding instances, and managing user's access to the service. For platform services these roles enable users to create resource groups and manage service IDs, for example. Platform roles are: administrator, editor, operator, and viewer.
 
 * Service roles define the ability to perform actions on a service and are specific to every service such as performing API calls or accessing the UI. Service roles are: manager, writer, and reader. For more information about how these roles apply, refer to the specific service's documentation.
 
@@ -155,7 +155,7 @@ To delegate the account administrator capabilities, assign the following access:
 Even with the previously described access assigned, an account administrator can't change the MFA setting for the account. Only the account owner can change this setting.
 {: note}
 
-## What is the difference between an account administrator and account owner? 
+## What is the difference between an account administrator and account owner?
 {: #owner-administrator}
 {: faq}
 
@@ -169,20 +169,20 @@ Account owners are automatically assigned as the account administrator for {{sit
 Even with the previously described access assigned, an account administrator can't change the MFA setting for the account. Only the account owner can change this setting.
 {: note}
 
-## How do I assign access to infrastructure and devices? 
+## How do I assign access to infrastructure and devices?
 {: #infrastructure-devices}
 {: faq}
 
-1. Go to **Manage** &gt; **Access (IAM)**, and select **Users**. 
-2. Select a user's name. 
-3. Click **Classic infrastructure**. 
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Users**.
+2. Select a user's name.
+3. Click **Classic infrastructure**.
 4. Assign permissions from the **Permissions** section, assign access to devices from the **Devices** section, and assign access to VPN subnets for the devices that the user is assigned access from the **VPN access** section.
 
 ## Can every user in my account see all the other users?
 {: #users}
 {: faq}
 
-An account owner can view all users in the account and choose how users can view other users in the account on the Users page. An account owner can adjust the [user list visibility setting](/docs/iam/userlist.html#userlistview) on the Settings page by selecting one of the following options: 
+An account owner can view all users in the account and choose how users can view other users in the account on the Users page. An account owner can adjust the [user list visibility setting](/docs/iam/userlist.html#userlistview) on the Settings page by selecting one of the following options:
 
 * **Unrestricted view**: All users in your account can view everyone else in the account.
 * **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a shared Cloud Foundry org or a classic infrastructure user hierarchy relationship.
@@ -204,4 +204,3 @@ Yes. You must assign a user access within one of the three access management sys
 {: faq}
 
 IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid/index.html).
-

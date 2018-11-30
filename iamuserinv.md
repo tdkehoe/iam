@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-11-17"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -25,16 +25,16 @@ To invite users and manage outstanding invitations, you must be either an accoun
 ## Setting up an invitation
 {: #invitations}
 
-To invite users or manage user invitations in your account, complete the following steps: 
+To invite users or manage user invitations in your account, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Click **Invite users**.
 3. Specify the email address of the user. If you are inviting more than one user with a single invitation, they are all assigned the same access.
-4. Add one or more of the access options that you manage. You must assign at least one access option. For any additional access options that you don't add and configure, the default value of **no access** is assigned. You might see one or all of the following access options, depending on the options that you are authorized to manage: 
+4. Add one or more of the access options that you manage. You must assign at least one access option. For any additional access options that you don't add and configure, the default value of **no access** is assigned. You might see one or all of the following access options, depending on the options that you are authorized to manage:
 
-  * **Services** 
-  * **Cloud Foundry access** 
-  * **Classic infrastructure access**. 
+  * **Services**
+  * **Cloud Foundry access**
+  * **Classic infrastructure access**.
 
   For more information, see [Assigning user access](/docs/iam/iamuserinv.html#assignaccess).
 
@@ -50,7 +50,7 @@ You assign access for users as you invite them by assigning {{site.data.keyword.
 
 ### Services
 
-You can assign access by creating an initial {{site.data.keyword.Bluemix_notm}} IAM access policy when you invite a new user. In the Services section, you can provide a user access to account management services, services in a resource group with access to manage the resource group, or to an individual resource in the account. 
+You can assign access by creating an initial {{site.data.keyword.Bluemix_notm}} IAM access policy when you invite a new user. In the Services section, you can provide a user access to account management services, services in a resource group with access to manage the resource group, or to an individual resource in the account.
 
 After the user accepts the invitation, you can assign additional access. See [Managing access to resources](/docs/iam/mngiam.html#iammanidaccser) for details on editing policies to add extra roles, assigning more access, or removing a policy for a user.
 
@@ -74,7 +74,7 @@ You can assign access to all services within a resource group or a single servic
 2. Select to assign access to resources in a **Resource group**.
 3. Choose a resource group.
 4. Choose a role for the **Assign access to a resource group** field to enable the user to view the resource group on the resource list, edit the resource group name, or manage user access to the group. You can select **No access**, if you want the user to be able to access only the resource that you specify and not the group that it is organized in.
-5. Select a service within the resource group, or select to provide access to all services within the selected group. 
+5. Select a service within the resource group, or select to provide access to all services within the selected group.
 6. Select any combination of roles to assign the wanted access. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
 
 #### Resource access
@@ -84,9 +84,9 @@ You can assign access to a single resource within your account down to the insta
 1. From the **Invite users** screen, expand the **Services** section.
 2. Select to assign access to a **Resource**.
 3. Select a service.
-4. Select **All current regions** or a specific region, if your are prompted. 
+4. Select **All current regions** or a specific region, if your are prompted.
 5. Select **All current service instances** or select a specific service instance.
-6. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
+6. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level.
     * **Resource type**: Enter `bucket`.
     * **Resource ID**: Enter the name of your bucket.
 7. Select any combination of roles to assign the wanted access.
@@ -129,6 +129,5 @@ For information about configuring access for users after they are added to your 
 As the account owner or a user with the Manage user classic infrastructure permission, you can add a VPN-only user.
 
 1. From the **Users** page, click **Add VPN-only user**.
-3. Enter the personal information details for the user. 
+3. Enter the personal information details for the user.
 4. Click **Save**.
-
