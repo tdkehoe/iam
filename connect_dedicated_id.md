@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -19,20 +19,20 @@ lastupdated: "2018-05-22"
 # Connecting a dedicated ID to your public IBMid
 {: #connect_dedicated_id}
 
-To log in to a dedicated cloud where public IAM service is available, you must log in to the {{site.data.keyword.Bluemix_notm}} CLI with your public IBMid instead of the dedicated ID.
-
+To log in to a dedicated cloud where public IAM service is available, {{site.data.keyword.Bluemix_notm}} CLI asks you to log in with your public IBMid instead of the dedicated ID.
+{:shortdesc}
 
 ```
   $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
   API endpoint: https://api.{dedicated_env}.bluemix.net
 
   Public IAM token service is available in the dedicated environment.
-  Log in with your public IBMid, or use '--no-iam' to log in as a dedicated user only.
+  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
 
   Email>
 ```
 
-If your dedicated ID is already connected to the public IBMid, it authenticates and logs in:
+If your dedicated ID has already been connected to the public IBMid, it will authenticate and log in:
 
 ```
   Authenticating...
@@ -41,14 +41,14 @@ If your dedicated ID is already connected to the public IBMid, it authenticates 
   Connected to dedicated user my_dedicated_id
 ```
 
-However, if your dedicated ID is not already connected to the public IBMid, you are prompted to manually connect to the public IBMid:
+However, if your dedicated ID has not been connected to the public IBMid, you will be prompted to manually connect to the public IBMid:
 
 ```
-  You are logging in with an IBMid that is not associated with any dedicated user.
+  You are logging with an IBMid that does not associated with any dedicated user.
   To set up the connection, input the credentials of the dedicated user.
 
   Choose a credential type:
-  1. User name and password
+  1. Username and password
   2. One Time Code (Get one at https://login.{dedicated_env}.bluemix.net.com/passcode)
   Enter a number>
 ```

@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-30"
 
 ---
 
@@ -63,7 +63,7 @@ Because a one-time passcode retrieves code from the {{site.data.keyword.Bluemix_
 ## Using an API key
 {:api_key}
 
-The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the Softlayer API key or {{site.data.keyword.Bluemix_notm}} service API key.
+The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the classic infrastructure API key or {{site.data.keyword.Bluemix_notm}} service API key.
 
 1. Create an API key with the [`ibmcloud iam api-key-create` command](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Use the `-f` option to generate an API key file instead of showing the key in the command window:
 
@@ -90,7 +90,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's us
     
       ```
     
-    * Set an environment variable. Additionally, you can also set an environment variable on your system. For example, BLUEMIX_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI. 
+    * Set an environment variable. Additionally, you can also set an environment variable on your system. For example, IBMCLOUD_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI. 
   
   To log in by using the Cloud Foundry CLI, specify `apikey` as the user name and the API key string as the password:
 

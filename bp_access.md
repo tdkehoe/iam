@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -16,6 +16,7 @@ lastupdated: "2018-11-02"
 {: #account_setup}
 
 To streamline the access assignment process, you can take advantage of access groups to assign a minimal number of policies by giving the same access to all users and service IDs that belong to the same access group. Use these best practices to learn more about providing users access to resources, resource groups, and account management services.
+{:shortdesc}
 
 To ensure that your account is fully set up for success, check out [Best practices for setting up your account](/docs/account/bp_account.html#account_setup) and [Best practices for organizing resources in resource groups](/docs/resources/bestpractice_rgs.html).
 {: tip}
@@ -39,7 +40,7 @@ Though these suggestions are designed for a hypothetical scenario, you can confi
 
 To create an access group, complete the following steps: 
 
-1. In the {{site.data.keyword.Bluemix}} console, click **Manage** &gt; **Security** &gt; **Identity & access**, and select **Access Groups**.
+1. In the {{site.data.keyword.Bluemix}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Click **Create**.
 3. Enter the name and description for the group.
 4. Click **Create**.
@@ -57,7 +58,7 @@ The most commonly used roles are viewer, editor, and administrator. The viewer r
 
 You can organize resources in a resource group and users and service IDs into an access group to make assigning access as simple as possible. After you set up each one, you can create access policies for the access groups to give users in your account access to the resources that you created.
 
-1. Click **Manage** &gt; **Security** &gt; **Identity & access**, and select **Access Groups**.
+1. Click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the access group that you want to assign access.
 3. Select the **Access policies** tab, and then click **Assign access**. You have the following options for assigning access:
 
@@ -67,4 +68,5 @@ You can organize resources in a resource group and users and service IDs into an
 
 Easily give multiple users administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, use the **Assign access to resources** option, and select **All Identity and Access enabled services** with the administrator role assigned. To create the second policy, use the **Assign access to Account Management Services** option, and select **All Account Management Services** with the administrator role assigned.
 {: tip}
+
 

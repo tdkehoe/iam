@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2018-11-06"
+lastupdated: "2018-11-16"
 
 ---
 
@@ -12,6 +12,7 @@ lastupdated: "2018-11-06"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 {:new_window: target="_blank"}
 
 # IAM access
@@ -54,9 +55,9 @@ You can provide fine-grained access for users, service IDs, or access groups by 
 * All resources within the account
 * All resources within all services that belong to an individual resource group with the ability to manage the resource group
 * All resources within a single service in a resource group with the ability to manage the resource group
-* All resources within a single service across the account, regardless of the resource group they are assigned to
+* All resources within a single service across the account, regardless of the resource group they're assigned to
 * Resources in an individual instance
-* A single resource type within an instance, for example, a bucket in a {{site.data.keyword.objectstorageshort}} instance
+* A single resource type within an instance, for example, a bucket in an {{site.data.keyword.objectstorageshort}} instance
 
 To grant another user full access to the account for the purposes of managing user access and managing all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** role assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
 {: tip}
@@ -68,13 +69,13 @@ With Cloud IAM, you can manage and define access for users and resources in your
 
 <dl>
 <dt>Platform management roles</dt> 
-<dd>Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to account management services that enable users to invite and remove users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.</dd>
+<dd>Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to account management services that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.</dd>
 <dt>Service access roles</dt>
 <dd>Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The service access roles are manager, writer, and reader. </dd>
 </dl> 
 
-You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, refer to the documentation for that service.
-{: tip}
+You might not see all of the roles that are listed here as options when you assign policies in the UI because only the roles available for the service that you chose are displayed. For more information on what roles are enabled and what actions each access role allows for each service, see the documentation for that service.
+{: note}
 
 ### Platform management roles
 {: #platformroles}
@@ -97,20 +98,20 @@ The following table describes the common actions that you can perform based on t
 {: #acctmgmt}
 
 If you assign an access policy on **All account management services**, depending on the role that you select, the user can complete the following actions for each service for that role. In addition, this type of policy provides the user access to billing information and the ability to track usage based on their assigned role. See the following table for details.
-{: tip}
+{: note}
 
-| Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for All Account management Services | 
-|:--------------|:-------------|:--------------|:--------------|:--------------|:--------------|
-| **Assign access to** |  IAM Identity Service |  IAM Access Groups |  Global resource catalog |  User Management  |  All account management services |
-| Viewer role |  <ul><li>View IDs</li></ul> |  <ul><li>View access groups and members</li></ul> | <ul><li>View private services</li></ul>  |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | All viewer role actions for the account management services plus the following: <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View account name</li><li>View resource groups</li></ul> |
-| Operator role | <ul><li>Create and delete IDs and API keys</li></ul> |  <ul><li>Not applicable</li></ul> | <ul><li>Not applicable</li></ul> |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | All operator role actions for the account management services plus the following: <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View and change account name</li><li>View and update resource groups</li></ul> |
-| Editor role |  <ul><li>Create, update, and delete IDs and API keys</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users from groups</li></ul> | <ul><li>Change object metadata, but not visibility</li></ul>  | <ul><li>View, invite, update, and remove users from the account</li><li>View and update user profile settings</li></ul> | All editor role actions for the account management services plus the following:  <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View, create, and update resource groups</li></ul> |
-| Administrator role |   <ul><li>Create, update, and delete IDs and API keys</li><li>Assign access policies to IDs</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users</li><li>Assign access to a group</li><li>Manage access for working with access groups</li></ul> | <ul><li>Change object metadata or visibility</li></ul> | <ul><li>View, invite, update, and remove users from the account</li><li>View and update user profile settings</li></ul> |  All administrator role actions for the account management services plus the following: <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View subscription balances and track usage</li><li>View, create, update, and assign access for managing resource groups</li></ul>  |
+| Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for Support | Actions for all Account Management Services | 
+|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|
+| **Assign access to** |  IAM Identity Service |  IAM Access Groups |  Global resource catalog |  User Management  | Support Center | All account management services |
+| Viewer role |  <ul><li>View IDs</li></ul> |  <ul><li>View access groups and members</li></ul> | <ul><li>View private services</li></ul>  |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>View cases</li><li>Search cases</li></ul> |All viewer role actions for the account management services plus the following: <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View account name</li><li>View resource groups</li></ul> |
+| Operator role | <ul><li>Create and delete IDs and API keys</li></ul> |  <ul><li>Not applicable</li></ul> | <ul><li>Not applicable</li></ul> |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>Not applicable</li></ul> | All operator role actions for the account management services plus the following: <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View and change account name</li><li>View and update resource groups</li></ul> |
+| Editor role |  <ul><li>Create, update, and delete IDs and API keys</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users from groups</li></ul> | <ul><li>Can change object metadata but can't change visibility for private services</li></ul>  | <ul><li>View, invite, remove, and update users from the account</li><li>View and update user profile settings</li></ul> | <ul><li>Not applicable</li></ul> | All editor role actions for the account management services plus the following:  <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View, create, and update resource groups</li></ul> |
+| Administrator role |   <ul><li>Create, update, and delete IDs and API keys</li><li>Assign access policies to IDs</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users</li><li>Assign access to a group</li><li>Manage access for working with access groups</li></ul> | <ul><li>Can change object metadata or visibility for private services, and restrict visibility of a public service</li></ul> | <ul><li>View, invite, remove, and update users from the account</li><li>View and update user profile settings</li></ul> |  <ul><li>View cases</li><li>Search cases</li><li>Update cases</li><li>Create cases</li></ul> |All administrator role actions for the account management services plus the following: <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View subscription balances and track usage</li><li>View, create, update, and assign access to manage resource groups</li></ul>  |
 {: caption="Table 3. Example platform management roles and actions for account management services" caption-side="top"}
 {: #platformrolestable2}
 
-For the IAM Identity Service, these actions apply to service IDs within the account that the user did not create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies, but this account management service applies to the ability to view, delete, and assign access to service IDs in the account created by other users.
-{: tip}
+For the IAM Identity Service, these actions apply to service IDs within the account that the user didn't create. All users can create service IDs. They're the administrator for those IDs, and they can create the associated API key and access policies, but this account management service applies to the ability to view, delete, and assign access to service IDs in the account created by other users.
+{: note}
 
 Some services might map specific actions to the platform management roles that are related to the management of the service rather than to the access of the service. As an example, see the following table that details the {{site.data.keyword.containershort_notm}} service actions that are mapped to these roles.
 
@@ -127,14 +128,15 @@ Some services might map specific actions to the platform management roles that a
 Service access roles enable users to be assigned different levels of permission for calling the service's API and accessing the UI for the service. The following table provides example actions that can be taken depending on the assigned roles based on using the {{site.data.keyword.objectstorageshort}} service.
 
 The actions that can be taken based on each assigned role vary based on the service that you selected for the policy. Not all services use these types of roles. See the documentation for the service for more details.
-{: tip}
+{: note}
 
 | Service Access Role | Actions | Example Actions for {{site.data.keyword.objectstorageshort}} Service |
 |:-----------------|:-----------------|:-----------------|
 |  Reader | Perform read-only actions within a service, such as viewing service-specific resources | List and download objects |
 | Writer | Permissions beyond the reader role, including creating and editing service-specific resources | Create and destroy buckets and objects |
 | Manager | Permissions beyond the writer role to complete privileged actions as defined by the service, plus create and edit service-specific resources | Manage all aspects of data storage, create and destroy buckets and objects |
-{: caption="Table 4. Example service access user roles and actions" caption-side="top"}
+{: caption="Table 5. Example service access user roles and actions" caption-side="top"}
+
 
 
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -12,33 +12,43 @@ lastupdated: "2018-05-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:deprecated: .deprecated}
 
-# Managing infrastructure access
+# Managing classic infrastructure access
+{: #mngclassicinfra}
 
-In the initial account invitation, you might set some initial permissions for your users. You can update permissions for infrastructure or add device access from the Infrastructure option in the console at anytime. To access the infrastructure permissions, go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**. Then, go to **Account** &gt; **Users** to get started.
+You can update permissions for classic infrastructure services or add device and VPN subnet access for a user at any time. To access the classic infrastructure permissions, go to **Manage** &gt; **Access (IAM)**, select **Users**. Then, select the user's name that you want to update access for, and click **Classic infrastructure**.
+{:shortdesc}
 
-## Updating permissions
+You must be assigned the Manage users classic infrastructure permission and an ancestor of the user within the classic infrastructure user hierarchy. Account owners have full access to the account, so they do not see the permissions on the page. Individual users can't edit their own permissions, and they also don't see permissions on the page.
+{: note}
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
-2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
-3. Select to **Assign access to your SoftLayer account**.
-4. From the control portal, you can update the user's profile information, portal permissions, and device access.
-5. Add user permissions by making selections for support, devices, network, security, services, and the account on the **Portal Permissions** tab.
-6. Update device access on the **Device Access** tab.
+  1. Select **Permissions** to update the user's permissions. You can select from four types of permissions: account, devices, network, and services. Individually select permissions from each category, or use a permission set option to assign permissions in bulk.
+  
+    The account management and support permissions that you previously assigned to users in your account are now migrated from classic infrastructure permissions to migrated IAM access groups. For more information, see [Migrated classic infrastructure permissions](/docs/iam/infrastructureaccess.html#predefined).
+    {: tip}
+    
+  2. To grant a user device access, select **Devices**, and assign the access to specific devices and device types as needed.
+  
+    Access to devices is assigned after the user is invited to the account. The device permissions apply to the specific devices that are assigned for the user. You can select specific devices from the list, or you can assign access by device type. If you assign access by device type, you might want to use the **Enable future access** options to ensure that each time new devices of a specific type are added, the user automatically gets assigned access to those devices.
 
-## Updating VPN access
+  3. To update a user's access to VPN subnets, select **VPN subnets**. 
+  
+    Use the **Auto-assign** option to set how the user gets access to VPN subnets based on their device access. If this option is set to on, the user is automatically assigned access to all subnets for the devices they already have access to. You can set this option to off to manually select subnets from the list.
+    {: tip}
+  
+    To provide access to VPN subnets, the user must already be assigned access to one or more devices. If the user does not access to any devices, no subnets are available for selection. You can define the type of VPN subnets that the user has access to by using the **VPN type** option. If you select **None**, no VPN access can be assigned. 
+    
+    The PPTP option is deprecated, so if you have this option and clear it, it is no longer available.
+    {: deprecated}
 
-1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**.
-2. Go to **Account** &gt; **Users**.
-3. From the **Actions** menu, select **Edit VPN Access**.
-4. Select a **VPN Type**.
-5. Set **Subnet Access** to **Auto** or **Manual**.
-6. Click **Save** to save your changes.
 
-## Adding device access
 
-1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg), and then select **Infrastructure**.
-2. Go to **Account** &gt; **Users**.
-3. Click the link in the **Device access** column for the user that you want to update access for. The link option is either **Manage** or the number of devices the user has access to. As an alternative, you can click **Edit Portal Access** from the actions menu that takes you to the permissions page. From there, select the **Device Access** tab.
-4. Select the devices that you want to provide the user with access to.
-5. Click **Update Device Access**.
+
+
+
+
+
+

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-10"
 
 ---
 
@@ -12,6 +12,7 @@ lastupdated: "2018-08-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
 
 # Managing service ID API keys
@@ -19,9 +20,9 @@ lastupdated: "2018-08-02"
 
 Service IDs are created to enable access to your {{site.data.keyword.Bluemix_notm}} services by applications hosted both inside and outside of {{site.data.keyword.Bluemix_notm}}. API keys are used by an application to authenticate as a particular service ID and be granted the access associated with that service ID.
 
-Once you create a service ID, you can start creating API keys and assigning service policies. Each policy specifies the level of access that is allowed when the API key is used to authenticate with your services. For more information about creating a service ID and assigning policies, see [Creating and managing service IDs](/docs/iam/serviceid.html#serviceids). For details on the CLI commands that are used to manage service ID API keys, see [Commands for managing API keys and policies](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
+Once you create a service ID, you can start creating API keys and assigning service policies. Each policy specifies the level of access that is allowed when the API key is used to authenticate with your services. For more information about creating a service ID and assigning policies, see [Creating and working with service IDs](/docs/iam/serviceid.html#serviceids). For details on the CLI commands that are used to manage service ID API keys, see [Managing IAM access, API keys, service IDs, and access groups](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
 
-Each API key that is associated with a service ID inherits the policy that has been assigned to the service ID. For example, if you want one application to be able to simply view resources within a service, then you need to use an API key associated with a service ID that has a policy assigned with the `Viewer` role. And, if you want another application to be able to have full access within a service, then you need to use an API key associated with a second service ID that has a policy assigned with the `Administrator` role.
+Each API key that is associated with a service ID inherits the policy that has been assigned to the service ID. For example, if you want one application to be able to simply view resources within a service, then you need to use an API key associated with a service ID that has a policy assigned with the Viewer role. And, if you want another application to be able to have full access within a service, then you need to use an API key associated with a second service ID that has a policy assigned with the Administrator role.
 
 For more information, see [Examples of how to use a service ID](/docs/iam/serviceid.html#examples-of-how-to-use-a-service-id).
 
@@ -29,16 +30,17 @@ For more information, see [Examples of how to use a service ID](/docs/iam/servic
 
 Create an API key to associate with a service ID.
 
-1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
 2. If you don't have a service ID created already, create the service ID.
-3. From the **Actions** menu, go to the **Manage service ID** option.
-4. Click **Create** in the API keys section.
-5. Add a name and description to easily identify the API key.
-6. Click **Create**.
-7. Save your API key by copying or downloading it to secure location.
+3. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, click **Manage service ID**.
+4. Click **API keys**.
+5. Click **Create**.
+6. Add a name and description to easily identify the API key.
+7. Click **Create**.
+8. Save your API key by copying or downloading it to secure location.
 
 For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key.
-{: tip}
+{: note}
 
 To create an API key for a service ID using the CLI, you can use the [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create) command.
 ```
@@ -50,10 +52,10 @@ ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTI
 
 You can update an API key by editing the name or description used to identify the key in the UI.
 
-1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
-2. If you don't have a service ID created already, create the service ID.
-3. From the **Actions** menu, go to the **Manage service ID** option.
-4. From the **Actions** menu in the API keys section, go to the **Edit name & description** option.
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
+2. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, click **Manage service ID**.
+3. Click **API keys**.
+4. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, click **Edit name & description**.
 
 To update an API key for a service ID using the CLI, you can use the [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_update) command.
 ```
@@ -66,10 +68,10 @@ ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d,
 
 For API keys that represent the identity of the service ID, you can prevent the API key from being deleted by locking it. A locked API key is indicated by the ![Locked icon](images/locked.svg "Locked") icon in the UI.
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Service IDs**.
+1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
 2. Identify the row of the service ID that you want to select an API key for, and select the name of the service ID.
-3. Select **API keys**.
-4. Hover on the row of the API key that you want to lock, and click the **Actions** menu to open a list of options.
+3. Click **API keys**.
+4. Hover on the row of the API key that you want to lock, and click the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to open a list of options.
 5. Click **Lock API key**.
 
 You can unlock your API key at any time to update, delete, or add an access policy, or to remove the API key.
@@ -118,10 +120,11 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 
 You can delete an API key that is associated with a service ID. However, deleting an API key that is currently in use by an application will remove the ability for that application to authenticate with your services.
 
-1. Go to **Manage** &gt; **Security** &gt; **Identity and Access** &gt; **Service IDs**.
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
 2. If you don't have a service ID created already, create the service ID.
-3. From the **Actions** menu, go to the **Manage service ID** option.
-4. From the **Actions** menu in the API keys section, go to the **Delete key** option.
+3. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, click **Manage service ID**.
+4. Click **API keys**.
+5. From the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, click **Delete**.
 
 To delete an API key for a service ID using the CLI, you can use the [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_delete) command.
 ```
