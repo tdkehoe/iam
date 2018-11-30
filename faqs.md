@@ -205,12 +205,3 @@ Yes. You must assign a user access within one of the three access management sys
 
 IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid/index.html).
 
-<!-- 
-## Staging only in progress 
-
-### How do I set up federation?
-
-https://dev.console.test.cloud.ibm.com/docs/account/adminpublic.html#signing-up-for-ibm-cloud
-
-### How do you use SAML federation to set up access groups? 
---> 
