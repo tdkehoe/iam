@@ -11,6 +11,7 @@ lastupdated: "2018-11-30"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:important: .important}
 {:new_window: target="_blank"}
 
 # Classic infrastructure permissions
@@ -33,7 +34,8 @@ These special access groups include all the appropriate IAM policies to preserve
 
 You can continue to manage these migrated classic infrastructure permissions for users directly through IAM by adding and removing them from the migrated permission access groups. The policies that these access groups have are locked to preserve the access behavior for their members. To maintain ease of use for newer IAM users, avoid deleting these access groups.
 
-The following table outlines all the migrated classic infrastructure permissions that are now available by using the access groups.
+After your classic infrastructure permissions are migrated, you must discontinue use of those permissions. See the following table for all the migrated classic infrastructure permissions that are now part of IAM access groups.
+{: important}
 
 | Migrated Permission Access Group Name | Allowed Actions |
 |----------|---------|
@@ -50,4 +52,3 @@ The following table outlines all the migrated classic infrastructure permissions
 {: caption="Table 1. Predefined access groups" caption-side="top"}
 
 You can continue to manage users for the access groups. However, you might find it helpful to create new access groups that include a combination of access policies for the [IAM account management services](/docs/iam/users_roles.html#platformrolestable2) to make it easier to assign access for account management tasks and work with support cases.
-{: tip}
