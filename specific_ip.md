@@ -11,9 +11,10 @@ lastupdated: "2018-11-30"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:important: .important}
+{:new_window: target="_blank"}
 
 # Allowing specific IP addresses for a user
 {: #ips}
@@ -21,10 +22,16 @@ lastupdated: "2018-11-30"
 By default, all IP addresses can be used to log in to the {{site.data.keyword.cloud}} console and access classic infrastructure APIs. You can specify which IP addresses have access, and only the specified addresses are allowed can be used and all others are restricted.
 {:shortdesc}
 
+You cannot access classic infrastructure pages on https://cloud.ibm.com if you have restricted IP addresses. You must go to https://control.softlayer.com.
+{: important}
+
 If you have the following assigned access, you can update the restricted IP addresses for another user:
 
   * An IAM policy with the Editor or higher role on the User management service.
   * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
+  
+You can manage this setting for yourself if you have the User-managed login setting enabled on your User details page.
+{: tip}
 
 To restrict a user to using only specific IP addresses, complete the following steps:
 
@@ -36,6 +43,3 @@ To restrict a user to using only specific IP addresses, complete the following s
 
   To enter a classic infrastructure IP address, the user must already have a classic infrastructure API key created.
   {: note}
-
-  You can manage this setting for yourself if you have the User-managed login setting enabled on your User details page.
-  {: tip}
