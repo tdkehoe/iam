@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-11-30"
+lastupdated: "2018-12-07"
 
 ---
 
@@ -32,7 +32,7 @@ To order external authentication, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
-3. From the **User details** page in the **Manage user's login** section, select **Order external authentication**.
+3. From the **User details** page, select **Order external authentication** in the Manage user's login section.
 4. Select **Symantec identity protection** or **Phone-based identity protection**.
     * For Symantec authentication, the user must download the [Symantec VIP](https://vip.symantec.com/){: new_window} ![External link icon](../icons/launch-glyph.svg) app and obtain a credential ID to continue with the ordering process.
     * For phone-based authentication, you can proceed with the order, but your user must [set up their configuration](/docs/account/login_settings.html#third-party-MFA) before you can enable the option.
@@ -48,7 +48,7 @@ You can disable Symantec or phone-based MFA for a user at any time.
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
-3. From the **User details** page in the **Manage user's login** section, set the **Symantec authentication** or **Phone-based authentication** option to off.
+3. From the **User details** page, set the **Symantec authentication** or **Phone-based authentication** option to off.
 
 ## Cancelling external authentication options
 {: #cancel}
@@ -61,12 +61,10 @@ To cancel an order for external authentication, you must be an account owner or 
 * Cancel services classic infrastructure permission
 * Administrator for the Support Center account management service or the view, edit, and add ticket migrated classic infrastructure permissions that are not available within the [migrated permission access groups](/docs/iam/infrastructureaccess.html#predefined).
 
-
-
 To cancel the external authentication order, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select Users.
 2. Select a user from the list.
-3. From the **User details** page in the **Manage user's login** section, click **Delete** ![Delete icon](../icons/icon_trash.svg) for the **Symantec authentication** or **Phone-based authentication** row depending on which one you ordered.
+3. From the **User details** page, click **Delete** ![Delete icon](../icons/icon_trash.svg) for the **Symantec authentication** or **Phone-based authentication** row depending on which one you ordered.
 4. Select when to remove it.
 5. Click **Remove**.
