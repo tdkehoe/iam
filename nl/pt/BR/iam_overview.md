@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-10-30"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -26,14 +26,14 @@ O conceito de identidade no {{site.data.keyword.Bluemix_notm}} IAM consiste nos 
 <dt>Identidades de serviço e app</dt>
 <dd>Os IDs de serviço são o recurso Cloud IAM que é usado para fornecer uma identidade separada para serviços e aplicativos. É possível criar um ID de serviço para ser usado por um aplicativo que precisa de acesso a seus serviços do {{site.data.keyword.Bluemix_notm}} para que as credenciais do usuário individuais não tenham que ser usadas.</dd>
 <dt>Chaves API (interface de programação de aplicativos)</dt>
-<dd>As chaves API da plataforma estão disponíveis por meio do Cloud IAM para você usar para autenticar usando a API ou CLI como um ID de serviço ou de usuário. Essas chaves API são fornecidas por meio do Cloud IAM e, portanto, não podem ser usadas geralmente para autenticar com o IBMid fora do IBM Cloud. </dd>
+<dd>As chaves de API do {{site.data.keyword.cloud_notm}} estão disponíveis por meio do Cloud IAM para que você use para autenticar usando a API ou a CLI como um ID do usuário ou do serviço. Essas chaves API são fornecidas por meio do Cloud IAM e, portanto, não podem ser usadas geralmente para autenticar com o IBMid fora do IBM Cloud. Um usuário também pode ter uma única chave de API de infraestrutura clássica que pode ser usada para acessar as APIs de infraestrutura clássica; no entanto, isso não é necessário porque é possível usar as chave de API do {{site.data.keyword.cloud_notm}} para acessar as mesmas APIs. </dd>
 <dt>Resources</dt>
 <dd>Os recursos do {{site.data.keyword.Bluemix_notm}} são identificados por seus cloud resource names (CRN). Para obter mais informações, veja [Cloud Resource Names](/docs/overview/crn.html#crn).</dd>
 </dl>
 
 ## Gerenciamento de acesso
 
-O conceito de gerenciamento de acesso no {{site.data.keyword.Bluemix_notm}} consiste em alguns componentes inter-relacionados, incluindo usuários, recursos, políticas, funções, ações e o sistema de controle Cloud IAM, que permitem que os usuários tomem ações em recursos dentro de uma conta.
+O conceito de gerenciamento de acesso no {{site.data.keyword.Bluemix_notm}} consiste em alguns componentes inter-relacionados, incluindo usuários, recursos, políticas, funções, ações e o sistema de controle Cloud IAM, que permitem que os usuários tomem ações em recursos dentro de uma conta. 
 
 É possível revisar a lista a seguir para saber mais sobre esses componentes do Cloud IAM:
 
@@ -53,13 +53,17 @@ configuração customizadas, como a definição de acesso aos recursos em uma re
 nível granular de um recurso específico de serviço em uma instância, podem estar disponíveis.</dd>
 <dt>Funções</dt>
 <dd>As funções de acesso do Cloud IAM permitem que um usuário conclua tarefas específicas no recurso que é definido na política. Há dois tipos de funções de acesso: gerenciamento de plataforma e acesso de serviço. As funções de gerenciamento da plataforma definem as ações permitidas para gerenciar os recursos no nível da plataforma,
-como o acesso do usuário e a criação de instâncias de serviço. As funções da plataforma também se aplicam
-às ações que podem ser tomadas dentro do contexto dos serviços de gerenciamento de conta, como convidar e remover
-usuários, gerenciar grupos de acesso, gerenciar IDs de serviço e as ofertas do catálogo privado. Além disso, as
+como o acesso do usuário e a criação de instâncias de serviço. As funções da plataforma também se aplicam a ações que podem ser tomadas dentro do contexto de serviços de gerenciamento de conta, como convidar e remover usuários, gerenciar grupos de acesso, gerenciar IDs de serviço e ofertas do catálogo privado. Além disso, as
 funções de acesso de serviço definem as ações permitidas dentro do contexto do uso do serviço, como a chamada das APIs
 de serviço. Essas funções são customizadas com base no serviço que é selecionado dentro da política.</dd>
 <dt>Ações</dt>
 <dd>As ações são mapeadas para as funções do Cloud IAM para permitir que os usuários executem somente tarefas específicas quando eles são designados a funções diferentes. As ações permitidas para cada função podem mudar com base no serviço que está sendo acessado porque cada serviço define como essa função é mapeada para o uso do serviço. </dd>
 <dt>Sistema de gerenciamento de acesso</dt>
-<dd>O sistema de controle do Cloud IAM permite ou nega ações por usuários dentro do contexto de um serviço baseado na política designada. Quando um usuário tenta concluir uma ação específica, o sistema de controle usa os atributos que são definidos na política para determinar se o usuário tem permissão para executar essa tarefa.</dd>
+<dd>O sistema de controle do Cloud IAM permite ou nega ações por usuários dentro do contexto de um serviço com base na política designada. Quando um usuário tenta concluir uma ação específica, o sistema de controle usa os atributos que são definidos na política para determinar se o usuário tem permissão para executar essa tarefa.</dd>
 </dl>
+
+
+
+
+
+

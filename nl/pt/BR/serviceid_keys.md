@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -12,6 +12,7 @@ lastupdated: "2018-08-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
 
 # Gerenciando chaves API do ID de serviço
@@ -19,9 +20,9 @@ lastupdated: "2018-08-02"
 
 Os IDs de serviço são criados para permitir acesso aos serviços do {{site.data.keyword.Bluemix_notm}} por aplicativos hospedados dentro e fora do {{site.data.keyword.Bluemix_notm}}. As chaves API são usadas por um aplicativo para autenticar como um ID de serviço específico e receber o acesso associado a esse ID de serviço.
 
-Depois de criar um ID de serviço, será possível começar a criar as chaves API e designar políticas de serviço. Cada política especifica o nível de acesso permitido quando a chave API é usada para autenticação nos serviços. Para obter mais informações sobre como criar um ID de serviço e designar políticas, veja [Criando e gerenciando IDs de serviço](/docs/iam/serviceid.html#serviceids). Para obter detalhes sobre os comandos da CLI usados para gerenciar chaves API do ID de serviço, veja [Comandos para gerenciar chaves API e políticas](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
+Depois de criar um ID de serviço, será possível começar a criar as chaves API e designar políticas de serviço. Cada política especifica o nível de acesso permitido quando a chave API é usada para autenticação nos serviços. Para obter mais informações sobre como criar um ID do serviço e designar políticas, veja [Criando e trabalhando com IDs de serviço](/docs/iam/serviceid.html#serviceids). Para obter detalhes sobre os comandos da CLI que são usados para gerenciar as chaves de API do ID do serviço, veja [Gerenciando o acesso do IAM, chaves de API, IDs de serviço e grupos de acesso](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
 
-Cada chave API que estiver associada a um ID de serviço herdará a política que tiver sido designada ao ID de serviço. Por exemplo, se você quiser que um aplicativo seja capaz de simplesmente visualizar recursos em um serviço, então será necessário usar uma chave API associada a um ID de serviço que tenha uma política designada com a função `Viewer`. E se desejar que outro aplicativo possa ter acesso total em um serviço, então será necessário usar uma chave API associada a um segundo ID de serviço que tenha uma política designada com a função `Administrator`.
+Cada chave API que estiver associada a um ID de serviço herdará a política que tiver sido designada ao ID de serviço. Por exemplo, se você desejar que um aplicativo seja capaz de simplesmente visualizar recursos em um serviço, será necessário usar uma chave de API associada a um ID do serviço que tenha uma política designada com a função de Visualizador. E, se você desejar que outro aplicativo seja capaz de ter acesso total dentro de um serviço, será necessário usar uma chave de API associada a um segundo ID do serviço que tenha uma política designada com a função de Administrador.
 
 Para obter mais informações, consulte
 [Exemplos de como usar um ID de serviço](/docs/iam/serviceid.html#examples-of-how-to-use-a-service-id).
@@ -30,16 +31,17 @@ Para obter mais informações, consulte
 
 Crie uma chave API para associar a um ID de serviço.
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **IDs de serviço**.
 2. Se você não tiver um ID de serviço já criado, crie o ID de serviço.
-3. No menu **Ações**, acesse a opção **Gerenciar ID de serviço**.
-4. Clique em **Criar** na seção de chaves API.
-5. Inclua um nome e uma descrição para identificar facilmente a chave API.
-6. Clique em **Criar**.
-7. Salve sua chave API copiando ou fazendo download dela em um local seguro.
+3. No menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg), clique em **Gerenciar ID do serviço**.
+4. Clique em **Chaves de API**.
+5. Clique em **Criar**.
+6. Inclua um nome e uma descrição para identificar facilmente a chave API.
+7. Clique em **Criar**.
+8. Salve sua chave API copiando ou fazendo download dela em um local seguro.
 
 Por motivos de segurança, a chave API está disponível apenas para ser copiada ou transferida por download no momento da criação. Se a chave API for perdida, uma nova chave API deverá ser criada.
-{: tip}
+{: note}
 
 Para criar uma chave API para um ID de serviço usando a CLI, é possível usar o comando [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create).
 ```
@@ -51,10 +53,10 @@ ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTI
 
 É possível atualizar uma chave API editando o nome ou a descrição usada para identificar a chave na UI.
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
-2. Se você não tiver um ID de serviço já criado, crie o ID de serviço.
-3. No menu **Ações**, acesse a opção **Gerenciar ID de serviço**.
-4. No menu **Ações** na seção de chaves API, acesse a opção **Editar nome e descrição**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **IDs de serviço**.
+2. No menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg), clique em **Gerenciar ID do serviço**.
+3. Clique em **Chaves de API**.
+4. No menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg), clique em **Editar nome e descrição**.
 
 Para atualizar uma chave API para um ID de serviço usando a CLI, é possível usar o comando [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_update).
 ```
@@ -67,10 +69,10 @@ ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d,
 
 Para chaves API que representam a identidade do ID do serviço, é possível evitar que a chave API seja excluída bloqueando-a. Uma chave API bloqueada é indicada pelo ícone ![Ícone Bloqueado](images/locked.svg "Bloqueado") na UI.
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **IDs de serviço**.
+1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **IDs de serviço**.
 2. Identifique a linha do ID do serviço para o qual você deseja selecionar uma chave API e selecione o nome do ID do serviço.
-3. Selecione **chaves API**.
-4. Passe o mouse sobre a linha da chave API que você deseja bloquear e clique no menu **Ações** para abrir uma lista de opções.
+3. Clique em **Chaves de API**.
+4. Passe o mouse sobre a linha da chave de API que você deseja bloquear e clique no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) para abrir uma lista de opções.
 5. Clique em **Bloquear API key**.
 
 É possível desbloquear sua chave API a qualquer momento para atualizar, excluir ou incluir uma política de acesso ou para remover a chave API.
@@ -119,10 +121,11 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 
 É possível excluir uma chave API associada a um ID de serviço. No entanto, a exclusão de uma chave API atualmente em uso por um aplicativo removerá a capacidade de autenticação desse aplicativo nos serviços.
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** &gt; **IDs de serviço**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **IDs de serviço**.
 2. Se você não tiver um ID de serviço já criado, crie o ID de serviço.
-3. No menu **Ações**, acesse a opção **Gerenciar ID de serviço**.
-4. No menu **Ações** na seção de chaves API, acesse a opção **Excluir chave**.
+3. No menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg), clique em **Gerenciar ID do serviço**.
+4. Clique em **Chaves de API**.
+5. No menu **Ações** ![Icone Lista de ações](../icons/action-menu-icon.svg), clique em **Excluir**.
 
 Para excluir uma chave API para um ID de serviço usando a CLI, é possível usar o comando [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_delete).
 ```

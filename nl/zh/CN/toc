@@ -17,25 +17,43 @@
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-        
+    
     bp_access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
-    mfa.md
-    iamuserinv.md
 
     {: .topicgroup}
-    管理用户和访问权
-        iamusermanage.md
-        groups.md
-        accessgroup_rules.md
+    向帐户添加用户
+        iamuserinv.md
+        remove-users.md
+        
+    {: .topicgroup}
+    管理用户        
+        parentuser.md
+        update_status.md
+        specific_ip.md
+        vpn_password.md
+        user_login.md
+     
+    {: .topicgroup}
+    管理访问权
         mngiam.md
         mngcf.md
-        mnginfra.md
-
+        mnginfra.md        
+        groups.md
+        accessgroup_rules.md
+        userlist.md
+        
+    {: .topicgroup}
+    多因子认证    
+        mfatypes.md
+        mfa.md
+        totp.md
+        external_mfa.md
+        securityquestions.md        
 
     {: .topicgroup}
     使用服务
@@ -44,18 +62,21 @@
         authorizations.md
 
     {: .topicgroup}
-    API 密钥
+    API 密钥和令牌
         apikeys.md
         userid_keys.md
         serviceid_keys.md
+        classic_infra_keys.md
         apikey_iamtoken.md
+        iam_apikeys_services.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     iam_limits.md
     monitoring.md
+    userstatus.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="help"}
     faqs.md
     {: .navgroup-end}

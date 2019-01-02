@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-10-30"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -26,14 +26,14 @@ lastupdated: "2018-10-30"
 <dt>服務及應用程式身分</dt>
 <dd>服務 ID 是 Cloud IAM 特性，用來為服務及應用程式提供個別身分。您可以建立可供需要存取 {{site.data.keyword.Bluemix_notm}} 服務之應用程式使用的服務 ID，因此不需要使用個別使用者認證。</dd>
 <dt>API 金鑰</dt>
-<dd>平台 API 金鑰是透過 Cloud IAM 提供，可讓您使用 API 或 CLI 作為使用者或服務 ID 來進行鑑別。這些 API 金鑰是透過 Cloud IAM 所提供，因此，通常無法在 IBM Cloud 外部使用 IBM ID 進行鑑別。</dd>
+<dd>{{site.data.keyword.cloud_notm}} API 金鑰是透過 Cloud IAM 提供，可讓您使用 API 或 CLI 作為使用者或服務 ID 來進行鑑別。這些 API 金鑰是透過 Cloud IAM 所提供，因此，通常無法在 IBM Cloud 外部使用 IBM ID 進行鑑別。使用者也可以有可用來存取標準基礎架構 API 的單一標準基礎架構 API 金鑰；不過，您可以使用 {{site.data.keyword.cloud_notm}} API 金鑰來存取相同的 API 時，不需要這樣做。</dd>
 <dt>資源</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} 資源是依其雲端資源名稱 (CRN) 進行識別。如需相關資訊，請參閱[雲端資源名稱](/docs/overview/crn.html#crn)。</dd>
 </dl>
 
 ## 存取管理
 
-{{site.data.keyword.Bluemix_notm}} 中存取管理的概念包含一些相互關聯的元件，其中包括使用者、資源、原則、角色、動作及 Cloud IAM 控制系統，容許使用者對帳戶內的資源採取動作。
+{{site.data.keyword.Bluemix_notm}} 中存取管理的概念包含一些相互關聯的元件，其中包括使用者、資源、原則、角色、動作及 Cloud IAM 控制系統，容許使用者對帳戶內的資源採取動作。 
 
 您可以檢閱下列清單，以進一步瞭解這些 Cloud IAM 元件：
 
@@ -51,5 +51,11 @@ lastupdated: "2018-10-30"
 <dt>動作</dt>
 <dd>動作會對映至 Cloud IAM 角色，讓使用者在獲指派不同角色時只執行特定作業。每一個角色的可容許動作會根據所存取的服務而變更，因為每一個服務都會定義該角色如何對映至服務使用。</dd>
 <dt>存取管理系統</dt>
-<dd>根據指派的原則，Cloud IAM 控制系統會允許或拒絕使用者在服務環境定義內的動作。使用者嘗試完成特定動作時，控制系統會使用原則中所定義的屬性，來判定使用者是否有權執行該作業。</dd>
+<dd>根據指派的原則，Cloud IAM 控制系統會容許或拒絕使用者在服務環境定義內的動作。使用者嘗試完成特定動作時，控制系統會使用原則中所定義的屬性，來判定使用者是否有權執行該作業。</dd>
 </dl>
+
+
+
+
+
+

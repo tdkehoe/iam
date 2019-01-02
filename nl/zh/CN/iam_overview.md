@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-10-30"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -26,14 +26,14 @@ lastupdated: "2018-10-30"
 <dt>服务和应用程序身份</dt>
 <dd>服务标识是用于为服务和应用程序提供单独身份的 Cloud IAM 功能。可以创建服务标识以供需要访问 {{site.data.keyword.Bluemix_notm}} 服务的应用程序使用，这样就不必使用个别用户的凭证。</dd>
 <dt>API 密钥</dt>
-<dd>通过 Cloud IAM 提供了平台 API 密钥，以供您用于通过将 API 或 CLI 用作用户或服务标识进行认证。这些 API 密钥是通过 Cloud IAM 提供的，因此通常无法用于在 IBM Cloud 之外使用 IBM 标识进行认证。</dd>
+<dd>通过 Cloud IAM 提供了 {{site.data.keyword.cloud_notm}} API 密钥，以供您用于通过将 API 或 CLI 用作用户或服务标识进行认证。这些 API 密钥是通过 Cloud IAM 提供的，因此通常无法用于在 IBM Cloud 之外使用 IBM 标识进行认证。用户还可以具有单个经典基础架构 API 密钥，可用于访问经典基础架构 API；但是，这不是必需的，因为您可以使用 {{site.data.keyword.cloud_notm}} API 密钥来访问相同的 API。</dd>
 <dt>资源</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} 资源通过其云资源名称 (CRN) 进行识别。有关更多信息，请参阅[云资源名称](/docs/overview/crn.html#crn)。</dd>
 </dl>
 
 ## 访问权管理
 
-{{site.data.keyword.Bluemix_notm}} 中的访问权管理概念由一些相互关联的部分组成，包括用户、资源、策略、角色、操作和 Cloud IAM 控制系统，这些组成部分允许用户对帐户中的资源执行操作。
+{{site.data.keyword.Bluemix_notm}} 中的访问权管理概念由一些相互关联的部分组成，包括用户、资源、策略、角色、操作和 Cloud IAM 控制系统，这些组成部分允许用户对帐户中的资源执行操作。 
 
 可以查看以下列表以了解有关这些 Cloud IAM 组成部分的更多信息：
 
@@ -53,3 +53,9 @@ lastupdated: "2018-10-30"
 <dt>访问管理系统</dt>
 <dd>Cloud IAM 控制系统根据分配的策略，允许或拒绝用户在服务上下文中执行操作。用户尝试完成特定操作时，控制系统会使用策略中定义的属性来确定用户是否有权执行该任务。</dd>
 </dl>
+
+
+
+
+
+

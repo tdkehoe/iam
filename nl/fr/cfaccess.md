@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -12,11 +12,14 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Accès Cloud Foundry
 {: #cfaccess}
 
 Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud IAM. Vous pouvez continuer à utiliser des rôles Cloud Foundry permettant d'accéder à ces instances de service. Les utilisateurs sont ajoutés à l'organisation et à l'espace auxquels l'instance appartient avec un rôle Cloud Foundry affecté. 
+{:shortdesc}
 
 
 ![Accès à l'aide d'organisations et d'espaces Cloud Foundry dans un compte](images/cf-diagram.svg "Fonctionnement des accès dans un compte à l'aide d'organisations, d'espaces et de rôles Cloud Foundry")
@@ -45,6 +48,5 @@ Les rôles suivants peuvent être affectés au niveau de l'espace :
 |Auditeur | Un auditeur de l'espace dispose de l'accès en lecture à toutes les informations sur l'espace, telles que le nombre d'instances, les liaisons de service et l'utilisation des ressources pour chaque application dans l'espace. |
 {:caption="Tableau 2. Rôles d'espace et droits" caption-side="top"}
 
-**Remarque** : les utilisateurs qui possèdent le rôle de responsable ou de développeur de l'espace peuvent accéder à la
-variable
-d'environnement VCAP_SERVICES. Toutefois, un utilisateur possédant le rôle d'auditeur ne peut pas y accéder.
+Les utilisateurs auxquels le rôle de responsable ou de développeur est affecté peuvent accéder à la variable d'environnement VCAP_SERVICES. Toutefois, un utilisateur possédant le rôle d'auditeur ne peut pas y accéder.
+{: note}

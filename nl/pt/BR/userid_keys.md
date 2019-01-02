@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-06-06"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -15,9 +15,10 @@ lastupdated: "2018-06-06"
 # Gerenciando chaves API do usuário
 {: #userapikey}
 
-Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. É possível usar a UI ou CLI para gerenciar suas chaves API, listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar as chaves API do {{site.data.keyword.Bluemix_notm}} que estão associadas à sua identidade de usuário, acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma** para ver uma lista de suas chaves API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API. E, para obter uma lista completa de comandos da CLI disponíveis, veja [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_keys).
+Um usuário federado ou não federado pode criar uma chave API a ser usada na CLI ou como parte da automação para efetuar login como sua identidade do usuário. É possível usar a UI ou CLI para gerenciar suas chaves API, listando suas chaves, criando chaves, atualizando chaves ou excluindo chaves. Para gerenciar as chaves de API do {{site.data.keyword.Bluemix_notm}} que estão associadas à sua identidade do usuário, acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. Em seguida, clique em seu nome na lista e selecione a opção **Detalhes do usuário** para ver uma lista de suas chaves de API com descrições e datas. Em seguida, é possível criar, editar ou excluir chaves API. E, para obter uma lista completa de comandos da CLI disponíveis, veja [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_keys).
 
-Como um [usuário federado](/docs/account/adminpublic.html#federatedid), é possível usar uma chave API para efetuar login usando a variável de ambiente `BLUEMIX_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja [Efetuando login com um ID federado](/docs/cli/login_federated_id.html#federated_id).
+Como um [usuário federado](/docs/account/adminpublic.html#federatedid), é possível usar uma chave de API para efetuar login usando a variável de ambiente `IBMCLOUD_API_KEY`. Para obter mais informações sobre como usar uma chave API para efetuar login, veja [Efetuando login com um ID federado](/docs/cli/login_federated_id.html#federated_id).
+{:shortdesc}
 
 ## Criando uma chave API
 
@@ -25,13 +26,14 @@ Como um usuário do {{site.data.keyword.Bluemix_notm}}, você pode desejar usar 
 
 Para criar uma chave API para sua identidade do usuário na UI, conclua as etapas a seguir:
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma**.
-2. Clique em **Criar chave API**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. Em seguida, clique em seu nome na lista e selecione a opção **Detalhes do usuário**.
+2. Clique em **Criar uma chave de API do {{site.data.keyword.Bluemix_notm}}**.
 3. Insira um nome e uma descrição para sua chave API.
-4. Clique em **Criar chave API**.
-5. Em seguida, clique em **Mostrar** para exibir a chave API para copiá-la e salvá-la para mais tarde ou clique em **Fazer download da chave API**.
+4. Clique em **Criar**.
+5. Em seguida, clique em **Mostrar** para exibir a chave de API para copiá-la e salvá-la para mais tarde ou clique em **Fazer download**.
 
-**Nota**: por razões de segurança, a chave API está disponível para ser copiada ou transferida por download somente no momento da criação. Se a chave API for perdida, uma nova chave API deverá ser criada.
+Por motivos de segurança, a chave API está disponível apenas para ser copiada ou transferida por download no momento da criação. Se a chave API for perdida, uma nova chave API deverá ser criada.
+{: tip}
 
 Para criar uma chave API usando a CLI, use o comando a seguir:
 
@@ -39,7 +41,7 @@ Para criar uma chave API usando a CLI, use o comando a seguir:
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## Atualizando uma chave API
@@ -48,10 +50,10 @@ Se desejar mudar o nome ou a descrição de uma chave API, conclua as etapas a s
 
 Para editar uma chave API, conclua as etapas a seguir:
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma**.
-2. No menu **Ações** de uma chave API listada na tabela, clique em **Editar o nome e a descrição** 
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. Em seguida, clique em seu nome na lista e selecione a opção **Detalhes do usuário**.
+2. Identifique a linha da chave de API que você deseja atualizar e selecione **Editar** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg).
 3. Atualize as informações de sua chave API.
-4. Clique em **Atualizar chave API**.
+4. Clique em **Aplicar**.
 
 Para editar uma chave API usando a CLI, insira o comando a seguir:
 
@@ -67,15 +69,15 @@ Para chaves API da plataforma que representam sua identidade do usuário, é pos
 
 ### Bloqueando e desbloqueando uma chave API da UI
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Chaves API da plataforma**.
-2. Identifique a linha da chave API que você deseja bloquear e selecione **Bloquear chave API** no menu **Ações**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. Em seguida, clique em seu nome na lista e selecione a opção **Detalhes do usuário**.
+2. Identifique a linha da chave de API que você deseja bloquear e selecione **Bloquear** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg).
 
-É possível desbloquear sua chave API a qualquer momento para atualizar, excluir ou incluir uma política de acesso ou remover a chave API de sua conta. Selecione a chave API da tabela que você deseja desbloquear e selecione **Desbloquear chave API** no **Menu Ações**.
+É possível desbloquear sua chave de API a qualquer momento para atualizar ou remover a chave de API de sua conta. Selecione a chave de API na tabela que você deseja desbloquear e selecione **Desbloquear** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg).
 {: tip}
 
 ### Bloqueando e desbloqueando uma chave API usando a CLI
 
-Para bloquear uma chave API da plataforma, use o comando a seguir:
+Para bloquear uma chave de API, use o comando a seguir:
 
 ```
 Ibmcloud iam api-key-bloqueio (NAME | UUID) [ -f, -- force ]
@@ -101,7 +103,7 @@ Bloquear chave API `test-api-key`
 Ibmcloud iam api-key-bloqueio de teste api-key
 ```
 
-Para desbloquear uma chave API da plataforma, execute o comando a seguir:
+Para desbloquear uma chave de API, execute o comando a seguir:
 
 ```
 Ibmcloud iam api-key-desbloquear (NAME | UUID) [ -f, -- force ]
@@ -132,11 +134,11 @@ Ibmcloud iam api-key-unlock-api-chave de teste
 
 Se você está usando uma estratégia de rotação de chave, talvez queira excluir uma chave mais antiga e substituí-la por uma nova.
 
-Para excluir uma chave API, conclua as etapas a seguir: 
+Para excluir uma chave API, conclua as etapas a seguir:
 
-1. Acesse **Gerenciar** &gt; **Segurança** &gt; **Chaves API da plataforma**.
-2. No menu **Ações** de uma chave API listada na tabela, clique em **Excluir**.
-3. Em seguida, confirme a exclusão clicando em **Excluir chave**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. Em seguida, clique em seu nome na lista e selecione a opção **Detalhes do usuário**.
+2. Identifique a linha da chave de API que você deseja excluir e selecione **Excluir** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg).
+3. Em seguida, confirme a exclusão clicando em **Excluir**.
 
 Para excluir uma chave API usando a CLI:
 1. Insira `ibmcloud iam api-key-delete NAME` no prompt de comandos, especificando o nome da chave a ser excluída.

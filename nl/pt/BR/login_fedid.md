@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-30"
 
 ---
 
@@ -62,7 +62,7 @@ Como uma senha única recupera código do console do {{site.data.keyword.Bluemix
 ## Usando uma chave API
 {:api_key}
 
-A chave API necessária é a chave API do {{site.data.keyword.Bluemix_notm}} usada para se autenticar na plataforma do {{site.data.keyword.Bluemix_notm}}, não a chave API do Softlayer ou a chave API do serviço {{site.data.keyword.Bluemix_notm}}.
+A chave de API necessária é a chave de API do {{site.data.keyword.Bluemix_notm}} que é usada para autenticar com a plataforma {{site.data.keyword.Bluemix_notm}}, não a chave de API de infraestrutura clássica ou a chave de API de serviço do {{site.data.keyword.Bluemix_notm}}.
 
 1. Crie uma chave API com o comando [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Use a opção `-f` para gerar um arquivo de chave API, em vez de mostrar a chave na janela de comando:
 
@@ -89,7 +89,7 @@ A chave API necessária é a chave API do {{site.data.keyword.Bluemix_notm}} usa
     
       ```
     
-    * Configurar uma variável de ambiente. Além disso, também é possível configurar uma variável de ambiente em seu sistema. Por exemplo, BLUEMIX_API_KEY=api_key_string, em que `api_key_string` é o valor customizado da chave API. Após a configuração da variável de ambiente, basta especificar `ibmcloud login` por meio da CLI. 
+    * Configurar uma variável de ambiente. Além disso, também é possível configurar uma variável de ambiente em seu sistema. Por exemplo, IBMCLOUD_API_KEY=api_key_string, em que `api_key_string` é o valor customizado da chave de API. Após a configuração da variável de ambiente, basta especificar `ibmcloud login` por meio da CLI. 
   
   Para efetuar login usando a CLI do Cloud Foundry, especifique `apikey` como o nome do usuário e a keystring API como a senha:
 

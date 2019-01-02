@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -13,22 +13,24 @@ lastupdated: "2018-08-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
 # Création de règles dynamiques pour les groupes d'accès
 {: #rules}
 
 Vous pouvez créer des règles dynamiques pour ajouter dynamiquement des utilisateurs fédérés à des groupes d'accès en fonction d'attributs d'identité spécifiques. Lorsque vos utilisateurs se connectent avec un ID fédéré, les données du fournisseur d'identité mappent dynamiquement vos utilisateurs à un groupe d'accès en fonction des règles définies.
+{:shortdesc}
 
 Les utilisateurs disposent déjà d'informations d'identité spécifiques liées au domaine de votre entreprise. Lorsqu'ils se connectent avec un ID fédéré, ces données peuvent être transmises en utilisant des assertions SAML. Ces dernières ou les instructions d'attribut configurées dans le fournisseur d'identité mettent à disposition les données utilisées pour la création des règles. Par exemple, il peut exister une instruction d'attribut true ou false qui définit les utilisateurs comme étant responsables. Ces informations peuvent être utilisées pour ajouter les responsables créés dans votre compte {{site.data.keyword.Bluemix_notm}} à un groupe d'accès spécifique. Pour plus d'informations, voir l'[exemple de règle](accessgroup_rules.html#example).
 
 Seuls les utilisateurs déjà invités au compte peuvent être mappés aux groupes d'accès en utilisant des règles dynamiques.
-{: tip}
+{: note}
 
 ## Configuration de règles
 
 Les règles dynamiques sont créées en définissant des conditions devant être respectées par les données configurées dans le fournisseur d'identité et transmises avec un ID fédéré d'utilisateur lors de la connexion. Pour créer une règle, procédez comme suit :
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and access**, puis sélectionnez **Groupes d'accès**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Groupes d'accès**.
 2. Sélectionnez le nom du groupe d'accès pour lequel vous souhaitez créer une règle afin d'ouvrir la page de détails du groupe.
 3. Sélectionnez l'onglet **Règles dynamiques**.
 4. Cliquez sur **Ajouter une règle**.

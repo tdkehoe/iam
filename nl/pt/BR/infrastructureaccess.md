@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -13,36 +13,41 @@ lastupdated: "2018-05-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Permissões de infraestrutura
+# Permissões de infraestrutura clássica
 {: #infrapermission}
 
-É possível configurar os conjuntos iniciais de permissões a seguir quando você convida um usuário:
+Quando você convida um usuário para sua conta, é possível selecionar entre três conjuntos de permissões de infraestrutura clássica que designam acesso em massa: Somente visualização, Usuário básico, Superusuário.
+{:shortdesc}
 
-| Permissão configurada | Descrição das ações |
-|---------------------------|------------------------|
-|Visualização Apenas | Os usuários com essa permissão podem visualizar somente os itens dentro do sistema. Por
-exemplo, os usuários podem visualizar chamados, detalhes de hardware e do servidor virtual, licenças,
-detalhes de largura da banda e o resumo da conta, que inclui faturas e pagamentos. |
-|Usuário Básico | Os usuários com essa permissão podem visualizar, procurar, incluir e editar chamados, gerenciar dispositivos para os quais eles recebem acesso, incluir endereços IP, gerenciar serviços de entrega de e-mail, incluir, editar e visualizar registros de DNS, incluir novos usuários com acesso à infraestrutura e gerenciar notificações. |
-|Super usuário | Os usuários com essa permissão podem concluir todas as ações disponíveis no sistema. |
-{:caption="Tabela 1. Permissões de infraestrutura" caption-side="top"}
+É possível configurar permissões extras após o usuário aceitar o convite. Por exemplo, o conjunto de permissões inicial designado no convite não concede acesso a dispositivos. Portanto, deve-se conceder acesso ao dispositivo após o usuário aceitar o convite. Para obter mais informações, veja [Gerenciando o acesso de infraestrutura clássica](/docs/iam/mnginfra.html#mngclassicinfra).
 
-Permissões adicionais podem ser configuradas depois que o usuário aceita o convite. A permissão inicial
-configurada designada no convite não concede acesso aos dispositivos. Portanto, deve-se conceder acesso ao
-dispositivo no portal de controle depois que o usuário aceita o convite. 
-
-Ao convidar alguém para a conta, somente você e o usuário principal da conta da SoftLayer podem
-ajustar as permissões para o usuário. Se você estiver designando as permissões e não for o usuário
-principal, será possível designar apenas o nível de permissões ou um subconjunto das permissões às quais você já
-estiver designado. No entanto, um usuário principal pode atualizar as permissões de qualquer um na conta para
-que tenha qualquer nível de acesso. 
-
-Acesse o ícone Menu ![ícone Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura** para acessar o portal de controle para trabalhar com permissões de usuário para infraestrutura. Acessar **Conta** &gt; **Usuários** exibe sua lista de usuários na qual é possível configurar o acesso ao dispositivo e outras permissões de infraestrutura. Para obter mais informações sobre como designar o acesso, acesse
-[Gerenciando o acesso de
-infraestrutura](/docs/iam/mnginfra.html#managing-infrastructure-access).
+Quando você convida alguém para a conta, somente você, o proprietário da conta ou um usuário com a permissão Gerenciar a infraestrutura clássica de usuários pode ajustar as permissões para o usuário. Se você estiver designando as permissões e não for o proprietário da conta, será possível designar somente o nível de permissões ou um subconjunto das permissões às quais já está designado. Um proprietário da conta pode atualizar as permissões de qualquer pessoa na conta para ter qualquer nível de acesso.
 
 
+## Permissões de infraestrutura clássica migradas
+{: #predefined}
 
+Um conjunto de permissões de infraestrutura clássica para visualizar e gerenciar informações de faturamento e trabalhar com casos de suporte é agora migrado para grupos de acesso. Os usuários em sua conta que foram designados anteriormente a essas permissões agora são designados ao respectivo grupo de acesso de permissão migrado. Como resultado, as permissões de infraestrutura clássica podem ser gerenciadas diretamente usando as políticas de acesso do IAM.
 
+Esses grupos de acesso especiais incluem todas as políticas apropriadas do IAM para preservar o comportamento original das permissões de infraestrutura clássica. Por exemplo, para que um usuário continue a ver todas as atualizações de todos os usuários em um caso de suporte, os grupos de acesso de permissão migrados para as permissões de infraestrutura clássica de chamados incluem uma política extra do IAM no serviço de gerenciamento de usuários com a função de Visualizador designada. Para obter mais informações, veja [Acesso de usuário para trabalhar com casos de suporte](/docs/get-support/support_access.html#access).
 
+É possível continuar a gerenciar essas permissões de infraestrutura clássica migradas para usuários diretamente por meio do IAM, incluindo e removendo-as dos grupos de acesso de permissão migrados. As políticas que esses grupos de acesso têm são bloqueadas para preservar o comportamento de acesso para seus membros. Para manter a facilidade de uso para os mais novos usuários do IAM, evite excluir esses grupos de acesso.
 
+A tabela a seguir descreve todas as permissões de infraestrutura clássica migradas que agora estão disponíveis usando os grupos de acesso.
+
+| Nome do grupo de acesso de permissão migrado | Ações permitidas |
+|----------|---------|
+| Visualizar resumo da conta | Visualizar a página de resumo da conta e as faturas e os pagamentos |
+| Obter relatório de conformidade | Solicitar relatórios de conformidade |
+| Editar perfil da empresa | Editar as informações do perfil da empresa |
+| Pagamentos únicos | Fazer pagamentos únicos na conta do usuário |
+| Atualizar detalhes do pagamento | Atualizar as informações de pagamento mensal recorrentes |
+| Limitar restrição de caso da UE | Ativar ou desativar a opção Suportado pela UE que restringe os dados do caso de suporte para a União Europeia  |
+| Incluir casos e visualizar ordens | Criar casos de suporte e ver todas as ordens.  |
+| Editar casos | Editar qualquer caso de suporte |
+| Procurar casos | Procurar todos os casos de suporte desde que a permissão de visualização de casos também seja designada |
+| Visualizar casos | Visualizar todos os casos de suporte |
+{: caption="Tabela 1. Grupos de acesso predefinidos" caption-side="top"}
+
+É possível continuar gerenciando usuários para os grupos de acesso. No entanto, você pode achar útil criar novos grupos de acesso que incluam uma combinação de políticas de acesso para os [serviços de gerenciamento de conta do IAM](/docs/iam/users_roles.html#platformrolestable2) para tornar mais fácil designar acesso para tarefas de gerenciamento de conta e trabalhar com casos de suporte.
+{: tip}

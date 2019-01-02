@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -19,15 +19,15 @@ lastupdated: "2018-05-22"
 # 将专用标识连接到公共 IBM 标识
 {: #connect_dedicated_id}
 
-要登录到提供公共 IAM 服务的专用云，您必须使用公共 IBM 标识（而不是专用标识）登录到 {{site.data.keyword.Bluemix_notm}} CLI。
-
+要登录到提供公共 IAM 服务的专用云，{{site.data.keyword.Bluemix_notm}} CLI 会要求您使用公共 IBM 标识（而不是专用标识）登录。
+{:shortdesc}
 
 ```
   $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
   API endpoint: https://api.{dedicated_env}.bluemix.net
 
   Public IAM token service is available in the dedicated environment.
-  Log in with your public IBMid, or use '--no-iam' to log in as a dedicated user only.
+  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
 
   Email>
 ```
@@ -41,14 +41,14 @@ Authenticating...
   Connected to dedicated user my_dedicated_id
 ```
 
-但是，如果您的专用标识尚未连接到公共 IBM 标识，那么系统将提示您手动连接到公共 IBM 标识：
+但是，如果您的专用标识尚未连接到公共 IBM 标识，那么将提示您手动连接到公共 IBM 标识：
 
 ```
-  You are logging in with an IBMid that is not associated with any dedicated user.
+  You are logging with an IBMid that does not associated with any dedicated user.
   To set up the connection, input the credentials of the dedicated user.
 
   Choose a credential type:
-  1. User name and password
+  1. Username and password
   2. One Time Code (Get one at https://login.{dedicated_env}.bluemix.net.com/passcode)
   Enter a number>
 ```

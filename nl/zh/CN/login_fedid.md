@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-30"
 
 ---
 
@@ -63,7 +63,7 @@ lastupdated: "2018-08-02"
 ## 使用 API 密钥
 {:api_key}
 
-所需的 API 密钥是用于向 {{site.data.keyword.Bluemix_notm}} 平台认证的 {{site.data.keyword.Bluemix_notm}} API 密钥，而不是 Softlayer API 密钥或 {{site.data.keyword.Bluemix_notm}} 服务 API 密钥。
+所需的 API 密钥是用于向 {{site.data.keyword.Bluemix_notm}} 平台认证的 {{site.data.keyword.Bluemix_notm}} API 密钥，而不是经典基础架构 API 密钥或 {{site.data.keyword.Bluemix_notm}} 服务 API 密钥。
 
 1. 使用 [`ibmcloud iam api-key-create` 命令](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create)创建 API 密钥。使用 `-f` 选项来生成 API 密钥文件，而不在命令窗口中显示密钥：
 
@@ -90,7 +90,7 @@ ibmcloud login --apikey @key_file_name
     
       ```
     
-    * 设置环境变量。此外，还可以在系统上设置环境变量。例如，BLUEMIX_API_KEY=api_key_string，其中 `api_key_string` 是 API 密钥的定制值。设置环境变量后，可以直接通过 CLI 指定 `ibmcloud login`。 
+    * 设置环境变量。此外，还可以在系统上设置环境变量。例如，IBMCLOUD_API_KEY=api_key_string，其中 `api_key_string` 是 API 密钥的定制值。设置环境变量后，可以直接通过 CLI 指定 `ibmcloud login`。 
   
   要使用 Cloud Foundry CLI 登录，请指定 `apikey` 作为用户名，并指定 API 密钥字符串作为密码：
 

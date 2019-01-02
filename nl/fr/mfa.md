@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-05-22"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -12,65 +12,69 @@ lastupdated: "2018-05-22"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
-# Activation de l'authentification multifacteur
+# Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte
 {: #enablemfa}
 
-L'authentification multi-facteur ajoute une couche supplémentaire de sécurité à votre compte en exigeant de tous les utilisateurs de fournir un code d'accès à usage unique et durée définie, en plus de leur IBMid et mot de passe associé standard, lors de la connexion. Ce type d'authentification est également communément appelé authentification à deux facteurs (2FA). L'activation de cette fonction pour votre compte nécessite que vous, ainsi que tous les utilisateurs qui sont ajoutés à votre compte, utilisiez la norme de sécurité supplémentaire lors de la connexion.
+En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez choisir que l'authentification multi-facteur (MFA) soit exigée pour chaque utilisateur de votre compte. Tous les utilisateurs ayant un IBMid utilisent une méthode d'authentification multi-facteur avec un code d'accès à usage unique à durée limitée (TOTP). Tout utilisateur ayant un autre type d'ID doit pouvoir utiliser séparément la méthode d'authentification externe, la méthode utilisant des questions de sécurité ou la méthode TOTP.  
+{:shortdesc}
 
-## Remarques
+## Avant de commencer
+{: #considerations}
 
-Avant d'activer l'authentification multi-facteur pour votre compte, lisez les remarques suivantes :
+Consultez les remarques suivantes avant d'activer l'authentification multi-facteur avec IBMid pour votre compte afin de savoir comment elle affecte tous les utilisateurs de votre compte :
 
-* Lorsque vous activez l'authentification multi-facteur (MFA) pour votre compte, tous les utilisateurs qui sont ajoutés à votre compte doivent se soumettre au processus d'authentification à deux facteurs (2FA) lorsqu'ils se connectent.
+* Lorsque vous activez l'authentification multi-facteur (MFA) pour votre compte, tous les utilisateurs ajoutés à votre compte doivent se soumettre au processus d'authentification multi-facteur (MFA) lors de leur prochaine connexion.
 * Les clés d'API pour vos utilisateurs et les ID de service continuent de fonctionner après l'activation de l'authentification multi-facteur.
 * Si la connexion par interface de ligne de commande CF ou interface utilisateur dans Cloud Foundry est nécessaire, vous devez utiliser des clés d'API ou un code d'accès unique une fois que l'authentification multi-facteur est activée pour le compte.
-* L'authentification multi-facteur (MFA) n'est pas prise en charge pour les utilisateurs qui se connectent avec une identité fédérée.
+* L'authentification multi-facteur pour votre compte s'applique à la connexion d'un utilisateur mais ne s'applique pas aux appels d'API. Si un utilisateur dispose des droits lui permettant d'effectuer des appels d'API vers des ressources de votre compte, il peut effectuer cette même action sans procéder à l'authentification multi-facteur. Si l'utilisateur appartient à d'autres comptes, il peut effectuer des appels d'API vers des ressources de votre compte en utilisant une clé d'API d'un compte pour lequel l'authentification multi-facteur n'est pas requise.
+* Si vous êtes un utilisateur fédéré, l'authentification multi-facteur n'est pas prise en charge.
+* Si vous exigez que votre compte utilise l'authentification multi-facteur et que certains utilisateurs de votre compte n'ont pas d'IBMid, vous devez activer une des autres options d'authentification multi-facteur pour cet utilisateur sur la page Détails de l'utilisateur de la console {{site.data.keyword.Bluemix_notm}}. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam/mfatypes.html#types).
 * Planifiez une stratégie de communication et de support pour les utilisateurs ajoutés à votre compte :
   * Choisissez une date et une heure d'activation de l'authentification multi-facteur dont l'impact sur votre activité doit être minimal.
   * Une fois l'authentification multi-facteur activée, informez les utilisateurs de votre compte en leur envoyant des informations leur expliquant comment la [configurer](mfa.html#setupapp).
-  
-Si vous disposez d'un compte lié et que vous avez déjà configuré l'[authentification à deux facteurs dans le portail de contrôle](/docs/customer-portal/cpenable2fa.html#customerportal_2fa), lisez ce qui suit :
 
-* L'authentification multi-facteur pour votre compte {{site.data.keyword.Bluemix_notm}} s'étend aux services de plateforme et d'infrastructure pour votre compte lié. Etant donné que la configuration du compte pour l'authentification multi-facteur écrase l'authentification à deux facteurs définie dans le portail de contrôle, vous pouvez choisir de désactiver l'authentification à deux facteurs que vous avez acquise et de configurer uniquement les ressources d'infrastructure avec l'option d'authentification multi-facteur.
-* Si vous êtes un utilisateur fédéré, l'authentification multi-facteur n'est pas prise en charge. Par conséquent, vous souhaiterez peut-être conserver la configuration de l'authentification à deux facteurs uniquement pour les ressources d'infrastructure afin de garantir la sécurité de vos ressources.
+Lorsque le paramètre de compte d'authentification multi-facteur est activé, tous les utilisateurs IBMid de votre compte sont invités à choisir l'authentification multi-facteur IBMid lors de la connexion. Si vous avez d'autres méthodes d'authentification multi-facteur configurées pour des utilisateurs IBMid de votre compte, ces derniers ne sont plus invités à appliquer ces méthodes d'authentification multi-facteur.
+{: tip}
 
-## Activation de l'authentification multifacteur
+## Activation de l'authentification multi-facteur pour tous les utilisateurs de votre compte
+{: #enabling}
 
-Pour activer l'authentification multi-facteur (MFA), vous devez être l'administrateur du compte. Cette activation n'a pas d'incidence sur les utilisateurs déjà connectés, vu que l'application de l'authentification multi-facteur sur le compte ne prend effet que lors des nouvelles connexions. Un administrateur qui active l'authentification multi-facteur (MFA) pour le compte doit avertir les utilisateurs du compte que cette authentification est activée et décrire les conséquences aux utilisateurs à leur prochaine connexion. 
+Pour activer l'authentification multi-facteur (MFA), vous devez être propriétaire du compte. Cette activation n'a pas d'incidence sur les utilisateurs déjà connectés, vu que l'application de l'authentification multi-facteur sur le compte ne prend effet que lors des nouvelles connexions. Pensez à notifier vos utilisateurs de compte que l'authentification multi-facteur est activée et indiquez-leur les conséquences de cette authentification lors de la prochaine connexion.
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Paramètres**.
-2. Sélectionnez **Authentification multi-facteur** &gt;, puis cliquez sur **Appliquer les changements**.
-3. Dans les fenêtres de confirmation, cliquez sur **Oui, je suis sûr**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
+2. Sélectionnez **Authentification multi-facteur**.
+3. Dans la fenêtre de confirmation, cliquez sur **Oui, je suis sûr**.
 
-## Configuration du  code d'accès à utilisation unique
+## Configuration de votre authentification TOTP
 {: #setupapp}
 
-Une fois l'authentification multi-facteur (MFA) activée sur votre compte, vous devez configurer le code d'accès à utilisation unique avec une application d'authentification à votre prochaine connexion. Tous les utilisateurs de votre compte doivent également utiliser le code d'accès à utilisation unique à leur prochaine connexion. 
+Une fois l'authentification multi-facteur (MFA) activée pour votre compte, vous devez configurer le code d'accès à utilisation unique avec une application d'authentification à votre prochaine connexion. Tous les utilisateurs de votre compte doivent également utiliser le code d'accès à utilisation unique à leur prochaine connexion.
 
 Procédez comme suit pour configurer votre code d'accès à utilisation unique avec une application d'authentification pour la première fois :
 
-1. Connectez-vous avec votre IBMid et le mot de passe associé. 
+1. Connectez-vous avec votre IBMid et le mot de passe associé.
 
-5 minutes peuvent s'écouler avant que vous puissiez vous reconnecter avec l'authentification multi-facteur activée et configurée.
+  Cinq minutes peuvent s'écouler avant que vous ne puissiez vous reconnecter avec l'authentification multi-facteur.
+  {: note}
 
 2. Sélectionnez **Verify** sur l'écran **Verification is required** pour configurer l'authentification multi-facteur avec une application d'authentification.
 3. Sélectionnez **Setup your authenticator app** pour obtenir un code d'accès à utilisation unique envoyé à votre adresse électronique afin de pouvoir continuer à configurer l'application d'authentification.
 4. Sélectionnez **Verify**.
-5. Scannez le code à barres avec votre application ou cliquez sur **Can't scan the bar?** pour entrer manuellement une clé. 
+5. Scannez le code à barres avec votre application ou cliquez sur **Can't scan the bar?** pour entrer une clé.
 6. Cliquez sur **Continue** pour entrer votre code.
-7. Entrez votre code et sélectionnez **Verify**. 
+7. Entrez votre code et sélectionnez **Verify**.
 
-Si un message d'erreur s'affiche pour vous indiquer que vous avez déjà configuré l'authentification, mais que votre code de vérification ne fonctionne pas ou si vous ne disposez pas du code de vérification à saisir, vous devez contacter le [centre d'assistance](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") pour réinitialiser votre inscription à l'authentification multi-facteur (MFA).
-{: tip}
+Si un message d'erreur s'affiche vous indiquant que vous avez déjà configuré l'authentification, mais que votre code de vérification ne fonctionne pas ou si vous ne disposez pas du code de vérification à saisir, vous devez contacter le [centre d'assistance](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe") pour réinitialiser votre inscription à l'authentification multi-facteur (MFA).
+{: note}
 {: #mfahelp}
 
-
-## Désactivation de l'authentification multifacteur
+## Désactivation de l'authentification multi-facteur requise pour tous les utilisateurs de votre compte
 {: #disablemfa}
 
-Pour désactiver l'authentification multi-facteur (MFA), vous devez être l'administrateur du compte. La désactivation de l'authentification multi-facteur n'a aucune incidence sur les utilisateurs déjà connectés, car cette action ne prend effet que lors des nouvelles connexions.
+Pour désactiver l'authentification multi-facteur (MFA), vous devez être propriétaire du compte. La désactivation de l'authentification multi-facteur n'a aucune incidence sur les utilisateurs déjà connectés, car cette action ne prend effet que lors des nouvelles connexions.
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Paramètres**.
-2. Sélectionnez **Standard** &gt;, puis cliquez sur **Oui, je suis sûr**.
-3. Dans les fenêtres de confirmation, cliquez sur **Oui, je suis sûr**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
+2. Sélectionnez **Standard**.
+3. Dans la fenêtre de confirmation, cliquez sur **Oui, je suis sûr**.

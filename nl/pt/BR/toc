@@ -17,25 +17,43 @@ Gerenciando a identidade e o acesso
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-        
+    
     bp_access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
-    mfa.md
-    iamuserinv.md
 
     {: .topicgroup}
-    Gerenciando usuários e acesso
-        iamusermanage.md
-        groups.md
-        accessgroup_rules.md
+    Incluindo usuários em sua conta
+        iamuserinv.md
+        remove-users.md
+        
+    {: .topicgroup}
+    Administrando Usuários        
+        parentuser.md
+        update_status.md
+        specific_ip.md
+        vpn_password.md
+        user_login.md
+     
+    {: .topicgroup}
+    Gerenciando o acesso
         mngiam.md
         mngcf.md
-        mnginfra.md
-
+        mnginfra.md        
+        groups.md
+        accessgroup_rules.md
+        userlist.md
+        
+    {: .topicgroup}
+    Autenticação de diversos fatores    
+        mfatypes.md
+        mfa.md
+        totp.md
+        external_mfa.md
+        securityquestions.md        
 
     {: .topicgroup}
     Trabalhando com serviços
@@ -44,17 +62,21 @@ Gerenciando a identidade e o acesso
         authorizations.md
 
     {: .topicgroup}
-    Chaves API
+    Chaves de API e tokens
         apikeys.md
         userid_keys.md
         serviceid_keys.md
+        classic_infra_keys.md
         apikey_iamtoken.md
+        iam_apikeys_services.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    iam_limits.md monitoring.md
+    iam_limits.md
+    monitoring.md
+    userstatus.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="help"}
     faqs.md
     {: .navgroup-end}

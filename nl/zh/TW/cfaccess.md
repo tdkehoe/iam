@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -12,11 +12,14 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Cloud Foundry 存取
 {: #cfaccess}
 
-目前，並非所有服務都可以使用 Cloud IAM 來管理。您可以繼續使用 Cloud Foundry 角色來存取這些服務實例。使用者會新增至實例所屬的組織及空間，並獲得指派 Cloud Foundry 角色。 
+目前，並非所有服務都可以使用 Cloud IAM 來管理。您可以繼續使用 Cloud Foundry 角色來存取這些服務實例。使用者會新增至實例所屬的組織及空間，並獲得指派 Cloud Foundry 角色。
+{:shortdesc}
 
 
 ![使用帳戶中的 Cloud Foundry 組織及空間來進行存取](images/cf-diagram.svg "使用 Cloud Foundry 組織、空間及角色時的帳戶存取運作方式")
@@ -45,4 +48,5 @@ Cloud Foundry 角色會授與帳戶內組織及空間的存取權。Cloud Foundr
 |審核員|空間審核員具有所有空間資訊（例如空間中每一個應用程式的實例數、服務連結及資源用量的相關資訊）的唯讀存取權。|
 {:caption="表 2. 空間角色及許可權" caption-side="top"}
 
-**附註**：獲指派管理員或開發人員空間角色的使用者可以存取 VCAP_SERVICES 環境變數。不過，獲指派審核員角色的使用者無法存取 VCAP_SERVICES。
+獲指派管理員或開發人員空間角色的使用者可以存取 VCAP_SERVICES 環境變數。不過，獲指派審核員角色的使用者無法存取 VCAP_SERVICES。
+{: note}

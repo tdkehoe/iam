@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-30"
 
 ---
 
@@ -63,7 +63,7 @@ Etant donné qu'un code d'accès à utilisation unique extrait du code de la con
 ## Utilisation d'une clé d'API
 {:api_key}
 
-La clé d'API requise est la clé d'API {{site.data.keyword.Bluemix_notm}} qui est utilisée pour l'authentification auprès de la plateforme {{site.data.keyword.Bluemix_notm}} et non la clé d'API Softlayer ni la clé d'API de service {{site.data.keyword.Bluemix_notm}}.
+La clé d'API requise est la clé d'API {{site.data.keyword.Bluemix_notm}} utilisée pour l'authentification auprès de la plateforme {{site.data.keyword.Bluemix_notm}} et non la clé d'API de l'infrastructure classique ou la clé d'API de service {{site.data.keyword.Bluemix_notm}}.
 
 1. Créez une clé d'API à l'aide de la commande [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Utilisez l'option `-f` pour générer un fichier de clés d'API au lieu d'afficher la clé dans la fenêtre de commande :
 
@@ -90,7 +90,7 @@ La clé d'API requise est la clé d'API {{site.data.keyword.Bluemix_notm}} qui e
     
       ```
     
-    * Configurez une variable d'environnement. Vous pouvez également définir une variable d'environnement sur votre système. Par exemple, BLUEMIX_API_KEY=api_key_string, où `api_key_string` est la valeur personnalisée de la clé d'API. Une fois la variable d'environnement définie, il vous suffit de spécifier `ibmcloud login` depuis l'interface de ligne de commande. 
+    * Configurez une variable d'environnement. Vous pouvez également définir une variable d'environnement sur votre système. Par exemple, IBMCLOUD_API_KEY=api_key_string, où `api_key_string` est la valeur personnalisée de la clé d'API. Une fois la variable d'environnement définie, il vous suffit de spécifier `ibmcloud login` depuis l'interface de ligne de commande. 
   
   Pour vous connecter à l'aide de l'interface de ligne de commande de Cloud Foundry, spécifiez `apikey` comme nom d'utilisateur et la chaîne de clé d'API comme mot de passe :
 

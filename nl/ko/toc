@@ -17,25 +17,43 @@ ID 및 액세스 관리
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-        
+    
     bp_access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
-    mfa.md
-    iamuserinv.md
 
     {: .topicgroup}
-    사용자 및 액세스 관리
-        iamusermanage.md
-        groups.md
-        accessgroup_rules.md
+    계정에 사용자 추가
+        iamuserinv.md
+        remove-users.md
+        
+    {: .topicgroup}
+    사용자 관리        
+        parentuser.md
+        update_status.md
+        specific_ip.md
+        vpn_password.md
+        user_login.md
+     
+    {: .topicgroup}
+    액세스 관리
         mngiam.md
         mngcf.md
-        mnginfra.md
-
+        mnginfra.md        
+        groups.md
+        accessgroup_rules.md
+        userlist.md
+        
+    {: .topicgroup}
+    다단계 인증    
+        mfatypes.md
+        mfa.md
+        totp.md
+        external_mfa.md
+        securityquestions.md        
 
     {: .topicgroup}
     서비스 작업
@@ -44,18 +62,21 @@ ID 및 액세스 관리
         authorizations.md
 
     {: .topicgroup}
-    API 키
+    API 키 및 토큰
         apikeys.md
         userid_keys.md
         serviceid_keys.md
+        classic_infra_keys.md
         apikey_iamtoken.md
+        iam_apikeys_services.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     iam_limits.md
     monitoring.md
+    userstatus.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="help"}
     faqs.md
     {: .navgroup-end}

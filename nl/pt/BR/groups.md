@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-14"
 
 ---
 
@@ -12,23 +12,18 @@ lastupdated: "2018-10-30"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
 
 # Configurando grupos de acesso
 {: #groups}
 
-Um grupo de acesso pode ser criado para organizar um conjunto de usuários e IDs de serviço em uma
-única entidade que facilita a designação de permissões. É possível designar uma política única ao grupo em vez
+Um grupo de acesso pode ser criado para organizar um conjunto de usuários e IDs de serviço em uma única entidade que torne mais fácil para você designar acesso. É possível designar uma política única ao grupo em vez
 de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço individual.
+{:shortdesc}
 
-Para gerenciar ou criar novos grupos de acesso, deve-se ser o proprietário da conta, o administrador ou o editor
-no serviço Grupos de acesso do IAM na conta ou o administrador ou o editor designado para todos os serviços de
-gerenciamento de conta. Além disso, um administrador ou editor pode ter acesso designado para gerenciar um grupo individual criando
-uma política de acesso em que o recurso é o ID do grupo de acesso. Para obter mais informações sobre as políticas de
-acesso e as funções para o serviço Grupos de acesso do IAM, consulte
-[Acesso do IAM](/docs/iam/users_roles.html#platformrolestable2).
-
-Além disso, um administrador ou um editor pode ser designado a um grupo individual criando uma política de acesso na qual o recurso é o ID do grupo de acesso. Um administrador ou um editor do grupo pode atualizar e excluir o grupo, bem como criar, atualizar e excluir membros ou políticas de acesso do grupo. Um usuário com a função de visualizador designada só pode recuperar e listar grupos, membros e acesso designado.
+Para gerenciar ou criar novos grupos de acesso, deve-se ser o proprietário da conta, o administrador ou o editor no serviço de Grupos de acesso do IAM na conta ou o administrador ou editor designado para todos os Serviços de Gerenciamento de Conta. Além disso, um administrador ou editor pode ter acesso designado para gerenciar um grupo individual criando
+uma política de acesso em que o recurso é o ID do grupo de acesso. Para obter mais informações sobre políticas de acesso e funções para o serviço de Grupos de acesso do IAM, veja [Acesso do IAM](/docs/iam/users_roles.html#userroles).
 
 Para facilitar ainda mais a designação e o gerenciamento de acesso, é possível configurar
 grupos de recursos para organizar um conjunto de recursos ao qual você deseja que um grupo de usuários
@@ -41,7 +36,7 @@ individuais dentro de sua conta.
 
 Para criar um grupo de acesso, conclua as etapas a seguir:
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Grupos de acesso**.
+1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Clique em **Criar**.
 3. Insira um nome e uma descrição opcional para seu grupo e clique em **Criar**.
 
@@ -54,10 +49,8 @@ Em seguida, continue a configurar seu grupo incluindo usuários ou IDs de servi�
 clique em **Incluir ID de serviço**.
 5. Selecione os IDs que deseja incluir na lista e clique em **Incluir no grupo**.
 
-É possível excluir um grupo selecionando a opção **Remover grupo**. Ao
-remover um grupo da conta, você está removendo todos os usuários e IDs de serviço do grupo e todo o acesso
-designado ao grupo.
-{: tip}
+É possível excluir um grupo selecionando a opção **Remover grupo**. Ao remover um grupo da conta, você está removendo todos os usuários e IDs de serviço do grupo e todo o acesso que é designado ao grupo.
+{: note}
 
 Para criar um grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create).
 ```
@@ -72,15 +65,16 @@ Depois de configurar seu grupo com usuários e IDs de serviço, é possível des
 comum para o grupo. Lembre-se, qualquer política que você configura para o grupo se aplica a todas as
 entidades dentro do grupo.
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Grupos de acesso**.
+1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Selecione o nome do grupo ao qual você deseja designar acesso. 
-3. Clique na guia **Políticas de acesso**.
+3. Clique em **Políticas de acesso**.
 4. Clique em **Designar acesso**. 
-5. Escolha para designar o acesso por recursos em um grupo de recursos ou recursos individuais
-disponíveis dentro da conta.
+5. Escolha para designar acesso por recursos dentro de um grupo de recursos, recursos individuais disponíveis dentro da conta ou serviços de gerenciamento de conta.
 
 Para criar uma política de grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create).
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
 {: codeblock}
+
+

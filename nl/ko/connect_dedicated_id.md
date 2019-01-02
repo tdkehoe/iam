@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -19,15 +19,15 @@ lastupdated: "2018-05-22"
 # 공용 IBM ID에 데디케이티드 ID 연결
 {: #connect_dedicated_id}
 
-공용 IAM 서비스가 사용 가능한 데디케이티드 클라우드에 로그인할 수 있도록 데디케이티드 ID 대신 공용 IBM ID로 {{site.data.keyword.Bluemix_notm}} CLI에 로그인해야 합니다.
-
+공용 IAM 서비스가 사용 가능한 데디케이티드 클라우드에 로그인하려면 {{site.data.keyword.Bluemix_notm}} CLI에서 데디케이티드 ID 대신 공용 IBM ID로 로그인해야 합니다.
+{:shortdesc}
 
 ```
   $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
   API endpoint: https://api.{dedicated_env}.bluemix.net
 
   Public IAM token service is available in the dedicated environment.
-  Log in with your public IBMid, or use '--no-iam' to log in as a dedicated user only.
+  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
 
   Email>
 ```
@@ -44,16 +44,16 @@ lastupdated: "2018-05-22"
 하지만 데디케이티드 ID가 공용 IBM ID에 연결되지 않은 경우 다음과 같이 공용 IBM ID에 수동으로 연결하도록 프롬프트가 표시됩니다.
 
 ```
-  You are logging in with an IBMid that is not associated with any dedicated user.
+  You are logging with an IBMid that does not associated with any dedicated user.
   To set up the connection, input the credentials of the dedicated user.
 
   Choose a credential type:
-  1. User name and password
+  1. Username and password
   2. One Time Code (Get one at https://login.{dedicated_env}.bluemix.net.com/passcode)
   Enter a number>
 ```
 
-데디케이티드 ID의 신임 정보를 입력하는 옵션을 선택하십시오. 인증 성공 후 데디케이티드 ID가 공용 IBM ID에 연결됩니다.
+데디케이티드 ID의 인증 정보를 입력하는 옵션을 선택하십시오. 인증 성공 후 데디케이티드 ID가 공용 IBM ID에 연결됩니다.
 
 ## 로컬 UAA 서버에 강제 로그인
 

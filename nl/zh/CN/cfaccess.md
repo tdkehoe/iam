@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -12,11 +12,14 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Cloud Foundry 访问权
 {: #cfaccess}
 
-目前，并非所有服务都可以使用 Cloud IAM 进行管理。您可以继续使用 Cloud Foundry 角色来访问这些服务实例。用户将添加到实例所属的组织和空间，并分配 Cloud Foundry 角色。 
+目前，并非所有服务都可以使用 Cloud IAM 进行管理。您可以继续使用 Cloud Foundry 角色来访问这些服务实例。用户将添加到实例所属的组织和空间，并分配 Cloud Foundry 角色。
+{:shortdesc}
 
 
 ![使用帐户中的 Cloud Foundry 组织和空间进行访问](images/cf-diagram.svg "如何使用 Cloud Foundry 组织、空间和角色使帐户中的访问权生效")
@@ -45,4 +48,5 @@ Cloud Foundry 角色授予对帐户内组织和空间的访问权。Cloud Foundr
 |审计员|空间审计员具有对有关空间的所有信息的只读访问权，例如有关空间中每个应用程序的实例数、服务绑定和资源使用情况的信息。|
 {:caption="表 2. 空间角色和许可权" caption-side="top"}
 
-**注**：分配有管理员或开发者空间角色的用户可以访问 VCAP_SERVICES 环境变量。但是，分配有审计员角色的用户无法访问 VCAP_SERVICES。
+分配有管理者或开发者空间角色的用户可以访问 VCAP_SERVICES 环境变量。但是，分配有审计员角色的用户无法访问 VCAP_SERVICES。
+{: note}

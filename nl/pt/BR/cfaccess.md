@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -12,6 +12,8 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Acesso ao Cloud Foundry
 {: #cfaccess}
@@ -19,6 +21,7 @@ lastupdated: "2018-04-12"
 Atualmente, nem todos os serviços podem ser gerenciados usando o Cloud IAM. É possível continuar a usar
 funções do Cloud Foundry para acessar essas instâncias de serviço. Os usuários são incluídos na organização e
 no espaço aos quais a instância pertence com uma função do Cloud Foundry designada. 
+{:shortdesc}
 
 
 ![Acesso usando organizações e espaços do Cloud Foundry em uma conta](images/cf-diagram.svg "Como o acesso em uma conta funciona usando organizações,espaços e funções do Cloud Foundry")
@@ -53,4 +56,5 @@ aplicativo no espaço. Além disso, o desenvolvedor de espaço pode associar uma
 espaço. |
 {:caption="Tabela 2. Funções e permissões de espaço" caption-side="top"}
 
-**Nota**: os usuários designados à função de espaço de gerenciador ou desenvolvedor podem acessar a variável de ambiente VCAP_SERVICES. No entanto, um usuário designado à função de auditor não pode acessar VCAP_SERVICES.
+Os usuários que são designados à função de espaço de gerenciador ou desenvolvedor podem acessar a variável de ambiente VCAP_SERVICES. No entanto, um usuário designado à função de auditor não pode acessar VCAP_SERVICES.
+{: note}

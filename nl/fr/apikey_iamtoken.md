@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-11"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -13,10 +13,11 @@ lastupdated: "2018-09-11"
 {:screen: .screen}
 {:tip: .tip}
 
-# Obtention d'un jeton IAM {{site.data.keyword.Bluemix_notm}} à l'aide d'une clé d'API
+# Obtention d'un jeton {{site.data.keyword.Bluemix_notm}} IAM à l'aide d'une clé d'API
 {: #iamtoken_from_apikey}
 
-Les API {{site.data.keyword.Bluemix}} ne sont accessibles que par des utilisateurs auxquels un rôle IAM est affecté. Par conséquent, l'utilisateur qui appelle l'API doit transmettre des données d'identification pour l'API afin de s'authentifier. Vous pouvez générer un jeton IAM en utilisant votre [clé d'API personnelle](/docs/iam/userid_keys.html#userapikey) ou une [clé d'API d'ID de service](/docs/iam/serviceid_keys.html#serviceidapikeys). Ce processus est également utilisé si vous développez une application qui doit fonctionner avec d'autres services {{site.data.keyword.Bluemix_notm}}. Vous devez utiliser une clé d'API d'ID de service pour obtenir un jeton d'accès à transmettre à chacun des services {{site.data.keyword.Bluemix_notm}}.
+Les API {{site.data.keyword.Bluemix}} ne sont accessibles que par des utilisateurs auxquels un rôle IAM est affecté. Par conséquent, l'utilisateur qui appelle l'API doit transmettre des données d'identification pour l'API afin de s'authentifier. Vous pouvez générer un jeton IAM en utilisant votre clé d'API [{{site.data.keyword.Bluemix_notm}}](/docs/iam/userid_keys.html#userapikey) ou une [clé d'API d'ID de service](/docs/iam/serviceid_keys.html#serviceidapikeys). Ce processus est également utilisé si vous développez une application qui doit fonctionner avec d'autres services {{site.data.keyword.Bluemix_notm}}. Vous devez utiliser une clé d'API d'ID de service pour obtenir un jeton d'accès à transmettre à chacun des services {{site.data.keyword.Bluemix_notm}}.
+{:shortdesc}
 
 1. Exécutez la commande `curl` suivante pour générer un jeton IAM en utilisant une clé d'API :
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -12,33 +12,34 @@ lastupdated: "2018-05-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:deprecated: .deprecated}
 
-# Gerenciando o acesso à infraestrutura
+# Gerenciando o acesso à infraestrutura clássica
+{: #mngclassicinfra}
 
-No convite da conta inicial, você pode configurar algumas permissões iniciais para seus usuários. É possível atualizar permissões para infraestrutura ou incluir acesso ao dispositivo por meio da opção Infraestrutura no console a qualquer momento. Para acessar as permissões de infraestrutura, acesse o ícone **Menu** ![Ícone Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**. Em seguida, acesse **Conta** &gt; **Usuários** para iniciar.
+É possível atualizar permissões para serviços de infraestrutura clássica ou incluir acesso de dispositivo e de sub-rede VPN para um usuário a qualquer momento. Para acessar as permissões de infraestrutura clássica, acesse **Gerenciar** &gt; **Acesso (IAM)**, selecione **Usuários**. Em seguida, selecione o nome do usuário para o qual você deseja atualizar o acesso e clique em **Infraestrutura clássica**.
+{:shortdesc}
 
-## Atualizando permissões
+Deve-se estar designado à permissão Gerenciar a infraestrutura clássica de usuários e um antecessor do usuário dentro da hierarquia do usuário da infraestrutura clássica. Os proprietários da conta têm acesso total à conta, portanto, eles não veem as permissões na página. Os usuários individuais não podem editar suas próprias permissões e também não veem permissões na página.
+{: note}
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
-2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** e, em seguida, clique em **Designar acesso**.
-3. Selecione **Designar acesso à sua conta do SoftLayer**.
-4. No portal de controle, é possível atualizar as informações de perfil do usuário, as permissões do portal e o acesso ao dispositivo.
-5. Inclua as permissões de usuário fazendo seleções para suporte, dispositivos, rede, segurança, serviços e a conta na guia **Permissões do portal**.
-6. Atualize o acesso ao dispositivo na guia **Acesso ao dispositivo**.
+  1. Selecione **Permissões** para atualizar as permissões do usuário. É possível selecionar entre quatro tipos de permissões: conta, dispositivos, rede e serviços. Selecione individualmente as permissões de cada categoria ou use uma opção de conjunto de permissões para designar permissões em massa.
 
-## Atualizando o acesso à VPN
+    As permissões de gerenciamento de conta e de suporte que você designou anteriormente para os usuários em sua conta agora são migradas de permissões de infraestrutura clássica para grupos de acesso do IAM migrados. Para obter mais informações, veja [Permissões de infraestrutura clássica migradas](/docs/iam/infrastructureaccess.html#predefined).
+    {: tip}
 
-1. Clique no ícone **Menu** ![Ícone Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**.
-2. Acesse **Conta** &gt; **Usuários**.
-3. No menu **Ações**, selecione **Editar acesso à VPN**.
-4. Selecione um **Tipo de VPN**.
-5. Configure **Acesso à sub-rede** para **Automático** ou **Manual**.
-6. Clique em **Salvar** para salvar suas mudanças.
+  2. Para conceder a um usuário acesso ao dispositivo, selecione **Dispositivos** e designe o acesso a dispositivos específicos e tipos de dispositivos, conforme necessário.
 
-## Incluindo acesso ao dispositivo
+    O acesso a dispositivos é designado após o usuário ser convidado para a conta. As permissões de dispositivo se aplicam aos dispositivos específicos que estão designados para o usuário. É possível selecionar dispositivos específicos na lista ou é possível designar acesso por tipo de dispositivo. Se você designar acesso por tipo de dispositivo, talvez deseje usar as opções **Ativar acesso futuro** para assegurar que cada vez que novos dispositivos de um tipo específico forem incluídos, o usuário obtenha automaticamente o acesso designado a esses dispositivos.
 
-1. Clique no ícone **Menu** ![Ícone Menu](../icons/icon_hamburger.svg) e, em seguida, selecione **Infraestrutura**.
-2. Acesse **Conta** &gt; **Usuários**.
-3. Clique no link na coluna **Acesso ao dispositivo** para o usuário para o qual você deseja atualizar o acesso. A opção de link é **Gerenciar** ou o número de dispositivos aos quais o usuário tem acesso. Como alternativa, é possível clicar em **Editar acesso ao portal** no menu de ações que o leva para a página de permissões. De lá, selecione a guia **Acesso ao dispositivo**.
-4. Selecione os dispositivos aos quais você deseja fornecer acesso para o usuário.
-5. Clique em **Atualizar acesso ao dispositivo**.
+  3. Para atualizar o acesso de um usuário a sub-redes VPN, selecione **Sub-redes VPN**.
+
+    Use a opção **Designar automaticamente** para configurar como o usuário obtém acesso às sub-redes VPN com base em seu acesso ao dispositivo. Se essa opção estiver configurada como ativada, o usuário terá o acesso designado automaticamente a todas as sub-redes para os dispositivos aos quais eles já têm acesso. É possível configurar essa opção como desativada para selecionar sub-redes manualmente na lista.
+    {: tip}
+
+    Para fornecer acesso a sub-redes VPN, o usuário deve já ter acesso designado a um ou mais dispositivos. Se o usuário não tiver acesso a nenhum dispositivo, nenhuma sub-rede estará disponível para seleção. É possível definir o tipo de sub-redes VPN às quais o usuário tem acesso usando a opção **Tipo de VPN**. Se você selecionar **Nenhum**, nenhum acesso à VPN poderá ser designado.
+
+    A opção PPTP foi descontinuada, portanto, se você tiver essa opção e limpá-la, ela não estará mais disponível.
+    {: deprecated}
