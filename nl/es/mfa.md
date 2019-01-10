@@ -23,7 +23,7 @@ La autenticación de multifactores (MFA) añade una capa de seguridad extra a su
 Antes de habilitar la autenticación de multifactores en su cuenta, revise las consideraciones siguientes:
 
 * Cuando habilite la MFA en su cuenta, todos los usuarios agregados a su cuenta deben completar el proceso de 2FA la próxima vez que inicien sesión.
-* Las claves API para los usuarios y los ID de servicio seguirán funcionando cuando la MFA esté habilitada.
+* Las claves de API para los usuarios y los ID de servicio seguirán funcionando cuando la MFA esté habilitada.
 * Si necesita utilizar una CLI CF nativa o un inicio de sesión de IU en Cloud Foundry, debe utilizar las claves de API o el inicio de sesión único (SSO) cuando la MFA esté habilitada en la cuenta.
 * No se ofrece soporte de la MFA para los usuarios que inician sesión con una identidad federada.
 * Planifique una estrategia de soporte y comunicación para los usuarios de su cuenta:

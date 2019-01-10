@@ -49,7 +49,7 @@ Si desea cambiar el nombre o la descripción de una clave de API, lleve a cabo l
 Para editar una clave de API, siga estos pasos:
 
 1. Vaya a **Gestionar** &gt; **Seguridad** &gt; **Claves de API de plataforma**.
-2. Desde el menú **Acciones** de una clave de API que aparezca listada en la tabla, pulse **Editar nombre y descripción ** 
+2. Desde el menú **Acciones** de una clave de API que aparezca listada en la tabla, pulse **Editar nombre y descripción** 
 3. Actualice la información de su clave de API.
 4. Pulse **Actualizar clave de API**.
 

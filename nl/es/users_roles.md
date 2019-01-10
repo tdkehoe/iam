@@ -132,7 +132,7 @@ Las acciones que se pueden llevar a cabo en cada rol asignado varían en funció
 | Rol de acceso a servicio | Acciones | Acciones de ejemplo para el servicio {{site.data.keyword.objectstorageshort}} |
 |:-----------------|:-----------------|:-----------------|
 |  Lector | Realizar acciones de solo lectura dentro de un servicio, como la visualización de recursos específicos del servicio | Listar y descargar objetos |
-| Escritor | Permisos que van más allá del rol de lector, incluida la creación y la edición de recursos específicos del servicio. | Crear y destruir grupos y objetos |
+| Escritor | Permisos que van más allá del rol de lector, incluida la creación y la edición de recursos específicos del servicio | Crear y destruir grupos y objetos |
 | Gestor | Permisos que van más allá del rol de escritor para completar las acciones privilegiadas tal como define el servicio, y además crear y editar recursos específicos del servicio | Gestionar todos los aspectos del almacenamiento de datos, crear y destruir grupos y objetos |
 {: caption="Tabla 4. Roles y acciones de usuario de acceso de servicio de ejemplo" caption-side="top"}
 

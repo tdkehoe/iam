@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html"}
 Gestión de acceso e identidades
 
     {: .navgroup id="learn"}
@@ -44,7 +44,7 @@ Gestión de acceso e identidades
         authorizations.md
 
     {: .topicgroup}
-    Claves API
+    Claves de API
         apikeys.md
         userid_keys.md
         serviceid_keys.md

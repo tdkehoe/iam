@@ -31,9 +31,9 @@ forma lógica de asignar el acceso consiste en crear un grupo de acceso por nive
 * Developer-Group
 * Admin-Group
 
-Para Auditor-Group, asigne dos políticas de acceso que otorgaran acceso de visor a los grupos de recursos `CustApp-Test` y `CustApp-Prod`. Para Developer-Group, asigne dos políticas de acceso que otorgan acceso de editor a los entornos `CustApp-Dev` y `CustApp-Test`. Para Admin-Group, asigne tres políticas de acceso que otorguen acceso de administrador a los tres grupos de recursos `CustApp`. 
+Para Auditor-Group, asigne dos políticas de acceso que otorgaran acceso de visor a los grupos de recursos `CustApp-Test` y `CustApp-Prod`. Para Developer-Group, asigne dos políticas de acceso que otorgan acceso de editor a los entornos `CustApp-Dev` y `CustApp-Test`. Para Admin-Group, asigne tres políticas de acceso que otorguen acceso de administrador a los tres grupos de recursos `CustApp`.
 
-Aunque estas sugerencias están diseñadas para un escenario hipotético, puede configurar la correlación entre grupo de acceso y grupo de recursos que se ajuste a sus requisitos. 
+Aunque estas sugerencias están diseñadas para un caso de ejemplo hipotético, puede configurar la correlación entre grupo de acceso y grupo de recursos que se ajuste a sus requisitos. 
 
 ## Creación de grupos de acceso
 {: #access-group-setup}
