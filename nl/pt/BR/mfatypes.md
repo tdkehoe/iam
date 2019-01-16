@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018,2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -40,9 +40,9 @@ A MFA do IBMid para uma conta requer uma senha descartável baseada em tempo, al
 Um dos benefícios da MFA do IBMid é que ela é gratuita e ligada ao seu ID, em vez de apenas à conta específica em que você está. Se você pertencer a muitas contas, será necessário se autenticar somente uma vez quando efetuar login no console. Para obter mais informações sobre a MFA do IBMid, as considerações que devem ser revisadas antes de você requerer a MFA do IBMid para sua conta e como configurá-la você mesmo, veja [Requerendo MFA para usuários em sua conta](/docs/iam/mfa.html#setting-up-ibmid-mfa).
 
 ## Opções de MFA baseadas em conta
-{: #id-based}
+{: #account-based}
 
-Um administrador de conta deve ativar qualquer uma das opções de MFA a seguir para ser configurada e usada por um usuário na conta. Esse tipo de MFA é ligado à conta atual de um usuário. Se um administrador ativar uma opção de MFA diferente para cada conta na qual um usuário for um membro, o usuário será solicitado a autenticar-se de uma maneira diferente cada vez que alternar as contas.
+Um administrador de conta deve ativar qualquer uma das opções de MFA a seguir para ser configurada e usada por um usuário na conta. Esse tipo de MFA é ligado à conta atual de um usuário. Se um administrador ativar uma opção de MFA diferente para cada conta na qual um usuário for um membro, o usuário será solicitado a autenticar-se de uma maneira diferente cada vez que alternar as contas. 
 
 Se um proprietário da conta requerer a MFA do IBMid para todos os usuários na conta, esse método substituirá qualquer outra opção de MFA que estiver ativada e configurada na conta de um usuário. Portanto, mesmo se um usuário tiver outras opções de MFA, como a configuração a seguir, elas não serão solicitadas ao usuário no login.
 
@@ -58,3 +58,4 @@ As seguintes opções de MFA anteriores estão disponíveis somente com as antig
 </dl>
 
 Para obter mais informações sobre a configuração de opções de MFA, veja [Configurando a segurança de login](/docs/account/login_settings.html#login-settings). E, se você for um proprietário ou um administrador da conta que gerencia as configurações de login de outros usuários ou tiver a capacidade de gerenciar suas próprias configurações de login, veja [Gerenciando as configurações de login de um usuário](/docs/iam/user_login.html#loginsettings).
+
