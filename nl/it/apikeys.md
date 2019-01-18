@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-26"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -11,31 +11,33 @@ lastupdated: "2018-01-26"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
 
-# Gestione delle chiavi API
+# Descrizione delle chiavi API
 {: #manapikey}
 
-Una chiave API (application programming interface) è un codice univoco passato a una API (application programming interface) per identificare l'applicazione o l'utente chiamante.  Le chiavi API vengono utilizzate per tracciare e controllare la modalità di utilizzo della API, ad esempio per prevenire l'uso dannoso o l'abuso della API. La chiave API spesso funge sia da identificativo univoco che da token segreto per l'autenticazione e generalmente dispone di una serie di diritti di accesso specifici per l'identità ad essa associata.
+Una chiave API (application programming interface) è un codice univoco che viene passato a un'API per identificare l'applicazione o l'utente chiamante. Le chiavi API vengono utilizzate per tracciare e controllare la modalità di utilizzo della API, ad esempio per prevenire l'uso dannoso o l'abuso della API. La chiave API spesso funge sia da identificativo univoco che da token segreto per l'autenticazione e generalmente ha una serie di accesso specifico per l'identità a cui è associata.
+{:shortdesc}
 
-## Chiavi API della piattaforma
+Per visualizzare le tue chiavi API, vai a **Gestisci** > **Accesso (IAM)** e seleziona **Utenti**. Quindi, seleziona un utente per accedere alla sezione Chiavi API inclusa nella pagina Dettagli utente.
 
-Le chiavi API della piattaforma vengono create nell'interfaccia utente di Identity and Access Management e possono essere associate a:
+## {{site.data.keyword.cloud_notm}} Chiavi API
+{: #ibm-cloud-api-keys}
 
-* Utenti di un account
-* ID servizio creati in un account
-
-Puoi creare e utilizzare chiavi API collegate al tuo account. Un utente federato o non federato può creare una chiave API da utilizzare nella CLI o come parte dell'automazione per eseguire l'accesso come tua identità utente. Per ulteriori informazioni sull'utilizzo di una chiave API associata alla tua identità utente, consulta [Gestione delle chiavi API utente](userid_keys.html).
+Le chiavi API {{site.data.keyword.cloud}} vengono create per un utente dalla pagina Dettagli utente nella console {{site.data.keyword.cloud_notm}} e sono associate all'identità dell'utente. La chiave API può essere creata ed eliminata solo dall'utente a cui è associata tale chiave API. Puoi utilizzare le chiavi API {{site.data.keyword.cloud_notm}} nella CLI (command-line interface) o come parte dell'automazione per eseguire l'accesso come tua identità utente. Puoi anche utilizzare le chiavi API {{site.data.keyword.cloud_notm}} per accedere alle API dell'infrastruttura classica. Per ulteriori informazioni sull'utilizzo di una chiave API associata alla tua identità utente, consulta [Gestione delle chiavi API utente](userid_keys.html).
 
 Puoi anche utilizzare le chiavi API associate agli ID servizio che crei. Gli ID servizio sono utilizzati per connettere un'applicazione all'interno o all'esterno di {{site.data.keyword.Bluemix_notm}} a un servizio {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni sulla creazione di chiavi API associate a un ID servizio, consulta [Gestione delle chiavi API di un ID servizio](serviceid_keys.html).
 
-## Altre chiavi API {{site.data.keyword.Bluemix_notm}}
+## Altri tipi di chiavi API
 
-Oltre alle chiavi API della tua piattaforma, ci sono un paio di altri tipi di chiavi API che potresti utilizzare in {{site.data.keyword.Bluemix_notm}}:
+Oltre alle tue chiavi API {{site.data.keyword.cloud_notm}}, sono disponibili un paio di altri tipi di chiavi API che puoi utilizzare:
 
-* Chiavi API dell'infrastruttura
+* Chiavi API dell'infrastruttura classica
 * Chiavi API specifiche del servizio
 
-Le chiavi API dell'infrastruttura vengono create nel portale clienti, sono associate al tuo ID utente dell'account SoftLayer e vengono utilizzate quando accedi alle API per i servizi di infrastruttura.
+Le chiavi API dell'infrastruttura classica vengono utilizzate per chiamare le API relative ai servizi dell'infrastruttura classica. Puoi creare una sola chiave API dell'infrastruttura classica alla volta. Per creare una chiave API dell'infrastruttura classica per un utente, utilizza la pagina Dettagli utente.
 
-Alcuni servizi in {{site.data.keyword.Bluemix_notm}} potrebbero anche fornire una chiave API da utilizzare durante l'interazione con il servizio. Ad esempio, se stai visualizzando i dettagli di un servizio Watson dal tuo dashboard, puoi creare una credenziale, che include una chiave e un segreto API, specifica solo per tale servizio nella scheda Credenziali del servizio.
+Le chiavi API {{site.data.keyword.cloud_notm}} possono essere utilizzate anche per accedere alle API dell'infrastruttura classica.
+{: tip}
 
+Alcuni servizi in {{site.data.keyword.Bluemix_notm}} potrebbero anche fornirti una chiave API da utilizzare quando lavori con il servizio. Ad esempio, se stai visualizzando i dettagli dell'offerta di un servizio Watson dal tuo elenco delle risorse, puoi creare una credenziale, che include una chiave e un segreto API specifici solo per tale servizio, nella pagina Credenziali del servizio.

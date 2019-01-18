@@ -4,7 +4,7 @@ copyright:
 
   years: 2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -13,22 +13,24 @@ lastupdated: "2018-08-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
 # Creazione di regole dinamiche per i gruppi di accesso
 {: #rules}
 
 Puoi creare delle regole dinamiche per aggiungere automaticamente gli utenti federati ai gruppi di accesso in base a specifici attributi di identità. Quando i tuoi utenti eseguono l'accesso con un ID federato, i dati dal provider di identità associano dinamicamente i tuoi utenti a un gruppo di accesso in base alle regole da te impostate.
+{:shortdesc}
 
 Gli utenti dispongono già di informazioni di identità specifiche all'interno del dominio della tua azienda e, quando accedono con un ID federato, questi dati possono essere passati utilizzando le asserzioni SAML. Le asserzioni SAML o le istruzioni di attributo configurate all'interno del provider di identità forniscono i dati utilizzati per creare ciascuna regola. Ad esempio, ci potrebbe essere un'istruzione di attributo true o false che definisce gli utenti come gestori. Queste informazioni possono essere utilizzate per aggiungere tutti gli utenti che sono gestori a un gruppo di accesso specifico per i gestori da te creato nel tuo account {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi la [Regola di esempio](accessgroup_rules.html#example).
 
 Solo gli utenti che sono già invitati all'account possono essere associati ai gruppi di accesso utilizzando le regole dinamiche.
-{: tip}
+{: note}
 
 ## Configurazione delle regole
 
 Le regole dinamiche vengono create impostando le condizioni che devono essere soddisfatte dai dati configurati all'interno del provider di identità e passati con un ID federato dell'utente durante l'accesso. Per creare una regola, attieniti alla seguente procedura:
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Gruppi di accesso**.
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Gruppi di accesso**.
 2. Seleziona il nome del gruppo di accesso per cui vuoi creare una regola per aprire la pagina dei dettagli del gruppo.
 3. Seleziona la scheda **Regole dinamiche**.
 4. Fai clic su **Aggiungi regola**.

@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-30"
 
 ---
 
@@ -39,7 +39,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
   ibmcloud login --sso
   Endpoint API: https://api.ng.bluemix.net
       
-  Codice monouso (Ottienine uno in  https://iam.ng.bluemix.net/oidc/passcode)> 
+  Codice monouso (Ottienine uno in https://iam.ng.bluemix.net/oidc/passcode)>
   Autenticazione in corso...
   OK
       
@@ -63,7 +63,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 ## Utilizzo di una chiave API
 {:api_key}
 
-La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API Softlayer o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
+La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API dell'infrastruttura classica o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
 1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
 
@@ -90,7 +90,7 @@ La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} util
     
       ```
     
-    * Imposta una variabile di ambiente. Puoi anche impostare una variabile di ambiente nel tuo sistema. Ad esempio, BLUEMIX_API_KEY=api_key_string, dove `api_key_string` è il valore personalizzato della chiave API. Una volta impostata la variabile di ambiente, puoi semplicemente specificare `ibmcloud login` dalla CLI. 
+    * Imposta una variabile di ambiente. Puoi anche impostare una variabile di ambiente nel tuo sistema. Ad esempio, IBMCLOUD_API_KEY=api_key_string, dove `api_key_string` è il valore personalizzato della chiave API. Una volta impostata la variabile di ambiente, puoi semplicemente specificare `ibmcloud login` dalla CLI. 
   
   Per accedere utilizzando la CLI Cloud Foundry, specifica `apikey` come nome utente e la stringa della chiave API come password:
 

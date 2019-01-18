@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-11"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -16,7 +16,8 @@ lastupdated: "2018-09-11"
 # Ottenimento di un token IAM {{site.data.keyword.Bluemix_notm}} utilizzando una chiave API
 {: #iamtoken_from_apikey}
 
-Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Pertanto, l'utente che richiama l'API deve passare le credenziali per l'autenticazione da parte dell'API. Puoi generare un token IAM utilizzando la tua [chiave API personale](/docs/iam/userid_keys.html#userapikey) oppure una [chiave APi dell'ID servizio](/docs/iam/serviceid_keys.html#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
+Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Pertanto, l'utente che richiama l'API deve passare le credenziali per l'autenticazione da parte dell'API. Puoi generare un token IAM utilizzando la tua [chiave API {{site.data.keyword.Bluemix_notm}}](/docs/iam/userid_keys.html#userapikey) o una [chiave API dell'ID servizio](/docs/iam/serviceid_keys.html#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
+{:shortdesc}
 
 1. Utilizza il seguente comando `curl` per generare un token IAM utilizzando una chiave API.
 

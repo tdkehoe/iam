@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -12,11 +12,14 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Accesso Cloud Foundry
 {: #cfaccess}
 
 Al momento, non tutti i servizi possono essere gestiti utilizzando Cloud IAM. Puoi continuare a utilizzare i ruoli Cloud Foundry per l'accesso a queste istanze del servizio. Gli utenti vengono aggiunti all'organizzazione e allo spazio a cui l'istanza appartiene con un ruolo Cloud Foundry assegnato. 
+{:shortdesc}
 
 
 ![Accesso a un account utilizzando le organizzazioni, gli spazi e i ruoli Cloud Foundry](images/cf-diagram.svg "Come funziona l'accesso a un account utilizzando le organizzazioni, gli spazi e i ruoli Cloud Foundry")
@@ -45,4 +48,5 @@ I seguenti ruoli possono essere assegnati a livello dello spazio:
 |Revisore | I revisori spazio hanno un accesso in sola lettura a tutte le informazioni sullo spazio, quali le informazioni sul numero di istanze, i bind di servizio e l'utilizzo di risorse per ciascuna applicazione nello spazio. |
 {:caption="Tabella 2. Ruoli e autorizzazioni dello spazio" caption-side="top"}
 
-**Nota**: gli utenti a cui nello spazio è assegnato il ruolo di gestore o sviluppatore possono accedere alla variabile di ambiente VCAP_SERVICES. Tuttavia, un utente a cui è assegnato il ruolo di revisore non può accedere a VCAP_SERVICES.
+Gli utenti a cui nello spazio è assegnato il ruolo di gestore o sviluppatore possono accedere alla variabile di ambiente VCAP_SERVICES. Tuttavia, un utente a cui è assegnato il ruolo di revisore non può accedere a VCAP_SERVICES.
+{: note}
