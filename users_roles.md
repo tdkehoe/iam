@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-12-06"
+lastupdated: "2019-01-21"
 
 ---
 
@@ -84,9 +84,11 @@ With platform management roles, users can be assigned varying levels of permissi
 
 The following tables provide examples for some of the platform management actions that users can take within the context of catalog resources, resource groups, and account management services. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
+The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected via the firt column, and which type of policy has been selected via the first row.
+
 | Access Policy Details | Actions on Services in the Account | Actions on Resources within Resource Groups | Actions for Access to Resource Groups |
 |:--------------|:------------|:-------------|:-------------|
-| **Assign access to** | One or all IAM-enabled services | Selected service in a resource group | Selected resource group |
+|  | One or all IAM-enabled services | Selected service in a resource group | Selected resource group |
 | Viewer role | View instances, aliases, bindings, and credentials | View only specified instances in the resource group | View resource group |
 | Operator role |  View instances and manage aliases, bindings, and credentials |  Not applicable | Not applicable |
 | Editor role |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View and edit name of resource group |
@@ -100,9 +102,11 @@ The following table describes the common actions that you can perform based on t
 If you assign an access policy on **All account management services**, depending on the role that you select, the user can complete the following actions for each service for that role. In addition, this type of policy provides the user access to billing information and the ability to track usage based on their assigned role. See the following table for details.
 {: note}
 
+The first row of the table describes specific services that you can choose from when creating a policy, and the first column describes the selected type of role for the policy. The remaining cells map to which role is selected via the firt column, and which type of policy has been selected via the first row.
+
 | Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for Support | Actions for Billing | Actions for all Account Management Services | 
 |:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
-| **Assign access to** |  IAM Identity Service |  IAM Access Groups |  Global resource catalog |  User Management  | Support Center | Billing and usage | All account management services |
+|  |  IAM Identity Service |  IAM Access Groups |  Global resource catalog |  User Management  | Support Center | Billing and usage | All account management services |
 | Viewer role |  <ul><li>View IDs</li></ul> |  <ul><li>View access groups and members</li></ul> | <ul><li>View private services</li></ul>  |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>View cases</li><li>Search cases</li></ul> | <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View account name</li><li>View resource groups</li></ul> | All viewer role actions for the account management services |
 | Operator role | <ul><li>Create and delete IDs and API keys</li></ul> |  <ul><li>Not applicable</li></ul> | <ul><li>Not applicable</li></ul> |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>Not applicable</li></ul> | <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View and change account name</li><li>View and update resource groups</li></ul> | All operator role actions for the account management services |
 | Editor role |  <ul><li>Create, update, and delete IDs and API keys</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users from groups</li></ul> | <ul><li>Can change object metadata but can't change visibility for private services</li></ul>  | <ul><li>View, invite, remove, and update users from the account</li><li>View and update user profile settings</li></ul> | <ul><li>Not applicable</li></ul> | <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View, create, and update resource groups</li></ul> | All editor role actions for the account management services |
