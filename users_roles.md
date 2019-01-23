@@ -84,7 +84,7 @@ With platform management roles, users can be assigned varying levels of permissi
 
 The following tables provide examples for some of the platform management actions that users can take within the context of catalog resources, resource groups, and account management services. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
-The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected via the firt column, and which type of policy has been selected via the first row.
+The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected via the first column, and which type of policy has been selected via the first row.
 
 | Access Policy Details | Actions on Services in the Account | Actions on Resources within Resource Groups | Actions for Access to Resource Groups |
 |:--------------|:------------|:-------------|:-------------|
