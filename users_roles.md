@@ -84,7 +84,7 @@ With platform management roles, users can be assigned varying levels of permissi
 
 The following tables provide examples for some of the platform management actions that users can take within the context of catalog resources, resource groups, and account management services. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
-The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected via the first column, and which type of policy has been selected via the first row.
+The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row.
 
 | Access Policy Details | Actions on Services in the Account | Actions on Resources within Resource Groups | Actions for Access to Resource Groups |
 |:--------------|:------------|:-------------|:-------------|
@@ -102,7 +102,7 @@ The following table describes the common actions that you can perform based on t
 If you assign an access policy on **All account management services**, depending on the role that you select, the user can complete the following actions for each service for that role. In addition, this type of policy provides the user access to billing information and the ability to track usage based on their assigned role. See the following table for details.
 {: note}
 
-The first row of the table describes specific services that you can choose from when creating a policy, and the first column describes the selected type of role for the policy. The remaining cells map to which role is selected via the firt column, and which type of policy has been selected via the first row.
+The first row of the table describes specific services that you can choose from when creating a policy, and the first column describes the selected type of role for the policy. The remaining cells map to which role is selected from the options in the first column, and which type of policy has been selected from the options in the first row.
 
 | Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for Support | Actions for Billing | Actions for all Account Management Services | 
 |:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
