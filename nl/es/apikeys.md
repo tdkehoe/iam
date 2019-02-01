@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-01-26"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -11,31 +11,33 @@ lastupdated: "2018-01-26"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
 
-# Trabajo con las claves de API
+# Visión general de las claves de API
 {: #manapikey}
 
-Una clave de interfaz de programación de aplicaciones (clave de API) es un código exclusivo que se pasa en una interfaz de programación de aplicaciones (API) para identificar la aplicación de llamada o el usuario.  Las claves de API se utilizan para realizar un seguimiento y un control sobre la forma la que se utiliza la API, por ejemplo, para impedir un uso malintencionado o abusivo de la misma. La clave de API a menudo actúa a la vez como un identificador exclusivo y como una señal secreta para la autenticación, y habitualmente tiene un conjunto de derechos específicos de la identidad asociado a la misma.
+Una clave de interfaz de programación de aplicaciones (clave de API) es un código exclusivo que se pasa a una API para identificar la aplicación o el usuario que efectúa la llamada. Las claves de API se utilizan para realizar un seguimiento y un control sobre la forma la que se utiliza la API, por ejemplo, para impedir un uso malintencionado o abusivo de la misma. La clave de API a menudo actúa a la vez como un identificador exclusivo y como una señal secreta para la autenticación, y habitualmente tiene un conjunto de acceso específico de la identidad asociado a la misma.
+{:shortdesc}
 
-## Claves de API de plataforma
+Para ver sus claves de API, vaya a **Gestionar** > **Acceso (IAM)** y seleccione **Usuarios**. A continuación, seleccione un usuario para ir a la sección de claves de API que se incluye en la página de detalles de usuario.
 
-Las claves de API de plataforma se crean en la IU de Identity and Access Management y se pueden asociar con lo siguiente:
+## {{site.data.keyword.cloud_notm}} Claves de API
+{: #ibm-cloud-api-keys}
 
-* Usuario de una cuenta
-* ID de servicio creados en una cuenta
-
-Puede crear y utilizar claves de API que están vinculadas a su cuenta. Un usuario federado o no federado puede crear una clave de API para utilizarla en la CLI o como parte de la automatización para iniciar sesión con su identidad de usuario. Para obtener más información sobre la utilización de una clave de API asociada con su identidad de usuario, consulte [Gestión de las claves de API de usuario](userid_keys.html).
+Las claves de API de {{site.data.keyword.cloud}} se crean desde la página Detalles de usuario en la consola de {{site.data.keyword.cloud_notm}} para un usuario y están asociadas con la identidad del usuario. Solo el usuario con el que está asociada la clave de API puede crearla y suprimirla. Puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} en la interfaz de línea de mandatos (CLI) o como parte de la automatización para iniciar una sesión como su identidad de usuario. También puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} para acceder a las API de infraestructura clásica. Para obtener más información sobre la utilización de una clave de API asociada con su identidad de usuario, consulte [Gestión de las claves de API de usuario](userid_keys.html).
 
 También puede utilizar las claves de API asociadas con los ID de servicio que cree. Los ID de servicio se utilizan para conectar una aplicación dentro o fuera de {{site.data.keyword.Bluemix_notm}} con un servicio de {{site.data.keyword.Bluemix_notm}}. Para obtener más información sobre cómo crear claves de API asociadas con un ID de servicio, consulte [Gestión de claves de API de ID de servicio](serviceid_keys.html).
 
-## Otras claves de API de {{site.data.keyword.Bluemix_notm}}
+## Otros tipos de claves de API
 
-Además de la plataforma claves de API, hay un par de otros tipos de claves de API que puede utilizar en {{site.data.keyword.Bluemix_notm}}:
+Además de sus claves de API de {{site.data.keyword.cloud_notm}}, hay un par de tipos de claves de API disponibles que puede utilizar:
 
-* Claves de API de infraestructura
-* Claves de API específicas de servicio
+* Claves de API de la infraestructura clásica
+* Claves de API específicas del servicio
 
-Las claves de API de infraestructura se crean en el portal de clientes, se asocian con el ID de usuario de cuenta de SoftLayer y se utilizan al acceder a las API para servicios de infraestructura.
+Las claves de API de la infraestructura clásica se utilizan para llamar a las API para los servicios de la infraestructura clásica. Las claves de API de la infraestructura clásica se deben crear de una en una. Puede crear una clave de API de la infraestructura clásica para un usuario desde la página de detalles de usuario.
 
-Algunos de los servicios de {{site.data.keyword.Bluemix_notm}} pueden ofrecer una clave de API para utilizarla al interactuar con el servicio. Por ejemplo, si va a visualizar los detalles de servicio de un servicio Watson desde el panel de control, puede crear una credencial que incluya una clave de API y un secreto que sean específicos solo para dicho servicio, en el separador Credenciales de servicio.
+También puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} para acceder a las API de la infraestructura clásica.
+{: tip}
 
+Es posible que algunos de los servicios de {{site.data.keyword.Bluemix_notm}} ofrezcan una clave de API para que la utilice para trabajar con el servicio. Por ejemplo, si está visualizando los detalles de la oferta de un servicio Watson desde la lista de recursos, puede crear una credencial, que incluya una clave de API y un secreto que son específicos solo para dicho servicio, en la página Credenciales de servicio.

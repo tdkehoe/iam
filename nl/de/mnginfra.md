@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -12,33 +12,33 @@ lastupdated: "2018-05-02"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:deprecated: .deprecated}
 
-# Infrastrukturzugriff
+# Zugriff auf die klassische Infrastruktur verwalten
+{: #mngclassicinfra}
 
-In der ursprünglichen Kontoeinladung legen Sie möglicherweise bestimmte Anfangsberechtigungen für Ihre Benutzer fest. Sie können die Berechtigungen für die Infrastruktur aktualisieren oder Gerätezugriff über die Infrastrukturoption an der Konsole jederzeit hinzufügen. Um auf die Infrastrukturberechtigungen zuzugreifen, rufen Sie das Symbol **Menü** ![Menüsymbol](../icons/icon_hamburger.svg) auf und wählen Sie dann **Infrastruktur** aus. Rufen Sie dann die Optionen **Konto** &gt; **Benutzer** auf, um mit der Arbeit zu beginnen.
+Sie können jederzeit die Berechtigungen für Services der klassischen Infrastruktur aktualisieren oder Geräte- und VPN-Teilnetzzugriff für einen Benutzer hinzufügen. Wenn Sie auf die Berechtigungen für die klassische Infrastruktur zugreifen möchten, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. Wählen Sie dann den Namen des Benutzers aus, dessen Zugriffsberechtigungen aktualisiert werden sollen, und klicken Sie auf **Klassische Infrastruktur**.
+{:shortdesc}
 
-## Berechtigungen aktualisieren
+Ihnen muss die Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern zugewiesen sein und Sie müssen in der Benutzerhierarchie der klassischen Infrastruktur als 'Vorfahre' des Benutzers gelten. Da Kontoeigner uneingeschränkten Zugriff auf das Konto haben, werden ihnen die Berechtigungen auf der Seite nicht angezeigt. Einzelpersonen können ihre eigenen Berechtigungen nicht bearbeiten. Daher werden ihnen auf der Seite ebenfalls keine Berechtigungen angezeigt.
+{: note}
 
-1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Benutzer** aus.
-2. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriffsberechtigungen zuweisen wollen, das Menü **Aktionen** aus und klicken Sie dann auf **Zugriff zuweisen**.
-3. Wählen Sie die Option **Zugriff auf Ihr SoftLayer-Konto zuweisen** aus.
-4. Im Steuerungsportal können Sie die Profilinformationen des Benutzers sowie seine Portalberechtigungen und den Gerätezugriff aktualisieren.
-5. Fügen Sie Benutzerberechtigungen hinzu, indem Sie die entsprechenden Optionen für die Unterstützung, für Geräte, für das Netz sowie die Sicherheit, die Services und das Konto auf der Registerkarte für die **Portalberechtigungen** auswählen.
-6. Aktualisieren Sie den Gerätezugriff auf der Registerkarte **Gerätezugriff**.
+  1. Wählen Sie zum Aktualisieren der Berechtigungen für den Benutzer die Option **Berechtigungen** aus. Es stehen die folgenden vier Typen von Berechtigungen zur Auswahl: 'Konto', 'Geräte', 'Netz' und 'Services'. Wählen Sie einzeln aus jeder Kategorie Berechtigungen aus oder verwenden Sie eine Berechtigungssetoption, um eine Massenzuweisung des Zugriffs durchzuführen.
 
-## VPN-Zugriff aktualisieren
+    Die Berechtigungen für die Kontoverwaltung und den Support, die Sie Benutzern zuvor in Ihrem Konto zugewiesen haben, werden nun von Berechtigungen der klassischen Infrastruktur zu migrierten IAM-Zugriffsgruppen migriert. Weitere Informationen hierzu enthält der Abschnitt [Migrierte Berechtigungen der klassischen Infrastruktur](/docs/iam/infrastructureaccess.html#predefined).{: tip}
 
-1. Klicken Sie auf das Symbol **Menü** ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
-2. Rufen Sie **Konto** &gt; **Benutzer** auf.
-3. Wählen Sie im Menü **Aktionen** die Option **VPN-Zugriff bearbeiten** aus.
-4. Wählen Sie einen **VPN-Typ** aus.
-5. Geben Sie für den **Teilnetzzugriff** die Einstellung **Auto** oder **Manuell** an.
-6. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
+  2. Wenn Sie einem Benutzer Gerätezugriff erteilen wollen, wählen Sie **Geräte** aus und weisen Sie nach Bedarf den Zugriff für bestimmte Geräte und Gerätetypen zu.
 
-## Gerätezugriff hinzufügen
+    Die Zuweisung von Zugriff für Geräte erfolgt, nachdem der Benutzer zu dem Konto eingeladen wurde. Die Geräteberechtigungen gelten für die jeweiligen Geräte, die dem Benutzer zugewiesen sind. Sie können bestimmte Geräte aus der Liste auswählen oder Sie können Zugriff nach Gerätetyp zuweisen. Wenn Sie Zugriff nach Gerätetyp zuweisen, ist es sinnvoll, die Option **Späteren Zugriff aktivieren** zu verwenden. Damit ist sichergestellt, dass dem Benutzer jedes Mal, wenn neue Geräte eines bestimmten Typs hinzugefügt werden, automatisch Zugriff auf diese Geräte zugewiesen wird.
 
-1. Klicken Sie auf das Symbol **Menü** ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
-2. Rufen Sie **Konto** &gt; **Benutzer** auf.
-3. Klicken Sie für den Benutzer, dessen Zugriffsberechtigungen aktualisiert werden sollen, auf den Link in der Spalte **Gerätezugriff**. Der Link lautet entweder **Verwalten** oder er ist mit der Anzahl der Geräte gekennzeichnet, auf die der Benutzer Zugriff hat. Alternativ hierzu können Sie auch im Aktionsmenü auf die Option zum **Bearbeiten des Portalzugriffs** klicken. Daraufhin wird die Seite mit den Berechtigungen aufgerufen. Wählen Sie auf dieser Seite die Registerkarte **Gerätezugriff** aus.
-4. Wählen Sie die Geräte aus, auf die der Benutzer Zugriff haben soll.
-5. Klicken Sie auf die Option zum **Aktualisieren des Gerätezugriffs**.
+  3. Wenn Sie den Zugriff eines Benutzers auf VPN-Teilnetze aktualisieren wollen, wählen Sie **VPN-Teilnetze** aus.
+
+    Verwenden Sie die Option **Automatische Zuweisung**, um festzulegen, wie der Benutzer auf der Grundlage seines Gerätezugriffs Zugriff auf VPN-Teilnetze erhält. Wenn diese Option mit 'Ein' aktiviert ist, wird dem Benutzer für die Geräte, auf die er bereits Zugriff hat, automatisch Zugriff auf alle Teilnetze zugewiesen. Wenn Sie Teilnetze lieber manuell aus der Liste auswählen wollen, können Sie diese Option mit 'Aus' inaktivieren.
+    {: tip}
+
+    Damit der Zugriff auf VPN-Teilnetze bereitgestellt werden kann, muss dem Benutzer bereits Zugriff auf ein oder mehrere Geräte zugewiesen sein. Wenn der Benutzer über keinerlei Zugriff auf Geräte verfügt, stehen keine Teilnetze für die Auswahl zur Verfügung. Mithilfe der Option **VPN-Typ** können definieren, auf welchen Typ von VPN-Teilnetzen der Benutzer Zugriff erhalten soll. Wenn Sie **Ohne** auswählen, kann kein VPN-Zugriff zugewiesen werden.
+
+    Die Option 'PPTP' ist veraltet. Wenn bei Ihnen diese Option festgelegt ist und Sie sie abwählen, ist sie daher nicht mehr verfügbar.
+    {: deprecated}

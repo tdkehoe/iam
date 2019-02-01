@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
 Gestión de acceso e identidades
 
     {: .navgroup id="learn"}
@@ -17,25 +17,43 @@ Gestión de acceso e identidades
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-        
+    
     bp_access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
-    mfa.md
-    iamuserinv.md
 
     {: .topicgroup}
-    Gestión de usuarios y acceso
-        iamusermanage.md
-        groups.md
-        accessgroup_rules.md
+    Adición de usuarios a su cuenta
+        iamuserinv.md
+        remove-users.md
+        
+    {: .topicgroup}
+    Administración de usuarios        
+        parentuser.md
+        update_status.md
+        specific_ip.md
+        vpn_password.md
+        user_login.md
+     
+    {: .topicgroup}
+    Gestión del acceso
         mngiam.md
         mngcf.md
-        mnginfra.md
-
+        mnginfra.md        
+        groups.md
+        accessgroup_rules.md
+        userlist.md
+        
+    {: .topicgroup}
+    Autenticación de multifactores    
+        mfatypes.md
+        mfa.md
+        totp.md
+        external_mfa.md
+        securityquestions.md        
 
     {: .topicgroup}
     Trabajo con servicios
@@ -44,18 +62,21 @@ Gestión de acceso e identidades
         authorizations.md
 
     {: .topicgroup}
-    Claves de API
+    Claves de API y señales
         apikeys.md
         userid_keys.md
         serviceid_keys.md
+        classic_infra_keys.md
         apikey_iamtoken.md
+        iam_apikeys_services.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     iam_limits.md
     monitoring.md
+    userstatus.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="help"}
     faqs.md
     {: .navgroup-end}

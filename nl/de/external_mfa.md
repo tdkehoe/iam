@@ -1,0 +1,73 @@
+---
+
+copyright:
+
+  years: 2018
+
+lastupdated: "2018-11-30"
+
+---
+
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:new_window: target="_blank"}
+{:tip: .tip}
+
+# Externe Authentifizierung mit Mehrfaktorauthentifizierung (MFA) für einen Benutzer bestellen
+{: #external}
+
+Als Administrator mit dem entsprechenden Zugriff können Sie die externe Authentifizierung bestellen und die Option der Mehrfaktorauthentifizierung (MFA) für die Anmeldung eines Benutzers aktivieren. Für die Optionen der externen Authentifizierung wird Ihnen eine monatliche Gebühr berechnet. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist im Gegensatz zur ID-basierten Mehrfaktorauthentifizierung nur für ein Konto erforderlich, für das die Einstellung aktiviert ist. Weitere Informationen finden Sie in [Arten der Mehrfaktorauthentifizierung](/docs/iam/mfatypes.html#types).
+{:shortdesc}
+
+## Externe Authentifizierung bestellen
+{: #ordering}
+
+Wenn Sie über eine der folgenden Zugriffsberechtigungen verfügen, können Sie die externe Authentifizierung für einen Benutzer bestellen:
+
+* Rolle 'Editor' oder höher für den Benutzermanagementservice
+* Sie gelten in der Hierarchie der klassischen Infrastruktur als 'Vorfahre' eines Benutzers und Ihnen ist für die klassische Infrastruktur die Berechtigung zum Verwalten von Benutzern zugewiesen
+
+
+Führen Sie die folgenden Schritte aus, um die externe Authentifizierung zu bestellen:
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
+2. Wählen Sie einen Benutzer aus der Liste aus.
+3. Wählen Sie auf der Seite **Benutzerdetails** im Abschnitt **Anmeldung des Benutzers verwalten** die Option **Externe Authentifizierung bestellen** aus.
+4. Wählen Sie **Symantec Identity Protection** oder **Telefongestützter Schutz personenbezogener Daten** aus.
+    * Für die Authentifizierung mit Symantec muss der Benutzer die App [Symantec VIP](https://vip.symantec.com/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg) herunterladen und eine Berechtigungsnachweis-ID anfordern, um mit dem Bestellablauf fortfahren zu können.
+    * Für die telefongestützte Authentifizierung können Sie mit der Bestellung fortfahren, Ihr Benutzer muss jedoch zuerst seine [Konfiguration einrichten](/docs/account/login_settings.html#third-party-MFA), bevor Sie die Option aktivieren können.
+5. Gehen Sie entsprechend den Eingabeaufforderungen für die von Ihnen getroffene Auswahl vor und überprüfen Sie den Preis und die Bedingungen, bevor Sie die Bestellung aufgeben.
+6. Klicken Sie auf **Bestellen**, um Ihre Auswahl abzuschließen.
+
+Nachdem die Bestellung der Symantec-Authentifizierung erfolgt ist, können Sie auf der Seite 'Benutzerdetails' die Option für den Benutzer aktivieren. Nachdem die telefongestützte Authentifizierung bestellt und vom Benutzer konfiguriert worden ist, können Sie auf der Seite 'Benutzerdetails' die Option für den Benutzer aktivieren.
+
+## Optionen für die externe Authentifizierung inaktivieren
+{: #disable}
+
+Sie können die MFA mit Symantec bzw. die telefongestützte MFA für einen Benutzer jederzeit inaktivieren.
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
+2. Wählen Sie einen Benutzer aus der Liste aus.
+3. Legen Sie auf der Seite **Benutzerdetails** im Abschnitt **Anmeldung des Benutzers verwalten** für die Option **Symantec-Authentifizierung** bzw. **Telefongestützte Authentifizierung** den Wert 'Aus' fest.
+
+## Optionen für die externe Authentifizierung stornieren
+{: #cancel}
+
+Sofern Sie über die richtige Zugriffsberechtigung verfügen, können Sie Ihre Bestellung für die externe Authentifizierung zu jedem beliebigen Zeitpunkt stornieren. Dabei können Sie frei entscheiden, ob Sie die sofortige Stornierung ohne Rückerstattung wünschen oder ob Sie die Option ein Jahr nach Ablauf eines Jahres ab dem Bestellzeitpunkt stornieren wollen.
+
+Um eine Bestellung für die externe Authentifizierung stornieren zu können, müssen Sie ein Kontoeigner sein oder über alle die folgenden Zugriffsberechtigungen verfügen:
+
+* Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern
+* Berechtigung der klassischen Infrastruktur zum Stornieren von Services
+* Rolle des Administrators für den Kontoverwaltungsservice von Support Center oder migrierte Berechtigungen der klassischen Infrastruktur zum Anzeigen, Bearbeiten und Hinzufügen von Tickets, die in den [Zugriffsgruppen für migrierte Berechtigungen](/docs/iam/infrastructureaccess.html#predefined) nicht verfügbar sind.
+
+
+
+Führen Sie die folgenden Schritte aus, um die Bestellung der externen Authentifizierung zu stornieren:
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
+2. Wählen Sie einen Benutzer aus der Liste aus.
+3. Klicken Sie auf der Seite **Benutzerdetails** im Abschnitt **Anmeldung des Benutzers verwalten** je nach der von Ihnen bestellten Authentifizierungsoption für die Zeile **Symantec-Authentifizierung** oder **Telefongestützte Authentifizierung** auf **Löschen** ![Symbol 'Löschen'](../icons/icon_trash.svg).
+4. Wählen Sie aus, zu welchem Zeitpunkt die Option entfernt werden soll.
+5. Klicken Sie auf **Entfernen**.

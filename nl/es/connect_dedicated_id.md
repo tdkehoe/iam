@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-05-22"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -19,20 +19,20 @@ lastupdated: "2018-05-22"
 # Conexión de un ID dedicado a su IBMid público
 {: #connect_dedicated_id}
 
-Para iniciar sesión en una nube dedicada en la que el servicio IAM público está disponible, debe iniciar sesión en la CLI de {{site.data.keyword.Bluemix_notm}} con el IBMid público en lugar del ID dedicado.
-
+Para iniciar sesión en una nube dedicada en la que el servicio IAM público está disponible, la CLI de {{site.data.keyword.Bluemix_notm}} le solicita que inicie la sesión con el IBMid público en lugar de con el ID dedicado.
+{:shortdesc}
 
 ```
   $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
   Punto final de la API: https://api.{dedicated_env}.bluemix.net
 
   El servicio de señal de IAM público está disponible en el entorno dedicado.
-  Inicie sesión con su IBMid público, o utilice '--no-iam' para iniciar sesión sólo como un usuario dedicado.
+  Inicie sesión con su IBMid público, o utilice '--no-iam' para iniciar sesión solo como un usuario dedicado.
 
   Correo electrónico>
 ```
 
-Si el ID dedicado ya está conectado al IBMid público, se autentica e inicia sesión:
+Si el ID dedicado ya se ha conectado al IBMid público, se autenticará y se iniciará la sesión:
 
 ```
   Autenticando...
@@ -41,10 +41,10 @@ Si el ID dedicado ya está conectado al IBMid público, se autentica e inicia se
   Conectado con el usuario dedicado my_dedicated_id
 ```
 
-Sin embargo, si el ID dedicado ya no está conectado al IBMid público, se le solicitará que se conecte manualmente al IBMid público:
+Sin embargo, si el ID dedicado no se ha conectado con el IBMid público, se le solicitará que se conecte manualmente al IBMid público:
 
 ```
-  Está registrándose con IBMid no asociado con ningún usuario dedicado.
+  Está registrándose con IBMid que no está asociado con ningún usuario dedicado.
   Para configurar la conexión, especifique las credenciales del usuario dedicado.
 
   Elija un tipo de credencial:

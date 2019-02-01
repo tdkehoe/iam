@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2018
-lastupdated: "2018-10-30"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -12,42 +12,54 @@ lastupdated: "2018-10-30"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
 
-# Benutzer einladen und Benutzern Zugriff zuweisen
+# Benutzer einladen
 {: #iamuserinv}
 
-Zum Einladen von Benutzern und Verwalten ausstehender Einladungen müssen Sie entweder ein Kontoeigner oder ein Organisationsmanager sein oder über die Infrastructure-Berechtigungen zum Hinzufügen von Benutzern verfügen. Sie können Benutzer einladen, Einladungen abbrechen und anstehende Einladungen erneut an eingeladene Benutzer senden. Darüber hinaus können Sie einen einzelnen Benutzer oder mehrere Benutzer gleichzeitig einladen.  
+Sie können Benutzer einladen, Einladungen abbrechen und anstehende Einladungen erneut an eingeladene Benutzer senden. Darüber hinaus können Sie einen einzelnen Benutzer oder mehrere Benutzer gleichzeitig einladen.    
 {:shortdesc}
 
-## Benutzer einladen
+Zum Einladen von Benutzern und Verwalten ausstehender Einladungen müssen Sie entweder ein Kontoeigner, ein Organisationsmanager oder ein Benutzer mit einer IAM-Zugriffsrichtlinie mit der Rolle 'Editor' oder höher für den Benutzermanagementservice sein oder Sie müssen über Berechtigungen für die klassische Infrastruktur zum Hinzufügen von Benutzern verfügen.
 
-Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen in Ihrem Konto zu verwalten: 
+## Einladung einrichten
+{: #invitations}
 
-1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und dann auf **Benutzer**. Die Seite 'Benutzer' enthält eine Liste der Benutzer mit den zugehörigen E-Mail-Adressen und dem Status des aktuell ausgewählten Kontos.
+Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen in Ihrem Konto zu verwalten:
+
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
 2. Klicken Sie auf **Benutzer einladen**.
 3. Geben Sie die E-Mail-Adresse des Benutzers an. Wenn Sie mehrere Benutzer mit einer einzigen Einladung einladen, dann wird diesen Benutzern der gleiche Zugriff erteilt.
-4. Fügen Sie eine oder mehrere der von Ihnen verwalteten Zugriffsoptionen hinzu. Sie müssen mindestens eine Zugriffsoption zuweisen. Für alle weiteren Zugriffsoptionen, die Sie nicht hinzufügen und konfigurieren, wird der Standardwert *Kein Zugriff* zugewiesen. Abhängig von den Optionen, zu deren Verwaltung Sie berechtigt sind, zeigt das System eine der folgenden Zugriffsoptionen oder alle folgenden Zugriffsoptionen an: **Services**, **Cloud Foundry-Zugriff**, **{{site.data.keyword.Bluemix_notm}}-Infrastructure-Zugriff**. Weitere Informationen zu diesem Thema erhalten Sie in [Benutzerzugriff zuweisen](/docs/iam/iamuserinv.html#assignaccess).
+4. Fügen Sie eine oder mehrere der von Ihnen verwalteten Zugriffsoptionen hinzu. Sie müssen mindestens eine Zugriffsoption zuweisen. Für alle weiteren Zugriffsoptionen, die Sie nicht hinzufügen und konfigurieren, wird der Standardwert **Kein Zugriff** zugewiesen. Abhängig von den Optionen, zu deren Verwaltung Sie berechtigt sind, zeigt das System eine oder alle der folgenden Zugriffsoptionen an:
+
+  * **Services**
+  * **Cloud Foundry-Zugriff**
+  * **Zugriff auf die klassische Infrastruktur**.
+
+  Weitere Informationen zu diesem Thema erhalten Sie in [Benutzerzugriff zuweisen](/docs/iam/iamuserinv.html#assignaccess).
 
 Wenn Sie entscheiden, dass ein Benutzer keinen Zugriff benötigt, können Sie eine Einladung für beliebige Benutzer abbrechen, die mit dem Status **Verarbeitung läuft** (Processing) oder **Anstehend** (Pending) in der Spalte **Status** angezeigt werden. Wenn ein eingeladener Benutzer keine Einladung empfangen hat, können Sie die Einladung an jeden Benutzer mit dem Status **Anstehend** erneut senden.
 
-Wenn Sie Benutzer über die CLI einladen möchten, verwenden Sie den Befehl [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
+Wenn Sie Benutzer über die Befehlszeilenschnittstelle (Command-Line Interface, CLI) einladen möchten, verwenden Sie den Befehl [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
 {: tip}
 
-## Benutzerzugriff zuweisen
+## Benutzerzugriff über eine Einladung zuweisen
 {: #assignaccess}
 
-Bei der Einladung weisen Sie den Benutzern Zugriffsberechtigungen zu. Dazu führen Sie eine Zuweisung von Cloud IAM-Richtlinien, Cloud Foundry-Zugriffsberechtigungen und Infrastructure-Berechtigungen durch. Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, können Sie Benutzer aus dem gesamten Konto, den Ressourcengruppen, Organisationen, Bereichen, Serviceinstanzen und der Infrastruktur einladen und diesen Benutzern Zugriffsberechtigungen erteilen. In den folgenden Abschnitten werden die drei Arten von Zugriff beschrieben, die einem eingeladenen Benutzer zugewiesen werden können.
+Wenn Sie Benutzer einladen, weisen Sie ihnen Zugriffsberechtigungen zu. Dazu führen Sie eine Zuweisung von {{site.data.keyword.Bluemix}} IAM-Richtlinien, Cloud Foundry-Zugriffsrechten und Berechtigungen für die klassische Infrastruktur durch. Abhängig von den Zugriffsoptionen, zu deren Verwaltung Sie berechtigt sind, können Sie Benutzer aus dem gesamten Konto, den Ressourcengruppen, Organisationen, Bereichen, Serviceinstanzen und der klassischen Infrastruktur einladen und diesen Benutzern Zugriffsberechtigungen erteilen. In den folgenden Abschnitten werden die drei Arten von Zugriff beschrieben, die Sie einem eingeladenen Benutzer zuweisen können.
 
 ### Services
 
-Sie können die Zugriffsberechtigungen erteilen, indem Sie eine Cloud IAM-Ausgangszugriffsrichtlinie erstellen, wenn Sie einen neuen Benutzer einladen. In diesem Abschnitt können Sie einem Benutzer den Zugriff auf die Services in einer Ressourcengruppe mit Zugriff auf die Ressourcengruppe oder eine einzelne Ressource im Konto erteilen. Nachdem der Benutzer die Einladung akzeptiert hat, können Sie weitere Zugriffsberechtigungen zuweisen. Detaillierte Informationen zum Bearbeiten von Richtlinien für das Hinzufügen zusätzlicher Rollen, zum Zuweisen weiterer Zugriffsberechtigungen oder zum Entfernen einer Richtlinie für einen Benutzer finden Sie in [IAM-Zugriff verwalten](/docs/iam/mngiam.html#iammanidaccser).
+Sie können Zugriff erteilen, indem Sie eine Ausgangsrichtlinie für den Zugriff auf {{site.data.keyword.Bluemix_notm}} IAM erstellen, wenn Sie einen neuen Benutzer einladen. Im Abschnitt 'Services' können Sie einem Benutzer den Zugriff auf Kontoverwaltungsservices, auf Services in einer Ressourcengruppe mit Zugriff zur Verwaltung der Ressourcengruppe oder auf eine einzelne Ressource im Konto erteilen.
 
-Abhängig von dem Service, den Sie bei der Zuweisung der Richtlinie ausgewählt haben, werden möglicherweise nicht alle in den folgenden Arbeitsschritten beschriebenen Felder angezeigt.
-{: tip}
+Nachdem der Benutzer die Einladung akzeptiert hat, können Sie weitere Zugriffsberechtigungen zuweisen. Detaillierte Informationen zum Bearbeiten von Richtlinien für das Hinzufügen zusätzlicher Rollen, zum Zuweisen weiterer Zugriffsberechtigungen oder zum Entfernen einer Richtlinie für einen Benutzer finden Sie in [Zugriff auf Ressourcen verwalten](/docs/iam/mngiam.html#iammanidaccser).
+
+Abhängig von dem Service, den Sie beim Zuweisen der Richtlinie ausgewählt haben, werden möglicherweise nicht alle in den folgenden Arbeitsschritten beschriebenen Felder angezeigt.
+{: note}
 
 #### Zugriff auf Kontoverwaltungsservices
 
-Die Bereitstellung von Benutzerzugriff auf die Kontoverwaltungsservices bietet Ihnen die Möglichkeit, einige Ihrer Funktionen als Kontoeigner zu delegieren. So können Sie z. B. die Fähigkeit delegieren, Abrechnung und Nutzung einzusehen, Benutzer einzuladen und zu entfernen und Zugriffsgruppen oder Service-IDs zu verwalten. Sie können Zugriff auf alle Kontoverwaltungsservices oder nur auf einen einzigen bereitstellen.
+Wenn Sie einen Teil Ihrer Verantwortlichkeiten als Kontoeigner delegieren möchten, können Sie einem Benutzer Zugriff auf Kontoverwaltungsservices erteilen. So können Sie z. B. die Fähigkeit delegieren, Abrechnung und Nutzung einzusehen, Benutzer einzuladen und zu entfernen und Zugriffsgruppen oder Service-IDs zu verwalten. Sie können Zugriff auf alle Kontoverwaltungsservices oder nur auf einen einzigen bereitstellen.
 
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services**.
 2. Wählen Sie diese Option aus, um Zugriff auf **Kontoverwaltungsservices** zu erteilen.
@@ -61,10 +73,9 @@ Sie können Zugriff auf alle Services in einer Ressourcengruppe oder aber auf ei
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services**.
 2. Wählen Sie diese Option aus, um den Zugriff auf die Ressourcen in einer **Ressourcengruppe** zuzuweisen.
 3. Wählen Sie eine Ressourcengruppe aus.
-4. Wählen Sie eine Rolle für das Feld **Zugriff für eine Ressourcengruppe zuweisen** aus, um dem Benutzer die Anzeige der Ressourcengruppe im Dashboard, das Bearbeiten des Ressourcengruppennamens oder das Verwalten des Benutzerzugriffs auf die Gruppe zu ermöglichen. Sie können **Kein Zugriff** auswählen, wenn der Benutzer ausschließlich Zugriff auf die Ressource erhalten soll, die Sie angeben, nicht jedoch auf die Gruppe, in der die Ressource enthalten ist.
-5. Wählen Sie einen Service in der Ressourcengruppe aus, oder wählen Sie aus, dass der Zugriff auf alle Services in der ausgewählten Gruppe bereitgestellt werden soll. 
+4. Wählen Sie eine Rolle für das Feld **Zugriff für eine Ressourcengruppe zuweisen** aus, um dem Benutzer die Anzeige der Ressourcengruppe in der Ressourcenliste, das Bearbeiten des Ressourcengruppennamens oder das Verwalten des Benutzerzugriffs auf die Gruppe zu ermöglichen. Sie können **Kein Zugriff** auswählen, wenn der Benutzer ausschließlich auf die von Ihnen angegebene Ressource Zugriff erhalten soll, jedoch nicht auf die Gruppe, in der die Ressource enthalten ist.
+5. Wählen Sie einen Service in der Ressourcengruppe aus oder wählen Sie aus, dass der Zugriff auf alle Services in der ausgewählten Gruppe bereitgestellt werden soll.
 6. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen. Dieser Zugriff gilt nur für die Ressourcen, die Sie für die Richtlinie ausgewählt haben. Der Zugriff auf den Container selbst, der die Ressourcengruppe darstellt, wird hingegen nicht erteilt.
-
 
 #### Ressourcenzugriff
 
@@ -73,14 +84,14 @@ Sie können Zugriffsberechtigungen für eine einzelne Ressource innerhalb Ihres 
 1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Services**.
 2. Wählen Sie die Option aus, um den Zugriff auf eine **Ressource** zuzuweisen.
 3. Wählen Sie einen Service aus.
-4. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
+4. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
 5. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-6. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
-    * **Ressourcentyp**: Geben Sie **Bucket** ein.
+6. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen.
+    * **Ressourcentyp**: Geben Sie `Bucket` ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 7. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
 
-Weiterführende Informationen zu den Rollen bei der Zuweisung von Zugriffsberechtigungen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html#iamusermanrol).
+Weitere Informationen zu den Rollen, die bei der Zuweisung von Zugriff verwendet werden, finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam/users_roles.html#iamusermanrol).
 
 ### Cloud Foundry-Zugriff
 
@@ -95,33 +106,28 @@ Wenn Sie neue Benutzer einladen, können Sie den Benutzer zu einer Organisation 
 7. Wählen Sie eine Bereichsrolle aus, um die Zugriffsebene für die ausgewählten Bereiche zu definieren.
 8. Optional: Wählen Sie **Bereichsrolle hinzufügen** aus, um eine zusätzliche Rolle anzugeben.
 
-Weiterführende Informationen zu den Rollen finden Sie in [Cloud Foundry-Rollen](/docs/iam/cfaccess.html#cfroles).
+Weitere Informationen zu den Rollen, die bei der Zuweisung von Zugriff verwendet werden, finden Sie im Abschnitt zu [Cloud Foundry-Rollen](/docs/iam/cfaccess.html#cfroles).
 
-Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) hinzufügen, müssen jedoch die Benutzerschnittstelle auch zur Erteilung anderer Zugriffsrechte oder Berechtigungen verwenden.
+Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) hinzufügen, aber zum Zuweisen anderer Zugriffsrechte oder Berechtigungen müssen Sie die Konsole verwenden.
 {: tip}
 
-### Zugriff auf Infrastruktur für {{site.data.keyword.BluSoftlayer_notm}}
+### Zugriff auf die klassische Infrastruktur
 
-Die zugewiesenen Berechtigungen werden automatisch auf die Untergruppe von Berechtigungen eingeschränkt, die Sie haben. Weitere Informationen zu den Berechtigungssets finden Sie in [Infrastructure-Berechtigungen](/docs/iam/infrastructureaccess.html#infrapermission).
+Die zugewiesenen Berechtigungen sind automatisch auf die Untergruppe von Berechtigungen eingeschränkt, über die Sie verfügen. Sie sind damit jedem von Ihnen eingeladenen Benutzer übergeordnet.
 
-1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Infrastructure-Zugriff**.
-2. Wählen Sie ein Berechtigungsset aus, um den Zugriffsbereich zu definieren.
+1. Erweitern Sie in der Anzeige **Benutzer einladen** den Abschnitt **Zugriff auf klassische Infrastruktur**.
+2. Weisen Sie ein Berechtigungsset aus, um eine Massenzuweisung von Berechtigungen durchzuführen.
 
-Der Zugriff auf Geräte wird separat erteilt, nachdem der Benutzer hinzugefügt wurde. Dazu navigieren Sie zur Option **Infrastruktur** an der Konsole.
-{: tip}
+Der Zugriff auf Geräte wird separat erteilt, nachdem ein Benutzer hinzugefügt wurde. Rufen Sie dazu in der Konsole für den entsprechenden Benutzer die Zugriffsoption für die **Klassische Infrastruktur** auf.
+{: note}
 
-Informationen zum Konfigurieren des Zugriffs für Benutzer, nachdem sie zu Ihrem Konto hinzugefügt wurden, finden Sie in [Infrastructure-Zugriff verwalten](/docs/iam/mnginfra.html#managing-infrastructure-access).
+Informationen zum Konfigurieren des Zugriffs für Benutzer, nachdem diese zu Ihrem Konto hinzugefügt wurden, finden Sie in [Zugriff auf die klassische Infrastruktur verwalten](/docs/iam/mnginfra.html#managing-infrastructure-access).
 
-## Reine VPN-Benutzer hinzufügen
+## Benutzer mit Status 'Nur VPN' hinzufügen
+{: #add-vpn-only}
 
-Als Kontoeigner eines verknüpften Kontos können Sie reine VPN-Benutzer hinzufügen.
+Als der Kontoeigner oder als Benutzer mit der Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern können Sie Benutzer mit dem Status 'Nur VPN' hinzufügen.
 
-1. Klicken Sie auf das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) und wählen Sie dann **Infrastruktur** aus.
-2. Rufen Sie **Konto** &gt; **Benutzer** auf.
-3. Klicken Sie auf die Option zum **Hinzufügen reiner VPN-Benutzer**.
-4. Geben Sie die personenbezogenen Daten des Benutzers ein. 
-5. Klicken Sie auf **Benutzer hinzufügen**.
-6. Legen Sie die Portalberechtigungen für den Benutzer fest.
-7. Klicken Sie auf die Option zum **Hinzufügen von Portalberechtigungen**, um die Berechtigungen zu speichern.
-8. Legen Sie den Gerätezugriff für den Benutzer fest.
-9. Klicken Sie auf die Option zum **Aktualisieren des Gerätezugriffs**, um die Daten zu speichern und den Zugriff zuzuweisen.
+1. Klicken Sie auf der Seite **Benutzer** auf **Benutzer mit Status 'Nur VPN' hinzufügen**.
+3. Geben Sie die personenbezogenen Daten des Benutzers ein.
+4. Klicken Sie auf **Speichern**.

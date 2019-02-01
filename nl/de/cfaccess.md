@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-04-12"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -12,11 +12,14 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Cloud Foundry-Zugriff
 {: #cfaccess}
 
 Derzeit können nicht alle Services unter Verwendung von Cloud IAM verwaltet werden. Sie können Cloud Foundry-Rollen weiterhin für den Zugriff auf diese Serviceinstanzen verwenden. Benutzer werden zu der Organisation und zu dem Bereich hinzugefügt, zu der bzw. dem die Instanz gehört. Dazu wird eine Cloud Foundry-Rolle zugewiesen. 
+{:shortdesc}
 
 
 ![Zugriff mithilfe von Cloud Foundry-Organisationen und -Bereichen in einem Konto](images/cf-diagram.svg "Informationen zum Zugriff in einem Konto mithilfe von Cloud Foundry-Organisationen, -Bereichen und -Rollen")
@@ -45,4 +48,5 @@ Die folgenden Rollen können auf Bereichsebene zugeordnet werden:
 |Auditor | Bereichsauditoren haben Lesezugriff auf alle Informationen zu Bereichen, beispielsweise auf Informationen zur Anzahl der Instanzen, zu Servicebindungen und zur Ressourcennutzung für jede Anwendung im Bereich. |
 {:caption="Tabelle 2. Bereichsrollen und Berechtigungen" caption-side="top"}
 
-**Hinweis:** Benutzer, denen eine Bereichsmanager- oder Bereichsentwicklerrolle zugeordnet wurde, können auf die Umgebungsvariable VCAP_SERVICES zugreifen. Ein Benutzer, dem die Auditorrolle zugeordnet wurde, kann jedoch nicht auf VCAP_SERVICES zugreifen.
+Benutzer, denen die Rolle des Bereichsmanagers oder Bereichsentwicklers zugewiesen wurde, können auf die Umgebungsvariable VCAP_SERVICES zugreifen. Ein Benutzer, dem die Auditorrolle zugewiesen ist, hat jedoch keinen Zugriff auf VCAP_SERVICES.
+{: note}

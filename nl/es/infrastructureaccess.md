@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -13,26 +13,41 @@ lastupdated: "2018-05-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Permisos de infraestructura
+# Permisos de la infraestructura clásica
 {: #infrapermission}
 
-Puede establecer los siguientes conjuntos de permisos iniciales al invitar a un usuario:
+Cuando invita a un usuario a su cuenta, puede seleccionar entre tres conjuntos de permisos de la infraestructura clásica que asignan acceso masivo: Solo vista, Usuario básico, Superusuario.
+{:shortdesc}
 
-| Conjunto de permisos | Descripción de acciones |
-|---------------------------|------------------------|
-|Solo visualización | Los usuarios con este permiso solo pueden ver los elementos del sistema. Por ejemplo, los usuarios pueden ver incidencias, detalles de servidor virtual y hardware, licencias, detalles de ancho de banda y el resumen de la cuenta que incluye facturas y pagos. |
-|Usuario básico | Los usuarios con este permiso pueden ver, buscar, añadir y editar incidencias, gestionar dispositivos a los que pueden acceder, añadir direcciones de IP, gestionar servicios de entrega de correo electrónico, añadir, editar y visualizar registros DNS y añadir nuevos usuarios con acceso a la infraestructura así como gestionar notificaciones. |
-|Superusuario | Los usuarios con este permiso pueden completar todas las acciones disponibles en el sistema. |
-{:caption="Tabla 1. Permisos de infraestructura" caption-side="top"}
+Puede definir permisos adicionales después de que el usuario acepte la invitación. Por ejemplo, el conjunto inicial de permisos asignado en la invitación no otorga acceso a dispositivos. Por lo tanto, debe otorgar acceso a dispositivos después de que el usuario haya aceptado la invitación. Para obtener más información, consulte [Gestión de acceso de la infraestructura clásica](/docs/iam/mnginfra.html#mngclassicinfra).
 
-Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación. El conjunto inicial de permisos asignado en la invitación no otorga acceso a dispositivos. Por lo tanto, debe otorgar acceso de dispositivo en el portal de control cuando el usuario haya aceptado la invitación. 
-
-Cuando invita a alguien a la cuenta, solo usted y el usuario maestro de la cuenta de SoftLayer pueden ajustar los permisos del usuario. Si está asignando permisos y no es el usuario maestro, solo podrá asignar el nivel de permisos o un subconjunto de permisos que ya tenga asignados. Sin embargo, un usuario maestro puede actualizar los permisos de otros usuarios de la cuenta para que puedan tener cualquier nivel de acceso. 
-
-Vaya al icono de menú ![Icono de menú](../icons/icon_hamburger.svg) y seleccione **Infraestructura** para acceder al portal de control para trabajar con los permisos de usuario de la infraestructura. Al ir a **Cuenta** &gt; **Usuarios** se visualiza la lista de sus usuarios donde puede establecer el acceso de dispositivo y otros permisos de infraestructura. Para obtener más información acerca de la asignación de acceso, vaya a [Gestión de acceso a infraestructura](/docs/iam/mnginfra.html#managing-infrastructure-access).
+Cuando invita a alguien a la cuenta, solo usted, el propietario de la cuenta o un usuario con el permiso de la infraestructura clásica Gestionar usuario pueden ajustar los permisos del usuario. Si está asignando permisos y no es el propietario de la cuenta, solo podrá asignar el nivel de permisos o un subconjunto de permisos que ya tenga asignados. Un propietario de cuenta puede actualizar los permisos de otros usuarios de la cuenta para que puedan tener cualquier nivel de acceso.
 
 
+## Permisos migrados de la infraestructura clásica
+{: #predefined}
 
+Un conjunto de permisos de la infraestructura clásica para ver y gestionar información de facturación y para trabajar con casos de soporte se migran a grupos de acceso. A los usuarios de su cuenta a los que se asignó anteriormente estos permisos ahora se les asignará el grupo de acceso de permisos migrados correspondiente. Como resultado, los permisos de la infraestructura clásica se pueden gestionar directamente mediante políticas de acceso de IAM.
 
+Estos grupos de acceso especiales incluyen todas las políticas de IAM adecuadas para conservar el comportamiento original de los permisos de la infraestructura clásica. Por ejemplo, para que un usuario siga viendo todas las actualizaciones de todos los usuarios en un caso de soporte, los grupos de acceso de permisos migrados correspondientes a los permisos de la infraestructura clásica de creación de incidencias incluyen una política de IAM adicional en el servicio de gestión de usuarios con el rol de visor asignado. Para obtener más información, consulte [Acceso de usuario para trabajar con casos de soporte](/docs/get-support/support_access.html#access).
 
+Puede seguir gestionando estos permisos migrados de la infraestructura clásica para los usuarios directamente desde IAM añadiéndolos o eliminándolos desde los grupos de acceso de los permisos migrados. Las políticas que tienen estos grupos de acceso están bloqueadas para conservar el comportamiento de acceso de sus miembros. Para mantener la facilidad de uso para los usuarios más recientes de IAM, evite suprimir estos grupos de acceso.
 
+En la tabla siguiente se muestran los permisos migrados de la infraestructura clásica que ahora están disponibles mediante los grupos de acceso.
+
+| Nombre grupo acceso permisos migrados | Acciones permitidas |
+|----------|---------|
+| Ver resumen de cuenta | Ver la página de resumen de cuenta y facturas y pagos |
+| Obtener informe de conformidad | Solicitar informes de conformidad |
+| Editar perfil de la empresa | Editar información del perfil de la empresa |
+| Pagos de una sola vez | Realizar pagos de una sola vez en la cuenta del usuario |
+| Actualizar detalles de pagos | Actualizar la formación de pagos mensuales recurrentes |
+| Limitar restricción en caso de UE | Habilitar o inhabilitar la opción de soporte en UE que restringe los datos de casos de soporte a la Unión Europea  |
+| Añadir casos y ver pedidos | Crear casos de soporte y ver todos los pedidos.  |
+| Editar casos | Editar cualquier caso de soporte |
+| Buscar casos | Buscar todos los casos de soporte, siempre que también se tenga asignado el permiso para ver casos |
+| Ver casos | Ver todos los casos de soporte |
+{: caption="Tabla 1. Grupos de acceso predefinidos" caption-side="top"}
+
+Puede seguir gestionando los usuarios para los grupos de acceso. Sin embargo, probablemente encontrará útil crear nuevos grupos de acceso que incluyan una combinación de políticas de acceso para los [servicios de gestión de cuentas de IAM](/docs/iam/users_roles.html#platformrolestable2) para facilitar la asignación de acceso para tareas de gestión de cuentas y para trabajar con casos de soporte.
+{: tip}

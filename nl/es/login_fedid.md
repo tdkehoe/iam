@@ -6,7 +6,7 @@ copyright:
 
   years: 2015，2018
 
-lastupdated: "2018-08-02"
+lastupdated: "2018-07-30"
 
 ---
 
@@ -19,20 +19,20 @@ lastupdated: "2018-08-02"
 # Inicio de sesión con un ID federado
 {: #federated_id}
 
-Como usuario federado, puede iniciar una sesión en {{site.data.keyword.Bluemix}} desde la interfaz de línea de mandatos (CLI) mediante un código de acceso de una sola vez o una API clave. 
+Como usuario federado, puede iniciar una sesión en {{site.data.keyword.Bluemix}} desde la interfaz de línea de mandatos (CLI) mediante un código de acceso de un solo uso o una API clave. 
 {: shortdesc}
 
-## Utilización de un código de acceso de una sola vez
+## Utilización de un código de acceso de un solo uso
 {:onetime_passcode}
 
-Cuando utiliza la opción de código de acceso de una sola vez para iniciar sesión con un ID federado, debe especificar el parámetro de inicio de sesión único (SSO) para obtener un código de acceso de una sola vez, que especificará luego en el inicio de sesión. 
+Cuando utiliza la opción de código de acceso de un solo uso para iniciar sesión con un ID federado, debe especificar el parámetro de inicio de sesión único (SSO) para obtener un código de acceso de un solo uso, que especificará luego en el inicio de sesión. 
 
-Dado que un código de acceso de una sola vez recupera código de la consola de {{site.data.keyword.Bluemix_notm}}, hace que falle el uso de un ID federado en su script de automatización. Evite problemas utilizando la opción de la clave de API con un script automatizado. 
+Dado que un código de acceso de un solo uso recupera código de la consola de {{site.data.keyword.Bluemix_notm}}, hace que falle el uso de un ID federado en su script de automatización. Evite problemas utilizando la opción de la clave de API con un script automatizado. 
 {: tip}
 
 ### Desde la CLI de {{site.data.keyword.Bluemix_notm}}
 1. Especifique la opción `--sso` con el mandato `ibmcloud login`.
-2. Siga el URL en la solicitud para obtener un código de acceso de una sola vez.
+2. Siga el URL en la solicitud para obtener un código de acceso de un solo uso.
 3. Copie y pegue el valor del código de acceso en la CLI como su entrada.
     
   ``` 
@@ -47,7 +47,7 @@ Dado que un código de acceso de una sola vez recupera código de la consola de 
   
 ### Desde la CLI de Cloud Foundry
 1. Especifique la opción `--sso` con el mandato `cf login`. 
-2. Siga el URL en la solicitud para obtener un código de acceso de una sola vez. 
+2. Siga el URL en la solicitud para obtener un código de acceso de un solo uso. 
 3. Copie y pegue el valor del código de acceso en la CLI como su entrada. 
     
   ```
@@ -63,7 +63,7 @@ Dado que un código de acceso de una sola vez recupera código de la consola de 
 ## Utilización de la clave de API
 {:api_key}
 
-La clave de API necesaria es la clave de API de {{site.data.keyword.Bluemix_notm}} que ha utilizado para autenticarse con la plataforma de {{site.data.keyword.Bluemix_notm}}, no la clave de API de Softlayer ni la clave de API del servicio de {{site.data.keyword.Bluemix_notm}}.
+La clave de API necesaria es la clave de API de {{site.data.keyword.Bluemix_notm}} que ha utilizado para autenticarse con la plataforma de {{site.data.keyword.Bluemix_notm}}, no la clave de API de la infraestructura clásica ni la clave de API del servicio de {{site.data.keyword.Bluemix_notm}}.
 
 1. Cree una clave de API con el [mandato `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Utilice la opción `-f` para generar un archivo de claves de API en lugar de mostrar la clave en la ventana de mandatos:
 
@@ -90,7 +90,7 @@ La clave de API necesaria es la clave de API de {{site.data.keyword.Bluemix_notm
     
       ```
     
-    * Establece una variable de entorno. Además, también puede establecer una variable de entorno en el sistema. Por ejemplo, BLUEMIX_API_KEY=api_key_string, donde `api_key_string` es el valor personalizado de la clave de API. Después de establecer la variable de entorno, puede especificar `ibmcloud login` desde la CLI. 
+    * Establece una variable de entorno. Además, también puede establecer una variable de entorno en el sistema. Por ejemplo, IBMCLOUD_API_KEY=api_key_string, donde `api_key_string` es el valor personalizado de la clave de API. Después de establecer la variable de entorno, puede especificar `ibmcloud login` desde la CLI. 
   
   Para iniciar una sesión utilizando la CLI de Cloud Foundry, especifique `apikey` como el nombre de usuario y la serie de claves de API como la contraseña:
 

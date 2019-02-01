@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-05-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -13,26 +13,41 @@ lastupdated: "2018-05-02"
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-# Infrastructure-Berechtigungen
+# Berechtigungen für die klassische Infrastruktur
 {: #infrapermission}
 
-Sie können bei der Einladung eines Benutzers die folgenden Ausgangsberechtigungssets festlegen:
+Wenn Sie einen Benutzer zu Ihrem Konto einladen, können Sie zwischen drei Berechtigungssets für die klassische Infrastruktur wählen, mit denen eine Massenzuweisung des Zugriffs erfolgt: 'Nur anzeigen', 'Basisbenutzer' und 'Superuser'.
+{:shortdesc}
 
-| Festgelegte Berechtigung | Beschreibung von Aktionen |
-|---------------------------|------------------------|
-|Nur anzeigen | Benutzer mit dieser Berechtigung können nur Elemente im System anzeigen. Benutzer können beispielsweise Tickets, Details zu Hardware und virtuellen Servern, Lizenzen, Bandbreitendetails und die Kontozusammenfassung mit Rechnungen und Zahlungen anzeigen. |
-|Basisbenutzer | Benutzer mit dieser Berechtigung können Tickets anzeigen, suchen, hinzufügen und bearbeiten, Geräte verwalten, auf die sie Zugriff haben, IP-Adressen hinzufügen, E-Mail-Zustellungsservices verwalten, DNS-Datensätze hinzufügen, bearbeiten und anzeigen, neue Benutzer mit Zugriff auf die Infrastruktur hinzufügen und Benachrichtigungen verwalten. |
-|Superuser | Benutzer mit dieser Berechtigung können alle verfügbaren Aktionen im System ausführen. |
-{:caption="Tabelle 1. Infrastructure-Berechtigungen" caption-side="top"}
+Sie können zusätzliche Berechtigungen festlegen, nachdem der Benutzer die Einladung angenommen hat. Mit dem Ausgangsberechtigungsset, das der Einladung zugewiesen ist, wird beispielsweise kein Zugriff auf Geräte erteilt. Daher müssen Sie den Gerätezugriff erteilen, nachdem der Benutzer die Einladung akzeptiert hat. Weitere Informationen hierzu enthält der Abschnitt [Zugriff auf die klassische Infrastruktur verwalten](/docs/iam/mnginfra.html#mngclassicinfra).
 
-Weitere Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung akzeptiert hat. Das Ausgangsberechtigungsset, das zum Zeitpunkt der Einladung festgelegt wird, erteilt keinen Zugriff auf Geräte. Die Zugriffsberechtigungen für Geräte müssen deshalb im Steuerungsportal erteilt werden, nachdem der Benutzer die Einladung akzeptiert hat. 
-
-Wenn Sie jemanden zum Konto einladen, können nur Sie und der Masterbenutzer des SoftLayer-Kontos die Berechtigungen für den Benutzer anpassen. Wenn Sie die Berechtigungen zuweisen und nicht der Masterbenutzer sind, können Sie nur die Berechtigungsebene oder eine Untergruppe der bereits zugewiesenen Berechtigungen zuweisen. Ein Masterbenutzer kann jedoch die Berechtigungen jedes Benutzers in dem Konto aktualisieren, um eine beliebige Zugriffsebene zu haben. 
-
-Rufen Sie das Menüsymbol ![Menüsymbol](../icons/icon_hamburger.svg) auf und wählen Sie dann **Infrastruktur** auf, um auf das Steuerungsportal zuzugreifen und mit den Benutzerberechtigungen für die Infrastruktur zu arbeiten. Wenn Sie **Konto** &gt; **Benutzer** aufrufen, dann wird Ihre Benutzerliste angezeigt, in der Sie den Gerätezugriff und andere Infrastructure-Berechtigungen festlegen können. Weitere Informationen zum Zuweisen von Zugriff finden Sie unter [Infrastructure-Zugriff verwalten](/docs/iam/mnginfra.html#managing-infrastructure-access).
+Wenn Sie jemanden zum Konto einladen, können nur Sie, der Kontoeigner, oder ein Benutzer mit der Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern die Berechtigungen für den Benutzer anpassen. Wenn Sie die Berechtigungen zuweisen und nicht der Kontoeigner sind, können Sie nur die Berechtigungsebene oder eine Untergruppe der bereits zugewiesenen Berechtigungen zuweisen. Ein Kontoeigner kann die Berechtigungen eines jeden Benutzers in dem Konto so aktualisieren, dass der Benutzer eine beliebige Zugriffsebene erhält.
 
 
+## Migrierte Berechtigungen der klassischen Infrastruktur
+{: #predefined}
 
+Eine Reihe von Berechtigungen der klassischen Infrastruktur zum Anzeigen und Verwalten von Abrechnungsinformationen und zum Arbeiten mit Supportfällen wird jetzt zu Zugriffsgruppen migriert. Die Benutzer in Ihrem Konto, denen zuvor diese Berechtigungen zugewiesen waren, werden nun der jeweiligen Zugriffsgruppe für die migrierte Berechtigung zugewiesen. Demzufolge können Berechtigungen für die klassische Infrastruktur jetzt mithilfe von IAM-Zugriffsrichtlinien direkt verwaltet werden.
 
+Diese speziellen Zugriffsgruppe beziehen alle entsprechenden IAM-Richtlinien ein, damit das ursprüngliche Verhalten der Berechtigungen für die klassische Infrastruktur beibehalten wird. Damit zum Beispiel ein Benutzer für einen Supportfall auch weiterhin alle Aktualisierungen aller Benutzer sehen kann, beziehen die Zugriffsgruppen für migrierte Berechtigungen bei den Ticketing-Berechtigungen für die klassische Infrastruktur eine zusätzliche IAM-Richtlinie für den Benutzermanagementservice mit der zugeordneten Rolle als Anzeigeberechtigter (Viewer) ein. Weitere Informationen hierzu finden Sie in [Benutzerzugriff für die Arbeit mit Supportfällen zuweisen](/docs/get-support/support_access.html#access).
 
+Sie können diese migrierten Berechtigungen für die klassische Infrastruktur für Benutzer direkt über IAM verwalten, indem Sie sie zu den Zugriffsgruppen für migrierte Berechtigungen hinzufügen bzw. aus ihnen entfernen. Die Richtlinien, die für diese Zugriffsgruppen gelten, sind gesperrt, damit das Zugriffsverhalten für die Gruppenmitglieder beibehalten wird. Sie sollten diese Zugriffsgruppen nicht löschen, damit der Bedienungskomfort auch gegenüber neueren IAM-Benutzern gewahrt bleibt.
 
+In der folgenden Tabelle sind alle migrierten Berechtigungen für die klassische Infrastruktur aufgeführt, die jetzt unter Verwendung der Zugriffsgruppen verfügbar sind.
+
+| Name der Zugriffsgruppe für migrierte Berechtigungen | Zulässige Aktionen |
+|----------|---------|
+| Kontozusammenfassung anzeigen | Anzeigen der Seite 'Konto - Zusammenfassung' und Anzeigen von Rechnungen sowie Zahlungen |
+| Compliance-Bericht abrufen | Anfordern eines Compliance-Berichts |
+| Unternehmensprofil bearbeiten | Bearbeiten der Informationen zum Unternehmensprofil |
+| Einmalige Zahlungen | Durchführen einmaliger Zahlungen für das Benutzerkonto |
+| Zahlungsdetails aktualisieren | Aktualisieren der Informationen für wiederkehrende monatliche Zahlungen |
+| Einschränkung von Fällen auf die EU begrenzen | Aktivieren oder Inaktivieren der von der EU unterstützten Option, die Daten für Supportfälle auf die Europäische Union beschränkt |
+| Fälle hinzufügen und Bestellungen anzeigen | Erstellen von Supportfällen und Anzeigen aller Bestellungen |
+| Fälle bearbeiten | Bearbeiten beliebiger Supportfälle |
+| Fälle durchsuchen | Durchsuchen aller Supportfälle, solange die Berechtigung zum Anzeigen von Fällen ebenfalls zugewiesen ist |
+| Fälle anzeigen | Anzeigen aller Supportfälle |
+{: caption="Tabelle 1. Vordefinierte Zugriffsgruppen" caption-side="top"}
+
+Sie können die Benutzer für die Zugriffsgruppen auch weiterhin verwalten. Es kann jedoch hilfreich sein, neue Zugriffsgruppen zu erstellen, die eine Kombination von Zugriffsrichtlinien für die [IAM-Kontoverwaltungsservices](/docs/iam/users_roles.html#platformrolestable2) einschließen, um das Zuweisen von Zugriff für Kontoverwaltungstasks und das Arbeiten mit Supportfällen zu vereinfachen.
+{: tip}

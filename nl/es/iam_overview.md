@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2018
 
-lastupdated: "2018-10-30"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -26,14 +26,14 @@ El concepto de identidad en {{site.data.keyword.Bluemix_notm}} IAM consta de los
 <dt>Identidades de servicio y app</dt>
 <dd>Los ID de servicio son las características de Cloud IAM utilizadas para proporcionar una identidad separada para servicios y aplicaciones. Puede crear un ID de servicio para que lo utilice una aplicación que necesita acceso a sus servicios de {{site.data.keyword.Bluemix_notm}} para que no se tengan que utilizar credenciales de usuario individual.</dd>
 <dt>Claves de API</dt>
-<dd>Las claves de API de plataforma están disponibles a través de Cloud IAM para que las utilice para autenticar utilizando API o CLI como usuario o ID de servicio. Estas claves de API están proporcionadas a través de Cloud IAM y, por lo tanto, no se pueden utilizar de forma general para autenticarse con el IBMid fuera de IBM Cloud. </dd>
+<dd>Las claves de API de {{site.data.keyword.cloud_notm}} están disponibles a través de Cloud IAM para que las utilice para autenticar utilizando API o CLI como usuario o ID de servicio. Estas claves de API están proporcionadas a través de Cloud IAM y, por lo tanto, no se pueden utilizar de forma general para autenticarse con el IBMid fuera de IBM Cloud. Un usuario también puede tener una sola clave de API de la infraestructura clásica que se puede utilizar para acceder a las API de la infraestructura clásica; sin embargo, esto no es necesario, ya que puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} para acceder a las mismas API. </dd>
 <dt>Recursos</dt>
 <dd>Los recursos de {{site.data.keyword.Bluemix_notm}} se identifican por sus nombres de recurso de nube (CRN). Para obtener más información, consulte [Nombres de recursos de nube](/docs/overview/crn.html#crn).</dd>
 </dl>
 
 ## Gestión de acceso
 
-El concepto de gestión de acceso en {{site.data.keyword.Bluemix_notm}} consta de unos cuantos componentes interrelacionados, incluyendo usuarios, recursos, políticas, roles, acciones y el sistema de control de Cloud IAM, que permite a los usuarios realizar acciones en recursos dentro de una cuenta.
+El concepto de gestión de acceso en {{site.data.keyword.Bluemix_notm}} consta de unos cuantos componentes interrelacionados, incluyendo usuarios, recursos, políticas, roles, acciones y el sistema de control de Cloud IAM, que permite a los usuarios realizar acciones en recursos dentro de una cuenta. 
 
 Puede revisar la siguiente lista para obtener más información sobre estos componentes de Cloud IAM:
 
@@ -53,3 +53,9 @@ Puede revisar la siguiente lista para obtener más información sobre estos comp
 <dt>Sistema de gestión de acceso</dt>
 <dd>El sistema de control de Cloud IAM permite o deniega acciones de usuarios en el contexto de un servicio en función de la política asignada. Cuando un usuario intenta completar una acción específica, el sistema de control utiliza los atributos definidos en la política para determinar si el usuario tiene permiso para realizar esa tarea.</dd>
 </dl>
+
+
+
+
+
+

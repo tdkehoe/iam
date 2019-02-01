@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-11-30"
 
 ---
 
@@ -16,13 +16,14 @@ lastupdated: "2018-11-02"
 {: #account_setup}
 
 Sie können den Prozess der Zugriffszuweisung optimieren, wenn Sie sich Zugriffsgruppen zunutze machen, um die geringstmögliche Anzahl von Richtlinien zuzuweisen, indem Sie allen Benutzern und Service-IDs, die zu derselben Zugriffsgruppe gehören, denselben Zugriff erteilen. Verwenden Sie die Informationen zu den vorliegenden bewährten Verfahren, um mehr dazu zu erfahren, wie Sie Benutzern Zugriff auf Ressourcen, Ressourcengruppen und Kontoverwaltungsservices bereitstellen.
+{:shortdesc}
 
 Um sicherzustellen, dass Ihr Konto optimal eingerichtet ist, prüfen Sie die Informationen in [Bewährte Verfahren für das Einrichten Ihres Kontos](/docs/account/bp_account.html#account_setup) und [Bewährte Verfahren für die Organisation von Ressourcen in Ressourcengruppen](/docs/resources/bestpractice_rgs.html).
 {: tip}
 
 ## Was ist eine gute Strategie für Zugriffsgruppen?
 
-Eine Zugriffsgruppe ist eine Gruppierung von Benutzern und Service-IDs, der derselbe IAM-Zugriff erteilt werden kann. Anstatt Benutzern oder Service-IDs einzeln jeweils denselben Zugriff zuzuweisen, können Sie der Gruppe eine einzige Richtlinie zuweisen.
+Eine Zugriffsgruppe ist eine Gruppierung von Benutzern und Service-IDs, der derselbe IAM-Zugriff erteilt werden kann. Sie können der Gruppe eine einzige Richtlinie zuweisen, anstatt denselben Zugriff mehrmals für den einzelnen Benutzer oder die einzelne Service-ID zuzuweisen.
 
 Vorausgesetzt, dass Sie die Informationen in [Bewährte Verfahren für das Einrichten Ihres Kontos](/docs/account/bp_account.html#account_setup) umgesetzt haben, wäre es zum Zuweisen von Zugriff logisch, pro gewünschter Zugriffsebene eine Zugriffsgruppe zu erstellen. Danach können Sie jede Zugriffsgruppe den zuvor erstellten Ressourcengruppen zuordnen. Falls Sie zum Beispiel den Zugriff auf das Projekt `CustApp` steuern möchten, könnten Sie die folgenden Zugriffsgruppen erstellen:
 
@@ -37,9 +38,9 @@ Obwohl diese Vorschläge für ein hypothetisches Szenario konzipiert sind, könn
 ## Zugriffsgruppen erstellen
 {: #access-group-setup}
 
-Führen Sie die folgenden Schritte aus, um eine Zugriffsgruppe zu erstellen: 
+Führen Sie die folgenden Schritte aus, um eine Zugriffsgruppe zu erstellen:
 
-1. Klicken Sie in der {{site.data.keyword.Bluemix}}-Konsole auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Zugriffsgruppen** aus.
+1. Klicken Sie in der {{site.data.keyword.Bluemix}}-Konsole auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Zugriffsgruppen** aus.
 2. Klicken Sie auf **Erstellen**.
 3. Geben Sie einen Namen und eine Beschreibung für die Gruppe ein.
 4. Klicken Sie auf **Erstellen**.
@@ -50,15 +51,14 @@ Nachdem Sie eine Zugriffsgruppe erstellt haben, können Sie Benutzer und Service
 
 Eine Richtlinie setzt sich aus einem Subjekt, einem Ziel und einer Rolle zusammen. Das Subjekt ist in diesem Fall die Zugriffsgruppe. Das Ziel ist das, auf das das Subjekt Zugriff haben soll, wie beispielsweise eine Gruppe von Ressourcen, eine Serviceinstanz, alle Services im Konto oder alle Instanzen eines Service. Die Rolle definiert, welchen Grad von Zugriff ein Benutzer erhält.
 
-Die am häufigsten verwendeten Rollen sind 'Viewer' (Anzeigeberechtigter), 'Editor' (Bearbeiter) und 'Administrator' (Administrator). Die Rolle des Anzeigeberechtigten ('Viewer') bietet den geringsten Zugriff und beschränkt sich auf das Anzeigen von Instanzen und Ressourcengruppen in einem Konto. Die Rolle des Bearbeiters verfügt über mehr Zugriff und ermöglicht das Erstellen, Bearbeiten, Löschen und Binden von Serviceinstanzen. Die Rolle des Administrators gewährt Zugriff auf alle Aktionen, die zum Arbeiten mit einer Serviceinstanz erforderlich sind, und ist außerdem in der Lage, anderen Zugriff zuzuweisen. Es gibt jedoch zwei unterschiedliche Kategorien von Rollen, die Sie berücksichtigen sollten: Plattformrollen und Servicerollen. Weitere Informationen zu den Rollen, die zugewiesen werden können, finden Sie in [Cloud IAM-Rollen](/docs/iam/users_roles.html#iamusermanrol). 
+Die am häufigsten verwendeten Rollen sind 'Viewer' (Anzeigeberechtigter), 'Editor' (Bearbeiter) und 'Administrator' (Administrator). Die Rolle des Anzeigeberechtigten ('Viewer') bietet den geringsten Zugriff und beschränkt sich auf das Anzeigen von Instanzen und Ressourcengruppen in einem Konto. Die Rolle des Bearbeiters verfügt über mehr Zugriff und ermöglicht das Erstellen, Bearbeiten, Löschen und Binden von Serviceinstanzen. Die Rolle des Administrators gewährt Zugriff auf alle Aktionen, die zum Arbeiten mit einer Serviceinstanz erforderlich sind, und ist außerdem in der Lage, anderen Zugriff zuzuweisen. Es gibt jedoch zwei unterschiedliche Kategorien von Rollen, die Sie berücksichtigen sollten: Plattformrollen und Servicerollen. Weitere Informationen zu den Rollen, die zugewiesen werden können, finden Sie in [Cloud IAM-Rollen](/docs/iam/users_roles.html#iamusermanrol).
 
 ## Zugriff auf Zugriffsgruppen zuweisen
 {: #assigning-access}
 
 Sie können Ressourcen in einer Ressourcengruppe und Benutzer sowie Service-IDs in einer Zugriffsgruppe zusammenfassen, um die Zuweisung von Zugriff so einfach wie möglich zu gestalten. Nachdem Sie die einzelnen Gruppen eingerichtet haben, können Sie Zugriffsrichtlinien für die einzelnen Zugriffsgruppen erstellen, um den Benutzern in Ihrem Konto Zugriff auf die erstellten Ressourcen zu erteilen.
 
-1. Klicken Sie auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie dann **Zugriffsgruppen** aus.
-
+1. Klicken Sie auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Zugriffsgruppen** aus.
 2. Wählen Sie den Namen der Zugriffsgruppe aus, für die Sie Zugriff zuweisen wollen.
 3. Wählen Sie die Registerkarte **Zugriffsrichtlinien** aus und klicken Sie dann auf **Zugriff zuweisen**. Zum Zuweisen von Zugriff stehen Ihnen die folgenden Optionen zur Verfügung:
 
@@ -68,4 +68,3 @@ Sie können Ressourcen in einer Ressourcengruppe und Benutzer sowie Service-IDs 
 
 Sie können mehreren Benutzern ganz einfach Administratorzugriff auf den gesamten Inhalt eines Kontos erteilen, indem Sie eine Zugriffsgruppe erteilen und dieser dann zwei Richtlinien zuweisen. Erstellen Sie die erste Richtlinie unter Verwendung der Option **Zugriff auf Ressourcen zuweisen** und wählen Sie bei zugewiesener Administratorrolle die Option **Alle Services mit aktiviertem Identity and Access Management** aus. Erstellen Sie die zweite Richtlinie mit der Option **Zugriff auf Kontoverwaltungsservices zuweisen** und wählen Sie bei zugewiesener Administratorrolle die Option **Alle Kontoverwaltungsservices** aus.
 {: tip}
-
