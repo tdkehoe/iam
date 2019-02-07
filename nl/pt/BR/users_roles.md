@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-21"
 
 ---
 
@@ -31,26 +31,26 @@ Uma política concede a um sujeito uma ou múltiplas funções a um conjunto de 
 | Ações | Função necessária |
 |----------|---------|
 | Criar uma política em uma conta para todos os serviços e instâncias | Proprietário da conta ou administrador em todos
-os serviços de gerenciamento de conta e todos os serviços ativados para o Identity and Access |
+os serviços de gerenciamento de conta e todos os serviços ativados para o Identity and Access | 
 | Criar uma política em um serviço em uma conta | Proprietário da conta, administrador em todos os serviços ativados para
 o Identity and Access ou administrador no serviço na conta |
 | Criar uma política em uma instância de serviço | Proprietário da conta, administrador em todos os serviços ativados
 para o Identity and Access, administrador no serviço na conta, administrador em todos os serviços no grupo de
 recursos relevantes ou administrador na instância de serviço |
-{: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"}
+{: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"} 
 
 Ao designar uma política, você
-inicia com o assunto. Depois de selecionar o assunto da política, é possível optar por configurar a política para um grupo de recursos, um recurso individual ou um serviço de gerenciamento de conta.
+inicia com o assunto. Depois de selecionar o assunto da política, é possível optar por configurar a política para um grupo de recursos, um recurso individual ou um serviço de gerenciamento de conta. 
 
 Em seguida, dependendo de sua seleção inicial, é possível selecionar dentre as opções:
-
+  
   * Um serviço dentro de um grupo de recursos
   * Todos os recursos em um grupo de recursos
   * Todas as instâncias ou uma única instância para o recurso selecionado
   * Todos os serviços ativados para IAM na conta
-  * Um serviço de gerenciamento de conta
+  * Um serviço de gerenciamento de conta 
 
-Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, você seleciona as funções a serem designadas.
+Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, você seleciona as funções a serem designadas. 
 
 ## Tipos de política de acesso comum
 {: #policytypes}
@@ -81,13 +81,13 @@ Com o Cloud IAM, é possível gerenciar e definir acesso para usuários e recurs
 funções podem ser designadas: funções de gerenciamento de plataforma e funções de acesso de serviço.
 
 <dl>
-<dt>Funções de gerenciamento de plataforma</dt>
+<dt>Funções de gerenciamento de plataforma</dt> 
 <dd>As funções de gerenciamento da plataforma abrangem uma gama de ações, incluindo a capacidade de criar e
 excluir instâncias, gerenciar aliases, ligações, credenciais e acesso. As funções da plataforma são administrador,
 editor, operador, visualizador. As funções de gerenciamento de plataforma também se aplicam a serviços de gerenciamento de conta que permitem que os usuários convidem usuários, gerenciem IDs de serviço, políticas de acesso, entradas do catálogo e rastreiem faturamento e uso, dependendo de sua função designada em um serviço de gerenciamento de conta.</dd>
 <dt>Funções de acesso de serviço</dt>
 <dd>As funções de acesso de serviço definem a capacidade de um usuário ou serviço executar ações em uma instância de serviço, como acessar o console ou executar chamadas API. As funções de acesso de serviço são gerenciador, gravador e leitor. </dd>
-</dl>
+</dl> 
 
 Você pode não ver todas as funções que estão listadas aqui como opções ao designar as políticas na UI, pois
 somente as funções disponíveis para o serviço escolhido serão exibidas. Para obter mais informações sobre quais funções estão ativadas e quais ações cada função de acesso permite para cada serviço, veja a documentação para esse serviço.
@@ -104,9 +104,13 @@ usuários, trabalhar com grupos de recursos e visualizar as informações de fat
 
 As tabelas a seguir fornecem exemplos para algumas das ações de gerenciamento de plataforma que os usuários podem executar dentro do contexto de recursos de catálogo, grupos de recursos e serviços de gerenciamento de conta. Consulte a documentação para cada oferta de catálogo para entender como as funções se aplicam aos usuários dentro do contexto do serviço que está sendo usado.
 
+A primeira linha da tabela descreve opções separadas que podem ser escolhidas ao criar uma política e a primeira
+coluna descreve as funções selecionadas para a política. As células restantes mapeiam qual função é selecionada na
+primeira coluna e o tipo de política selecionado nas opções da primeira linha.
+
 | Detalhes da política de acesso | Ações em serviços na conta | Ações em recursos em grupos de recursos | Ações para acesso a grupos de recursos |
 |:--------------|:------------|:-------------|:-------------|
-| **Designar acesso a** | Um ou todos os serviços ativados por IAM | Serviço selecionado em um grupo de recursos | Grupo de recursos selecionados |
+|  | Um ou todos os serviços ativados por IAM | Serviço selecionado em um grupo de recursos | Grupo de recursos selecionados |
 | Função de visualizador | Visualizar instâncias, aliases, ligações e credenciais | Visualizar somente instâncias especificadas no grupo de recursos | Visualizar grupo de recursos |
 | Função de operador |  Visualizar instâncias e gerenciar aliases, ligações e credenciais |  Não aplicável | Não aplicável |
 | Função do editor |  Criar, excluir, editar e visualizar instâncias. Gerenciar aliases, ligações e credenciais | Criar, excluir, editar, suspender, continuar, visualizar e ligar somente as instâncias especificadas no grupo de recursos | Visualizar e editar o nome do grupo de recursos |
@@ -120,13 +124,22 @@ A tabela a seguir descreve as ações comuns que podem ser executadas com base n
 Se você designar uma política de acesso em **Todos os serviços de gerenciamento de conta**, dependendo da função selecionada, o usuário poderá concluir as ações a seguir para cada serviço para essa função. Além disso, esse tipo de política fornece acesso do usuário às informações de faturamento e à capacidade de rastrear o uso com base em sua função designada. Consulte a tabela a seguir para obter detalhes.
 {: note}
 
-| Detalhes da política de acesso |  Ações para IDs de serviço  | Ações para gerenciar grupos de acesso | Ações para gerenciar o acesso ao catálogo | Ações para acesso para gerenciar usuários | Ações para Suporte | Ações para todos os serviços de gerenciamento de conta |
-|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|
-| **Designar acesso a** |  Serviço de identidade do IAM |  Grupos de acesso ao IAM |  Catálogo de recursos global |  Gerenciamento de usuários  | Centro de suporte | Todos os serviços de gerenciamento de conta |
-| Função de visualizador |  <ul><li>Visualizar IDs</li></ul> |  <ul><li>Visualizar grupos de acesso e membros</li></ul> | <ul><li>Visualizar serviços privados</li></ul>  |  <ul><li>Visualizar usuários na conta</li><li>Visualizar configurações do perfil do usuário</li></ul> | <ul><li>Visualizar casos</li><li>Procurar casos</li></ul> |Todas as ações da função do visualizador para os serviços de gerenciamento de conta, mais o seguinte: <ul><li>Visualizar configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar o nome da conta</li><li>Visualizar grupos de recursos</li></ul> |
-| Função de operador | <ul><li>Criar e excluir IDs e chaves API</li></ul> |  <ul><li>Não aplicável</li></ul> | <ul><li>Não aplicável</li></ul> |  <ul><li>Visualizar usuários na conta</li><li>Visualizar configurações do perfil do usuário</li></ul> | <ul><li>Não aplicável</li></ul> | Todas as ações da função do operador para os serviços de gerenciamento de conta, mais o seguinte: <ul><li>Visualizar configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar e mudar o nome da conta</li><li>Visualizar e atualizar grupos de recursos</li></ul> |
-| Função do editor |  <ul><li>Crie, atualize e exclua IDs e chaves API</li></ul> |  <ul><li>Visualizar, criar, editar e excluir grupos</li><li>Incluir ou remover usuários de grupos</li></ul> | <ul><li>É possível mudar os metadados do objeto, mas não é possível mudar a visibilidade para serviços privados</li></ul>  | <ul><li>Visualizar, convidar, remover e atualizar usuários da conta</li><li>Visualizar e atualizar as configurações do perfil do usuário</li></ul> | <ul><li>Não aplicável</li></ul> | Todas as ações da função do editor para os serviços de gerenciamento de conta, mais o seguinte:  <ul><li>Visualizar e atualizar as configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar ofertas na conta</li><li>Visualizar e aplicar códigos de recurso</li><li>Visualizar e mudar o nome da conta</li><li>Visualizar e atualizar os limites de gastos</li><li>Visualizar, criar e atualizar grupos de recursos</li></ul> |
-| Função de administrador |   <ul><li>Crie, atualize e exclua IDs e chaves API</li><li>Designar políticas de acesso aos IDs</li></ul> |  <ul><li>Visualizar, criar, editar e excluir grupos</li><li>Incluir ou remover usuários</li><li>Designar acesso a um grupo</li><li>Gerenciar o acesso para trabalhar com os grupos de acesso</li></ul> | <ul><li>É possível mudar metadados do objeto ou visibilidade para serviços privados e restringir a visibilidade de um serviço público</li></ul> | <ul><li>Visualizar, convidar, remover e atualizar usuários da conta</li><li>Visualizar e atualizar as configurações do perfil do usuário</li></ul> |  <ul><li>Visualizar casos</li><li>Procurar casos</li><li>Atualizar casos</li><li>Criar casos</li></ul> |Todas as ações da função de administrador para os serviços de gerenciamento de conta, mais o seguinte: <ul><li>Visualizar e atualizar as configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar ofertas na conta</li><li>Visualizar e aplicar códigos de recurso</li><li>Visualizar e mudar o nome da conta</li><li>Visualizar e atualizar os limites de gastos</li><li>Visualizar saldos de assinatura e uso de faixa</li><li>Visualizar, criar, atualizar e designar acesso para gerenciar grupos de recursos</li></ul>  |
+A primeira linha da tabela descreve serviços específicos que podem ser escolhidos ao criar uma política e a primeira
+coluna descreve o tipo selecionado de função para a política. As células restantes mapeiam qual função
+é selecionada nas opções da primeira coluna e o tipo de política selecionado nas opções da primeira linha.
+
+| Detalhes da política de acesso |  Ações para IDs de serviço  | Ações para gerenciar grupos de acesso | Ações para gerenciar o acesso ao catálogo | Ações para acesso para gerenciar usuários | Ações para Suporte |
+Ações para faturamento | Ações para todos os serviços de gerenciamento de conta | 
+|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
+|  |  Serviço de identidade do IAM |  Grupos de acesso ao IAM |  Catálogo de recursos global |  Gerenciamento de usuários  | Centro de suporte | Faturamento e uso | Todos os serviços de gerenciamento de conta |
+| Função de visualizador |  <ul><li>Visualizar IDs</li></ul> |  <ul><li>Visualizar grupos de acesso e membros</li></ul> | <ul><li>Visualizar serviços privados</li></ul>  |  <ul><li>Visualizar usuários na conta</li><li>Visualizar configurações do perfil do usuário</li></ul> | <ul><li>Visualizar casos</li><li>Procurar casos</li></ul> | <ul><li>Visualizar configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar o nome da conta</li><li>Visualizar grupos de recursos</li></ul> |
+Todas as ações da função de visualizador para os serviços de gerenciamento de conta |
+| Função de operador | <ul><li>Criar e excluir IDs e chaves API</li></ul> |  <ul><li>Não aplicável</li></ul> | <ul><li>Não aplicável</li></ul> |  <ul><li>Visualizar usuários na conta</li><li>Visualizar configurações do perfil do usuário</li></ul> | <ul><li>Não aplicável</li></ul> | <ul><li>Visualizar configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar e mudar o nome da conta</li><li>Visualizar e atualizar grupos de recursos</li></ul> |
+Todas as ações da função de operador para os serviços de gerenciamento de conta |
+| Função do editor |  <ul><li>Crie, atualize e exclua IDs e chaves API</li></ul> |  <ul><li>Visualizar, criar, editar e excluir grupos</li><li>Incluir ou remover usuários de grupos</li></ul> | <ul><li>É possível mudar os metadados do objeto, mas não é possível mudar a visibilidade para serviços privados</li></ul>  | <ul><li>Visualizar, convidar, remover e atualizar usuários da conta</li><li>Visualizar e atualizar as configurações do perfil do usuário</li></ul> | <ul><li>Não aplicável</li></ul> | <ul><li>Visualizar e atualizar as configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar ofertas na conta</li><li>Visualizar e aplicar códigos de recurso</li><li>Visualizar e mudar o nome da conta</li><li>Visualizar e atualizar os limites de gastos</li><li>Visualizar, criar e atualizar grupos de recursos</li></ul> |
+Todas as ações da função de editor para os serviços de gerenciamento de conta |
+| Função de administrador |   <ul><li>Crie, atualize e exclua IDs e chaves API</li><li>Designar políticas de acesso aos IDs</li></ul> |  <ul><li>Visualizar, criar, editar e excluir grupos</li><li>Incluir ou remover usuários</li><li>Designar acesso a um grupo</li><li>Gerenciar o acesso para trabalhar com os grupos de acesso</li></ul> | <ul><li>É possível mudar metadados do objeto ou visibilidade para serviços privados e restringir a visibilidade de um serviço público</li></ul> | <ul><li>Visualizar, convidar, remover e atualizar usuários da conta</li><li>Visualizar e atualizar as configurações do perfil do usuário</li></ul> |  <ul><li>Visualizar casos</li><li>Procurar casos</li><li>Atualizar casos</li><li>Criar casos</li></ul> |  <ul><li>Visualizar e atualizar as configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar ofertas na conta</li><li>Visualizar e aplicar códigos de recurso</li><li>Visualizar e mudar o nome da conta</li><li>Visualizar e atualizar os limites de gastos</li><li>Visualizar saldos de assinatura e uso de faixa</li><li>Visualizar, criar, atualizar e designar acesso para gerenciar grupos de recursos</li></ul> |
+Todas as ações da função de administrador para os serviços de gerenciamento de conta|
 {: caption="Tabela 3. Exemplo de funções de gerenciamento da plataforma e as ações para os serviços degerenciamento de conta" caption-side="top"}
 
 {: #platformrolestable2}
@@ -158,3 +171,6 @@ As ações que podem ser executadas com base em cada função designada variam c
 | Gravador | Permissões além da função de leitor, incluindo criar e editar recursos específicos do serviço | Criar e destruir depósitos e objetos |
 | Gerente | Permissões além da função de gravador para concluir ações privilegiadas, conforme definido pelo serviço, além de criar e editar recursos específicos do serviço | Gerenciar todos os aspectos de armazenamento de dados, criar e destruir depósitos e objetos |
 {: caption="Tabela 5. Exemplo de funções e ações de usuário de acesso de serviço" caption-side="top"}
+
+
+
