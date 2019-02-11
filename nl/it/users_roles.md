@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2018
+  years: 2015, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-21"
 
 ---
 
@@ -28,22 +28,22 @@ Una politica concede a un oggetto uno o più ruoli per un insieme di risorse per
 
 | Azione | Ruolo richiesto |
 |----------|---------|
-| Creare una politica in un account per tutti i servizi e le istanze | Proprietario o amministratore dell'account su tutti i servizi di gestione dell'account e tutti i servizi abilitati per l'accesso e l'identità |
+| Creare una politica in un account per tutti i servizi e le istanze | Proprietario o amministratore dell'account su tutti i servizi di gestione dell'account e tutti i servizi abilitati per l'accesso e l'identità | 
 | Creare una politica su un servizio in un account | Proprietario dell'account, amministratore su tutti i servizi abilitati per l'accesso e l'identità o amministratore sul servizio nell'account |
 | Creare una politica su un'istanza del servizio | Proprietario dell'account, amministratore su tutti i servizi abilitati per l'accesso e l'identità, amministratore sul servizio nell'account, amministratore su tutti i servizi nel gruppo di risorse relativo o amministratore sull'istanza del servizio |
-{: caption="Tabella 1. Utenti autorizzati a creare politiche di accesso" caption-side="top"}
+{: caption="Tabella 1. Utenti autorizzati a creare politiche di accesso" caption-side="top"} 
 
-Quando assegni una politica, inizi con l'oggetto. Dopo aver selezionato l'oggetto della politica, puoi scegliere di impostare la politica per un gruppo di risorse, una risorsa individuale o un servizio di gestione dell'account.
+Quando assegni una politica, inizi con l'oggetto. Dopo aver selezionato l'oggetto della politica, puoi scegliere di impostare la politica per un gruppo di risorse, una risorsa individuale o un servizio di gestione dell'account. 
 
 Quindi, a seconda della tua selezione iniziale, puoi selezionare dalle opzioni:
-
+  
   * Un servizio all'interno di un gruppo di risorse
   * Tutte le risorse in un gruppo di risorse
   * Tutte le istanze o una sola istanza per la risorsa selezionata
   * Tutti i servizi abilitati IAM nell'account
-  * Un servizio di gestione dell'account
+  * Un servizio di gestione dell'account 
 
-Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, seleziona i ruoli da assegnare.
+Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, seleziona i ruoli da assegnare. 
 
 ## Tipi di politica di accesso comuni
 {: #policytypes}
@@ -68,11 +68,11 @@ Per concedere a un altro utente l'accesso completo all'account ai fini della ges
 Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel tuo account. Possono essere assegnati due tipi di ruoli: i ruoli di gestione della piattaforma e i ruoli di accesso al servizio.
 
 <dl>
-<dt>Ruoli di gestione della piattaforma</dt>
+<dt>Ruoli di gestione della piattaforma</dt> 
 <dd>I ruoli di gestione della piattaforma coprono una gamma di azioni, inclusa la capacità di creare ed eliminare le istanze, gestire gli alias, i bind e le credenziali e gestire l'accesso. I ruoli della piattaforma sono amministratore, editor, operatore, visualizzatore. I ruoli di gestione della piattaforma si applicano anche ai servizi di gestione dell'account che consentono agli utenti di invitare utenti, gestire ID di servizio, politiche di accesso, voci di catalogo e tenere traccia della fatturazione e dell'utilizzo in base al proprio ruolo assegnato in un servizio di gestione dell'account.</dd>
 <dt>Ruoli di accesso al servizio</dt>
 <dd>I ruoli di accesso al servizio definiscono la capacità di un utente o un servizio di eseguire azioni su un'istanza del servizio, come l'accesso alla console o l'esecuzione di chiamate API. I ruoli di accesso al servizio sono gestore, scrittore e lettore. </dd>
-</dl>
+</dl> 
 
 Potresti non vedere tutti i ruoli qui elencati come opzioni quando assegni le politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli disponibili per il servizio che hai scelto. Per ulteriori informazioni su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ciascun servizio, consulta la documentazione relativa a tale servizio.
 {: note}
@@ -84,9 +84,11 @@ Con i ruoli di gestione della piattaforma è possibile assegnare agli utenti div
 
 Le seguenti tabelle forniscono esempi di alcune delle azioni di gestione della piattaforma che gli utenti possono effettuare nel contesto delle risorse del catalogo, dei gruppi di risorse e dei servizi di gestione dell'account. Consulta la documentazione di ogni offerta del catalogo per comprendere in che modo i ruoli vengano applicati agli utenti nel contesto del servizio utilizzato.
 
+La prima riga della tabella descrive le distinte opzioni da cui puoi scegliere quando crei una politica e la prima colonna descrive i ruoli selezionati per la politica. Le restanti celle associano il ruolo selezionato dalla prima colonna al tipo di politica selezionato dalle opzioni nella prima riga.
+
 | Dettagli della politica di accesso | Azioni sui servizi nell'account | Azioni sulle risorse nei gruppi di risorse | Azioni per l'accesso ai gruppi di risorse |
 |:--------------|:------------|:-------------|:-------------|
-| **Assegna accesso a** | Uno o tutti i servizi abilitati a IAM | Servizio selezionato in un gruppo di risorse | Gruppo di risorse selezionato |
+|  | Uno o tutti i servizi abilitati a IAM | Servizio selezionato in un gruppo di risorse | Gruppo di risorse selezionato |
 | Ruolo visualizzatore | Visualizzare istanze, alias, bind e credenziali | Visualizzare solo le istanze specificate nel gruppo di risorse | Visualizzare il gruppo di risorse |
 | Ruolo operatore |  Visualizzare istanze e gestire alias, bind e credenziali |  Non applicabile | Non applicabile |
 | Ruolo editor |  Creare, eliminare, modificare e visualizzare istanze. Gestire alias, bind e credenziali | Creare, eliminare, modificare, sospendere, riprendere, visualizzare e associare solo le istanze specificate nel gruppo di risorse | Visualizzare e modificare il nome del gruppo di risorse |
@@ -100,13 +102,15 @@ La seguente tabella descrive le azioni comuni che puoi eseguire in base al ruolo
 Se assegni una politica di accesso a **Tutti i servizi di gestione account**, a seconda del ruolo che selezioni, l'utente può completare le seguenti azioni per ogni servizio di tale ruolo. Inoltre, questo tipo di politica fornisce l'accesso utente alle informazioni di fatturazione e la capacità di tenere traccia dell'utilizzo in base al proprio ruolo assegnato. Per dettagli, consulta la seguente tabella.
 {: note}
 
-| Dettagli della politica di accesso |  Azioni per gli ID di servizio  | Azioni per la gestione dei gruppi di accesso | Azioni per la gestione dell'accesso al catalogo | Azioni per l'accesso alla gestione degli utenti | Azioni per il supporto | Azioni per tutti i servizi di gestione account |
-|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|
-| **Assegna accesso a** |  Servizio di identità IAM |  Gruppi di accesso IAM |  Catalogo risorse globali |  Gestione utenti  | Centro di supporto | Tutti i servizi di gestione dell'account |
-| Ruolo visualizzatore |  <ul><li>Visualizza ID</li></ul> |  <ul><li>Visualizza i gruppi di accesso e i membri</li></ul> | <ul><li>Visualizza i servizi privati</li></ul>  |  <ul><li>Visualizza gli utenti nell'account</li><li>Visualizza le impostazioni del profilo utente</li></ul> | <ul><li>Visualizza casi</li><li>Cerca casi</li></ul> |Tutte le azioni del ruolo visualizzatore per i servizi di gestione dell'account più le seguenti: <ul><li>Visualizza le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza il nome dell'account</li><li>Visualizza i gruppi di risorse</li></ul> |
-| Ruolo operatore | <ul><li>Crea ed elimina ID e chiavi API</li></ul> |  <ul><li>Non applicabile</li></ul> | <ul><li>Non applicabile</li></ul> |  <ul><li>Visualizza gli utenti nell'account</li><li>Visualizza le impostazioni del profilo utente</li></ul> | <ul><li>Non applicabile</li></ul> | Tutte le azioni del ruolo operatore per i servizi di gestione dell'account più le seguenti: <ul><li>Visualizza le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza e modifica il nome dell'account</li><li>Visualizza e aggiorna i gruppi di risorse</li></ul> |
-| Ruolo editor |  <ul><li>Crea, aggiorna ed elimina ID e chiavi API</li></ul> |  <ul><li>Visualizza, crea, modifica ed elimina i gruppi</li><li>Aggiungi o rimuovi gli utenti dai gruppi</li></ul> | <ul><li>Può modificare i metadati dell'oggetto ma non può modificare la visibilità per i servizi privati</li></ul>  | <ul><li>Visualizza, invita, rimuove e aggiorna utenti dall'account</li><li>Visualizza e aggiorna le impostazioni del profilo utente</li></ul> | <ul><li>Non applicabile</li></ul> | Tutte le azioni del ruolo editor per i servizi di gestione dell'account più le seguenti:  <ul><li>Visualizza e aggiorna le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza le offerte nell'account</li><li>Visualizza e applica i codici funzione</li><li>Visualizza e modifica il nome dell'account</li><li>Visualizza e aggiorna i limiti di spesa</li><li>Visualizza, crea e aggiorna i gruppi di risorse</li></ul> |
-| Ruolo amministratore |   <ul><li>Crea, aggiorna ed elimina ID e chiavi API</li><li>Assegna l'accesso alle politiche e agli ID</li></ul> |  <ul><li>Visualizza, crea, modifica ed elimina i gruppi</li><li>Aggiungi o rimuovi gli utenti</li><li>Assegna l'accesso al gruppo</li><li>Gestisci l'accesso per l'utilizzo dei gruppi di accesso</li></ul> | <ul><li>Può modificare i metadati dell'oggetto o la visibilità per i servizi privati e limitare la visibilità di un servizio pubblico.</li></ul> | <ul><li>Visualizza, invita, rimuove e aggiorna utenti dall'account</li><li>Visualizza e aggiorna le impostazioni del profilo utente</li></ul> |  <ul><li>Visualizza casi</li><li>Cerca casi</li><li>Aggiorna casi</li><li>Crea casi</li></ul> |Tutte le azioni del ruolo amministratore per i servizi di gestione dell'account più le seguenti: <ul><li>Visualizza e aggiorna le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza le offerte nell'account</li><li>Visualizza e applica i codici funzione</li><li>Visualizza e modifica il nome dell'account</li><li>Visualizza e aggiorna i limiti di spesa</li><li>Visualizza i bilanci della sottoscrizione e traccia l'utilizzo</li><li>Visualizza, crea, aggiorna e assegna l'accesso per gestire i gruppi di risorse</li></ul>  |
+La prima riga della tabella descrive gli specifici servizi da cui puoi scegliere quando crei una politica e la prima colonna descrive il tipo di ruolo selezionato per la politica. Le restanti celle associano il ruolo selezionato dalle opzioni nella prima colonna al tipo di politica selezionato dalle opzioni nella prima riga.
+
+| Dettagli della politica di accesso |  Azioni per gli ID di servizio  | Azioni per la gestione dei gruppi di accesso | Azioni per la gestione dell'accesso al catalogo | Azioni per l'accesso alla gestione degli utenti | Azioni per il supporto | Azioni per la fatturazione | Azioni per tutti i servizi di gestione account | 
+|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
+|  |  Servizio di identità IAM |  Gruppi di accesso IAM |  Catalogo risorse globali |  Gestione utenti  | Centro di supporto | Fatturazione e utilizzo | Tutti i servizi di gestione dell'account |
+| Ruolo visualizzatore |  <ul><li>Visualizza ID</li></ul> |  <ul><li>Visualizza i gruppi di accesso e i membri</li></ul> | <ul><li>Visualizza i servizi privati</li></ul>  |  <ul><li>Visualizza gli utenti nell'account</li><li>Visualizza le impostazioni del profilo utente</li></ul> | <ul><li>Visualizza casi</li><li>Cerca casi</li></ul> | <ul><li>Visualizza le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza il nome dell'account</li><li>Visualizza i gruppi di risorse</li></ul> | Tutte le azioni del ruolo visualizzatore per i servizi di gestione dell'account |
+| Ruolo operatore | <ul><li>Crea ed elimina ID e chiavi API</li></ul> |  <ul><li>Non applicabile</li></ul> | <ul><li>Non applicabile</li></ul> |  <ul><li>Visualizza gli utenti nell'account</li><li>Visualizza le impostazioni del profilo utente</li></ul> | <ul><li>Non applicabile</li></ul> | <ul><li>Visualizza le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza e modifica il nome dell'account</li><li>Visualizza e aggiorna i gruppi di risorse</li></ul> | Tutte le azioni del ruolo operatore per i servizi di gestione dell'account |
+| Ruolo editor |  <ul><li>Crea, aggiorna ed elimina ID e chiavi API</li></ul> |  <ul><li>Visualizza, crea, modifica ed elimina i gruppi</li><li>Aggiungi o rimuovi gli utenti dai gruppi</li></ul> | <ul><li>Può modificare i metadati dell'oggetto ma non può modificare la visibilità per i servizi privati</li></ul>  | <ul><li>Visualizza, invita, rimuove e aggiorna utenti dall'account</li><li>Visualizza e aggiorna le impostazioni del profilo utente</li></ul> | <ul><li>Non applicabile</li></ul> | <ul><li>Visualizza e aggiorna le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza le offerte nell'account</li><li>Visualizza e applica i codici funzione</li><li>Visualizza e modifica il nome dell'account</li><li>Visualizza e aggiorna i limiti di spesa</li><li>Visualizza, crea e aggiorna i gruppi di risorse</li></ul> | Tutte le azioni del ruolo editor per i servizi di gestione dell'account |
+| Ruolo amministratore |   <ul><li>Crea, aggiorna ed elimina ID e chiavi API</li><li>Assegna l'accesso alle politiche e agli ID</li></ul> |  <ul><li>Visualizza, crea, modifica ed elimina i gruppi</li><li>Aggiungi o rimuovi gli utenti</li><li>Assegna l'accesso al gruppo</li><li>Gestisci l'accesso per l'utilizzo dei gruppi di accesso</li></ul> | <ul><li>Può modificare i metadati dell'oggetto o la visibilità per i servizi privati e limitare la visibilità di un servizio pubblico.</li></ul> | <ul><li>Visualizza, invita, rimuove e aggiorna utenti dall'account</li><li>Visualizza e aggiorna le impostazioni del profilo utente</li></ul> |  <ul><li>Visualizza casi</li><li>Cerca casi</li><li>Aggiorna casi</li><li>Crea casi</li></ul> |  <ul><li>Visualizza e aggiorna le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza le offerte nell'account</li><li>Visualizza e applica i codici funzione</li><li>Visualizza e modifica il nome dell'account</li><li>Visualizza e aggiorna i limiti di spesa</li><li>Visualizza i bilanci della sottoscrizione e traccia l'utilizzo</li><li>Visualizza, crea, aggiorna e assegna l'accesso per gestire i gruppi di risorse</li></ul> | Tutte le azioni del ruolo amministratore per i servizi di gestione dell'account |
 {: caption="Tabella 3. Ruoli e azioni di esempio per la gestione della piattaforma per i servizi di gestione dell'account" caption-side="top"}
 {: #platformrolestable2}
 
@@ -136,3 +140,6 @@ Le azioni che possono essere eseguite in base a ciascun ruolo assegnato variano 
 | Scrittore | Autorizzazioni al di sopra del ruolo di lettore, incluse la creazione e la modifica di risorse specifiche del servizio | Creare ed eliminare bucket e oggetti |
 | Gestore | Autorizzazioni al di sopra del ruolo di scrittore per completare le azioni privilegiate definite dal servizio, più le risorse specifiche del servizio di creazione e modifica | Gestire tutti gli aspetti dell'archiviazione dati, creare ed eliminare bucket e oggetti |
 {: caption="Tabella 5. Ruoli utente e azioni di esempio per l'accesso al servizio" caption-side="top"}
+
+
+
